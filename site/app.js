@@ -1,7 +1,8 @@
-/* Sovereignty Drift — dashboard.
-   Reads data/index.json, which the Actions collector commits. No live fetching:
-   everything shown here was gathered server-side, so nothing depends on a
-   third party allowing browser requests. */
+/* Data Drift Detection — dashboard.
+   Reads data/index.json (real, collector-generated) and, if present,
+   data/demo-vendor.json (one fictional, clearly-badged vendor used to show the
+   drift feature before two real collection runs have accumulated history).
+   No live fetching otherwise: everything shown here was gathered server-side. */
 
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -21,8 +22,20 @@ const KIND_LABEL = {
   other: "Other legal page",
 };
 
-let DATA = null;
+const EEA = new Set(["Austria","Belgium","Bulgaria","Croatia","Cyprus","Czechia","Denmark","Estonia",
+  "Finland","France","Germany","Greece","Hungary","Iceland","Ireland","Italy","Latvia","Liechtenstein",
+  "Lithuania","Luxembourg","Malta","Netherlands","Norway","Poland","Portugal","Romania","Slovakia",
+  "Slovenia","Spain","Sweden"]);
+
+const DEFAULT_ALLOWED = ["United States", "Canada"];
+
+let DATA = null;        // raw index.json
+let VENDORS = [];        // real vendors + demo vendor if loaded/shown
+let DEMO_VENDOR = null;
 let openId = null;
+let allowed = new Set(DEFAULT_ALLOWED);
+let sortMode = "index";   // "index" | "exposure"
+let showDemo = true;
 
 init();
 
@@ -37,39 +50,119 @@ async function init() {
        Run the collector, or trigger the workflow from the Actions tab.</p>`;
     return;
   }
-  renderRunbar();
+  try {
+    const res = await fetch("data/demo-vendor.json", { cache: "no-store" });
+    if (res.ok) DEMO_VENDOR = await res.json();
+  } catch { /* optional */ }
+
   render();
 }
 
-function renderRunbar() {
+function allCountries() {
+  const tally = new Map();
+  for (const v of DATA.vendors) {
+    if (!v.jobs?.ok) continue;
+    for (const [c, n] of Object.entries(v.jobs.countries || {})) {
+      tally.set(c, (tally.get(c) || 0) + n);
+    }
+  }
+  for (const c of DEFAULT_ALLOWED) if (!tally.has(c)) tally.set(c, 0);
+  return [...tally.entries()].sort((a, b) => b[1] - a[1]).map(([c]) => c);
+}
+
+function hqCountries(v) {
+  return (v.hq || "").split("/").map(s => s.trim()).filter(Boolean);
+}
+
+function exposure(v) {
+  const jobs = v.jobs;
+  if (!jobs?.ok || !jobs.placeable) {
+    return { outside: 0, pct: null, hqOutside: [] };
+  }
+  let outside = 0;
+  for (const [c, n] of Object.entries(jobs.countries || {})) {
+    if (!allowed.has(c)) outside += n;
+  }
+  return {
+    outside,
+    // A posting naming several countries counts in each, so the raw sum can
+    // exceed placeable -- cap the displayed share at 100%.
+    pct: Math.min(100, Math.round((outside / jobs.placeable) * 100)),
+    hqOutside: hqCountries(v).filter(c => !allowed.has(c)),
+  };
+}
+
+function renderRunbar(vendors) {
   const when = new Date(DATA.generated_at);
-  const flags = DATA.vendors.reduce((n, v) => n + v.crosschecks.length, 0);
-  const high = DATA.vendors.reduce(
+  const flags = vendors.reduce((n, v) => n + v.crosschecks.length, 0);
+  const high = vendors.reduce(
     (n, v) => n + v.crosschecks.filter(f => f.severity === "high").length, 0);
-  const docs = DATA.vendors.reduce((n, v) => n + v.docs.filter(d => d.path).length, 0);
+  const docs = vendors.reduce((n, v) => n + v.docs.filter(d => d.path).length, 0);
+  const driftCount = vendors.reduce((n, v) => n + (v.drift || []).length, 0);
   $("#runbar").innerHTML = `
     <span>collected <b>${when.toISOString().slice(0, 16).replace("T", " ")}Z</b></span>
-    <span><b>${DATA.vendors.length}</b> vendors</span>
+    <span><b>${vendors.length}</b> vendors</span>
     <span><b>${docs}</b> documents tracked</span>
-    <span><b>${flags}</b> open questions · <b>${high}</b> high</span>`;
+    <span><b>${flags}</b> open questions · <b>${high}</b> high</span>
+    <span><b>${driftCount}</b> wording change${driftCount === 1 ? "" : "s"} detected</span>`;
 }
 
 function render() {
-  const rows = [...DATA.vendors].sort((a, b) => b.score.total - a.score.total);
+  VENDORS = [...DATA.vendors];
+  if (showDemo && DEMO_VENDOR) VENDORS.push(DEMO_VENDOR);
+  renderRunbar(VENDORS);
+
+  const rows = [...VENDORS].sort((a, b) => {
+    if (sortMode === "exposure") {
+      const pa = exposure(a).pct ?? -1, pb = exposure(b).pct ?? -1;
+      if (pb !== pa) return pb - pa;
+    }
+    return b.score.total - a.score.total;
+  });
+
   $("#main").innerHTML = `
     <section>
       <div class="sec-hd">
-        <h2>Where claims and evidence disagree</h2>
-        <span class="eyebrow">sorted by public-evidence index</span>
+        <h2>Top vendors</h2>
+        <span class="eyebrow">${sortMode === "exposure"
+          ? "sorted by exposure outside allowed countries"
+          : "sorted by public-evidence index"}</span>
       </div>
       <p class="note">
         The index is not a rating of a vendor. It counts how much exposure is visible in public
         sources and how much of it cannot be verified — a vendor scoring high may simply publish
-        less. Open a row for the reconciliations.
+        less. Open a row for the reconciliations and the recent drift.
       </p>
+
+      <div class="ctrlbar">
+        <div class="ctrl-group">
+          <span class="eyebrow">Allowed countries</span>
+          <div class="cchips">
+            ${allCountries().map(c => `
+              <button type="button" class="cchip ${allowed.has(c) ? "on" : ""}" data-country="${esc(c)}">
+                ${esc(c)}
+              </button>`).join("")}
+          </div>
+        </div>
+        <div class="ctrl-group ctrl-right">
+          <label class="sortlabel">
+            <span class="eyebrow">Sort by</span>
+            <select id="sortSel">
+              <option value="index" ${sortMode === "index" ? "selected" : ""}>Public-evidence index</option>
+              <option value="exposure" ${sortMode === "exposure" ? "selected" : ""}>Exposure outside allowed countries</option>
+            </select>
+          </label>
+          ${DEMO_VENDOR ? `
+          <label class="demolabel">
+            <input type="checkbox" id="demoToggle" ${showDemo ? "checked" : ""}>
+            Show demo vendor
+          </label>` : ""}
+        </div>
+      </div>
+
       <div class="matrix">
         <div class="mhdr">
-          <span>Vendor</span><span>Index composition</span><span>Open questions</span><span>Index</span>
+          <span>Vendor</span><span>Index composition</span><span>Outside allowed</span><span>Index</span>
         </div>
         ${rows.map(matrixRow).join("")}
       </div>
@@ -88,6 +181,17 @@ function render() {
 
   document.querySelectorAll(".mrow").forEach(b =>
     b.addEventListener("click", () => toggle(b.dataset.id)));
+  document.querySelectorAll(".cchip").forEach(b =>
+    b.addEventListener("click", () => {
+      const c = b.dataset.country;
+      allowed.has(c) ? allowed.delete(c) : allowed.add(c);
+      render();
+    }));
+  const sortSel = $("#sortSel");
+  if (sortSel) sortSel.addEventListener("change", e => { sortMode = e.target.value; render(); });
+  const demoToggle = $("#demoToggle");
+  if (demoToggle) demoToggle.addEventListener("change", e => { showDemo = e.target.checked; render(); });
+
   if (openId) mountDetail(openId);
 }
 
@@ -99,11 +203,22 @@ function matrixRow(v) {
     .filter(k => counts[k])
     .map(k => `<span class="chip ${k}">${counts[k]} ${k}</span>`).join("");
 
+  const ex = exposure(v);
+  const exBadge = ex.pct === null
+    ? `<span class="chip none">no data</span>`
+    : `<span class="xchip ${ex.pct === 0 ? "low" : ex.pct <= 40 ? "medium" : "high"}">${ex.pct}%</span>`;
+
+  const driftBadge = (v.drift || []).length
+    ? `<span class="dchip">${v.drift.length} drift</span>` : "";
+
   return `
     <button class="mrow" data-id="${esc(v.id)}" aria-expanded="false">
       <span class="mhead">
-        <span class="mname"><span class="caret">▶</span>${esc(v.name)}</span>
-        <span class="mmeta">${esc(v.category)} · ${esc(v.hq)}</span>
+        <span class="mname">
+          <span class="caret">▶</span>${esc(v.name)}
+          ${v.demo ? `<span class="demoribbon">DEMO</span>` : ""}
+        </span>
+        <span class="mmeta">${esc(v.category)} · ${esc(v.hq)} ${chips ? "· " + chips : ""} ${driftBadge}</span>
       </span>
       <span class="stackwrap">
         <span class="stack">
@@ -112,7 +227,7 @@ function matrixRow(v) {
         </span>
         <span class="stack-scale"><span>0</span><span>100</span></span>
       </span>
-      <span class="chips">${chips || '<span class="chip none">none open</span>'}</span>
+      <span class="expwrap">${exBadge}</span>
       <span class="idx">${s.total}</span>
     </button>
     <div class="detail" id="d-${esc(v.id)}" hidden></div>`;
@@ -128,19 +243,29 @@ function toggle(id) {
   openId = id;
   btn.setAttribute("aria-expanded", "true");
   panel.hidden = false;
-  panel.innerHTML = detailHTML(DATA.vendors.find(v => v.id === id));
+  panel.innerHTML = detailHTML(VENDORS.find(v => v.id === id));
 }
 
 function mountDetail(id) {
   const panel = $("#d-" + id);
   if (!panel) return;
   panel.hidden = false;
-  panel.innerHTML = detailHTML(DATA.vendors.find(v => v.id === id));
-  document.querySelector(`.mrow[data-id="${id}"]`).setAttribute("aria-expanded", "true");
+  panel.innerHTML = detailHTML(VENDORS.find(v => v.id === id));
+  const row = document.querySelector(`.mrow[data-id="${id}"]`);
+  if (row) row.setAttribute("aria-expanded", "true");
 }
 
 function detailHTML(v) {
   return `
+    ${v.demo ? `
+    <div class="demonote">
+      <b>This is a fictional example vendor.</b> It is not one of your tracked vendors — it exists
+      to show what a caught wording change looks like before two real collection runs have gone by.
+    </div>` : ""}
+
+    <h3>Recent drift</h3>
+    ${driftHTML(v)}
+
     <h3>Reconciliations</h3>
     ${v.crosschecks.length
       ? v.crosschecks.map(reconCard).join("")
@@ -152,6 +277,28 @@ function detailHTML(v) {
 
     <h3>Open roles by country</h3>
     ${geoHTML(v.jobs)}`;
+}
+
+function driftHTML(v) {
+  const events = v.drift || [];
+  if (!events.length) {
+    return `<p class="note">No wording changes detected in ${esc(KIND_LABEL.privacy)} or
+      ${esc(KIND_LABEL.dpa).toLowerCase()} since tracking began. Re-run the collector on a later
+      date to compare against today's snapshot.</p>`;
+  }
+  return events.map(ev => `
+    <div class="drift">
+      <div class="drift-top">
+        <span class="drift-doc">${esc(ev.document_label)}</span>
+        <span class="drift-date mono">${esc(ev.date)}</span>
+        ${ev.url ? `<a href="${esc(ev.url)}" target="_blank" rel="noopener">source</a>` : ""}
+      </div>
+      ${ev.hunks.map(h => `
+        <div class="drift-pair">
+          ${h.before ? `<div class="drift-before"><span class="eyebrow">Before</span>${esc(h.before)}</div>` : ""}
+          ${h.after ? `<div class="drift-after"><span class="eyebrow">After</span>${esc(h.after)}</div>` : ""}
+        </div>`).join("")}
+    </div>`).join("");
 }
 
 function reconCard(f) {
@@ -235,19 +382,17 @@ function geoHTML(jobs) {
       a role sits in is a finding in itself.</p>`;
   }
   const max = entries[0][1];
-  const EEA = new Set(["Austria","Belgium","Bulgaria","Croatia","Cyprus","Czechia","Denmark","Estonia",
-    "Finland","France","Germany","Greece","Hungary","Iceland","Ireland","Italy","Latvia","Liechtenstein",
-    "Lithuania","Luxembourg","Malta","Netherlands","Norway","Poland","Portugal","Romania","Slovakia",
-    "Slovenia","Spain","Sweden"]);
+  const outside = entries.reduce((n, [c, k]) => n + (allowed.has(c) ? 0 : k), 0);
   return entries.map(([c, n]) => `
       <div class="geo">
-        <span class="who" title="${esc(c)}">${esc(c)}</span>
-        <span><span class="bar ${EEA.has(c) ? "eea" : ""}" style="width:${Math.max(3, (n / max) * 100)}%"></span></span>
+        <span class="who" title="${esc(c)}">${esc(c)}${allowed.has(c) ? "" : " ⚑"}</span>
+        <span><span class="bar ${allowed.has(c) ? "allowed" : "outside"}" style="width:${Math.max(3, (n / max) * 100)}%"></span></span>
         <span class="n">${n}</span>
       </div>`).join("") +
     `<p class="note" style="margin-top:12px">
-      ${jobs.non_eea} of ${jobs.placeable} placeable roles name no EEA site
-      ${jobs.unplaceable ? `· ${jobs.unplaceable} postings give no location at all` : ""}.
-      Green is EEA. A posting naming several cities counts in each.
+      ${outside} of ${jobs.placeable} placeable roles (${Math.min(100, Math.round(100 * outside / jobs.placeable))}%)
+      are outside your allowed countries (${[...allowed].join(", ") || "none selected"}).
+      ⚑ marks a country outside the allow-list. Of these, ${jobs.non_eea} name no EEA site.
+      A posting naming several cities counts in each.
     </p>`;
 }

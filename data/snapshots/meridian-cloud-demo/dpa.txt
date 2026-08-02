@@ -1,0 +1,8 @@
+# source: https://example.com/meridian-cloud/dpa
+# collected: 2026-08-02
+
+This Data Processing Agreement governs Meridian Cloud processing of personal data on behalf of the customer.
+Meridian Cloud will notify the customer of new sub-processors via the online sub-processor list, which may be updated at any time.
+Meridian Cloud implements technical and organizational measures appropriate to the risk.
+The customer may audit Meridian Cloud compliance with this Agreement upon reasonable notice.
+Standard Contractual Clauses apply to transfers of personal data outside the European Economic Area.
