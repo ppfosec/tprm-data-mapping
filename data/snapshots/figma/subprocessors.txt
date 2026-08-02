@@ -1,0 +1,303 @@
+# source: https://www.figma.com/sub-processors/
+# collected: 2026-08-02
+
+Figma Sub-processors
+Last Updated:
+June 22, 2026
+This page lists the sub-processors that Figma engages to process Customer Content (as defined in
+Figma’s Data Processing Addendum
+) on behalf of Customers and to support the delivery of our offerings, products and services (“Services”).
+The sub-processors relevant to a particular Customer depend on the specific Services they use.
+Figma requires each sub-processor to implement appropriate technical and organizational measures to ensure that Customer Content is protected as required under applicable data protection laws.
+When the use of a sub-processor involves the cross-border transfer of Customer Content, Figma conducts transfer impact assessments and ensures an appropriate transfer mechanism is in place.
+Figma maintains an up-to-date list of all sub-processors below, including a description of their processing activities, the categories of personal data they process, and the locations where data is processed.
+Customers may subscribe to updates about new or replacement sub-processors using the
+sign-up form at the bottom of this page
+Third Party
+Sub-processors
+Hosting, Infrastructure, and Content Delivery
+Sub-processor
+Applicable Service(s)
+Processing Activities
+Location
+Categories of Personal Data Processed
+Agora, Inc.
+Figma Design;
+FigJam
+In product audio conference and speech to text transcription features
+United States
+Customer-provided audio content
+Amazon Web Services, Inc.
+All Services
+Cloud infrastructure provider
+United States (or, for Enterprise plans, the hosting location selected)
+Customer Content
+Amazon Web Services, Inc.
+(Bedrock)
+Community, Figma AI, Figma Weave
+Content moderation and safety filtering
+United States
+Prompt Inputs and Outputs
+Cloudflare, Ltd.
+All Services
+Web infrastructure
+United States
+Identifiers associated with Customer accounts and their authorized users (such as name, email address, user ID, IP address) (“Authorized User Data”)
+Datadog, Inc.
+All Services
+Infrastructure monitoring
+United States
+Authorized User Data
+Functional Software, Inc.
+(Sentry)
+All Services
+Application error tracking and monitoring
+United States
+Authorized User Data
+Castle Global, Inc (Hive)
+Community, Figma AI, Figma Weave
+Content moderation and safety filtering
+United States
+Media in resources & comments published to Community.
+Figma AI & Figma Weave Prompt Inputs & Outputs.
+Modal Labs, Inc.
+Figma Make
+Cloud infrastructure provider for customer sandbox environments
+United States
+Customer prompt inputs and resulting model outputs (“Prompt Inputs and Outputs”)
+OpenAI, LLC
+Community, Figma AI, Figma Weave
+Content moderation and safety filtering
+United States
+Prompt Inputs and Outputs
+Snowflake, Inc.
+All Services
+Cloud-based data warehouse
+United States
+Authorized User Data
+Twilio, Inc.
+(Segment)
+Figma Weave
+Data analytics
+United States
+Authorized User Data
+Twilio, Inc.
+All Services
+Identity management
+United States
+Authorized User Data
+AI Service Providers
+Sub-processor
+Applicable Service(s)
+Processing Activities
+Location
+Categories of Personal Data Processed
+Anthropic PBC
+Figma AI
+AI model provider
+United States*
+Prompt Inputs and Outputs
+Amazon Web Services, Inc.
+Figma AI
+AI model provider
+United States*
+Prompt Inputs and Outputs
+Cerebras Systems, Inc.
+Figma AI
+AI model provider
+United States*
+Prompt Inputs and Outputs
+Fireworks.ai, Inc.
+Figma AI
+AI model provider
+United States*
+Prompt Inputs and Outputs
+Google LLC (Vertex)
+Figma AI
+AI model provider
+United States*
+Prompt Inputs and Outputs
+Groq, Inc.
+Figma AI
+AI model provider
+United States*
+Prompt Inputs and Outputs
+Jasper AI, Inc.
+Figma AI
+AI model provider
+United States*
+Prompt Inputs and Outputs
+Microsoft Corporation (Azure)
+Figma AI
+AI model provider
+United States*
+Prompt Inputs and Outputs
+OpenAI, LLC
+Figma AI
+AI model provider
+United States*
+Prompt Inputs and Outputs
+Recraft, Inc.
+Figma AI
+AI model provider
+United States*
+Prompt Inputs and Outputs
+* This sub-processor does not store Customer Content any longer than necessary to provide the output.
+Where necessary to improve latency and Service reliability, requests may be routed through global data centers.
+When this happens, they process all data exclusively in volatile memory during the active request and automatically clear the cache within two hours.
+Figma Weave AI Sub-Processors
+Sub-processor
+Applicable Service(s)
+Processing Activities
+Location
+Categories of Personal Data Processed
+Bria Artificial Intelligence Ltd
+Figma Weave
+Selectable AI model provider
+United States
+Prompt Inputs and Outputs
+BytePlus Sdn.
+Bhd.
+Figma Weave
+Selectable AI model provider
+EU, Indonesia, Malaysia
+Prompt Inputs and Outputs
+Features & Labels, Inc.
+(FAL)
+Figma Weave
+Platform hosting selectable AI image generation Verified models from third party providers
+United States
+Prompt Inputs and Outputs
+Freepik, Inc.
+Figma Weave
+Selectable AI model provider
+Belgium, Netherlands, Spain
+Prompt Inputs and Outputs
+Kling AI Pte.
+Ltd.
+Figma Weave
+Selectable AI model provider
+Singapore
+Prompt Inputs and Outputs
+Lightricks Ltda AI, Inc.
+Figma Weave
+Selectable AI model provider
+EU, Israel, United Kingdom, United States
+Prompt Inputs and Outputs
+Luma AI, Inc.
+Figma Weave
+Selectable AI model provider
+United States
+Prompt Inputs and Outputs
+OpenAI, LLC
+Figma Weave
+Selectable AI model provider
+United States
+Prompt Inputs and Outputs
+Customer Communication and Support
+Sub-processor
+Applicable Service(s)
+Processing Activities
+Location
+Categories of Personal Data Processed
+Amazon Web Services, Inc.
+(Bedrock)
+All Services
+Debugging and technical support
+United States
+Customer Content necessary for debugging
+Decagon AI, Inc.
+All Services
+Self-serve automation for customer support inquiries
+United States
+Requester identity information
+Gainsight, Inc.
+All Services
+Public support forum hosting (https://forum.figma.com/)
+United States
+Requester identity information
+Google LLC (Firebase)
+All Services
+Customer push notifications on mobile apps
+United States
+Recipient identity information
+Hex, Inc
+All Services
+Data analytics for support issues
+United States
+Requester identity information
+Intercom, Inc.
+Figma Weave
+Customer service and technical support
+United States
+Requester identity information
+IntouchCX, Inc.
+All Services
+Customer service and technical support
+Canada, The Philippines
+Requester identity information
+PostHog, Inc.
+Figma Weave
+Customer support data analytics
+Germany
+Requester identity information
+Premier Talent Partners
+All Services
+Customer service and technical support
+United States
+Requester identity information
+Pylon Labs, Inc
+All Services
+Customer service and technical support
+United States
+Requester identity information
+SendGrid, Inc.
+All Services
+Customer email notifications
+United States
+Recipient identity information
+Sprinklr, Inc.
+All Services
+Customer service and technical support
+United States
+Requester identity information
+Zendesk, Inc.
+All Services
+Customer service and technical support
+United States
+Requester identity information
+Figma Entities
+Figma entities may also process Customer Content when providing technical and operational support.
+Figma Entity
+Location
+Figma Australia Pty Ltd
+Australia
+FIGMA BRASIL LTDA.
+Brazil
+Figma Canada Ltd.
+Canada
+Figma France SAS
+France
+Figma GmbH
+Germany
+Figma, Inc.
+EEA, United States
+Figma India Private
+India
+Figma International LLC
+United States, New Zealand
+Figma Ireland Limited
+Ireland
+Figma Japan K.K
+Japan
+Figma Singapore Pte.
+Limited
+Singapore
+Figma Korea Ltd.
+South Korea
+Vmlapp Sweden AB
+Sweden
+Weavy AI Ltd
+Israel
+Figma UK Limited
+United Kingdom

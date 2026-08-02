@@ -1,0 +1,441 @@
+# source: https://stripe.com/legal/service-providers
+# collected: 2026-08-02
+
+Last updated:
+December 20, 2025
+To support Stripe in delivering its Services, Stripe engages service providers, Sub-Processors and affiliates to assist Stripe with its data processing activities on behalf of Stripe Business Users as defined in our Stripe Services Agreement.
+Summary of Changes
+We’ve updated this page because we strive to be clear about our use of Personal Data and the third party service providers we engage.
+The below outlines a few highlights of the changes we made, so please review this page carefully.
+If you have questions or queries, please
+contact us
+You will see that in our List of Affiliates we have:
+converted Stripe, Inc. into Stripe, LLC.
+This change goes into effect on January 3, 2026
+added Stripe Technology Company Limited (STC) as a Stripe Affiliate.
+STC is a new data controller for Stripe in the EMEA and APAC regions.
+Please visit our
+Privacy Center
+for more information on Stripe data controllers
+updated the description of Stripe Payment Europe Limited (SPEL) to clarify SPEL’s role in User contracting for certain jurisdictions
+updated the purpose of processing description for Stripe Payments Europe, Limited - Italian Branch to clarify this Affiliate provides local marketing and customer support services within Italy going forward
+added Stripe Technology Europe, Limited as a new Stripe Affiliate Sub-processor (although this entity was already mentioned, it wasn’t separately listed);
+Stripe Global Technology, LLC, a new Stripe Affiliate Sub-processor;
+Lemon Squeezy, LLC, an acquired Stripe Affiliate Sub-processor;
+TPS Unlimited, Inc., a Stripe-owned TaxJar entity we will start using towards the end of 2025 for Stripe Tax filings;
+Horkos, Inc.
+(d/b/a Privy), a recently-acquired company in the stablecoin space; and Bridge Ventures, LLC, Bridge Building Sp.
+Z.o.o., and Bridge Building S.A., another recently-acquired company also in the stablecoin space
+Similarly, in our list of Sub-processors we:
+added NETSTARS Co., Ltd., a payment method integration service provider for Japan
+added FreedomPay, Inc. as a payment gateway service provider for Terminal
+added Jack Henry & Associates, Inc. and Mitek Systems, Inc., two parties we use for check scanning for payments and remote deposits
+removed Khoros, LLC and replaced them with Sprinklr Inc.
+removed Romania as a processing location for Cognizant Worldwide Limited and added India
+What is a Sub-processor?
+When Stripe engages third party service providers in our capacity as a data processor for our Business Users’ personal data, the General Data Protection Regulation (“GDPR”) and a number of other global privacy frameworks call these third-party service providers sub-processors.
+Sub-processors are service providers who have or potentially will have access to or process personal data that Stripe processes for, and on behalf of, Stripe’s Business Users.
+This page outlines the types of service providers, Sub-processors, and affiliates we utilize, where they are located, and a description of the work they carry out.
+Due Diligence
+Before engaging any service provider (including Sub-processors), we perform due diligence, including a vendor security assessment.
+Our service providers are subject to contract terms designed to ensure that these service providers process personal data only for the purposes of providing services to Stripe and in accordance with our commitments to Business Users and applicable data protection laws.
+List of Sub-processors
+NAME
+DATA
+PURPOSE OF PROCESSING
+ENTITY COUNTRY
+Amazon Web Services, Inc.
+Business User and Representative data and End Customer data
+Cloud service provider
+United States
+Amazon Internet Services Private Limited
+Business User data and Representative Data.
+Furthermore, in order to meet regulatory data localization requirements for Indian payment transactions, Stripe India Private Limited stores certain data on servers located in India
+Cloud service provider
+India
+Sprinklr, Inc.
+Information included in the query as provided by the requester
+Tool to help manage incoming queries via social media
+United States
+Salesforce, Inc.
+The information included by the individual reaching out to Stripe, such as name, email address, phone number, and other information that may be included based on the nature of the communication
+Customer service platform that supports customer interactions e.g. email
+United States
+Twilio, Inc
+Business User data & End Customer data
+Cloud communications platform as a service including two factor authentication and user support
+United States
+Intuition Machines, Inc.
+Business User data & End Customer data
+Tool that provides hCaptcha for fraud prevention
+United States
+Verifi, Inc.
+Business User data & End Customer data
+Tool that helps resolve and reduce transaction disputes
+United States
+Jack Henry & Associates, Inc.
+Business User data & End Customer data
+Paper check scanning and verification for electronic clearance
+United States
+Mitek Systems, Inc.
+Business User data & End Customer data
+Paper check scanning and verification for electronic clearance
+United States
+User Support
+TELUS International (Cda)
+Information included in the queries raised by the individuals contacting Stripe support
+Provide Business User support in several languages and timezones
+Ireland
+AML Rightsource
+Information included in the queries raised by the individuals contacting Stripe support
+Provide Business User support in several languages and timezones
+United States
+Teleperformance Colombia S.A.S.
+Information included in the queries raised by the individuals contacting Stripe support
+Provide Business User support in several languages and timezones
+Colombia
+TDCX (MY) SDN.
+BHD.
+Information included in the queries raised by the individuals contacting Stripe support
+Provide Business User support in several languages and timezones
+Malaysia
+Cognizant Worldwide Limited
+Information included in the queries raised by the individuals contacting Stripe support
+Provide Business User support in several languages and timezones
+Philippines, India
+WNS Global Services (UK) International Limited
+Information included in the queries raised by the individuals contacting Stripe support
+Provide Business User support in several languages and timezones
+United Kingdom, India
+Microsoft Corporation
+Information included in the queries raised by the individuals contacting Stripe support
+Provide AI technology to improve the quality of user support operations
+United States
+FrontApp, Inc.
+Information included in the queries raised by the individuals contacting Stripe support
+Customer service tool that supports customer interactions e.g. email
+United States
+Adish Co., Ltd.
+Information included in the queries raised by the individuals contacting Stripe support
+Provide Business User support in Japanese
+Japan
+Stripe Identity
+Trulioo Information Services, Inc.
+End Customer data
+Identity verification for End Customers of Business Users
+Canada
+London Stock Exchange Group plc
+End Customer data
+Identity verification for End Customers of Business Users
+United States
+InscribeAI, Inc.
+End Customer data
+Identity verification for End Customers of Business Users
+United States
+Data Zoo Pty Limited
+End Customer data
+Identity verification for End Customers of Business Users
+Australia
+Shufti Pro Limited
+End Customer data
+Identity verification for End Customers of Business Users
+United Kingdom
+LexisNexis Risk Solutions FL, Inc.
+End Customer data
+Identity verification for End Customers of Business Users
+United States
+Ekata, Inc.
+End Customer data
+Identity verification for End Customers of Business Users
+United States
+Lob.com, Inc.
+End Customer data
+Identity verification for End Customers of Business Users
+United States
+Stripe Atlas
+LegalInc.com, Inc.
+Stripe Atlas Representatives’ personal data as required for incorporation in the State of Delaware
+File incorporation documents in the State of Delaware
+United States
+Terminal
+FreedomPay, Inc.
+Business User data & End Customer data
+Payment gateway services provider
+United States
+Payment method integration service providers
+PPRO Payment Services S.A.
+End Customer and Business User data
+Payment method integration service provider
+Luxembourg
+Payla Services GmbH
+End Customer and Business User data
+Payment method integration service provider
+Germany
+NETSTARS Co., Ltd.
+End Customer and Business User data
+Payment method integration service provider
+Japan
+List of Service Providers
+The below list of service providers are some key third parties Stripe works with across our products and services.
+You will also find some service providers that Stripe works with for a specific Stripe product or service.
+NAME
+DATA
+PURPOSE OF PROCESSING
+ENTITY COUNTRY
+DocuSign, Inc.
+Business User data
+eSignatures
+United States
+Google, LLC
+Business User data, End Customers’ data and Visitors’ data
+Email, file storage, collaboration tools, and services to help protect our Sites (e.g.
+ReCAPTCHA) and to measure interactions on our Sites
+United States
+Marketo, Inc.
+Business User data
+Marketing tool
+United States
+Salesforce.com, Inc.
+Business User data
+Customer relationship management platform which stores Business User contact information as well as supporting information about the business relationship
+United States
+Zoom Video Communications, Inc.
+Business User data, insofar as that is shared in spoken word between the conversing parties
+Video conferencing system
+United States
+Ekata, Inc.
+Business User data
+Provide sanctions screening services
+United States
+LegitScript, LLC
+Business User data
+Provide merchant monitoring services
+United States
+User and Sales support service providers
+Information included in the queries raised by the individuals contacting Stripe support
+Provide user and sales support in several languages and timezones
+Various
+Verification service providers
+Business User data and End Customer data
+Help verify the identity of Stripe Business Users and End Customers, and mitigate fraud
+Various
+Stripe Issuing
+Idemia America Corp.
+Cardholder name, PAN, CVV, expiration date, shipping address
+Printing the cards for Stripe Issuing
+United States
+Stripe Terminal
+Lantec (UK) Ltd
+Business User name and address for shipping purposes
+To enable hardware ordered from Stripe to be shipped to Business Users in Europe
+United Kingdom
+List of Affiliates
+Other Stripe Entities Involved in Offering the Services
+Stripe may need to rely on Stripe affiliates to help provide the Services to our Business Users, their Customers and our End Users.
+Stripe affiliates are other entities delivering elements of the Services to our Business Users and End Users.
+The Stripe affiliates involved in the processing of personal data will depend on the location of our Business Users, their End Customers and our End User, and the nature of the services Stripe is providing.
+Name
+Region
+Entity Country
+Purpose of Processing
+Stripe Payments Canada, Ltd.
+AMER
+Canada
+Please see
+https://stripe.com/en-ca/ssa
+Stripe Brokering, Inc.
+AMER
+United States
+Provide lending facilitation services to bank partners in connection with Stripe Capital loans in the United States
+Stripe, Inc.
+(until January 2, 2026) Stripe, LLC (per January 3, 2026)
+AMER
+United States
+Please see
+https://stripe.com/ssa
+Stripe Payments Company
+AMER
+United States
+Please see
+https://stripe.com/ssa
+and
+https://stripe.com/legal/spc
+Stripe Servicing, Inc.
+AMER
+United States
+Provide credit collection services related to Stripe Capital in the United States
+Stripe Global Technology, LLC
+AMER
+United States
+UX and related services in connection with the stablecoin financial account product
+Lemon Squeezy, LLC
+AMER
+United States
+Merchant of record related services
+TPS Unlimited, Inc.
+AMER
+United States
+Tax-filing related services
+Horkos, Inc.
+(d/b/a Privy)
+AMER
+United States
+Crypto and stablecoin related services
+Bridge Ventures, LLC
+AMER
+United States
+Crypto and stablecoin related services
+Stripe Payments Australia Pty Ltd A.C.N. 160 180 343
+APAC
+Australia
+Please see
+https://stripe.com/au/ssa
+Stripe India Private Limited
+APAC
+India
+Please see
+https://stripe.com/en-in/ssa
+In order to meet regulatory data localization requirements for Indian payment transactions, Stripe India Private Limited stores certain data on servers located in India.
+Stripe Technology India Private Limited
+APAC
+India
+Provides user support as well as internal operational support to other Stripe Affiliates
+PT Stripe Payments Indonesia
+APAC
+Indonesia
+Please see
+https://stripe.com/id/ssa
+Stripe Japan, Inc.
+APAC
+Japan
+Please see
+https://stripe.com/en-jp/legal
+Stripe Payments Malaysia Sdn.
+Bhd.
+APAC
+Malaysia
+Please see
+https://stripe.com/en-my/ssa
+Stripe New Zealand Limited
+APAC
+New Zealand
+Please see
+https://stripe.com/nz/ssa
+Stripe Payments Singapore Pte.
+Ltd.
+APAC
+Singapore
+Please see
+https://stripe.com/en-sg/legal
+Stripe Payments (Thailand) Ltd.
+APAC
+Thailand
+Please see
+https://stripe.com/th/legal/ssa
+BBPOS Devices Limited
+APAC
+Hong Kong SAR
+Providing customer support services in relation to Stripe Terminal products
+Noaliasing SPRL
+EMEA
+Belgium
+Provide local marketing and customer support services within Belgium
+Stripe France SARL
+EMEA
+France
+Provide local marketing and customer support services within France
+Stripe Deutschland GmbH
+EMEA
+Germany
+Provide local marketing and customer support services within Germany
+Stripe Payments Europe Limited
+EMEA
+Ireland
+Please see
+https://stripe.com/ie/ssa
+and
+https://stripe.com/ie/legal/dpa
+Stripe Technology Company Limited
+EMEA
+Ireland
+Data controller located in Ireland with primary responsibility for processing Personal Data outside of the Americas.
+Together with relevant Stripe local regulated entities (those who are licensed, authorized or registered by a Local Regulatory Authority) and Stripe Payments Europe Limited.
+Stripe Technology Europe, Limited
+EMEA
+Ireland
+For payment services, as an e-money institution regulated by the Central Bank of Ireland.
+Stripe Israel Payments Ltd.
+EMEA
+Israel
+Provide local marketing and customer support services within Israel
+Stripe Payments Europe, Limited - Italian Branch
+EMEA
+Italy
+Provide local marketing and customer support services within Italy
+Stripe Netherlands B.V.
+EMEA
+Netherlands
+Provide local marketing and customer support services within the Netherlands
+Stripe Payments sp. z o.o.
+EMEA
+Poland
+Provide local marketing and customer support services within Poland
+Stripe Spain S.L.
+EMEA
+Spain
+Provide local marketing and customer support services within Spain
+Tiny Experiment Aktiebolag
+EMEA
+Sweden
+Provide local marketing and customer support services within Sweden
+Stripe Switzerland GmbH
+EMEA
+Switzerland
+Provide local marketing and customer support services within Switzerland
+Stripe Romania S.R.L.
+EMEA
+Romania
+Provide local marketing and customer support services within Romania
+Stripe FZ-LLC
+EMEA
+United Arab Emirates
+Provide local marketing and customer support services within the United Arab Emirates
+Stripe Payments UK, Ltd.
+EMEA
+Together with Stripe Technology Company Limited and Stripe Payments Europe Limited, the e-money licensed entity with the UK FCA.
+Please see
+https://stripe.com/gs/ssa
+Bridge Building Sp.
+Z.o.o.
+EMEA
+Poland
+Crypto and stablecoin related services
+Bridge Building S.A.
+EMEA
+Luxembourg
+Crypto and stablecoin related services
+Stripe Brasil Soluções de Pagamento - Instituição de Pagamento Ltda
+LATAM
+Brazil
+Please see
+https://stripe.com/br/ssa
+Stripe Payments Mexico, S. de R.L. de C.V.
+LATAM
+Mexico
+Please see
+https://stripe.com/en-mx/ssa
+Provides user support as well as internal operational support to other Stripe Affiliates.
+Updates to this Page
+Due to the nature of our global business and the volume of Business Users, our business needs and services providers may change from time to time.
+For example, we may deprecate a service provider to consolidate and minimize our use of service providers.
+Similarly, we may add a service provider if we believe that doing so will enhance our ability to deliver our Services.
+We will periodically update this page to reflect additions and removals to our list of service providers, Sub-processors and Affiliates.
+If you are a Business User, you may subscribe to receive email notifications of updates to our list of Sub-processors on this page
+here
+Under the terms of our Data Processing Agreement (DPA), a Business User may reasonably object in writing to the processing of its personal data by a new Sub-processor within 30 days following the update of this page.
+If a Business User does not object during the 30 day time period, the appointment of the new Sub-processor shall be deemed accepted by the Business User.
+If you are a Business User and want to know more about our DPA, please contact us.
+For more information on Stripe’s privacy practices, please visit our
+Privacy Policy
+.
+If you have any questions regarding this page, please contact us.

@@ -1,0 +1,17 @@
+# source: https://www.cloudflare.com/gdpr/subprocessors/
+# collected: 2026-08-02
+
+Cloudflare Sub-Processors
+Cloudflare relies on sub-processors to deliver its services.
+Any sub-processor that processes our customers’ personal data undergoes a thorough information security and privacy review process.
+For Cloudflare services
+For professional services
+Legal
+Website terms of use
+Self-serve subscription agreement
+Service-specific terms
+Privacy policy
+Trust & Safety
+Transparency report
+Domain registration agreement
+Modern slavery act statement
