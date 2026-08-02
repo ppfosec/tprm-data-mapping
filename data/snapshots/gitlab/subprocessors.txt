@@ -1,0 +1,233 @@
+# source: https://about.gitlab.com/privacy/subprocessors/
+# collected: 2026-08-02
+
+GitLab Legal
+Sub-processors of GitLab
+When acting as a processor for Customer, Gitlab may engage the following entities to carry out specific processing activities, including those processing activities necessary to deliver the Services under the GitLab subscription.
+Sign Up
+to be notified of a change to the list.
+GitLab Affiliates
+Affiliate Entity
+Location
+Service Provided
+GitLab BV
+Netherlands
+Support Services
+GitLab IT BV
+Netherlands
+Support Services
+GitLab UK Ltd
+United Kingdom
+Support Services
+GitLab Ireland Ltd
+Ireland
+Support Services
+GitLab GmbH
+Germany
+Support Services
+GitLab France SAS
+France
+Support Services
+GitLab Pty Ltd
+Australia
+Support Services
+GitLab Canada Corp.
+Canada
+Support Services
+GitLab GK
+Japan
+Support Services
+GitLab South Korea
+South Korea
+Support Services
+GitLab Singapore Holding PTE Ltd
+Singapore
+Support Services
+GitLab Singapore PTE Ltd
+Singapore
+Support Services
+GitLab Iberia, S.L.
+Spain
+Support Services
+GitLab India Pvt Ltd
+India
+Support Services
+Third Party Sub-processors
+Third Party Entity
+Location
+Service Provided
+GitLab Product
+Google LLC
+United States
+Cloud Hosting, Customer Support, and
+AI-Powered Product Features
+GitLab.com, Dedicated, and Self-Managed
+Amazon Web Services Inc.
+United States*
+For GitLab Dedicated Customers the hosting location is your choice from our
+available AWS regions
+Cloud Hosting and
+AI-Powered Product Features
+GitLab.com, Dedicated, and Self-Managed
+Zendesk Inc.
+United States
+Support Services Portal
+GitLab.com, Dedicated, and Self-Managed
+Elasticsearch Inc.
+United States
+GitLab.com
+Cloudflare Inc.
+United States and European Union
+Content Delivery Network
+GitLab.com
+Mailgun Technologies, Inc.
+United States and European Union
+Transactional Email APIs
+GitLab.com
+Anthropic, PBC
+United States
+AI-Powered Product Features
+and Customer Support
+GitLab.com, Dedicated, and Self-Managed
+ClickHouse, Inc.
+United States
+Database Hosting
+GitLab.com and Dedicated
+IntouchCX Disrupt Inc.
+India
+Outsourced Customer Support Business Processes
+GitLab.com, Dedicated, and Self-Managed
+Fireworks.ai, Inc.
+United States and European Union
+AI-Powered Product Features
+GitLab.com, Dedicated, and Self-Managed
+Snowflake Inc.
+United States
+Data Warehouse and Analytics Services for Customer Support Ticketing
+GitLab.com, Dedicated, and Self-Managed
+Fivetran, Inc.
+United States
+ELT Pipeline for Customer Support Ticketing
+GitLab.com, Dedicated, and Self-Managed
+OpenAI, LLC
+United States
+AI-Powered Product Features
+GitLab.com, Dedicated, and Self-Managed
+Glean Technologies, Inc.
+United States
+AI-Powered Knowledge Base for Support Services
+GitLab.com, Dedicated, and Self-Managed
+HiddenLayer, Inc.
+United States
+Prompt Injection Security for
+AI-Powered Product Features
+GitLab.com, Dedicated, and Self-Managed
+Decagon AI, Inc.
+United States
+First-Line Customer Support Agent
+GitLab.com, Dedicated, and Self-Managed
+Professional Services Sub-processors
+These Sub-processors only apply in the event Customer has entered into a
+Professional Services Agreement
+with GitLab.
+Third Party Entity
+Region
+Service Provided
+Sirius Federal
+United States
+Professional Services
+CPrime
+United States
+Professional Services
+Adfinis
+European Economic Area, North Africa, Middle East, and Australia
+Professional Services
+Adaptavist
+United States, European Economic Area, Canada, Malaysia, and Australia
+Professional Services
+ReleaseTEAM
+United States and Canada
+Professional Services
+Eficode
+United States, United Kingdom, and European Economic Area
+Professional Services
+Ascend Integrated Technology Solutions, Inc.
+United States and Canada
+Professional Services
+Black Diamond Development, LLC
+United States
+Professional Services
+demicon GmbH
+Germany, Austria, and Switzerland
+Professional Services
+ZYYX Inc.
+Japan
+Professional Services
+Cloud Ace, Inc.
+Japan
+Professional Services
+Successive Technologies
+United States, Canada, Middle East, and Japan
+Professional Services
+Sfeir S.A.
+France, Belgium, and Luxembourg
+Professional Services
+Corewire GmbH
+Germany
+Professional Services
+OTTRA Ltd
+United Kingdom and European Economic Area
+Professional Services
+Datamato Technologies Private Limited
+India and United Arab Emirates
+Professional Services
+X-RD Pty Ltd
+Australia
+Professional Services
+VivaOps LLC
+North America
+Professional Services
+cc cloud GmbH
+Germany
+Professional Services
+JSaunders Solutions, LLC d/b/a NextLink Labs
+United States and Canada
+Professional Services
+ThunderSnow Industries Corporation
+United States
+Professional Services
+Trend Solutions Co., Ltd.
+Japan
+Professional Services
+Norwin Technologies LLC
+United States, European Economic Area, Asia Pacific, India, and Mexico
+Professional Services
+DF Tech FZ-LLC
+United Arab Emirates and Saudi Arabia
+Professional Services
+DevOps Enabler & Co.
+India
+Professional Services
+SPK and Associates, LLC
+United States
+Professional Services
+CyberChange
+Middle East, Turkey, and Africa
+Professional Services
+N22 Technologies LLC
+Middle East, Turkey, and Africa
+Professional Services
+Par-Tec S.p.A
+European Economic Area
+Professional Services
+GitSimple, LLC
+United States
+Professional Services
+HCS Company B.V.
+European Economic Area
+Professional Services
+Devoteam SAS
+France
+Professional Services
+Complete this form to be notified of changes to our sub-processors.
+All fields required

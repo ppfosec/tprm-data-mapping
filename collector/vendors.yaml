@@ -1,0 +1,120 @@
+# Vendor registry.
+#
+# `legal_candidates` are starting guesses only. The collector verifies each one and
+# discovers additional documents by following links out of whichever page responds,
+# so a wrong guess here costs nothing but a 404 in the log.
+
+- id: anthropic
+  name: Anthropic
+  category: Model provider
+  hq: United States
+  hq_iso: US
+  site: https://www.anthropic.com
+  board:
+    type: greenhouse
+    token: anthropic
+  legal_candidates:
+    - /legal/privacy
+    - /legal/commercial-terms
+    - /legal/subprocessors
+    - /legal/aup
+
+- id: cloudflare
+  name: Cloudflare
+  category: Edge network
+  hq: United States
+  hq_iso: US
+  site: https://www.cloudflare.com
+  board:
+    type: greenhouse
+    token: cloudflare
+  legal_candidates:
+    - /privacypolicy/
+    - /cloudflare-customer-dpa/
+    - /gdpr/subprocessors/
+    - /trust-hub/gdpr/
+
+- id: datadog
+  name: Datadog
+  category: Observability
+  hq: United States
+  hq_iso: US
+  site: https://www.datadoghq.com
+  board:
+    type: greenhouse
+    token: datadog
+  legal_candidates:
+    - /legal/privacy/
+    - /legal/data-processing-addendum/
+    - /legal/sub-processors/
+    - /legal/subprocessors/
+
+- id: stripe
+  name: Stripe
+  category: Payments
+  hq: United States / Ireland
+  hq_iso: US
+  site: https://stripe.com
+  board:
+    type: greenhouse
+    token: stripe
+  legal_candidates:
+    - /privacy
+    - /legal/dpa
+    - /legal/service-providers
+
+- id: figma
+  name: Figma
+  category: Design SaaS
+  hq: United States
+  hq_iso: US
+  site: https://www.figma.com
+  board:
+    type: greenhouse
+    token: figma
+  legal_candidates:
+    - /privacy/
+    - /legal/dpa/
+    - /legal/subprocessors/
+
+- id: gitlab
+  name: GitLab
+  category: DevOps platform
+  hq: United States
+  hq_iso: US
+  site: https://about.gitlab.com
+  board:
+    type: greenhouse
+    token: gitlab
+  legal_candidates:
+    - /privacy/
+    - /privacy/subprocessors/
+    - /handbook/legal/data-processing-agreement/
+
+- id: elastic
+  name: Elastic
+  category: Search and data
+  hq: United States / Netherlands
+  hq_iso: US
+  site: https://www.elastic.co
+  board:
+    type: greenhouse
+    token: elastic
+  legal_candidates:
+    - /legal/privacy-statement
+    - /legal/data-processing-agreement
+    - /legal/sub-processors
+
+- id: vercel
+  name: Vercel
+  category: App hosting
+  hq: United States
+  hq_iso: US
+  site: https://vercel.com
+  board:
+    type: greenhouse
+    token: vercel
+  legal_candidates:
+    - /legal/privacy-policy
+    - /legal/dpa
+    - /legal/subprocessors

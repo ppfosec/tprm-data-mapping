@@ -1,0 +1,475 @@
+# source: https://www.datadoghq.com/legal/data-processing-addendum/
+# collected: 2026-08-02
+
+Product
+Infrastructure
+Infrastructure Monitoring
+Metrics
+Container Monitoring
+Kubernetes Autoscaling
+Network Monitoring
+Serverless
+Cloud Cost Management
+Cloudcraft
+Storage Management
+GPU Monitoring
+Applications
+Application Performance Monitoring
+Universal Service Monitoring
+Continuous Profiler
+Dynamic Instrumentation
+Agent Observability
+Data
+Database Monitoring
+Data Streams Monitoring
+Quality Monitoring
+Jobs Monitoring
+Logs
+Log Management
+Sensitive Data Scanner
+Audit Trail
+Observability Pipelines
+Security
+Overview
+Code Security
+Software Composition Analysis
+Static Code Analysis (SAST)
+Runtime Code Analysis (IAST)
+IaC Security
+Cloud Security
+Cloud Security Posture Management
+Cloud Infrastructure Entitlement Management
+Vulnerability Management
+Compliance
+Cloud SIEM
+Workload Protection
+App and API Protection
+Sensitive Data Scanner
+Security Labs Research
+Open Source Projects
+Secret Scanning
+Digital Experience
+Browser Real User Monitoring
+Mobile Real User Monitoring
+Product Analytics
+Experiments
+Session Replay
+Synthetic Monitoring
+Mobile App Testing
+Error Tracking
+BYOC Log Management
+Software Delivery
+Internal Developer Portal
+CI Visibility
+Test Optimization
+Continuous Testing
+IDE Plugins
+Feature Flags
+Code Coverage
+AI Impact
+Service Management
+Event Management
+Software Catalog
+Service Level Objectives
+Incident Response
+Case Management
+Workflow Automation
+App Builder
+Bits Investigation
+Watchdog
+Agent Observability
+GPU Monitoring
+AI Integrations
+Bits AI Agents
+Bits Chat
+Bits Agent Builder
+Bits Code
+Bits Investigation
+Bits Security Analyst
+MCP Server
+Pup CLI
+Agent Directory
+Platform Capabilities
+Bits AI Agents
+Metrics
+Watchdog
+Alerts
+Dashboards
+Notebooks
+Mobile App
+Fleet Automation
+Governance Console
+Access Control
+Incident Response
+Case Management
+Event Management
+Workflow Automation
+App Builder
+Cloudcraft
+Teams
+OpenTelemetry
+Integrations
+IDE Plugins
+MCP Server
+Pup CLI
+Agent Directory
+API
+Marketplace
+DORA Metrics
+Customers
+Pricing
+Solutions
+Industry
+Financial Services
+Manufacturing & Logistics
+Healthcare/Life Sciences
+Retail/E-Commerce
+Government
+Education
+Media & Entertainment
+Technology
+Gaming
+Technology
+Amazon Web Services Monitoring
+Azure Monitoring
+Google Cloud Monitoring
+Oracle Cloud Monitoring
+Kubernetes Monitoring
+Red Hat OpenShift
+Pivotal Platform
+OpenAI
+SAP Monitoring
+OpenTelemetry
+Use Case
+Application Security
+Cloud Migration
+Monitoring Consolidation
+Unified Commerce Monitoring
+SOAR
+DevOps
+FinOps
+Shift-Left Testing
+Digital Experience Monitoring
+Security Analytics
+Compliance for CIS Benchmarks
+Hybrid Cloud Monitoring
+Edge Device Monitoring
+Real-Time BI
+On-Premises Monitoring
+Log Analysis & Correlation
+CNAPP
+About
+Contact
+Partners
+Newsroom
+Events & Webinars
+Leadership
+Careers
+Analyst Reports
+Investor Relations
+ESG Report
+Trust Hub
+Blog
+The Monitor
+Engineering
+Security Labs
+Docs
+Login
+Last updated
+January 3, 2024
+February 28, 2023
+June 21, 2022
+September 24, 2021
+July 21, 2020
+Data Processing Addendum
+This Data Processing Addendum with its appendices (together, this
+“DPA”
+) is incorporated into the Subscription Agreement (or other electronic or mutually executed written agreement) between Datadog and Customer that references it (the
+“Agreement”
+).
+This DPA is effective as of the effective date of the Agreement.
+Data Processing
+Scope and Roles.
+This DPA applies when Datadog Processes Customer Personal Data in providing the Services under the Agreement to Customer.
+The Parties agree that Datadog is a Processor with respect to the Processing of Customer Personal Data.
+Processing Details.
+Datadog will only Process Customer Personal Data in accordance with the Agreement, this DPA (including Appendix A and, if the CCPA applies to Customer’s use of the Services, Appendix C), and the Orders (together, the
+“Documented Instructions”
+).
+Datadog will promptly inform Customer if it becomes aware that the Documented Instructions violate Data Protection Laws.
+Customer Obligations.
+Customer is responsible for ensuring that no special categories of Personal Data (under GDPR Article 9), Personal Data relating to criminal convictions and offenses (under GDPR Article 10), or similarly sensitive Personal Data (defined in Data Protection Laws) is submitted to Datadog for Processing.
+Compliance with Laws.
+Each Party will comply with all the Data Protection Laws applicable to its performance under this DPA.
+Duration
+This DPA remains in effect until the later of (a) the expiration or termination of the Agreement, and (b) the return or deletion of Customer Personal Data in accordance with Section 6.
+Security and Confidentiality
+Datadog will implement and maintain the technical and organizational measures to protect Customer Personal Data against accidental or unlawful destruction, loss, alteration, and unauthorized disclosure or access, as described in Appendix B (the
+“Technical and Organizational Measures”
+).
+Datadog will take appropriate steps to ensure compliance with the Technical and Organizational Measures by its employees, agents, contractors, and Subprocessors to the extent applicable to their scope of performance, including ensuring that all persons authorized to Process Customer Personal Data have agreed to appropriate confidentiality obligations.
+Subprocessors
+Subprocessor Authorization.
+Customer generally authorizes Datadog to engage Subprocessors in accordance with this Section 4 and approves Datadog’s use of the Subprocessors listed in the Subprocessors List.
+Datadog will update the Subprocessors List at least 30 days before appointing a new Subprocessor and will provide Customer with a mechanism to receive notifications of new Subprocessors (a
+“Change Notice”
+), which today is available through the Subprocessors List.
+Objections to Subprocessors.
+Customer may object to a new Subprocessor on reasonable grounds related to the protection of Customer Personal Data by sending an email to
+privacy@datadoghq.com
+describing its legitimate, good-faith objection within 15 days of a Change Notice (an
+“Objection Notice”
+), in which case Datadog may satisfy the objection by (a) not using the new Subprocessor to Process Customer Personal Data;
+(b) taking corrective steps requested by Customer in its Objection Notice; or (c) ceasing to provide the parts of the Services that involve the new Subprocessor Processing Customer Personal Data, subject to a mutual agreement of the Parties to adjust the remuneration for the Services considering their reduced scope.
+If none of the options outlined above are reasonably available and Customer’s objection has not been resolved to the Parties’ mutual satisfaction within 15 days of Datadog’s receipt of the Objection Notice, either Party may terminate the affected Order and Datadog will refund to Customer a pro rata share of any unused amounts prepaid by Customer under the applicable Order for the Services on the basis of the remaining portion of the current terms of the Order.
+If Customer does not provide a timely Objection Notice, Customer will be deemed to have authorized Datadog’s use of the Subprocessor and to have waived its right to object.
+Subprocessor
+Requirements.
+Datadog will enter into a written agreement with each Subprocessor that contains data protection obligations equivalent to those in this DPA.
+Datadog will be liable for the actions and omissions of its Subprocessors undertaken in connection with Datadog’s performance under this DPA to the same extent Datadog would be liable if performing the Services directly.
+Data Subject Requests
+If Datadog receives a Data Subject Request, Datadog will (a) advise the Data Subject to submit the request to Customer directly, and (b) promptly notify Customer of the request.
+Where required by Data Protection Laws, Datadog will, on Customer’s request and taking into account the nature of Customer Personal Data Processed, provide reasonable assistance to Customer in fulfilling the Data Subject Request to the extent Customer is unable through its use of the Services to address a particular Data Subject Request on its own.
+To the extent permitted by Applicable Law, Customer will be responsible for any costs arising from Datadog’s assistance.
+Data Deletion
+Commencing 30 days after the effective date of termination of the Agreement, Datadog will initiate a process on Customer’s written request that deletes Customer Personal Data retained in production within 90 days and in backups within 180 days.
+Any Customer Personal Data archived in backups will be isolated and protected from any further Processing, except as otherwise required by Applicable Laws.
+Notwithstanding the foregoing, to the extent Datadog is required by Applicable Laws to retain some or all Customer Personal Data, Datadog will not be obligated to delete the retained Customer Personal Data, and this DPA will continue to apply to the retained Customer Personal Data.Customer acknowledges that it is responsible for exporting any Customer Personal Data that Customer wants to retain prior to expiration of the 30-day period referenced in this Section 6 pursuant to the Agreement.
+Personal Data Breaches
+Breach Notification.
+Datadog will notify Customer without undue delay after becoming aware of a Personal Data Breach.
+Datadog’s notification to Customer will describe (a) the nature of the Personal Data Breach, including, if known, the categories and approximate number of Data Subjects and Personal Data records concerned;
+(b) the measures Datadog has taken, or plans to take, to respond to and mitigate the Personal Data Breach;
+(c) any measures Datadog recommends that Customer take to address the Personal Data Breach; and (d) information related to Datadog’s point of contact with respect to the Personal Data Breach.
+If Datadog cannot provide all the information above in the initial notification, Datadog will provide the information to Customer as soon as it is available.
+Breach Response.
+Datadog will promptly take all actions relating to its Technical and Organizational Measures that it deems necessary and advisable to identify and remediate the cause of a Personal Data Breach.
+General.
+Datadog’s notification of or response to a Personal Data Breach will not constitute an acknowledgment of fault or liability with respect to the Personal Data Breach.
+The obligations in this Section 7 do not apply to Personal Data Breaches that are caused by Customer, Authorized Users, or providers of Customer Components.
+Except as may otherwise be required by Applicable Law (including any mandated deadlines under Data Protection Laws), if Customer decides to notify a Supervisory Authority, Data Subjects, or the public of a Personal Data Breach, Customer will make reasonable efforts to provide Datadog with advance copies of the notice(s) and allow Datadog an opportunity to provide any clarifications or corrections to them.
+Audits
+Datadog’s Audit Reports.
+On Customer’s request, and subject to the confidentiality provisions of the Agreement, Datadog will make available to Customer copies of, or extracts from, Datadog’s audit reports related to the security of the Services, including, for example, its ISO 27001 certification, SOC 2 Type 2 report, and Consensus Assessments Initiative Questionnaire (CAIQ).
+Customer’s Audit Rights.
+Customer may request (directly or through a third-party auditor subject to written confidentiality obligations) an audit of Datadog to verify Datadog’s compliance with the terms of this DPA if such an audit is required by Data Protection Laws and Datadog’s compliance cannot be demonstrated by means that are less burdensome on Datadog (including under Section 8.1).
+Any audit under this section must meet the following requirements:
+(a) Customer must provide Datadog at least 30 days’ prior written notice of a proposed audit unless otherwise required by a competent supervisory authority or Data Protection Laws;
+(b) Customer may not perform more than one audit in any 12-month period, except where required by a competent supervisory authority;
+(c) Customer and Datadog must mutually agree on the time, scope, and duration of the audit in advance;
+(d) Customer must reimburse Datadog for its time expended in connection with an audit at Datadog’s reasonable professional service rates, which will be made available to Customer on request;
+(e) Customer must ensure that its representatives performing an audit protect the confidentiality of all information obtained through the audit in accordance with the Agreement, execute an enhanced mutually agreeable nondisclosure agreement if requested by Datadog, and abide by Datadog’s security policies while on Datadog’s premises; and (f) Customer must promptly disclose to Datadog any written audit report created, and any findings of noncompliance discovered, as a result of the audit.
+Impact Assessments and Prior Consultation
+Taking into account the nature of the Processing and the information available to Datadog, Datadog will, when required by Data Protection Laws, assist Customer with its obligations related to data protection impact assessments (where related to the Services, and only to the extent that Customer does not otherwise have access to the relevant information) and prior consultation with supervisory authorities, including by providing the information outlined in Section 8.1 above.
+Data Transfers
+The parties acknowledge that transfers of Customer Personal Data to Datadog that are subject to an applicable adequacy decision do not require a separate approved transfer mechanism.
+If a transfer of Customer Personal Data to Datadog is not subject to an applicable adequacy decision (a
+“Restricted Transfer”
+), the Restricted Transfer is made in accordance with the following.
+Transfers from the EEA.
+Where a Restricted Transfer is made from the EEA, the SCCs are incorporated into this DPA and apply to the transfer as follows:
+(a)
+Module Two applies where Customer is a Controller and Datadog is a Processor, and Module Three applies where both Customer and Datadog are Processors;
+(b)
+in Clause 7, the optional docking clause does not apply;
+(c)
+in Clause 9(a) of Modules Two and Three, Option 2 applies, and the period for prior notice of Subprocessor changes is set forth in Section 4 of this DPA;
+(d)
+in Clause 11(a), the optional language does not apply;
+(e)
+in Clause 17, Option 1 applies with the governing law being that of Ireland;
+(f)
+in Clause 18(b), disputes will be resolved before the courts in Dublin, Ireland;
+(g)
+Annex I of the SCCs is completed with the information in Appendix A to this DPA;
+(h)
+Annex II of the SCCs is completed with the information in Appendix B to this DPA; and
+(i)
+Annex III of the SCCs is completed with the information in the Subprocessors List.
+Transfers from Switzerland.
+Where a Restricted Transfer is made from Switzerland, the SCCs are incorporated into this DPA and apply to the transfer as modified in Section 10.1, except that:
+(a)
+in Clause 13, the competent supervisory authority is the Swiss Federal Data Protection and Information Commissioner;
+(b)
+references to “Member State” in the SCCs refer to Switzerland, and data subjects located in Switzerland may exercise and enforce their rights under the SCCs in Switzerland; and
+(c)
+references to the “General Data Protection Regulation,” “Regulation 2016/679,” and “GDPR” in the SCCs refer to the Swiss Federal Act on Data Protection (as amended or replaced).
+Transfers from the UK.
+Where a Restricted Transfer is made from the UK, the UK Transfer Addendum is incorporated into this DPA and applies to the transfer.
+The UK Transfer Addendum is completed with the information in Section 10.1, the Subprocessors List, and Appendices A and B to this DPA; and both “Importer” and “Exporter” are selected in Table 4.
+Specific application of the SCCs.
+The following terms apply to the SCCs:
+(a)
+Customer may exercise its audit rights under the SCCs as set out in Section 8 above.
+(b)
+Datadog may appoint Subprocessors under the SCCs as set out in Section 4 above.
+(c)
+With respect to Restricted Transfers made to Datadog, Datadog may neither participate in, nor permit any Subprocessor to participate in, any further Restricted Transfer unless the further Restricted Transfer is made in full compliance with Data Protection Laws and in accordance with applicable SCCs or an alternative legally compliant transfer mechanism.
+(d)
+If any provision of this Section 10 is inconsistent with any terms in the SCCs, the SCCs prevail.
+Limitation of Liability
+Each Party’s liability taken together in the aggregate, arising out of or related to this DPA, whether in contract, tort, or under any other theory of liability, is subject to the limitation of liability provisions of the Agreement.
+Conflict
+In the event of a conflict or inconsistency between the Agreement, this DPA, and the SCCs, the terms of the following documents will prevail (in order of precedence): the SCCs; then this DPA; and then the Agreement.
+Modifications
+Datadog may change this DPA where (a) the change is required to comply with an Applicable Law; or (b) the change is commercially reasonable, does not materially reduce the security of the Services, does not change the scope of Datadog’s processing of Customer Personal Data, and does not have a material adverse impact on Customer’s rights under this DPA.
+Definitions
+Capitalized terms not otherwise defined in this DPA or the Agreement have the meanings assigned to them below.
+“Controller”
+means the entity that determines the purposes and means of Processing Personal Data.
+“Customer Data”
+if not defined in the Agreement, means data submitted to the Services for Processing by or on behalf of Customer.
+“Customer Personal Data”
+means the Personal Data contained within Customer Data.
+“Data Protection Laws”
+means data protection or privacy laws and regulations directly applicable to a Party’s Processing of Personal Data under the Agreement, including European Data Protection Laws.
+“Data Subject”
+means the identified or identifiable natural person to whom Personal Data relates.
+“Data Subject Request”
+means a request from a Data Subject exercising a right under Data Protection Laws that relates to Customer Personal Data and identifies Customer.
+“EEA” means the European Economic Area.
+“European Data Protection Laws”
+means the GDPR; the UK GDPR; and any national data protection laws, implementing regulations, or binding decisions made under the GDPR or the UK GDPR.
+“GDPR”
+means the General Data Protection Regulation 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons regarding the processing of personal data and on the free movement of such data, and repealing of Directive 95/46/EC.
+“Personal Data”
+means any information relating to an identified or identifiable natural person.
+“Personal Data Breach”
+means a breach of Datadog’s security leading to the accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to, Customer Personal Data.
+“Process” and “Processing”
+mean any operation or set of operations which is performed on Personal Data, such as collection, recording, organization, structuring, storage, adaptation or alteration, retrieval, consultation, use, disclosure by transmission, dissemination or otherwise making available, alignment or combination, restriction, erasure, or destruction.
+“Processor”
+means the entity that Processes Personal Data on behalf of a Controller.
+“SCCs”
+means the standard contractual clauses for international transfers annexed to the European Commission’s commission implementing decision on standard contractual clauses for the transfer of personal data to third countries pursuant to Regulation (EU) 2016/679, published on June 4, 2021, including as incorporated into the UK Transfer Addendum, if applicable.
+“Subprocessor”
+means any Processor engaged by Datadog or a Datadog Affiliate to Process Customer Personal Data on Datadog’s or its Affiliate’s behalf while providing the Services.
+“Subprocessors List”
+means the list of Subprocessors available at
+https://www.datadoghq.com/legal/subprocessors/
+“UK”
+means the United Kingdom.
+“UK GDPR”
+means the EU GDPR as saved into United Kingdom law by virtue of section 3 of the United Kingdom’s European Union (Withdrawal) Act 2018.
+“UK Transfer Addendum”
+means the International Data Transfer Addendum to the EU Commission Standard Contractual Clauses, published by the UK Information Commissioner’s Office on March 21, 2022.
+Appendix A – Details of Data Transfers
+A.
+LIST OF PARTIES
+Data exporter(s):
+Name:
+Customer.
+Address:
+The address for Customer associated with its Datadog account or as otherwise stated in the Agreement.
+Contact person’s name, position, and contact details:
+The contact details for Customer associated with its Datadog account or as otherwise stated in the Agreement.
+Activities relevant to the data transferred under these Clauses:
+Processing Personal Data for the purpose of providing, supporting, and improving the Services.
+Signature and date:
+The parties agree that execution of the Agreement constitutes execution of this Appendix A by both parties.
+Role (controller/processor):
+Processor or Controller.
+Data importer(s)
+Name:
+Datadog, Inc.
+Address: 620 8th Ave., 45th Fl., New York, NY 10018 USA
+Contact person’s name, position, and contact details:
+The contact details for Datadog as stated in the Agreement.
+Datadog’s privacy team can be contacted at
+privacy@datadoghq.com
+Activities relevant to the data transferred under these Clauses:
+Processing Personal Data for the purpose of providing, supporting, and improving the Services.
+Signature and date:
+The parties agree that execution of the Agreement constitutes execution of this Appendix A by both parties.
+Role (controller/processor):
+Processor.
+B.
+DESCRIPTION OF TRANSFER
+Categories of data subjects whose personal data is transferred
+The data subjects may include Customer’s employees, customers, vendors, and end users.
+Categories of personal data transferred
+The Personal Data that is sent to Datadog by, or on behalf of, Customer for the purpose of using the Services.
+Sensitive data transferred (if applicable) and applied restrictions or safeguards that fully take into consideration the nature of the data and the risks involved, such as for instance strict purpose limitation, access restrictions (including access only for staff having followed specialised training), keeping a record of access to the data, restrictions for onward transfers or additional security measures.
+No sensitive data is transferred.
+The frequency of the transfer (e.g. whether the data is transferred on a one-off or continuous basis).
+Personal Data is transferred on a continuous basis.
+Nature of the processing
+Analysis, storage, and other Services as described in the Agreement, Order(s), DPA, and Documentation.
+Purpose(s) of the data transfer and further processing
+For Datadog to provide, support, and improve the Services.
+The period for which the personal data will be retained, or, if that is not possible, the criteria used to determine that period
+Personal Data is retained in accordance with either Customer’s configuration of the Services or the retention schedules outlined in the Documentation.
+For transfers to (sub-) processors, also specify subject matter, nature, and duration of the processing
+The subject matter of Personal Data transferred to Subprocessors is Customer Personal Data, which is transferred to Subprocessors to provide, support, and improve the Services, as outlined in the agreements between Customer and Datadog.
+C.
+COMPETENT SUPERVISORY AUTHORITY
+Identify the competent supervisory authority/ies in accordance with Clause 13
+The competent supervisory authority determined in accordance with Data Protection Laws.
+Appendix B – Technical and Organizational Measures
+As of the date of this DPA, Datadog’s technical and organizational measures include the following.
+Access Control
+Datadog restricts access to Customer Personal Data to employees with a defined need-to-know or a role requiring such access.
+Datadog maintains user access controls that address timely provisioning and de-provisioning of user accounts.
+Audit
+Datadog will maintain SSAE 18 SOC 2 certification, or comparable certification, for the term of the Agreement.
+This certification will be renewed on an annual basis.
+Upon Customer’s request, Datadog will provide a summary of its most recent SOC 2 report once every 12 months of the term of the Agreement.
+Datadog follows guidelines from ISO 27001, NIST and other industry-standard practices.
+Business Continuity
+Datadog maintains business continuity, backup, and disaster recovery plans (
+“BC/DR Plans”
+) in order to minimize the loss of service and comply with Applicable Laws.
+The BC/DR Plans address threats to the Services and any dependencies, and have an established procedure for resuming access to, and use of, the Services.
+The BC/DR Plans are tested at regular intervals.
+Change Control
+Datadog maintains policies and procedures for applying changes to the Services, including underlying infrastructure and system components, to ensure quality standards are being met.
+Datadog undergoes a penetration test of its network and Services on an annual basis.
+Any vulnerabilities found during this testing will be remediated in accordance with Datadog’s Vulnerability Management Policies and Procedures, and will be assessed on the basis of Datadog’s Risk Management Framework.
+Datadog regularly performs vulnerability scans of its network and any vulnerabilities found will be addressed in accordance with Datadog’s Vulnerability Management Policies and Procedures, and will be assessed on the basis of Datadog’s Risk Management Framework.
+Security patches are applied in accordance with Datadog’s patching schedule.
+Datadog maintains an environment for testing and development separate from the production environment.
+Data Security
+Datadog maintains technical safeguards and other security measures to ensure the security and confidentiality of Customer Personal Data.
+Datadog logically segregates Customer Personal Data in the production environment.
+Encryption and Key Management
+Datadog maintains policies and procedures for the management of encryption mechanisms and cryptographic keys in Datadog’s cryptosystem.
+Datadog enlists encryption at rest and in transit between public networks, as applicable, according to industry-standard practice.
+Governance and Risk Management
+Datadog maintains an information security program that is reviewed at least annually.
+Datadog maintains a risk management program, with risk assessments conducted at least annually.
+Administrative Controls
+Datadog uses a third-party to conduct employee background verifications for all Datadog personnel with access to Customer Personal Data.
+Datadog employees are required to complete initial (at-hire) and annual security awareness training.
+Appendix C – CCPA Terms
+These CCPA Terms apply when the California Consumer Privacy Act of 2018, Cal.
+Civ.
+Code §§1798.100–1798.199.100, as amended, and the CCPA regulations, Cal.
+Code Regs. §§7000–7304 (together, the
+“CCPA”
+) apply to Customer’s use of the Services to process the Personal Information contained in Customer Data (
+“Covered Information”
+).
+For the purpose of these CCPA Terms, the terms
+“Commercial Purpose”
+“Consumer”
+“Personal Information”
+“Sell”
+“Service Provider”
+, and
+“Share”
+have the meanings given to them in the CCPA.
+Datadog’s
+Obligations.
+Datadog will(a) not Sell or Share Covered Information;
+(b) process Covered Information only to provide, support, and improve the Services in accordance with the Agreement or Orders, or as otherwise permitted under the CCPA;
+(c) not retain, use, or disclose Covered Information (i) for any purpose, including any Commercial Purpose, except to provide, support, and improve the Services in accordance with the Agreement or Orders, or as otherwise permitted under the CCPA, (ii) outside the direct business relationship between Datadog and Customer, or (iii) in any way prohibited by the CCPA;
+(d) not combine the Covered Information it receives from, or on behalf of, Customer with Personal Information it receives from, or on behalf of, another person or from Datadog’s own interactions with the Consumer to whom the Personal Information relates, except to the extent a Service provider is permitted to do so under the CCPA;
+(e) comply with all applicable obligations under, and provide the same level of privacy protection to Covered Information as required by, the CCPA;
+(f) notify Customer if it believes it cannot meet its obligations under the CCPA; and (g) on Customer’s request and taking into account the nature of the Covered Information processed, provide reasonable assistance to Customer in fulfilling consumer requests made under the CCPA to the extent Customer is unable through its use of the Services to address a particular request on its own.
+Customer’s Obligations and Rights.
+Customer may(a) only disclose Covered Information to Datadog for the limited purpose of using the Services in accordance with the Agreement;
+(b) audit Datadog’s compliance with its obligations under these CCPA terms by requesting and reviewing (i) copies of or extracts from Datadog’s audit reports related to the security of the Services, or (ii) other information Datadog deems is reasonably necessary to demonstrate Datadog’s compliance; and (c) upon notice to Datadog, take reasonable and appropriate steps to stop and remediate any unauthorized use of Covered Information by Datadog.
+Request a personalized demo with a Datadog engineer
+I'd like Datadog to share the latest news about Datadog services and related offerings with me by email or telephone.
+You may unsubscribe at any time by following the instructions in the communications received from Datadog.
+Start Your Free Datadog Trial Now

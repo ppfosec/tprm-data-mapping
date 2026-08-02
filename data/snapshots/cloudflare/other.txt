@@ -1,0 +1,253 @@
+# source: https://www.cloudflare.com/trust-hub/gdpr/
+# collected: 2026-08-02
+
+Cloudflare and GDPR compliance
+Cloudflare is a privacy-first company.
+As such, the General Data Protection Regulation ("GDPR") represents many steps we were already taking.
+We do not sell personal data we process, or use it for any purpose other than delivering our services.
+In addition, we let people access, correct, and delete their personal information, and give our customers control over the information passing through our network.
+To learn more, explore our GDPR FAQ below, or check out Cloudflare’s overall privacy policy.
+Read FAQ
+Privacy policy
+Frequently asked questions
+What personal data does Cloudflare process for its customers and where?
+Cloudflare is a security, performance, and reliability company headquartered in the United States with global operations including five offices in Europe that delivers a broad range of network services to businesses of all sizes and in all geographies.
+We help make our customers' websites and Internet applications more secure, enhance the performance of their business-critical applications, and eliminate the cost and complexity of managing individual network hardware.
+Cloudflare's Global Network – which is powered by Edge servers in more than 330 cities around the world, as described
+here
+– serves as the foundation on which we can rapidly develop and deploy our products for our customers.
+The types of personal data Cloudflare processes on behalf of a customer depend on which Cloudflare services are implemented.
+For our most popular Core Application Layer Services, Cloudflare does not store customer content, nor do we have any control of the data our customers choose to transmit, route, switch, and cache through our Global Network.
+In a limited number of cases, Cloudflare products can be used for storage of content.
+Regardless of what Cloudflare services they use, however, our customers are fully responsible for their own compliance with applicable law and their independent contractual arrangements in connection with the data they choose to transmit, route, switch, cache, or store through the Cloudflare Global Network.
+For our Core Application Layer Services, the vast majority of data that transits Cloudflare's network stays on Cloudflare's Edge servers.
+Metadata about this activity is processed on behalf of our customers in our data centers in the United States and Europe.
+Cloudflare maintains log data about events on our network.
+Some of this log data will include information about visitors to and/or authorized users of a customer's domains, networks, websites, application programming interfaces ("APIs"), or applications, including the Cloudflare product Cloudflare Zero Trust as may be applicable.
+This metadata contains extremely limited personal data, most often in the form of IP addresses.
+We process this type of information on behalf of our customers in our data centers in the U.S. and Europe for a limited period of time.
+What specific technical and organizational security measures does Cloudflare provide for personal data?
+Cloudflare views security as a critical element of ensuring data privacy.
+Since Cloudflare launched in 2010, we've released a number of state-of-the-art, privacy-enhancing technologies, typically ahead of the rest of the industry.
+Among other things, these tools allow our customers to easily encrypt the content of communications through universal SSL; encrypt or otherwise protect the metadata in communications using new protocols like DNS-over-HTTPS, DNS-over-TLS, and Oblivious HTTP; and control where their SSL keys are held or where their traffic is inspected.
+Cloudflare maintains a security program that exceeds industry standards.
+Our security program includes maintaining formal security policies and procedures, establishing proper logical and physical access controls, and implementing technical safeguards in corporate and production environments, including establishing secure configurations, secure transmission and connections, logging, monitoring, and having adequate encryption technologies for personal data.
+We currently maintain the following validations:
+ISO 27001, ISO 27701, ISO 27018, SOC 2 Type II, and PCI DSS Level 1 compliance.
+We are also certified to the European Cloud Code of Conduct and Germany's C5 2020 standard.
+You can learn more about our certifications and reports
+here
+To view the security measures Cloudflare offers for the protection of personal data, including personal data transferred from the European Economic Area ("EEA") to the U.S., please see Annex 2 of our standard
+DPA
+How does Cloudflare address the requirements of Art. 44 of the GDPR regarding personal data transfers to the U.S.?
+The EU General Data Protection Regulation ("GDPR") provides a number of legal mechanisms to ensure that appropriate safeguards, enforceable rights, and effective legal remedies are available for European data subjects whose personal data is transferred from the EEA to a third country — a country not covered by the GDPR or deemed to have adequate data protection laws in place.
+Those mechanisms include:
+Where the EU Commission has decided that a third country ensures an adequate level of protection after assessing that country's rule of law, respect for human rights and fundamental freedoms, and a number of other factors;
+Where a data controller or processor has put in place binding corporate rules;
+Where a data controller or processor has in place standard data protection clauses adopted by the Commission; or
+Where a data controller or processor has put in place an approved code of conduct or an approved certification mechanism.
+When Cloudflare transfers personal data from the EEA, Switzerland, or the United Kingdom ("UK") internationally, we rely on the European Commission's Standard Contractual Clauses ("SCCs"), including supplementary measures as necessary, or, for transfers to the United States, we have also certified our compliance with the EU-U.S.
+Data Privacy Framework ("EU-U.S.
+DPF"), the Swiss-U.S.
+Data Privacy Framework ("Swiss-U.S.
+DPF"), and/or the UK extension to the EU-U.S.
+DPF.
+Our standard Data Processing Addendum ("DPA") will continue to incorporate the EU SCCs to ensure we have multiple legal bases for processing data.
+Is Cloudflare certified to the EU-U.S.
+Data Privacy Framework?
+Yes.
+When Cloudflare transfers personal data from the European Economic Area, Switzerland, or the United Kingdom to the United States, we rely on our certifications under the EU-U.S.
+Data Privacy Framework, the Swiss-U.S.
+Data Privacy Framework, and the UK Extension to the EU-U.S.
+DPF, respectively.
+Should these certifications lapse or become otherwise invalidated, Cloudflare relies on the EU standard contractual clauses, including supplementary measures as necessary for transfers to the United States.
+We also use the standard contractual clauses for other international transfers from the EEA, Switzerland, or the United Kingdom.
+What safeguards apply to my data under the Data Privacy Frameworks?
+In October 2022, U.S.
+President Biden signed Executive Order 14086 ("EO14086"), which introduced new safeguards for U.S. signals intelligence activities in order to make the EU-U.S.
+Data Privacy Framework possible.
+Based on the protections afforded by EO14086, the European Commission made an adequacy finding for the EU-U.S.
+DPF.
+Importantly, these protections apply equally to all transfers – those made pursuant to one of the DPFs or those made under the EU Standard Contractual Clauses (see the
+EDPB's "Information note on data transfers under the GDPR to the United States after the adoption of the adequacy decision on 10 July 2023"
+The protections introduced by EO14086 include safeguards to ensure that privacy and civil liberties are integral considerations such that (i) signals intelligence activities shall be conducted only where "necessary" to advance a validated intelligence priority, and (ii) be conducted only to the extent and in a manner that is "proportionate" to the validated intelligence priority.
+EO14086 also provides a multi-layer redress mechanism for individuals to obtain independent and binding review and redress of claims that their personal information collected through U.S. signals intelligence was processed in a way that violates their privacy rights.
+What additional data protection safeguards does Cloudflare provide?
+Because we believe earning and maintaining customer trust is essential, Cloudflare has had data protection safeguards in place since well before the "Schrems II" case (Case C-311/18, Data Protection Commissioner v Facebook Ireland and Maximillian Schrems), including many of the additional safeguards recommended by the EDPB in its post-
+Schrems II
+guidance (Recommendations 01/2020 on measures that supplement transfer tools to ensure compliance with the EU level of protection of personal data adopted on 18 June 2021).
+Cloudflare has a strong commitment to transparency and accountability regarding processing of personal data as described above, and our DPA makes many of these commitments contractually binding.
+When we issued our very first transparency report in 2014 for legal process received in 2013, we pledged that we would require legal process before providing any government entity with any customer data outside of an emergency and that we would provide our customers with notice of any legal process requesting their customer or billing information before disclosure of that information unless legally prohibited.
+We publicly stated that we have never turned over encryption keys to any government, provided any government a feed of content transiting our network, or deployed law enforcement equipment on our network.
+We also committed that if we were asked to do any of those things, we would "exhaust all legal remedies in order to protect our customers from what we believe are illegal or unconstitutional requests." Since those days early in Cloudflare's history, we have restated those commitments twice a year, and even expanded on them, in our
+Transparency Reports
+We have also demonstrated our belief in transparency and our commitment to protecting our customers by filing litigation when necessary.
+In 2013, with the help of the Electronic Frontier Foundation, we legally challenged an administratively issued U.S. national security letter ("NSL") to protect our customer's rights because of provisions that allowed the government to restrict us from disclosing information about the NSL to the affected customer.
+Cloudflare provided no customer information in response to that request, but the non-disclosure provisions remained in effect until a court lifted the restrictions in 2016.
+We have frequently stated our position that any government requests for personal data that conflict with the privacy laws of a person's country of residence should be legally challenged.
+(See, for example, our
+Transparency Report
+and our white paper,
+Cloudflare's policies around data privacy and law enforcement requests
+, on government requests for data.) The EDPB recognized that GDPR might pose such a conflict in
+this assessment
+.
+Our commitment to GDPR compliance means that Cloudflare would pursue legal remedies before producing data identified as being subject to GDPR in response to a U.S. government request for data.
+Consistent with existing U.S. case law and statutory frameworks, Cloudflare may ask U.S. courts to quash a request from U.S. authorities for personal data based on such a conflict of law.
+Our standard data processing addendum ("DPA") for our customers incorporates the above-described supplementary measures and safeguards as contractual commitments.
+You can view these contractual commitments in section 7 of our
+DPA
+.
+Last but not least, we have in place robust security measures and encryption protocols, which can be viewed in Annex 2 of our DPA.
+We will continue to apply these supplementary measures and safeguards in addition to the additional safeguards afforded under EO14086.
+As always, we are continuing to monitor ongoing developments in this space and will ensure our ongoing compliance with the EU GDPR Articles 44 and 46.
+During this time, we will continue to follow our commitments under existing DPAs, and our commitments under the current SCCs, and our commitments under our certification to the Data Privacy Frameworks certification.
+Does the U.S.
+Clarifying Lawful Overseas Use of Data ("CLOUD") Act affect how Cloudflare views its obligation to turn over data in response to U.S. government legal process?
+We believe that U.S. government requests for the personal data of a non-U.S. person that conflict with the privacy laws of that person's country of residence (such as the GDPR in the EU) should be legally challenged.
+The CLOUD Act does not expand U.S. investigative authority.
+Tough requirements for law enforcement to obtain a valid warrant remain unchanged.
+The CLOUD Act also applies to access to content, which we generally do not store, as described above.
+Furthermore, the CLOUD Act does not change existing practices when U.S. law enforcement seeks access to corporate data.
+It is important to note that law enforcement would typically seek to obtain data from the entity which has effective control of the data (i.e., our customers) rather than cloud providers.
+In the event law enforcement requests such data from Cloudflare, we would encourage them to request the data from our customer instead of us.
+Do the U.S.
+Foreign Intelligence Surveillance Act ("FISA") Section 702 and Executive Order 12333 discussed in the Schrems II decision affect Cloudflare?
+We think it will be helpful to provide additional explanation of the U.S. national security authorities referenced by the CJEU in its analysis in the "Schrems II" decision (Case C-311/18, Data Protection Commissioner v Facebook Ireland and Maximillian Schrems).
+Section 702.
+Section 702 of the Foreign Intelligence Surveillance Act ("FISA") is an authority that allows the U.S. government to request the communications of non-U.S. persons located outside of the United States for foreign intelligence purposes.
+The U.S. government uses section 702 to collect the content of communications through specific "selectors", such as email addresses, that are associated with specific foreign intelligence targets.
+Because the authority is typically used to collect the content of communications, the "electronic communications service providers" asked to comply with section 702 are typically email providers or other providers with access to the content of communications.
+As noted in our transparency report, Cloudflare does not have access to this type of traditional customer content for Cloudflare's core services.
+In addition, Cloudflare has had a
+public commitment for many years
+that we have never provided any government a feed of our customers' content transiting our network and that we would exhaust all legal remedies if we were asked to do so in order to protect our customers from what we believe are illegal or unconstitutional requests.
+Executive Order 12333.
+Executive Order 12333 governs U.S. intelligence agencies' foreign intelligence collection targeting non-U.S. persons outside the United States.
+Executive Order 12333 does not have provisions to compel the assistance of U.S. companies.
+Cloudflare has a longstanding commitment to require legal process before providing any government entity with access to any customer data outside of an emergency.
+We therefore would not comply with voluntary requests for data under Executive Order 12333.
+In addition, Cloudflare has been a leader in encouraging additional security for data in transit, for both content and metadata, to prevent personal data from any type of prying eyes.
+In 2014, for example, we launched
+Universal SSL
+, making encryption — something that had been expensive and difficult — free for all Cloudflare customers.
+The week we launched it, we doubled the size of the encrypted web.
+Because of an increasing number of laws attempting to target encryption, we have even
+committed
+that we have never weakened, compromised, or subverted any of our encryption at the request of a government or other third party.
+How can Customers on Self-Service Agreements make sure the proper cross-border data transfer mechanisms are in place with Cloudflare?
+When Cloudflare transfers personal data from the EEA, Switzerland or the United Kingdom ("UK") internationally, we rely on the EU Standard Contractual Clauses ("SCCs"), including supplementary measures as necessary, or, for transfers to the United States, we have also certified our compliance with the EU-U.S.
+Data Privacy Framework ("EU-U.S.
+DPF"), the Swiss-U.S.
+Data Privacy Framework ("Swiss-U.S.
+DPF"), and the UK Extension to the EU-U.S.
+DPF.
+These representations are contained in our
+standard DPA
+, which is incorporated by reference into our
+Self-Serve Subscription Agreement
+.
+To the extent the personal data transfer requires the SCCs, then our DPA incorporates the SCCs for this data.
+Therefore, no action is required to ensure that the appropriate cross-border data transfer mechanisms are in place.
+How can Enterprise Customers make sure the proper cross-border data transfer mechanisms are in place with Cloudflare?
+When Cloudflare transfers personal data from the EEA, Switzerland or the United Kingdom ("UK") internationally, we rely on the EU Standard Contractual Clauses ("SCCs"), including supplementary measures as necessary, or, for transfers to the United States, we have also certified our compliance with the EU-U.S.
+Data Privacy Framework ("EU-U.S.
+DPF"), the Swiss-U.S.
+Data Privacy Framework ("Swiss-U.S.
+DPF"), and the UK Extension to the EU-U.S.
+DPF.
+These representations are contained in our
+standard DPA
+, which is incorporated into our standard
+Enterprise Subscription Agreement
+("ESA").
+Therefore, no action is required to ensure that the appropriate cross-border data transfer mechanisms are in place.
+Enterprise customers are subject to our standard ESA if they entered into the ESA with Cloudflare on or after August 8, 2019 and do not have a custom agreement.
+Enterprise customers on older versions of our ESA or on custom ESAs or custom DPAs may not have the cross-border data transfer mechanism documented.
+These customers or any other Enterprise customers with questions about their DPA may contact their Customer Success Manager.
+What tools does Cloudflare have for its customers to geographically restrict access to data?
+We recognize that some of our customers would prefer that any personal data subject to the GDPR (or its UK or Swiss equivalents) remain in the EU and not be transferred to the U.S. for processing.
+To that end, we introduced the Cloudflare Data Localization Suite, which helps businesses get the performance and security benefits of Cloudflare's global network, while making it easy to set rules and controls at the edge about where their data is stored and protected.
+The Data Localization Suite bundles some existing offerings with some new features:
+Regional Services.
+Cloudflare has data centers in over 330 cities across 100+ countries.
+Regional Services together with our Geo Key Manager solution allows Customers to pick the data center locations where TLS keys are stored and TLS termination takes place.
+Traffic is ingested globally, applying L3/L4 DDoS mitigations, while security, performance, and reliability functions (such as, WAF, CDN, DDoS mitigation, etc.) are serviced at designated Cloudflare data centers only.
+Metadata Boundary.
+The Customer Metadata Boundary ensures that the end user traffic metadata that can identify a customer stays in the European Union.
+This includes all the logs and analytics that a customer can see.
+This is done by ensuring that the end user metadata that can identify a customer flows through a single service at our edge, before being forwarded to one of our core data centers.
+When the Metadata Boundary is enabled for a customer, our Edge ensures that any log message that identifies that customer (that is, contains that customer's Account ID) is not sent outside the EU.
+It will only be sent to our core data center in the EU.
+Geo Key Manager.
+Cloudflare has a truly international customer base and we've learned that customers around the world have different regulatory and statutory requirements, and different risk profiles, concerning the placement of their private keys.
+With that philosophy in mind, we set out to design a very flexible system for deciding where keys can be kept.
+Geo Key Manager lets customers limit the exposure of their private keys to certain locations.
+It's similar to Keyless SSL, but instead of having to run a key server inside your infrastructure, Cloudflare hosts key servers in the locations of your choosing.
+In addition, Cloudflare offers Keyless SSL, which allows a customer to store and manage their own SSL Private keys for use with Cloudflare.
+Customers can use a variety of systems for their keystore, including hardware security modules ("HSMs"), virtual servers, and hardware running Unix/Linux and Windows that is housed in environments customers control.
+Are there any enforceable rights and effective remedies available to EU data subjects in the U.S. where data is processed by Cloudflare or Cloudflare's sub-processors?
+As outlined in our
+Transparency Report
+, Cloudflare requires valid legal process before providing the personal information of our customers to government entities or civil litigants.
+Except in the case of an emergency involving danger of death or serious physical injury to any person, we do not provide our customers' personal information to government officials in response to requests that do not include legal process.
+To ensure that our customers have the opportunity to enforce their rights, it is Cloudflare's policy to notify our customers of a subpoena or other legal process requesting their information before disclosure of that information, whether the legal process comes from the government or private parties involved in civil litigation, unless legally prohibited.
+Specifically, our
+DPA
+commits that unless legally prohibited, we will notify Customers if we are able to identify that third-party legal process requesting personal data we process on behalf of that Customer raises a conflict of law — such as where the personal data is governed by the GDPR.
+Customers notified of a pending legal request for their personal data can seek to intervene to prevent the disclosure of personal data.
+In addition, U.S. law provides mechanisms for companies to challenge orders that pose potential conflicts of law, such as a legal request for data subject to GDPR.
+The CLOUD Act, for example, provides mechanisms for a provider to petition a court to quash or modify a legal request that poses such a conflict of law.
+That process also allows a provider to disclose the existence of the request to a foreign government whose citizen is affected, if that government has signed a CLOUD Act agreement with the United States.
+Cloudflare has committed to legally challenge any orders that pose such a conflict of law.
+To date, we have received no orders that we have identified as posing such a conflict.
+In October 2022 U.S.
+President Biden signed
+Executive Order 14086
+, which introduced new safeguards for U.S. signals intelligence activities in order to make possible the new EU-U.S.
+Data Privacy Framework.
+Among these safeguards is the creation of a redress mechanism for individuals who claim their personal data has been collected unlawfully through signals intelligence programs.
+Individuals can file a complaint with the U.S.
+Civil Liberties Protection Officer ("CPLO"), who can investigate these complaints and issue binding decisions against intelligence agencies.
+The CPLO's decisions can be appealed to a newly created Data Protection Review Court ("DPRC").
+Finally, in compliance with the EU-U.S.
+DPF, the UK Extension to the EU-U.S.
+DPF (together, "the DPFs"), and the Swiss-U.S.
+DPF (together, the "DPFs"), Cloudflare commits to resolve DPF Principles-related complaints about our collection and use of your personal information.
+For more information, please see Section 7 of our
+Privacy Policy
+How is Cloudflare dealing with cross-border transfers to and from the UK?
+We have been paying close attention to the changes the UK is making in the data protection area since it left the European Union.
+Currently, the EU GDPR has been saved into United Kingdom law by virtue of section 3 of the United Kingdom's European Union (Withdrawal) Act 2018 and the UK Data Protection Act 2018 (the "UK GDPR").
+Pursuant to the International Data Transfer Addendum (Version B1.0) issued by the UK Information Commissioner's Office under s.119(A) of the UK Data Protection Act 2018 (the "UK Addendum"), Cloudflare may transfer UK personal data outside the UK in reliance on the EU SCCs mechanism coupled with the UK Addendum.
+Depending on our agreements with our customers, Cloudflare relies on the EU SCCs mechanism coupled with the UK Addendum, plus supplementary measures, or Cloudflare will rely on the UK extension to the EU-U.S.
+Data Privacy Framework once it is approved.
+Resources on the GDPR
+Whitepaper
+Cloudflare's policies around data privacy and law enforcement requests
+Download PDF
+How Cloudflare helps address data protection and locality obligations in Europe
+Download PDF
+Link
+Cloudflare sub-processors
+Learn More
+Cloudflare's data processing addendum
+Download PDF
+Cloudflare Data Processing Addendum:
+Standard Contractual Clauses for Customers
+Learn More
+Cloudflare features that support data protection
+Encryption
+Cloudflare's network can encrypt data throughout its journey from origin servers to end-users, using the very latest protocols.
+Privacy-first analytics
+Cloudflare's Web Analytics does not use any client-side state, such as cookies or localStorage, to collect usage metrics — and never 'fingerprints' individual users.
+Data localization
+In many regions — including Japan — Cloudflare lets organizations control which regional data centers their traffic is inspected in and where logs are sent.
+Access management
+Cloudflare Zero Trust lets organizations enforce country-specific access rules, block risky sites and content, and log access events for internal applications and data.
+Reporting
+Cloudflare Logs gives granular insights into every HTTP request, helping you investigate potential breaches and other security incidents.
+Certifications
+Cloudflare complies with many industry-standard security certifications, including several focusing on privacy and personal data protection.
+Protect and accelerate your websites, apps, and teams.
+Sign up
