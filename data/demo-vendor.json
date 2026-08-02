@@ -11,9 +11,9 @@
       "kind": "privacy",
       "url": "https://example.com/meridian-cloud/privacy-policy",
       "path": "data/snapshots/meridian-cloud-demo/privacy.txt",
-      "lines": 6,
-      "chars": 546,
-      "sha256": "daa2ef85d43d5ee4",
+      "lines": 7,
+      "chars": 679,
+      "sha256": "a6f6e43093dc495e",
       "note": null,
       "archive": {
         "ok": false,
@@ -191,5 +191,30 @@
         }
       ]
     }
-  ]
+  ],
+  "data_classification": {
+    "tags": [
+      {
+        "key": "biometric",
+        "label": "Biometric data",
+        "sensitivity": "high",
+        "why": "Biometric identifiers are irrevocable if exposed -- a special category under GDPR Article 9.",
+        "source": "privacy",
+        "matched": "biometric",
+        "excerpt": "For enterprise accounts with biometric login enabled, we collect a fingerprint or facial scan template used only for authentication."
+      },
+      {
+        "key": "account_usage",
+        "label": "Account & usage data",
+        "sensitivity": "low",
+        "why": "Login activity, device and session data -- routine telemetry, not by itself sensitive.",
+        "source": "privacy",
+        "matched": "usage data",
+        "excerpt": "We collect account, billing and usage data necessary to operate the Service."
+      }
+    ],
+    "max_sensitivity": "high",
+    "sensitivity_score": 30
+  },
+  "authorized_since_default": "2026-07-01"
 }

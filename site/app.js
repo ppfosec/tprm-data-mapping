@@ -2,17 +2,14 @@
    Reads data/index.json (real, collector-generated) and, if present,
    data/demo-vendor.json (one fictional, clearly-badged vendor used to show the
    drift feature before two real collection runs have accumulated history).
-   No live fetching otherwise: everything shown here was gathered server-side. */
+   No live fetching otherwise: everything shown here was gathered server-side.
+
+   Per-vendor authorization (which countries you approved, and since when) is
+   the one thing this static site cannot collect itself, so it lives in the
+   browser's localStorage rather than in a committed file. */
 
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-
-const COMPONENTS = [
-  ["footprint", "Hiring footprint", "Share of placeable roles naming no EEA site."],
-  ["access", "Access signals", "Weighted job-description signals: rotations, travel, production access."],
-  ["transparency", "Document coverage", "Whether a privacy policy, DPA and sub-processor list exist and can be read as text."],
-  ["record", "Archive record", "How much revision history the Wayback Machine holds for those pages."],
-];
 
 const KIND_LABEL = {
   privacy: "Privacy policy",
@@ -22,19 +19,26 @@ const KIND_LABEL = {
   other: "Other legal page",
 };
 
-const EEA = new Set(["Austria","Belgium","Bulgaria","Croatia","Cyprus","Czechia","Denmark","Estonia",
-  "Finland","France","Germany","Greece","Hungary","Iceland","Ireland","Italy","Latvia","Liechtenstein",
-  "Lithuania","Luxembourg","Malta","Netherlands","Norway","Poland","Portugal","Romania","Slovakia",
-  "Slovenia","Spain","Sweden"]);
+const RISK_FACTORS = [
+  ["auth", "Exposure outside authorized countries", 40,
+    "Share of this vendor's workforce (our best public proxy for who can reach your data) sitting outside the countries you authorized for it."],
+  ["data", "Data sensitivity", 30,
+    "The most sensitive data type this vendor's own privacy policy or DPA admits to processing, from business contact info up to biometric or special-category data."],
+  ["osint", "OSINT flags", 20,
+    "Open reconciliations where the vendor's claims and its public hiring evidence disagree."],
+  ["since", "Changed since you authorized", 10,
+    "Whether any tracked wording in the privacy policy or DPA has changed since the date you recorded as your authorization."],
+];
 
 const DEFAULT_ALLOWED = ["United States", "Canada"];
+const AUTH_KEY = "ddd:auth:v1";
 
-let DATA = null;        // raw index.json
-let VENDORS = [];        // real vendors + demo vendor if loaded/shown
+let DATA = null;         // raw index.json
+let VENDORS = [];         // real vendors + demo vendor if loaded/shown
 let DEMO_VENDOR = null;
 let openId = null;
-let allowed = new Set(DEFAULT_ALLOWED);
-let sortMode = "index";   // "index" | "exposure"
+let allowed = new Set(DEFAULT_ALLOWED);   // global default allow-list
+let sortMode = "risk";     // "risk" | "exposure" | "index"
 let showDemo = true;
 
 init();
@@ -58,6 +62,50 @@ async function init() {
   render();
 }
 
+// ---------------------------------------------------------------------------
+// per-vendor authorization (localStorage — see file header)
+// ---------------------------------------------------------------------------
+
+function loadAuthStore() {
+  try { return JSON.parse(localStorage.getItem(AUTH_KEY)) || {}; }
+  catch { return {}; }
+}
+function saveAuthStore(store) {
+  try { localStorage.setItem(AUTH_KEY, JSON.stringify(store)); } catch { /* storage disabled */ }
+}
+function vendorAuth(v) {
+  return loadAuthStore()[v.id] || {};
+}
+function vendorAllowed(v) {
+  const custom = vendorAuth(v).countries;
+  return new Set(custom || allowed);
+}
+function vendorIsCustom(v) {
+  return Array.isArray(vendorAuth(v).countries);
+}
+function vendorSince(v) {
+  return vendorAuth(v).since || v.authorized_since_default || null;
+}
+function setVendorCountries(vendorId, countries) {
+  const store = loadAuthStore();
+  store[vendorId] = { ...store[vendorId], countries };
+  saveAuthStore(store);
+}
+function setVendorSince(vendorId, since) {
+  const store = loadAuthStore();
+  store[vendorId] = { ...store[vendorId], since: since || undefined };
+  saveAuthStore(store);
+}
+function clearVendorCountries(vendorId) {
+  const store = loadAuthStore();
+  if (store[vendorId]) delete store[vendorId].countries;
+  saveAuthStore(store);
+}
+
+// ---------------------------------------------------------------------------
+// derived per-vendor numbers
+// ---------------------------------------------------------------------------
+
 function allCountries() {
   const tally = new Map();
   for (const v of DATA.vendors) {
@@ -76,21 +124,61 @@ function hqCountries(v) {
 
 function exposure(v) {
   const jobs = v.jobs;
+  const va = vendorAllowed(v);
   if (!jobs?.ok || !jobs.placeable) {
     return { outside: 0, pct: null, hqOutside: [] };
   }
   let outside = 0;
   for (const [c, n] of Object.entries(jobs.countries || {})) {
-    if (!allowed.has(c)) outside += n;
+    if (!va.has(c)) outside += n;
   }
   return {
     outside,
     // A posting naming several countries counts in each, so the raw sum can
     // exceed placeable -- cap the displayed share at 100%.
     pct: Math.min(100, Math.round((outside / jobs.placeable) * 100)),
-    hqOutside: hqCountries(v).filter(c => !allowed.has(c)),
+    hqOutside: hqCountries(v).filter(c => !va.has(c)),
   };
 }
+
+function severityCounts(list) {
+  const counts = { high: 0, medium: 0, low: 0 };
+  (list || []).forEach(f => counts[f.severity]++);
+  return counts;
+}
+
+function topTag(v) {
+  const tags = v.data_classification?.tags;
+  return tags && tags.length ? tags[0] : null;
+}
+
+function driftSinceAuth(v) {
+  const since = vendorSince(v);
+  const events = v.drift || [];
+  if (!since) return { since: null, changed: null, events };
+  const after = events.filter(e => e.date >= since);
+  return { since, changed: after.length > 0, events, after };
+}
+
+function riskScore(v) {
+  const ex = exposure(v);
+  const authPts = ex.pct == null ? 0 : Math.round(ex.pct * 0.4);
+  const dataPts = v.data_classification?.sensitivity_score ?? 10;
+  const sc = severityCounts(v.crosschecks);
+  const osintPts = sc.high ? 20 : sc.medium ? 14 : sc.low ? 6 : 0;
+  const since = driftSinceAuth(v);
+  const sincePts = since.changed === true ? 10 : 0;
+  const total = Math.min(100, authPts + dataPts + osintPts + sincePts);
+  return { total, authPts, dataPts, osintPts, sincePts, ex, since };
+}
+
+function riskTier(total) {
+  return total <= 35 ? "low" : total <= 65 ? "medium" : "high";
+}
+
+// ---------------------------------------------------------------------------
+// top-level render
+// ---------------------------------------------------------------------------
 
 function renderRunbar(vendors) {
   const when = new Date(DATA.generated_at);
@@ -103,7 +191,7 @@ function renderRunbar(vendors) {
     <span>collected <b>${when.toISOString().slice(0, 16).replace("T", " ")}Z</b></span>
     <span><b>${vendors.length}</b> vendors</span>
     <span><b>${docs}</b> documents tracked</span>
-    <span><b>${flags}</b> open questions · <b>${high}</b> high</span>
+    <span><b>${flags}</b> OSINT flags · <b>${high}</b> high</span>
     <span><b>${driftCount}</b> wording change${driftCount === 1 ? "" : "s"} detected</span>`;
 }
 
@@ -116,6 +204,11 @@ function render() {
     if (sortMode === "exposure") {
       const pa = exposure(a).pct ?? -1, pb = exposure(b).pct ?? -1;
       if (pb !== pa) return pb - pa;
+    } else if (sortMode === "index") {
+      if (b.score.total !== a.score.total) return b.score.total - a.score.total;
+    } else {
+      const ra = riskScore(a).total, rb = riskScore(b).total;
+      if (rb !== ra) return rb - ra;
     }
     return b.score.total - a.score.total;
   });
@@ -124,32 +217,36 @@ function render() {
     <section>
       <div class="sec-hd">
         <h2>Top vendors</h2>
-        <span class="eyebrow">${sortMode === "exposure"
-          ? "sorted by exposure outside allowed countries"
-          : "sorted by public-evidence index"}</span>
+        <span class="eyebrow">${
+          sortMode === "exposure" ? "sorted by exposure outside authorized countries"
+          : sortMode === "index" ? "sorted by public-evidence index (legacy)"
+          : "sorted by risk score"}</span>
       </div>
       <p class="note">
-        The index is not a rating of a vendor. It counts how much exposure is visible in public
-        sources and how much of it cannot be verified — a vendor scoring high may simply publish
-        less. Open a row for the reconciliations and the recent drift.
+        Four questions per vendor: where you authorized processing, what kind of data it handles,
+        whether the public evidence disagrees with its own claims, and whether anything has changed
+        since you authorized it. The risk score is those four, added up and shown below — open a row
+        to see the breakdown.
       </p>
 
       <div class="ctrlbar">
         <div class="ctrl-group">
-          <span class="eyebrow">Allowed countries</span>
+          <span class="eyebrow">Default authorized countries</span>
           <div class="cchips">
             ${allCountries().map(c => `
               <button type="button" class="cchip ${allowed.has(c) ? "on" : ""}" data-country="${esc(c)}">
                 ${esc(c)}
               </button>`).join("")}
           </div>
+          <span class="hint">Applies to any vendor without its own override (set per-vendor below).</span>
         </div>
         <div class="ctrl-group ctrl-right">
           <label class="sortlabel">
             <span class="eyebrow">Sort by</span>
             <select id="sortSel">
-              <option value="index" ${sortMode === "index" ? "selected" : ""}>Public-evidence index</option>
-              <option value="exposure" ${sortMode === "exposure" ? "selected" : ""}>Exposure outside allowed countries</option>
+              <option value="risk" ${sortMode === "risk" ? "selected" : ""}>Risk score</option>
+              <option value="exposure" ${sortMode === "exposure" ? "selected" : ""}>Exposure outside authorized countries</option>
+              <option value="index" ${sortMode === "index" ? "selected" : ""}>Public-evidence index (legacy)</option>
             </select>
           </label>
           ${DEMO_VENDOR ? `
@@ -162,18 +259,18 @@ function render() {
 
       <div class="matrix">
         <div class="mhdr">
-          <span>Vendor</span><span>Index composition</span><span>Outside allowed</span><span>Index</span>
+          <span>Vendor</span><span>Signals</span><span>Risk score</span>
         </div>
         ${rows.map(matrixRow).join("")}
       </div>
     </section>
 
     <section>
-      <div class="sec-hd"><h2>How the index is built</h2></div>
+      <div class="sec-hd"><h2>How the risk score is built</h2></div>
       <div class="method">
-        ${COMPONENTS.map(([k, label, why]) => `
+        ${RISK_FACTORS.map(([k, label, pts, why]) => `
           <div class="card">
-            <h4><span class="key seg ${k}" style="display:inline-block"></span>${esc(label)} — up to 25</h4>
+            <h4><span class="key riskkey ${k}" style="display:inline-block"></span>${esc(label)} — up to ${pts}</h4>
             <p>${esc(why)}</p>
           </div>`).join("")}
       </div>
@@ -181,7 +278,7 @@ function render() {
 
   document.querySelectorAll(".mrow").forEach(b =>
     b.addEventListener("click", () => toggle(b.dataset.id)));
-  document.querySelectorAll(".cchip").forEach(b =>
+  document.querySelectorAll(".ctrlbar > .ctrl-group:first-child .cchip").forEach(b =>
     b.addEventListener("click", () => {
       const c = b.dataset.country;
       allowed.has(c) ? allowed.delete(c) : allowed.add(c);
@@ -195,21 +292,28 @@ function render() {
   if (openId) mountDetail(openId);
 }
 
+// ---------------------------------------------------------------------------
+// vendor row (collapsed)
+// ---------------------------------------------------------------------------
+
 function matrixRow(v) {
-  const s = v.score;
-  const counts = { high: 0, medium: 0, low: 0 };
-  v.crosschecks.forEach(f => counts[f.severity]++);
-  const chips = ["high", "medium", "low"]
-    .filter(k => counts[k])
-    .map(k => `<span class="chip ${k}">${counts[k]} ${k}</span>`).join("");
+  const risk = riskScore(v);
+  const va = vendorAllowed(v);
+  const authList = [...va];
+  const authLabel = authList.length <= 2 ? (authList.join(", ") || "none")
+    : `${authList.slice(0, 2).join(", ")} +${authList.length - 2}`;
 
-  const ex = exposure(v);
-  const exBadge = ex.pct === null
-    ? `<span class="chip none">no data</span>`
-    : `<span class="xchip ${ex.pct === 0 ? "low" : ex.pct <= 40 ? "medium" : "high"}">${ex.pct}%</span>`;
+  const tag = topTag(v);
+  const dataLabel = tag ? tag.label : "Not classified";
+  const dataSev = tag ? tag.sensitivity : "low";
 
-  const driftBadge = (v.drift || []).length
-    ? `<span class="dchip">${v.drift.length} drift</span>` : "";
+  const sc = severityCounts(v.crosschecks);
+  const osintSev = sc.high ? "high" : sc.medium ? "medium" : sc.low ? "low" : "none";
+  const osintLabel = v.crosschecks.length ? `${v.crosschecks.length} flag${v.crosschecks.length === 1 ? "" : "s"}` : "clear";
+
+  const since = risk.since;
+  const sinceState = since.since === null ? "unset" : since.changed ? "changed" : "clear";
+  const sinceLabel = since.since === null ? "not set" : since.changed ? "changed" : "no change";
 
   return `
     <button class="mrow" data-id="${esc(v.id)}" aria-expanded="false">
@@ -218,20 +322,24 @@ function matrixRow(v) {
           <span class="caret">▶</span>${esc(v.name)}
           ${v.demo ? `<span class="demoribbon">DEMO</span>` : ""}
         </span>
-        <span class="mmeta">${esc(v.category)} · ${esc(v.hq)} ${chips ? "· " + chips : ""} ${driftBadge}</span>
+        <span class="mmeta">${esc(v.category)} · ${esc(v.hq)}</span>
       </span>
-      <span class="stackwrap">
-        <span class="stack">
-          ${COMPONENTS.map(([k]) =>
-            `<span class="seg ${k}" style="width:${s[k]}%" title="${k}: ${s[k]}"></span>`).join("")}
+      <span class="badges4">
+        <span class="b4 auth" title="Authorized countries${vendorIsCustom(v) ? " (custom for this vendor)" : " (default)"}">
+          Auth: ${esc(authLabel)}${vendorIsCustom(v) ? " *" : ""}
         </span>
-        <span class="stack-scale"><span>0</span><span>100</span></span>
+        <span class="b4 data ${dataSev}" title="${esc(tag ? tag.why : "")}">Data: ${esc(dataLabel)}</span>
+        <span class="b4 osint ${osintSev}">OSINT: ${esc(osintLabel)}</span>
+        <span class="b4 since ${sinceState}">Since auth: ${esc(sinceLabel)}</span>
       </span>
-      <span class="expwrap">${exBadge}</span>
-      <span class="idx">${s.total}</span>
+      <span class="risk ${riskTier(risk.total)}">${risk.total}</span>
     </button>
     <div class="detail" id="d-${esc(v.id)}" hidden></div>`;
 }
+
+// ---------------------------------------------------------------------------
+// vendor detail (expanded)
+// ---------------------------------------------------------------------------
 
 function toggle(id) {
   const btn = document.querySelector(`.mrow[data-id="${id}"]`);
@@ -243,19 +351,25 @@ function toggle(id) {
   openId = id;
   btn.setAttribute("aria-expanded", "true");
   panel.hidden = false;
-  panel.innerHTML = detailHTML(VENDORS.find(v => v.id === id));
+  mountDetailInto(panel, VENDORS.find(v => v.id === id));
 }
 
 function mountDetail(id) {
   const panel = $("#d-" + id);
   if (!panel) return;
   panel.hidden = false;
-  panel.innerHTML = detailHTML(VENDORS.find(v => v.id === id));
+  mountDetailInto(panel, VENDORS.find(v => v.id === id));
   const row = document.querySelector(`.mrow[data-id="${id}"]`);
   if (row) row.setAttribute("aria-expanded", "true");
 }
 
+function mountDetailInto(panel, v) {
+  panel.innerHTML = detailHTML(v);
+  wireAuthEditor(panel, v);
+}
+
 function detailHTML(v) {
+  const risk = riskScore(v);
   return `
     ${v.demo ? `
     <div class="demonote">
@@ -263,34 +377,114 @@ function detailHTML(v) {
       to show what a caught wording change looks like before two real collection runs have gone by.
     </div>` : ""}
 
-    <h3>Recent drift</h3>
-    ${driftHTML(v)}
+    <div class="riskbreak">
+      <div class="riskbreak-hd"><span class="eyebrow">Risk score breakdown</span><span class="risk ${riskTier(risk.total)}">${risk.total}</span></div>
+      <div class="riskrow"><span>1 · Exposure outside authorized countries</span><b>${risk.authPts} / 40</b></div>
+      <div class="riskrow"><span>2 · Data sensitivity</span><b>${risk.dataPts} / 30</b></div>
+      <div class="riskrow"><span>3 · OSINT flags</span><b>${risk.osintPts} / 20</b></div>
+      <div class="riskrow"><span>4 · Changed since authorized</span><b>${risk.sincePts} / 10</b></div>
+    </div>
 
-    <h3>Reconciliations</h3>
+    <h3>1 · Where you authorized processing</h3>
+    ${authEditorHTML(v)}
+
+    <h3>2 · What kind of data this vendor processes</h3>
+    ${classificationHTML(v)}
+
+    <h3>3 · Is anything fishy in the OSINT</h3>
     ${v.crosschecks.length
       ? v.crosschecks.map(reconCard).join("")
       : `<p class="note">Nothing to reconcile from the sources collected. That is a clean pass on
          these checks, not a clean bill of health — re-run and compare.</p>`}
 
+    <h3>4 · Has anything changed since you authorized this</h3>
+    ${driftHTML(v)}
+
     <h3>Documents tracked</h3>
     ${docsTable(v)}
 
     <h3>Open roles by country</h3>
-    ${geoHTML(v.jobs)}`;
+    ${geoHTML(v)}`;
+}
+
+function authEditorHTML(v) {
+  const va = vendorAllowed(v);
+  const since = vendorAuth(v).since || "";
+  const defaultSince = v.authorized_since_default || "";
+  return `
+    <div class="authbox" data-vid="${esc(v.id)}">
+      <div class="authrow">
+        <span class="eyebrow">Authorized in</span>
+        <div class="cchips">
+          ${allCountries().map(c => `
+            <button type="button" class="cchip vcchip ${va.has(c) ? "on" : ""}" data-country="${esc(c)}">
+              ${esc(c)}
+            </button>`).join("")}
+        </div>
+        ${vendorIsCustom(v) ? `<button type="button" class="linkbtn vreset">Reset to default</button>`
+          : `<span class="hint">Using your default allow-list — click a country to set a custom list for this vendor.</span>`}
+      </div>
+      <div class="authrow">
+        <label class="eyebrow" for="since-${esc(v.id)}">Authorized since</label>
+        <input type="date" id="since-${esc(v.id)}" class="vsince" value="${esc(since || defaultSince)}">
+        ${!since && defaultSince ? `<span class="hint">Suggested default — confirm or change it.</span>` : ""}
+      </div>
+    </div>`;
+}
+
+function wireAuthEditor(panel, v) {
+  const box = panel.querySelector(".authbox");
+  if (!box) return;
+  box.querySelectorAll(".vcchip").forEach(b => b.addEventListener("click", () => {
+    const current = new Set(vendorAllowed(v));
+    const c = b.dataset.country;
+    current.has(c) ? current.delete(c) : current.add(c);
+    setVendorCountries(v.id, [...current]);
+    render();
+  }));
+  const reset = box.querySelector(".vreset");
+  if (reset) reset.addEventListener("click", () => { clearVendorCountries(v.id); render(); });
+  const since = box.querySelector(".vsince");
+  if (since) since.addEventListener("change", e => { setVendorSince(v.id, e.target.value); render(); });
+}
+
+function classificationHTML(v) {
+  const tags = v.data_classification?.tags || [];
+  if (!tags.length) {
+    return `<p class="note">No specific data types were recognised in the text collected. That is a
+      reading of the wording, not a guarantee of what is actually processed.</p>`;
+  }
+  return `<div class="taglist">${tags.map(t => `
+    <div class="tagrow">
+      <span class="dtag ${t.sensitivity}">${esc(t.label)}</span>
+      <div class="tagbody">
+        <p class="tagwhy">${esc(t.why)}</p>
+        <p class="tagex">${esc(KIND_LABEL[t.source] || t.source)}: “${esc(t.excerpt)}”</p>
+      </div>
+    </div>`).join("")}</div>`;
 }
 
 function driftHTML(v) {
-  const events = v.drift || [];
+  const { since, changed, events, after } = driftSinceAuth(v);
   if (!events.length) {
     return `<p class="note">No wording changes detected in ${esc(KIND_LABEL.privacy)} or
       ${esc(KIND_LABEL.dpa).toLowerCase()} since tracking began. Re-run the collector on a later
       date to compare against today's snapshot.</p>`;
   }
-  return events.map(ev => `
-    <div class="drift">
+  const banner = since === null
+    ? `<p class="note sinceflag unset">No authorization date is recorded for this vendor yet — set one
+        above to see whether these changes happened before or after you approved it.</p>`
+    : changed
+    ? `<p class="note sinceflag changed">${after.length} of ${events.length} change${events.length === 1 ? "" : "s"}
+        happened on or after ${esc(since)}, the date you authorized this vendor.</p>`
+    : `<p class="note sinceflag clear">All ${events.length} tracked change${events.length === 1 ? "" : "s"}
+        happened before ${esc(since)}, the date you authorized this vendor.</p>`;
+  return banner + events.map(ev => `
+    <div class="drift ${since !== null && ev.date >= since ? "postauth" : ""}">
       <div class="drift-top">
         <span class="drift-doc">${esc(ev.document_label)}</span>
         <span class="drift-date mono">${esc(ev.date)}</span>
+        ${since !== null && ev.date >= since ? `<span class="dchip">after authorization</span>` : ""}
         ${ev.url ? `<a href="${esc(ev.url)}" target="_blank" rel="noopener">source</a>` : ""}
       </div>
       ${ev.hunks.map(h => `
@@ -371,7 +565,9 @@ function docsTable(v) {
     }).join("")}</tbody></table>`;
 }
 
-function geoHTML(jobs) {
+function geoHTML(v) {
+  const jobs = v.jobs;
+  const va = vendorAllowed(v);
   if (!jobs || !jobs.ok) {
     return `<p class="note">The job board did not answer (${esc(jobs && jobs.reason || "unknown")}).</p>`;
   }
@@ -382,17 +578,16 @@ function geoHTML(jobs) {
       a role sits in is a finding in itself.</p>`;
   }
   const max = entries[0][1];
-  const outside = entries.reduce((n, [c, k]) => n + (allowed.has(c) ? 0 : k), 0);
+  const outside = entries.reduce((n, [c, k]) => n + (va.has(c) ? 0 : k), 0);
   return entries.map(([c, n]) => `
       <div class="geo">
-        <span class="who" title="${esc(c)}">${esc(c)}${allowed.has(c) ? "" : " ⚑"}</span>
-        <span><span class="bar ${allowed.has(c) ? "allowed" : "outside"}" style="width:${Math.max(3, (n / max) * 100)}%"></span></span>
+        <span class="who" title="${esc(c)}">${esc(c)}${va.has(c) ? "" : " ⚑"}</span>
+        <span><span class="bar ${va.has(c) ? "allowed" : "outside"}" style="width:${Math.max(3, (n / max) * 100)}%"></span></span>
         <span class="n">${n}</span>
       </div>`).join("") +
     `<p class="note" style="margin-top:12px">
       ${outside} of ${jobs.placeable} placeable roles (${Math.min(100, Math.round(100 * outside / jobs.placeable))}%)
-      are outside your allowed countries (${[...allowed].join(", ") || "none selected"}).
-      ⚑ marks a country outside the allow-list. Of these, ${jobs.non_eea} name no EEA site.
-      A posting naming several cities counts in each.
+      are outside the countries authorized for this vendor (${[...va].join(", ") || "none selected"}).
+      ⚑ marks a country outside that list. A posting naming several cities counts in each.
     </p>`;
 }
