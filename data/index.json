@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T19:12:02+00:00",
+  "generated_at": "2026-08-02T22:25:45+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -105,8 +105,11 @@
           "sha256": "e29848accd9e38b9",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "skipped"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2024-02-25",
+            "last": "2025-11-02"
           }
         },
         {
@@ -118,8 +121,11 @@
           "sha256": "8dac92944a88d6dd",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "skipped"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2024-02-25",
+            "last": "2026-03-08"
           }
         },
         {
@@ -131,8 +137,11 @@
           "sha256": "85c78c93175ffb26",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "skipped"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2024-02-21",
+            "last": "2026-03-20"
           }
         },
         {
@@ -143,9 +152,13 @@
           "chars": 1,
           "sha256": null,
           "note": "published but not extractable as text (client-rendered)",
+          "diff": null,
           "archive": {
-            "ok": false,
-            "reason": "skipped"
+            "ok": true,
+            "captures": 57,
+            "revisions": 56,
+            "first": "2024-09-26",
+            "last": "2026-08-01"
           }
         },
         {
@@ -157,8 +170,11 @@
           "sha256": "cc6e6d21a41fed8e",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "skipped"
+            "ok": true,
+            "captures": 5,
+            "revisions": 4,
+            "first": "2026-07-14",
+            "last": "2026-08-02"
           }
         }
       ],
@@ -182,7 +198,7 @@
           "Germany": 2,
           "France": 2
         },
-        "scanned": 20,
+        "scanned": 26,
         "signals": [
           {
             "key": "follow_the_sun",
@@ -197,6 +213,22 @@
                 "url": "https://job-boards.greenhouse.io/anthropic/jobs/5311686008",
                 "matched": "follow-the-sun",
                 "excerpt": "regional security controls Provide after-hours coverage and structured handoffs to US-based teams as part of follow-the-sun security operations Minimum qualifications Hands-on experience administering enterprise physical security sys"
+              }
+            ]
+          },
+          {
+            "key": "oncall",
+            "label": "On-call access",
+            "severity": "high",
+            "why": "Out-of-hours production access, granted broadly and audited thinly.",
+            "count": 1,
+            "examples": [
+              {
+                "title": "Data Engineer, Safeguards",
+                "location": "San Francisco, CA | New York City, NY",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5240422008",
+                "matched": "on call",
+                "excerpt": "d role Comfort contributing across the stack and picking up work outside your immediate scope when the situation calls for it Background in trust and safety, integrity, fraud, or abuse detection data systems Experience with lar"
               }
             ]
           },
@@ -229,6 +261,22 @@
                 "url": "https://job-boards.greenhouse.io/anthropic/jobs/5227641008",
                 "matched": "data residency",
                 "excerpt": "ow do MCP, autonomous agents, and RBAC work together? How do you deploy frontier models in line with GDPR, EU data residency, and the EU AI Act? If working at the intersection of AI adoption and regulated industries excites you, this"
+              }
+            ]
+          },
+          {
+            "key": "named_tooling",
+            "label": "Named internal tooling",
+            "severity": "low",
+            "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
+            "count": 1,
+            "examples": [
+              {
+                "title": "Data Engineer, Safeguards",
+                "location": "San Francisco, CA | New York City, NY",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5240422008",
+                "matched": "Snowflake",
+                "excerpt": "e building and maintaining ETL/ELT pipelines Experience with cloud data platforms such as BigQuery, Redshift, Snowflake, or similar Experience with modern data stack tools such as dbt, Airflow, Spark, or similar orchestration and"
               }
             ]
           }
@@ -269,7 +317,7 @@
           "rule": "access_vs_rotation",
           "severity": "medium",
           "headline": "Restricted-access language alongside global rotations",
-          "detail": "The documents describe access controls in principle, while postings describe follow-the-sun support, round-the-clock coverage. Both can be true; the reconciliation is what a reviewer needs to see.",
+          "detail": "The documents describe access controls in principle, while postings describe follow-the-sun support, on-call access, round-the-clock coverage. Both can be true; the reconciliation is what a reviewer needs to see.",
           "claim": {
             "kind": "terms",
             "text": "Recipient may only share Discloser’s Confidential Information to Recipient’s employees, agents, and advisors that have a need to know such Confidential Information and who are bound to obligations of confidentiality at least as protective as those provided in these Terms (",
@@ -304,12 +352,13 @@
         }
       ],
       "score": {
-        "total": 60,
+        "total": 40,
         "footprint": 24,
-        "access": 7,
+        "access": 12,
         "transparency": 4,
-        "record": 25
-      }
+        "record": 0
+      },
+      "drift": []
     },
     {
       "id": "cloudflare",
@@ -329,7 +378,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "skipped"
+            "reason": "ConnectionError"
           }
         },
         {
@@ -342,7 +391,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "skipped"
+            "reason": "ConnectionError"
           }
         },
         {
@@ -355,7 +404,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "skipped"
+            "reason": "ConnectionError"
           }
         },
         {
@@ -367,8 +416,11 @@
           "sha256": "253254e28bc2ff29",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "skipped"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2021-05-16",
+            "last": "2025-10-08"
           }
         }
       ],
@@ -384,14 +436,14 @@
           "United States": 2,
           "Japan": 1
         },
-        "scanned": 20,
+        "scanned": 26,
         "signals": [
           {
             "key": "oncall",
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 7,
+            "count": 9,
             "examples": [
               {
                 "title": "Distributed Systems Engineer, Analytical Database Platform",
@@ -479,6 +531,36 @@
             ]
           },
           {
+            "key": "named_tooling",
+            "label": "Named internal tooling",
+            "severity": "low",
+            "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
+            "count": 3,
+            "examples": [
+              {
+                "title": "Field Solutions Engineer Brazil (US based)",
+                "location": "Hybrid",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/7975427?gh_jid=7975427",
+                "matched": "Salesforce",
+                "excerpt": "l velocity in enterprise accounts. Maintain a strong presence in opportunity reviews and pipeline management (Salesforce). Customer Advisory &amp; Strategic Guidance: Partner with existing clients as a dedicated account advisor, p"
+              },
+              {
+                "title": "Principal Engineer - GTM Data Platform",
+                "location": "Hybrid",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8054669?gh_jid=8054669",
+                "matched": "Snowflake",
+                "excerpt": "h a focus on enabling GTM organizations. Columnar/OLAP or lakehouse experience (ClickHouse, DuckDB, BigQuery, Snowflake, Iceberg, Starrocks).Familiarity with the Salesforce data model and CRM/API integrations. Familiarity with de"
+              },
+              {
+                "title": "Principal Sales Operations & Strategy Manager - Renewals & Business Development Teams",
+                "location": "Hybrid",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8036837?gh_jid=8036837",
+                "matched": "Salesforce",
+                "excerpt": "ge of A/B testing, predictive modeling, or machine learning basics Familiarity with CRM or ERP systems (e.g., Salesforce, SAP) &nbsp; What Makes Cloudflare Special? We’re not just a highly ambitious, large-scale technology company"
+              }
+            ]
+          },
+          {
             "key": "gov_enclave",
             "label": "Government enclave",
             "severity": "low",
@@ -495,18 +577,18 @@
             ]
           },
           {
-            "key": "named_tooling",
-            "label": "Named internal tooling",
+            "key": "sovereignty_work",
+            "label": "Sovereignty workstream",
             "severity": "low",
-            "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
+            "why": "They are staffing the problem, which is a good sign and an admission it is open.",
             "count": 1,
             "examples": [
               {
-                "title": "Field Solutions Engineer Brazil (US based)",
+                "title": "Principal Solutions Architect - APAC",
                 "location": "Hybrid",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/7975427?gh_jid=7975427",
-                "matched": "Salesforce",
-                "excerpt": "l velocity in enterprise accounts. Maintain a strong presence in opportunity reviews and pipeline management (Salesforce). Customer Advisory &amp; Strategic Guidance: Partner with existing clients as a dedicated account advisor, p"
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8040851?gh_jid=8040851",
+                "matched": "Sovereign",
+                "excerpt": "stomers' enterprise architects and engineering leadership. Translate industry trends like Zero Trust, Digital Sovereignty, AI workload security, cloud-to-edge migration into actionable architectural strategies tailored to each cu"
               }
             ]
           }
@@ -560,12 +642,13 @@
         }
       ],
       "score": {
-        "total": 75,
+        "total": 50,
         "footprint": 25,
         "access": 25,
         "transparency": 0,
-        "record": 25
-      }
+        "record": 0
+      },
+      "drift": []
     },
     {
       "id": "datadog",
@@ -584,8 +667,11 @@
           "sha256": "9da08ec768f6c700",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "skipped"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2017-06-30",
+            "last": "2025-04-25"
           }
         },
         {
@@ -597,8 +683,11 @@
           "sha256": "f4f4a18f47205c0a",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "skipped"
+            "ok": true,
+            "captures": 32,
+            "revisions": 31,
+            "first": "2022-05-28",
+            "last": "2026-04-21"
           }
         },
         {
@@ -610,8 +699,11 @@
           "sha256": "b5a9ad2baa6f3dd5",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "skipped"
+            "ok": true,
+            "captures": 19,
+            "revisions": 18,
+            "first": "2024-05-24",
+            "last": "2026-05-25"
           }
         }
       ],
@@ -652,7 +744,7 @@
           "Chile": 1,
           "South Africa": 1
         },
-        "scanned": 20,
+        "scanned": 26,
         "signals": [
           {
             "key": "oncall",
@@ -835,12 +927,13 @@
         }
       ],
       "score": {
-        "total": 65,
+        "total": 40,
         "footprint": 20,
         "access": 20,
         "transparency": 0,
-        "record": 25
-      }
+        "record": 0
+      },
+      "drift": []
     },
     {
       "id": "stripe",
@@ -859,8 +952,11 @@
           "sha256": "ff0e2b002da0ad9f",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "skipped"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2008-07-19",
+            "last": "2020-05-01"
           }
         },
         {
@@ -872,8 +968,11 @@
           "sha256": "92101146b860c664",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "skipped"
+            "ok": true,
+            "captures": 214,
+            "revisions": 213,
+            "first": "2022-05-27",
+            "last": "2026-07-29"
           }
         },
         {
@@ -885,8 +984,11 @@
           "sha256": "08c0eec1eefcd1e4",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "skipped"
+            "ok": true,
+            "captures": 90,
+            "revisions": 89,
+            "first": "2022-12-05",
+            "last": "2026-07-29"
           }
         }
       ],
@@ -921,7 +1023,7 @@
           "Italy": 1,
           "Thailand": 1
         },
-        "scanned": 20,
+        "scanned": 26,
         "signals": [
           {
             "key": "travel",
@@ -983,7 +1085,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 2,
+            "count": 3,
             "examples": [
               {
                 "title": "AI Specialist, Treasury Finance Operations",
@@ -998,6 +1100,13 @@
                 "url": "https://stripe.com/jobs/search?gh_jid=8059784",
                 "matched": "segment",
                 "excerpt": "closure of Stripe’s sold portfolio. The team's reach is widespread across Stripe, not exclusive to one sales segment or geographical region. GBS drives change across go-to-market, positively impacting Stripe users, and cross-f"
+              },
+              {
+                "title": "Consumer Operations, Program Manager",
+                "location": "New York, NY",
+                "url": "https://stripe.com/jobs/search?gh_jid=8074923",
+                "matched": "Salesforce",
+                "excerpt": "ate operational needs into technical requirements. 1 year experience with CRM and support platforms including Salesforce, Case Studio, and CRV, including designing and implementing automations, workflows, and routing logic to redu"
               }
             ]
           }
@@ -1064,12 +1173,13 @@
         }
       ],
       "score": {
-        "total": 63,
+        "total": 39,
         "footprint": 21,
-        "access": 17,
+        "access": 18,
         "transparency": 0,
-        "record": 25
-      }
+        "record": 0
+      },
+      "drift": []
     },
     {
       "id": "figma",
@@ -1088,8 +1198,11 @@
           "sha256": "6e2b46ec94fc52f7",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "skipped"
+            "ok": true,
+            "captures": 264,
+            "revisions": 263,
+            "first": "2024-01-18",
+            "last": "2026-08-01"
           }
         },
         {
@@ -1102,7 +1215,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "skipped"
+            "reason": "ConnectionError"
           }
         },
         {
@@ -1115,7 +1228,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "skipped"
+            "reason": "ConnectionError"
           }
         }
       ],
@@ -1139,14 +1252,14 @@
           "India": 3,
           "Ireland": 1
         },
-        "scanned": 20,
+        "scanned": 26,
         "signals": [
           {
             "key": "anywhere",
             "label": "Location-agnostic hiring",
             "severity": "high",
             "why": "Staff placement is unconstrained, so staff location relative to your data is too.",
-            "count": 20,
+            "count": 26,
             "examples": [
               {
                 "title": "Associate Solutions Consultant",
@@ -1168,6 +1281,36 @@
                 "url": "https://boards.greenhouse.io/figma/jobs/6123890004?gh_jid=6123890004",
                 "matched": "from anywhere in the world",
                 "excerpt": "om idea to product, Figma empowers teams to streamline workflows, move faster, and work together in real time from anywhere in the world. If you're excited to shape the future of design and collaboration, join us! As a member of our Customer Oper"
+              }
+            ]
+          },
+          {
+            "key": "distributed",
+            "label": "Distributed across time zones",
+            "severity": "high",
+            "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
+            "count": 3,
+            "examples": [
+              {
+                "title": "Manager, Software Engineering - Storage Platform",
+                "location": "San Francisco, CA • New York, NY • United States",
+                "url": "https://boards.greenhouse.io/figma/jobs/6084344004?gh_jid=6084344004",
+                "matched": "distributed team",
+                "excerpt": "ions, navigated difficult performance conversations, and built teams that people want to join Comfort leading distributed teams across multiple time zones While it’s not required, it’s an added plus if you also have: Experience managing"
+              },
+              {
+                "title": "Manager, Solutions Consultant (London, United Kingdom)",
+                "location": "London, England",
+                "url": "https://boards.greenhouse.io/figma/jobs/6111591004?gh_jid=6111591004",
+                "matched": "across multiple time zones",
+                "excerpt": "not required, it’s an added plus if you also have: Experience using or working with Figma Experience working across multiple time zones At Figma, one of our values is Grow as you go. We believe in hiring smart, curious people who are excited to"
+              },
+              {
+                "title": "Manager, Solutions Consulting",
+                "location": "San Francisco, CA • New York, NY • United States",
+                "url": "https://boards.greenhouse.io/figma/jobs/5697641004?gh_jid=5697641004",
+                "matched": "across multiple time zones",
+                "excerpt": "red, it’s an added plus if you also have: Practical experience using or working with Figma Experience working across multiple time zones&nbsp; Knowledge of light scripting, querying, or prototyping At Figma, one of our values is Grow as you go. W"
               }
             ]
           },
@@ -1195,27 +1338,11 @@
             ]
           },
           {
-            "key": "distributed",
-            "label": "Distributed across time zones",
-            "severity": "high",
-            "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 1,
-            "examples": [
-              {
-                "title": "Manager, Software Engineering - Storage Platform",
-                "location": "San Francisco, CA • New York, NY • United States",
-                "url": "https://boards.greenhouse.io/figma/jobs/6084344004?gh_jid=6084344004",
-                "matched": "distributed team",
-                "excerpt": "ions, navigated difficult performance conversations, and built teams that people want to join Comfort leading distributed teams across multiple time zones While it’s not required, it’s an added plus if you also have: Experience managing"
-              }
-            ]
-          },
-          {
             "key": "named_tooling",
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 4,
+            "count": 6,
             "examples": [
               {
                 "title": "Associate Solutions Consultant",
@@ -1298,12 +1425,13 @@
         }
       ],
       "score": {
-        "total": 73,
+        "total": 48,
         "footprint": 23,
         "access": 25,
         "transparency": 0,
-        "record": 25
-      }
+        "record": 0
+      },
+      "drift": []
     },
     {
       "id": "gitlab",
@@ -1322,8 +1450,11 @@
           "sha256": "f5448664493a7f16",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "skipped"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2015-04-16",
+            "last": "2026-02-17"
           }
         },
         {
@@ -1335,8 +1466,11 @@
           "sha256": "b9e8de6a4bacb426",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "skipped"
+            "ok": true,
+            "captures": 76,
+            "revisions": 75,
+            "first": "2020-11-27",
+            "last": "2026-07-07"
           }
         },
         {
@@ -1347,9 +1481,13 @@
           "chars": 302,
           "sha256": null,
           "note": "published but not extractable as text (client-rendered)",
+          "diff": null,
           "archive": {
-            "ok": false,
-            "reason": "skipped"
+            "ok": true,
+            "captures": 23,
+            "revisions": 22,
+            "first": "2023-11-29",
+            "last": "2026-07-07"
           }
         }
       ],
@@ -1386,14 +1524,14 @@
           "Switzerland": 1,
           "Philippines": 1
         },
-        "scanned": 20,
+        "scanned": 26,
         "signals": [
           {
             "key": "distributed",
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 7,
+            "count": 12,
             "examples": [
               {
                 "title": "Commercial Legal Counsel, Public Sector ",
@@ -1423,7 +1561,7 @@
             "label": "Travel expected",
             "severity": "high",
             "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 3,
+            "count": 5,
             "examples": [
               {
                 "title": "Manager, Solutions Architect - Asia",
@@ -1453,7 +1591,7 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 1,
+            "count": 2,
             "examples": [
               {
                 "title": "Engineering Manager, Cell Infrastructure",
@@ -1461,6 +1599,13 @@
                 "url": "https://job-boards.greenhouse.io/gitlab/jobs/8615946002",
                 "matched": "on-call",
                 "excerpt": "o make unit economics part of the system design. Own the reliability model for cell infrastructure, including on-call practices, incident response, and postmortem follow-through. Partner with adjacent teams such as Git infrastr"
+              },
+              {
+                "title": "Senior Backend Engineer (Ruby), AI Engineering: Duo Agent Platform Tools",
+                "location": "Remote, Canada; Remote, United Kingdom",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8603839002",
+                "matched": "on-call",
+                "excerpt": "the bar for responsible AI integration and evidence-driven engineering across the team. Participate in Tier 2 on-call rotations to troubleshoot production issues, contribute to root cause analysis, and enhance observability and"
               }
             ]
           },
@@ -1485,7 +1630,7 @@
             "label": "Government enclave",
             "severity": "low",
             "why": "A separate sovereign estate exists, which confirms the commercial one is not it.",
-            "count": 20,
+            "count": 26,
             "examples": [
               {
                 "title": "Commercial Legal Counsel, Public Sector ",
@@ -1515,7 +1660,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 9,
+            "count": 10,
             "examples": [
               {
                 "title": "Customer Success Architect",
@@ -1624,12 +1769,13 @@
         }
       ],
       "score": {
-        "total": 75,
+        "total": 50,
         "footprint": 21,
         "access": 25,
         "transparency": 4,
-        "record": 25
-      }
+        "record": 0
+      },
+      "drift": []
     },
     {
       "id": "elastic",
@@ -1648,8 +1794,11 @@
           "sha256": "5369d10f45a8d597",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "skipped"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2018-05-23",
+            "last": "2026-02-01"
           }
         }
       ],
@@ -1689,14 +1838,14 @@
           "Switzerland": 1,
           "Denmark": 1
         },
-        "scanned": 20,
+        "scanned": 26,
         "signals": [
           {
             "key": "distributed",
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 4,
+            "count": 6,
             "examples": [
               {
                 "title": "AI Security - Principal Security Research Engineer I",
@@ -1722,6 +1871,29 @@
             ]
           },
           {
+            "key": "travel",
+            "label": "Travel expected",
+            "severity": "high",
+            "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
+            "count": 2,
+            "examples": [
+              {
+                "title": "Principal AI Ecosystem Architect - OpenAI/Anthropic",
+                "location": "Washington, United States",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8065489&gh_jid=8065489",
+                "matched": "Willingness to travel",
+                "excerpt": "ve presenting at a developer conference and working through an architecture question with a partner engineer. Willingness to travel 30% to partner offices, events, and conferences. Bonus Points Direct experience working with OpenAI and/or An"
+              },
+              {
+                "title": "Principal AI Ecosystem Architect - OpenAI/Anthropic",
+                "location": "San Francisco, CA",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8047165&gh_jid=8047165",
+                "matched": "Willingness to travel",
+                "excerpt": "ve presenting at a developer conference and working through an architecture question with a partner engineer. Willingness to travel 30% to partner offices, events, and conferences. Bonus Points Direct experience working with OpenAI and/or An"
+              }
+            ]
+          },
+          {
             "key": "oncall",
             "label": "On-call access",
             "severity": "high",
@@ -1742,7 +1914,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 4,
+            "count": 6,
             "examples": [
               {
                 "title": "Cloud Billing Associate",
@@ -1772,7 +1944,7 @@
             "label": "Government enclave",
             "severity": "low",
             "why": "A separate sovereign estate exists, which confirms the commercial one is not it.",
-            "count": 1,
+            "count": 2,
             "examples": [
               {
                 "title": "Fullstack Software Engineer II - Admin UX - Platform Applications",
@@ -1780,6 +1952,13 @@
                 "url": "https://jobs.elastic.co/jobs?gh_jid=8077634&gh_jid=8077634",
                 "matched": "Impact Level",
                 "excerpt": "mentor peers, and work successfully with product and design. Eligible to work in Department of Defense (DoD) Impact Level 4 or above cloud service environments. &nbsp; Compensation for this role is in the form of base salary.&nbsp;"
+              },
+              {
+                "title": "Principal Software Developer - Security - Elasticsearch",
+                "location": "Canada",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8082617&gh_jid=8082617",
+                "matched": "FedRAMP",
+                "excerpt": "to quantum-resistant cryptographic algorithms. Hands-on experience mapping engine-level technical controls to FedRAMP (Moderate/High), FIPS 140, and SOC 2 requirements. Experience working on the internals of a data store or sea"
               }
             ]
           }
@@ -1797,12 +1976,13 @@
         }
       ],
       "score": {
-        "total": 82,
+        "total": 58,
         "footprint": 16,
-        "access": 24,
+        "access": 25,
         "transparency": 17,
-        "record": 25
-      }
+        "record": 0
+      },
+      "drift": []
     },
     {
       "id": "vercel",
@@ -1822,7 +2002,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "skipped"
+            "reason": "ConnectionError"
           }
         },
         {
@@ -1835,7 +2015,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "skipped"
+            "reason": "ConnectionError"
           }
         }
       ],
@@ -1973,7 +2153,8 @@
         "access": 17,
         "transparency": 8,
         "record": 25
-      }
+      },
+      "drift": []
     }
   ]
 }
