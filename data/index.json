@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T22:25:45+00:00",
+  "generated_at": "2026-08-02T23:29:42+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -351,14 +351,6 @@
           "question": "Can you provide the sub-processor list in a durable format, and commit to advance notice of changes in the contract rather than on a web page?"
         }
       ],
-      "score": {
-        "total": 40,
-        "footprint": 24,
-        "access": 12,
-        "transparency": 4,
-        "record": 0
-      },
-      "drift": [],
       "data_classification": {
         "tags": [
           {
@@ -409,7 +401,15 @@
         ],
         "max_sensitivity": "high",
         "sensitivity_score": 30
-      }
+      },
+      "score": {
+        "total": 40,
+        "footprint": 24,
+        "access": 12,
+        "transparency": 4,
+        "record": 0
+      },
+      "drift": []
     },
     {
       "id": "cloudflare",
@@ -429,7 +429,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -442,7 +442,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -455,7 +455,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "ReadTimeout"
           }
         },
         {
@@ -467,11 +467,8 @@
           "sha256": "253254e28bc2ff29",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2021-05-16",
-            "last": "2025-10-08"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         }
       ],
@@ -692,14 +689,6 @@
           "question": "For out-of-hours incidents, who is on the rotation, where are they, and is their access to customer data logged and reviewable by the customer?"
         }
       ],
-      "score": {
-        "total": 50,
-        "footprint": 25,
-        "access": 25,
-        "transparency": 0,
-        "record": 0
-      },
-      "drift": [],
       "data_classification": {
         "tags": [
           {
@@ -732,7 +721,15 @@
         ],
         "max_sensitivity": "medium",
         "sensitivity_score": 20
-      }
+      },
+      "score": {
+        "total": 75,
+        "footprint": 25,
+        "access": 25,
+        "transparency": 0,
+        "record": 25
+      },
+      "drift": []
     },
     {
       "id": "datadog",
@@ -1010,14 +1007,6 @@
           "question": "Is Segment a sub-processor? If it is, when was it added to the list, and were customers notified? If it never touches customer data, what is it used for?"
         }
       ],
-      "score": {
-        "total": 40,
-        "footprint": 20,
-        "access": 20,
-        "transparency": 0,
-        "record": 0
-      },
-      "drift": [],
       "data_classification": {
         "tags": [
           {
@@ -1059,7 +1048,15 @@
         ],
         "max_sensitivity": "medium",
         "sensitivity_score": 20
-      }
+      },
+      "score": {
+        "total": 40,
+        "footprint": 20,
+        "access": 20,
+        "transparency": 0,
+        "record": 0
+      },
+      "drift": []
     },
     {
       "id": "stripe",
@@ -1298,14 +1295,6 @@
           "question": "Is Segment a sub-processor? If it is, when was it added to the list, and were customers notified? If it never touches customer data, what is it used for?"
         }
       ],
-      "score": {
-        "total": 39,
-        "footprint": 21,
-        "access": 18,
-        "transparency": 0,
-        "record": 0
-      },
-      "drift": [],
       "data_classification": {
         "tags": [
           {
@@ -1313,18 +1302,9 @@
             "label": "Biometric data",
             "sensitivity": "high",
             "why": "Biometric identifiers are irrevocable if exposed -- a special category under GDPR Article 9.",
-            "source": "dpa",
-            "matched": "facial recognition",
-            "excerpt": "If applicable, Stripe may Process Sensitive Data (e.g., facial recognition data)."
-          },
-          {
-            "key": "special_category",
-            "label": "Special-category data (GDPR Art. 9)",
-            "sensitivity": "high",
-            "why": "GDPR's own list of special categories -- the highest bar for lawful processing.",
-            "source": "dpa",
-            "matched": "sexual orientation",
-            "excerpt": "(a) Personal Data that is genetic data, biometric data, data concerning health, a natural person's sex life or sexual orientation;"
+            "source": "privacy",
+            "matched": "biometric",
+            "excerpt": "You can separately consent to us using your biometric data to enhance our verification technology, with the option to revoke your consent at any time."
           },
           {
             "key": "government_id",
@@ -1336,13 +1316,22 @@
             "excerpt": "• Social Security Number"
           },
           {
+            "key": "special_category",
+            "label": "Special-category data (GDPR Art. 9)",
+            "sensitivity": "high",
+            "why": "GDPR's own list of special categories -- the highest bar for lawful processing.",
+            "source": "dpa",
+            "matched": "sexual orientation",
+            "excerpt": "(a) Personal Data that is genetic data, biometric data, data concerning health, a natural person's sex life or sexual orientation;"
+          },
+          {
             "key": "financial",
             "label": "Financial / payment data",
             "sensitivity": "medium",
             "why": "Card or bank details -- a breach here has direct financial consequences for the data subject.",
-            "source": "dpa",
-            "matched": "bank account",
-            "excerpt": "If applicable, Stripe may Process Payment Method Account Details, bank account details, billing/shipping address, name, order description (including date, time, amount, product or service description), device ID, email address, IP address/location, order ID, payment card details, tax ID/status, unique customer identifier, identity information including government issued documents (e.g., national IDs, driver’s licenses and passports)."
+            "source": "privacy",
+            "matched": "Credit Card",
+            "excerpt": "“Services” refers to the products, services, devices, and applications that we provide under the Stripe Services Agreement or the Stripe Credit Card Terms of Service (collectively, “Business Services”), or the Stripe Consumer Terms of Service (“End User Services”); websites (“Sites”) like Stripe.com and Link.com; and other Stripe applications and online services."
           },
           {
             "key": "precise_location",
@@ -1354,15 +1343,6 @@
             "excerpt": "(c) geolocation data; or (d) sensitive personal information as defined under the CCPA."
           },
           {
-            "key": "account_usage",
-            "label": "Account & usage data",
-            "sensitivity": "low",
-            "why": "Login activity, device and session data -- routine telemetry, not by itself sensitive.",
-            "source": "dpa",
-            "matched": "IP address",
-            "excerpt": "If applicable, Stripe may Process Payment Method Account Details, bank account details, billing/shipping address, name, order description (including date, time, amount, product or service description), device ID, email address, IP address/location, order ID, payment card details, tax ID/status, unique customer identifier, identity information including government issued documents (e.g., national IDs, driver’s licenses and passports)."
-          },
-          {
             "key": "business_contact",
             "label": "Business contact information",
             "sensitivity": "low",
@@ -1370,11 +1350,28 @@
             "source": "privacy",
             "matched": "name, email",
             "excerpt": "Some Transaction Data is Personal Data and may include: your name, email address, contact number, billing and shipping address, payment method information (like credit or debit card number, bank or payment method account details, or payment card image chosen by you), merchant and location details, amount and date of purchase, information about payment status, and in some instances, information about what was purchased, order fulfillment status, subscription status, applicable tax amounts, refund or chargeback information, and support interactions."
+          },
+          {
+            "key": "account_usage",
+            "label": "Account & usage data",
+            "sensitivity": "low",
+            "why": "Login activity, device and session data -- routine telemetry, not by itself sensitive.",
+            "source": "privacy",
+            "matched": "IP address",
+            "excerpt": "“Personal Data” refers to any information associated with an identified or identifiable individual, which can include data that you provide to us, and that we collect about you during your interaction with our Services (such as device information, IP address, etc.)."
           }
         ],
         "max_sensitivity": "high",
         "sensitivity_score": 30
-      }
+      },
+      "score": {
+        "total": 39,
+        "footprint": 21,
+        "access": 18,
+        "transparency": 0,
+        "record": 0
+      },
+      "drift": []
     },
     {
       "id": "figma",
@@ -1409,8 +1406,11 @@
           "sha256": "83d4724d698d19da",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 14,
+            "revisions": 13,
+            "first": "2025-04-01",
+            "last": "2026-06-20"
           }
         },
         {
@@ -1422,8 +1422,11 @@
           "sha256": "353ed2dd03d07132",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 81,
+            "revisions": 80,
+            "first": "2019-04-01",
+            "last": "2026-07-28"
           }
         }
       ],
@@ -1619,14 +1622,6 @@
           "question": "Which roles can access production data, and from which countries? Does the residency commitment cover support and engineering access, or only data at rest?"
         }
       ],
-      "score": {
-        "total": 48,
-        "footprint": 23,
-        "access": 25,
-        "transparency": 0,
-        "record": 0
-      },
-      "drift": [],
       "data_classification": {
         "tags": [
           {
@@ -1670,9 +1665,9 @@
             "label": "Business contact information",
             "sensitivity": "low",
             "why": "Names, work emails and similar identifiers -- present in nearly every SaaS privacy policy.",
-            "source": "dpa",
-            "matched": "contact information",
-            "excerpt": "In Table 1 of the UK Addendum, Customer’s and Figma’s details and key contact information are set forth in Annex I – List of Parties to this"
+            "source": "privacy",
+            "matched": "name, email",
+            "excerpt": "When you create a Figma account, we collect the personal information you provide to us, such as your name, email address, personal website, and picture."
           },
           {
             "key": "account_usage",
@@ -1686,7 +1681,15 @@
         ],
         "max_sensitivity": "high",
         "sensitivity_score": 30
-      }
+      },
+      "score": {
+        "total": 48,
+        "footprint": 23,
+        "access": 25,
+        "transparency": 0,
+        "record": 0
+      },
+      "drift": []
     },
     {
       "id": "gitlab",
@@ -2023,14 +2026,6 @@
           "question": "Is Segment a sub-processor? If it is, when was it added to the list, and were customers notified? If it never touches customer data, what is it used for?"
         }
       ],
-      "score": {
-        "total": 50,
-        "footprint": 21,
-        "access": 25,
-        "transparency": 4,
-        "record": 0
-      },
-      "drift": [],
       "data_classification": {
         "tags": [
           {
@@ -2081,7 +2076,15 @@
         ],
         "max_sensitivity": "high",
         "sensitivity_score": 30
-      }
+      },
+      "score": {
+        "total": 50,
+        "footprint": 21,
+        "access": 25,
+        "transparency": 4,
+        "record": 0
+      },
+      "drift": []
     },
     {
       "id": "elastic",
@@ -2281,14 +2284,6 @@
           "question": "Where is the current sub-processor list published, and how are customers notified before a new one is added?"
         }
       ],
-      "score": {
-        "total": 58,
-        "footprint": 16,
-        "access": 25,
-        "transparency": 17,
-        "record": 0
-      },
-      "drift": [],
       "data_classification": {
         "tags": [
           {
@@ -2321,7 +2316,15 @@
         ],
         "max_sensitivity": "medium",
         "sensitivity_score": 20
-      }
+      },
+      "score": {
+        "total": 58,
+        "footprint": 16,
+        "access": 25,
+        "transparency": 17,
+        "record": 0
+      },
+      "drift": []
     },
     {
       "id": "vercel",
@@ -2340,8 +2343,11 @@
           "sha256": "245c0fd1c2ba7f7c",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 10,
+            "revisions": 9,
+            "first": "2026-06-08",
+            "last": "2026-07-28"
           }
         },
         {
@@ -2354,7 +2360,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "ConnectTimeout"
           }
         }
       ],
@@ -2486,14 +2492,6 @@
           "question": "For out-of-hours incidents, who is on the rotation, where are they, and is their access to customer data logged and reviewable by the customer?"
         }
       ],
-      "score": {
-        "total": 72,
-        "footprint": 22,
-        "access": 17,
-        "transparency": 8,
-        "record": 25
-      },
-      "drift": [],
       "data_classification": {
         "tags": [
           {
@@ -2510,32 +2508,40 @@
             "label": "Financial / payment data",
             "sensitivity": "medium",
             "why": "Card or bank details -- a breach here has direct financial consequences for the data subject.",
-            "source": "dpa",
-            "matched": "payment information",
-            "excerpt": "means the Personal Data that Vercel Processes as a controller, such as account information, payment information, and event attendee information."
+            "source": "privacy",
+            "matched": "payment card",
+            "excerpt": "We collect payment and other transactional information related to our Services, such as hashed payment card values and billing address."
           },
           {
             "key": "business_contact",
             "label": "Business contact information",
             "sensitivity": "low",
             "why": "Names, work emails and similar identifiers -- present in nearly every SaaS privacy policy.",
-            "source": "dpa",
-            "matched": "name, email",
-            "excerpt": "Vercel processes Personal Data within Service-Generated Data and/or Contact Data, such as name, email address, phone number, account preferences, and content of communications with Support Services."
+            "source": "privacy",
+            "matched": "name and email",
+            "excerpt": "We may collect or receive information directly from you, such as your name and email address when you or your organization sign up for our Services or Marketing Activities."
           },
           {
             "key": "account_usage",
             "label": "Account & usage data",
             "sensitivity": "low",
             "why": "Login activity, device and session data -- routine telemetry, not by itself sensitive.",
-            "source": "dpa",
-            "matched": "usage data",
-            "excerpt": "means usage data and metadata that is generated through the use of the Services, including data generated through the use of Support Services."
+            "source": "privacy",
+            "matched": "IP address",
+            "excerpt": "In other cases, we receive information through your use of our Services, such as IP address and telemetry data."
           }
         ],
         "max_sensitivity": "high",
         "sensitivity_score": 30
-      }
+      },
+      "score": {
+        "total": 63,
+        "footprint": 22,
+        "access": 17,
+        "transparency": 8,
+        "record": 16
+      },
+      "drift": []
     }
   ]
 }
