@@ -17,6 +17,7 @@ Nothing here needs credentials. Every source is public.
 from __future__ import annotations
 
 import argparse
+import difflib
 import hashlib
 import json
 import pathlib
@@ -37,6 +38,9 @@ import signals as sig_mod
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 SNAPSHOTS = DATA / "snapshots"
+DRIFT_LOG = DATA / "drift-log.json"
+MAX_HUNKS_PER_EVENT = 6
+MAX_LOG_EVENTS = 300
 
 UA = "sovereignty-drift/0.1 (public policy monitoring; +https://github.com/)"
 HEADERS = {"User-Agent": UA, "Accept-Language": "en"}
@@ -55,6 +59,14 @@ DOC_PATTERNS = [
 ]
 
 EXPECTED_KINDS = {"privacy", "dpa", "subprocessors"}
+
+DOC_LABEL = {
+    "privacy": "Privacy policy",
+    "dpa": "Data processing agreement",
+    "subprocessors": "Sub-processor list",
+    "terms": "Terms",
+    "other": "Other legal page",
+}
 
 log = lambda *a: print(*a, file=sys.stderr, flush=True)
 
@@ -186,10 +198,45 @@ def to_lines(text: str) -> str:
     return "\n".join(deduped) + "\n"
 
 
+def strip_header(text: str) -> str:
+    """Drop the two '# source / # collected' comment lines this collector writes."""
+    parts = text.split("\n\n", 1)
+    return parts[1] if len(parts) == 2 and parts[0].startswith("# source:") else text
+
+
+def diff_lines(old_body: str, new_body: str) -> list[dict]:
+    """Sentence-level before/after pairs for a wording change. One sentence per
+    line means a reworded clause is a 'replace' opcode of size 1-1 -- exactly the
+    quote a reviewer wants -- rather than a reflowed-paragraph diff."""
+    old_lines = [l for l in old_body.splitlines() if l.strip()]
+    new_lines = [l for l in new_body.splitlines() if l.strip()]
+    sm = difflib.SequenceMatcher(a=old_lines, b=new_lines, autojunk=False)
+    hunks = []
+    for op, i1, i2, j1, j2 in sm.get_opcodes():
+        if op == "equal":
+            continue
+        olds, news = old_lines[i1:i2], new_lines[j1:j2]
+        for k in range(max(len(olds), len(news))):
+            hunks.append(dict(
+                before=olds[k] if k < len(olds) else None,
+                after=news[k] if k < len(news) else None,
+            ))
+            if len(hunks) >= MAX_HUNKS_PER_EVENT:
+                return hunks
+    return hunks
+
+
 def write_snapshot(vendor_id: str, kind: str, url: str, body: str) -> dict:
     d = SNAPSHOTS / vendor_id
     d.mkdir(parents=True, exist_ok=True)
     path = d / f"{kind}.txt"
+
+    diff = None
+    if path.exists():
+        old_body = strip_header(path.read_text(encoding="utf-8"))
+        if old_body.strip() != body.strip():
+            diff = diff_lines(old_body, body)
+
     header = f"# source: {url}\n# collected: {datetime.now(timezone.utc).date().isoformat()}\n\n"
     path.write_text(header + body, encoding="utf-8")
     return dict(
@@ -199,7 +246,30 @@ def write_snapshot(vendor_id: str, kind: str, url: str, body: str) -> dict:
         lines=body.count("\n"),
         chars=len(body),
         sha256=hashlib.sha256(body.encode()).hexdigest()[:16],
+        diff=diff,
     )
+
+
+def load_drift_log(new_events: list[dict]) -> list[dict]:
+    """Merge this run's change events into the persisted log and write it back.
+
+    The log is the point: index.json only ever holds the current state, so
+    without this file 'what changed since two weeks ago' would not survive
+    past the next run."""
+    existing = []
+    if DRIFT_LOG.exists():
+        try:
+            existing = json.loads(DRIFT_LOG.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            existing = []
+
+    merged = {e["id"]: e for e in existing}
+    for e in new_events:
+        merged[e["id"]] = e
+
+    events = sorted(merged.values(), key=lambda e: e["date"], reverse=True)[:MAX_LOG_EVENTS]
+    DRIFT_LOG.write_text(json.dumps(events, indent=2, ensure_ascii=False))
+    return events
 
 
 # ----------------------------------------------------------------------------
@@ -378,6 +448,8 @@ def main():
 
     DATA.mkdir(exist_ok=True)
     rows = []
+    today = datetime.now(timezone.utc).date().isoformat()
+    new_events = []
 
     for v in vendors:
         log(f"\n[{v['id']}]")
@@ -392,12 +464,21 @@ def main():
                 # a headless browser. Record that rather than dropping the doc.
                 rec = dict(kind=doc["kind"], url=doc["url"], path=None, lines=0,
                            chars=len(body), sha256=None,
-                           note="published but not extractable as text (client-rendered)")
+                           note="published but not extractable as text (client-rendered)", diff=None)
                 log(f"    {doc['kind']}: client-rendered, no diffable text")
             else:
                 rec = write_snapshot(v["id"], doc["kind"], doc["url"], body)
                 rec["note"] = None
                 texts[doc["kind"]] = body
+                if rec["diff"]:
+                    new_events.append(dict(
+                        id=f"{v['id']}-{doc['kind']}-{today}",
+                        vendor_id=v["id"], vendor_name=v["name"],
+                        document=doc["kind"], document_label=DOC_LABEL.get(doc["kind"], doc["kind"]),
+                        date=today, url=rec["url"], hunks=rec["diff"],
+                    ))
+                    log(f"    {doc['kind']}: {len(rec['diff'])} line(s) changed since last run")
+                del rec["diff"]
             rec["archive"] = (dict(ok=False, reason="skipped") if args.skip_archive
                               else archive_history(doc["url"]))
             if not thin:
@@ -421,6 +502,13 @@ def main():
         log(f"    crosschecks: {len(row['crosschecks'])} "
             f"({', '.join(f['rule'] for f in row['crosschecks']) or 'none'})")
         rows.append(row)
+
+    drift_log = load_drift_log(new_events)
+    by_vendor: dict[str, list] = {}
+    for ev in drift_log:
+        by_vendor.setdefault(ev["vendor_id"], []).append(ev)
+    for row in rows:
+        row["drift"] = by_vendor.get(row["id"], [])[:6]
 
     index = dict(
         generated_at=datetime.now(timezone.utc).isoformat(timespec="seconds"),

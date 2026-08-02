@@ -72,7 +72,7 @@ jobs:
 
       - name: Commit
         run: |
-          git config user.name  "sovereignty-drift"
+          git config user.name  "data-drift-bot"
           git config user.email "actions@github.com"
           git add data
           if git diff --cached --quiet; then

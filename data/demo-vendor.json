@@ -1,0 +1,195 @@
+{
+  "id": "meridian-cloud-demo",
+  "name": "Meridian Cloud (demo)",
+  "category": "Cloud storage",
+  "hq": "United States",
+  "hq_iso": "US",
+  "site": "https://example.com/meridian-cloud",
+  "demo": true,
+  "docs": [
+    {
+      "kind": "privacy",
+      "url": "https://example.com/meridian-cloud/privacy-policy",
+      "path": "data/snapshots/meridian-cloud-demo/privacy.txt",
+      "lines": 6,
+      "chars": 546,
+      "sha256": "daa2ef85d43d5ee4",
+      "note": null,
+      "archive": {
+        "ok": false,
+        "reason": "skipped"
+      }
+    },
+    {
+      "kind": "dpa",
+      "url": "https://example.com/meridian-cloud/dpa",
+      "path": "data/snapshots/meridian-cloud-demo/dpa.txt",
+      "lines": 5,
+      "chars": 523,
+      "sha256": "17693c61eea66e0a",
+      "note": null,
+      "archive": {
+        "ok": false,
+        "reason": "skipped"
+      }
+    }
+  ],
+  "jobs": {
+    "ok": true,
+    "total": 80,
+    "placeable": 74,
+    "unplaceable": 6,
+    "eea": 8,
+    "non_eea": 66,
+    "countries": {
+      "United States": 38,
+      "India": 20,
+      "Canada": 8,
+      "Germany": 4,
+      "Ireland": 4
+    },
+    "scanned": 18,
+    "signals": [
+      {
+        "key": "customer_data",
+        "label": "Customer data in scope",
+        "severity": "high",
+        "why": "The posting says out loud that this seat touches your records.",
+        "count": 2,
+        "examples": [
+          {
+            "title": "Senior Support Engineer, Storage",
+            "location": "Toronto, Canada",
+            "url": "https://example.com/meridian-cloud/jobs/support-engineer-storage",
+            "matched": "access to customer data",
+            "excerpt": "this role has production access to customer data at scale and partners with SRE on incident response"
+          },
+          {
+            "title": "Site Reliability Engineer (Follow-the-Sun)",
+            "location": "Bengaluru, India",
+            "url": "https://example.com/meridian-cloud/jobs/sre-follow-the-sun",
+            "matched": "production access",
+            "excerpt": "carries production access as part of a follow-the-sun rotation across three regions"
+          }
+        ]
+      },
+      {
+        "key": "follow_the_sun",
+        "label": "Follow-the-sun support",
+        "severity": "high",
+        "why": "A rotation that hands the same production access around the globe every eight hours.",
+        "count": 1,
+        "examples": [
+          {
+            "title": "Site Reliability Engineer (Follow-the-Sun)",
+            "location": "Bengaluru, India",
+            "url": "https://example.com/meridian-cloud/jobs/sre-follow-the-sun",
+            "matched": "follow-the-sun",
+            "excerpt": "join a follow-the-sun rotation across three regions to maintain continuous production coverage and incident response for customer-facing storage systems"
+          }
+        ]
+      },
+      {
+        "key": "round_clock",
+        "label": "Round-the-clock coverage",
+        "severity": "medium",
+        "why": "Continuous coverage from one time zone is rare; assume more than one.",
+        "count": 1,
+        "examples": [
+          {
+            "title": "Senior Support Engineer, Storage",
+            "location": "Toronto, Canada",
+            "url": "https://example.com/meridian-cloud/jobs/support-engineer-storage",
+            "matched": "24/7",
+            "excerpt": "provide 24/7 coverage for storage incidents alongside the Bengaluru and Toronto teams"
+          }
+        ]
+      }
+    ]
+  },
+  "crosschecks": [
+    {
+      "rule": "residency_vs_workforce",
+      "severity": "high",
+      "headline": "Residency language weakened, still no EEA workforce",
+      "detail": "66 of 74 placeable roles name no EEA site — most prominently United States, India. The privacy policy no longer commits to EU-only storage.",
+      "claim": {
+        "kind": "privacy",
+        "text": "Customer data may be stored and processed in any country where Meridian Cloud or its sub-processors maintain data centers, including the United States and India.",
+        "url": "https://example.com/meridian-cloud/privacy-policy"
+      },
+      "evidence": [
+        {
+          "kind": "stat",
+          "excerpt": "United States: 38 open roles"
+        },
+        {
+          "kind": "stat",
+          "excerpt": "India: 20 open roles"
+        },
+        {
+          "kind": "stat",
+          "excerpt": "Canada: 8 open roles"
+        }
+      ],
+      "question": "Which countries can now receive customer data under this clause, and did any customer agree to the change?"
+    },
+    {
+      "rule": "subprocessor_notice_gap",
+      "severity": "medium",
+      "headline": "Sub-processor notice period dropped from the DPA",
+      "detail": "The DPA previously committed to 30 days’ notice and a right to object before a new sub-processor was added. The current text points customers to a list that can change with no notice window at all.",
+      "claim": {
+        "kind": "dpa",
+        "text": "Meridian Cloud will notify the customer of new sub-processors via the online sub-processor list, which may be updated at any time.",
+        "url": "https://example.com/meridian-cloud/dpa"
+      },
+      "evidence": [
+        {
+          "kind": "doc",
+          "excerpt": "Previous DPA (2026-07-19): \"Customer will be notified of any new sub-processor at least 30 days in advance and may object.\""
+        }
+      ],
+      "question": "Why was the 30-day notice-and-objection window removed, and does any signed customer contract still reference it?"
+    }
+  ],
+  "score": {
+    "total": 68,
+    "footprint": 22,
+    "access": 13,
+    "transparency": 8,
+    "record": 25
+  },
+  "drift": [
+    {
+      "id": "meridian-cloud-demo-privacy-2026-07-19",
+      "vendor_id": "meridian-cloud-demo",
+      "vendor_name": "Meridian Cloud (demo)",
+      "document": "privacy",
+      "document_label": "Privacy policy",
+      "date": "2026-07-19",
+      "url": "https://example.com/meridian-cloud/privacy-policy",
+      "hunks": [
+        {
+          "before": "Customer data collected from users in the European Union is stored exclusively on servers located within the European Union.",
+          "after": "Customer data may be stored and processed in any country where Meridian Cloud or its sub-processors maintain data centers, including the United States and India."
+        }
+      ]
+    },
+    {
+      "id": "meridian-cloud-demo-dpa-2026-07-26",
+      "vendor_id": "meridian-cloud-demo",
+      "vendor_name": "Meridian Cloud (demo)",
+      "document": "dpa",
+      "document_label": "Data processing agreement",
+      "date": "2026-07-26",
+      "url": "https://example.com/meridian-cloud/dpa",
+      "hunks": [
+        {
+          "before": "Customer will be notified of any new sub-processor at least 30 days in advance and may object.",
+          "after": "Meridian Cloud will notify the customer of new sub-processors via the online sub-processor list, which may be updated at any time."
+        }
+      ]
+    }
+  ]
+}

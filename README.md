@@ -1,11 +1,13 @@
-# Sovereignty Drift
+# Data Drift Detection
 
-Vendor data-sovereignty mapping from public evidence instead of vendor white papers.
+A dashboard over your own vendors: tracks what each one writes in its DPA and privacy policy,
+diffs it against what it wrote last week, and checks who can reach your data against the
+countries you actually allow — all from public evidence instead of vendor white papers.
 
 A DPA is a claim. A job listing is evidence. This collects both nightly and flags where they
 disagree — a sub-processor that engineering talks about but the published list omits, residency
-language against a workforce hired somewhere else — and turns each disagreement into a specific
-question to put to the vendor.
+language against a workforce hired somewhere else, a clause reworded since the last run — and
+turns each disagreement into a specific question to put to the vendor.
 
 **It is not a compliance assessment and not an accusation.** A contradiction on the surface usually
 has a dull explanation. The point is to hand a reviewer the exact sentence and the exact posting so
