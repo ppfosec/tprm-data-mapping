@@ -4,6 +4,7 @@
 Meridian Cloud provides object storage and backup services for enterprise customers.
 We collect account, billing and usage data necessary to operate the Service.
 Customer data may be stored and processed in any country where Meridian Cloud or its sub-processors maintain data centers, including the United States and India.
+For enterprise accounts with biometric login enabled, we collect a fingerprint or facial scan template used only for authentication.
 We use industry-standard encryption for data in transit and at rest.
 Access to customer data is restricted to personnel who need it to perform their duties.
 You may request a copy of your data or its deletion at any time.

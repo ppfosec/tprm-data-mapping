@@ -31,6 +31,7 @@ import requests
 import yaml
 from bs4 import BeautifulSoup
 
+import classify
 import correlate
 import geo
 import signals as sig_mod
@@ -498,9 +499,11 @@ def main():
             docs=docs, jobs=jobs,
         )
         row["crosschecks"] = correlate.crosscheck(texts, docs, jobs)
+        row["data_classification"] = classify.classify(texts)
         row["score"] = score(row)
         log(f"    crosschecks: {len(row['crosschecks'])} "
-            f"({', '.join(f['rule'] for f in row['crosschecks']) or 'none'})")
+            f"({', '.join(f['rule'] for f in row['crosschecks']) or 'none'}); "
+            f"data sensitivity: {row['data_classification']['max_sensitivity']}")
         rows.append(row)
 
     drift_log = load_drift_log(new_events)
