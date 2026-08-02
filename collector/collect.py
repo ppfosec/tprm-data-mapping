@@ -31,7 +31,7 @@ import requests
 import yaml
 from bs4 import BeautifulSoup
 
-import classify
+import classify as classify_mod
 import correlate
 import geo
 import signals as sig_mod
@@ -499,7 +499,7 @@ def main():
             docs=docs, jobs=jobs,
         )
         row["crosschecks"] = correlate.crosscheck(texts, docs, jobs)
-        row["data_classification"] = classify.classify(texts)
+        row["data_classification"] = classify_mod.classify(texts)
         row["score"] = score(row)
         log(f"    crosschecks: {len(row['crosschecks'])} "
             f"({', '.join(f['rule'] for f in row['crosschecks']) or 'none'}); "
