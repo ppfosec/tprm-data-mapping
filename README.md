@@ -34,6 +34,8 @@ collector/          fetch, normalise, correlate
   correlate.py      the cross-source rules
   signals.py        what to look for in job descriptions
   geo.py            location strings -> countries
+  classify.py       data-sensitivity tagging, regex fallback
+  llm_classify.py   data-sensitivity tagging, LLM (optional, needs an API key)
 data/
   snapshots/        committed plaintext, one sentence per line  <- the evidence
   index.json        everything the dashboard reads
@@ -65,6 +67,33 @@ Two guards matter and are deliberate: `subprocessor_gap` only fires when a list 
 because accusing a vendor of omitting a name from a document the collector never read would be a
 fabrication. And `residency_vs_workforce` needs a real denominator, because 6 of 6 non-EEA roles is
 noise.
+
+## Data classification
+
+Each vendor's "what kind of data does this handle" tags (business contact info up through
+biometric or special-category data) can be produced two ways:
+
+- **`classify.py`** — regex over the normalised text. Fast, free, no setup. Also blunt: it can't
+  tell "we process biometric data" from "the input of biometric data to the Services" (a customer
+  warning, not a product feature) without a lot of hand-tuned hedge patterns that still don't
+  generalise to everything a privacy policy hedges.
+- **`llm_classify.py`** — sends the vendor's full privacy policy and DPA to Claude, with the
+  vendor's name and category as context and explicit framing that the reader is an enterprise
+  compliance officer under a DPA, not an individual consumer. This is what actually reads a policy
+  the way a human reviewer would: it tells a genuine product claim apart from hedged language,
+  an individual's self-serve billing, the vendor's own controller-role processing, and legal
+  boilerplate defining a contract term. Every quote it returns is verified against the source text
+  before being trusted — nothing ungrounded is kept.
+
+`collect.py` tries the LLM path first and falls back to the regex path automatically if no key is
+set, the call fails, or the response doesn't parse. Nothing about the rest of the pipeline depends
+on which one ran; each vendor's `data_classification.method` in `data/index.json` records which it
+was.
+
+To turn the LLM path on: create an API key at
+[console.anthropic.com](https://console.anthropic.com), then in this repo go to **Settings →
+Secrets and variables → Actions → New repository secret** and add it as `ANTHROPIC_API_KEY`. The
+next scheduled or manually triggered run picks it up automatically — no code changes needed.
 
 ## Run it
 

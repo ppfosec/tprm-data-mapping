@@ -32,6 +32,7 @@ const RISK_FACTORS = [
 
 const DEFAULT_ALLOWED = ["United States", "Canada"];
 const AUTH_KEY = "ddd:auth:v1";
+const DISMISS_KEY = "ddd:dismissed:v1";
 
 let DATA = null;         // raw index.json
 let VENDORS = [];         // real vendors + demo vendor if loaded/shown
@@ -103,6 +104,48 @@ function clearVendorCountries(vendorId) {
 }
 
 // ---------------------------------------------------------------------------
+// dismissed findings (localStorage) — a reviewer's call that a specific data
+// tag or OSINT flag doesn't apply, kept and reversible rather than deleted
+// ---------------------------------------------------------------------------
+
+function loadDismissed() {
+  try { return JSON.parse(localStorage.getItem(DISMISS_KEY)) || {}; }
+  catch { return {}; }
+}
+function saveDismissed(store) {
+  try { localStorage.setItem(DISMISS_KEY, JSON.stringify(store)); } catch { /* storage disabled */ }
+}
+function dismissedSet(vendorId, kind) {
+  const store = loadDismissed();
+  return new Set((store[vendorId] && store[vendorId][kind]) || []);
+}
+function toggleDismissed(vendorId, kind, itemKey) {
+  const store = loadDismissed();
+  const entry = store[vendorId] || (store[vendorId] = {});
+  const list = new Set(entry[kind] || []);
+  list.has(itemKey) ? list.delete(itemKey) : list.add(itemKey);
+  entry[kind] = [...list];
+  saveDismissed(store);
+}
+
+function liveTags(v) {
+  const dismissed = dismissedSet(v.id, "tags");
+  const all = v.data_classification?.tags || [];
+  return { live: all.filter(t => !dismissed.has(t.key)), dismissed: all.filter(t => dismissed.has(t.key)) };
+}
+function liveCrosschecks(v) {
+  const dismissed = dismissedSet(v.id, "flags");
+  const all = v.crosschecks || [];
+  return { live: all.filter(f => !dismissed.has(f.rule)), dismissed: all.filter(f => dismissed.has(f.rule)) };
+}
+function effectiveSensitivity(v) {
+  const stated = liveTags(v).live.filter(t => t.confidence !== "conditional");
+  const top = stated[0]; // tags arrive pre-sorted by sensitivity rank, descending
+  const sensitivity = top ? top.sensitivity : "low";
+  return { sensitivity, score: { low: 10, medium: 20, high: 30 }[sensitivity] };
+}
+
+// ---------------------------------------------------------------------------
 // derived per-vendor numbers
 // ---------------------------------------------------------------------------
 
@@ -148,8 +191,8 @@ function severityCounts(list) {
 }
 
 function topTag(v) {
-  const tags = v.data_classification?.tags;
-  return tags && tags.length ? tags[0] : null;
+  const tags = liveTags(v).live;
+  return tags.length ? tags[0] : null;
 }
 
 function driftSinceAuth(v) {
@@ -163,8 +206,8 @@ function driftSinceAuth(v) {
 function riskScore(v) {
   const ex = exposure(v);
   const authPts = ex.pct == null ? 0 : Math.round(ex.pct * 0.4);
-  const dataPts = v.data_classification?.sensitivity_score ?? 10;
-  const sc = severityCounts(v.crosschecks);
+  const dataPts = effectiveSensitivity(v).score;
+  const sc = severityCounts(liveCrosschecks(v).live);
   const osintPts = sc.high ? 20 : sc.medium ? 14 : sc.low ? 6 : 0;
   const since = driftSinceAuth(v);
   const sincePts = since.changed === true ? 10 : 0;
@@ -182,9 +225,9 @@ function riskTier(total) {
 
 function renderRunbar(vendors) {
   const when = new Date(DATA.generated_at);
-  const flags = vendors.reduce((n, v) => n + v.crosschecks.length, 0);
+  const flags = vendors.reduce((n, v) => n + liveCrosschecks(v).live.length, 0);
   const high = vendors.reduce(
-    (n, v) => n + v.crosschecks.filter(f => f.severity === "high").length, 0);
+    (n, v) => n + liveCrosschecks(v).live.filter(f => f.severity === "high").length, 0);
   const docs = vendors.reduce((n, v) => n + v.docs.filter(d => d.path).length, 0);
   const driftCount = vendors.reduce((n, v) => n + (v.drift || []).length, 0);
   $("#runbar").innerHTML = `
@@ -304,12 +347,13 @@ function matrixRow(v) {
     : `${authList.slice(0, 2).join(", ")} +${authList.length - 2}`;
 
   const tag = topTag(v);
-  const dataLabel = tag ? tag.label : "Not classified";
+  const dataLabel = tag ? (tag.label + (tag.confidence === "conditional" ? " (possible)" : "")) : "Not classified";
   const dataSev = tag ? tag.sensitivity : "low";
 
-  const sc = severityCounts(v.crosschecks);
+  const liveFlags = liveCrosschecks(v).live;
+  const sc = severityCounts(liveFlags);
   const osintSev = sc.high ? "high" : sc.medium ? "medium" : sc.low ? "low" : "none";
-  const osintLabel = v.crosschecks.length ? `${v.crosschecks.length} flag${v.crosschecks.length === 1 ? "" : "s"}` : "clear";
+  const osintLabel = liveFlags.length ? `${liveFlags.length} flag${liveFlags.length === 1 ? "" : "s"}` : "clear";
 
   const since = risk.since;
   const sinceState = since.since === null ? "unset" : since.changed ? "changed" : "clear";
@@ -366,6 +410,15 @@ function mountDetail(id) {
 function mountDetailInto(panel, v) {
   panel.innerHTML = detailHTML(v);
   wireAuthEditor(panel, v);
+  wireDismissButtons(panel, v);
+}
+
+function wireDismissButtons(panel, v) {
+  panel.querySelectorAll(".dismissbtn, .restorebtn").forEach(b =>
+    b.addEventListener("click", () => {
+      toggleDismissed(v.id, b.dataset.kind, b.dataset.key);
+      render();
+    }));
 }
 
 function detailHTML(v) {
@@ -392,10 +445,7 @@ function detailHTML(v) {
     ${classificationHTML(v)}
 
     <h3>3 · Is anything fishy in the OSINT</h3>
-    ${v.crosschecks.length
-      ? v.crosschecks.map(reconCard).join("")
-      : `<p class="note">Nothing to reconcile from the sources collected. That is a clean pass on
-         these checks, not a clean bill of health — re-run and compare.</p>`}
+    ${osintHTML(v)}
 
     <h3>4 · Has anything changed since you authorized this</h3>
     ${driftHTML(v)}
@@ -448,20 +498,35 @@ function wireAuthEditor(panel, v) {
   if (since) since.addEventListener("change", e => { setVendorSince(v.id, e.target.value); render(); });
 }
 
-function classificationHTML(v) {
-  const tags = v.data_classification?.tags || [];
-  if (!tags.length) {
-    return `<p class="note">No specific data types were recognised in the text collected. That is a
-      reading of the wording, not a guarantee of what is actually processed.</p>`;
-  }
-  return `<div class="taglist">${tags.map(t => `
-    <div class="tagrow">
-      <span class="dtag ${t.sensitivity}">${esc(t.label)}</span>
+function tagRow(t, dismissed) {
+  return `
+    <div class="tagrow${dismissed ? " dismissedrow" : ""}">
+      <span class="dtag ${t.sensitivity}">${esc(t.label)}${t.confidence === "conditional" ? ` <em>possible</em>` : ""}</span>
       <div class="tagbody">
         <p class="tagwhy">${esc(t.why)}</p>
         <p class="tagex">${esc(KIND_LABEL[t.source] || t.source)}: “${esc(t.excerpt)}”</p>
       </div>
-    </div>`).join("")}</div>`;
+      <button type="button" class="linkbtn ${dismissed ? "restorebtn" : "dismissbtn"}" data-kind="tags" data-key="${esc(t.key)}">
+        ${dismissed ? "Restore" : "Dismiss"}
+      </button>
+    </div>`;
+}
+
+function classificationHTML(v) {
+  const all = v.data_classification?.tags || [];
+  if (!all.length) {
+    return `<p class="note">No specific data types were recognised in the text collected. That is a
+      reading of the wording, not a guarantee of what is actually processed.</p>`;
+  }
+  const { live, dismissed } = liveTags(v);
+  return `
+    <div class="taglist">${live.length ? live.map(t => tagRow(t, false)).join("")
+      : `<p class="note">All data-type findings for this vendor have been dismissed.</p>`}</div>
+    ${dismissed.length ? `
+    <details class="dismissed-group">
+      <summary>Dismissed (${dismissed.length})</summary>
+      <div class="taglist">${dismissed.map(t => tagRow(t, true)).join("")}</div>
+    </details>` : ""}`;
 }
 
 function driftHTML(v) {
@@ -495,7 +560,23 @@ function driftHTML(v) {
     </div>`).join("");
 }
 
-function reconCard(f) {
+function osintHTML(v) {
+  if (!v.crosschecks.length) {
+    return `<p class="note">Nothing to reconcile from the sources collected. That is a clean pass on
+      these checks, not a clean bill of health — re-run and compare.</p>`;
+  }
+  const { live, dismissed } = liveCrosschecks(v);
+  return `
+    ${live.length ? live.map(f => reconCard(f, false)).join("")
+      : `<p class="note">All OSINT flags for this vendor have been dismissed.</p>`}
+    ${dismissed.length ? `
+    <details class="dismissed-group">
+      <summary>Dismissed (${dismissed.length})</summary>
+      ${dismissed.map(f => reconCard(f, true)).join("")}
+    </details>` : ""}`;
+}
+
+function reconCard(f, dismissed) {
   const left = f.claim
     ? `<div class="side">
          <span class="eyebrow">What the ${esc(KIND_LABEL[f.claim.kind] || f.claim.kind)} says</span>
@@ -526,10 +607,13 @@ function reconCard(f) {
     </div>`;
 
   return `
-    <div class="recon">
+    <div class="recon${dismissed ? " dismissedrow" : ""}">
       <div class="recon-top">
         <span class="recon-title">${esc(f.headline)}</span>
         <span class="sev ${esc(f.severity)}">${esc(f.severity)}</span>
+        <button type="button" class="linkbtn ${dismissed ? "restorebtn" : "dismissbtn"}" data-kind="flags" data-key="${esc(f.rule)}">
+          ${dismissed ? "Restore" : "Dismiss as not relevant"}
+        </button>
       </div>
       ${f.claim ? `<div class="recon-detail">${esc(f.detail)}</div>` : ""}
       <div class="pair">${left}${right}</div>

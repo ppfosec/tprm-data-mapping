@@ -33,6 +33,7 @@ from bs4 import BeautifulSoup
 
 import classify as classify_mod
 import correlate
+import llm_classify
 import geo
 import signals as sig_mod
 
@@ -499,11 +500,15 @@ def main():
             docs=docs, jobs=jobs,
         )
         row["crosschecks"] = correlate.crosscheck(texts, docs, jobs)
-        row["data_classification"] = classify_mod.classify(texts)
+        row["data_classification"] = (
+            llm_classify.classify(v["name"], v["category"], texts)
+            or classify_mod.classify(texts)
+        )
         row["score"] = score(row)
         log(f"    crosschecks: {len(row['crosschecks'])} "
             f"({', '.join(f['rule'] for f in row['crosschecks']) or 'none'}); "
-            f"data sensitivity: {row['data_classification']['max_sensitivity']}")
+            f"data sensitivity: {row['data_classification']['max_sensitivity']} "
+            f"(via {row['data_classification']['method']})")
         rows.append(row)
 
     drift_log = load_drift_log(new_events)

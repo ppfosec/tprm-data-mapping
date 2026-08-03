@@ -72,12 +72,49 @@ for _t in TAGS:
 # same-line negation check catches it without needing real parsing.
 NEGATION = re.compile(r"\bnot\b|\bno longer\b|\bnever\b|\bdo not\b|\bdoes not\b|\bwithout knowingly\b|\bexcludes?\b", re.I)
 
+# A privacy policy usually covers the marketing website AND the product, and
+# it hedges constantly: "the input of special category data to the Services,
+# which include..." is GitLab warning customers not to paste sensitive data
+# into an issue, not GitLab's product processing biometrics as a feature.
+# Mentioning a data type conditionally is not the same claim as processing it
+# -- catch the common hedge phrasings so those mentions get a lower-confidence
+# "conditional" tag that does not, by itself, drive the sensitivity score.
+HEDGE = re.compile(
+    r"\bif you choose\b|\bif applicable\b|\bthe input of\b|\byou (?:may |might )?"
+    r"(?:choose to |elect to |decide to )?(?:input|provide|submit|upload|enter)\b|"
+    r"\bto the extent (?:you|permitted)\b|\bat your discretion\b|\bshould you provide\b|"
+    r"\byou can separately consent\b|\bwith your consent\b|"
+    r"\bif you purchase\b|\byour (?:personal )?credit card\b|\bself[- ]serve\b|\bself[- ]service\b|"
+    r"\bas an? (?:independent )?controller\b|\backing as (?:a |an )?controller\b|"
+    r"\bfor (?:its|our) own (?:business )?purposes\b",
+    re.I,
+)
+
+# Legal boilerplate that defines a term or states a scope rather than
+# admitting the vendor processes something: "'Sensitive Data' means genetic
+# data, biometric data..." is drafting a defined term for the contract, not
+# a claim that this vendor's product touches genetic data.
+DEFINITIONAL = re.compile(
+    r"\bas defined (?:under|in|by)\b|\bwithin the meaning of\b|\bfor (?:the )?purposes? of this\b|"
+    r"\bnot limited to\b|\bmeans\b.{0,3}(?:genetic|biometric|racial|health|religious)",
+    re.I,
+)
+
 SENSITIVITY_RANK = {"low": 0, "medium": 1, "high": 2}
 SENSITIVITY_SCORE = {"low": 10, "medium": 20, "high": 30}
+CONFIDENCE_RANK = {"conditional": 0, "stated": 1}
 
 
 def classify(texts: dict[str, str]) -> dict:
-    """texts: {doc_kind: normalised_body}. Returns tags found plus the overall tier."""
+    """texts: {doc_kind: normalised_body}. Returns tags found plus the overall tier.
+
+    Only "stated" tags (the vendor's text asserts this plainly) drive
+    max_sensitivity / sensitivity_score. "Conditional" tags -- hedged on the
+    customer doing something first, defining a contract term, or describing
+    the vendor's own controller-role processing rather than what it does for
+    an enterprise customer -- are still returned for a reviewer to see, but
+    don't by themselves make a vendor look riskier than its policy actually
+    claims."""
     found = []
     for kind, body in texts.items():
         if kind not in ("privacy", "dpa", "terms", "other"):
@@ -91,20 +128,24 @@ def classify(texts: dict[str, str]) -> dict:
                 found.append(dict(
                     key=tag["key"], label=tag["label"], sensitivity=tag["sensitivity"],
                     why=tag["why"], source=kind, matched=m.group(0), excerpt=line.strip(),
+                    confidence="conditional" if HEDGE.search(line) or DEFINITIONAL.search(line) else "stated",
                 ))
                 break  # one example per document is enough
 
-    # keep the highest-sensitivity example per tag key
+    # keep one example per tag key: prefer a stated mention over a conditional
+    # one, and among equals prefer the one already recorded
     best: dict[str, dict] = {}
     for f in found:
         cur = best.get(f["key"])
-        if cur is None or SENSITIVITY_RANK[f["sensitivity"]] > SENSITIVITY_RANK[cur["sensitivity"]]:
+        if cur is None or CONFIDENCE_RANK[f["confidence"]] > CONFIDENCE_RANK[cur["confidence"]]:
             best[f["key"]] = f
 
-    tags = sorted(best.values(), key=lambda t: -SENSITIVITY_RANK[t["sensitivity"]])
-    max_sensitivity = tags[0]["sensitivity"] if tags else "low"
+    tags = sorted(best.values(), key=lambda t: (-SENSITIVITY_RANK[t["sensitivity"]], t["confidence"]))
+    stated = [t for t in tags if t["confidence"] == "stated"]
+    max_sensitivity = stated[0]["sensitivity"] if stated else "low"
     return dict(
         tags=tags,
         max_sensitivity=max_sensitivity,
         sensitivity_score=SENSITIVITY_SCORE[max_sensitivity],
+        method="heuristic",
     )

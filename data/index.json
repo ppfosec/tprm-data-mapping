@@ -357,50 +357,66 @@
             "key": "biometric",
             "label": "Biometric data",
             "sensitivity": "high",
-            "why": "Biometric identifiers are irrevocable if exposed -- a special category under GDPR Article 9.",
+            "why": "Biometric identifiers are irrevocable if exposed -- a special category under GDPR Article 9. This vendor: An optional individual identity/age-verification flow (Claude.ai consumer accounts), not a feature of the Enterprise product, and the policy explicitly excludes Enterprise accounts from its scope.",
             "source": "privacy",
-            "matched": "biometric",
-            "excerpt": "If you choose to do so, data we will collect includes, depending on the method: an image of your government-issued identity document and the information appearing on it (such as your ID number and date of birth); your image in photo or video form, facial geometry templates (which may be considered ‘biometric data’ in some jurisdictions); and the result of the verification (for example, whether your age meets the applicable threshold)."
+            "matched": null,
+            "excerpt": "If you choose to do so, data we will collect includes, depending on the method: an image of your government-issued identity document and the information appearing on it (such as your ID number and date of birth); your image in photo or video form, facial geometry templates (which may be considered ‘biometric data’ in some jurisdictions)",
+            "confidence": "conditional"
           },
           {
-            "key": "special_category",
-            "label": "Special-category data (GDPR Art. 9)",
+            "key": "government_id",
+            "label": "Government ID",
             "sensitivity": "high",
-            "why": "GDPR's own list of special categories -- the highest bar for lawful processing.",
-            "source": "other",
-            "matched": "sexual orientation",
-            "excerpt": "Promote discriminatory practices or behaviors against individuals or groups on the basis of one or more protected attributes such as race, ethnicity, religion, national origin, gender, sexual orientation, or any other identifying trait"
+            "why": "Passport, national ID or tax numbers -- enables identity theft directly if leaked. This vendor: Same optional individual verification flow as the biometric entry above -- not part of the Enterprise offering per the policy's own carve-out.",
+            "source": "privacy",
+            "matched": null,
+            "excerpt": "an image of your government-issued identity document and the information appearing on it (such as your ID number and date of birth)",
+            "confidence": "conditional"
           },
           {
             "key": "financial",
             "label": "Financial / payment data",
             "sensitivity": "medium",
-            "why": "Card or bank details -- a breach here has direct financial consequences for the data subject.",
+            "why": "Card or bank details -- a breach here has direct financial consequences for the data subject. This vendor: Describes an individual's self-serve purchase; the policy's own preamble states it does not apply to Enterprise accounts, which are billed under separate commercial agreements, not through this consumer flow.",
             "source": "privacy",
-            "matched": "Payment Information",
-            "excerpt": "Payment Information:"
+            "matched": null,
+            "excerpt": "We shall collect your payment information if you choose to purchase access to Anthropic’s Services.",
+            "confidence": "conditional"
+          },
+          {
+            "key": "precise_location",
+            "label": "Precise location",
+            "sensitivity": "medium",
+            "why": "Where someone actually is, not just which country they signed up from. This vendor: Only collected with explicit individual consent for an optional feature, not systematically as part of the core service.",
+            "source": "privacy",
+            "matched": null,
+            "excerpt": "Consent (for example for precise device location or for health app integrations)",
+            "confidence": "conditional"
           },
           {
             "key": "business_contact",
             "label": "Business contact information",
             "sensitivity": "low",
-            "why": "Names, work emails and similar identifiers -- present in nearly every SaaS privacy policy.",
+            "why": "Names, work emails and similar identifiers -- present in nearly every SaaS privacy policy. This vendor: Standard account signup fields, collected regardless of individual or Enterprise seat.",
             "source": "privacy",
-            "matched": "name, email",
-            "excerpt": "Anthropic collects identifiers, including your name, email address, and phone number when you sign up for an Anthropic account, or to receive information on our Services."
+            "matched": null,
+            "excerpt": "Anthropic collects identifiers, including your name, email address, and phone number when you sign up for an Anthropic account, or to receive information on our Services.",
+            "confidence": "stated"
           },
           {
             "key": "account_usage",
             "label": "Account & usage data",
             "sensitivity": "low",
-            "why": "Login activity, device and session data -- routine telemetry, not by itself sensitive.",
+            "why": "Login activity, device and session data -- routine telemetry, not by itself sensitive. This vendor: Routine technical telemetry collected automatically from any user.",
             "source": "privacy",
-            "matched": "IP address",
-            "excerpt": "This includes information such as your device type, operating system information, browser information and web page referers, mobile network, connection information, mobile operator or internet service provider (ISP), time zone setting, IP address (including information about the location of the device derived from your IP address), identifiers (including device or advertising identifiers, probabilistic identifiers, and other unique personal or online identifiers), and device location."
+            "matched": null,
+            "excerpt": "This includes information such as your device type, operating system information, browser information and web page referers, mobile network, connection information, mobile operator or internet service provider (ISP), time zone setting, IP address",
+            "confidence": "stated"
           }
         ],
-        "max_sensitivity": "high",
-        "sensitivity_score": 30
+        "max_sensitivity": "low",
+        "sensitivity_score": 10,
+        "method": "llm"
       },
       "score": {
         "total": 40,
@@ -692,35 +708,49 @@
       "data_classification": {
         "tags": [
           {
+            "key": "special_category",
+            "label": "Special-category data (GDPR Art. 9)",
+            "sensitivity": "high",
+            "why": "GDPR's own list of special categories -- the highest bar for lawful processing. This vendor: Explicitly hedged (\"to the extent... voluntarily disclosed... or contained in any content transmitted\") -- Cloudflare is a network conduit for whatever its Customers' own end users transmit, not a systematic collector of this data.",
+            "source": "privacy",
+            "matched": null,
+            "excerpt": "Protected classification characteristics (e.g., age, ethnicity, race, languages spoken, or gender) to the extent these characteristics are voluntarily disclosed to us or contained in any content transmitted across or stored on our network",
+            "confidence": "conditional"
+          },
+          {
             "key": "financial",
             "label": "Financial / payment data",
             "sensitivity": "medium",
-            "why": "Card or bank details -- a breach here has direct financial consequences for the data subject.",
+            "why": "Card or bank details -- a breach here has direct financial consequences for the data subject. This vendor: Hedged on payment method chosen (\"if you pay with a credit card\") -- Cloudflare Enterprise customers are typically invoiced rather than card-billed, so this most often describes a self-serve customer's card.",
             "source": "privacy",
-            "matched": "Payment information",
-            "excerpt": "Payment information"
+            "matched": null,
+            "excerpt": "For example, if you pay with a credit card, we will collect your card information and billing address, although we do not store full credit card numbers or personal account numbers.",
+            "confidence": "conditional"
           },
           {
             "key": "business_contact",
             "label": "Business contact information",
             "sensitivity": "low",
-            "why": "Names, work emails and similar identifiers -- present in nearly every SaaS privacy policy.",
+            "why": "Names, work emails and similar identifiers -- present in nearly every SaaS privacy policy. This vendor: Standard Customer Account Information collected at signup.",
             "source": "privacy",
-            "matched": "Contact information",
-            "excerpt": "Contact information"
+            "matched": null,
+            "excerpt": "When you register for an account, we collect contact information.",
+            "confidence": "stated"
           },
           {
             "key": "account_usage",
             "label": "Account & usage data",
             "sensitivity": "low",
-            "why": "Login activity, device and session data -- routine telemetry, not by itself sensitive.",
+            "why": "Login activity, device and session data -- routine telemetry, not by itself sensitive. This vendor: Routine log-file and cookie data collected from any visitor or Customer.",
             "source": "privacy",
-            "matched": "cookies",
-            "excerpt": "We may use cookies and other information-gathering technologies for a variety of purposes, such as providing us with information about how you interact with our Websites and assisting us in our marketing efforts."
+            "matched": null,
+            "excerpt": "This information may include but is not limited to Internet Protocol (IP) addresses, system configuration information, URLs of referring pages, and locale and language preferences.",
+            "confidence": "stated"
           }
         ],
-        "max_sensitivity": "medium",
-        "sensitivity_score": 20
+        "max_sensitivity": "low",
+        "sensitivity_score": 10,
+        "method": "llm"
       },
       "score": {
         "total": 75,
@@ -1010,44 +1040,49 @@
       "data_classification": {
         "tags": [
           {
-            "key": "financial",
-            "label": "Financial / payment data",
-            "sensitivity": "medium",
-            "why": "Card or bank details -- a breach here has direct financial consequences for the data subject.",
-            "source": "privacy",
-            "matched": "payment information",
-            "excerpt": "We collect information about you when you create an account with us, such as your name, email address, profile picture, company name, postal address, phone number, and payment information."
-          },
-          {
             "key": "precise_location",
             "label": "Precise location",
             "sensitivity": "medium",
-            "why": "Where someone actually is, not just which country they signed up from.",
+            "why": "Where someone actually is, not just which country they signed up from. This vendor: Appears in a CCPA-style enumerated category list rather than as an operational claim about what Datadog's product actually does.",
             "source": "privacy",
-            "matched": "Geolocation data",
-            "excerpt": "Geolocation data."
+            "matched": null,
+            "excerpt": "Geolocation data.",
+            "confidence": "conditional"
+          },
+          {
+            "key": "financial",
+            "label": "Financial / payment data",
+            "sensitivity": "medium",
+            "why": "Card or bank details -- a breach here has direct financial consequences for the data subject. This vendor: Payment information is collected directly at account creation, stated plainly rather than hedged.",
+            "source": "privacy",
+            "matched": null,
+            "excerpt": "We collect information about you when you create an account with us, such as your name, email address, profile picture, company name, postal address, phone number, and payment information.",
+            "confidence": "stated"
           },
           {
             "key": "business_contact",
             "label": "Business contact information",
             "sensitivity": "low",
-            "why": "Names, work emails and similar identifiers -- present in nearly every SaaS privacy policy.",
+            "why": "Names, work emails and similar identifiers -- present in nearly every SaaS privacy policy. This vendor: Standard account creation fields.",
             "source": "privacy",
-            "matched": "name, email",
-            "excerpt": "We collect information about you when you create an account with us, such as your name, email address, profile picture, company name, postal address, phone number, and payment information."
+            "matched": null,
+            "excerpt": "We collect information about you when you create an account with us, such as your name, email address, profile picture, company name, postal address, phone number, and payment information.",
+            "confidence": "stated"
           },
           {
             "key": "account_usage",
             "label": "Account & usage data",
             "sensitivity": "low",
-            "why": "Login activity, device and session data -- routine telemetry, not by itself sensitive.",
+            "why": "Login activity, device and session data -- routine telemetry, not by itself sensitive. This vendor: Datadog's core observability product ingests customer logs/traces/metrics, which can incidentally include personal identifiers.",
             "source": "privacy",
-            "matched": "IP address",
-            "excerpt": "This information may include name, email address, IP address, online identifier, and mailing address."
+            "matched": null,
+            "excerpt": "We collect personal information submitted to us through the use of the Datadog Products, including the information provided in logs, traces, and metrics.",
+            "confidence": "stated"
           }
         ],
         "max_sensitivity": "medium",
-        "sensitivity_score": 20
+        "sensitivity_score": 20,
+        "method": "llm"
       },
       "score": {
         "total": 40,
@@ -1301,68 +1336,86 @@
             "key": "biometric",
             "label": "Biometric data",
             "sensitivity": "high",
-            "why": "Biometric identifiers are irrevocable if exposed -- a special category under GDPR Article 9.",
+            "why": "Biometric identifiers are irrevocable if exposed -- a special category under GDPR Article 9. This vendor: Stripe Identity's core comparison-verification service is real and stated, but the specific biometric enhancement is opt-in, separate consent.",
             "source": "privacy",
-            "matched": "biometric",
-            "excerpt": "You can separately consent to us using your biometric data to enhance our verification technology, with the option to revoke your consent at any time."
+            "matched": null,
+            "excerpt": "You can separately consent to us using your biometric data to enhance our verification technology, with the option to revoke your consent at any time.",
+            "confidence": "conditional"
           },
           {
-            "key": "government_id",
-            "label": "Government ID",
+            "key": "health",
+            "label": "Health data",
             "sensitivity": "high",
-            "why": "Passport, national ID or tax numbers -- enables identity theft directly if leaked.",
+            "why": "Health records are a GDPR Article 9 / HIPAA-adjacent special category almost everywhere. This vendor: A Vermont-specific GLBA privacy-notice boilerplate listing protected categories Stripe will not disclose -- not a claim that Stripe collects health information.",
             "source": "privacy",
-            "matched": "Social Security Number",
-            "excerpt": "• Social Security Number"
+            "matched": null,
+            "excerpt": "we will not disclose information about your creditworthiness to our affiliates and will not disclose your personal information, financial information, credit report, or health information to nonaffiliated third parties",
+            "confidence": "conditional"
           },
           {
             "key": "special_category",
             "label": "Special-category data (GDPR Art. 9)",
             "sensitivity": "high",
-            "why": "GDPR's own list of special categories -- the highest bar for lawful processing.",
+            "why": "GDPR's own list of special categories -- the highest bar for lawful processing. This vendor: Definitional clause in the DPA defining the contract term \"Sensitive Data,\" not an admission of processing it.",
             "source": "dpa",
-            "matched": "sexual orientation",
-            "excerpt": "(a) Personal Data that is genetic data, biometric data, data concerning health, a natural person's sex life or sexual orientation;"
+            "matched": null,
+            "excerpt": "Personal Data that is genetic data, biometric data, data concerning health, a natural person's sex life or sexual orientation",
+            "confidence": "conditional"
           },
           {
-            "key": "financial",
-            "label": "Financial / payment data",
-            "sensitivity": "medium",
-            "why": "Card or bank details -- a breach here has direct financial consequences for the data subject.",
+            "key": "government_id",
+            "label": "Government ID",
+            "sensitivity": "high",
+            "why": "Passport, national ID or tax numbers -- enables identity theft directly if leaked. This vendor: Listed plainly in Stripe's GLBA-mandated financial privacy notice as information it collects and shares -- consistent with SSN collection for Stripe Connect/Tax 1099 reporting.",
             "source": "privacy",
-            "matched": "Credit Card",
-            "excerpt": "“Services” refers to the products, services, devices, and applications that we provide under the Stripe Services Agreement or the Stripe Credit Card Terms of Service (collectively, “Business Services”), or the Stripe Consumer Terms of Service (“End User Services”); websites (“Sites”) like Stripe.com and Link.com; and other Stripe applications and online services."
+            "matched": null,
+            "excerpt": "• Social Security Number",
+            "confidence": "stated"
           },
           {
             "key": "precise_location",
             "label": "Precise location",
             "sensitivity": "medium",
-            "why": "Where someone actually is, not just which country they signed up from.",
+            "why": "Where someone actually is, not just which country they signed up from. This vendor: Part of the same \"Sensitive Data means...\" definitional clause.",
             "source": "dpa",
-            "matched": "geolocation data",
-            "excerpt": "(c) geolocation data; or (d) sensitive personal information as defined under the CCPA."
+            "matched": null,
+            "excerpt": "(c) geolocation data; or (d) sensitive personal information as defined under the CCPA.",
+            "confidence": "conditional"
+          },
+          {
+            "key": "financial",
+            "label": "Financial / payment data",
+            "sensitivity": "medium",
+            "why": "Card or bank details -- a breach here has direct financial consequences for the data subject. This vendor: Payment and financial data processing is Stripe's core product for its enterprise Business Users, not an incidental individual-consumer mention -- this is what Stripe is.",
+            "source": "privacy",
+            "matched": null,
+            "excerpt": "We provide Business Services to entities (“Business Users”).",
+            "confidence": "stated"
           },
           {
             "key": "business_contact",
             "label": "Business contact information",
             "sensitivity": "low",
-            "why": "Names, work emails and similar identifiers -- present in nearly every SaaS privacy policy.",
+            "why": "Names, work emails and similar identifiers -- present in nearly every SaaS privacy policy. This vendor: Standard identity fields collected as part of processing a transaction.",
             "source": "privacy",
-            "matched": "name, email",
-            "excerpt": "Some Transaction Data is Personal Data and may include: your name, email address, contact number, billing and shipping address, payment method information (like credit or debit card number, bank or payment method account details, or payment card image chosen by you), merchant and location details, amount and date of purchase, information about payment status, and in some instances, information about what was purchased, order fulfillment status, subscription status, applicable tax amounts, refund or chargeback information, and support interactions."
+            "matched": null,
+            "excerpt": "Some Transaction Data is Personal Data and may include: your name, email address, contact number, billing and shipping address, payment method information",
+            "confidence": "stated"
           },
           {
             "key": "account_usage",
             "label": "Account & usage data",
             "sensitivity": "low",
-            "why": "Login activity, device and session data -- routine telemetry, not by itself sensitive.",
+            "why": "Login activity, device and session data -- routine telemetry, not by itself sensitive. This vendor: Broad technical/account data covered under Stripe's definition of Personal Data.",
             "source": "privacy",
-            "matched": "IP address",
-            "excerpt": "“Personal Data” refers to any information associated with an identified or identifiable individual, which can include data that you provide to us, and that we collect about you during your interaction with our Services (such as device information, IP address, etc.)."
+            "matched": null,
+            "excerpt": "“Personal Data” refers to any information associated with an identified or identifiable individual",
+            "confidence": "stated"
           }
         ],
         "max_sensitivity": "high",
-        "sensitivity_score": 30
+        "sensitivity_score": 30,
+        "method": "llm"
       },
       "score": {
         "total": 39,
@@ -1625,62 +1678,69 @@
       "data_classification": {
         "tags": [
           {
-            "key": "children",
-            "label": "Children's data",
-            "sensitivity": "high",
-            "why": "Processing minors' data triggers COPPA / GDPR-K obligations most vendors would rather not have.",
-            "source": "privacy",
-            "matched": "COPPA",
-            "excerpt": "For details regarding our processing of personal information that we collect from children, including in the US under COPPA, see our Supplemental Privacy Policy for Children in"
-          },
-          {
             "key": "special_category",
             "label": "Special-category data (GDPR Art. 9)",
             "sensitivity": "high",
-            "why": "GDPR's own list of special categories -- the highest bar for lawful processing.",
+            "why": "GDPR's own list of special categories -- the highest bar for lawful processing. This vendor: A CCPA/EEO-style required-disclosure category list, most plausibly tied to job applicants or California compliance disclosures rather than the design product itself.",
             "source": "privacy",
-            "matched": "sexual orientation",
-            "excerpt": "Age (40 years or older), race, color, ancestry, national origin, citizenship, religion or creed, marital status, medical condition, physical or mental disability, sex (including gender, gender identity, gender expression, pregnancy or childbirth and related medical conditions), sexual orientation, veteran or military status."
+            "matched": null,
+            "excerpt": "Protected classification characteristics under California or federal law: Age (40 years or older), race, color, ancestry, national origin, citizenship, religion or creed, marital status, medical condition, physical or mental disability",
+            "confidence": "conditional"
+          },
+          {
+            "key": "children",
+            "label": "Children's data",
+            "sensitivity": "high",
+            "why": "Processing minors' data triggers COPPA / GDPR-K obligations most vendors would rather not have. This vendor: Figma maintains a dedicated COPPA supplemental policy for an education-focused product surface (e.g. FigJam for schools) -- a genuine, distinctive product surface unlike most B2B SaaS vendors.",
+            "source": "privacy",
+            "matched": null,
+            "excerpt": "For details regarding our processing of personal information that we collect from children, including in the US under COPPA, see our Supplemental Privacy Policy Exhibit A",
+            "confidence": "stated"
           },
           {
             "key": "financial",
             "label": "Financial / payment data",
             "sensitivity": "medium",
-            "why": "Card or bank details -- a breach here has direct financial consequences for the data subject.",
+            "why": "Card or bank details -- a breach here has direct financial consequences for the data subject. This vendor: Payment flows through consumer app-store billing (App Store / Play Store), which describes an individual's purchase rather than enterprise procurement.",
             "source": "privacy",
-            "matched": "Payment Information",
-            "excerpt": "Payment Information."
+            "matched": null,
+            "excerpt": "Where we sell products and services through the Services, we use third-party applications, such as the Apple App Store, Google Play App Store, Amazon App Store",
+            "confidence": "conditional"
           },
           {
             "key": "precise_location",
             "label": "Precise location",
             "sensitivity": "medium",
-            "why": "Where someone actually is, not just which country they signed up from.",
+            "why": "Where someone actually is, not just which country they signed up from. This vendor: Appears in a CCPA-style enumerated category list rather than as an operational product claim.",
             "source": "privacy",
-            "matched": "Geolocation data",
-            "excerpt": "Geolocation data:"
+            "matched": null,
+            "excerpt": "Geolocation data: Physical location.",
+            "confidence": "conditional"
           },
           {
             "key": "business_contact",
             "label": "Business contact information",
             "sensitivity": "low",
-            "why": "Names, work emails and similar identifiers -- present in nearly every SaaS privacy policy.",
+            "why": "Names, work emails and similar identifiers -- present in nearly every SaaS privacy policy. This vendor: Standard account signup fields.",
             "source": "privacy",
-            "matched": "name, email",
-            "excerpt": "When you create a Figma account, we collect the personal information you provide to us, such as your name, email address, personal website, and picture."
+            "matched": null,
+            "excerpt": "When you create a Figma account, we collect the personal information you provide to us, such as your name, email address, personal website, and picture.",
+            "confidence": "stated"
           },
           {
             "key": "account_usage",
             "label": "Account & usage data",
             "sensitivity": "low",
-            "why": "Login activity, device and session data -- routine telemetry, not by itself sensitive.",
+            "why": "Login activity, device and session data -- routine telemetry, not by itself sensitive. This vendor: Standard product telemetry.",
             "source": "privacy",
-            "matched": "Usage Data",
-            "excerpt": "Usage Data"
+            "matched": null,
+            "excerpt": "Usage Data.",
+            "confidence": "stated"
           }
         ],
         "max_sensitivity": "high",
-        "sensitivity_score": 30
+        "sensitivity_score": 30,
+        "method": "llm"
       },
       "score": {
         "total": 48,
@@ -2032,50 +2092,56 @@
             "key": "biometric",
             "label": "Biometric data",
             "sensitivity": "high",
-            "why": "Biometric identifiers are irrevocable if exposed -- a special category under GDPR Article 9.",
+            "why": "Biometric identifiers are irrevocable if exposed -- a special category under GDPR Article 9. This vendor: This is GitLab warning customers not to paste sensitive data into issues/repos (\"GitLab prohibits the collection of... we realize users might store this kind of information\") -- not a claim that GitLab's product processes biometric data as a feature.",
             "source": "privacy",
-            "matched": "biometric",
-            "excerpt": "the input of sensitive or special categories of Personal Data to the Services, which includes Personal Data related to race, ethnicity, political opinions, religion, trade union membership, genetic data, biometric data, health data and sexual orientation."
+            "matched": null,
+            "excerpt": "the input of sensitive or special categories of Personal Data to the Services, which includes Personal Data related to race, ethnicity, political opinions, reli",
+            "confidence": "conditional"
           },
           {
             "key": "special_category",
             "label": "Special-category data (GDPR Art. 9)",
             "sensitivity": "high",
-            "why": "GDPR's own list of special categories -- the highest bar for lawful processing.",
+            "why": "GDPR's own list of special categories -- the highest bar for lawful processing. This vendor: Same customer-input warning as the biometric entry above, not a genuine product claim.",
             "source": "privacy",
-            "matched": "political opinion",
-            "excerpt": "the input of sensitive or special categories of Personal Data to the Services, which includes Personal Data related to race, ethnicity, political opinions, religion, trade union membership, genetic data, biometric data, health data and sexual orientation."
+            "matched": null,
+            "excerpt": "the input of sensitive or special categories of Personal Data to the Services, which includes Personal Data related to race, ethnicity, political opinions, reli",
+            "confidence": "conditional"
           },
           {
             "key": "financial",
             "label": "Financial / payment data",
             "sensitivity": "medium",
-            "why": "Card or bank details -- a breach here has direct financial consequences for the data subject.",
+            "why": "Card or bank details -- a breach here has direct financial consequences for the data subject. This vendor: Hedged on an individual purchase decision (\"if you purchase\"); enterprise GitLab customers are typically invoiced under a signed order form rather than paying by card.",
             "source": "privacy",
-            "matched": "payment information",
-            "excerpt": "If you purchase a paid subscription from GitLab, we will collect payment information from you that may include your name, billing address and credit card or bank information."
+            "matched": null,
+            "excerpt": "If you purchase a paid subscription from GitLab, we will collect payment information from you that may include your name, billing address and credit card or bank information.",
+            "confidence": "conditional"
           },
           {
             "key": "business_contact",
             "label": "Business contact information",
             "sensitivity": "low",
-            "why": "Names, work emails and similar identifiers -- present in nearly every SaaS privacy policy.",
+            "why": "Names, work emails and similar identifiers -- present in nearly every SaaS privacy policy. This vendor: Standard contact fields collected when a user signs up or requests contact.",
             "source": "privacy",
-            "matched": "Contact Information",
-            "excerpt": "Contact Information:"
+            "matched": null,
+            "excerpt": "Contact Information:",
+            "confidence": "stated"
           },
           {
             "key": "account_usage",
             "label": "Account & usage data",
             "sensitivity": "low",
-            "why": "Login activity, device and session data -- routine telemetry, not by itself sensitive.",
+            "why": "Login activity, device and session data -- routine telemetry, not by itself sensitive. This vendor: Automatic device/usage telemetry, stated plainly.",
             "source": "privacy",
-            "matched": "IP address",
-            "excerpt": "When you access and use our Services, we automatically collect information about your device, which may include: device type, your device operating system, browser type and version, language preference, IP address, hardware identifiers, and mobile IDs."
+            "matched": null,
+            "excerpt": "When you access and use our Services, we automatically collect information about your device, which may include: device type, your device operating system, brow",
+            "confidence": "stated"
           }
         ],
-        "max_sensitivity": "high",
-        "sensitivity_score": 30
+        "max_sensitivity": "low",
+        "sensitivity_score": 10,
+        "method": "llm"
       },
       "score": {
         "total": 50,
@@ -2287,35 +2353,49 @@
       "data_classification": {
         "tags": [
           {
+            "key": "special_category",
+            "label": "Special-category data (GDPR Art. 9)",
+            "sensitivity": "high",
+            "why": "GDPR's own list of special categories -- the highest bar for lawful processing. This vendor: Definitional language (\"may be considered 'Sensitive'\") introducing a defined term, not a claim that Elastic's product processes this.",
+            "source": "privacy",
+            "matched": null,
+            "excerpt": "Certain personal data, such as information about medical or health conditions, racial or ethnic origin, and religious or political beliefs, may be considered “Sensitive”",
+            "confidence": "conditional"
+          },
+          {
             "key": "financial",
             "label": "Financial / payment data",
             "sensitivity": "medium",
-            "why": "Card or bank details -- a breach here has direct financial consequences for the data subject.",
+            "why": "Card or bank details -- a breach here has direct financial consequences for the data subject. This vendor: Stated plainly as part of transaction processing, not hedged to an individual-only flow.",
             "source": "privacy",
-            "matched": "credit card",
-            "excerpt": "We also use personal data, including financial, credit card, and payment information, to process transactions."
+            "matched": null,
+            "excerpt": "We also use personal data, including financial, credit card, and payment information, to process transactions.",
+            "confidence": "stated"
           },
           {
             "key": "business_contact",
             "label": "Business contact information",
             "sensitivity": "low",
-            "why": "Names, work emails and similar identifiers -- present in nearly every SaaS privacy policy.",
+            "why": "Names, work emails and similar identifiers -- present in nearly every SaaS privacy policy. This vendor: Standard contact fields collected from event attendees, sales contacts and customers.",
             "source": "privacy",
-            "matched": "contact information",
-            "excerpt": "The personal data we collect may include contact information (such as your name, address, telephone number, or email address), professional information (such as your employer name, address, job title, department, or job role), user IDs and passwords, and contact preferences."
+            "matched": null,
+            "excerpt": "The personal data we collect may include contact information (such as your name, address, telephone number, or email address)",
+            "confidence": "stated"
           },
           {
             "key": "account_usage",
             "label": "Account & usage data",
             "sensitivity": "low",
-            "why": "Login activity, device and session data -- routine telemetry, not by itself sensitive.",
+            "why": "Login activity, device and session data -- routine telemetry, not by itself sensitive. This vendor: Standard cookie/telemetry collection.",
             "source": "privacy",
-            "matched": "cookies",
-            "excerpt": "This statement explains how we use cookies and similar technologies."
+            "matched": null,
+            "excerpt": "This statement explains how we use cookies and similar technologies.",
+            "confidence": "stated"
           }
         ],
         "max_sensitivity": "medium",
-        "sensitivity_score": 20
+        "sensitivity_score": 20,
+        "method": "llm"
       },
       "score": {
         "total": 58,
@@ -2498,41 +2578,46 @@
             "key": "children",
             "label": "Children's data",
             "sensitivity": "high",
-            "why": "Processing minors' data triggers COPPA / GDPR-K obligations most vendors would rather not have.",
+            "why": "Processing minors' data triggers COPPA / GDPR-K obligations most vendors would rather not have. This vendor: Generic remediation boilerplate common to nearly all web services; Vercel is a developer/infrastructure platform with no identifiable product surface directed at children, unlike Figma's dedicated COPPA policy for an education product.",
             "source": "privacy",
-            "matched": "parental consent",
-            "excerpt": "If we become aware that we have collected personal information from anyone under the age of 16 without verification or parental consent, we take steps to remove such information."
+            "matched": null,
+            "excerpt": "If we become aware that we have collected personal information from anyone under the age of 16 without verification or parental consent, we take steps to remove",
+            "confidence": "conditional"
           },
           {
             "key": "financial",
             "label": "Financial / payment data",
             "sensitivity": "medium",
-            "why": "Card or bank details -- a breach here has direct financial consequences for the data subject.",
+            "why": "Card or bank details -- a breach here has direct financial consequences for the data subject. This vendor: Stated plainly, not hedged to an individual-only flow.",
             "source": "privacy",
-            "matched": "payment card",
-            "excerpt": "We collect payment and other transactional information related to our Services, such as hashed payment card values and billing address."
+            "matched": null,
+            "excerpt": "We collect payment and other transactional information related to our Services, such as hashed payment card values and billing address.",
+            "confidence": "stated"
           },
           {
             "key": "business_contact",
             "label": "Business contact information",
             "sensitivity": "low",
-            "why": "Names, work emails and similar identifiers -- present in nearly every SaaS privacy policy.",
+            "why": "Names, work emails and similar identifiers -- present in nearly every SaaS privacy policy. This vendor: Standard signup fields.",
             "source": "privacy",
-            "matched": "name and email",
-            "excerpt": "We may collect or receive information directly from you, such as your name and email address when you or your organization sign up for our Services or Marketing Activities."
+            "matched": null,
+            "excerpt": "We may collect or receive information directly from you, such as your name and email address when you or your organization sign up for our Services",
+            "confidence": "stated"
           },
           {
             "key": "account_usage",
             "label": "Account & usage data",
             "sensitivity": "low",
-            "why": "Login activity, device and session data -- routine telemetry, not by itself sensitive.",
+            "why": "Login activity, device and session data -- routine telemetry, not by itself sensitive. This vendor: Standard product telemetry.",
             "source": "privacy",
-            "matched": "IP address",
-            "excerpt": "In other cases, we receive information through your use of our Services, such as IP address and telemetry data."
+            "matched": null,
+            "excerpt": "In other cases, we receive information through your use of our Services, such as IP address and telemetry data.",
+            "confidence": "stated"
           }
         ],
-        "max_sensitivity": "high",
-        "sensitivity_score": 30
+        "max_sensitivity": "medium",
+        "sensitivity_score": 20,
+        "method": "llm"
       },
       "score": {
         "total": 63,
