@@ -44,6 +44,10 @@ jobs:
 
       - name: Collect
         working-directory: collector
+        env:
+          # Optional. Without it, data-type classification falls back to the
+          # regex heuristic in classify.py -- the collector still runs fine.
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
           python collect.py \
             ${{ github.event.inputs.only && format('--only {0}', github.event.inputs.only) || '' }} \

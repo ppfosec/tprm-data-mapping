@@ -216,7 +216,8 @@
       }
     ],
     "max_sensitivity": "high",
-    "sensitivity_score": 30
+    "sensitivity_score": 30,
+    "method": "llm"
   },
   "authorized_since_default": "2026-07-01"
 }

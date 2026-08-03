@@ -147,4 +147,5 @@ def classify(texts: dict[str, str]) -> dict:
         tags=tags,
         max_sensitivity=max_sensitivity,
         sensitivity_score=SENSITIVITY_SCORE[max_sensitivity],
+        method="heuristic",
     )
