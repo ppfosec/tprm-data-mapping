@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T06:23:36+00:00",
+  "generated_at": "2026-08-05T06:24:48+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -105,11 +105,8 @@
           "sha256": "e29848accd9e38b9",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2024-02-25",
-            "last": "2025-11-02"
+            "ok": false,
+            "reason": "ReadTimeout"
           }
         },
         {
@@ -121,11 +118,8 @@
           "sha256": "8dac92944a88d6dd",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2024-02-25",
-            "last": "2026-03-08"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -137,11 +131,8 @@
           "sha256": "85c78c93175ffb26",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2024-02-21",
-            "last": "2026-03-20"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -167,32 +158,29 @@
           "sha256": "cc6e6d21a41fed8e",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 5,
-            "revisions": 4,
-            "first": "2026-07-14",
-            "last": "2026-08-02"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 399,
-        "placeable": 399,
+        "total": 398,
+        "placeable": 398,
         "unplaceable": 0,
-        "eea": 12,
+        "eea": 11,
         "non_eea": 387,
         "countries": {
-          "United States": 323,
+          "United States": 328,
           "United Kingdom": 30,
           "Japan": 13,
-          "Australia": 10,
-          "Ireland": 8,
-          "Singapore": 6,
+          "Australia": 9,
+          "Ireland": 7,
           "South Korea": 4,
-          "Switzerland": 4,
-          "India": 3,
+          "Singapore": 4,
+          "Switzerland": 3,
           "Germany": 2,
+          "India": 2,
           "France": 2
         },
         "scanned": 26,
@@ -284,7 +272,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "387 of 399 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "387 of 398 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -293,7 +281,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 323 open roles"
+              "excerpt": "United States: 328 open roles"
             },
             {
               "kind": "stat",
@@ -305,7 +293,7 @@
             },
             {
               "kind": "stat",
-              "excerpt": "Australia: 10 open roles"
+              "excerpt": "Australia: 9 open roles"
             }
           ],
           "question": "Which roles can access production data, and from which countries? Does the residency commitment cover support and engineering access, or only data at rest?"
@@ -406,11 +394,11 @@
         "method": "heuristic"
       },
       "score": {
-        "total": 40,
+        "total": 65,
         "footprint": 24,
         "access": 12,
         "transparency": 4,
-        "record": 0
+        "record": 25
       },
       "drift": []
     },
@@ -431,11 +419,8 @@
           "sha256": "8d3c9629d73c5991",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2018-05-14",
-            "last": "2018-09-15"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -447,8 +432,11 @@
           "sha256": "d999aff5712a68aa",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 279,
+            "revisions": 278,
+            "first": "2021-09-03",
+            "last": "2026-08-02"
           }
         },
         {
@@ -461,7 +449,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "ReadTimeout"
           }
         },
         {
@@ -473,16 +461,19 @@
           "sha256": "253254e28bc2ff29",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2021-05-16",
+            "last": "2025-10-08"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 286,
+        "total": 290,
         "placeable": 7,
-        "unplaceable": 279,
+        "unplaceable": 283,
         "eea": 0,
         "non_eea": 7,
         "countries": {
@@ -772,7 +763,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "http 503"
+            "reason": "ConnectionError"
           }
         },
         {
@@ -784,11 +775,8 @@
           "sha256": "b5a9ad2baa6f3dd5",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 19,
-            "revisions": 18,
-            "first": "2024-05-24",
-            "last": "2026-05-25"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
@@ -797,26 +785,26 @@
         "total": 433,
         "placeable": 433,
         "unplaceable": 0,
-        "eea": 88,
-        "non_eea": 345,
+        "eea": 86,
+        "non_eea": 347,
         "countries": {
-          "United States": 206,
-          "France": 48,
+          "United States": 204,
+          "France": 46,
           "Japan": 42,
           "Ireland": 23,
           "Singapore": 21,
-          "Netherlands": 17,
+          "Netherlands": 18,
+          "Brazil": 17,
           "United Kingdom": 17,
-          "Spain": 15,
           "South Korea": 14,
-          "Brazil": 14,
-          "India": 10,
+          "Spain": 13,
+          "India": 11,
           "Australia": 10,
-          "Italy": 7,
-          "Portugal": 6,
+          "Italy": 6,
           "Sweden": 5,
-          "Germany": 5,
+          "Portugal": 5,
           "Denmark": 4,
+          "Germany": 4,
           "Saudi Arabia": 3,
           "Mexico": 3,
           "Israel": 3,
@@ -836,7 +824,7 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 3,
+            "count": 4,
             "examples": [
               {
                 "title": "Director, Engineering - Cloud Observability",
@@ -1059,11 +1047,11 @@
         "method": "heuristic"
       },
       "score": {
-        "total": 47,
+        "total": 69,
         "footprint": 20,
-        "access": 20,
+        "access": 24,
         "transparency": 0,
-        "record": 7
+        "record": 25
       },
       "drift": []
     },
@@ -1100,11 +1088,8 @@
           "sha256": "92101146b860c664",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 216,
-            "revisions": 215,
-            "first": "2022-05-27",
-            "last": "2026-08-03"
+            "ok": false,
+            "reason": "http 503"
           }
         },
         {
@@ -1116,30 +1101,32 @@
           "sha256": "08c0eec1eefcd1e4",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "http 503"
+            "ok": true,
+            "captures": 92,
+            "revisions": 91,
+            "first": "2022-12-05",
+            "last": "2026-08-03"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 544,
-        "placeable": 482,
+        "total": 550,
+        "placeable": 488,
         "unplaceable": 62,
         "eea": 71,
-        "non_eea": 411,
+        "non_eea": 417,
         "countries": {
-          "United States": 246,
-          "Canada": 53,
-          "Ireland": 52,
+          "United States": 253,
+          "Ireland": 54,
+          "Canada": 51,
           "Singapore": 38,
-          "India": 37,
+          "India": 38,
           "United Kingdom": 29,
-          "Mexico": 26,
-          "Australia": 8,
+          "Mexico": 25,
+          "Australia": 9,
           "France": 6,
           "Japan": 5,
-          "Germany": 3,
           "Spain": 3,
           "Taiwan": 2,
           "Luxembourg": 2,
@@ -1148,6 +1135,7 @@
           "Sweden": 2,
           "Netherlands": 2,
           "Hong Kong": 1,
+          "Germany": 1,
           "Brazil": 1,
           "Italy": 1,
           "Thailand": 1
@@ -1217,7 +1205,7 @@
             "count": 4,
             "examples": [
               {
-                "title": "Accounting Technical Solutions Lead",
+                "title": "Accounting AI Solutions Lead",
                 "location": "Seattle, San Francisco, New York",
                 "url": "https://stripe.com/jobs/search?gh_jid=8103750",
                 "matched": "Databricks",
@@ -1251,7 +1239,7 @@
           "evidence": [
             {
               "kind": "job",
-              "title": "Accounting Technical Solutions Lead",
+              "title": "Accounting AI Solutions Lead",
               "location": "Seattle, San Francisco, New York",
               "url": "https://stripe.com/jobs/search?gh_jid=8103750",
               "matched": "Databricks",
@@ -1412,11 +1400,8 @@
           "sha256": "6e2b46ec94fc52f7",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 264,
-            "revisions": 263,
-            "first": "2024-01-18",
-            "last": "2026-08-01"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -1451,14 +1436,14 @@
         "total": 176,
         "placeable": 176,
         "unplaceable": 0,
-        "eea": 13,
-        "non_eea": 163,
+        "eea": 14,
+        "non_eea": 162,
         "countries": {
-          "United States": 109,
-          "United Kingdom": 19,
-          "Japan": 11,
+          "United States": 108,
+          "United Kingdom": 20,
+          "Japan": 10,
+          "Germany": 7,
           "Singapore": 7,
-          "Germany": 6,
           "France": 6,
           "Brazil": 5,
           "Israel": 5,
@@ -1597,7 +1582,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "163 of 176 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "162 of 176 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -1606,19 +1591,15 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 109 open roles"
+              "excerpt": "United States: 108 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 19 open roles"
+              "excerpt": "United Kingdom: 20 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "Japan: 11 open roles"
-            },
-            {
-              "kind": "stat",
-              "excerpt": "Singapore: 7 open roles"
+              "excerpt": "Japan: 10 open roles"
             }
           ],
           "question": "Which roles can access production data, and from which countries? Does the residency commitment cover support and engineering access, or only data at rest?"
@@ -1692,11 +1673,11 @@
         "method": "heuristic"
       },
       "score": {
-        "total": 48,
+        "total": 73,
         "footprint": 23,
         "access": 25,
         "transparency": 0,
-        "record": 0
+        "record": 25
       },
       "drift": []
     },
@@ -1717,11 +1698,8 @@
           "sha256": "f5448664493a7f16",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2015-04-16",
-            "last": "2026-02-17"
+            "ok": false,
+            "reason": "ReadTimeout"
           }
         },
         {
@@ -1750,22 +1728,25 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": false,
-            "reason": "http 503"
+            "ok": true,
+            "captures": 23,
+            "revisions": 22,
+            "first": "2023-11-29",
+            "last": "2026-07-07"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 189,
-        "placeable": 179,
-        "unplaceable": 10,
+        "total": 185,
+        "placeable": 174,
+        "unplaceable": 11,
         "eea": 23,
-        "non_eea": 156,
+        "non_eea": 151,
         "countries": {
-          "United States": 87,
+          "United States": 84,
           "Canada": 40,
-          "United Kingdom": 35,
+          "United Kingdom": 32,
           "India": 31,
           "Germany": 13,
           "France": 10,
@@ -1773,10 +1754,10 @@
           "United Arab Emirates": 8,
           "Netherlands": 7,
           "Australia": 5,
-          "Israel": 5,
           "Singapore": 5,
           "Italy": 4,
           "Spain": 4,
+          "Israel": 4,
           "Brazil": 3,
           "Austria": 3,
           "Japan": 3,
@@ -2118,31 +2099,31 @@
         "total": 232,
         "placeable": 232,
         "unplaceable": 0,
-        "eea": 79,
-        "non_eea": 153,
+        "eea": 84,
+        "non_eea": 148,
         "countries": {
-          "United States": 80,
-          "Spain": 22,
-          "Canada": 22,
-          "United Kingdom": 19,
+          "United States": 77,
+          "Spain": 23,
+          "Canada": 23,
+          "United Kingdom": 17,
           "Ireland": 12,
-          "India": 10,
-          "Greece": 10,
+          "Greece": 11,
+          "India": 9,
           "Germany": 8,
-          "Portugal": 7,
+          "Portugal": 8,
           "Brazil": 5,
+          "Norway": 5,
           "Belgium": 4,
           "Singapore": 4,
-          "Norway": 4,
           "Netherlands": 3,
           "Costa Rica": 3,
           "Romania": 3,
+          "Poland": 2,
           "Japan": 2,
           "France": 2,
           "Saudi Arabia": 2,
           "Mexico": 2,
           "Hungary": 2,
-          "Poland": 1,
           "United Arab Emirates": 1,
           "Australia": 1,
           "South Korea": 1,
@@ -2156,15 +2137,8 @@
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 6,
+            "count": 5,
             "examples": [
-              {
-                "title": "AI Security - Principal Security Research Engineer I",
-                "location": "United States",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8079640&gh_jid=8079640",
-                "matched": "distributed team",
-                "excerpt": "egrating LLM APIs into production applications You work autonomously and can drive decisions and results in a distributed team by leveraging asynchronous, direct, and transparent communication. Previous successes in presenting findings"
-              },
               {
                 "title": "Corporate Counsel - Legal Product, IP, and Marketing",
                 "location": "United States",
@@ -2173,11 +2147,18 @@
                 "excerpt": "orkflows and \"productization\" processes that help a legal team scale. Global Perspective: Comfortable working across time zones and cultures in a distributed culture with a flexible approach to problem-solving. Compensation for this role"
               },
               {
-                "title": "Fullstack Software Engineer II - Admin UX - Platform Applications",
+                "title": "macOS / Container Security - Senior Security Research Engineer",
                 "location": "United States",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8077634&gh_jid=8077634",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8079634&gh_jid=8079634",
                 "matched": "distributed team",
-                "excerpt": "es, and operating what they build once it's live. You can work autonomously, drive decisions and results in a distributed team by leveraging asynchronous, direct, and transparent communication. You collaborate across functions and teams"
+                "excerpt": "rum teams based on dynamic business priorities You work autonomously and can drive decisions and results in a distributed team by leveraging asynchronous, direct, and transparent communication Additional Information - We Take Care of Ou"
+              },
+              {
+                "title": "Principal Security ML Research Engineer",
+                "location": "United States",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8079632&gh_jid=8079632",
+                "matched": "distributed team",
+                "excerpt": "um teams based on dynamic business priorities. You work autonomously and can drive decisions and results in a distributed team by leveraging asynchronous, direct, and transparent communication. Additional Information - We Take Care of O"
               }
             ]
           },
@@ -2186,7 +2167,7 @@
             "label": "Travel expected",
             "severity": "high",
             "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 3,
+            "count": 4,
             "examples": [
               {
                 "title": "Principal AI Ecosystem Architect - OpenAI/Anthropic",
@@ -2203,27 +2184,11 @@
                 "excerpt": "ve presenting at a developer conference and working through an architecture question with a partner engineer. Willingness to travel 30% to partner offices, events, and conferences. Bonus Points Direct experience working with OpenAI and/or An"
               },
               {
-                "title": "Principal Consulting Architect, Security",
+                "title": "Principal, Platform Specialization",
                 "location": "United States",
                 "url": "https://jobs.elastic.co/jobs?gh_jid=8092084&gh_jid=8092084",
                 "matched": "travel 25%",
                 "excerpt": "rs. Deep technical expertise in system architecture, including Elasticsearch and Elastic Solutions Ability to travel 25% of the time, as required. Bonus Points Familiarity with AI system architecture, including building autonomous"
-              }
-            ]
-          },
-          {
-            "key": "oncall",
-            "label": "On-call access",
-            "severity": "high",
-            "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 1,
-            "examples": [
-              {
-                "title": "Fullstack Software Engineer II - Admin UX - Platform Applications",
-                "location": "United States",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8077634&gh_jid=8077634",
-                "matched": "on-call",
-                "excerpt": "and the team's — while maintaining code quality and owning the outcomes. Operational maturity — you have been on-call for a user-facing service, used runbooks and SLOs, and treat continuous delivery, feature flags, and automate"
               }
             ]
           },
@@ -2265,16 +2230,16 @@
             "count": 2,
             "examples": [
               {
-                "title": "Fullstack Software Engineer II - Admin UX - Platform Applications",
-                "location": "United States",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8077634&gh_jid=8077634",
-                "matched": "Impact Level",
-                "excerpt": "mentor peers, and work successfully with product and design. Eligible to work in Department of Defense (DoD) Impact Level 4 or above cloud service environments. &nbsp; Compensation for this role is in the form of base salary.&nbsp;"
-              },
-              {
                 "title": "Principal Software Developer - Security - Elasticsearch",
                 "location": "Canada",
                 "url": "https://jobs.elastic.co/jobs?gh_jid=8082617&gh_jid=8082617",
+                "matched": "FedRAMP",
+                "excerpt": "to quantum-resistant cryptographic algorithms. Hands-on experience mapping engine-level technical controls to FedRAMP (Moderate/High), FIPS 140, and SOC 2 requirements. Experience working on the internals of a data store or sea"
+              },
+              {
+                "title": "Principal Software Engineer - Security - Elasticsearch",
+                "location": "United States",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8082612&gh_jid=8082612",
                 "matched": "FedRAMP",
                 "excerpt": "to quantum-resistant cryptographic algorithms. Hands-on experience mapping engine-level technical controls to FedRAMP (Moderate/High), FIPS 140, and SOC 2 requirements. Experience working on the internals of a data store or sea"
               }
@@ -2357,7 +2322,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "ReadTimeout"
           }
         },
         {
@@ -2376,19 +2341,19 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 81,
-        "placeable": 79,
-        "unplaceable": 2,
+        "total": 80,
+        "placeable": 77,
+        "unplaceable": 3,
         "eea": 8,
-        "non_eea": 71,
+        "non_eea": 69,
         "countries": {
-          "United States": 64,
+          "United States": 63,
           "United Kingdom": 15,
           "Germany": 8,
-          "Australia": 3,
+          "Australia": 2,
           "India": 2
         },
-        "scanned": 19,
+        "scanned": 18,
         "signals": [
           {
             "key": "oncall",
