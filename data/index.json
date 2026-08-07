@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T06:27:28+00:00",
+  "generated_at": "2026-08-07T05:16:23+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -121,8 +121,11 @@
           "sha256": "8dac92944a88d6dd",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2024-02-25",
+            "last": "2026-03-08"
           }
         },
         {
@@ -134,11 +137,8 @@
           "sha256": "85c78c93175ffb26",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2024-02-21",
-            "last": "2026-03-20"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -151,8 +151,11 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 58,
+            "revisions": 57,
+            "first": "2024-09-26",
+            "last": "2026-08-06"
           }
         },
         {
@@ -165,28 +168,28 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectTimeout"
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 395,
-        "placeable": 395,
+        "total": 390,
+        "placeable": 390,
         "unplaceable": 0,
-        "eea": 11,
-        "non_eea": 384,
+        "eea": 10,
+        "non_eea": 380,
         "countries": {
-          "United States": 326,
+          "United States": 324,
           "United Kingdom": 30,
-          "Japan": 13,
+          "Japan": 12,
           "Australia": 9,
           "Ireland": 7,
-          "South Korea": 4,
           "Singapore": 4,
+          "South Korea": 3,
           "Switzerland": 3,
-          "Germany": 2,
           "France": 2,
+          "Germany": 1,
           "India": 1
         },
         "scanned": 26,
@@ -278,7 +281,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "384 of 395 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "380 of 390 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -287,7 +290,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 326 open roles"
+              "excerpt": "United States: 324 open roles"
             },
             {
               "kind": "stat",
@@ -295,7 +298,7 @@
             },
             {
               "kind": "stat",
-              "excerpt": "Japan: 13 open roles"
+              "excerpt": "Japan: 12 open roles"
             },
             {
               "kind": "stat",
@@ -425,8 +428,11 @@
           "sha256": "8d3c9629d73c5991",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2018-05-14",
+            "last": "2018-09-15"
           }
         },
         {
@@ -438,11 +444,8 @@
           "sha256": "d999aff5712a68aa",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 279,
-            "revisions": 278,
-            "first": "2021-09-03",
-            "last": "2026-08-02"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -454,11 +457,8 @@
           "sha256": "3669d59798194699",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 155,
-            "revisions": 154,
-            "first": "2018-11-17",
-            "last": "2026-07-18"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -470,19 +470,16 @@
           "sha256": "253254e28bc2ff29",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2021-05-16",
-            "last": "2025-10-08"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 292,
+        "total": 298,
         "placeable": 7,
-        "unplaceable": 285,
+        "unplaceable": 291,
         "eea": 0,
         "non_eea": 7,
         "countries": {
@@ -497,15 +494,8 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 10,
+            "count": 9,
             "examples": [
-              {
-                "title": "Data Center Engineer",
-                "location": "Hybrid",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/8074364?gh_jid=8074364",
-                "matched": "on-call",
-                "excerpt": "esponsibilities (prioritization, planning, scheduling, status reporting) such as JIRA Participate in a shared on-call rotation to maintain 24×7 operational availability of the global network. Other Responsibilities May Include"
-              },
               {
                 "title": "Distributed Systems Engineer, Analytical Database Platform",
                 "location": "Hybrid",
@@ -519,6 +509,13 @@
                 "url": "https://boards.greenhouse.io/cloudflare/jobs/7462803?gh_jid=7462803",
                 "matched": "on-call",
                 "excerpt": "ional health of our APIs and alerting systems by developing comprehensive monitoring, and participating in an on-call rotation (with the flexibility to be on-call outside of standard working hours as needed). Key Qualifications"
+              },
+              {
+                "title": "Distributed Systems Engineer - Data Platform (Delivery, Database, Retrieval)",
+                "location": "Hybrid",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/7462801?gh_jid=7462801",
+                "matched": "on-call",
+                "excerpt": "ou! Join us in our mission to help build a better internet for everyone! This role requires flexibility to be on-call outside of standard working hours to address technical issues as needed. Equity This role is eligible to part"
               }
             ]
           },
@@ -553,22 +550,6 @@
             ]
           },
           {
-            "key": "travel",
-            "label": "Travel expected",
-            "severity": "high",
-            "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 1,
-            "examples": [
-              {
-                "title": "Field Solutions Engineer Brazil (US based)",
-                "location": "Hybrid",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/7975427?gh_jid=7975427",
-                "matched": "Willingness to travel",
-                "excerpt": "d internal demos, author training material or blog posts, and mentor fellow engineering team members. Travel: Willingness to travel&nbsp; 25-50% travel to align face-to-face with high-growth accounts, enterprise prospects, and regional teams"
-              }
-            ]
-          },
-          {
             "key": "round_clock",
             "label": "Round-the-clock coverage",
             "severity": "medium",
@@ -589,44 +570,30 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 3,
+            "count": 1,
             "examples": [
-              {
-                "title": "Field Solutions Engineer Brazil (US based)",
-                "location": "Hybrid",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/7975427?gh_jid=7975427",
-                "matched": "Salesforce",
-                "excerpt": "l velocity in enterprise accounts. Maintain a strong presence in opportunity reviews and pipeline management (Salesforce). Customer Advisory &amp; Strategic Guidance: Partner with existing clients as a dedicated account advisor, p"
-              },
               {
                 "title": "Principal Engineer - GTM Data Platform",
                 "location": "Hybrid",
                 "url": "https://boards.greenhouse.io/cloudflare/jobs/8054669?gh_jid=8054669",
                 "matched": "Snowflake",
                 "excerpt": "h a focus on enabling GTM organizations. Columnar/OLAP or lakehouse experience (ClickHouse, DuckDB, BigQuery, Snowflake, Iceberg, Starrocks).Familiarity with the Salesforce data model and CRM/API integrations. Familiarity with de"
-              },
-              {
-                "title": "Principal Sales Operations & Strategy Manager - Renewals & Business Development Teams",
-                "location": "Hybrid",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/8036837?gh_jid=8036837",
-                "matched": "Salesforce",
-                "excerpt": "ge of A/B testing, predictive modeling, or machine learning basics Familiarity with CRM or ERP systems (e.g., Salesforce, SAP) &nbsp; What Makes Cloudflare Special? We’re not just a highly ambitious, large-scale technology company"
               }
             ]
           },
           {
-            "key": "gov_enclave",
-            "label": "Government enclave",
+            "key": "sovereignty_work",
+            "label": "Sovereignty workstream",
             "severity": "low",
-            "why": "A separate sovereign estate exists, which confirms the commercial one is not it.",
+            "why": "They are staffing the problem, which is a good sign and an admission it is open.",
             "count": 1,
             "examples": [
               {
-                "title": "Field Solutions Engineer Brazil (US based)",
+                "title": "Principal Solutions Architect - APAC",
                 "location": "Hybrid",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/7975427?gh_jid=7975427",
-                "matched": "FedRAMP",
-                "excerpt": "ding of regulatory, compliance, and security posture requirements, including PCI DSS, HIPAA, GDPR, SOC-2, and FedRAMP. Education: An undergraduate or graduate degree in Computer Science, Engineering, or a related field (Reminde"
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8040851?gh_jid=8040851",
+                "matched": "Sovereign",
+                "excerpt": "stomers' enterprise architects and engineering leadership. Translate industry trends like Zero Trust, Digital Sovereignty, AI workload security, cloud-to-edge migration into actionable architectural strategies tailored to each cu"
               }
             ]
           }
@@ -661,19 +628,19 @@
           "evidence": [
             {
               "kind": "job",
-              "title": "Data Center Engineer",
-              "location": "Hybrid",
-              "url": "https://boards.greenhouse.io/cloudflare/jobs/8074364?gh_jid=8074364",
-              "matched": "on-call",
-              "excerpt": "esponsibilities (prioritization, planning, scheduling, status reporting) such as JIRA Participate in a shared on-call rotation to maintain 24×7 operational availability of the global network. Other Responsibilities May Include"
-            },
-            {
-              "kind": "job",
               "title": "Distributed Systems Engineer, Analytical Database Platform",
               "location": "Hybrid",
               "url": "https://boards.greenhouse.io/cloudflare/jobs/7462799?gh_jid=7462799",
               "matched": "on-call",
               "excerpt": "Join us in our mission to help build a better internet for everyone! This role may require flexibility to be on-call outside of standard working hours to address technical issues as needed. Equity This role is eligible to part"
+            },
+            {
+              "kind": "job",
+              "title": "Distributed Systems Engineer - Data Platform - Analytics and Alerts",
+              "location": "Hybrid",
+              "url": "https://boards.greenhouse.io/cloudflare/jobs/7462803?gh_jid=7462803",
+              "matched": "on-call",
+              "excerpt": "ional health of our APIs and alerting systems by developing comprehensive monitoring, and participating in an on-call rotation (with the flexibility to be on-call outside of standard working hours as needed). Key Qualifications"
             }
           ],
           "question": "For out-of-hours incidents, who is on the rotation, where are they, and is their access to customer data logged and reviewable by the customer?"
@@ -742,11 +709,8 @@
           "sha256": "9da08ec768f6c700",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2017-06-30",
-            "last": "2025-04-25"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -784,33 +748,33 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 434,
-        "placeable": 434,
+        "total": 440,
+        "placeable": 440,
         "unplaceable": 0,
-        "eea": 88,
-        "non_eea": 346,
+        "eea": 92,
+        "non_eea": 348,
         "countries": {
           "United States": 206,
-          "France": 47,
+          "France": 50,
           "Japan": 42,
-          "Ireland": 24,
-          "Singapore": 21,
+          "Ireland": 25,
+          "Singapore": 22,
           "Netherlands": 18,
           "Brazil": 17,
           "United Kingdom": 17,
+          "Spain": 15,
           "South Korea": 13,
-          "Spain": 13,
           "India": 10,
           "Australia": 10,
+          "Portugal": 7,
           "Italy": 6,
           "Sweden": 5,
-          "Portugal": 5,
+          "Germany": 5,
           "Denmark": 4,
-          "Germany": 4,
+          "Israel": 3,
           "Saudi Arabia": 3,
           "Mexico": 3,
           "Indonesia": 3,
-          "Israel": 2,
           "Canada": 2,
           "Switzerland": 2,
           "Thailand": 1,
@@ -826,7 +790,7 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 5,
+            "count": 6,
             "examples": [
               {
                 "title": "Director, Engineering - Cloud Observability",
@@ -1091,10 +1055,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 216,
-            "revisions": 215,
+            "captures": 217,
+            "revisions": 216,
             "first": "2022-05-27",
-            "last": "2026-08-03"
+            "last": "2026-08-06"
           }
         },
         {
@@ -1116,30 +1080,30 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 549,
-        "placeable": 489,
+        "total": 551,
+        "placeable": 491,
         "unplaceable": 60,
-        "eea": 69,
-        "non_eea": 420,
+        "eea": 66,
+        "non_eea": 425,
         "countries": {
-          "United States": 257,
-          "Ireland": 53,
-          "Canada": 51,
-          "India": 38,
+          "United States": 259,
+          "Canada": 52,
+          "Ireland": 49,
           "Singapore": 37,
-          "United Kingdom": 29,
-          "Mexico": 25,
+          "India": 37,
+          "United Kingdom": 30,
+          "Mexico": 26,
           "Australia": 9,
           "France": 6,
           "Japan": 5,
           "Spain": 3,
+          "Germany": 2,
           "Taiwan": 2,
           "Luxembourg": 2,
           "United Arab Emirates": 2,
           "Romania": 2,
           "Netherlands": 2,
           "Hong Kong": 1,
-          "Germany": 1,
           "Brazil": 1,
           "Sweden": 1,
           "Italy": 1,
@@ -1380,8 +1344,8 @@
         "method": "heuristic"
       },
       "score": {
-        "total": 40,
-        "footprint": 21,
+        "total": 41,
+        "footprint": 22,
         "access": 19,
         "transparency": 0,
         "record": 0
@@ -1405,8 +1369,11 @@
           "sha256": "6e2b46ec94fc52f7",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 267,
+            "revisions": 266,
+            "first": "2024-01-18",
+            "last": "2026-08-05"
           }
         },
         {
@@ -1444,22 +1411,22 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 171,
-        "placeable": 171,
+        "total": 167,
+        "placeable": 167,
         "unplaceable": 0,
         "eea": 14,
-        "non_eea": 157,
+        "non_eea": 153,
         "countries": {
-          "United States": 104,
-          "United Kingdom": 20,
-          "Japan": 10,
+          "United States": 103,
+          "United Kingdom": 19,
+          "Japan": 11,
           "Germany": 7,
-          "Singapore": 7,
           "France": 6,
+          "Singapore": 5,
           "Israel": 5,
           "Australia": 4,
           "Brazil": 4,
-          "India": 3,
+          "India": 2,
           "Ireland": 1
         },
         "scanned": 26,
@@ -1499,28 +1466,28 @@
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 3,
+            "count": 4,
             "examples": [
               {
-                "title": "Manager, Solutions Consultant (London, United Kingdom)",
+                "title": "Manager, Solutions Consulting (London, United Kingdom)",
                 "location": "London, England",
                 "url": "https://boards.greenhouse.io/figma/jobs/6111591004?gh_jid=6111591004",
                 "matched": "across multiple time zones",
                 "excerpt": "not required, it’s an added plus if you also have: Experience using or working with Figma Experience working across multiple time zones At Figma, one of our values is Grow as you go. We believe in hiring smart, curious people who are excited to"
               },
               {
-                "title": "Manager, Solutions Consulting",
+                "title": "Manager, Solutions Consulting (Tokyo, Japan)",
+                "location": "Tokyo, Japan",
+                "url": "https://boards.greenhouse.io/figma/jobs/6134908004?gh_jid=6134908004",
+                "matched": "across multiple time zones",
+                "excerpt": "scripting, querying, or prototyping Practical experience using or working with Figma Experience leading teams across multiple time zones At Figma, one of our values is Grow as you go. We believe in hiring smart, curious people who are excited to"
+              },
+              {
+                "title": "Manager, Solutions Consulting (United States)",
                 "location": "San Francisco, CA • New York, NY • United States",
                 "url": "https://boards.greenhouse.io/figma/jobs/5697641004?gh_jid=5697641004",
                 "matched": "across multiple time zones",
                 "excerpt": "red, it’s an added plus if you also have: Practical experience using or working with Figma Experience working across multiple time zones&nbsp; Knowledge of light scripting, querying, or prototyping At Figma, one of our values is Grow as you go. W"
-              },
-              {
-                "title": "Senior Manager, Payroll Compliance & International Operations (Sydney, Australia)",
-                "location": "Sydney, Australia",
-                "url": "https://boards.greenhouse.io/figma/jobs/6013144004?gh_jid=6013144004",
-                "matched": "distributed team",
-                "excerpt": "roll processes, controls, and reporting to support scalability and operational consistency Lead and develop a distributed team, including an employee in EMEA and contractors in the Philippines Collaborate with People, HRIS, Accounting,"
               }
             ]
           },
@@ -1562,7 +1529,7 @@
                 "excerpt": "SQL and proficiency in a scripting language like Python or R, with exposure to distributed data systems (e.g. Snowflake) through research or internships Ability to communicate technical concepts clearly to both technical and non-"
               },
               {
-                "title": "Data Scientist, Finance",
+                "title": "Data Scientist - Finance",
                 "location": "San Francisco, CA • New York, NY • United States",
                 "url": "https://boards.greenhouse.io/figma/jobs/6013304004?gh_jid=6013304004",
                 "matched": "Snowflake",
@@ -1600,7 +1567,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "157 of 171 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "153 of 167 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -1609,15 +1576,15 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 104 open roles"
+              "excerpt": "United States: 103 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 20 open roles"
+              "excerpt": "United Kingdom: 19 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "Japan: 10 open roles"
+              "excerpt": "Japan: 11 open roles"
             }
           ],
           "question": "Which roles can access production data, and from which countries? Does the residency commitment cover support and engineering access, or only data at rest?"
@@ -1759,24 +1726,24 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 188,
-        "placeable": 177,
-        "unplaceable": 11,
-        "eea": 21,
-        "non_eea": 156,
+        "total": 190,
+        "placeable": 180,
+        "unplaceable": 10,
+        "eea": 20,
+        "non_eea": 160,
         "countries": {
-          "United States": 88,
-          "Canada": 42,
-          "United Kingdom": 33,
-          "India": 31,
+          "United States": 90,
+          "Canada": 44,
+          "India": 32,
+          "United Kingdom": 31,
           "Germany": 12,
           "France": 9,
-          "Ireland": 8,
+          "Ireland": 7,
           "United Arab Emirates": 7,
-          "Netherlands": 5,
           "Australia": 5,
           "Singapore": 5,
           "Italy": 4,
+          "Netherlands": 4,
           "Israel": 4,
           "Japan": 4,
           "Brazil": 3,
@@ -1797,7 +1764,7 @@
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 9,
+            "count": 10,
             "examples": [
               {
                 "title": "Commercial Legal Counsel, Public Sector ",
@@ -1827,7 +1794,7 @@
             "label": "Travel expected",
             "severity": "high",
             "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 5,
+            "count": 6,
             "examples": [
               {
                 "title": "Manager, Solutions Architect - Asia",
@@ -1933,7 +1900,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 12,
+            "count": 11,
             "examples": [
               {
                 "title": "Customer Success Architect",
@@ -2134,38 +2101,39 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 234,
-        "placeable": 234,
+        "total": 239,
+        "placeable": 239,
         "unplaceable": 0,
-        "eea": 83,
-        "non_eea": 151,
+        "eea": 85,
+        "non_eea": 154,
         "countries": {
-          "United States": 81,
-          "Spain": 23,
+          "United States": 84,
+          "Spain": 24,
           "Canada": 23,
-          "United Kingdom": 17,
+          "United Kingdom": 16,
           "Ireland": 12,
-          "Greece": 11,
+          "Greece": 12,
           "India": 9,
-          "Portugal": 8,
+          "Portugal": 9,
           "Germany": 7,
           "Brazil": 5,
           "Norway": 5,
           "Belgium": 4,
           "Singapore": 4,
-          "Netherlands": 3,
+          "France": 3,
           "Costa Rica": 3,
           "Romania": 3,
           "Poland": 2,
+          "Netherlands": 2,
           "Japan": 2,
-          "France": 2,
           "Saudi Arabia": 2,
           "Mexico": 2,
-          "Hungary": 2,
           "United Arab Emirates": 1,
           "South Korea": 1,
+          "Hungary": 1,
           "Switzerland": 1,
-          "Denmark": 1
+          "Denmark": 1,
+          "Australia": 1
         },
         "scanned": 26,
         "signals": [
@@ -2375,7 +2343,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectTimeout"
+            "reason": "ConnectionError"
           }
         },
         {
@@ -2388,7 +2356,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectTimeout"
+            "reason": "ConnectionError"
           }
         }
       ],
@@ -2400,8 +2368,8 @@
         "eea": 8,
         "non_eea": 69,
         "countries": {
-          "United States": 63,
-          "United Kingdom": 15,
+          "United States": 62,
+          "United Kingdom": 16,
           "Germany": 8,
           "Australia": 2,
           "India": 2

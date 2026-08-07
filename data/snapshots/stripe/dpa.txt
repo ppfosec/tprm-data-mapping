@@ -1,5 +1,5 @@
 # source: https://stripe.com/legal/dpa
-# collected: 2026-08-06
+# collected: 2026-08-07
 
 If you would like more information on our Data Processing Agreement, please see our
 FAQs
