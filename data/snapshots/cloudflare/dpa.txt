@@ -1,5 +1,5 @@
 # source: https://www.cloudflare.com/cloudflare-customer-dpa/
-# collected: 2026-08-07
+# collected: 2026-08-08
 
 Data Processing Addendum
 Overview

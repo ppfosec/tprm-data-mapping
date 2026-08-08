@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T05:16:23+00:00",
+  "generated_at": "2026-08-08T04:47:22+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -137,8 +137,11 @@
           "sha256": "85c78c93175ffb26",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2024-02-21",
+            "last": "2026-03-20"
           }
         },
         {
@@ -168,22 +171,22 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "ReadTimeout"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 390,
-        "placeable": 390,
+        "total": 393,
+        "placeable": 393,
         "unplaceable": 0,
         "eea": 10,
-        "non_eea": 380,
+        "non_eea": 383,
         "countries": {
-          "United States": 324,
+          "United States": 330,
           "United Kingdom": 30,
-          "Japan": 12,
-          "Australia": 9,
+          "Japan": 10,
+          "Australia": 8,
           "Ireland": 7,
           "Singapore": 4,
           "South Korea": 3,
@@ -281,7 +284,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "380 of 390 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "383 of 393 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -290,7 +293,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 324 open roles"
+              "excerpt": "United States: 330 open roles"
             },
             {
               "kind": "stat",
@@ -298,11 +301,11 @@
             },
             {
               "kind": "stat",
-              "excerpt": "Japan: 12 open roles"
+              "excerpt": "Japan: 10 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "Australia: 9 open roles"
+              "excerpt": "Australia: 8 open roles"
             }
           ],
           "question": "Which roles can access production data, and from which countries? Does the residency commitment cover support and engineering access, or only data at rest?"
@@ -428,11 +431,8 @@
           "sha256": "8d3c9629d73c5991",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2018-05-14",
-            "last": "2018-09-15"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -457,8 +457,11 @@
           "sha256": "3669d59798194699",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 155,
+            "revisions": 154,
+            "first": "2018-11-17",
+            "last": "2026-07-18"
           }
         },
         {
@@ -470,21 +473,24 @@
           "sha256": "253254e28bc2ff29",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2021-05-16",
+            "last": "2025-10-08"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 298,
-        "placeable": 7,
-        "unplaceable": 291,
+        "total": 300,
+        "placeable": 8,
+        "unplaceable": 292,
         "eea": 0,
-        "non_eea": 7,
+        "non_eea": 8,
         "countries": {
+          "United States": 4,
           "India": 3,
-          "United States": 3,
           "Japan": 1
         },
         "scanned": 26,
@@ -709,8 +715,11 @@
           "sha256": "9da08ec768f6c700",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2017-06-30",
+            "last": "2025-04-25"
           }
         },
         {
@@ -748,27 +757,27 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 440,
-        "placeable": 440,
+        "total": 441,
+        "placeable": 441,
         "unplaceable": 0,
-        "eea": 92,
-        "non_eea": 348,
+        "eea": 91,
+        "non_eea": 350,
         "countries": {
-          "United States": 206,
+          "United States": 210,
           "France": 50,
-          "Japan": 42,
+          "Japan": 43,
           "Ireland": 25,
           "Singapore": 22,
-          "Netherlands": 18,
-          "Brazil": 17,
-          "United Kingdom": 17,
+          "Netherlands": 17,
+          "Brazil": 16,
+          "United Kingdom": 16,
           "Spain": 15,
-          "South Korea": 13,
+          "South Korea": 11,
           "India": 10,
           "Australia": 10,
           "Portugal": 7,
-          "Italy": 6,
           "Sweden": 5,
+          "Italy": 5,
           "Germany": 5,
           "Denmark": 4,
           "Israel": 3,
@@ -790,7 +799,7 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 6,
+            "count": 5,
             "examples": [
               {
                 "title": "Director, Engineering - Cloud Observability",
@@ -836,7 +845,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 3,
+            "count": 4,
             "examples": [
               {
                 "title": "Area Vice President, Enterprise Security Sales",
@@ -853,11 +862,11 @@
                 "excerpt": "Google Cloud) Demonstrated track record of working with executives and engineers alike Prior experience with Snowflake, Databricks, Splunk, or ClickHouse is a strong plus MBA is a strong plus &nbsp; Datadog values people from al"
               },
               {
-                "title": "GTM Strategy and Operations Associate",
+                "title": "GTM Operations Associate",
                 "location": "New York, New York, USA",
-                "url": "https://careers.datadoghq.com/detail/7843331/?gh_jid=7843331",
+                "url": "https://careers.datadoghq.com/detail/8049521/?gh_jid=8049521",
                 "matched": "Salesforce",
-                "excerpt": "egration: Collaborate with GTM Systems to maintain and improve integrations between sales productivity tools, Salesforce CRM, and the broader GTM tech stack Set the standard: Build and enforce governance frameworks, acceptable use"
+                "excerpt": "p; Alliances organization, ensuring execution is timely, accurate, and scalable. Build, maintain, and enhance Salesforce reports and dashboards to provide visibility into pipeline, partner performance, and other key business metri"
               }
             ]
           },
@@ -1013,9 +1022,9 @@
         "method": "heuristic"
       },
       "score": {
-        "total": 43,
+        "total": 44,
         "footprint": 20,
-        "access": 23,
+        "access": 24,
         "transparency": 0,
         "record": 0
       },
@@ -1054,11 +1063,8 @@
           "sha256": "92101146b860c664",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 217,
-            "revisions": 216,
-            "first": "2022-05-27",
-            "last": "2026-08-06"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -1070,32 +1076,29 @@
           "sha256": "08c0eec1eefcd1e4",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 92,
-            "revisions": 91,
-            "first": "2022-12-05",
-            "last": "2026-08-03"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 551,
-        "placeable": 491,
-        "unplaceable": 60,
-        "eea": 66,
+        "total": 550,
+        "placeable": 489,
+        "unplaceable": 61,
+        "eea": 64,
         "non_eea": 425,
         "countries": {
-          "United States": 259,
-          "Canada": 52,
-          "Ireland": 49,
-          "Singapore": 37,
-          "India": 37,
-          "United Kingdom": 30,
-          "Mexico": 26,
+          "United States": 258,
+          "Canada": 53,
+          "Ireland": 48,
+          "India": 38,
+          "Singapore": 36,
+          "United Kingdom": 31,
+          "Mexico": 25,
           "Australia": 9,
-          "France": 6,
           "Japan": 5,
+          "France": 5,
           "Spain": 3,
           "Germany": 2,
           "Taiwan": 2,
@@ -1370,10 +1373,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 267,
-            "revisions": 266,
+            "captures": 268,
+            "revisions": 267,
             "first": "2024-01-18",
-            "last": "2026-08-05"
+            "last": "2026-08-06"
           }
         },
         {
@@ -1385,11 +1388,8 @@
           "sha256": "83d4724d698d19da",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 14,
-            "revisions": 13,
-            "first": "2025-04-01",
-            "last": "2026-06-20"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -1411,17 +1411,17 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 167,
-        "placeable": 167,
+        "total": 164,
+        "placeable": 164,
         "unplaceable": 0,
-        "eea": 14,
-        "non_eea": 153,
+        "eea": 13,
+        "non_eea": 151,
         "countries": {
-          "United States": 103,
+          "United States": 101,
           "United Kingdom": 19,
           "Japan": 11,
           "Germany": 7,
-          "France": 6,
+          "France": 5,
           "Singapore": 5,
           "Israel": 5,
           "Australia": 4,
@@ -1567,7 +1567,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "153 of 167 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "151 of 164 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -1576,7 +1576,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 103 open roles"
+              "excerpt": "United States: 101 open roles"
             },
             {
               "kind": "stat",
@@ -1679,15 +1679,12 @@
           "url": "https://about.gitlab.com/privacy/",
           "path": "data/snapshots/gitlab/privacy.txt",
           "lines": 531,
-          "chars": 42261,
-          "sha256": "f5448664493a7f16",
+          "chars": 42255,
+          "sha256": "b8fd30b8b1e6bdaa",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2015-04-16",
-            "last": "2026-02-17"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -1716,42 +1713,39 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": true,
-            "captures": 23,
-            "revisions": 22,
-            "first": "2023-11-29",
-            "last": "2026-07-07"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 190,
+        "total": 189,
         "placeable": 180,
-        "unplaceable": 10,
-        "eea": 20,
-        "non_eea": 160,
+        "unplaceable": 9,
+        "eea": 22,
+        "non_eea": 158,
         "countries": {
-          "United States": 90,
-          "Canada": 44,
-          "India": 32,
-          "United Kingdom": 31,
-          "Germany": 12,
-          "France": 9,
-          "Ireland": 7,
+          "United States": 89,
+          "Canada": 42,
+          "United Kingdom": 32,
+          "India": 31,
+          "Germany": 13,
+          "Ireland": 9,
           "United Arab Emirates": 7,
+          "France": 7,
+          "Netherlands": 5,
           "Australia": 5,
           "Singapore": 5,
           "Italy": 4,
-          "Netherlands": 4,
           "Israel": 4,
           "Japan": 4,
           "Brazil": 3,
+          "Spain": 3,
           "Austria": 3,
-          "Spain": 2,
+          "Poland": 3,
           "Denmark": 2,
           "Sweden": 2,
-          "Poland": 2,
           "Mexico": 1,
           "Switzerland": 1,
           "Philippines": 1,
@@ -1764,7 +1758,7 @@
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 10,
+            "count": 8,
             "examples": [
               {
                 "title": "Commercial Legal Counsel, Public Sector ",
@@ -1794,7 +1788,7 @@
             "label": "Travel expected",
             "severity": "high",
             "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 6,
+            "count": 4,
             "examples": [
               {
                 "title": "Manager, Solutions Architect - Asia",
@@ -1873,25 +1867,25 @@
             "count": 26,
             "examples": [
               {
+                "title": "Associate Solutions Architect (French or German fluency) ",
+                "location": "Remote Ireland",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8675543002",
+                "matched": "itar",
+                "excerpt": "or physical disability, genetic information (including family medical history), discharge status from the military, protected veteran status (which includes disabled veterans, recently separated veterans, active duty wartim"
+              },
+              {
+                "title": "Associate Solutions Architect (French or German fluency) ",
+                "location": "Remote, Spain",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8687171002",
+                "matched": "itar",
+                "excerpt": "or physical disability, genetic information (including family medical history), discharge status from the military, protected veteran status (which includes disabled veterans, recently separated veterans, active duty wartim"
+              },
+              {
                 "title": "Commercial Legal Counsel, Public Sector ",
                 "location": "Remote, US",
                 "url": "https://job-boards.greenhouse.io/gitlab/jobs/8562593002",
                 "matched": "FedRAMP",
                 "excerpt": "ments subject to FAR/DFARS requirements, GSA Schedule terms, and agency-specific flow-down clauses. Advise on FedRAMP-related contracting obligations, including data sovereignty commitments, government-specific data handling re"
-              },
-              {
-                "title": "Customer Success Architect",
-                "location": "Remote, United Arab Emirates",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8617525002",
-                "matched": "itar",
-                "excerpt": "or physical disability, genetic information (including family medical history), discharge status from the military, protected veteran status (which includes disabled veterans, recently separated veterans, active duty wartim"
-              },
-              {
-                "title": "Customer Success Architect, CEUR",
-                "location": "Remote, Germany",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8646852002",
-                "matched": "itar",
-                "excerpt": "or physical disability, genetic information (including family medical history), discharge status from the military, protected veteran status (which includes disabled veterans, recently separated veterans, active duty wartim"
               }
             ]
           },
@@ -2072,7 +2066,27 @@
         "transparency": 4,
         "record": 0
       },
-      "drift": []
+      "drift": [
+        {
+          "id": "gitlab-privacy-2026-08-08",
+          "vendor_id": "gitlab",
+          "vendor_name": "GitLab",
+          "document": "privacy",
+          "document_label": "Privacy policy",
+          "date": "2026-08-08",
+          "url": "https://about.gitlab.com/privacy/",
+          "hunks": [
+            {
+              "before": "[email protected]",
+              "after": "dpo@gitlab.com"
+            },
+            {
+              "before": "[email protected]",
+              "after": "DPO@gitlab.com"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "elastic",
@@ -2091,23 +2105,20 @@
           "sha256": "5369d10f45a8d597",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2018-05-23",
-            "last": "2026-02-01"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 239,
-        "placeable": 239,
+        "total": 245,
+        "placeable": 245,
         "unplaceable": 0,
         "eea": 85,
-        "non_eea": 154,
+        "non_eea": 160,
         "countries": {
-          "United States": 84,
+          "United States": 90,
           "Spain": 24,
           "Canada": 23,
           "United Kingdom": 16,
@@ -2115,23 +2126,23 @@
           "Greece": 12,
           "India": 9,
           "Portugal": 9,
-          "Germany": 7,
-          "Brazil": 5,
+          "Germany": 8,
           "Norway": 5,
           "Belgium": 4,
+          "Brazil": 4,
           "Singapore": 4,
           "France": 3,
           "Costa Rica": 3,
           "Romania": 3,
-          "Poland": 2,
           "Netherlands": 2,
+          "Switzerland": 2,
           "Japan": 2,
           "Saudi Arabia": 2,
           "Mexico": 2,
           "United Arab Emirates": 1,
+          "Poland": 1,
           "South Korea": 1,
           "Hungary": 1,
-          "Switzerland": 1,
           "Denmark": 1,
           "Australia": 1
         },
@@ -2176,15 +2187,15 @@
             "examples": [
               {
                 "title": "Principal AI Ecosystem Architect - OpenAI/Anthropic",
-                "location": "Washington, United States",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8065489&gh_jid=8065489",
+                "location": "San Francisco, CA",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8047165&gh_jid=8047165",
                 "matched": "Willingness to travel",
                 "excerpt": "ve presenting at a developer conference and working through an architecture question with a partner engineer. Willingness to travel 30% to partner offices, events, and conferences. Bonus Points Direct experience working with OpenAI and/or An"
               },
               {
                 "title": "Principal AI Ecosystem Architect - OpenAI/Anthropic",
-                "location": "San Francisco, CA",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8047165&gh_jid=8047165",
+                "location": "Washington, United States",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8065489&gh_jid=8065489",
                 "matched": "Willingness to travel",
                 "excerpt": "ve presenting at a developer conference and working through an architecture question with a partner engineer. Willingness to travel 30% to partner offices, events, and conferences. Bonus Points Direct experience working with OpenAI and/or An"
               },
@@ -2317,11 +2328,11 @@
         "method": "heuristic"
       },
       "score": {
-        "total": 58,
+        "total": 83,
         "footprint": 16,
         "access": 25,
         "transparency": 17,
-        "record": 0
+        "record": 25
       },
       "drift": []
     },
@@ -2362,19 +2373,19 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 80,
-        "placeable": 77,
+        "total": 83,
+        "placeable": 80,
         "unplaceable": 3,
-        "eea": 8,
-        "non_eea": 69,
+        "eea": 9,
+        "non_eea": 71,
         "countries": {
-          "United States": 62,
-          "United Kingdom": 16,
-          "Germany": 8,
-          "Australia": 2,
-          "India": 2
+          "United States": 63,
+          "United Kingdom": 17,
+          "Germany": 9,
+          "India": 3,
+          "Australia": 2
         },
-        "scanned": 18,
+        "scanned": 20,
         "signals": [
           {
             "key": "oncall",
@@ -2411,14 +2422,37 @@
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 1,
+            "count": 2,
             "examples": [
+              {
+                "title": "Partner Solutions Engineer, EMEA",
+                "location": "Hybrid - London, Berlin",
+                "url": "https://job-boards.greenhouse.io/vercel/jobs/6132416004",
+                "matched": "globally distributed",
+                "excerpt": "ven mindset and are experienced working in a fast-paced environment. You are comfortable working with remote, globally distributed cross-functional teams. You have excellent communication skills and experience building and maintaining stron"
+              },
               {
                 "title": "Senior Customer Support Engineer",
                 "location": "Remote - United Kingdom, Germany",
                 "url": "https://job-boards.greenhouse.io/vercel/jobs/5818258004",
                 "matched": "globally distributed",
                 "excerpt": "rbal communication; able to explain complex systems clearly. You are comfortable working with a fully remote, globally distributed team. You have a passion for delivering a customer experience second to none. You are willing to participate"
+              }
+            ]
+          },
+          {
+            "key": "travel",
+            "label": "Travel expected",
+            "severity": "high",
+            "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
+            "count": 1,
+            "examples": [
+              {
+                "title": "Partner Solutions Engineer, EMEA",
+                "location": "Hybrid - London, Berlin",
+                "url": "https://job-boards.greenhouse.io/vercel/jobs/6132416004",
+                "matched": "travel 20%",
+                "excerpt": "ce driving the adoption of web technology or previous pre-sales experience. You are based in EMEA and able to travel 20% of the time. Bonus if you: Have built and shipped AI-powered or agentic applications, ideally with the AI SDK"
               }
             ]
           },
@@ -2536,9 +2570,9 @@
         "method": "heuristic"
       },
       "score": {
-        "total": 72,
+        "total": 79,
         "footprint": 22,
-        "access": 17,
+        "access": 24,
         "transparency": 8,
         "record": 25
       },

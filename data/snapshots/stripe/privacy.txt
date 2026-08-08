@@ -1,5 +1,5 @@
 # source: https://stripe.com/privacy
-# collected: 2026-08-07
+# collected: 2026-08-08
 
 Last updated:
 April 28, 2026

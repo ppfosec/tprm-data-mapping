@@ -1,5 +1,5 @@
 # source: https://about.gitlab.com/privacy/subprocessors/
-# collected: 2026-08-07
+# collected: 2026-08-08
 
 GitLab Legal
 Sub-processors of GitLab

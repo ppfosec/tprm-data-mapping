@@ -1,5 +1,5 @@
 # source: https://about.gitlab.com/privacy/
-# collected: 2026-08-07
+# collected: 2026-08-08
 
 Close
 To search repositories and projects, login to
@@ -423,7 +423,7 @@ GitLab may be required to disclose Personal Data in response to lawful requests 
 Dispute Resolution:
 In compliance with the DPF Principles, GitLab commits to resolve complaints about your privacy and our collection or use of your Personal Data.
 Individuals with inquiries or complaints should first contact GitLab at
-[email protected]
+dpo@gitlab.com
 Independent Recourse Mechanism:
 If you do not receive timely acknowledgment of your DPF Principles-related complaint from us, or if we have not addressed your DPF Principles-related complaint to your satisfaction, please visit
 https://www.jamsadr.com/DPF-Dispute-Resolution
@@ -523,7 +523,7 @@ We may also provide notification via email of any material changes to our Privac
 Contact Us
 Your information is controlled by GitLab B.V. and GitLab Inc.
 If you have questions or concerns about the way we are handling your Personal Data, please email our privacy office with the subject line "Privacy Concern" at
-[email protected]
+DPO@gitlab.com
 .
 Our addresses are the following:
 United States:
