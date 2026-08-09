@@ -1,5 +1,5 @@
 # source: https://www.anthropic.com/legal/k12-dpa
-# collected: 2026-08-08
+# collected: 2026-08-09
 
 This U.S.
 K-12 Data Processing Agreement (this

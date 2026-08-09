@@ -1,5 +1,24 @@
 [
   {
+    "id": "gitlab-privacy-2026-08-09",
+    "vendor_id": "gitlab",
+    "vendor_name": "GitLab",
+    "document": "privacy",
+    "document_label": "Privacy policy",
+    "date": "2026-08-09",
+    "url": "https://about.gitlab.com/privacy/",
+    "hunks": [
+      {
+        "before": "dpo@gitlab.com",
+        "after": "[email protected]"
+      },
+      {
+        "before": "DPO@gitlab.com",
+        "after": "[email protected]"
+      }
+    ]
+  },
+  {
     "id": "gitlab-privacy-2026-08-08",
     "vendor_id": "gitlab",
     "vendor_name": "GitLab",

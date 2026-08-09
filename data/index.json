@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T04:47:22+00:00",
+  "generated_at": "2026-08-09T04:57:37+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -171,19 +171,19 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ReadTimeout"
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 393,
-        "placeable": 393,
+        "total": 392,
+        "placeable": 392,
         "unplaceable": 0,
         "eea": 10,
-        "non_eea": 383,
+        "non_eea": 382,
         "countries": {
-          "United States": 330,
+          "United States": 329,
           "United Kingdom": 30,
           "Japan": 10,
           "Australia": 8,
@@ -284,7 +284,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "383 of 393 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "382 of 392 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -293,7 +293,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 330 open roles"
+              "excerpt": "United States: 329 open roles"
             },
             {
               "kind": "stat",
@@ -457,11 +457,8 @@
           "sha256": "3669d59798194699",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 155,
-            "revisions": 154,
-            "first": "2018-11-17",
-            "last": "2026-07-18"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -473,11 +470,8 @@
           "sha256": "253254e28bc2ff29",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2021-05-16",
-            "last": "2025-10-08"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
@@ -690,11 +684,11 @@
         "method": "heuristic"
       },
       "score": {
-        "total": 50,
+        "total": 75,
         "footprint": 25,
         "access": 25,
         "transparency": 0,
-        "record": 0
+        "record": 25
       },
       "drift": []
     },
@@ -1047,11 +1041,8 @@
           "sha256": "ff0e2b002da0ad9f",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2008-07-19",
-            "last": "2020-05-01"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -1086,14 +1077,14 @@
         "total": 550,
         "placeable": 489,
         "unplaceable": 61,
-        "eea": 64,
-        "non_eea": 425,
+        "eea": 63,
+        "non_eea": 426,
         "countries": {
           "United States": 258,
           "Canada": 53,
-          "Ireland": 48,
+          "Ireland": 47,
           "India": 38,
-          "Singapore": 36,
+          "Singapore": 37,
           "United Kingdom": 31,
           "Mexico": 25,
           "Australia": 9,
@@ -1347,11 +1338,11 @@
         "method": "heuristic"
       },
       "score": {
-        "total": 41,
+        "total": 66,
         "footprint": 22,
         "access": 19,
         "transparency": 0,
-        "record": 0
+        "record": 25
       },
       "drift": []
     },
@@ -1373,8 +1364,8 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 268,
-            "revisions": 267,
+            "captures": 269,
+            "revisions": 268,
             "first": "2024-01-18",
             "last": "2026-08-06"
           }
@@ -1388,8 +1379,11 @@
           "sha256": "83d4724d698d19da",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 14,
+            "revisions": 13,
+            "first": "2025-04-01",
+            "last": "2026-06-20"
           }
         },
         {
@@ -1679,8 +1673,8 @@
           "url": "https://about.gitlab.com/privacy/",
           "path": "data/snapshots/gitlab/privacy.txt",
           "lines": 531,
-          "chars": 42255,
-          "sha256": "b8fd30b8b1e6bdaa",
+          "chars": 42261,
+          "sha256": "f5448664493a7f16",
           "note": null,
           "archive": {
             "ok": false,
@@ -1696,11 +1690,8 @@
           "sha256": "b9e8de6a4bacb426",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 76,
-            "revisions": 75,
-            "first": "2020-11-27",
-            "last": "2026-07-07"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -1720,11 +1711,11 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 189,
-        "placeable": 180,
+        "total": 188,
+        "placeable": 179,
         "unplaceable": 9,
         "eea": 22,
-        "non_eea": 158,
+        "non_eea": 157,
         "countries": {
           "United States": 89,
           "Canada": 42,
@@ -1732,8 +1723,8 @@
           "India": 31,
           "Germany": 13,
           "Ireland": 9,
-          "United Arab Emirates": 7,
           "France": 7,
+          "United Arab Emirates": 6,
           "Netherlands": 5,
           "Australia": 5,
           "Singapore": 5,
@@ -2060,13 +2051,32 @@
         "method": "heuristic"
       },
       "score": {
-        "total": 51,
+        "total": 76,
         "footprint": 22,
         "access": 25,
         "transparency": 4,
-        "record": 0
+        "record": 25
       },
       "drift": [
+        {
+          "id": "gitlab-privacy-2026-08-09",
+          "vendor_id": "gitlab",
+          "vendor_name": "GitLab",
+          "document": "privacy",
+          "document_label": "Privacy policy",
+          "date": "2026-08-09",
+          "url": "https://about.gitlab.com/privacy/",
+          "hunks": [
+            {
+              "before": "dpo@gitlab.com",
+              "after": "[email protected]"
+            },
+            {
+              "before": "DPO@gitlab.com",
+              "after": "[email protected]"
+            }
+          ]
+        },
         {
           "id": "gitlab-privacy-2026-08-08",
           "vendor_id": "gitlab",
@@ -2105,8 +2115,11 @@
           "sha256": "5369d10f45a8d597",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2018-05-23",
+            "last": "2026-02-01"
           }
         }
       ],
@@ -2328,11 +2341,11 @@
         "method": "heuristic"
       },
       "score": {
-        "total": 83,
+        "total": 58,
         "footprint": 16,
         "access": 25,
         "transparency": 17,
-        "record": 25
+        "record": 0
       },
       "drift": []
     },
@@ -2353,8 +2366,11 @@
           "sha256": "245c0fd1c2ba7f7c",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 13,
+            "revisions": 12,
+            "first": "2026-06-08",
+            "last": "2026-08-07"
           }
         },
         {
@@ -2366,8 +2382,11 @@
           "sha256": "c6f2954ea450f34e",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 144,
+            "revisions": 143,
+            "first": "2020-04-23",
+            "last": "2026-08-06"
           }
         }
       ],
@@ -2570,11 +2589,11 @@
         "method": "heuristic"
       },
       "score": {
-        "total": 79,
+        "total": 54,
         "footprint": 22,
         "access": 24,
         "transparency": 8,
-        "record": 25
+        "record": 0
       },
       "drift": []
     }
