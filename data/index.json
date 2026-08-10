@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T04:57:37+00:00",
+  "generated_at": "2026-08-10T05:13:29+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -170,20 +170,23 @@
           "sha256": "cc6e6d21a41fed8e",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 8,
+            "revisions": 7,
+            "first": "2026-07-14",
+            "last": "2026-08-08"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 392,
-        "placeable": 392,
+        "total": 391,
+        "placeable": 391,
         "unplaceable": 0,
         "eea": 10,
-        "non_eea": 382,
+        "non_eea": 381,
         "countries": {
-          "United States": 329,
+          "United States": 328,
           "United Kingdom": 30,
           "Japan": 10,
           "Australia": 8,
@@ -284,7 +287,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "382 of 392 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "381 of 391 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -293,7 +296,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 329 open roles"
+              "excerpt": "United States: 328 open roles"
             },
             {
               "kind": "stat",
@@ -458,7 +461,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "ReadTimeout"
           }
         },
         {
@@ -470,16 +473,19 @@
           "sha256": "253254e28bc2ff29",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2021-05-16",
+            "last": "2025-10-08"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 300,
+        "total": 299,
         "placeable": 8,
-        "unplaceable": 292,
+        "unplaceable": 291,
         "eea": 0,
         "non_eea": 8,
         "countries": {
@@ -684,11 +690,11 @@
         "method": "heuristic"
       },
       "score": {
-        "total": 75,
+        "total": 50,
         "footprint": 25,
         "access": 25,
         "transparency": 0,
-        "record": 25
+        "record": 0
       },
       "drift": []
     },
@@ -725,11 +731,8 @@
           "sha256": "f4f4a18f47205c0a",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 33,
-            "revisions": 32,
-            "first": "2022-05-28",
-            "last": "2026-08-03"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -741,11 +744,8 @@
           "sha256": "b5a9ad2baa6f3dd5",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 19,
-            "revisions": 18,
-            "first": "2024-05-24",
-            "last": "2026-05-25"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
@@ -1054,8 +1054,11 @@
           "sha256": "92101146b860c664",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 217,
+            "revisions": 216,
+            "first": "2022-05-27",
+            "last": "2026-08-06"
           }
         },
         {
@@ -1067,8 +1070,11 @@
           "sha256": "08c0eec1eefcd1e4",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 92,
+            "revisions": 91,
+            "first": "2022-12-05",
+            "last": "2026-08-03"
           }
         }
       ],
@@ -1338,11 +1344,11 @@
         "method": "heuristic"
       },
       "score": {
-        "total": 66,
+        "total": 41,
         "footprint": 22,
         "access": 19,
         "transparency": 0,
-        "record": 25
+        "record": 0
       },
       "drift": []
     },
@@ -1364,10 +1370,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 269,
-            "revisions": 268,
+            "captures": 271,
+            "revisions": 270,
             "first": "2024-01-18",
-            "last": "2026-08-06"
+            "last": "2026-08-09"
           }
         },
         {
@@ -1405,18 +1411,18 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 164,
-        "placeable": 164,
+        "total": 165,
+        "placeable": 165,
         "unplaceable": 0,
         "eea": 13,
-        "non_eea": 151,
+        "non_eea": 152,
         "countries": {
           "United States": 101,
           "United Kingdom": 19,
           "Japan": 11,
           "Germany": 7,
+          "Singapore": 6,
           "France": 5,
-          "Singapore": 5,
           "Israel": 5,
           "Australia": 4,
           "Brazil": 4,
@@ -1561,7 +1567,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "151 of 164 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "152 of 165 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -1711,16 +1717,16 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 188,
-        "placeable": 179,
+        "total": 189,
+        "placeable": 180,
         "unplaceable": 9,
         "eea": 22,
-        "non_eea": 157,
+        "non_eea": 158,
         "countries": {
           "United States": 89,
           "Canada": 42,
+          "India": 32,
           "United Kingdom": 32,
-          "India": 31,
           "Germany": 13,
           "Ireland": 9,
           "France": 7,
@@ -1735,8 +1741,8 @@
           "Spain": 3,
           "Austria": 3,
           "Poland": 3,
-          "Denmark": 2,
           "Sweden": 2,
+          "Denmark": 2,
           "Mexico": 1,
           "Switzerland": 1,
           "Philippines": 1,
@@ -1775,11 +1781,41 @@
             ]
           },
           {
+            "key": "oncall",
+            "label": "On-call access",
+            "severity": "high",
+            "why": "Out-of-hours production access, granted broadly and audited thinly.",
+            "count": 4,
+            "examples": [
+              {
+                "title": "Engineering Manager, Cell Infrastructure",
+                "location": "Bangalore, India",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8615946002",
+                "matched": "on-call",
+                "excerpt": "o make unit economics part of the system design. Own the reliability model for cell infrastructure, including on-call practices, incident response, and postmortem follow-through. Partner with adjacent teams such as Git infrastr"
+              },
+              {
+                "title": "Intermediate Support Engineer",
+                "location": "Bangalore, India",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8687026002",
+                "matched": "on-call",
+                "excerpt": "able Counterparts) to solve challenging cases and share knowledge. Participate in regular weekday and weekend on-call rotations (daytime only), providing emergency support for Self-managed and SaaS customers and coordinating in"
+              },
+              {
+                "title": "Intermediate Support Engineer (SHIFT)",
+                "location": "Remote, United Kingdom",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8684078002",
+                "matched": "on-call",
+                "excerpt": "bers (for example: as a Support Stable Counterpart ) Participate in regular rotations for weekday and weekend on-call coverage (daytime only), providing emergency support to our Self-managed and SaaS customers, or working with"
+              }
+            ]
+          },
+          {
             "key": "travel",
             "label": "Travel expected",
             "severity": "high",
             "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 4,
+            "count": 3,
             "examples": [
               {
                 "title": "Manager, Solutions Architect - Asia",
@@ -1801,36 +1837,6 @@
                 "url": "https://job-boards.greenhouse.io/gitlab/jobs/8627761002",
                 "matched": "willingness to travel",
                 "excerpt": "teams and creating clear, accountable operating practices in a distributed or remote environment. Ability and willingness to travel in line with business needs and GitLab's travel policy. About the team The Solutions Architects team at GitLa"
-              }
-            ]
-          },
-          {
-            "key": "oncall",
-            "label": "On-call access",
-            "severity": "high",
-            "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 3,
-            "examples": [
-              {
-                "title": "Engineering Manager, Cell Infrastructure",
-                "location": "Bangalore, India",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8615946002",
-                "matched": "on-call",
-                "excerpt": "o make unit economics part of the system design. Own the reliability model for cell infrastructure, including on-call practices, incident response, and postmortem follow-through. Partner with adjacent teams such as Git infrastr"
-              },
-              {
-                "title": "Intermediate Support Engineer (SHIFT)",
-                "location": "Remote, United Kingdom",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8684078002",
-                "matched": "on-call",
-                "excerpt": "bers (for example: as a Support Stable Counterpart ) Participate in regular rotations for weekday and weekend on-call coverage (daytime only), providing emergency support to our Self-managed and SaaS customers, or working with"
-              },
-              {
-                "title": "Intermediate Support Engineer (SHIFT) ",
-                "location": "Remote, United Kingdom",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8684061002",
-                "matched": "on-call",
-                "excerpt": "bers (for example: as a Support Stable Counterpart ) Participate in regular rotations for weekday and weekend on-call coverage (daytime only), providing emergency support to our Self-managed and SaaS customers, or working with"
               }
             ]
           },
@@ -1859,15 +1865,15 @@
             "examples": [
               {
                 "title": "Associate Solutions Architect (French or German fluency) ",
-                "location": "Remote Ireland",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8675543002",
+                "location": "Remote, Spain",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8687171002",
                 "matched": "itar",
                 "excerpt": "or physical disability, genetic information (including family medical history), discharge status from the military, protected veteran status (which includes disabled veterans, recently separated veterans, active duty wartim"
               },
               {
                 "title": "Associate Solutions Architect (French or German fluency) ",
-                "location": "Remote, Spain",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8687171002",
+                "location": "Remote Ireland",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8675543002",
                 "matched": "itar",
                 "excerpt": "or physical disability, genetic information (including family medical history), discharge status from the military, protected veteran status (which includes disabled veterans, recently separated veterans, active duty wartim"
               },
@@ -1885,7 +1891,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 11,
+            "count": 12,
             "examples": [
               {
                 "title": "Customer Success Architect",
@@ -2125,11 +2131,11 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 245,
-        "placeable": 245,
+        "total": 244,
+        "placeable": 244,
         "unplaceable": 0,
         "eea": 85,
-        "non_eea": 160,
+        "non_eea": 159,
         "countries": {
           "United States": 90,
           "Spain": 24,
@@ -2143,8 +2149,8 @@
           "Norway": 5,
           "Belgium": 4,
           "Brazil": 4,
-          "Singapore": 4,
           "France": 3,
+          "Singapore": 3,
           "Costa Rica": 3,
           "Romania": 3,
           "Netherlands": 2,
@@ -2367,10 +2373,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 13,
-            "revisions": 12,
+            "captures": 14,
+            "revisions": 13,
             "first": "2026-06-08",
-            "last": "2026-08-07"
+            "last": "2026-08-09"
           }
         },
         {
