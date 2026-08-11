@@ -1,5 +1,40 @@
 [
   {
+    "id": "figma-subprocessors-2026-08-11",
+    "vendor_id": "figma",
+    "vendor_name": "Figma",
+    "document": "subprocessors",
+    "document_label": "Sub-processor list",
+    "date": "2026-08-11",
+    "url": "https://www.figma.com/sub-processors/",
+    "hunks": [
+      {
+        "before": "June 22, 2026",
+        "after": "August 7, 2026"
+      },
+      {
+        "before": "Infrastructure monitoring",
+        "after": "Infrastructure monitoring and debugging"
+      },
+      {
+        "before": "Authorized User Data",
+        "after": "Customer Content"
+      },
+      {
+        "before": "Authorized User Data",
+        "after": "Customer Content"
+      },
+      {
+        "before": "Authorized User Data",
+        "after": "Customer Content"
+      },
+      {
+        "before": "Groq, Inc.",
+        "after": null
+      }
+    ]
+  },
+  {
     "id": "gitlab-privacy-2026-08-09",
     "vendor_id": "gitlab",
     "vendor_name": "GitLab",

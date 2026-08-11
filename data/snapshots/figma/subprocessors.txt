@@ -1,9 +1,9 @@
 # source: https://www.figma.com/sub-processors/
-# collected: 2026-08-10
+# collected: 2026-08-11
 
 Figma Sub-processors
 Last Updated:
-June 22, 2026
+August 7, 2026
 This page lists the sub-processors that Figma engages to process Customer Content (as defined in
 Figma’s Data Processing Addendum
 ) on behalf of Customers and to support the delivery of our offerings, products and services (“Services”).
@@ -45,15 +45,15 @@ United States
 Identifiers associated with Customer accounts and their authorized users (such as name, email address, user ID, IP address) (“Authorized User Data”)
 Datadog, Inc.
 All Services
-Infrastructure monitoring
+Infrastructure monitoring and debugging
 United States
-Authorized User Data
+Customer Content
 Functional Software, Inc.
 (Sentry)
 All Services
 Application error tracking and monitoring
 United States
-Authorized User Data
+Customer Content
 Castle Global, Inc (Hive)
 Community, Figma AI, Figma Weave
 Content moderation and safety filtering
@@ -74,7 +74,7 @@ Snowflake, Inc.
 All Services
 Cloud-based data warehouse
 United States
-Authorized User Data
+Customer Content
 Twilio, Inc.
 (Segment)
 Figma Weave
@@ -117,11 +117,6 @@ Figma AI
 AI model provider
 United States*
 Prompt Inputs and Outputs
-Groq, Inc.
-Figma AI
-AI model provider
-United States*
-Prompt Inputs and Outputs
 Jasper AI, Inc.
 Figma AI
 AI model provider
@@ -142,9 +137,8 @@ Figma AI
 AI model provider
 United States*
 Prompt Inputs and Outputs
-* This sub-processor does not store Customer Content any longer than necessary to provide the output.
-Where necessary to improve latency and Service reliability, requests may be routed through global data centers.
-When this happens, they process all data exclusively in volatile memory during the active request and automatically clear the cache within two hours.
+*Where necessary to improve latency and Service reliability, requests may be routed through global data centers.
+When this happens, any data processed from that location is processed exclusively in volatile memory during the active request and the cache is automatically cleared within two hours.
 Figma Weave AI Sub-Processors
 Sub-processor
 Applicable Service(s)
@@ -162,10 +156,17 @@ Figma Weave
 Selectable AI model provider
 EU, Indonesia, Malaysia
 Prompt Inputs and Outputs
+Create Without Limits Technologies Inc.
+(dba Enhancor)
+Figma Weave
+Selectable AI model provider
+United States
+Prompt Inputs and Outputs
 Features & Labels, Inc.
 (FAL)
 Figma Weave
-Platform hosting selectable AI image generation Verified models from third party providers
+Platform hosting;
+Selectable AI model provider
 United States
 Prompt Inputs and Outputs
 Freepik, Inc.
@@ -190,6 +191,16 @@ Selectable AI model provider
 United States
 Prompt Inputs and Outputs
 OpenAI, LLC
+Figma Weave
+Selectable AI model provider
+United States
+Prompt Inputs and Outputs
+Replicate LLC
+Figma Weave
+Selectable AI model provider
+United States
+Prompt Inputs and Outputs
+Runway AI, Inc.
 Figma Weave
 Selectable AI model provider
 United States
