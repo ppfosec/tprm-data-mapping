@@ -1,5 +1,20 @@
 [
   {
+    "id": "figma-dpa-2026-08-12",
+    "vendor_id": "figma",
+    "vendor_name": "Figma",
+    "document": "dpa",
+    "document_label": "Data processing agreement",
+    "date": "2026-08-12",
+    "url": "https://www.figma.com/legal/dpa/",
+    "hunks": [
+      {
+        "before": "This Data Protection Addendum (“",
+        "after": "This Data Processing Addendum (“"
+      }
+    ]
+  },
+  {
     "id": "figma-subprocessors-2026-08-11",
     "vendor_id": "figma",
     "vendor_name": "Figma",

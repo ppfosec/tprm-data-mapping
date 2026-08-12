@@ -1,5 +1,5 @@
 # source: https://www.anthropic.com/legal/commercial-terms
-# collected: 2026-08-11
+# collected: 2026-08-12
 
 Welcome to Anthropic!
 Before accessing our Services, please read these Commercial Terms of Service.

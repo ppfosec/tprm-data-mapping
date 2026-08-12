@@ -1,12 +1,12 @@
 # source: https://www.figma.com/legal/dpa/
-# collected: 2026-08-11
+# collected: 2026-08-12
 
 Figma Legal
 The information provided here is for Figma customers and users who have questions about our terms, policies, intellectual property, and compliance.
 Data Processing Addendum
 Last updated:
 March 30, 2026
-This Data Protection Addendum (“
+This Data Processing Addendum (“
 Addendum
 ”) forms part of the agreement(s) between Customer and Figma covering Customer’s use of the Figma Platform to which this Addendum is incorporated (“
 Agreement

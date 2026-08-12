@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T04:58:15+00:00",
+  "generated_at": "2026-08-12T05:23:35+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -121,11 +121,8 @@
           "sha256": "8dac92944a88d6dd",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2024-02-25",
-            "last": "2026-03-08"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -137,11 +134,8 @@
           "sha256": "85c78c93175ffb26",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2024-02-21",
-            "last": "2026-03-20"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -154,11 +148,8 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": true,
-            "captures": 58,
-            "revisions": 57,
-            "first": "2024-09-26",
-            "last": "2026-08-06"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -170,29 +161,26 @@
           "sha256": "cc6e6d21a41fed8e",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 8,
-            "revisions": 7,
-            "first": "2026-07-14",
-            "last": "2026-08-08"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 394,
-        "placeable": 394,
-        "unplaceable": 0,
-        "eea": 10,
-        "non_eea": 384,
+        "total": 399,
+        "placeable": 398,
+        "unplaceable": 1,
+        "eea": 11,
+        "non_eea": 387,
         "countries": {
-          "United States": 334,
-          "United Kingdom": 28,
-          "Japan": 10,
+          "United States": 333,
+          "United Kingdom": 27,
+          "Japan": 11,
           "Australia": 8,
-          "Ireland": 7,
-          "Singapore": 4,
-          "South Korea": 3,
+          "Ireland": 8,
+          "Singapore": 5,
+          "South Korea": 4,
           "France": 2,
           "Switzerland": 2,
           "Germany": 1,
@@ -205,8 +193,15 @@
             "label": "Cross-region replication",
             "severity": "high",
             "why": "Resilience design moves copies by default, and failover does not ask permission.",
-            "count": 1,
+            "count": 2,
             "examples": [
+              {
+                "title": "AI Infrastructure Operations, Demand Planning",
+                "location": "San Francisco, CA | New York City, NY",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5382750008",
+                "matched": "multi-region",
+                "excerpt": "ring large-scale infrastructure — cloud regions, accelerator clusters, HPC systems, or bare-metal fleets — at multi-region scale or ≥10k accelerators (or CPU/storage equivalent). Technical range from through cluster orchestration an"
+              },
               {
                 "title": "AV Operations Specialist",
                 "location": "San Francisco, CA | New York City, NY",
@@ -229,22 +224,6 @@
                 "url": "https://job-boards.greenhouse.io/anthropic/jobs/5311686008",
                 "matched": "follow-the-sun",
                 "excerpt": "regional security controls Provide after-hours coverage and structured handoffs to US-based teams as part of follow-the-sun security operations Minimum qualifications Hands-on experience administering enterprise physical security sys"
-              }
-            ]
-          },
-          {
-            "key": "oncall",
-            "label": "On-call access",
-            "severity": "high",
-            "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 1,
-            "examples": [
-              {
-                "title": "Data Engineer, Safeguards",
-                "location": "San Francisco, CA | New York City, NY",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5240422008",
-                "matched": "on call",
-                "excerpt": "d role Comfort contributing across the stack and picking up work outside your immediate scope when the situation calls for it Background in trust and safety, integrity, fraud, or abuse detection data systems Experience with lar"
               }
             ]
           },
@@ -279,22 +258,6 @@
                 "excerpt": "ow do MCP, autonomous agents, and RBAC work together? How do you deploy frontier models in line with GDPR, EU data residency, and the EU AI Act? If working at the intersection of AI adoption and regulated industries excites you, this"
               }
             ]
-          },
-          {
-            "key": "named_tooling",
-            "label": "Named internal tooling",
-            "severity": "low",
-            "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 1,
-            "examples": [
-              {
-                "title": "Data Engineer, Safeguards",
-                "location": "San Francisco, CA | New York City, NY",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5240422008",
-                "matched": "Snowflake",
-                "excerpt": "e building and maintaining ETL/ELT pipelines Experience with cloud data platforms such as BigQuery, Redshift, Snowflake, or similar Experience with modern data stack tools such as dbt, Airflow, Spark, or similar orchestration and"
-              }
-            ]
           }
         ]
       },
@@ -303,7 +266,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "384 of 394 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "387 of 398 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -312,15 +275,15 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 334 open roles"
+              "excerpt": "United States: 333 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 28 open roles"
+              "excerpt": "United Kingdom: 27 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "Japan: 10 open roles"
+              "excerpt": "Japan: 11 open roles"
             },
             {
               "kind": "stat",
@@ -333,7 +296,7 @@
           "rule": "access_vs_rotation",
           "severity": "medium",
           "headline": "Restricted-access language alongside global rotations",
-          "detail": "The documents describe access controls in principle, while postings describe follow-the-sun support, on-call access, round-the-clock coverage. Both can be true; the reconciliation is what a reviewer needs to see.",
+          "detail": "The documents describe access controls in principle, while postings describe follow-the-sun support, round-the-clock coverage. Both can be true; the reconciliation is what a reviewer needs to see.",
           "claim": {
             "kind": "terms",
             "text": "Recipient may only share Discloser’s Confidential Information to Recipient’s employees, agents, and advisors that have a need to know such Confidential Information and who are bound to obligations of confidentiality at least as protective as those provided in these Terms (",
@@ -373,49 +336,39 @@
             "key": "biometric",
             "label": "Biometric data",
             "sensitivity": "high",
-            "why": "Biometric identifiers are irrevocable if exposed -- a special category under GDPR Article 9. This vendor: An optional individual identity/age-verification flow (Claude.ai consumer accounts), not a feature of the Enterprise product, and the policy explicitly excludes Enterprise accounts from its scope.",
-            "source": "privacy",
-            "matched": null,
-            "excerpt": "If you choose to do so, data we will collect includes, depending on the method: an image of your government-issued identity document and the information appearing on it (such as your ID number and date of birth); your image in photo or video form, facial geometry templates (which may be considered ‘biometric data’ in some jurisdictions)",
-            "confidence": "conditional"
+            "why": "Biometric identifiers are irrevocable if exposed -- a special category under GDPR Article 9.",
+            "source": "other",
+            "matched": "biometric",
+            "excerpt": "Misuse, collect, solicit, or gain access without permission to private information such as non-public contact details, health data, biometric or neural data (including facial recognition), or confidential or proprietary data",
+            "confidence": "stated"
           },
           {
-            "key": "government_id",
-            "label": "Government ID",
+            "key": "special_category",
+            "label": "Special-category data (GDPR Art. 9)",
             "sensitivity": "high",
-            "why": "Passport, national ID or tax numbers -- enables identity theft directly if leaked. This vendor: Same optional individual verification flow as the biometric entry above -- not part of the Enterprise offering per the policy's own carve-out.",
-            "source": "privacy",
-            "matched": null,
-            "excerpt": "an image of your government-issued identity document and the information appearing on it (such as your ID number and date of birth)",
-            "confidence": "conditional"
+            "why": "GDPR's own list of special categories -- the highest bar for lawful processing.",
+            "source": "other",
+            "matched": "sexual orientation",
+            "excerpt": "Promote discriminatory practices or behaviors against individuals or groups on the basis of one or more protected attributes such as race, ethnicity, religion, national origin, gender, sexual orientation, or any other identifying trait",
+            "confidence": "stated"
           },
           {
             "key": "financial",
             "label": "Financial / payment data",
             "sensitivity": "medium",
-            "why": "Card or bank details -- a breach here has direct financial consequences for the data subject. This vendor: Describes an individual's self-serve purchase; the policy's own preamble states it does not apply to Enterprise accounts, which are billed under separate commercial agreements, not through this consumer flow.",
+            "why": "Card or bank details -- a breach here has direct financial consequences for the data subject.",
             "source": "privacy",
-            "matched": null,
-            "excerpt": "We shall collect your payment information if you choose to purchase access to Anthropic’s Services.",
-            "confidence": "conditional"
-          },
-          {
-            "key": "precise_location",
-            "label": "Precise location",
-            "sensitivity": "medium",
-            "why": "Where someone actually is, not just which country they signed up from. This vendor: Only collected with explicit individual consent for an optional feature, not systematically as part of the core service.",
-            "source": "privacy",
-            "matched": null,
-            "excerpt": "Consent (for example for precise device location or for health app integrations)",
-            "confidence": "conditional"
+            "matched": "Payment Information",
+            "excerpt": "Payment Information:",
+            "confidence": "stated"
           },
           {
             "key": "business_contact",
             "label": "Business contact information",
             "sensitivity": "low",
-            "why": "Names, work emails and similar identifiers -- present in nearly every SaaS privacy policy. This vendor: Standard account signup fields, collected regardless of individual or Enterprise seat.",
+            "why": "Names, work emails and similar identifiers -- present in nearly every SaaS privacy policy.",
             "source": "privacy",
-            "matched": null,
+            "matched": "name, email",
             "excerpt": "Anthropic collects identifiers, including your name, email address, and phone number when you sign up for an Anthropic account, or to receive information on our Services.",
             "confidence": "stated"
           },
@@ -423,21 +376,21 @@
             "key": "account_usage",
             "label": "Account & usage data",
             "sensitivity": "low",
-            "why": "Login activity, device and session data -- routine telemetry, not by itself sensitive. This vendor: Routine technical telemetry collected automatically from any user.",
+            "why": "Login activity, device and session data -- routine telemetry, not by itself sensitive.",
             "source": "privacy",
-            "matched": null,
-            "excerpt": "This includes information such as your device type, operating system information, browser information and web page referers, mobile network, connection information, mobile operator or internet service provider (ISP), time zone setting, IP address",
+            "matched": "IP address",
+            "excerpt": "This includes information such as your device type, operating system information, browser information and web page referers, mobile network, connection information, mobile operator or internet service provider (ISP), time zone setting, IP address (including information about the location of the device derived from your IP address), identifiers (including device or advertising identifiers, probabilistic identifiers, and other unique personal or online identifiers), and device location.",
             "confidence": "stated"
           }
         ],
-        "max_sensitivity": "low",
-        "sensitivity_score": 10,
-        "method": "llm"
+        "max_sensitivity": "high",
+        "sensitivity_score": 30,
+        "method": "heuristic"
       },
       "score": {
-        "total": 44,
+        "total": 42,
         "footprint": 24,
-        "access": 16,
+        "access": 14,
         "transparency": 4,
         "record": 0
       },
@@ -473,8 +426,11 @@
           "sha256": "d999aff5712a68aa",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 280,
+            "revisions": 279,
+            "first": "2021-09-03",
+            "last": "2026-08-09"
           }
         },
         {
@@ -486,8 +442,11 @@
           "sha256": "3669d59798194699",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 155,
+            "revisions": 154,
+            "first": "2018-11-17",
+            "last": "2026-07-18"
           }
         },
         {
@@ -499,16 +458,19 @@
           "sha256": "253254e28bc2ff29",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ReadTimeout"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2021-05-16",
+            "last": "2025-10-08"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 301,
+        "total": 303,
         "placeable": 8,
-        "unplaceable": 293,
+        "unplaceable": 295,
         "eea": 0,
         "non_eea": 8,
         "countries": {
@@ -595,22 +557,6 @@
                 "excerpt": "h a focus on enabling GTM organizations. Columnar/OLAP or lakehouse experience (ClickHouse, DuckDB, BigQuery, Snowflake, Iceberg, Starrocks).Familiarity with the Salesforce data model and CRM/API integrations. Familiarity with de"
               }
             ]
-          },
-          {
-            "key": "sovereignty_work",
-            "label": "Sovereignty workstream",
-            "severity": "low",
-            "why": "They are staffing the problem, which is a good sign and an admission it is open.",
-            "count": 1,
-            "examples": [
-              {
-                "title": "Principal Solutions Architect - APAC",
-                "location": "Hybrid",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/8040851?gh_jid=8040851",
-                "matched": "Sovereign",
-                "excerpt": "stomers' enterprise architects and engineering leadership. Translate industry trends like Zero Trust, Digital Sovereignty, AI workload security, cloud-to-edge migration into actionable architectural strategies tailored to each cu"
-              }
-            ]
           }
         ]
       },
@@ -664,56 +610,46 @@
       "data_classification": {
         "tags": [
           {
-            "key": "special_category",
-            "label": "Special-category data (GDPR Art. 9)",
-            "sensitivity": "high",
-            "why": "GDPR's own list of special categories -- the highest bar for lawful processing. This vendor: Explicitly hedged (\"to the extent... voluntarily disclosed... or contained in any content transmitted\") -- Cloudflare is a network conduit for whatever its Customers' own end users transmit, not a systematic collector of this data.",
-            "source": "privacy",
-            "matched": null,
-            "excerpt": "Protected classification characteristics (e.g., age, ethnicity, race, languages spoken, or gender) to the extent these characteristics are voluntarily disclosed to us or contained in any content transmitted across or stored on our network",
-            "confidence": "conditional"
-          },
-          {
             "key": "financial",
             "label": "Financial / payment data",
             "sensitivity": "medium",
-            "why": "Card or bank details -- a breach here has direct financial consequences for the data subject. This vendor: Hedged on payment method chosen (\"if you pay with a credit card\") -- Cloudflare Enterprise customers are typically invoiced rather than card-billed, so this most often describes a self-serve customer's card.",
+            "why": "Card or bank details -- a breach here has direct financial consequences for the data subject.",
             "source": "privacy",
-            "matched": null,
-            "excerpt": "For example, if you pay with a credit card, we will collect your card information and billing address, although we do not store full credit card numbers or personal account numbers.",
-            "confidence": "conditional"
+            "matched": "Payment information",
+            "excerpt": "Payment information",
+            "confidence": "stated"
           },
           {
             "key": "business_contact",
             "label": "Business contact information",
             "sensitivity": "low",
-            "why": "Names, work emails and similar identifiers -- present in nearly every SaaS privacy policy. This vendor: Standard Customer Account Information collected at signup.",
+            "why": "Names, work emails and similar identifiers -- present in nearly every SaaS privacy policy.",
             "source": "privacy",
-            "matched": null,
-            "excerpt": "When you register for an account, we collect contact information.",
+            "matched": "Contact information",
+            "excerpt": "Contact information",
             "confidence": "stated"
           },
           {
             "key": "account_usage",
             "label": "Account & usage data",
             "sensitivity": "low",
-            "why": "Login activity, device and session data -- routine telemetry, not by itself sensitive. This vendor: Routine log-file and cookie data collected from any visitor or Customer.",
+            "why": "Login activity, device and session data -- routine telemetry, not by itself sensitive.",
             "source": "privacy",
-            "matched": null,
-            "excerpt": "This information may include but is not limited to Internet Protocol (IP) addresses, system configuration information, URLs of referring pages, and locale and language preferences.",
+            "matched": "cookies",
+            "excerpt": "We may use cookies and other information-gathering technologies for a variety of purposes, such as providing us with information about how you interact with our Websites and assisting us in our marketing efforts.",
             "confidence": "stated"
           }
         ],
-        "max_sensitivity": "low",
-        "sensitivity_score": 10,
-        "method": "llm"
+        "max_sensitivity": "medium",
+        "sensitivity_score": 20,
+        "method": "heuristic"
       },
       "score": {
-        "total": 73,
+        "total": 47,
         "footprint": 25,
-        "access": 23,
+        "access": 22,
         "transparency": 0,
-        "record": 25
+        "record": 0
       },
       "drift": []
     },
@@ -734,11 +670,8 @@
           "sha256": "9da08ec768f6c700",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2017-06-30",
-            "last": "2025-04-25"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -750,11 +683,8 @@
           "sha256": "f4f4a18f47205c0a",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 33,
-            "revisions": 32,
-            "first": "2022-05-28",
-            "last": "2026-08-03"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -766,34 +696,31 @@
           "sha256": "b5a9ad2baa6f3dd5",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 19,
-            "revisions": 18,
-            "first": "2024-05-24",
-            "last": "2026-05-25"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 447,
-        "placeable": 447,
+        "total": 441,
+        "placeable": 441,
         "unplaceable": 0,
         "eea": 94,
-        "non_eea": 353,
+        "non_eea": 347,
         "countries": {
-          "United States": 211,
+          "United States": 209,
           "France": 51,
           "Japan": 43,
           "Ireland": 26,
-          "Singapore": 22,
+          "Singapore": 21,
           "United Kingdom": 17,
           "Netherlands": 16,
           "Brazil": 16,
           "Spain": 16,
           "South Korea": 12,
-          "India": 10,
-          "Australia": 10,
+          "Australia": 9,
+          "India": 8,
           "Portugal": 8,
           "Germany": 6,
           "Sweden": 5,
@@ -809,6 +736,7 @@
           "Colombia": 1,
           "United Arab Emirates": 1,
           "Chile": 1,
+          "Poland": 1,
           "South Africa": 1
         },
         "scanned": 26,
@@ -996,32 +924,32 @@
       "data_classification": {
         "tags": [
           {
-            "key": "precise_location",
-            "label": "Precise location",
-            "sensitivity": "medium",
-            "why": "Where someone actually is, not just which country they signed up from. This vendor: Appears in a CCPA-style enumerated category list rather than as an operational claim about what Datadog's product actually does.",
-            "source": "privacy",
-            "matched": null,
-            "excerpt": "Geolocation data.",
-            "confidence": "conditional"
-          },
-          {
             "key": "financial",
             "label": "Financial / payment data",
             "sensitivity": "medium",
-            "why": "Card or bank details -- a breach here has direct financial consequences for the data subject. This vendor: Payment information is collected directly at account creation, stated plainly rather than hedged.",
+            "why": "Card or bank details -- a breach here has direct financial consequences for the data subject.",
             "source": "privacy",
-            "matched": null,
+            "matched": "payment information",
             "excerpt": "We collect information about you when you create an account with us, such as your name, email address, profile picture, company name, postal address, phone number, and payment information.",
+            "confidence": "stated"
+          },
+          {
+            "key": "precise_location",
+            "label": "Precise location",
+            "sensitivity": "medium",
+            "why": "Where someone actually is, not just which country they signed up from.",
+            "source": "privacy",
+            "matched": "Geolocation data",
+            "excerpt": "Geolocation data.",
             "confidence": "stated"
           },
           {
             "key": "business_contact",
             "label": "Business contact information",
             "sensitivity": "low",
-            "why": "Names, work emails and similar identifiers -- present in nearly every SaaS privacy policy. This vendor: Standard account creation fields.",
+            "why": "Names, work emails and similar identifiers -- present in nearly every SaaS privacy policy.",
             "source": "privacy",
-            "matched": null,
+            "matched": "name, email",
             "excerpt": "We collect information about you when you create an account with us, such as your name, email address, profile picture, company name, postal address, phone number, and payment information.",
             "confidence": "stated"
           },
@@ -1029,23 +957,23 @@
             "key": "account_usage",
             "label": "Account & usage data",
             "sensitivity": "low",
-            "why": "Login activity, device and session data -- routine telemetry, not by itself sensitive. This vendor: Datadog's core observability product ingests customer logs/traces/metrics, which can incidentally include personal identifiers.",
+            "why": "Login activity, device and session data -- routine telemetry, not by itself sensitive.",
             "source": "privacy",
-            "matched": null,
-            "excerpt": "We collect personal information submitted to us through the use of the Datadog Products, including the information provided in logs, traces, and metrics.",
+            "matched": "IP address",
+            "excerpt": "This information may include name, email address, IP address, online identifier, and mailing address.",
             "confidence": "stated"
           }
         ],
         "max_sensitivity": "medium",
         "sensitivity_score": 20,
-        "method": "llm"
+        "method": "heuristic"
       },
       "score": {
-        "total": 44,
+        "total": 69,
         "footprint": 20,
         "access": 24,
         "transparency": 0,
-        "record": 0
+        "record": 25
       },
       "drift": []
     },
@@ -1066,8 +994,11 @@
           "sha256": "ff0e2b002da0ad9f",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2008-07-19",
+            "last": "2020-05-01"
           }
         },
         {
@@ -1080,10 +1011,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 217,
-            "revisions": 216,
+            "captures": 218,
+            "revisions": 217,
             "first": "2022-05-27",
-            "last": "2026-08-06"
+            "last": "2026-08-10"
           }
         },
         {
@@ -1096,42 +1027,43 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 92,
-            "revisions": 91,
+            "captures": 93,
+            "revisions": 92,
             "first": "2022-12-05",
-            "last": "2026-08-03"
+            "last": "2026-08-10"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 558,
-        "placeable": 496,
-        "unplaceable": 62,
-        "eea": 64,
-        "non_eea": 432,
+        "total": 566,
+        "placeable": 507,
+        "unplaceable": 59,
+        "eea": 63,
+        "non_eea": 444,
         "countries": {
-          "United States": 261,
-          "Canada": 53,
+          "United States": 265,
+          "Canada": 55,
           "Ireland": 48,
-          "India": 38,
-          "Singapore": 37,
-          "United Kingdom": 33,
-          "Mexico": 26,
-          "Australia": 9,
+          "Singapore": 40,
+          "India": 39,
+          "United Kingdom": 32,
+          "Mexico": 27,
+          "Australia": 11,
           "Japan": 5,
-          "France": 5,
+          "France": 4,
+          "Germany": 3,
           "Spain": 3,
-          "Germany": 2,
           "Taiwan": 2,
           "Luxembourg": 2,
           "United Arab Emirates": 2,
           "Romania": 2,
-          "Netherlands": 2,
           "New Zealand": 1,
           "Hong Kong": 1,
           "Brazil": 1,
+          "Netherlands": 1,
           "Sweden": 1,
+          "Israel": 1,
           "Italy": 1,
           "Thailand": 1
         },
@@ -1197,7 +1129,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 4,
+            "count": 3,
             "examples": [
               {
                 "title": "Accounting AI Solutions Lead",
@@ -1298,49 +1230,39 @@
             "key": "biometric",
             "label": "Biometric data",
             "sensitivity": "high",
-            "why": "Biometric identifiers are irrevocable if exposed -- a special category under GDPR Article 9. This vendor: Stripe Identity's core comparison-verification service is real and stated, but the specific biometric enhancement is opt-in, separate consent.",
+            "why": "Biometric identifiers are irrevocable if exposed -- a special category under GDPR Article 9.",
             "source": "privacy",
-            "matched": null,
+            "matched": "biometric",
             "excerpt": "You can separately consent to us using your biometric data to enhance our verification technology, with the option to revoke your consent at any time.",
-            "confidence": "conditional"
-          },
-          {
-            "key": "health",
-            "label": "Health data",
-            "sensitivity": "high",
-            "why": "Health records are a GDPR Article 9 / HIPAA-adjacent special category almost everywhere. This vendor: A Vermont-specific GLBA privacy-notice boilerplate listing protected categories Stripe will not disclose -- not a claim that Stripe collects health information.",
-            "source": "privacy",
-            "matched": null,
-            "excerpt": "we will not disclose information about your creditworthiness to our affiliates and will not disclose your personal information, financial information, credit report, or health information to nonaffiliated third parties",
-            "confidence": "conditional"
-          },
-          {
-            "key": "special_category",
-            "label": "Special-category data (GDPR Art. 9)",
-            "sensitivity": "high",
-            "why": "GDPR's own list of special categories -- the highest bar for lawful processing. This vendor: Definitional clause in the DPA defining the contract term \"Sensitive Data,\" not an admission of processing it.",
-            "source": "dpa",
-            "matched": null,
-            "excerpt": "Personal Data that is genetic data, biometric data, data concerning health, a natural person's sex life or sexual orientation",
             "confidence": "conditional"
           },
           {
             "key": "government_id",
             "label": "Government ID",
             "sensitivity": "high",
-            "why": "Passport, national ID or tax numbers -- enables identity theft directly if leaked. This vendor: Listed plainly in Stripe's GLBA-mandated financial privacy notice as information it collects and shares -- consistent with SSN collection for Stripe Connect/Tax 1099 reporting.",
+            "why": "Passport, national ID or tax numbers -- enables identity theft directly if leaked.",
             "source": "privacy",
-            "matched": null,
+            "matched": "Social Security Number",
             "excerpt": "• Social Security Number",
+            "confidence": "stated"
+          },
+          {
+            "key": "special_category",
+            "label": "Special-category data (GDPR Art. 9)",
+            "sensitivity": "high",
+            "why": "GDPR's own list of special categories -- the highest bar for lawful processing.",
+            "source": "dpa",
+            "matched": "sexual orientation",
+            "excerpt": "(a) Personal Data that is genetic data, biometric data, data concerning health, a natural person's sex life or sexual orientation;",
             "confidence": "stated"
           },
           {
             "key": "precise_location",
             "label": "Precise location",
             "sensitivity": "medium",
-            "why": "Where someone actually is, not just which country they signed up from. This vendor: Part of the same \"Sensitive Data means...\" definitional clause.",
+            "why": "Where someone actually is, not just which country they signed up from.",
             "source": "dpa",
-            "matched": null,
+            "matched": "geolocation data",
             "excerpt": "(c) geolocation data; or (d) sensitive personal information as defined under the CCPA.",
             "confidence": "conditional"
           },
@@ -1348,41 +1270,41 @@
             "key": "financial",
             "label": "Financial / payment data",
             "sensitivity": "medium",
-            "why": "Card or bank details -- a breach here has direct financial consequences for the data subject. This vendor: Payment and financial data processing is Stripe's core product for its enterprise Business Users, not an incidental individual-consumer mention -- this is what Stripe is.",
+            "why": "Card or bank details -- a breach here has direct financial consequences for the data subject.",
             "source": "privacy",
-            "matched": null,
-            "excerpt": "We provide Business Services to entities (“Business Users”).",
-            "confidence": "stated"
-          },
-          {
-            "key": "business_contact",
-            "label": "Business contact information",
-            "sensitivity": "low",
-            "why": "Names, work emails and similar identifiers -- present in nearly every SaaS privacy policy. This vendor: Standard identity fields collected as part of processing a transaction.",
-            "source": "privacy",
-            "matched": null,
-            "excerpt": "Some Transaction Data is Personal Data and may include: your name, email address, contact number, billing and shipping address, payment method information",
+            "matched": "Credit Card",
+            "excerpt": "“Services” refers to the products, services, devices, and applications that we provide under the Stripe Services Agreement or the Stripe Credit Card Terms of Service (collectively, “Business Services”), or the Stripe Consumer Terms of Service (“End User Services”); websites (“Sites”) like Stripe.com and Link.com; and other Stripe applications and online services.",
             "confidence": "stated"
           },
           {
             "key": "account_usage",
             "label": "Account & usage data",
             "sensitivity": "low",
-            "why": "Login activity, device and session data -- routine telemetry, not by itself sensitive. This vendor: Broad technical/account data covered under Stripe's definition of Personal Data.",
+            "why": "Login activity, device and session data -- routine telemetry, not by itself sensitive.",
             "source": "privacy",
-            "matched": null,
-            "excerpt": "“Personal Data” refers to any information associated with an identified or identifiable individual",
+            "matched": "IP address",
+            "excerpt": "“Personal Data” refers to any information associated with an identified or identifiable individual, which can include data that you provide to us, and that we collect about you during your interaction with our Services (such as device information, IP address, etc.).",
+            "confidence": "conditional"
+          },
+          {
+            "key": "business_contact",
+            "label": "Business contact information",
+            "sensitivity": "low",
+            "why": "Names, work emails and similar identifiers -- present in nearly every SaaS privacy policy.",
+            "source": "privacy",
+            "matched": "name, email",
+            "excerpt": "Some Transaction Data is Personal Data and may include: your name, email address, contact number, billing and shipping address, payment method information (like credit or debit card number, bank or payment method account details, or payment card image chosen by you), merchant and location details, amount and date of purchase, information about payment status, and in some instances, information about what was purchased, order fulfillment status, subscription status, applicable tax amounts, refund or chargeback information, and support interactions.",
             "confidence": "stated"
           }
         ],
         "max_sensitivity": "high",
         "sensitivity_score": 30,
-        "method": "llm"
+        "method": "heuristic"
       },
       "score": {
-        "total": 41,
+        "total": 40,
         "footprint": 22,
-        "access": 19,
+        "access": 18,
         "transparency": 0,
         "record": 0
       },
@@ -1405,8 +1327,11 @@
           "sha256": "6e2b46ec94fc52f7",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 272,
+            "revisions": 271,
+            "first": "2024-01-18",
+            "last": "2026-08-10"
           }
         },
         {
@@ -1415,7 +1340,7 @@
           "path": "data/snapshots/figma/dpa.txt",
           "lines": 412,
           "chars": 24080,
-          "sha256": "83d4724d698d19da",
+          "sha256": "4bde694018c282cd",
           "note": null,
           "archive": {
             "ok": true,
@@ -1434,28 +1359,31 @@
           "sha256": "d3dfe39c1a7b2473",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 81,
+            "revisions": 80,
+            "first": "2019-04-01",
+            "last": "2026-07-28"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 167,
-        "placeable": 167,
+        "total": 163,
+        "placeable": 163,
         "unplaceable": 0,
         "eea": 14,
-        "non_eea": 153,
+        "non_eea": 149,
         "countries": {
-          "United States": 102,
-          "United Kingdom": 19,
-          "Japan": 11,
+          "United States": 101,
+          "United Kingdom": 18,
+          "Japan": 10,
           "Germany": 7,
           "France": 6,
           "Singapore": 6,
           "Israel": 5,
-          "Australia": 4,
           "Brazil": 4,
+          "Australia": 3,
           "India": 2,
           "Ireland": 1
         },
@@ -1542,7 +1470,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 6,
+            "count": 7,
             "examples": [
               {
                 "title": "Associate Solutions Consultant",
@@ -1552,18 +1480,18 @@
                 "excerpt": "s! We are looking for an additional member of our growing solutions consultant team to support our commercial segment. This role will be dedicated to support our commercial teams and will be pivotal to driving Figma’s growth wi"
               },
               {
+                "title": "Content Support Engineer",
+                "location": "San Francisco, CA • New York, NY • United States",
+                "url": "https://boards.greenhouse.io/figma/jobs/6037719004?gh_jid=6037719004",
+                "matched": "Zendesk",
+                "excerpt": "ograms at scale in a Support environment for a technical SaaS product, with proficiency in tools like Notion, Zendesk, and Decagon An advanced practice of using AI tools as core infrastructure in your content workflow, with han"
+              },
+              {
                 "title": "Data Engineer",
                 "location": "San Francisco, CA • New York, NY • United States",
                 "url": "https://boards.greenhouse.io/figma/jobs/5220003004?gh_jid=5220003004",
                 "matched": "Snowflake",
                 "excerpt": "hear from you if you have: 4 + years in a relevant field. Fluency with both SQL and Python. Familiarity with Snowflake, dbt, Dagster, and ETL/reverse ETL tools. Excellent judgment and creative problem solving skills. A self-star"
-              },
-              {
-                "title": "Data Scientist, Core Data -  PhD (2026)",
-                "location": "San Francisco, CA • New York, NY",
-                "url": "https://boards.greenhouse.io/figma/jobs/5976930004?gh_jid=5976930004",
-                "matched": "Snowflake",
-                "excerpt": "SQL and proficiency in a scripting language like Python or R, with exposure to distributed data systems (e.g. Snowflake) through research or internships Ability to communicate technical concepts clearly to both technical and non-"
               }
             ]
           },
@@ -1597,7 +1525,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "153 of 167 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "149 of 163 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -1606,15 +1534,15 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 102 open roles"
+              "excerpt": "United States: 101 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 19 open roles"
+              "excerpt": "United Kingdom: 18 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "Japan: 11 open roles"
+              "excerpt": "Japan: 10 open roles"
             }
           ],
           "question": "Which roles can access production data, and from which countries? Does the residency commitment cover support and engineering access, or only data at rest?"
@@ -1623,78 +1551,93 @@
       "data_classification": {
         "tags": [
           {
-            "key": "special_category",
-            "label": "Special-category data (GDPR Art. 9)",
-            "sensitivity": "high",
-            "why": "GDPR's own list of special categories -- the highest bar for lawful processing. This vendor: A CCPA/EEO-style required-disclosure category list, most plausibly tied to job applicants or California compliance disclosures rather than the design product itself.",
-            "source": "privacy",
-            "matched": null,
-            "excerpt": "Protected classification characteristics under California or federal law: Age (40 years or older), race, color, ancestry, national origin, citizenship, religion or creed, marital status, medical condition, physical or mental disability",
-            "confidence": "conditional"
-          },
-          {
             "key": "children",
             "label": "Children's data",
             "sensitivity": "high",
-            "why": "Processing minors' data triggers COPPA / GDPR-K obligations most vendors would rather not have. This vendor: Figma maintains a dedicated COPPA supplemental policy for an education-focused product surface (e.g. FigJam for schools) -- a genuine, distinctive product surface unlike most B2B SaaS vendors.",
+            "why": "Processing minors' data triggers COPPA / GDPR-K obligations most vendors would rather not have.",
             "source": "privacy",
-            "matched": null,
-            "excerpt": "For details regarding our processing of personal information that we collect from children, including in the US under COPPA, see our Supplemental Privacy Policy Exhibit A",
+            "matched": "COPPA",
+            "excerpt": "For details regarding our processing of personal information that we collect from children, including in the US under COPPA, see our Supplemental Privacy Policy for Children in",
+            "confidence": "stated"
+          },
+          {
+            "key": "special_category",
+            "label": "Special-category data (GDPR Art. 9)",
+            "sensitivity": "high",
+            "why": "GDPR's own list of special categories -- the highest bar for lawful processing.",
+            "source": "privacy",
+            "matched": "sexual orientation",
+            "excerpt": "Age (40 years or older), race, color, ancestry, national origin, citizenship, religion or creed, marital status, medical condition, physical or mental disability, sex (including gender, gender identity, gender expression, pregnancy or childbirth and related medical conditions), sexual orientation, veteran or military status.",
             "confidence": "stated"
           },
           {
             "key": "financial",
             "label": "Financial / payment data",
             "sensitivity": "medium",
-            "why": "Card or bank details -- a breach here has direct financial consequences for the data subject. This vendor: Payment flows through consumer app-store billing (App Store / Play Store), which describes an individual's purchase rather than enterprise procurement.",
+            "why": "Card or bank details -- a breach here has direct financial consequences for the data subject.",
             "source": "privacy",
-            "matched": null,
-            "excerpt": "Where we sell products and services through the Services, we use third-party applications, such as the Apple App Store, Google Play App Store, Amazon App Store",
-            "confidence": "conditional"
+            "matched": "Payment Information",
+            "excerpt": "Payment Information.",
+            "confidence": "stated"
           },
           {
             "key": "precise_location",
             "label": "Precise location",
             "sensitivity": "medium",
-            "why": "Where someone actually is, not just which country they signed up from. This vendor: Appears in a CCPA-style enumerated category list rather than as an operational product claim.",
+            "why": "Where someone actually is, not just which country they signed up from.",
             "source": "privacy",
-            "matched": null,
-            "excerpt": "Geolocation data: Physical location.",
-            "confidence": "conditional"
+            "matched": "Geolocation data",
+            "excerpt": "Geolocation data:",
+            "confidence": "stated"
           },
           {
             "key": "business_contact",
             "label": "Business contact information",
             "sensitivity": "low",
-            "why": "Names, work emails and similar identifiers -- present in nearly every SaaS privacy policy. This vendor: Standard account signup fields.",
-            "source": "privacy",
-            "matched": null,
-            "excerpt": "When you create a Figma account, we collect the personal information you provide to us, such as your name, email address, personal website, and picture.",
+            "why": "Names, work emails and similar identifiers -- present in nearly every SaaS privacy policy.",
+            "source": "dpa",
+            "matched": "contact information",
+            "excerpt": "In Table 1 of the UK Addendum, Customer’s and Figma’s details and key contact information are set forth in Annex I – List of Parties to this",
             "confidence": "stated"
           },
           {
             "key": "account_usage",
             "label": "Account & usage data",
             "sensitivity": "low",
-            "why": "Login activity, device and session data -- routine telemetry, not by itself sensitive. This vendor: Standard product telemetry.",
+            "why": "Login activity, device and session data -- routine telemetry, not by itself sensitive.",
             "source": "privacy",
-            "matched": null,
-            "excerpt": "Usage Data.",
+            "matched": "Usage Data",
+            "excerpt": "Usage Data",
             "confidence": "stated"
           }
         ],
         "max_sensitivity": "high",
         "sensitivity_score": 30,
-        "method": "llm"
+        "method": "heuristic"
       },
       "score": {
-        "total": 60,
+        "total": 48,
         "footprint": 23,
         "access": 25,
         "transparency": 0,
-        "record": 12
+        "record": 0
       },
       "drift": [
+        {
+          "id": "figma-dpa-2026-08-12",
+          "vendor_id": "figma",
+          "vendor_name": "Figma",
+          "document": "dpa",
+          "document_label": "Data processing agreement",
+          "date": "2026-08-12",
+          "url": "https://www.figma.com/legal/dpa/",
+          "hunks": [
+            {
+              "before": "This Data Protection Addendum (“",
+              "after": "This Data Processing Addendum (“"
+            }
+          ]
+        },
         {
           "id": "figma-subprocessors-2026-08-11",
           "vendor_id": "figma",
@@ -1749,8 +1692,11 @@
           "sha256": "f5448664493a7f16",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2015-04-16",
+            "last": "2026-02-17"
           }
         },
         {
@@ -1783,16 +1729,16 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 190,
-        "placeable": 180,
-        "unplaceable": 10,
+        "total": 195,
+        "placeable": 187,
+        "unplaceable": 8,
         "eea": 23,
-        "non_eea": 157,
+        "non_eea": 164,
         "countries": {
-          "United States": 90,
-          "Canada": 42,
-          "United Kingdom": 31,
-          "India": 30,
+          "United States": 92,
+          "Canada": 43,
+          "United Kingdom": 33,
+          "India": 32,
           "Germany": 14,
           "Ireland": 10,
           "France": 7,
@@ -1805,11 +1751,11 @@
           "Japan": 4,
           "Brazil": 3,
           "Spain": 3,
+          "Mexico": 3,
           "Austria": 3,
           "Poland": 3,
           "Denmark": 2,
           "Sweden": 2,
-          "Mexico": 1,
           "Switzerland": 1,
           "Philippines": 1,
           "Turkey": 1
@@ -2071,29 +2017,29 @@
             "key": "biometric",
             "label": "Biometric data",
             "sensitivity": "high",
-            "why": "Biometric identifiers are irrevocable if exposed -- a special category under GDPR Article 9. This vendor: This is GitLab warning customers not to paste sensitive data into issues/repos (\"GitLab prohibits the collection of... we realize users might store this kind of information\") -- not a claim that GitLab's product processes biometric data as a feature.",
+            "why": "Biometric identifiers are irrevocable if exposed -- a special category under GDPR Article 9.",
             "source": "privacy",
-            "matched": null,
-            "excerpt": "the input of sensitive or special categories of Personal Data to the Services, which includes Personal Data related to race, ethnicity, political opinions, reli",
+            "matched": "biometric",
+            "excerpt": "the input of sensitive or special categories of Personal Data to the Services, which includes Personal Data related to race, ethnicity, political opinions, religion, trade union membership, genetic data, biometric data, health data and sexual orientation.",
             "confidence": "conditional"
           },
           {
             "key": "special_category",
             "label": "Special-category data (GDPR Art. 9)",
             "sensitivity": "high",
-            "why": "GDPR's own list of special categories -- the highest bar for lawful processing. This vendor: Same customer-input warning as the biometric entry above, not a genuine product claim.",
+            "why": "GDPR's own list of special categories -- the highest bar for lawful processing.",
             "source": "privacy",
-            "matched": null,
-            "excerpt": "the input of sensitive or special categories of Personal Data to the Services, which includes Personal Data related to race, ethnicity, political opinions, reli",
+            "matched": "political opinion",
+            "excerpt": "the input of sensitive or special categories of Personal Data to the Services, which includes Personal Data related to race, ethnicity, political opinions, religion, trade union membership, genetic data, biometric data, health data and sexual orientation.",
             "confidence": "conditional"
           },
           {
             "key": "financial",
             "label": "Financial / payment data",
             "sensitivity": "medium",
-            "why": "Card or bank details -- a breach here has direct financial consequences for the data subject. This vendor: Hedged on an individual purchase decision (\"if you purchase\"); enterprise GitLab customers are typically invoiced under a signed order form rather than paying by card.",
+            "why": "Card or bank details -- a breach here has direct financial consequences for the data subject.",
             "source": "privacy",
-            "matched": null,
+            "matched": "payment information",
             "excerpt": "If you purchase a paid subscription from GitLab, we will collect payment information from you that may include your name, billing address and credit card or bank information.",
             "confidence": "conditional"
           },
@@ -2101,9 +2047,9 @@
             "key": "business_contact",
             "label": "Business contact information",
             "sensitivity": "low",
-            "why": "Names, work emails and similar identifiers -- present in nearly every SaaS privacy policy. This vendor: Standard contact fields collected when a user signs up or requests contact.",
+            "why": "Names, work emails and similar identifiers -- present in nearly every SaaS privacy policy.",
             "source": "privacy",
-            "matched": null,
+            "matched": "Contact Information",
             "excerpt": "Contact Information:",
             "confidence": "stated"
           },
@@ -2111,23 +2057,23 @@
             "key": "account_usage",
             "label": "Account & usage data",
             "sensitivity": "low",
-            "why": "Login activity, device and session data -- routine telemetry, not by itself sensitive. This vendor: Automatic device/usage telemetry, stated plainly.",
+            "why": "Login activity, device and session data -- routine telemetry, not by itself sensitive.",
             "source": "privacy",
-            "matched": null,
-            "excerpt": "When you access and use our Services, we automatically collect information about your device, which may include: device type, your device operating system, brow",
+            "matched": "IP address",
+            "excerpt": "When you access and use our Services, we automatically collect information about your device, which may include: device type, your device operating system, browser type and version, language preference, IP address, hardware identifiers, and mobile IDs.",
             "confidence": "stated"
           }
         ],
         "max_sensitivity": "low",
         "sensitivity_score": 10,
-        "method": "llm"
+        "method": "heuristic"
       },
       "score": {
-        "total": 76,
+        "total": 51,
         "footprint": 22,
         "access": 25,
         "transparency": 4,
-        "record": 25
+        "record": 0
       },
       "drift": [
         {
@@ -2197,35 +2143,35 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 245,
-        "placeable": 245,
+        "total": 259,
+        "placeable": 259,
         "unplaceable": 0,
-        "eea": 85,
-        "non_eea": 160,
+        "eea": 90,
+        "non_eea": 169,
         "countries": {
-          "United States": 91,
-          "Spain": 24,
-          "Canada": 23,
-          "United Kingdom": 15,
-          "Ireland": 12,
-          "Greece": 12,
+          "United States": 97,
+          "Canada": 26,
+          "Spain": 26,
+          "United Kingdom": 14,
+          "Ireland": 13,
+          "Greece": 13,
           "India": 9,
           "Portugal": 9,
           "Germany": 8,
           "Norway": 5,
           "Belgium": 4,
           "Brazil": 4,
+          "Singapore": 4,
           "France": 3,
-          "Singapore": 3,
+          "Saudi Arabia": 3,
           "Costa Rica": 3,
           "Romania": 3,
           "Netherlands": 2,
           "Switzerland": 2,
-          "United Arab Emirates": 2,
           "Japan": 2,
-          "Saudi Arabia": 2,
+          "Poland": 2,
           "Mexico": 2,
-          "Poland": 1,
+          "United Arab Emirates": 1,
           "South Korea": 1,
           "Hungary": 1,
           "Denmark": 1,
@@ -2238,7 +2184,7 @@
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 5,
+            "count": 6,
             "examples": [
               {
                 "title": "AI Security - Principal Security Research Engineer I",
@@ -2248,18 +2194,18 @@
                 "excerpt": "egrating LLM APIs into production applications You work autonomously and can drive decisions and results in a distributed team by leveraging asynchronous, direct, and transparent communication. Previous successes in presenting findings"
               },
               {
-                "title": "Corporate Counsel - Legal Product, IP, and Marketing",
+                "title": "Associate Corporate Counsel - Legal Product, IP, and Marketing",
                 "location": "United States",
                 "url": "https://jobs.elastic.co/jobs?gh_jid=8093273&gh_jid=8093273",
                 "matched": "across time zones",
                 "excerpt": "orkflows and \"productization\" processes that help a legal team scale. Global Perspective: Comfortable working across time zones and cultures in a distributed culture with a flexible approach to problem-solving. Compensation for this role"
               },
               {
-                "title": "Elastic Consulting Architect - Public Sector",
-                "location": "United Kingdom",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8018328&gh_jid=8018328",
-                "matched": "distributed team",
-                "excerpt": "architecture, and capacity planning in mission-critical environments Comfortable working remotely in a highly distributed team Development of demos and proof-of-concepts that highlight the value of the Elastic Stack Data modelling, quer"
+                "title": "Associate Corporate Counsel - Legal Product, IP, and Marketing",
+                "location": "Canada",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8122981&gh_jid=8122981",
+                "matched": "across time zones",
+                "excerpt": "orkflows and \"productization\" processes that help a legal team scale. Global Perspective: Comfortable working across time zones and cultures in a distributed culture with a flexible approach to problem-solving. Compensation for this role"
               }
             ]
           },
@@ -2271,11 +2217,18 @@
             "count": 4,
             "examples": [
               {
-                "title": "Principal AI Ecosystem Architect - OpenAI/Anthropic",
-                "location": "San Francisco, CA",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8047165&gh_jid=8047165",
-                "matched": "Willingness to travel",
-                "excerpt": "ve presenting at a developer conference and working through an architecture question with a partner engineer. Willingness to travel 30% to partner offices, events, and conferences. Bonus Points Direct experience working with OpenAI and/or An"
+                "title": "Marketplace Sales Specialist - EMEA (Azure, AWS & Google Cloud)",
+                "location": "Barcelona, Spain",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8114415&gh_jid=8114415",
+                "matched": "Willing to travel",
+                "excerpt": "al structuring Understanding of analytics, search, or big data markets / products or ability to learn quickly Willing to travel up to 10% of the time. Compensation for this role is in the form of base salary plus a variable component. At"
+              },
+              {
+                "title": "Partner Solutions Architect",
+                "location": "Saudi Arabia",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8091966&gh_jid=8091966",
+                "matched": "travel up to 30%",
+                "excerpt": "as to action; you inspire partner teams to work on what is most relevant, not just what is urgent. Ability to travel up to 30%. #PM-LI1 Additional Information - We Take Care of Our People As a distributed company, diversity drives our i"
               },
               {
                 "title": "Principal AI Ecosystem Architect - OpenAI/Anthropic",
@@ -2283,13 +2236,6 @@
                 "url": "https://jobs.elastic.co/jobs?gh_jid=8065489&gh_jid=8065489",
                 "matched": "Willingness to travel",
                 "excerpt": "ve presenting at a developer conference and working through an architecture question with a partner engineer. Willingness to travel 30% to partner offices, events, and conferences. Bonus Points Direct experience working with OpenAI and/or An"
-              },
-              {
-                "title": "Principal, Security Specialization",
-                "location": "United States",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8092084&gh_jid=8092084",
-                "matched": "travel 25%",
-                "excerpt": "rs. Deep technical expertise in system architecture, including Elasticsearch and Elastic Solutions Ability to travel 25% of the time, as required. Bonus Points Familiarity with AI system architecture, including building autonomous"
               }
             ]
           },
@@ -2308,41 +2254,18 @@
                 "excerpt": "ing of cloud technologies, e.g., AWS, Azure, Google and cloud billing models a plus Experience with NetSuite, Salesforce, Stripe Comfort using basic AI tools to increase efficiency and support day-to-day operations &nbsp; #LI-DS1"
               },
               {
+                "title": "Director, Cloud Operations",
+                "location": "United States",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8121037&gh_jid=8121037",
+                "matched": "Salesforce",
+                "excerpt": "ing operational controls, and spearheading cross-functional system implementations (ERP, Billing Engines, CRP/Salesforce, MP portals). Executive Presence &amp; Stakeholder Management: Outstanding interpersonal, communication, and"
+              },
+              {
                 "title": "Financial Planning and Analysis Manager -Professional Services and Partner Support ",
                 "location": "United States",
                 "url": "https://jobs.elastic.co/jobs?gh_jid=8068807&gh_jid=8068807",
                 "matched": "Salesforce",
                 "excerpt": "ial information to both financial and non-financial partners Experience using software tools such as Tableau, Salesforce, NetSuite, Pigment, BigQuery, and other business intelligence platforms and, of course, the command of AI usa"
-              },
-              {
-                "title": "Help Desk Operations Manager, Partner Revenue Strategy & Operations",
-                "location": "India",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8059813&gh_jid=8059813",
-                "matched": "Salesforce",
-                "excerpt": "position leading a team 2+ years with process improvement 2+ years of experience with CRM systems, preferably Salesforce #LI-AS3 Additional Information - We Take Care of Our People As a distributed company, diversity drives our id"
-              }
-            ]
-          },
-          {
-            "key": "gov_enclave",
-            "label": "Government enclave",
-            "severity": "low",
-            "why": "A separate sovereign estate exists, which confirms the commercial one is not it.",
-            "count": 2,
-            "examples": [
-              {
-                "title": "Principal Software Developer - Security - Elasticsearch",
-                "location": "Canada",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8082617&gh_jid=8082617",
-                "matched": "FedRAMP",
-                "excerpt": "to quantum-resistant cryptographic algorithms. Hands-on experience mapping engine-level technical controls to FedRAMP (Moderate/High), FIPS 140, and SOC 2 requirements. Experience working on the internals of a data store or sea"
-              },
-              {
-                "title": "Principal Software Engineer - Security - Elasticsearch",
-                "location": "United States",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8082612&gh_jid=8082612",
-                "matched": "FedRAMP",
-                "excerpt": "to quantum-resistant cryptographic algorithms. Hands-on experience mapping engine-level technical controls to FedRAMP (Moderate/High), FIPS 140, and SOC 2 requirements. Experience working on the internals of a data store or sea"
               }
             ]
           },
@@ -2359,6 +2282,22 @@
                 "url": "https://jobs.elastic.co/jobs?gh_jid=8018328&gh_jid=8018328",
                 "matched": "Security clearance",
                 "excerpt": "s. Given the opportunity and the organisations that you will be working with, you must be a current holder of Security clearance. What You Will Be Doing: Strong customer advocacy, relationship building, and communications skills The abili"
+              }
+            ]
+          },
+          {
+            "key": "sovereignty_work",
+            "label": "Sovereignty workstream",
+            "severity": "low",
+            "why": "They are staffing the problem, which is a good sign and an admission it is open.",
+            "count": 1,
+            "examples": [
+              {
+                "title": "Partner Solutions Architect",
+                "location": "Saudi Arabia",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8091966&gh_jid=8091966",
+                "matched": "sovereign",
+                "excerpt": "scaler patterns on AWS, Google Cloud and Microsoft Azure. Back partner-built solutions on Elastic — vertical, sovereign and managed offerings that extend our product surface beyond what Elastic builds itself. Build reusable demos"
               }
             ]
           }
@@ -2378,22 +2317,12 @@
       "data_classification": {
         "tags": [
           {
-            "key": "special_category",
-            "label": "Special-category data (GDPR Art. 9)",
-            "sensitivity": "high",
-            "why": "GDPR's own list of special categories -- the highest bar for lawful processing. This vendor: Definitional language (\"may be considered 'Sensitive'\") introducing a defined term, not a claim that Elastic's product processes this.",
-            "source": "privacy",
-            "matched": null,
-            "excerpt": "Certain personal data, such as information about medical or health conditions, racial or ethnic origin, and religious or political beliefs, may be considered “Sensitive”",
-            "confidence": "conditional"
-          },
-          {
             "key": "financial",
             "label": "Financial / payment data",
             "sensitivity": "medium",
-            "why": "Card or bank details -- a breach here has direct financial consequences for the data subject. This vendor: Stated plainly as part of transaction processing, not hedged to an individual-only flow.",
+            "why": "Card or bank details -- a breach here has direct financial consequences for the data subject.",
             "source": "privacy",
-            "matched": null,
+            "matched": "credit card",
             "excerpt": "We also use personal data, including financial, credit card, and payment information, to process transactions.",
             "confidence": "stated"
           },
@@ -2401,26 +2330,26 @@
             "key": "business_contact",
             "label": "Business contact information",
             "sensitivity": "low",
-            "why": "Names, work emails and similar identifiers -- present in nearly every SaaS privacy policy. This vendor: Standard contact fields collected from event attendees, sales contacts and customers.",
+            "why": "Names, work emails and similar identifiers -- present in nearly every SaaS privacy policy.",
             "source": "privacy",
-            "matched": null,
-            "excerpt": "The personal data we collect may include contact information (such as your name, address, telephone number, or email address)",
+            "matched": "contact information",
+            "excerpt": "The personal data we collect may include contact information (such as your name, address, telephone number, or email address), professional information (such as your employer name, address, job title, department, or job role), user IDs and passwords, and contact preferences.",
             "confidence": "stated"
           },
           {
             "key": "account_usage",
             "label": "Account & usage data",
             "sensitivity": "low",
-            "why": "Login activity, device and session data -- routine telemetry, not by itself sensitive. This vendor: Standard cookie/telemetry collection.",
+            "why": "Login activity, device and session data -- routine telemetry, not by itself sensitive.",
             "source": "privacy",
-            "matched": null,
+            "matched": "cookies",
             "excerpt": "This statement explains how we use cookies and similar technologies.",
             "confidence": "stated"
           }
         ],
         "max_sensitivity": "medium",
         "sensitivity_score": 20,
-        "method": "llm"
+        "method": "heuristic"
       },
       "score": {
         "total": 58,
@@ -2474,13 +2403,13 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 83,
-        "placeable": 80,
+        "total": 84,
+        "placeable": 81,
         "unplaceable": 3,
         "eea": 9,
-        "non_eea": 71,
+        "non_eea": 72,
         "countries": {
-          "United States": 62,
+          "United States": 63,
           "United Kingdom": 17,
           "Germany": 9,
           "Australia": 3,
@@ -2629,19 +2558,19 @@
             "key": "children",
             "label": "Children's data",
             "sensitivity": "high",
-            "why": "Processing minors' data triggers COPPA / GDPR-K obligations most vendors would rather not have. This vendor: Generic remediation boilerplate common to nearly all web services; Vercel is a developer/infrastructure platform with no identifiable product surface directed at children, unlike Figma's dedicated COPPA policy for an education product.",
+            "why": "Processing minors' data triggers COPPA / GDPR-K obligations most vendors would rather not have.",
             "source": "privacy",
-            "matched": null,
-            "excerpt": "If we become aware that we have collected personal information from anyone under the age of 16 without verification or parental consent, we take steps to remove",
-            "confidence": "conditional"
+            "matched": "parental consent",
+            "excerpt": "If we become aware that we have collected personal information from anyone under the age of 16 without verification or parental consent, we take steps to remove such information.",
+            "confidence": "stated"
           },
           {
             "key": "financial",
             "label": "Financial / payment data",
             "sensitivity": "medium",
-            "why": "Card or bank details -- a breach here has direct financial consequences for the data subject. This vendor: Stated plainly, not hedged to an individual-only flow.",
+            "why": "Card or bank details -- a breach here has direct financial consequences for the data subject.",
             "source": "privacy",
-            "matched": null,
+            "matched": "payment card",
             "excerpt": "We collect payment and other transactional information related to our Services, such as hashed payment card values and billing address.",
             "confidence": "stated"
           },
@@ -2649,26 +2578,26 @@
             "key": "business_contact",
             "label": "Business contact information",
             "sensitivity": "low",
-            "why": "Names, work emails and similar identifiers -- present in nearly every SaaS privacy policy. This vendor: Standard signup fields.",
+            "why": "Names, work emails and similar identifiers -- present in nearly every SaaS privacy policy.",
             "source": "privacy",
-            "matched": null,
-            "excerpt": "We may collect or receive information directly from you, such as your name and email address when you or your organization sign up for our Services",
+            "matched": "name and email",
+            "excerpt": "We may collect or receive information directly from you, such as your name and email address when you or your organization sign up for our Services or Marketing Activities.",
             "confidence": "stated"
           },
           {
             "key": "account_usage",
             "label": "Account & usage data",
             "sensitivity": "low",
-            "why": "Login activity, device and session data -- routine telemetry, not by itself sensitive. This vendor: Standard product telemetry.",
+            "why": "Login activity, device and session data -- routine telemetry, not by itself sensitive.",
             "source": "privacy",
-            "matched": null,
+            "matched": "IP address",
             "excerpt": "In other cases, we receive information through your use of our Services, such as IP address and telemetry data.",
             "confidence": "stated"
           }
         ],
-        "max_sensitivity": "medium",
-        "sensitivity_score": 20,
-        "method": "llm"
+        "max_sensitivity": "high",
+        "sensitivity_score": 30,
+        "method": "heuristic"
       },
       "score": {
         "total": 54,
