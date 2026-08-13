@@ -71,6 +71,14 @@ def _validate(demo: dict, judgments: dict, heuristics: dict) -> None:
             raise InvalidFixture(f"{eng_id} judgment is ungrounded")
         if not judgment["heuristic_ids"] or set(judgment["heuristic_ids"]) - heuristic_ids:
             raise InvalidFixture(f"{eng_id} judgment has an unknown heuristic")
+    triple_d = demo.get("triple_d", {})
+    if triple_d.get("mode") != "replay":
+        raise InvalidFixture("the staged Triple D scan must default to replay")
+    for event in triple_d.get("events", []):
+        if event.get("evidence_id") not in evidence:
+            raise InvalidFixture(f"Triple D event {event.get('id')} has missing evidence")
+        if event.get("vendor_id") not in vendors:
+            raise InvalidFixture(f"Triple D event {event.get('id')} has an unknown vendor")
 
 
 def _external_portfolio(external: dict) -> list[dict]:
@@ -185,6 +193,30 @@ def run(write: bool = True) -> dict:
         })
         engagements.append(eng)
 
+    by_vendor = {
+        vendor_id: [e["id"] for e in engagements if e["vendor_id"] == vendor_id]
+        for vendor_id in vendors
+    }
+    triple_d = deepcopy(demo["triple_d"])
+    triple_d["events"] = [
+        {
+            **event,
+            "affected_engagements": by_vendor[event["vendor_id"]],
+            "recommendations_changed": [
+                e["id"] for e in engagements
+                if e["vendor_id"] == event["vendor_id"] and e.get("prior_disposition")
+            ],
+        }
+        for event in triple_d["events"]
+    ]
+    triple_d["changes_detected"] = len(triple_d["events"])
+    triple_d["affected_engagements"] = sorted({
+        eng_id for event in triple_d["events"] for eng_id in event["affected_engagements"]
+    })
+    triple_d["recommendations_changed"] = sorted({
+        eng_id for event in triple_d["events"] for eng_id in event["recommendations_changed"]
+    })
+
     output = {
         "schema_version": "1.0.0",
         "generated_at": demo["as_of"] + "T12:00:00Z",
@@ -199,11 +231,11 @@ def run(write: bool = True) -> dict:
         "teams": demo["teams"],
         "evidence": demo["evidence"],
         "sources": demo["sources"],
+        "triple_d": triple_d,
         "heuristics": heuristics,
         "trace": trace.nodes,
         "dependency_index": {
-            "by_vendor": {vendor_id: [e["id"] for e in engagements if e["vendor_id"] == vendor_id]
-                          for vendor_id in vendors},
+            "by_vendor": by_vendor,
             "by_evidence": {evidence_id: [e["id"] for e in engagements if evidence_id in e["evidence_ids"]]
                             for evidence_id in evidence_by_id},
         },

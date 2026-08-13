@@ -30,7 +30,10 @@
     <button class="tab" role="tab" aria-selected="false" data-view="heuristics">Heuristics <span class="badge" id="n-heuristics">0</span></button>
     <button class="tab" role="tab" aria-selected="false" data-view="reasoning">Reasoning</button>
   </nav>
-  <div class="runstate"><span class="pulse"></span><span><b>Replay</b><small>0 live calls</small></span></div>
+  <button class="runstate" id="triple-d-status" aria-label="Open Triple D scan results">
+    <span class="ddd-mark" aria-hidden="true">D<sup>3</sup></span>
+    <span><b>Triple D</b><small id="triple-d-summary">replay · 0 live calls</small></span>
+  </button>
 </header>
 
 <main class="body">
@@ -54,7 +57,7 @@
   </section>
 
   <section class="view" id="view-findings" role="tabpanel">
-    <div class="wrap"><div class="vhead"><span class="eyebrow">Evidence queue</span><h2 class="jak">Findings are ingredients, not answers.</h2><p>Filter internal records, Vendor Surface, or the real public-evidence portfolio.</p></div><div class="seg" id="finding-filter"><button class="on" data-filter="engagement">Engagement evidence</button><button data-filter="external">Vendor Surface</button><button data-filter="public">Public evidence only</button></div><div id="finding-list"></div></div>
+    <div class="wrap"><div class="vhead"><span class="eyebrow">Evidence queue</span><h2 class="jak">Findings are ingredients, not answers.</h2><p>Internal records explain the relationship. Triple D watches the vendor's public surface for what changed.</p></div><div class="seg" id="finding-filter"><button class="on" data-filter="engagement">Engagement evidence</button><button data-filter="external">Vendor Surface · Triple D</button><button data-filter="public">Public evidence only</button></div><div id="triple-d-panel" hidden></div><div id="finding-list"></div></div>
   </section>
 
   <section class="view" id="view-intelligence" role="tabpanel">

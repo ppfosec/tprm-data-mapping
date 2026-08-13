@@ -1,8 +1,8 @@
 "use strict";
 const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const icons={procurement:"P",identity:"I",jira:"J",confluence:"C",interactions:"↔",contracts:"§",vendor_surface:"V",public:"◎"};
-let DATA, selected="eng_nimbus_sales", findingFilter="engagement";
+const icons={procurement:"P",identity:"I",jira:"J",confluence:"C",interactions:"↔",contracts:"§",vendor_surface:"D³",public:"◎"};
+let DATA, selected="eng_nimbus_sales", findingFilter="engagement", scanRunning=false;
 const DISMISS_KEY="tprm-lens:dismissed:v1";
 function dismissed(){try{return new Set(JSON.parse(localStorage.getItem(DISMISS_KEY)||"[]"))}catch{return new Set()}}
 function toggleDismissed(id){const set=dismissed();set.has(id)?set.delete(id):set.add(id);localStorage.setItem(DISMISS_KEY,JSON.stringify([...set]));renderFindings()}
@@ -15,6 +15,7 @@ async function init(){
 function wire(){
   $$(".tab").forEach(b=>b.onclick=()=>showView(b.dataset.view));
   $("#lens-switch").onclick=()=>{const m=$("#lens-menu");m.hidden=!m.hidden;$("#lens-switch").setAttribute("aria-expanded",String(!m.hidden))};
+  $("#triple-d-status").onclick=openTripleD;
   $$("#finding-filter button").forEach(b=>b.onclick=()=>{findingFilter=b.dataset.filter;$$("#finding-filter button").forEach(x=>x.classList.toggle("on",x===b));renderFindings()});
   $("#scrim").onclick=closeDrawer;
   $("#reason-engagement").onchange=e=>renderReasoning(e.target.value);
@@ -22,6 +23,7 @@ function wire(){
 function showView(name){$$(".tab").forEach(b=>b.setAttribute("aria-selected",String(b.dataset.view===name)));$$(".view").forEach(v=>v.classList.toggle("on",v.id===`view-${name}`));if(name==="reasoning")renderReasoning(selected)}
 function renderAll(){
   $("#n-insights").textContent=DATA.engagements.length;$("#n-findings").textContent=DATA.evidence.length;$("#n-heuristics").textContent=DATA.heuristics.heuristics.filter(h=>h.applies).length;
+  $("#triple-d-summary").textContent=`${DATA.triple_d.changes_detected} change · ${DATA.triple_d.affected_engagements.length} engagement routed`;
   renderInsights();renderFindings();renderIntelligence();renderHeuristics();
   $("#reason-engagement").innerHTML=DATA.engagements.map(e=>`<option value="${e.id}">${esc(e.title)}</option>`).join("");
 }
@@ -41,9 +43,22 @@ function renderFindings(){
   if(findingFilter==="external")rows=DATA.evidence.filter(e=>e.source==="vendor_surface");
   if(findingFilter==="public")rows=DATA.public_vendors.flatMap(v=>(v.findings||[]).map((f,i)=>({id:`${v.id}-${f.rule||i}`,source:"public",title:f.headline,excerpt:f.detail,date:"current",vendor:v.name,kind:f.severity})));
   const gone=dismissed();
+  const panel=$("#triple-d-panel");panel.hidden=findingFilter!=="external";if(!panel.hidden)renderTripleD();
   $("#finding-list").innerHTML=rows.map(e=>`<div class="frow ${gone.has(e.id)?"dismissed":""}"><i class="source-icon">${icons[e.source]||"•"}</i><div><h4>${esc(e.title)}</h4><p>${esc(e.excerpt)}</p></div><div class="factions"><span class="chip">${esc(e.vendor||e.source)}</span><button class="dismiss" data-dismiss="${esc(e.id)}" title="${gone.has(e.id)?"Restore":"Dismiss as not relevant"}" aria-label="${gone.has(e.id)?"Restore":"Dismiss"} ${esc(e.title)}">${gone.has(e.id)?"↶":"×"}</button></div></div>`).join("")||`<p>No evidence in this filter.</p>`;
   $$("[data-dismiss]").forEach(b=>b.onclick=()=>toggleDismissed(b.dataset.dismiss));
 }
+function openTripleD(){showView("findings");findingFilter="external";$$("#finding-filter button").forEach(b=>b.classList.toggle("on",b.dataset.filter==="external"));renderFindings();$("#triple-d-panel").scrollIntoView({behavior:"smooth",block:"start"})}
+function renderTripleD(){
+  const d=DATA.triple_d, names=new Map(DATA.engagements.map(e=>[e.id,e.title]));
+  $("#triple-d-panel").innerHTML=`<section class="ddd-shell"><header class="ddd-head"><div class="ddd-title"><span class="ddd-mark large">D<sup>3</sup></span><div><span class="eyebrow">${esc(d.role)}</span><h3>${esc(d.name)}</h3><p>It watches the vendor. TPRM Lens decides what your organization should do about it.</p></div></div><button class="scan-button" id="run-triple-d"><span class="scan-icon">↻</span><span><b>Replay scan</b><small>zero live calls</small></span></button></header><div class="ddd-stats"><div><b>${d.vendors_watched}</b><span>vendors watched</span></div><div><b>${d.documents_watched}</b><span>documents compared</span></div><div class="hot"><b>${d.changes_detected}</b><span>material change</span></div><div><b>${d.affected_engagements.length}</b><span>engagement routed</span></div></div><div class="scan-rail" id="scan-rail">${d.stages.map((stage,i)=>`<div class="scan-stage done" data-scan-stage="${i}"><i>${i===d.stages.length-1?"↗":"✓"}</i><span>${esc(stage)}</span></div>`).join("")}</div><div class="scan-result" id="scan-result"><span class="pulse"></span><span>Last replay ${esc(d.last_scan.replace("T"," · ").replace("Z"," UTC"))}</span><b>${d.changes_detected} change routed through heuristics</b></div></section>${d.events.map(event=>`<article class="drift-card"><header><div><span class="eyebrow">${esc(event.detected_on)} · ${esc(event.change_type)}</span><h3>${esc(vendorName(event.vendor_id))}</h3><p>${esc(event.document)}</p></div><span class="drift-state">recommendation changed</span></header><div class="diff"><div class="before"><span>Before</span><p>${esc(event.before)}</p></div><div class="after"><span>Now</span><p>${esc(event.after)}</p></div></div><div class="drift-route"><div><span class="eyebrow">Why it matters here</span><p>${esc(event.interpretation)}</p></div><div class="affected"><span class="eyebrow">Affected work</span>${event.affected_engagements.map(id=>`<button data-drift-eng="${id}"><i>↗</i><span><b>${esc(names.get(id))}</b><small>${event.recommendations_changed.includes(id)?"recommendation updated":"review routed"}</small></span></button>`).join("")}</div></div></article>`).join("")}`;
+  $("#run-triple-d").onclick=runTripleDReplay;$$('[data-drift-eng]').forEach(b=>b.onclick=()=>openDrawer(b.dataset.driftEng));
+}
+async function runTripleDReplay(){
+  if(scanRunning)return;scanRunning=true;const button=$("#run-triple-d"),stages=$$("[data-scan-stage]"),delay=matchMedia("(prefers-reduced-motion: reduce)").matches?0:260;button.disabled=true;button.classList.remove("complete");button.classList.add("running");button.querySelector("b").textContent="Scanning…";stages.forEach(s=>s.className="scan-stage");$("#scan-result").innerHTML="<span class=\"pulse\"></span><span>Reading committed snapshots</span><b>Replay mode · no network · no model call</b>";
+  for(const stage of stages){stage.classList.add("active");await new Promise(resolve=>setTimeout(resolve,delay));stage.classList.remove("active");stage.classList.add("done")}
+  $("#scan-result").innerHTML=`<span class="pulse"></span><span>Replay complete</span><b>${DATA.triple_d.changes_detected} change · ${DATA.triple_d.affected_engagements.length} engagement routed</b>`;button.querySelector("b").textContent="Replay again";button.disabled=false;button.classList.remove("running");button.classList.add("complete");scanRunning=false;
+}
+function vendorName(id){return DATA.vendors.find(v=>v.id===id)?.name||id}
 function renderIntelligence(){
   const nodes=[`<svg class="intel-links" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M19 15 L51 13 L81 16 M50 15 L51 38 L81 44 M19 45 L51 61 L81 72 M50 45 L51 84 L81 72 M51 13 L52 92 M51 38 L52 92 M51 61 L52 92 M51 84 L52 92"/></svg>`];
   DATA.teams.forEach((t,i)=>nodes.push(`<div class="knode team" style="left:${7+(i%2)*31}%;top:${7+Math.floor(i/2)*30}%"><b>${esc(t.name)}</b><small>${t.maturity} engagement · ${t.interactions} exchanges</small></div>`));

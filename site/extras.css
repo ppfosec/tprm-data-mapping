@@ -64,3 +64,148 @@
   text-align: left;
   cursor: pointer;
 }
+
+.runstate {
+  border: 0;
+  background: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.runstate:hover b { color: var(--violet); }
+
+.ddd-mark {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 9px;
+  background: var(--ink);
+  color: white;
+  font: 800 12px "Plus Jakarta Sans", sans-serif;
+  box-shadow: 0 4px 12px -5px var(--ink);
+}
+
+.ddd-mark sup { font-size: 7px; margin-left: 1px; }
+.ddd-mark.large { width: 46px; height: 46px; border-radius: 13px; font-size: 17px; flex: 0 0 auto; }
+
+.ddd-shell {
+  margin: 0 0 16px;
+  overflow: hidden;
+  border: 1px solid #d8ccef;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #fff, #f4effd);
+  box-shadow: var(--shadow);
+}
+
+.ddd-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 17px;
+  border-bottom: 1px solid var(--line);
+}
+
+.ddd-title { display: flex; align-items: center; gap: 12px; }
+.ddd-title h3 { margin: 2px 0; font: 700 16px "Plus Jakarta Sans", sans-serif; }
+.ddd-title p { margin: 0; color: var(--muted); font-size: 11px; }
+
+.scan-button {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 145px;
+  padding: 9px 12px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--ink);
+  color: white;
+  cursor: pointer;
+  text-align: left;
+}
+
+.scan-button b,.scan-button small { display: block; }
+.scan-button b { font-size: 11px; }
+.scan-button small { color: #bfb2dc; font: 8px "JetBrains Mono", monospace; }
+.scan-button:disabled { cursor: default; opacity: .85; }
+.scan-button.complete { background: var(--teal); }
+.scan-icon { font-size: 18px; }
+.scan-button.running .scan-icon { animation: spin .8s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.ddd-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--line);
+}
+
+.ddd-stats div { padding: 12px 15px; background: rgba(255,255,255,.94); }
+.ddd-stats b { display: block; font: 800 18px "Plus Jakarta Sans", sans-serif; }
+.ddd-stats span { color: var(--muted); font: 8px "JetBrains Mono", monospace; text-transform: uppercase; }
+.ddd-stats .hot b { color: var(--magenta); }
+
+.scan-rail {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 14px 17px 8px;
+}
+
+.scan-stage { position: relative; display: flex; align-items: center; gap: 6px; color: #bbb3c8; font: 9px "JetBrains Mono", monospace; text-transform: uppercase; }
+.scan-stage:not(:last-child):after { content: ""; height: 1px; position: absolute; left: 24px; right: 8px; top: 10px; background: var(--line); }
+.scan-stage i { z-index: 1; width: 20px; height: 20px; display: grid; place-items: center; border-radius: 50%; background: var(--slate); font-style: normal; }
+.scan-stage.done { color: var(--teal); }
+.scan-stage.done i { background: var(--tw); }
+.scan-stage.active { color: var(--violet); }
+.scan-stage.active i { background: var(--vw); box-shadow: 0 0 0 4px rgba(109,40,217,.1); }
+
+.scan-result { display: flex; align-items: center; gap: 8px; padding: 7px 17px 13px; color: var(--muted); font-size: 10px; }
+.scan-result b { margin-left: auto; color: var(--ink); }
+
+.drift-card { margin: 12px 0 18px; overflow: hidden; border: 1px solid #ebc3d9; border-radius: 15px; background: white; box-shadow: var(--shadow); }
+.drift-card>header { display: flex; justify-content: space-between; gap: 15px; padding: 15px 17px; }
+.drift-card h3 { margin: 3px 0 0; font: 700 15px "Plus Jakarta Sans", sans-serif; }
+.drift-card header p { margin: 2px 0; color: var(--muted); font-size: 10px; }
+.drift-state { align-self: flex-start; padding: 5px 8px; border-radius: 99px; background: var(--mw); color: #97195e; font: 8px "JetBrains Mono", monospace; text-transform: uppercase; }
+
+.diff { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.diff>div { position: relative; padding: 13px 16px 15px; }
+.diff>div:first-child { border-right: 1px solid var(--line); }
+.diff span { font: 600 8px "JetBrains Mono", monospace; text-transform: uppercase; }
+.diff p { margin: 6px 0 0; font-size: 11px; }
+.diff .before { background: #fff8fa; color: #704156; }
+.diff .before p { text-decoration: line-through; text-decoration-color: #dba4bd; }
+.diff .after { background: #f2fbf9; color: #1b665c; }
+
+.drift-route { display: grid; grid-template-columns: 1fr 285px; gap: 20px; padding: 15px 17px; }
+.drift-route p { margin: 5px 0; color: var(--ink2); font-size: 11px; }
+.affected button { width: 100%; display: flex; align-items: center; gap: 9px; margin-top: 6px; padding: 8px; border: 1px solid var(--line); border-radius: 9px; background: var(--canvas); cursor: pointer; text-align: left; }
+.affected button i { width: 25px; height: 25px; display: grid; place-items: center; border-radius: 7px; background: var(--mw); color: var(--magenta); font-style: normal; }
+.affected button b,.affected button small { display: block; }
+.affected button b { font-size: 10px; }
+.affected button small { color: var(--magenta); font: 8px "JetBrains Mono", monospace; }
+
+@media(max-width:850px) {
+  .ddd-head,.drift-card>header { align-items: flex-start; }
+  .drift-route { grid-template-columns: 1fr; }
+}
+
+@media(max-width:480px) {
+  .runstate { display: flex; position: absolute; right: 10px; top: 10px; min-width: 0; }
+  .runstate>span:last-child { display: none; }
+  .ddd-head { display: block; }
+  .ddd-title { align-items: flex-start; }
+  .scan-button { width: 100%; margin-top: 13px; }
+  .ddd-stats { grid-template-columns: 1fr 1fr; }
+  .scan-rail { padding: 13px 11px 7px; }
+  .scan-stage { display: block; text-align: center; font-size: 7px; }
+  .scan-stage i { margin: 0 auto 4px; }
+  .scan-stage:not(:last-child):after { left: calc(50% + 10px); right: calc(-50% + 10px); }
+  .scan-result { display: grid; grid-template-columns: auto 1fr; }
+  .scan-result b { grid-column: 1 / -1; margin: 0; }
+  .diff { grid-template-columns: 1fr; }
+  .diff>div:first-child { border-right: 0; border-bottom: 1px solid var(--line); }
+  .drift-card>header { display: block; }
+  .drift-state { display: inline-block; margin-top: 8px; }
+}

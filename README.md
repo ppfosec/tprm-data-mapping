@@ -4,7 +4,7 @@ A vendor questionnaire tells you what a vendor says. It does not tell you why Sa
 
 TPRM Lens works on that second problem.
 
-The unit is an **engagement**: one vendor, one team, one intended use and the organizational process around it. Vendor evidence still matters. The existing collector watches DPAs, privacy policies, subprocessors, public hiring signals, workforce geography and wording drift. TPRM Lens treats that Vendor Surface as evidence and reads it against business value, ownership, team engagement, relationship maturity and organizational history.
+The unit is an **engagement**: one vendor, one team, one intended use and the organizational process around it. Vendor evidence still matters. **Data Drift Detector (Triple D)** is the named external sensing engine. It watches DPAs, privacy policies, subprocessors, public hiring signals, workforce geography and wording drift. TPRM Lens routes those Vendor Surface changes into affected engagements and reads them against business value, ownership, team engagement, relationship maturity and organizational history.
 
 The same vendor can therefore produce different answers. That is the demo.
 
@@ -16,6 +16,8 @@ Nimbus AI has one Vendor Surface grade and two engagements:
 - CRM Platform defined a synthetic-data lab boundary, requested review and only then granted access. The recommendation preserves that boundary and lets the evaluation proceed.
 
 LedgerLoop shows a vendor term changing while a renewal still names a departed owner. CallScribe shows the senior answer when intended use and relationship history are missing: abstain, ask three questions and spend no model call inventing maturity.
+
+The LedgerLoop sequence is also the Triple D demo. A replay scan compares the committed snapshots, catches a 30-day subprocessor notice becoming an online-list update, identifies the Finance renewal as affected and shows the recommendation change. Triple D detects the change. TPRM Lens decides what the organization should do about it.
 
 All internal organizations, people, messages, contracts and vendors in those four engagements are fictional. The separate eight-vendor portfolio is real **public evidence only**. No fictional internal story is attached to a real company.
 
@@ -63,6 +65,7 @@ No private heuristic enters this public repository. Public publication remains a
 
 ```text
 data/index.json                    real public Vendor Surface
+collector/                         Triple D collection, normalization and public-evidence diffs
 fixtures/tprm/demo.json            fictional internal source records
 fixtures/heuristics/               public/proposed judgment rules
 fixtures/cassettes/                recorded synthesis, keyed to exact inputs
@@ -76,6 +79,8 @@ src/tprm_lens/pipeline.py          sequence → context → synthesis → interv
 ```
 
 The external collector still owns `data/index.json`. The judgment pipeline writes a separate artifact, so a collection run cannot replace curated engagement intelligence. The collector also preserves reviewed LLM classifications when a no-key run falls back to regex, marking when the source documents have changed.
+
+In the viewer, select **Vendor Surface · Triple D** or use the Triple D pulse in the header. **Replay scan** animates the committed collect → normalize → diff → reconcile → route sequence. It makes no request, uses no API key and does not alter reviewed judgment. A real scheduled collection can replace the public evidence artifact; the same dependency index then identifies which engagements need their heuristics reapplied.
 
 ## One-shot Codex scans
 
@@ -108,6 +113,7 @@ The verifier proves the actual demo claims:
 - CRM Platform's lab boundary and synthetic dataset precede access.
 - Context moves Nimbus from `Fragile` to `Mature` and changes the intervention.
 - LedgerLoop drift reopens the renewal already in flight.
+- Triple D preserves the exact before/after language and routes the change to the affected engagement.
 - CallScribe abstains without a maturity model call.
 - Every recommendation cites existing evidence and heuristics.
 - Replay is byte-identical, keyless and unable to promote candidate judgment.

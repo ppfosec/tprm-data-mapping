@@ -3,6 +3,29 @@
   "as_of": "2026-08-13",
   "platform_name": "Heuristics Layer",
   "staged": true,
+  "triple_d": {
+    "name": "Data Drift Detector",
+    "short_name": "Triple D",
+    "role": "External sensing engine",
+    "mode": "replay",
+    "last_scan": "2026-08-13T11:42:00Z",
+    "documents_watched": 22,
+    "vendors_watched": 11,
+    "stages": ["collect", "normalize", "diff", "reconcile", "route"],
+    "events": [
+      {
+        "id": "DDD-2026-08-13-01",
+        "evidence_id": "VS-LED-DRIFT-2",
+        "vendor_id": "vendor_ledgerloop",
+        "detected_on": "2026-08-13",
+        "document": "Data Processing Addendum · subprocessor notice",
+        "change_type": "notice period",
+        "before": "LedgerLoop will provide customers at least 30 days' advance notice before authorizing a new subprocessor.",
+        "after": "LedgerLoop will notify customers of new subprocessors by updating the online subprocessor list.",
+        "interpretation": "A contractual notice period became a monitoring obligation. The change matters where renewal, production data and ownership already intersect."
+      }
+    ]
+  },
   "vendors": [
     {"id":"vendor_nimbus","name":"Nimbus AI","category":"Conversation intelligence","fictional":true,"surface":{"grade":"B","posture":"watch","confidence":"bounded","summary":"Enterprise retention can be disabled, but the setting must be verified per tenant."}},
     {"id":"vendor_ledgerloop","name":"LedgerLoop","category":"Financial close automation","fictional":true,"surface":{"grade":"B-","posture":"changed","confidence":"high","summary":"The published subprocessor notice changed after the recorded approval."}},

@@ -26,6 +26,16 @@ def test_abstention_has_no_model_call() -> None:
     assert item["model_consulted"] is False
 
 
+def test_triple_d_routes_drift_without_a_live_call() -> None:
+    output = run(write=False)
+    triple_d = output["triple_d"]
+    event = triple_d["events"][0]
+    assert triple_d["mode"] == "replay"
+    assert event["affected_engagements"] == ["eng_ledger_finance"]
+    assert event["recommendations_changed"] == ["eng_ledger_finance"]
+    assert output["summary"]["live_calls"] == 0
+
+
 def test_candidate_never_replaces_curated() -> None:
     curated_path = ROOT / "fixtures" / "tprm" / "judgments.json"
     before = curated_path.read_bytes()

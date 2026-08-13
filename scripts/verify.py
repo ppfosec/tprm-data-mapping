@@ -68,6 +68,17 @@ def verify_stories(data: dict) -> None:
     callscribe = by_id["eng_callscribe_cs"]
     check(callscribe["judgment"]["disposition"] == "abstain" and not callscribe["model_consulted"],
           "CallScribe abstains with no maturity model call")
+    triple_d = data["triple_d"]
+    event = triple_d["events"][0]
+    check(triple_d["mode"] == "replay" and triple_d["changes_detected"] == 1,
+          "Triple D defaults to a keyless replay scan")
+    check(event["evidence_id"] == "VS-LED-DRIFT-2" and
+          event["affected_engagements"] == ["eng_ledger_finance"],
+          "Triple D routes the LedgerLoop change to its engagement")
+    check(bool(event["before"]) and bool(event["after"]) and event["before"] != event["after"],
+          "Triple D preserves exact before and after language")
+    check(event["recommendations_changed"] == ["eng_ledger_finance"],
+          "Triple D surfaces the recommendation changed by drift")
 
 
 def verify_replay(data: dict) -> None:
@@ -104,6 +115,10 @@ def verify_viewer(data: dict) -> None:
     check("@media(max-width:480px)" in css, "390px-class mobile layout")
     check("TPRM_EMBEDDED_DATA" in js and len(embedded) > 1000, "standalone viewer embeds full artifact")
     check("Same vendor. Different decision." in html, "hero product thesis is visible")
+    check("Triple D" in html and "Vendor Surface · Triple D" in html,
+          "Triple D is a named visible subsystem")
+    check("runTripleDReplay" in js and "data-drift-eng" in js,
+          "replay scan routes into affected engagement detail")
     check("localStorage" in js and "data-dismiss" in js, "reviewer dismissals are reversible")
     check((ROOT / "fixtures" / "heuristics" / "JUDGMENT_LIBRARY.md").exists(),
           "human-reviewable judgment library is the source")
