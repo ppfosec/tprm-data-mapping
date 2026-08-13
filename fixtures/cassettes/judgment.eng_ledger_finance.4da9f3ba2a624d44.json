@@ -1,0 +1,37 @@
+{
+  "engagement_id": "eng_ledger_finance",
+  "model": "claude-sonnet-5",
+  "input_key": "4da9f3ba2a624d44",
+  "response": {
+    "disposition": "escalate_tradeoff",
+    "headline": "Put the changed term into the renewal already in flight.",
+    "hypothesis": "A meaningful vendor term changed while the accountable owner field still points to someone who left, leaving a high-value production relationship unable to absorb drift.",
+    "alternative": "LedgerLoop may still provide advance notice contractually even though the public wording changed.",
+    "recommendation": "Assign the business owner now and extend CON-204 with the notice-term question; route any acceptance of online-only notice to the Controller before the renewal window closes.",
+    "tradeoffs": [
+      "Avoids an unmanaged auto-renewal",
+      "Keeps the production close workflow stable",
+      "Consumes negotiation time inside a 21-day window"
+    ],
+    "conditions": [
+      "Business owner assigned",
+      "Contract term reconciled",
+      "Controller accepts or rejects the changed notice mechanism"
+    ],
+    "missing": [
+      "Whether the signed agreement preserves 30-day notice"
+    ],
+    "changes_mind": "A signed clause preserving advance notice would reduce this to an ownership correction.",
+    "confidence": 0.89,
+    "evidence_ids": [
+      "CON-204",
+      "ORG-17",
+      "FIN-311",
+      "VS-LED-DRIFT-2"
+    ],
+    "heuristic_ids": [
+      "TPRM-H-0001",
+      "TPRM-H-0006"
+    ]
+  }
+}

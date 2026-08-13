@@ -143,7 +143,7 @@ REGION_TOKENS = re.compile(
 
 
 def _lines(text: str) -> list[str]:
-    return [l.strip() for l in text.splitlines() if l.strip() and not l.startswith("#")]
+    return [line.strip() for line in text.splitlines() if line.strip() and not line.startswith("#")]
 
 
 def extract_claims(texts: dict[str, str]) -> dict:

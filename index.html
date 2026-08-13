@@ -1,53 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Data Drift Detection — my vendors, watched weekly</title>
-<meta name="description" content="Tracks every vendor you rely on: reconciles what they write in DPAs and privacy policies against what their hiring and infrastructure actually show, flags a rewritten clause the week it changes, and checks who can reach your data against the countries you allow. Collected nightly by GitHub Actions.">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TPRM Lens</title>
+<meta name="description" content="TPRM judgment beyond the vendor questionnaire: business value, relationships, organizational memory and public evidence in one view.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site/style.css">
+<link rel="stylesheet" href="site/extras.css">
 </head>
 <body>
-<div class="wrap">
+<header class="topbar">
+  <button class="brand" id="lens-switch" aria-expanded="false" aria-controls="lens-menu">
+    <span class="mark" aria-hidden="true"></span>
+    <span><b class="jak">TPRM Lens</b><small>working platform · staged demo</small></span>
+    <span class="chev">⌄</span>
+  </button>
+  <div class="lens-menu" id="lens-menu" hidden>
+    <a href="../risk-lens/viewer/index.html"><i class="dot risk"></i><span>Risk Lens<small>process intelligence</small></span></a>
+    <button class="selected"><i class="dot tprm"></i><span>TPRM Lens<small>vendor engagements</small></span></button>
+    <button disabled><i class="dot control"></i><span>Control Lens<small>in development</small></span></button>
+  </div>
+  <nav class="tabs" role="tablist" aria-label="TPRM Lens views">
+    <button class="tab" role="tab" aria-selected="true" data-view="insights">Insights <span class="badge" id="n-insights">4</span></button>
+    <button class="tab" role="tab" aria-selected="false" data-view="findings">Findings <span class="badge" id="n-findings">0</span></button>
+    <button class="tab" role="tab" aria-selected="false" data-view="intelligence">Risk intelligence</button>
+    <button class="tab" role="tab" aria-selected="false" data-view="heuristics">Heuristics <span class="badge" id="n-heuristics">0</span></button>
+    <button class="tab" role="tab" aria-selected="false" data-view="reasoning">Reasoning</button>
+  </nav>
+  <button class="runstate" id="triple-d-status" aria-label="Open Triple D scan results">
+    <span class="ddd-mark" aria-hidden="true">D<sup>3</sup></span>
+    <span><b>Triple D</b><small id="triple-d-summary">replay · 0 live calls</small></span>
+  </button>
+</header>
 
-  <header class="top">
-    <div class="eyebrow">My vendors</div>
-    <h1>Data Drift Detection</h1>
-    <hr class="rule">
-    <p class="tagline">
-      A DPA is signed once. A privacy policy is quietly reworded. A hiring page changes every
-      week. This watches all three for every vendor you rely on —
-      <strong>flags a rewritten clause the week it moves</strong>, and checks who can reach your
-      data against the countries you actually allow. Every flag ends in a question to put to the
-      vendor, not a verdict.
-    </p>
-    <div class="runbar" id="runbar"></div>
-  </header>
+<main class="body">
+  <section class="view on" id="view-insights" role="tabpanel">
+    <div class="wrap wide">
+      <div class="vhead split"><div><span class="eyebrow">Engagement portfolio</span><h1 class="jak">Same vendor. Different decision.</h1></div><p>Vendor evidence is one input. The team, intended use and relationship decide what to do with it.</p></div>
+      <div class="hero-stats" id="hero-stats"></div>
+      <div class="matrix-shell">
+        <div class="axis y"><span>relationship maturity</span><b>high</b><b>low</b></div>
+        <div class="matrix" id="matrix">
+          <div class="quad opportunistic"><strong>Opportunistic</strong><span>Prove the value</span></div>
+          <div class="quad mature"><strong>Mature</strong><span>Protect the boundary</span></div>
+          <div class="quad unmanaged"><strong>Unmanaged</strong><span>Context before commitment</span></div>
+          <div class="quad fragile"><strong>Fragile</strong><span>Value outruns the relationship</span></div>
+          <div id="matrix-points"></div>
+        </div>
+        <div class="axis x"><b>low</b><span>business value</span><b>high</b></div>
+      </div>
+      <section class="contrast" id="contrast"></section>
+    </div>
+  </section>
 
-  <main id="main">
-    <p class="loading">Loading collected data…</p>
-  </main>
+  <section class="view" id="view-findings" role="tabpanel">
+    <div class="wrap"><div class="vhead"><span class="eyebrow">Evidence queue</span><h2 class="jak">Findings are ingredients, not answers.</h2><p>Internal records explain the relationship. Triple D watches the vendor's public surface for what changed.</p></div><div class="seg" id="finding-filter"><button class="on" data-filter="engagement">Engagement evidence</button><button data-filter="external">Vendor Surface · Triple D</button><button data-filter="public">Public evidence only</button></div><div id="triple-d-panel" hidden></div><div id="finding-list"></div></div>
+  </section>
 
-  <footer>
-    <p>
-      <b>How it runs.</b> A GitHub Actions workflow fetches each vendor's privacy policy, DPA and
-      sub-processor page, normalises them to one sentence per line and commits them to
-      <code>data/snapshots/</code>. Because the snapshots are committed, <code>git log -p</code> on
-      any file is a dated record of every wording change. The diff engine is git.
-    </p>
-    <p>
-      <b>What this is not.</b> Not a compliance assessment, not legal advice, and not an accusation.
-      A contradiction on the surface usually has a dull explanation; the point is to give a reviewer
-      the specific sentence and the specific posting so they can go and ask for it. Every flag is
-      generated from public sources, with the source linked. Text extraction is imperfect and the
-      collector says so when it cannot read a page rather than guessing.
-    </p>
-  </footer>
-</div>
+  <section class="view" id="view-intelligence" role="tabpanel">
+    <div class="wrap"><div class="vhead"><span class="eyebrow">Shared organizational memory</span><h2 class="jak">Risk intelligence</h2><p>The picture the heuristics run against: teams, relationships, ownership and the systems that know them.</p></div><div class="intel-grid"><div class="knowledge-map" id="knowledge-map"></div><aside class="intel-side" id="intel-side"></aside></div><h3 class="section-title">Connected sources</h3><div class="source-grid" id="source-grid"></div></div>
+  </section>
 
+  <section class="view" id="view-heuristics" role="tabpanel">
+    <div class="wrap"><div class="vhead"><span class="eyebrow">Judgment library</span><h2 class="jak">The rules this Lens actually runs.</h2><p>A library can contain more expertise than one product uses. Relevance is a decision, not a checkbox.</p></div><div class="libbar"><span>library <b id="lib-version">—</b></span><span id="lib-count">—</span><button class="quiet" disabled>Replace library…</button></div><div id="heuristic-list"></div></div>
+  </section>
+
+  <section class="view reason" id="view-reasoning" role="tabpanel">
+    <aside class="rail"><span class="eyebrow">Recorded reasoning</span><div id="stage-list"></div><div class="callout"><b>Abstention is a feature</b><p>No team history means no maturity model call.</p></div></aside><div class="reason-canvas"><div class="reason-head"><select id="reason-engagement" aria-label="Engagement"></select><span id="step-count"></span></div><div id="reason-tree"></div></div><aside class="step-detail" id="step-detail"><p>Select a step to inspect its evidence and confidence.</p></aside>
+  </section>
+</main>
+
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Engagement detail" hidden></aside>
+<script src="site/embedded.js"></script>
 <script src="site/app.js"></script>
 </body>
 </html>

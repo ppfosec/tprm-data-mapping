@@ -24,16 +24,16 @@ import os
 import re
 import sys
 
-import requests
-
 import classify as classify_mod
+import requests
 
 API_URL = "https://api.anthropic.com/v1/messages"
 MODEL = "claude-sonnet-5"
 MAX_DOC_CHARS = 15_000
 TIMEOUT = 60
 
-log = lambda *a: print(*a, file=sys.stderr, flush=True)
+def log(*args: object) -> None:
+    print(*args, file=sys.stderr, flush=True)
 
 CATEGORY_LIST = "\n".join(f"- {t['key']}: {t['label']}" for t in classify_mod.TAGS)
 TAG_BY_KEY = {t["key"]: t for t in classify_mod.TAGS}

@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tprm-lens"
+version = "0.1.0"
+description = "A staged, evidence-grounded TPRM judgment demonstrator"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+live = ["anthropic==0.86.0"]
+dev = [
+  "beautifulsoup4==4.14.3",
+  "PyYAML==6.0.3",
+  "pytest>=8,<9",
+  "requests==2.33.0",
+  "ruff==0.12.9",
+]
+
+[project.scripts]
+tprm-lens = "tprm_lens.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 120
+extend-exclude = ["data", "out", "var"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
+ignore = ["E501"]
+
+[tool.ruff.format]
+quote-style = "double"
+line-ending = "lf"
