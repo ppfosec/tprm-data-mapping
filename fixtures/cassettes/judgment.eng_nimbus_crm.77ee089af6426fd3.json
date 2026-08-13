@@ -1,0 +1,40 @@
+{
+  "engagement_id": "eng_nimbus_crm",
+  "model": "claude-sonnet-5",
+  "input_key": "77ee089af6426fd3",
+  "response": {
+    "disposition": "proceed_with_conditions",
+    "headline": "Proceed with the lab evaluation.",
+    "hypothesis": "CRM Platform has bounded the same Nimbus vendor fact through synthetic data, review-before-access and a documented lab boundary.",
+    "alternative": "A copied production example could silently invalidate the boundary if the lab convention is not enforced.",
+    "recommendation": "Continue the 30-day evaluation, name the exit owner and require a new decision before any production connector or customer record enters the tenant.",
+    "tradeoffs": [
+      "Creates evidence about product value",
+      "Keeps customer data outside the evaluation",
+      "Defers the production-use decision"
+    ],
+    "conditions": [
+      "Synthetic data only",
+      "Exit owner named",
+      "Production promotion requires a new review"
+    ],
+    "missing": [
+      "Named owner for access removal at day 30"
+    ],
+    "changes_mind": "Any production connector or customer record moves this engagement out of the lab boundary.",
+    "confidence": 0.95,
+    "evidence_ids": [
+      "PR-118",
+      "CRM-244",
+      "IDP-804",
+      "KB-CRM-LAB",
+      "INT-CRM-11",
+      "VS-NIM-RET-4"
+    ],
+    "heuristic_ids": [
+      "TPRM-H-0001",
+      "TPRM-H-0002",
+      "TPRM-H-0004"
+    ]
+  }
+}

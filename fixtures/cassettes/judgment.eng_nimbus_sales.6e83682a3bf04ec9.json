@@ -1,0 +1,40 @@
+{
+  "engagement_id": "eng_nimbus_sales",
+  "model": "claude-sonnet-5",
+  "input_key": "6e83682a3bf04ec9",
+  "response": {
+    "disposition": "investigate",
+    "headline": "Keep the coaching workflow. Contain the customer-data path.",
+    "hypothesis": "The material issue is not Nimbus alone; Sales Enablement created a production data flow before anyone owned the boundary.",
+    "alternative": "The enterprise retention control may already be enabled, which would narrow the immediate exposure but not repair the intake pattern.",
+    "recommendation": "Verify the production tenant and transcript flow today, disable service-improvement retention if needed, and give Sales a bounded route to continue while CRM Platform becomes the technical owner.",
+    "tradeoffs": [
+      "Preserves live coaching value",
+      "Requires rapid tenant verification",
+      "Makes the card-first intake pattern visible without punishing disclosure"
+    ],
+    "conditions": [
+      "Retention control verified",
+      "Production connector owned by CRM Platform",
+      "Customer transcript scope documented"
+    ],
+    "missing": [
+      "Current production tenant retention setting"
+    ],
+    "changes_mind": "If transcripts cannot be isolated from service-improvement use, suspend uploads until the tenant is corrected.",
+    "confidence": 0.91,
+    "evidence_ids": [
+      "CARD-28",
+      "IDP-771",
+      "CRM-221",
+      "INT-SALES-03",
+      "VS-NIM-RET-4"
+    ],
+    "heuristic_ids": [
+      "TPRM-H-0001",
+      "TPRM-H-0002",
+      "TPRM-H-0003",
+      "TPRM-H-0004"
+    ]
+  }
+}

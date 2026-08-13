@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "as_of": "2026-08-13",
+  "platform_name": "Heuristics Layer",
+  "staged": true,
+  "vendors": [
+    {"id":"vendor_nimbus","name":"Nimbus AI","category":"Conversation intelligence","fictional":true,"surface":{"grade":"B","posture":"watch","confidence":"bounded","summary":"Enterprise retention can be disabled, but the setting must be verified per tenant."}},
+    {"id":"vendor_ledgerloop","name":"LedgerLoop","category":"Financial close automation","fictional":true,"surface":{"grade":"B-","posture":"changed","confidence":"high","summary":"The published subprocessor notice changed after the recorded approval."}},
+    {"id":"vendor_callscribe","name":"CallScribe","category":"Support call intelligence","fictional":true,"surface":{"grade":"C","posture":"unverified","confidence":"low","summary":"The trust centre is not extractable and enterprise retention controls are not public."}}
+  ],
+  "teams": [
+    {"id":"team_sales","name":"Sales Enablement","manager":"Maya Chen","maturity":"low","interactions":4,"basis":"Prior reviews begin after purchase and ask Security to approve use already underway."},
+    {"id":"team_crm","name":"CRM Platform","manager":"Priya Raman","maturity":"high","interactions":6,"basis":"The team arrives with a data boundary, measurements and a decision it needs."},
+    {"id":"team_finance","name":"Finance Systems","manager":"Sofia Laurent","maturity":"mixed","interactions":3,"basis":"Production integrations are documented, but renewal ownership follows people rather than process."},
+    {"id":"team_cs","name":"Customer Success","manager":"Jordan Bell","maturity":"unknown","interactions":0,"basis":"No relevant review interaction is recorded."}
+  ],
+  "engagements": [
+    {"id":"eng_nimbus_sales","vendor_id":"vendor_nimbus","team_id":"team_sales","title":"Nimbus call coaching","intended_use":"Summarize customer calls and write coaching notes into the CRM.","process":"Sales tool intake and customer-data enablement","status":"in use before review","business_value":88,"relationship_maturity":24,"use_case_exposure":"high","decision_confidence":"high","business_owner":"Maya Chen","technical_owner":"Unassigned","decision_authority":"VP Revenue Operations","evidence_ids":["PR-104","CARD-28","IDP-771","CRM-221","INT-SALES-03","VS-NIM-RET-4"]},
+    {"id":"eng_nimbus_crm","vendor_id":"vendor_nimbus","team_id":"team_crm","title":"Nimbus CRM lab evaluation","intended_use":"Evaluate note quality using synthetic calls in an isolated lab tenant.","process":"CRM capability evaluation","status":"bounded evaluation","business_value":72,"relationship_maturity":86,"use_case_exposure":"low","decision_confidence":"high","business_owner":"Priya Raman","technical_owner":"Noah Williams","decision_authority":"Director, Revenue Systems","evidence_ids":["PR-118","CRM-244","IDP-804","KB-CRM-LAB","INT-CRM-11","VS-NIM-RET-4"]},
+    {"id":"eng_ledger_finance","vendor_id":"vendor_ledgerloop","team_id":"team_finance","title":"LedgerLoop renewal","intended_use":"Reconcile production ledger entries and invoice metadata nightly.","process":"Financial-system renewal and contract ownership","status":"renewal in 21 days","business_value":92,"relationship_maturity":43,"use_case_exposure":"high","decision_confidence":"high","business_owner":"Unassigned","technical_owner":"Sofia Laurent","decision_authority":"Controller","prior_disposition":"proceed_with_conditions","recommendation_changed_on":"2026-08-09","evidence_ids":["CON-204","ORG-17","FIN-311","KB-NS-OWNER","VS-LED-DRIFT-2"]},
+    {"id":"eng_callscribe_cs","vendor_id":"vendor_callscribe","team_id":"team_cs","title":"CallScribe support pilot","intended_use":"Not stated in the intake.","process":"Support tooling intake","status":"context incomplete","business_value":34,"relationship_maturity":18,"use_case_exposure":"unknown","decision_confidence":"insufficient","business_owner":"Jordan Bell","technical_owner":"Unassigned","decision_authority":"Unresolved","evidence_ids":["PR-404","VS-CALL-READ-1"]}
+  ],
+  "evidence": [
+    {"id":"PR-104","engagement_id":"eng_nimbus_sales","source":"procurement","date":"2026-07-19","kind":"intake","title":"Review request opened","excerpt":"Request submitted after the team had begun using Nimbus for call coaching."},
+    {"id":"CARD-28","engagement_id":"eng_nimbus_sales","source":"procurement","date":"2026-07-02","kind":"purchase","title":"Ten seats purchased","excerpt":"Corporate card charge predates procurement intake by 17 days."},
+    {"id":"IDP-771","engagement_id":"eng_nimbus_sales","source":"identity","date":"2026-07-03","kind":"access","title":"First Nimbus login","excerpt":"Eight users authenticated before the request entered review."},
+    {"id":"CRM-221","engagement_id":"eng_nimbus_sales","source":"jira","date":"2026-07-08","kind":"data_flow","title":"Live transcripts enabled","excerpt":"Customer call transcripts were sent to the production Nimbus tenant."},
+    {"id":"INT-SALES-03","engagement_id":"eng_nimbus_sales","source":"interactions","date":"2026-07-19","kind":"relationship","title":"Approval requested after launch","excerpt":"We already bought ten seats. What does Security need so we can keep this moving?"},
+    {"id":"VS-NIM-RET-4","vendor_id":"vendor_nimbus","source":"vendor_surface","date":"2026-07-01","kind":"external_claim","title":"Retention setting is tenant-specific","excerpt":"Enterprise customers may disable service-improvement retention through an administrative setting."},
+    {"id":"PR-118","engagement_id":"eng_nimbus_crm","source":"procurement","date":"2026-07-11","kind":"intake","title":"Evaluation requested before access","excerpt":"The request defines a 30-day evaluation and prohibits production data."},
+    {"id":"CRM-244","engagement_id":"eng_nimbus_crm","source":"jira","date":"2026-07-12","kind":"control","title":"Synthetic dataset prepared","excerpt":"Evaluation corpus contains invented calls and generated contact records only."},
+    {"id":"IDP-804","engagement_id":"eng_nimbus_crm","source":"identity","date":"2026-07-15","kind":"access","title":"Lab access granted","excerpt":"OAuth grant followed the documented boundary review."},
+    {"id":"KB-CRM-LAB","engagement_id":"eng_nimbus_crm","source":"confluence","date":"2026-07-10","kind":"process","title":"CRM lab boundary","excerpt":"Production connectors and copied customer records are prohibited in the evaluation tenant."},
+    {"id":"INT-CRM-11","engagement_id":"eng_nimbus_crm","source":"interactions","date":"2026-07-11","kind":"relationship","title":"Decision framed with trade-offs","excerpt":"We need a decision on whether the retention control is enough for a synthetic-only evaluation."},
+    {"id":"CON-204","engagement_id":"eng_ledger_finance","source":"contracts","date":"2026-08-01","kind":"renewal","title":"Renewal due","excerpt":"Automatic renewal window closes in 21 days; contract owner remains Evan Brooks."},
+    {"id":"ORG-17","engagement_id":"eng_ledger_finance","source":"interactions","date":"2026-06-03","kind":"ownership","title":"Contract owner departed","excerpt":"Evan Brooks left Finance Systems; no successor was recorded for LedgerLoop."},
+    {"id":"FIN-311","engagement_id":"eng_ledger_finance","source":"jira","date":"2026-02-11","kind":"data_flow","title":"Production integration","excerpt":"LedgerLoop reads general-ledger entries and invoice metadata from NetSuite nightly."},
+    {"id":"KB-NS-OWNER","engagement_id":"eng_ledger_finance","source":"confluence","date":"2026-01-08","kind":"ownership","title":"NetSuite technical owner","excerpt":"Sofia Laurent owns production integration changes for Finance Systems."},
+    {"id":"VS-LED-DRIFT-2","vendor_id":"vendor_ledgerloop","source":"vendor_surface","date":"2026-08-09","kind":"drift","title":"Notice term changed","excerpt":"The published DPA replaced 30-day advance notice with notice through the online list."},
+    {"id":"PR-404","engagement_id":"eng_callscribe_cs","source":"procurement","date":"2026-08-04","kind":"intake","title":"Pilot request lacks intended use","excerpt":"The request does not say whether calls, notes or support attachments will be uploaded."},
+    {"id":"VS-CALL-READ-1","vendor_id":"vendor_callscribe","source":"vendor_surface","date":"2026-08-04","kind":"unverifiable","title":"Trust centre unreadable","excerpt":"The client-rendered trust centre yielded no durable text for retention or enterprise controls."}
+  ],
+  "sources": [
+    {"id":"jira","name":"Jira","status":"connected","records":84,"consulted":4},
+    {"id":"confluence","name":"Confluence","status":"connected","records":39,"consulted":2},
+    {"id":"interactions","name":"Interactions","status":"connected","records":26,"consulted":3},
+    {"id":"procurement","name":"Procurement","status":"connected","records":47,"consulted":4},
+    {"id":"contracts","name":"Contract register","status":"connected","records":31,"consulted":2},
+    {"id":"identity","name":"Identity & OAuth","status":"connected","records":62,"consulted":2},
+    {"id":"vendor_surface","name":"Vendor Surface","status":"connected","records":22,"consulted":3},
+    {"id":"notion","name":"Notion","status":"available","records":0,"consulted":0}
+  ]
+}

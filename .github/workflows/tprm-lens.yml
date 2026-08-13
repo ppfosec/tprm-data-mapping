@@ -1,0 +1,57 @@
+name: tprm-lens
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Reasoning mode
+        default: replay
+        type: choice
+        options: [replay, live, record]
+      model:
+        description: Model for a deliberate live scan
+        default: claude-sonnet-5
+        type: string
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e ".[dev]"
+      - name: Build unified intelligence
+        env:
+          TPRM_LENS_MODE: ${{ inputs.mode || 'replay' }}
+          TPRM_LENS_MODEL: ${{ inputs.model || 'claude-sonnet-5' }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python -m tprm_lens.cli run
+          python scripts/embed_viewer.py
+      - name: Verify
+        env:
+          TPRM_LENS_MODE: replay
+          PYTEST_DISABLE_PLUGIN_AUTOLOAD: "1"
+        run: |
+          python scripts/verify.py
+          pytest
+      - uses: actions/upload-artifact@v4
+        with:
+          name: tprm-lens-demo
+          path: |
+            index.html
+            site/
+            data/tprm-intelligence.json
+            out/trace.jsonl
+      - name: Commit deliberately recorded cassettes
+        if: ${{ inputs.mode == 'record' }}
+        run: |
+          git config user.name "tprm-lens"
+          git config user.email "tprm-lens@users.noreply.github.com"
+          git add fixtures/cassettes data/tprm-intelligence.json site/embedded.js
+          git diff --staged --quiet || git commit -m "Re-record TPRM Lens judgments (${{ inputs.model }})"
+          git push

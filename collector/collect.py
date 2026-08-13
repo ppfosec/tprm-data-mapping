@@ -435,6 +435,27 @@ def score(vendor_row: dict) -> dict:
                 transparency=transparency, record=record)
 
 
+def preserve_curated_classification(current: dict, previous: dict | None, docs: list[dict]) -> dict:
+    """A keyless fallback may add evidence; it may not erase reviewed judgment.
+
+    The failure this protects against is concrete: a run without the model key
+    once replaced the curated LLM classification in index.json with the weaker
+    regex result. Preserve the reviewed result and state whether its source
+    documents have changed, so a human knows when it needs a deliberate refresh.
+    """
+    if current.get("method") != "heuristic" or not previous:
+        return current
+    prior = previous.get("data_classification", {})
+    if prior.get("method") != "llm":
+        return current
+    old_hashes = {d.get("kind"): d.get("sha256") for d in previous.get("docs", []) if d.get("sha256")}
+    new_hashes = {d.get("kind"): d.get("sha256") for d in docs if d.get("sha256")}
+    kept = dict(prior)
+    kept["preserved_without_key"] = True
+    kept["source_documents_changed"] = old_hashes != new_hashes
+    return kept
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--only", help="collect a single vendor id")
@@ -443,6 +464,14 @@ def main():
     args = ap.parse_args()
 
     vendors = yaml.safe_load((pathlib.Path(__file__).parent / "vendors.yaml").read_text())
+    previous_index = {}
+    if (DATA / "index.json").exists():
+        try:
+            previous_index = json.loads((DATA / "index.json").read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError):
+            previous_index = {}
+    previous_rows = {r["id"]: r for r in previous_index.get("vendors", [])}
+    all_vendor_ids = [v["id"] for v in vendors]
     if args.only:
         vendors = [v for v in vendors if v["id"] == args.only]
         if not vendors:
@@ -500,9 +529,12 @@ def main():
             docs=docs, jobs=jobs,
         )
         row["crosschecks"] = correlate.crosscheck(texts, docs, jobs)
-        row["data_classification"] = (
+        classification = (
             llm_classify.classify(v["name"], v["category"], texts)
             or classify_mod.classify(texts)
+        )
+        row["data_classification"] = preserve_curated_classification(
+            classification, previous_rows.get(v["id"]), docs
         )
         row["score"] = score(row)
         log(f"    crosschecks: {len(row['crosschecks'])} "
@@ -517,6 +549,12 @@ def main():
         by_vendor.setdefault(ev["vendor_id"], []).append(ev)
     for row in rows:
         row["drift"] = by_vendor.get(row["id"], [])[:6]
+
+    if args.only:
+        refreshed = {r["id"]: r for r in rows}
+        rows = [refreshed.get(vendor_id) or previous_rows.get(vendor_id)
+                for vendor_id in all_vendor_ids]
+        rows = [r for r in rows if r]
 
     index = dict(
         generated_at=datetime.now(timezone.utc).isoformat(timespec="seconds"),

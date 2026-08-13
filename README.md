@@ -1,137 +1,134 @@
-# Data Drift Detection
+# TPRM Lens
 
-A dashboard over your own vendors: tracks what each one writes in its DPA and privacy policy,
-diffs it against what it wrote last week, and checks who can reach your data against the
-countries you actually allow — all from public evidence instead of vendor white papers.
+A vendor questionnaire tells you what a vendor says. It does not tell you why Sales bought ten seats before Procurement saw the request, whether the CRM team has already bounded the same product to synthetic data, who can accept the remaining trade-off, or what happened to the contract owner who left six weeks before renewal.
 
-A DPA is a claim. A job listing is evidence. This collects both nightly and flags where they
-disagree — a sub-processor that engineering talks about but the published list omits, residency
-language against a workforce hired somewhere else, a clause reworded since the last run — and
-turns each disagreement into a specific question to put to the vendor.
+TPRM Lens works on that second problem.
 
-**It is not a compliance assessment and not an accusation.** A contradiction on the surface usually
-has a dull explanation. The point is to hand a reviewer the exact sentence and the exact posting so
-they can go and ask for it.
+The unit is an **engagement**: one vendor, one team, one intended use and the organizational process around it. Vendor evidence still matters. The existing collector watches DPAs, privacy policies, subprocessors, public hiring signals, workforce geography and wording drift. TPRM Lens treats that Vendor Surface as evidence and reads it against business value, ownership, team engagement, relationship maturity and organizational history.
 
----
+The same vendor can therefore produce different answers. That is the demo.
 
-## Why there is no server
+## The staged story
 
-The collector runs in GitHub Actions and commits what it finds. Two consequences:
+Nimbus AI has one Vendor Surface grade and two engagements:
 
-- **Git is the diff engine.** Legal pages are normalised to one sentence per line and committed to
-  `data/snapshots/`. `git log -p data/snapshots/stripe/dpa.txt` is then a dated record of every
-  wording change, and a reworded clause shows as a one-line diff instead of a reflowed paragraph.
-  Each run writes a drift report into the Actions job summary.
-- **No CORS problems and no hosting bill.** Archive.org's CDX index and vendor domains send no
-  CORS headers, so a browser cannot read them. A scheduled job can. The dashboard reads one
-  committed JSON file.
+- Sales Enablement bought seats, authenticated users and uploaded customer transcripts before intake. The recommendation contains the material data path without reflexively breaking a useful sales workflow.
+- CRM Platform defined a synthetic-data lab boundary, requested review and only then granted access. The recommendation preserves that boundary and lets the evaluation proceed.
 
-```
-collector/          fetch, normalise, correlate
-  vendors.yaml      the registry — add vendors here
-  collect.py        entry point
-  correlate.py      the cross-source rules
-  signals.py        what to look for in job descriptions
-  geo.py            location strings -> countries
-  classify.py       data-sensitivity tagging, regex fallback
-  llm_classify.py   data-sensitivity tagging, LLM (optional, needs an API key)
-data/
-  snapshots/        committed plaintext, one sentence per line  <- the evidence
-  index.json        everything the dashboard reads
-index.html          dashboard
-site/               its styles and logic
-.github/workflows/  the nightly job
+LedgerLoop shows a vendor term changing while a renewal still names a departed owner. CallScribe shows the senior answer when intended use and relationship history are missing: abstain, ask three questions and spend no model call inventing maturity.
+
+All internal organizations, people, messages, contracts and vendors in those four engagements are fictional. The separate eight-vendor portfolio is real **public evidence only**. No fictional internal story is attached to a real company.
+
+## Run it for free
+
+```powershell
+$env:PYTHONPATH = "src"
+$env:TPRM_LENS_MODE = "replay"
+python -m tprm_lens.cli run
+python scripts/embed_viewer.py
+python scripts/verify.py
 ```
 
-## Sources
+Open `index.html` directly, or serve the repository root:
 
-| Source | What it gives | Notes |
-| --- | --- | --- |
-| Vendor legal pages | privacy policy, DPA, sub-processor list | discovered by following links, not hardcoded |
-| Greenhouse public board API | open roles, locations, full descriptions | no key required; returns sporadic 503s, so requests retry |
-| Wayback CDX | revision count and first/last capture per document | rate-limits by IP; failures are reported, never faked |
-
-## The cross-checks
-
-| Rule | Fires when |
-| --- | --- |
-| `subprocessor_gap` | A provider named in job descriptions is absent from a sub-processor list that was successfully read |
-| `residency_vs_workforce` | A genuine residency claim sits alongside a mostly non-EEA workforce (needs ≥20 placeable roles) |
-| `access_vs_rotation` | Need-to-know access language alongside follow-the-sun, on-call or 24/7 postings |
-| `no_transfer_mechanism` | No SCCs, adequacy, DPF or BCRs named anywhere, while hiring spans ≥3 countries |
-| `unverifiable_list` / `list_unreadable` | The sub-processor list is client-rendered or too thin to parse |
-| `no_subprocessor_list` | No such page reachable from the vendor's own legal pages |
-
-Two guards matter and are deliberate: `subprocessor_gap` only fires when a list was actually parsed,
-because accusing a vendor of omitting a name from a document the collector never read would be a
-fabrication. And `residency_vs_workforce` needs a real denominator, because 6 of 6 non-EEA roles is
-noise.
-
-## Data classification
-
-Each vendor's "what kind of data does this handle" tags (business contact info up through
-biometric or special-category data) can be produced two ways:
-
-- **`classify.py`** — regex over the normalised text. Fast, free, no setup. Also blunt: it can't
-  tell "we process biometric data" from "the input of biometric data to the Services" (a customer
-  warning, not a product feature) without a lot of hand-tuned hedge patterns that still don't
-  generalise to everything a privacy policy hedges.
-- **`llm_classify.py`** — sends the vendor's full privacy policy and DPA to Claude, with the
-  vendor's name and category as context and explicit framing that the reader is an enterprise
-  compliance officer under a DPA, not an individual consumer. This is what actually reads a policy
-  the way a human reviewer would: it tells a genuine product claim apart from hedged language,
-  an individual's self-serve billing, the vendor's own controller-role processing, and legal
-  boilerplate defining a contract term. Every quote it returns is verified against the source text
-  before being trusted — nothing ungrounded is kept.
-
-`collect.py` tries the LLM path first and falls back to the regex path automatically if no key is
-set, the call fails, or the response doesn't parse. Nothing about the rest of the pipeline depends
-on which one ran; each vendor's `data_classification.method` in `data/index.json` records which it
-was.
-
-To turn the LLM path on: create an API key at
-[console.anthropic.com](https://console.anthropic.com), then in this repo go to **Settings →
-Secrets and variables → Actions → New repository secret** and add it as `ANTHROPIC_API_KEY`. The
-next scheduled or manually triggered run picks it up automatically — no code changes needed.
-
-## Run it
-
-```bash
-pip install -r collector/requirements.txt
-cd collector
-python collect.py                        # everything
-python collect.py --only stripe          # one vendor
-python collect.py --skip-archive         # skip Wayback (it throttles hard)
-python collect.py --sample 40            # read more job descriptions
-```
-
-Then serve the repo root and open it:
-
-```bash
+```powershell
 python -m http.server 8000
 ```
 
-## Add a vendor
+Replay is the default. It reads reviewed, input-keyed responses from `fixtures/cassettes/`, makes zero network calls and produces byte-identical output. An API key sitting in the environment does nothing unless `TPRM_LENS_MODE` is explicitly set to `live` or `record`.
 
-Append to `collector/vendors.yaml`. The `legal_candidates` paths are guesses — the collector
-verifies each one and then follows links out of whatever answered, so a wrong guess costs a 404 in
-the log and nothing else. A Greenhouse board token is the trailing path segment of
-`boards.greenhouse.io/<token>`. Boards on other platforms are not supported yet; `collect_jobs` is
-where that would go.
+| Mode | What happens | Writes reviewed fixtures? |
+| --- | --- | --- |
+| `replay` | Reuses committed reasoning. No key, network or cost. | No |
+| `live` | Reasons fresh from the four staged engagements. | No |
+| `record` | Reasons fresh and records new input-keyed cassettes. | Cassettes only |
 
-## Limitations
+If evidence, heuristics, prompt, schema or model changes, replay raises a missing-cassette error. It does not quietly reuse an answer produced for a different case.
 
-- Job-board coverage is Greenhouse only, so vendors on Ashby, Lever or a homegrown board have no
-  workforce signal at all. Absence of signal is not absence of exposure.
-- Text extraction is heuristic. Client-rendered trust centres yield nothing, and the collector
-  records that rather than guessing.
-- The index is a measure of the paper trail, not of a vendor. A high score can mean a company
-  publishes less, hires more openly, or simply uses Greenhouse while a competitor does not.
-- Signal matching is regex over prose. It will produce false positives. Every flag links to its
-  source so you can throw it out.
+## Where AI belongs
 
-## Licence
+Sequence reconstruction, known-owner resolution, stable joins and document diffs are deterministic. They are inexpensive and easier to review that way.
 
-MIT for the code. The collected snapshots are the vendors' own published text, retained here for
-comparison and quotation.
+The model receives one engagement and only the evidence retrieved for it. It synthesizes the coherent risk story, alternative explanation, business trade-offs and recommended intervention. Every material conclusion carries stable evidence and heuristic IDs. Deterministic facts win if model prose disagrees.
+
+Fewer than two relevant team interactions triggers a code guard before a model request exists. The system returns `unknown` maturity and an explicit abstention. Restraint is part of the product, not a disclaimer added after generation.
+
+## Heuristics
+
+`fixtures/heuristics/JUDGMENT_LIBRARY.json` uses the same library concepts as Risk Lens: stable IDs, versions, provenance, publication status, product relevance and stage bindings. TPRM-specific entries are visibly proposed. A published heuristic can be carried without being executed when it is not relevant to this Lens.
+
+No private heuristic enters this public repository. Public publication remains a separate review and approval event.
+
+## Data flow
+
+```text
+data/index.json                    real public Vendor Surface
+fixtures/tprm/demo.json            fictional internal source records
+fixtures/heuristics/               public/proposed judgment rules
+fixtures/cassettes/                recorded synthesis, keyed to exact inputs
+             │
+             ▼
+src/tprm_lens/pipeline.py          sequence → context → synthesis → intervention
+             │
+             ├── data/tprm-intelligence.json
+             ├── out/trace.jsonl
+             └── site/embedded.js  complete standalone viewer fallback
+```
+
+The external collector still owns `data/index.json`. The judgment pipeline writes a separate artifact, so a collection run cannot replace curated engagement intelligence. The collector also preserves reviewed LLM classifications when a no-key run falls back to regex, marking when the source documents have changed.
+
+## One-shot Codex scans
+
+```powershell
+python -m tprm_lens.cli candidate
+```
+
+This writes `out/candidates/judgments.json`. Candidate output is explicitly unreviewed and cannot overwrite `fixtures/tprm/judgments.json`. Promotion is intentionally a human review step: confirm evidence IDs, heuristic IDs, trade-offs and intervention wording, then deliberately update the curated fixture and record matching cassettes.
+
+After that review, promotion is explicit and recoverable:
+
+```powershell
+python scripts/promote_candidate.py --approve --reviewer "Your Name"
+```
+
+The prior curated file is archived. A failed pipeline validation restores it.
+
+## Verification
+
+```powershell
+$env:PYTEST_DISABLE_PLUGIN_AUTOLOAD = "1"
+pytest
+python scripts/verify.py
+```
+
+The verifier proves the actual demo claims:
+
+- Nimbus is the same vendor with the same Vendor Surface in both engagements.
+- Sales purchase and production data use precede intake.
+- CRM Platform's lab boundary and synthetic dataset precede access.
+- Context moves Nimbus from `Fragile` to `Mature` and changes the intervention.
+- LedgerLoop drift reopens the renewal already in flight.
+- CallScribe abstains without a maturity model call.
+- Every recommendation cites existing evidence and heuristics.
+- Replay is byte-identical, keyless and unable to promote candidate judgment.
+- The viewer contains desktop, mobile, keyboard, reduced-motion and standalone behavior.
+
+## Repository layout
+
+```text
+collector/             real public-evidence collection and correlation
+data/                  raw Vendor Surface plus unified derived intelligence
+fixtures/tprm/         staged internal evidence and reviewed judgments
+fixtures/heuristics/   public/proposed library snapshot
+fixtures/cassettes/    free, reproducible model responses
+src/tprm_lens/         pipeline, trace, execution modes
+site/                  one-page visual workbench
+scripts/               embedding, cassette seeding and verification
+tests/                 determinism and safety invariants
+```
+
+## What this is not
+
+This is not a production TPRM suite, a compliance assessment, legal advice or an autonomous approval engine. There is no authentication, multitenancy or live enterprise connector. The point is to show what TPRM judgment looks like after the questionnaire stops being the center of the work.
+
+The platform name is also a working label. The three intended views are Risk Lens, TPRM Lens and Control Lens; shared packaging can wait until the third Lens proves what is genuinely shared.
