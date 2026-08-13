@@ -57,7 +57,7 @@ Fewer than two relevant team interactions triggers a code guard before a model r
 
 ## Heuristics
 
-`fixtures/heuristics/JUDGMENT_LIBRARY.json` uses the same library concepts as Risk Lens: stable IDs, versions, provenance, publication status, product relevance and stage bindings. TPRM-specific entries are visibly proposed. A published heuristic can be carried without being executed when it is not relevant to this Lens.
+`fixtures/heuristics/JUDGMENT_LIBRARY.md` uses the same library concepts as Risk Lens: stable IDs, versions, provenance, publication status, product relevance and stage bindings. TPRM-specific entries are visibly proposed. A published heuristic can be carried without being executed when it is not relevant to this Lens.
 
 No private heuristic enters this public repository. Public publication remains a separate review and approval event.
 
@@ -101,10 +101,11 @@ The prior curated file is archived. A failed pipeline validation restores it.
 ## Verification
 
 ```powershell
-$env:PYTEST_DISABLE_PLUGIN_AUTOLOAD = "1"
-pytest
-python scripts/verify.py
+python -m pip install -e ".[dev]"
+python scripts/check.py
 ```
+
+That one command lint-checks the Python source, compiles every module, rebuilds the keyless replay artifact, runs the product verifier and tests, syntax-checks the standalone JavaScript, and fails when generated files are stale. CI executes the same gate on Python 3.11 and 3.12.
 
 The verifier proves the actual demo claims:
 
@@ -138,3 +139,7 @@ tests/                 determinism and safety invariants
 This is not a production TPRM suite, a compliance assessment, legal advice or an autonomous approval engine. There is no authentication, multitenancy or live enterprise connector. The point is to show what TPRM judgment looks like after the questionnaire stops being the center of the work.
 
 The platform name is also a working label. The three intended views are Risk Lens, TPRM Lens and Control Lens; shared packaging can wait until the third Lens proves what is genuinely shared.
+
+## License
+
+MIT. See `LICENSE`.

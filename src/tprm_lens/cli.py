@@ -5,8 +5,8 @@ import json
 from pathlib import Path
 
 from .config import MODE
-from .pipeline import candidate, run
 from .heuristics import save
+from .pipeline import candidate, run
 
 
 def main() -> int:

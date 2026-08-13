@@ -5,8 +5,8 @@ import json
 from copy import deepcopy
 from pathlib import Path
 
-from .config import DATA, FIXTURES, MODE, MODEL, OUT
 from . import llm
+from .config import DATA, FIXTURES, MODE, MODEL, OUT
 from .heuristics import library as load_library
 from .trace import Trace
 

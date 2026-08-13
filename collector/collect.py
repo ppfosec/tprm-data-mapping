@@ -24,18 +24,17 @@ import pathlib
 import re
 import sys
 import time
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from urllib.parse import urljoin, urlparse
-
-import requests
-import yaml
-from bs4 import BeautifulSoup
 
 import classify as classify_mod
 import correlate
-import llm_classify
 import geo
+import llm_classify
+import requests
 import signals as sig_mod
+import yaml
+from bs4 import BeautifulSoup
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -70,7 +69,8 @@ DOC_LABEL = {
     "other": "Other legal page",
 }
 
-log = lambda *a: print(*a, file=sys.stderr, flush=True)
+def log(*args: object) -> None:
+    print(*args, file=sys.stderr, flush=True)
 
 
 # ----------------------------------------------------------------------------
@@ -196,7 +196,7 @@ def to_lines(text: str) -> str:
             if piece:
                 out.append(piece)
     # collapse consecutive duplicates (nav echoes)
-    deduped = [l for i, l in enumerate(out) if i == 0 or l != out[i - 1]]
+    deduped = [line for i, line in enumerate(out) if i == 0 or line != out[i - 1]]
     return "\n".join(deduped) + "\n"
 
 
@@ -210,8 +210,8 @@ def diff_lines(old_body: str, new_body: str) -> list[dict]:
     """Sentence-level before/after pairs for a wording change. One sentence per
     line means a reworded clause is a 'replace' opcode of size 1-1 -- exactly the
     quote a reviewer wants -- rather than a reflowed-paragraph diff."""
-    old_lines = [l for l in old_body.splitlines() if l.strip()]
-    new_lines = [l for l in new_body.splitlines() if l.strip()]
+    old_lines = [line for line in old_body.splitlines() if line.strip()]
+    new_lines = [line for line in new_body.splitlines() if line.strip()]
     sm = difflib.SequenceMatcher(a=old_lines, b=new_lines, autojunk=False)
     hunks = []
     for op, i1, i2, j1, j2 in sm.get_opcodes():
@@ -239,7 +239,7 @@ def write_snapshot(vendor_id: str, kind: str, url: str, body: str) -> dict:
         if old_body.strip() != body.strip():
             diff = diff_lines(old_body, body)
 
-    header = f"# source: {url}\n# collected: {datetime.now(timezone.utc).date().isoformat()}\n\n"
+    header = f"# source: {url}\n# collected: {datetime.now(UTC).date().isoformat()}\n\n"
     path.write_text(header + body, encoding="utf-8")
     return dict(
         kind=kind,
@@ -311,7 +311,8 @@ def archive_history(url: str) -> dict:
     stamps = sorted(x[0] for x in body if x and x[0])
     if not stamps:
         return dict(ok=True, captures=0, revisions=0, first=None, last=None)
-    fmt = lambda t: f"{t[0:4]}-{t[4:6]}-{t[6:8]}"
+    def fmt(timestamp: str) -> str:
+        return f"{timestamp[0:4]}-{timestamp[4:6]}-{timestamp[6:8]}"
     return dict(
         ok=True,
         captures=len(stamps),
@@ -479,7 +480,7 @@ def main():
 
     DATA.mkdir(exist_ok=True)
     rows = []
-    today = datetime.now(timezone.utc).date().isoformat()
+    today = datetime.now(UTC).date().isoformat()
     new_events = []
 
     for v in vendors:
@@ -557,7 +558,7 @@ def main():
         rows = [r for r in rows if r]
 
     index = dict(
-        generated_at=datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        generated_at=datetime.now(UTC).isoformat(timespec="seconds"),
         vendor_count=len(rows),
         signal_catalogue=[
             dict(key=s["key"], label=s["label"], severity=s["severity"], why=s["why"])

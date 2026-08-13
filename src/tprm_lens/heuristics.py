@@ -1,9 +1,9 @@
 from __future__ import annotations
 
-import re
 import os
+import re
 import shutil
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 from .config import FIXTURES
@@ -47,7 +47,9 @@ def parse(text: str) -> list[dict]:
             continue
         sec = SECTION.match(line)
         if sec:
-            flush(); section = _slug(sec.group(1)); continue
+            flush()
+            section = _slug(sec.group(1))
+            continue
         field = FIELD.match(line)
         if field and section is None:
             current["fields"][_slug(field.group(1))] = field.group(2).strip("` ")
@@ -108,7 +110,7 @@ def save(text: str, store: Path = STORE) -> dict:
         raise ValueError("no canonical heuristic entries found")
     store.parent.mkdir(parents=True, exist_ok=True)
     if store.exists():
-        stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+        stamp = datetime.now(UTC).strftime("%Y%m%dT%H%M%SZ")
         archive = store.with_name(f"JUDGMENT_LIBRARY.{stamp}.md")
         suffix = 1
         while archive.exists():

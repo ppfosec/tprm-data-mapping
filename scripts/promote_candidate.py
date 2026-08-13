@@ -5,7 +5,7 @@ import argparse
 import json
 import shutil
 import sys
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -14,8 +14,12 @@ sys.path.insert(0, str(ROOT / "src"))
 from tprm_lens import llm  # noqa: E402
 from tprm_lens.heuristics import library  # noqa: E402
 from tprm_lens.pipeline import (  # noqa: E402
-    CANDIDATE_PATH, DEMO_PATH, HEURISTICS_PATH, JUDGMENTS_PATH,
-    judgment_payload, run,
+    CANDIDATE_PATH,
+    DEMO_PATH,
+    HEURISTICS_PATH,
+    JUDGMENTS_PATH,
+    judgment_payload,
+    run,
 )
 
 
@@ -31,12 +35,12 @@ def main() -> int:
         raise SystemExit("refusing to promote an artifact not marked candidate")
     candidate["review_state"] = "curated"
     candidate["reviewed_by"] = args.reviewer
-    candidate["reviewed_on"] = datetime.now(timezone.utc).date().isoformat()
+    candidate["reviewed_on"] = datetime.now(UTC).date().isoformat()
     backup = JUDGMENTS_PATH.with_name(
-        f"judgments.{datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')}.json"
+        f"judgments.{datetime.now(UTC).strftime('%Y%m%dT%H%M%SZ')}.json"
     )
     shutil.copy2(JUDGMENTS_PATH, backup)
-    stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    stamp = datetime.now(UTC).strftime("%Y%m%dT%H%M%SZ")
     cassette_backup = ROOT / "var" / "cassette-backups" / stamp
     cassette_backup.mkdir(parents=True, exist_ok=True)
     demo = json.loads(DEMO_PATH.read_text(encoding="utf-8"))

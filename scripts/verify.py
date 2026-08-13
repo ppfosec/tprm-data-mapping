@@ -6,7 +6,7 @@ import subprocess
 import sys
 import threading
 import urllib.request
-from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
+from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -89,7 +89,10 @@ def verify_replay(data: dict) -> None:
           ["eng_nimbus_sales", "eng_nimbus_crm"],
           "new vendor evidence identifies both affected Nimbus engagements")
     before = (ROOT / "data" / "tprm-intelligence.json").read_text(encoding="utf-8")
-    env = os.environ.copy(); env.pop("ANTHROPIC_API_KEY", None); env["PYTHONPATH"] = "src"; env["TPRM_LENS_MODE"] = "replay"
+    env = os.environ.copy()
+    env.pop("ANTHROPIC_API_KEY", None)
+    env["PYTHONPATH"] = "src"
+    env["TPRM_LENS_MODE"] = "replay"
     subprocess.run([sys.executable, "-m", "tprm_lens.cli", "run"], cwd=ROOT, env=env, check=True,
                    stdout=subprocess.DEVNULL)
     after = (ROOT / "data" / "tprm-intelligence.json").read_text(encoding="utf-8")
@@ -146,13 +149,18 @@ def verify_http() -> None:
         check(payload["summary"]["engagements"] == 4, "unified artifact serves over HTTP")
     finally:
         if "server" in locals():
-            server.shutdown(); server.server_close()
+            server.shutdown()
+            server.server_close()
         os.chdir(previous)
 
 
 def main() -> int:
     data = load()
-    verify_data(data); verify_stories(data); verify_replay(data); verify_viewer(data); verify_http()
+    verify_data(data)
+    verify_stories(data)
+    verify_replay(data)
+    verify_viewer(data)
+    verify_http()
     print()
     if FAILURES:
         print(f"{len(FAILURES)} check(s) failed")

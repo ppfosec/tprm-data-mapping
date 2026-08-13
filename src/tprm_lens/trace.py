@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+
 class Trace:
     def __init__(self, timestamp: str = "2026-08-13T12:00:00Z") -> None:
         self.nodes: list[dict] = []
