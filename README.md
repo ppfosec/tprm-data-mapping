@@ -78,7 +78,7 @@ src/tprm_lens/pipeline.py          sequence → context → synthesis → interv
              └── site/embedded.js  complete standalone viewer fallback
 ```
 
-The external collector still owns `data/index.json`. The judgment pipeline writes a separate artifact, so a collection run cannot replace curated engagement intelligence. The collector also preserves reviewed LLM classifications when a no-key run falls back to regex, marking when the source documents have changed.
+The external collector still owns `data/index.json`. The judgment pipeline writes a separate artifact, so a collection run cannot replace curated engagement intelligence. The collector also preserves reviewed LLM classifications when a no-key run falls back to regex, marking when the source documents have changed. Collection and release are separate workflows: the collector commits evidence, then the ordinary `main` quality workflow verifies and deploys that exact commit. Design changes use the same deployment path without forcing a vendor scan or model call.
 
 In the viewer, select **Vendor Surface · Triple D** or use the Triple D pulse in the header. **Replay scan** animates the committed collect → normalize → diff → reconcile → route sequence. It makes no request, uses no API key and does not alter reviewed judgment. A real scheduled collection can replace the public evidence artifact; the same dependency index then identifies which engagements need their heuristics reapplied.
 
