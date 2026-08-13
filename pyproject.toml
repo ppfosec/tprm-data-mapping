@@ -11,7 +11,13 @@ dependencies = []
 
 [project.optional-dependencies]
 live = ["anthropic==0.86.0"]
-dev = ["pytest>=8,<9", "ruff==0.12.9"]
+dev = [
+  "beautifulsoup4==4.14.3",
+  "PyYAML==6.0.3",
+  "pytest>=8,<9",
+  "requests==2.33.0",
+  "ruff==0.12.9",
+]
 
 [project.scripts]
 tprm-lens = "tprm_lens.cli:main"
