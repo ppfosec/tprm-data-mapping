@@ -1,1 +1,71 @@
-[]
+[
+  {
+    "id": "figma-dpa-2026-08-14",
+    "vendor_id": "figma",
+    "vendor_name": "Figma",
+    "document": "dpa",
+    "document_label": "Data processing agreement",
+    "date": "2026-08-14",
+    "url": "https://www.figma.com/legal/dpa/",
+    "hunks": [
+      {
+        "before": "This Data Protection Addendum (“",
+        "after": "This Data Processing Addendum (“"
+      }
+    ]
+  },
+  {
+    "id": "figma-subprocessors-2026-08-14",
+    "vendor_id": "figma",
+    "vendor_name": "Figma",
+    "document": "subprocessors",
+    "document_label": "Sub-processor list",
+    "date": "2026-08-14",
+    "url": "https://www.figma.com/sub-processors/",
+    "hunks": [
+      {
+        "before": "June 22, 2026",
+        "after": "August 7, 2026"
+      },
+      {
+        "before": "Infrastructure monitoring",
+        "after": "Infrastructure monitoring and debugging"
+      },
+      {
+        "before": "Authorized User Data",
+        "after": "Customer Content"
+      },
+      {
+        "before": "Authorized User Data",
+        "after": "Customer Content"
+      },
+      {
+        "before": "Authorized User Data",
+        "after": "Customer Content"
+      },
+      {
+        "before": "Groq, Inc.",
+        "after": null
+      }
+    ]
+  },
+  {
+    "id": "gitlab-privacy-2026-08-14",
+    "vendor_id": "gitlab",
+    "vendor_name": "GitLab",
+    "document": "privacy",
+    "document_label": "Privacy policy",
+    "date": "2026-08-14",
+    "url": "https://about.gitlab.com/privacy/",
+    "hunks": [
+      {
+        "before": "[email protected]",
+        "after": "dpo@gitlab.com"
+      },
+      {
+        "before": "[email protected]",
+        "after": "DPO@gitlab.com"
+      }
+    ]
+  }
+]
