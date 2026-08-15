@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T05:24:37+00:00",
+  "generated_at": "2026-08-15T04:14:35+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -180,13 +180,13 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 426,
-        "placeable": 426,
+        "total": 440,
+        "placeable": 440,
         "unplaceable": 0,
         "eea": 14,
-        "non_eea": 412,
+        "non_eea": 426,
         "countries": {
-          "United States": 352,
+          "United States": 366,
           "United Kingdom": 31,
           "Japan": 12,
           "Ireland": 9,
@@ -225,6 +225,22 @@
             ]
           },
           {
+            "key": "oncall",
+            "label": "On-call access",
+            "severity": "high",
+            "why": "Out-of-hours production access, granted broadly and audited thinly.",
+            "count": 1,
+            "examples": [
+              {
+                "title": "AI Operations Engineer, Partnerships",
+                "location": "San Francisco, CA",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5391151008",
+                "matched": "on call",
+                "excerpt": "ifications Hands-on experience building with LLMs and agentic tooling: prompt and workflow design, tool/function calling, MCP or comparable integration frameworks, and evaluating agent output quality Experience working across A"
+              }
+            ]
+          },
+          {
             "key": "follow_the_sun",
             "label": "Follow-the-sun support",
             "severity": "high",
@@ -257,6 +273,22 @@
             ]
           },
           {
+            "key": "named_tooling",
+            "label": "Named internal tooling",
+            "severity": "low",
+            "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
+            "count": 1,
+            "examples": [
+              {
+                "title": "AI Operations Engineer, Partnerships",
+                "location": "San Francisco, CA",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5391151008",
+                "matched": "Salesforce",
+                "excerpt": "eworks, and evaluating agent output quality Experience working across APIs and business systems — CRMs (e.g., Salesforce), PRM/partner portals, LMS/certification platforms, spreadsheet-based tools, Slack, and email — and scripting"
+              }
+            ]
+          },
+          {
             "key": "sovereignty_work",
             "label": "Sovereignty workstream",
             "severity": "low",
@@ -279,7 +311,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "412 of 426 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "426 of 440 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -288,7 +320,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 352 open roles"
+              "excerpt": "United States: 366 open roles"
             },
             {
               "kind": "stat",
@@ -305,7 +337,7 @@
           "rule": "access_vs_rotation",
           "severity": "medium",
           "headline": "Restricted-access language alongside global rotations",
-          "detail": "The documents describe access controls in principle, while postings describe follow-the-sun support, round-the-clock coverage. Both can be true; the reconciliation is what a reviewer needs to see.",
+          "detail": "The documents describe access controls in principle, while postings describe follow-the-sun support, on-call access, round-the-clock coverage. Both can be true; the reconciliation is what a reviewer needs to see.",
           "claim": {
             "kind": "terms",
             "text": "Recipient may only share Discloser’s Confidential Information to Recipient’s employees, agents, and advisors that have a need to know such Confidential Information and who are bound to obligations of confidentiality at least as protective as those provided in these Terms (",
@@ -314,11 +346,11 @@
           "evidence": [
             {
               "kind": "job",
-              "title": "Country Lead, Data Center Security",
-              "location": "Sydney, Australia",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5311686008",
-              "matched": "follow-the-sun",
-              "excerpt": "regional security controls Provide after-hours coverage and structured handoffs to US-based teams as part of follow-the-sun security operations Minimum qualifications Hands-on experience administering enterprise physical security sys"
+              "title": "AI Operations Engineer, Partnerships",
+              "location": "San Francisco, CA",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5391151008",
+              "matched": "on call",
+              "excerpt": "ifications Hands-on experience building with LLMs and agentic tooling: prompt and workflow design, tool/function calling, MCP or comparable integration frameworks, and evaluating agent output quality Experience working across A"
             }
           ],
           "question": "For out-of-hours incidents, who is on the rotation, where are they, and is their access to customer data logged and reviewable by the customer?"
@@ -409,9 +441,9 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 42,
+        "total": 47,
         "footprint": 24,
-        "access": 14,
+        "access": 19,
         "transparency": 4,
         "record": 0
       },
@@ -467,7 +499,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectTimeout"
+            "reason": "ConnectionError"
           }
         },
         {
@@ -479,19 +511,16 @@
           "sha256": "253254e28bc2ff29",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2021-05-16",
-            "last": "2025-10-08"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 299,
+        "total": 305,
         "placeable": 8,
-        "unplaceable": 291,
+        "unplaceable": 297,
         "eea": 0,
         "non_eea": 8,
         "countries": {
@@ -745,27 +774,27 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 431,
-        "placeable": 431,
+        "total": 424,
+        "placeable": 424,
         "unplaceable": 0,
-        "eea": 94,
-        "non_eea": 337,
+        "eea": 92,
+        "non_eea": 332,
         "countries": {
-          "United States": 207,
-          "France": 50,
+          "United States": 203,
+          "France": 49,
           "Japan": 42,
-          "Ireland": 26,
+          "Ireland": 25,
           "Singapore": 18,
           "United Kingdom": 18,
           "Netherlands": 16,
           "Brazil": 16,
-          "Spain": 16,
+          "Spain": 15,
           "South Korea": 11,
           "Australia": 9,
-          "Portugal": 8,
           "India": 7,
-          "Germany": 6,
+          "Portugal": 7,
           "Sweden": 5,
+          "Germany": 5,
           "Italy": 5,
           "Denmark": 4,
           "Israel": 3,
@@ -1037,11 +1066,8 @@
           "sha256": "ff0e2b002da0ad9f",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2008-07-19",
-            "last": "2020-05-01"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -1054,7 +1080,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectTimeout"
+            "reason": "ConnectionError"
           }
         },
         {
@@ -1066,29 +1092,26 @@
           "sha256": "08c0eec1eefcd1e4",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 93,
-            "revisions": 92,
-            "first": "2022-12-05",
-            "last": "2026-08-10"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 564,
-        "placeable": 502,
-        "unplaceable": 62,
-        "eea": 63,
-        "non_eea": 439,
+        "total": 578,
+        "placeable": 510,
+        "unplaceable": 68,
+        "eea": 64,
+        "non_eea": 446,
         "countries": {
-          "United States": 259,
-          "Canada": 55,
-          "Ireland": 49,
-          "Singapore": 41,
-          "India": 41,
-          "United Kingdom": 31,
-          "Mexico": 27,
+          "United States": 263,
+          "Canada": 56,
+          "Ireland": 50,
+          "Singapore": 43,
+          "India": 42,
+          "United Kingdom": 32,
+          "Mexico": 26,
           "Australia": 11,
           "Japan": 5,
           "France": 3,
@@ -1354,11 +1377,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 41,
+        "total": 66,
         "footprint": 22,
         "access": 19,
         "transparency": 0,
-        "record": 0
+        "record": 25
       },
       "drift": []
     },
@@ -1379,11 +1402,8 @@
           "sha256": "6e2b46ec94fc52f7",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 274,
-            "revisions": 273,
-            "first": "2024-01-18",
-            "last": "2026-08-12"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -1395,11 +1415,8 @@
           "sha256": "4bde694018c282cd",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 14,
-            "revisions": 13,
-            "first": "2025-04-01",
-            "last": "2026-06-20"
+            "ok": false,
+            "reason": "ReadTimeout"
           }
         },
         {
@@ -1421,13 +1438,13 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 160,
-        "placeable": 160,
+        "total": 162,
+        "placeable": 162,
         "unplaceable": 0,
         "eea": 14,
-        "non_eea": 146,
+        "non_eea": 148,
         "countries": {
-          "United States": 98,
+          "United States": 100,
           "United Kingdom": 18,
           "Japan": 10,
           "Germany": 7,
@@ -1577,7 +1594,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "146 of 160 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "148 of 162 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -1586,7 +1603,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 98 open roles"
+              "excerpt": "United States: 100 open roles"
             },
             {
               "kind": "stat",
@@ -1667,7 +1684,7 @@
         "sensitivity_score": 30,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": true
+        "source_documents_changed": false
       },
       "score": {
         "total": 48,
@@ -1747,7 +1764,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectTimeout"
+            "reason": "ConnectionError"
           }
         },
         {
@@ -1760,7 +1777,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectTimeout"
+            "reason": "ReadTimeout"
           }
         },
         {
@@ -1773,26 +1790,23 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": true,
-            "captures": 23,
-            "revisions": 22,
-            "first": "2023-11-29",
-            "last": "2026-07-07"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 201,
-        "placeable": 193,
+        "total": 196,
+        "placeable": 188,
         "unplaceable": 8,
         "eea": 25,
-        "non_eea": 168,
+        "non_eea": 163,
         "countries": {
-          "United States": 90,
-          "Canada": 45,
-          "United Kingdom": 38,
-          "India": 33,
+          "United States": 86,
+          "Canada": 41,
+          "United Kingdom": 37,
+          "India": 35,
           "Germany": 14,
           "Ireland": 10,
           "France": 7,
@@ -2122,14 +2136,14 @@
         "sensitivity_score": 10,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": true
+        "source_documents_changed": false
       },
       "score": {
-        "total": 54,
+        "total": 76,
         "footprint": 22,
         "access": 25,
         "transparency": 4,
-        "record": 3
+        "record": 25
       },
       "drift": [
         {
@@ -2170,42 +2184,39 @@
           "sha256": "5369d10f45a8d597",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2018-05-23",
-            "last": "2026-02-01"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 252,
-        "placeable": 252,
+        "total": 257,
+        "placeable": 257,
         "unplaceable": 0,
-        "eea": 93,
-        "non_eea": 159,
+        "eea": 97,
+        "non_eea": 160,
         "countries": {
           "United States": 87,
-          "Spain": 26,
-          "Canada": 25,
-          "Greece": 14,
+          "Spain": 27,
+          "Canada": 26,
+          "Greece": 15,
+          "Ireland": 14,
           "United Kingdom": 13,
-          "Ireland": 13,
-          "Portugal": 10,
+          "Portugal": 11,
           "India": 9,
           "Germany": 8,
           "Norway": 6,
+          "Singapore": 5,
           "Belgium": 4,
           "Brazil": 4,
-          "Singapore": 4,
           "France": 3,
           "Japan": 3,
           "Saudi Arabia": 3,
-          "Costa Rica": 3,
           "Romania": 3,
           "Netherlands": 2,
           "Switzerland": 2,
+          "Costa Rica": 2,
           "Poland": 2,
           "Mexico": 2,
           "United Arab Emirates": 1,
@@ -2402,11 +2413,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 58,
+        "total": 83,
         "footprint": 16,
         "access": 25,
         "transparency": 17,
-        "record": 0
+        "record": 25
       },
       "drift": []
     },
@@ -2428,8 +2439,8 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 16,
-            "revisions": 15,
+            "captures": 17,
+            "revisions": 16,
             "first": "2026-06-08",
             "last": "2026-08-13"
           }
@@ -2443,11 +2454,8 @@
           "sha256": "c6f2954ea450f34e",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 146,
-            "revisions": 145,
-            "first": "2020-04-23",
-            "last": "2026-08-11"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
@@ -2652,11 +2660,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 54,
+        "total": 63,
         "footprint": 22,
         "access": 24,
         "transparency": 8,
-        "record": 0
+        "record": 9
       },
       "drift": []
     }
