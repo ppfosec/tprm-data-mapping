@@ -1,5 +1,5 @@
 # source: https://www.cloudflare.com/gdpr/subprocessors/
-# collected: 2026-08-15
+# collected: 2026-08-16
 
 Cloudflare Sub-Processors
 Cloudflare relies on sub-processors to deliver its services.

@@ -628,10 +628,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 8,
-            "revisions": 7,
+            "captures": 9,
+            "revisions": 8,
             "first": "2026-07-14",
-            "last": "2026-08-08"
+            "last": "2026-08-14"
           }
         }
       ],
@@ -640,7 +640,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "426 of 440 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "428 of 441 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -649,7 +649,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 366 open roles"
+              "excerpt": "United States: 368 open roles"
             },
             {
               "kind": "stat",
@@ -658,6 +658,10 @@
             {
               "kind": "stat",
               "excerpt": "Japan: 12 open roles"
+            },
+            {
+              "kind": "stat",
+              "excerpt": "Australia: 8 open roles"
             }
           ],
           "question": "Which roles can access production data, and from which countries? Does the residency commitment cover support and engineering access, or only data at rest?"
@@ -771,17 +775,17 @@
       },
       "jobs": {
         "ok": true,
-        "total": 440,
-        "placeable": 440,
+        "total": 441,
+        "placeable": 441,
         "unplaceable": 0,
-        "eea": 14,
-        "non_eea": 426,
+        "eea": 13,
+        "non_eea": 428,
         "countries": {
-          "United States": 366,
+          "United States": 368,
           "United Kingdom": 31,
           "Japan": 12,
-          "Ireland": 9,
           "Australia": 8,
+          "Ireland": 8,
           "Singapore": 5,
           "South Korea": 4,
           "Germany": 3,
@@ -952,8 +956,11 @@
           "sha256": "3669d59798194699",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 155,
+            "revisions": 154,
+            "first": "2018-11-17",
+            "last": "2026-07-18"
           }
         },
         {
@@ -966,7 +973,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "ConnectTimeout"
           }
         }
       ],
@@ -1199,11 +1206,8 @@
           "sha256": "f4f4a18f47205c0a",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 33,
-            "revisions": 32,
-            "first": "2022-05-28",
-            "last": "2026-08-03"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -1215,11 +1219,8 @@
           "sha256": "b5a9ad2baa6f3dd5",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 19,
-            "revisions": 18,
-            "first": "2024-05-24",
-            "last": "2026-05-25"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         }
       ],
@@ -1360,13 +1361,13 @@
       },
       "jobs": {
         "ok": true,
-        "total": 424,
-        "placeable": 424,
+        "total": 425,
+        "placeable": 425,
         "unplaceable": 0,
         "eea": 92,
-        "non_eea": 332,
+        "non_eea": 333,
         "countries": {
-          "United States": 203,
+          "United States": 204,
           "France": 49,
           "Japan": 42,
           "Ireland": 25,
@@ -1380,8 +1381,8 @@
           "India": 7,
           "Portugal": 7,
           "Sweden": 5,
-          "Germany": 5,
           "Italy": 5,
+          "Germany": 5,
           "Denmark": 4,
           "Israel": 3,
           "Saudi Arabia": 3,
@@ -1499,7 +1500,7 @@
       "category": "Payments",
       "public_evidence_only": true,
       "surface": {
-        "grade": "66",
+        "grade": "41",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "3 public documents · 3 open reconciliations"
@@ -1514,8 +1515,11 @@
           "sha256": "ff0e2b002da0ad9f",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2008-07-19",
+            "last": "2020-05-01"
           }
         },
         {
@@ -1527,8 +1531,11 @@
           "sha256": "92101146b860c664",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 218,
+            "revisions": 217,
+            "first": "2022-05-27",
+            "last": "2026-08-10"
           }
         },
         {
@@ -1540,8 +1547,11 @@
           "sha256": "08c0eec1eefcd1e4",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 93,
+            "revisions": 92,
+            "first": "2022-12-05",
+            "last": "2026-08-10"
           }
         }
       ],
@@ -1847,8 +1857,11 @@
           "sha256": "6e2b46ec94fc52f7",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 275,
+            "revisions": 274,
+            "first": "2024-01-18",
+            "last": "2026-08-12"
           }
         },
         {
@@ -1860,8 +1873,11 @@
           "sha256": "4bde694018c282cd",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ReadTimeout"
+            "ok": true,
+            "captures": 14,
+            "revisions": 13,
+            "first": "2025-04-01",
+            "last": "2026-06-20"
           }
         },
         {
@@ -2190,7 +2206,7 @@
       "category": "DevOps platform",
       "public_evidence_only": true,
       "surface": {
-        "grade": "76",
+        "grade": "51",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "3 public documents · 2 open reconciliations"
@@ -2205,8 +2221,11 @@
           "sha256": "b8fd30b8b1e6bdaa",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2015-04-16",
+            "last": "2026-02-17"
           }
         },
         {
@@ -2218,8 +2237,11 @@
           "sha256": "b9e8de6a4bacb426",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ReadTimeout"
+            "ok": true,
+            "captures": 78,
+            "revisions": 77,
+            "first": "2020-11-27",
+            "last": "2026-08-09"
           }
         },
         {
@@ -2232,8 +2254,11 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 23,
+            "revisions": 22,
+            "first": "2023-11-29",
+            "last": "2026-07-07"
           }
         }
       ],
@@ -2624,7 +2649,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "ConnectTimeout"
           }
         }
       ],
@@ -2780,8 +2805,8 @@
               },
               {
                 "title": "Principal AI Ecosystem Architect - OpenAI/Anthropic",
-                "location": "Washington, United States",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8065489&gh_jid=8065489",
+                "location": "San Francisco, CA",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8047165&gh_jid=8047165",
                 "matched": "Willingness to travel",
                 "excerpt": "ve presenting at a developer conference and working through an architecture question with a partner engineer. Willingness to travel 30% to partner offices, events, and conferences. Bonus Points Direct experience working with OpenAI and/or An"
               }
@@ -2859,7 +2884,7 @@
       "category": "App hosting",
       "public_evidence_only": true,
       "surface": {
-        "grade": "63",
+        "grade": "54",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "2 public documents · 2 open reconciliations"
@@ -2890,8 +2915,11 @@
           "sha256": "c6f2954ea450f34e",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 146,
+            "revisions": 145,
+            "first": "2020-04-23",
+            "last": "2026-08-11"
           }
         }
       ],
