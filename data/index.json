@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T04:17:45+00:00",
+  "generated_at": "2026-08-17T04:23:35+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -105,11 +105,8 @@
           "sha256": "e29848accd9e38b9",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2024-02-25",
-            "last": "2025-11-02"
+            "ok": false,
+            "reason": "JSONDecodeError"
           }
         },
         {
@@ -121,11 +118,8 @@
           "sha256": "8dac92944a88d6dd",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2024-02-25",
-            "last": "2026-03-08"
+            "ok": false,
+            "reason": "http 503"
           }
         },
         {
@@ -137,11 +131,8 @@
           "sha256": "85c78c93175ffb26",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2024-02-21",
-            "last": "2026-03-20"
+            "ok": false,
+            "reason": "http 503"
           }
         },
         {
@@ -154,11 +145,8 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": true,
-            "captures": 59,
-            "revisions": 58,
-            "first": "2024-09-26",
-            "last": "2026-08-11"
+            "ok": false,
+            "reason": "JSONDecodeError"
           }
         },
         {
@@ -170,11 +158,8 @@
           "sha256": "cc6e6d21a41fed8e",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 9,
-            "revisions": 8,
-            "first": "2026-07-14",
-            "last": "2026-08-14"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         }
       ],
@@ -445,11 +430,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 47,
+        "total": 72,
         "footprint": 24,
         "access": 19,
         "transparency": 4,
-        "record": 0
+        "record": 25
       },
       "drift": []
     },
@@ -470,11 +455,8 @@
           "sha256": "8d3c9629d73c5991",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2018-05-14",
-            "last": "2018-09-15"
+            "ok": false,
+            "reason": "http 503"
           }
         },
         {
@@ -486,11 +468,8 @@
           "sha256": "d999aff5712a68aa",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 280,
-            "revisions": 279,
-            "first": "2021-09-03",
-            "last": "2026-08-09"
+            "ok": false,
+            "reason": "http 503"
           }
         },
         {
@@ -502,11 +481,8 @@
           "sha256": "3669d59798194699",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 155,
-            "revisions": 154,
-            "first": "2018-11-17",
-            "last": "2026-07-18"
+            "ok": false,
+            "reason": "http 503"
           }
         },
         {
@@ -519,7 +495,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectTimeout"
+            "reason": "http 503"
           }
         }
       ],
@@ -714,11 +690,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 47,
+        "total": 72,
         "footprint": 25,
         "access": 22,
         "transparency": 0,
-        "record": 0
+        "record": 25
       },
       "drift": []
     },
@@ -769,7 +745,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectTimeout"
+            "reason": "ReadTimeout"
           }
         }
       ],
@@ -795,8 +771,8 @@
           "India": 7,
           "Portugal": 7,
           "Sweden": 5,
-          "Italy": 5,
           "Germany": 5,
+          "Italy": 5,
           "Denmark": 4,
           "Israel": 3,
           "Saudi Arabia": 3,
@@ -1067,11 +1043,8 @@
           "sha256": "ff0e2b002da0ad9f",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2008-07-19",
-            "last": "2020-05-01"
+            "ok": false,
+            "reason": "http 503"
           }
         },
         {
@@ -1083,11 +1056,8 @@
           "sha256": "92101146b860c664",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 218,
-            "revisions": 217,
-            "first": "2022-05-27",
-            "last": "2026-08-10"
+            "ok": false,
+            "reason": "http 503"
           }
         },
         {
@@ -1099,31 +1069,28 @@
           "sha256": "08c0eec1eefcd1e4",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 93,
-            "revisions": 92,
-            "first": "2022-12-05",
-            "last": "2026-08-10"
+            "ok": false,
+            "reason": "http 503"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 578,
-        "placeable": 510,
+        "total": 576,
+        "placeable": 508,
         "unplaceable": 68,
         "eea": 64,
-        "non_eea": 446,
+        "non_eea": 444,
         "countries": {
           "United States": 263,
           "Canada": 56,
           "Ireland": 50,
-          "Singapore": 43,
+          "Singapore": 42,
           "India": 42,
           "United Kingdom": 32,
           "Mexico": 26,
           "Australia": 11,
-          "Japan": 5,
+          "Japan": 4,
           "France": 3,
           "Spain": 3,
           "Germany": 2,
@@ -1135,8 +1102,8 @@
           "New Zealand": 1,
           "Hong Kong": 1,
           "Brazil": 1,
-          "Netherlands": 1,
           "Sweden": 1,
+          "Netherlands": 1,
           "Israel": 1,
           "Thailand": 1
         },
@@ -1387,11 +1354,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 41,
+        "total": 66,
         "footprint": 22,
         "access": 19,
         "transparency": 0,
-        "record": 0
+        "record": 25
       },
       "drift": []
     },
@@ -1428,11 +1395,8 @@
           "sha256": "4bde694018c282cd",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 14,
-            "revisions": 13,
-            "first": "2025-04-01",
-            "last": "2026-06-20"
+            "ok": false,
+            "reason": "http 503"
           }
         },
         {
@@ -1454,15 +1418,15 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 162,
-        "placeable": 162,
+        "total": 161,
+        "placeable": 161,
         "unplaceable": 0,
         "eea": 14,
-        "non_eea": 148,
+        "non_eea": 147,
         "countries": {
           "United States": 100,
           "United Kingdom": 18,
-          "Japan": 10,
+          "Japan": 9,
           "Germany": 7,
           "France": 6,
           "Singapore": 6,
@@ -1610,7 +1574,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "148 of 162 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "147 of 161 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -1627,7 +1591,7 @@
             },
             {
               "kind": "stat",
-              "excerpt": "Japan: 10 open roles"
+              "excerpt": "Japan: 9 open roles"
             }
           ],
           "question": "Which roles can access production data, and from which countries? Does the residency commitment cover support and engineering access, or only data at rest?"
@@ -1779,11 +1743,8 @@
           "sha256": "b8fd30b8b1e6bdaa",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2015-04-16",
-            "last": "2026-02-17"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -1796,10 +1757,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 78,
-            "revisions": 77,
+            "captures": 76,
+            "revisions": 75,
             "first": "2020-11-27",
-            "last": "2026-08-09"
+            "last": "2026-07-07"
           }
         },
         {
@@ -1838,11 +1799,11 @@
           "Netherlands": 6,
           "United Arab Emirates": 6,
           "Australia": 5,
-          "Singapore": 5,
+          "Japan": 5,
           "Poland": 5,
           "Italy": 4,
           "Israel": 4,
-          "Japan": 4,
+          "Singapore": 4,
           "Brazil": 3,
           "Spain": 3,
           "Mexico": 3,
@@ -1860,7 +1821,7 @@
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 9,
+            "count": 10,
             "examples": [
               {
                 "title": "Commercial Legal Counsel, Public Sector ",
@@ -1882,6 +1843,36 @@
                 "url": "https://job-boards.greenhouse.io/gitlab/jobs/8629005002",
                 "matched": "distributed team",
                 "excerpt": "of GitLab. An overview of this role As Director, Support Engineering for EMEA, you'll manage an experienced, distributed team serving enterprise customers across Europe, the Middle East, and Africa. Reporting to the Vice President of S"
+              }
+            ]
+          },
+          {
+            "key": "travel",
+            "label": "Travel expected",
+            "severity": "high",
+            "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
+            "count": 5,
+            "examples": [
+              {
+                "title": "Manager, Solutions Architect - CEUR",
+                "location": "Remote, Germany",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8626770002",
+                "matched": "willingness to travel",
+                "excerpt": "an eye for how that same mindset can be turned outward to deepen and elevate customer engagement. Ability and willingness to travel in line with business needs and GitLab's travel policy. About the team The Solutions Architects team at GitLa"
+              },
+              {
+                "title": "Manager, Solutions Architect - India ",
+                "location": "Remote, India",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8627761002",
+                "matched": "willingness to travel",
+                "excerpt": "teams and creating clear, accountable operating practices in a distributed or remote environment. Ability and willingness to travel in line with business needs and GitLab's travel policy. About the team The Solutions Architects team at GitLa"
+              },
+              {
+                "title": "Manager, Solutions Architects",
+                "location": "Remote, US",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8396674002",
+                "matched": "willingness to travel",
+                "excerpt": "arity with cloud computing concepts, related technologies, and common customer adoption patterns. Ability and willingness to travel in line with business needs and the company's travel policy, and openness to learning and using GitLab and re"
               }
             ]
           },
@@ -1912,36 +1903,6 @@
                 "url": "https://job-boards.greenhouse.io/gitlab/jobs/8684078002",
                 "matched": "on-call",
                 "excerpt": "bers (for example: as a Support Stable Counterpart ) Participate in regular rotations for weekday and weekend on-call coverage (daytime only), providing emergency support to our Self-managed and SaaS customers, or working with"
-              }
-            ]
-          },
-          {
-            "key": "travel",
-            "label": "Travel expected",
-            "severity": "high",
-            "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 4,
-            "examples": [
-              {
-                "title": "Manager, Solutions Architect - Asia",
-                "location": "Remote, Singapore",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8589147002",
-                "matched": "willingness to travel",
-                "excerpt": "teams and creating clear, accountable operating practices in a distributed or remote environment. Ability and willingness to travel in line with business needs and GitLab's travel policy. We are currently only able to accept applicants based"
-              },
-              {
-                "title": "Manager, Solutions Architect - CEUR",
-                "location": "Remote, Germany",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8626770002",
-                "matched": "willingness to travel",
-                "excerpt": "an eye for how that same mindset can be turned outward to deepen and elevate customer engagement. Ability and willingness to travel in line with business needs and GitLab's travel policy. About the team The Solutions Architects team at GitLa"
-              },
-              {
-                "title": "Manager, Solutions Architect - India ",
-                "location": "Remote, India",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8627761002",
-                "matched": "willingness to travel",
-                "excerpt": "teams and creating clear, accountable operating practices in a distributed or remote environment. Ability and willingness to travel in line with business needs and GitLab's travel policy. About the team The Solutions Architects team at GitLa"
               }
             ]
           },
@@ -1996,7 +1957,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 11,
+            "count": 10,
             "examples": [
               {
                 "title": "Customer Success Architect",
@@ -2209,18 +2170,21 @@
           "sha256": "5369d10f45a8d597",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2018-05-23",
+            "last": "2026-02-01"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 257,
-        "placeable": 257,
+        "total": 256,
+        "placeable": 256,
         "unplaceable": 0,
         "eea": 97,
-        "non_eea": 160,
+        "non_eea": 159,
         "countries": {
           "United States": 87,
           "Spain": 27,
@@ -2229,8 +2193,8 @@
           "Ireland": 14,
           "United Kingdom": 13,
           "Portugal": 11,
-          "India": 9,
           "Germany": 8,
+          "India": 8,
           "Norway": 6,
           "Singapore": 5,
           "Belgium": 4,
@@ -2438,11 +2402,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 83,
+        "total": 58,
         "footprint": 16,
         "access": 25,
         "transparency": 17,
-        "record": 25
+        "record": 0
       },
       "drift": []
     },
