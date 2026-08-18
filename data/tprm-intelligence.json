@@ -547,7 +547,7 @@
       "category": "Model provider",
       "public_evidence_only": true,
       "surface": {
-        "grade": "72",
+        "grade": "47",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "5 public documents · 3 open reconciliations"
@@ -562,8 +562,11 @@
           "sha256": "e29848accd9e38b9",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "JSONDecodeError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2024-02-25",
+            "last": "2025-11-02"
           }
         },
         {
@@ -575,8 +578,11 @@
           "sha256": "8dac92944a88d6dd",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "http 503"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2024-02-25",
+            "last": "2026-03-08"
           }
         },
         {
@@ -588,8 +594,11 @@
           "sha256": "85c78c93175ffb26",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "http 503"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2024-02-21",
+            "last": "2026-03-20"
           }
         },
         {
@@ -602,8 +611,11 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": false,
-            "reason": "JSONDecodeError"
+            "ok": true,
+            "captures": 61,
+            "revisions": 60,
+            "first": "2024-09-26",
+            "last": "2026-08-16"
           }
         },
         {
@@ -615,8 +627,11 @@
           "sha256": "cc6e6d21a41fed8e",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 9,
+            "revisions": 8,
+            "first": "2026-07-14",
+            "last": "2026-08-14"
           }
         }
       ],
@@ -625,7 +640,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "428 of 441 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "438 of 458 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -634,19 +649,15 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 368 open roles"
+              "excerpt": "United States: 378 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 31 open roles"
+              "excerpt": "United Kingdom: 30 open roles"
             },
             {
               "kind": "stat",
               "excerpt": "Japan: 12 open roles"
-            },
-            {
-              "kind": "stat",
-              "excerpt": "Australia: 8 open roles"
             }
           ],
           "question": "Which roles can access production data, and from which countries? Does the residency commitment cover support and engineering access, or only data at rest?"
@@ -760,21 +771,21 @@
       },
       "jobs": {
         "ok": true,
-        "total": 441,
-        "placeable": 441,
-        "unplaceable": 0,
-        "eea": 13,
-        "non_eea": 428,
+        "total": 459,
+        "placeable": 458,
+        "unplaceable": 1,
+        "eea": 20,
+        "non_eea": 438,
         "countries": {
-          "United States": 368,
-          "United Kingdom": 31,
+          "United States": 378,
+          "United Kingdom": 30,
           "Japan": 12,
-          "Australia": 8,
-          "Ireland": 8,
+          "Ireland": 10,
+          "Australia": 9,
+          "Germany": 6,
           "Singapore": 5,
+          "France": 4,
           "South Korea": 4,
-          "Germany": 3,
-          "France": 2,
           "Switzerland": 2,
           "Canada": 1,
           "India": 1
@@ -894,7 +905,7 @@
       "category": "Edge network",
       "public_evidence_only": true,
       "surface": {
-        "grade": "72",
+        "grade": "47",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "4 public documents · 2 open reconciliations"
@@ -910,7 +921,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "http 503"
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -922,8 +933,11 @@
           "sha256": "d999aff5712a68aa",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "http 503"
+            "ok": true,
+            "captures": 281,
+            "revisions": 280,
+            "first": "2021-09-03",
+            "last": "2026-08-15"
           }
         },
         {
@@ -935,8 +949,11 @@
           "sha256": "3669d59798194699",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "http 503"
+            "ok": true,
+            "captures": 155,
+            "revisions": 154,
+            "first": "2018-11-17",
+            "last": "2026-07-18"
           }
         },
         {
@@ -948,8 +965,11 @@
           "sha256": "253254e28bc2ff29",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "http 503"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2021-05-16",
+            "last": "2025-10-08"
           }
         }
       ],
@@ -1051,14 +1071,14 @@
       },
       "jobs": {
         "ok": true,
-        "total": 305,
-        "placeable": 8,
-        "unplaceable": 297,
+        "total": 298,
+        "placeable": 7,
+        "unplaceable": 291,
         "eea": 0,
-        "non_eea": 8,
+        "non_eea": 7,
         "countries": {
-          "United States": 4,
           "India": 3,
+          "United States": 3,
           "Japan": 1
         },
         "scanned": 26,
@@ -1068,7 +1088,7 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 10,
+            "count": 9,
             "examples": [
               {
                 "title": "AI Security Research & Red Team Engineer",
@@ -1151,7 +1171,7 @@
       "category": "Observability",
       "public_evidence_only": true,
       "surface": {
-        "grade": "44",
+        "grade": "69",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "3 public documents · 4 open reconciliations"
@@ -1166,11 +1186,8 @@
           "sha256": "9da08ec768f6c700",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2017-06-30",
-            "last": "2025-04-25"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -1183,7 +1200,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectTimeout"
+            "reason": "ReadTimeout"
           }
         },
         {
@@ -1196,7 +1213,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ReadTimeout"
+            "reason": "ConnectTimeout"
           }
         }
       ],
@@ -1337,23 +1354,23 @@
       },
       "jobs": {
         "ok": true,
-        "total": 425,
-        "placeable": 425,
+        "total": 421,
+        "placeable": 421,
         "unplaceable": 0,
-        "eea": 92,
-        "non_eea": 333,
+        "eea": 90,
+        "non_eea": 331,
         "countries": {
-          "United States": 204,
+          "United States": 205,
           "France": 49,
           "Japan": 42,
-          "Ireland": 25,
+          "Ireland": 24,
           "Singapore": 18,
-          "United Kingdom": 18,
-          "Netherlands": 16,
           "Brazil": 16,
-          "Spain": 15,
-          "South Korea": 11,
+          "United Kingdom": 16,
+          "Netherlands": 15,
+          "Spain": 14,
           "Australia": 9,
+          "South Korea": 9,
           "India": 7,
           "Portugal": 7,
           "Sweden": 5,
@@ -1476,7 +1493,7 @@
       "category": "Payments",
       "public_evidence_only": true,
       "surface": {
-        "grade": "66",
+        "grade": "41",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "3 public documents · 3 open reconciliations"
@@ -1492,7 +1509,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "http 503"
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -1504,8 +1521,11 @@
           "sha256": "92101146b860c664",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "http 503"
+            "ok": true,
+            "captures": 219,
+            "revisions": 218,
+            "first": "2022-05-27",
+            "last": "2026-08-15"
           }
         },
         {
@@ -1517,8 +1537,11 @@
           "sha256": "08c0eec1eefcd1e4",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "http 503"
+            "ok": true,
+            "captures": 94,
+            "revisions": 93,
+            "first": "2022-12-05",
+            "last": "2026-08-15"
           }
         }
       ],
@@ -1682,33 +1705,31 @@
       "jobs": {
         "ok": true,
         "total": 576,
-        "placeable": 508,
-        "unplaceable": 68,
-        "eea": 64,
-        "non_eea": 444,
+        "placeable": 507,
+        "unplaceable": 69,
+        "eea": 61,
+        "non_eea": 446,
         "countries": {
-          "United States": 263,
-          "Canada": 56,
-          "Ireland": 50,
+          "United States": 265,
+          "Canada": 54,
+          "Ireland": 48,
           "Singapore": 42,
           "India": 42,
           "United Kingdom": 32,
           "Mexico": 26,
           "Australia": 11,
           "Japan": 4,
-          "France": 3,
+          "Germany": 3,
           "Spain": 3,
-          "Germany": 2,
           "Italy": 2,
-          "Luxembourg": 2,
+          "France": 2,
           "United Arab Emirates": 2,
           "Romania": 2,
           "Taiwan": 1,
+          "Luxembourg": 1,
           "New Zealand": 1,
           "Hong Kong": 1,
           "Brazil": 1,
-          "Sweden": 1,
-          "Netherlands": 1,
           "Israel": 1,
           "Thailand": 1
         },
@@ -1809,7 +1830,7 @@
       "category": "Design SaaS",
       "public_evidence_only": true,
       "surface": {
-        "grade": "48",
+        "grade": "73",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "3 public documents · 1 open reconciliations"
@@ -1824,11 +1845,8 @@
           "sha256": "6e2b46ec94fc52f7",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 275,
-            "revisions": 274,
-            "first": "2024-01-18",
-            "last": "2026-08-12"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -1841,7 +1859,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "http 503"
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -1853,11 +1871,8 @@
           "sha256": "d3dfe39c1a7b2473",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 81,
-            "revisions": 80,
-            "first": "2019-04-01",
-            "last": "2026-07-28"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         }
       ],
@@ -1866,7 +1881,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "147 of 161 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "150 of 165 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -1875,7 +1890,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 100 open roles"
+              "excerpt": "United States: 102 open roles"
             },
             {
               "kind": "stat",
@@ -1883,7 +1898,7 @@
             },
             {
               "kind": "stat",
-              "excerpt": "Japan: 9 open roles"
+              "excerpt": "Japan: 10 open roles"
             }
           ],
           "question": "Which roles can access production data, and from which countries? Does the residency commitment cover support and engineering access, or only data at rest?"
@@ -1960,16 +1975,16 @@
       },
       "jobs": {
         "ok": true,
-        "total": 161,
-        "placeable": 161,
+        "total": 165,
+        "placeable": 165,
         "unplaceable": 0,
-        "eea": 14,
-        "non_eea": 147,
+        "eea": 15,
+        "non_eea": 150,
         "countries": {
-          "United States": 100,
+          "United States": 102,
           "United Kingdom": 18,
-          "Japan": 9,
-          "Germany": 7,
+          "Japan": 10,
+          "Germany": 8,
           "France": 6,
           "Singapore": 6,
           "Israel": 5,
@@ -2185,8 +2200,11 @@
           "sha256": "b8fd30b8b1e6bdaa",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2015-04-16",
+            "last": "2026-02-17"
           }
         },
         {
@@ -2199,10 +2217,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 76,
-            "revisions": 75,
+            "captures": 78,
+            "revisions": 77,
             "first": "2020-11-27",
-            "last": "2026-07-07"
+            "last": "2026-08-09"
           }
         },
         {
@@ -2342,24 +2360,24 @@
       },
       "jobs": {
         "ok": true,
-        "total": 196,
-        "placeable": 188,
+        "total": 199,
+        "placeable": 191,
         "unplaceable": 8,
         "eea": 25,
-        "non_eea": 163,
+        "non_eea": 166,
         "countries": {
-          "United States": 86,
-          "Canada": 41,
+          "United States": 88,
+          "Canada": 42,
+          "India": 37,
           "United Kingdom": 37,
-          "India": 35,
           "Germany": 14,
           "Ireland": 10,
-          "France": 7,
           "Netherlands": 6,
           "United Arab Emirates": 6,
+          "France": 6,
+          "Poland": 6,
           "Australia": 5,
           "Japan": 5,
-          "Poland": 5,
           "Italy": 4,
           "Israel": 4,
           "Singapore": 4,
@@ -2679,21 +2697,21 @@
       },
       "jobs": {
         "ok": true,
-        "total": 256,
-        "placeable": 256,
+        "total": 251,
+        "placeable": 251,
         "unplaceable": 0,
-        "eea": 97,
-        "non_eea": 159,
+        "eea": 94,
+        "non_eea": 157,
         "countries": {
           "United States": 87,
-          "Spain": 27,
           "Canada": 26,
+          "Spain": 26,
           "Greece": 15,
           "Ireland": 14,
-          "United Kingdom": 13,
+          "United Kingdom": 12,
           "Portugal": 11,
-          "Germany": 8,
           "India": 8,
+          "Germany": 7,
           "Norway": 6,
           "Singapore": 5,
           "Belgium": 4,
@@ -2702,16 +2720,15 @@
           "Japan": 3,
           "Saudi Arabia": 3,
           "Romania": 3,
-          "Netherlands": 2,
           "Switzerland": 2,
           "Costa Rica": 2,
           "Poland": 2,
           "Mexico": 2,
           "United Arab Emirates": 1,
-          "Israel": 1,
           "South Korea": 1,
           "Hungary": 1,
           "Denmark": 1,
+          "Netherlands": 1,
           "Australia": 1
         },
         "scanned": 26,
@@ -2769,8 +2786,8 @@
               },
               {
                 "title": "Principal AI Ecosystem Architect - OpenAI/Anthropic",
-                "location": "San Francisco, CA",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8047165&gh_jid=8047165",
+                "location": "Washington, United States",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8065489&gh_jid=8065489",
                 "matched": "Willingness to travel",
                 "excerpt": "ve presenting at a developer conference and working through an architecture question with a partner engineer. Willingness to travel 30% to partner offices, events, and conferences. Bonus Points Direct experience working with OpenAI and/or An"
               }
@@ -2848,7 +2865,7 @@
       "category": "App hosting",
       "public_evidence_only": true,
       "surface": {
-        "grade": "54",
+        "grade": "55",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "2 public documents · 2 open reconciliations"
@@ -2979,19 +2996,19 @@
       },
       "jobs": {
         "ok": true,
-        "total": 83,
-        "placeable": 81,
+        "total": 84,
+        "placeable": 82,
         "unplaceable": 2,
         "eea": 9,
-        "non_eea": 72,
+        "non_eea": 73,
         "countries": {
-          "United States": 64,
+          "United States": 65,
           "United Kingdom": 17,
           "Germany": 9,
           "Australia": 3,
           "India": 3
         },
-        "scanned": 21,
+        "scanned": 22,
         "signals": [
           {
             "key": "oncall",
@@ -3067,7 +3084,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 2,
+            "count": 3,
             "examples": [
               {
                 "title": "Head of Field Engineering Operations",
@@ -3075,6 +3092,13 @@
                 "url": "https://job-boards.greenhouse.io/vercel/jobs/5979111004",
                 "matched": "Salesforce",
                 "excerpt": ", Professional Services, Customer Success Engineering) Proficiency in core GTM systems and architecture (e.g. Salesforce administration and architecture, including custom objects, flows, reporting, and integration with ecosystem a"
+              },
+              {
+                "title": "Marketing Operations Manager",
+                "location": "Hybrid - San Francisco, Austin",
+                "url": "https://job-boards.greenhouse.io/vercel/jobs/6144467004",
+                "matched": "Salesforce",
+                "excerpt": "r our core martech stack—including our marketing automation platform ( Customer.io ) and its integration with Salesforce, Snowflake, and downstream systems —keeping tools tightly connected and data flowing reliably Build, QA, and"
               },
               {
                 "title": "Partner Operations Lead",
