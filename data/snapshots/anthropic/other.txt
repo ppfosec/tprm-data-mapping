@@ -1,5 +1,5 @@
 # source: https://www.anthropic.com/legal/aup
-# collected: 2026-08-18
+# collected: 2026-08-19
 
 Our Usage Policy (also referred to as our “Acceptable Use Policy” or “AUP”) applies to anyone who can submit inputs to Anthropic’s products and/or services, including via any authorized resellers or passthrough access, all of whom we refer to as “users.” The Usage Policy is intended to help our users stay safe and promote the responsible use of our products and services.
 The Usage Policy is categorized according to who can use our products and for what purposes.

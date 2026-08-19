@@ -1,5 +1,5 @@
 # source: https://vercel.com/legal/dpa
-# collected: 2026-08-18
+# collected: 2026-08-19
 
 Data Processing Addendum
 Last Updated
