@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T04:22:32+00:00",
+  "generated_at": "2026-08-20T04:27:37+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -137,11 +137,8 @@
           "sha256": "85c78c93175ffb26",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2024-02-21",
-            "last": "2026-03-20"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -167,31 +164,34 @@
           "sha256": "cc6e6d21a41fed8e",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 10,
+            "revisions": 9,
+            "first": "2026-07-14",
+            "last": "2026-08-19"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 464,
-        "placeable": 463,
+        "total": 483,
+        "placeable": 482,
         "unplaceable": 1,
-        "eea": 21,
-        "non_eea": 442,
+        "eea": 22,
+        "non_eea": 460,
         "countries": {
-          "United States": 381,
-          "United Kingdom": 31,
-          "Japan": 12,
+          "United States": 389,
+          "United Kingdom": 34,
+          "Japan": 14,
           "Ireland": 11,
-          "Australia": 9,
-          "Germany": 6,
-          "Singapore": 5,
+          "Australia": 10,
+          "Germany": 7,
+          "Singapore": 6,
           "South Korea": 5,
           "France": 4,
-          "Switzerland": 2,
-          "Canada": 1,
-          "India": 1
+          "India": 3,
+          "Canada": 2,
+          "Switzerland": 2
         },
         "scanned": 26,
         "signals": [
@@ -321,7 +321,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "442 of 463 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "460 of 482 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -330,15 +330,15 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 381 open roles"
+              "excerpt": "United States: 389 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 31 open roles"
+              "excerpt": "United Kingdom: 34 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "Japan: 12 open roles"
+              "excerpt": "Japan: 14 open roles"
             }
           ],
           "question": "Which roles can access production data, and from which countries? Does the residency commitment cover support and engineering access, or only data at rest?"
@@ -472,8 +472,8 @@
           "url": "https://www.cloudflare.com/privacypolicy/",
           "path": "data/snapshots/cloudflare/privacy.txt",
           "lines": 649,
-          "chars": 47138,
-          "sha256": "2c740120d037970f",
+          "chars": 47137,
+          "sha256": "8d3c9629d73c5991",
           "note": null,
           "archive": {
             "ok": true,
@@ -524,11 +524,8 @@
           "sha256": "253254e28bc2ff29",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2021-05-16",
-            "last": "2025-10-08"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         }
       ],
@@ -763,6 +760,21 @@
       },
       "drift": [
         {
+          "id": "cloudflare-privacy-2026-08-20",
+          "vendor_id": "cloudflare",
+          "vendor_name": "Cloudflare",
+          "document": "privacy",
+          "document_label": "Privacy policy",
+          "date": "2026-08-20",
+          "url": "https://www.cloudflare.com/privacypolicy/",
+          "hunks": [
+            {
+              "before": "(\u0000“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information.",
+              "after": "(“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information."
+            }
+          ]
+        },
+        {
           "id": "cloudflare-privacy-2026-08-19",
           "vendor_id": "cloudflare",
           "vendor_name": "Cloudflare",
@@ -796,11 +808,8 @@
           "sha256": "9da08ec768f6c700",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2017-06-30",
-            "last": "2025-04-25"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -812,11 +821,8 @@
           "sha256": "f4f4a18f47205c0a",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 33,
-            "revisions": 32,
-            "first": "2022-05-28",
-            "last": "2026-08-03"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -835,32 +841,32 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 425,
-        "placeable": 425,
+        "total": 435,
+        "placeable": 435,
         "unplaceable": 0,
         "eea": 91,
-        "non_eea": 334,
+        "non_eea": 344,
         "countries": {
-          "United States": 208,
+          "United States": 214,
           "France": 50,
-          "Japan": 43,
+          "Japan": 46,
           "Ireland": 24,
           "Singapore": 18,
-          "Brazil": 16,
-          "United Kingdom": 16,
+          "Brazil": 17,
+          "United Kingdom": 17,
           "Netherlands": 15,
           "Spain": 15,
-          "Australia": 9,
-          "South Korea": 9,
+          "South Korea": 10,
+          "Australia": 10,
           "Portugal": 8,
           "India": 7,
-          "Sweden": 5,
+          "Germany": 6,
           "Italy": 5,
-          "Germany": 5,
           "Mexico": 4,
-          "Denmark": 4,
+          "Sweden": 4,
           "Israel": 3,
           "Saudi Arabia": 3,
+          "Denmark": 3,
           "Indonesia": 3,
           "Switzerland": 2,
           "Canada": 1,
@@ -922,7 +928,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 4,
+            "count": 3,
             "examples": [
               {
                 "title": "Area Vice President, Enterprise Security Sales",
@@ -1101,11 +1107,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 44,
+        "total": 68,
         "footprint": 20,
-        "access": 24,
+        "access": 23,
         "transparency": 0,
-        "record": 0
+        "record": 25
       },
       "drift": []
     },
@@ -1169,29 +1175,29 @@
       "jobs": {
         "ok": true,
         "total": 576,
-        "placeable": 505,
-        "unplaceable": 71,
-        "eea": 61,
-        "non_eea": 444,
+        "placeable": 507,
+        "unplaceable": 69,
+        "eea": 66,
+        "non_eea": 441,
         "countries": {
           "United States": 266,
-          "Canada": 53,
-          "Ireland": 48,
-          "India": 41,
-          "Singapore": 40,
-          "United Kingdom": 32,
-          "Mexico": 26,
-          "Australia": 10,
+          "Canada": 54,
+          "Ireland": 52,
+          "Singapore": 41,
+          "India": 39,
+          "United Kingdom": 31,
+          "Mexico": 25,
+          "Australia": 11,
           "Japan": 4,
+          "Spain": 4,
           "Germany": 3,
-          "Spain": 3,
           "Israel": 2,
           "Italy": 2,
           "France": 2,
-          "United Arab Emirates": 2,
           "Romania": 2,
           "Taiwan": 1,
           "Luxembourg": 1,
+          "United Arab Emirates": 1,
           "New Zealand": 1,
           "Brazil": 1,
           "Hong Kong": 1,
@@ -1259,7 +1265,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 6,
+            "count": 5,
             "examples": [
               {
                 "title": "Account Executive, Platforms Hunter (Central Eastern Europe)",
@@ -1508,18 +1514,18 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 162,
-        "placeable": 162,
+        "total": 163,
+        "placeable": 163,
         "unplaceable": 0,
         "eea": 15,
-        "non_eea": 147,
+        "non_eea": 148,
         "countries": {
           "United States": 99,
           "United Kingdom": 18,
           "Japan": 10,
           "Germany": 8,
+          "Singapore": 7,
           "France": 6,
-          "Singapore": 6,
           "Israel": 5,
           "Brazil": 4,
           "Australia": 3,
@@ -1550,11 +1556,11 @@
                 "excerpt": "om idea to product, Figma empowers teams to streamline workflows, move faster, and work together in real time from anywhere in the world. If you're excited to shape the future of design and collaboration, join us! As a member of our Customer Oper"
               },
               {
-                "title": "Content Support Engineer",
+                "title": "Data Engineer",
                 "location": "San Francisco, CA • New York, NY • United States",
-                "url": "https://boards.greenhouse.io/figma/jobs/6037719004?gh_jid=6037719004",
+                "url": "https://boards.greenhouse.io/figma/jobs/5220003004?gh_jid=5220003004",
                 "matched": "from anywhere in the world",
-                "excerpt": "om idea to product, Figma empowers teams to streamline workflows, move faster, and work together in real time from anywhere in the world. If you're excited to shape the future of design and collaboration, join us! We are looking for a Content Sup"
+                "excerpt": "om idea to product, Figma empowers teams to streamline workflows, move faster, and work together in real time from anywhere in the world. If you're excited to shape the future of design and collaboration, join us! We are looking for an experience"
               }
             ]
           },
@@ -1609,15 +1615,8 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 6,
+            "count": 5,
             "examples": [
-              {
-                "title": "Content Support Engineer",
-                "location": "San Francisco, CA • New York, NY • United States",
-                "url": "https://boards.greenhouse.io/figma/jobs/6037719004?gh_jid=6037719004",
-                "matched": "Zendesk",
-                "excerpt": "ograms at scale in a Support environment for a technical SaaS product, with proficiency in tools like Notion, Zendesk, and Decagon An advanced practice of using AI tools as core infrastructure in your content workflow, with han"
-              },
               {
                 "title": "Data Engineer",
                 "location": "San Francisco, CA • New York, NY • United States",
@@ -1631,6 +1630,13 @@
                 "url": "https://boards.greenhouse.io/figma/jobs/5976930004?gh_jid=5976930004",
                 "matched": "Snowflake",
                 "excerpt": "SQL and proficiency in a scripting language like Python or R, with exposure to distributed data systems (e.g. Snowflake) through research or internships Ability to communicate technical concepts clearly to both technical and non-"
+              },
+              {
+                "title": "Data Scientist, Finance",
+                "location": "San Francisco, CA • New York, NY • United States",
+                "url": "https://boards.greenhouse.io/figma/jobs/6013304004?gh_jid=6013304004",
+                "matched": "Snowflake",
+                "excerpt": "nue recognition principles (ASC 606) Experience with modern analytics and data engineering tools such as DBT, Snowflake, Git, Spark, Presto, or similar technologies Experience supporting IPO readiness, public company reporting, S"
               }
             ]
           },
@@ -1639,15 +1645,8 @@
             "label": "Government enclave",
             "severity": "low",
             "why": "A separate sovereign estate exists, which confirms the commercial one is not it.",
-            "count": 2,
+            "count": 1,
             "examples": [
-              {
-                "title": "Governance Risk and Compliance",
-                "location": "San Francisco, CA • New York, NY • United States",
-                "url": "https://boards.greenhouse.io/figma/jobs/6015630004?gh_jid=6015630004",
-                "matched": "FedRAMP",
-                "excerpt": "d States.&nbsp; What you'll do at Figma: Lead compliance programs across frameworks such as SOC 2, ISO 27001, FedRAMP, SOX ITGC, GDPR, and NIS2 Manage external audits and certification activities while partnering with auditors"
-              },
               {
                 "title": "Manager, Security Operations",
                 "location": "San Francisco, CA • New York, NY • United States",
@@ -1664,7 +1663,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "147 of 162 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "148 of 163 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -1833,11 +1832,8 @@
           "sha256": "b8fd30b8b1e6bdaa",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2015-04-16",
-            "last": "2026-02-17"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -1849,8 +1845,11 @@
           "sha256": "b9e8de6a4bacb426",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 78,
+            "revisions": 77,
+            "first": "2020-11-27",
+            "last": "2026-08-09"
           }
         },
         {
@@ -1863,8 +1862,11 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 23,
+            "revisions": 22,
+            "first": "2023-11-29",
+            "last": "2026-07-07"
           }
         }
       ],
@@ -1873,23 +1875,23 @@
         "total": 199,
         "placeable": 192,
         "unplaceable": 7,
-        "eea": 25,
-        "non_eea": 167,
+        "eea": 27,
+        "non_eea": 165,
         "countries": {
-          "United States": 89,
-          "Canada": 42,
-          "United Kingdom": 37,
+          "United States": 87,
+          "Canada": 44,
+          "United Kingdom": 39,
           "India": 35,
-          "Germany": 14,
+          "Germany": 15,
           "Ireland": 10,
+          "Poland": 7,
           "Netherlands": 6,
           "United Arab Emirates": 6,
           "France": 6,
-          "Poland": 6,
-          "Australia": 5,
           "Japan": 5,
           "Singapore": 5,
           "Italy": 4,
+          "Australia": 4,
           "Israel": 4,
           "Brazil": 3,
           "Spain": 3,
@@ -1935,6 +1937,36 @@
             ]
           },
           {
+            "key": "oncall",
+            "label": "On-call access",
+            "severity": "high",
+            "why": "Out-of-hours production access, granted broadly and audited thinly.",
+            "count": 5,
+            "examples": [
+              {
+                "title": "Engineering Manager, Cell Infrastructure",
+                "location": "Bangalore, India",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8615946002",
+                "matched": "on-call",
+                "excerpt": "o make unit economics part of the system design. Own the reliability model for cell infrastructure, including on-call practices, incident response, and postmortem follow-through. Partner with adjacent teams such as Git infrastr"
+              },
+              {
+                "title": "Intermediate Support Engineer",
+                "location": "Bangalore, India",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8687026002",
+                "matched": "on-call",
+                "excerpt": "able Counterparts) to solve challenging cases and share knowledge. Participate in regular weekday and weekend on-call rotations (daytime only), providing emergency support for Self-managed and SaaS customers and coordinating in"
+              },
+              {
+                "title": "Intermediate Support Engineer (SHIFT)",
+                "location": "Remote, United Kingdom",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8684078002",
+                "matched": "on-call",
+                "excerpt": "bers (for example: as a Support Stable Counterpart ) Participate in regular rotations for weekday and weekend on-call coverage (daytime only), providing emergency support to our Self-managed and SaaS customers, or working with"
+              }
+            ]
+          },
+          {
             "key": "travel",
             "label": "Travel expected",
             "severity": "high",
@@ -1961,36 +1993,6 @@
                 "url": "https://job-boards.greenhouse.io/gitlab/jobs/8396674002",
                 "matched": "willingness to travel",
                 "excerpt": "arity with cloud computing concepts, related technologies, and common customer adoption patterns. Ability and willingness to travel in line with business needs and the company's travel policy, and openness to learning and using GitLab and re"
-              }
-            ]
-          },
-          {
-            "key": "oncall",
-            "label": "On-call access",
-            "severity": "high",
-            "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 4,
-            "examples": [
-              {
-                "title": "Engineering Manager, Cell Infrastructure",
-                "location": "Bangalore, India",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8615946002",
-                "matched": "on-call",
-                "excerpt": "o make unit economics part of the system design. Own the reliability model for cell infrastructure, including on-call practices, incident response, and postmortem follow-through. Partner with adjacent teams such as Git infrastr"
-              },
-              {
-                "title": "Intermediate Support Engineer",
-                "location": "Bangalore, India",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8687026002",
-                "matched": "on-call",
-                "excerpt": "able Counterparts) to solve challenging cases and share knowledge. Participate in regular weekday and weekend on-call rotations (daytime only), providing emergency support for Self-managed and SaaS customers and coordinating in"
-              },
-              {
-                "title": "Intermediate Support Engineer (SHIFT)",
-                "location": "Remote, United Kingdom",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8684078002",
-                "matched": "on-call",
-                "excerpt": "bers (for example: as a Support Stable Counterpart ) Participate in regular rotations for weekday and weekend on-call coverage (daytime only), providing emergency support to our Self-managed and SaaS customers, or working with"
               }
             ]
           },
@@ -2213,8 +2215,8 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 51,
-        "footprint": 22,
+        "total": 50,
+        "footprint": 21,
         "access": 25,
         "transparency": 4,
         "record": 0
@@ -2271,8 +2273,8 @@
         "total": 263,
         "placeable": 263,
         "unplaceable": 0,
-        "eea": 101,
-        "non_eea": 162,
+        "eea": 100,
+        "non_eea": 163,
         "countries": {
           "United States": 91,
           "Canada": 28,
@@ -2281,17 +2283,17 @@
           "Ireland": 15,
           "United Kingdom": 12,
           "Portugal": 12,
-          "India": 8,
+          "India": 9,
           "Germany": 7,
           "Norway": 7,
           "Singapore": 5,
-          "Belgium": 4,
           "Romania": 4,
           "France": 3,
           "Brazil": 3,
           "Japan": 3,
           "Saudi Arabia": 3,
           "Poland": 3,
+          "Belgium": 3,
           "Switzerland": 2,
           "Costa Rica": 2,
           "Mexico": 2,
@@ -2320,15 +2322,15 @@
               },
               {
                 "title": "Associate Corporate Counsel - Legal Product, IP, and Marketing",
-                "location": "United States",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8093273&gh_jid=8093273",
+                "location": "Canada",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8122981&gh_jid=8122981",
                 "matched": "across time zones",
                 "excerpt": "orkflows and \"productization\" processes that help a legal team scale. Global Perspective: Comfortable working across time zones and cultures in a distributed culture with a flexible approach to problem-solving. Compensation for this role"
               },
               {
                 "title": "Associate Corporate Counsel - Legal Product, IP, and Marketing",
-                "location": "Canada",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8122981&gh_jid=8122981",
+                "location": "United States",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8093273&gh_jid=8093273",
                 "matched": "across time zones",
                 "excerpt": "orkflows and \"productization\" processes that help a legal team scale. Global Perspective: Comfortable working across time zones and cultures in a distributed culture with a flexible approach to problem-solving. Compensation for this role"
               }
@@ -2514,11 +2516,8 @@
           "sha256": "245c0fd1c2ba7f7c",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 17,
-            "revisions": 16,
-            "first": "2026-06-08",
-            "last": "2026-08-13"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -2540,13 +2539,13 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 85,
-        "placeable": 83,
+        "total": 83,
+        "placeable": 81,
         "unplaceable": 2,
         "eea": 9,
-        "non_eea": 74,
+        "non_eea": 72,
         "countries": {
-          "United States": 65,
+          "United States": 63,
           "United Kingdom": 18,
           "Germany": 9,
           "Australia": 3,
