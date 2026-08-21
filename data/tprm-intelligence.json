@@ -547,7 +547,7 @@
       "category": "Model provider",
       "public_evidence_only": true,
       "surface": {
-        "grade": "48",
+        "grade": "50",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "5 public documents · 3 open reconciliations"
@@ -594,8 +594,11 @@
           "sha256": "85c78c93175ffb26",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2024-02-21",
+            "last": "2026-03-20"
           }
         },
         {
@@ -609,7 +612,7 @@
           "diff": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectTimeout"
+            "reason": "ConnectionError"
           }
         },
         {
@@ -621,11 +624,8 @@
           "sha256": "cc6e6d21a41fed8e",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 10,
-            "revisions": 9,
-            "first": "2026-07-14",
-            "last": "2026-08-19"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
@@ -634,7 +634,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "460 of 482 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "476 of 498 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -643,15 +643,19 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 389 open roles"
+              "excerpt": "United States: 400 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 34 open roles"
+              "excerpt": "United Kingdom: 35 open roles"
             },
             {
               "kind": "stat",
               "excerpt": "Japan: 14 open roles"
+            },
+            {
+              "kind": "stat",
+              "excerpt": "Australia: 10 open roles"
             }
           ],
           "question": "Which roles can access production data, and from which countries? Does the residency commitment cover support and engineering access, or only data at rest?"
@@ -660,7 +664,7 @@
           "rule": "access_vs_rotation",
           "severity": "medium",
           "headline": "Restricted-access language alongside global rotations",
-          "detail": "The documents describe access controls in principle, while postings describe follow-the-sun support, on-call access, round-the-clock coverage. Both can be true; the reconciliation is what a reviewer needs to see.",
+          "detail": "The documents describe access controls in principle, while postings describe distributed across time zones, on-call access. Both can be true; the reconciliation is what a reviewer needs to see.",
           "claim": {
             "kind": "terms",
             "text": "Recipient may only share Discloser’s Confidential Information to Recipient’s employees, agents, and advisors that have a need to know such Confidential Information and who are bound to obligations of confidentiality at least as protective as those provided in these Terms (",
@@ -669,11 +673,19 @@
           "evidence": [
             {
               "kind": "job",
-              "title": "AI Operations Engineer, Partnerships",
-              "location": "San Francisco, CA",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5391151008",
-              "matched": "on call",
-              "excerpt": "ifications Hands-on experience building with LLMs and agentic tooling: prompt and workflow design, tool/function calling, MCP or comparable integration frameworks, and evaluating agent output quality Experience working across A"
+              "title": "Applied AI Architect",
+              "location": "Mumbai, India",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5247989008",
+              "matched": "across time zones",
+              "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
+            },
+            {
+              "kind": "job",
+              "title": "Applied AI Architect",
+              "location": "Bangalore, India",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390746008",
+              "matched": "across time zones",
+              "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
             }
           ],
           "question": "For out-of-hours incidents, who is on the rotation, where are they, and is their access to customer data logged and reviewable by the customer?"
@@ -765,21 +777,21 @@
       },
       "jobs": {
         "ok": true,
-        "total": 483,
-        "placeable": 482,
+        "total": 499,
+        "placeable": 498,
         "unplaceable": 1,
         "eea": 22,
-        "non_eea": 460,
+        "non_eea": 476,
         "countries": {
-          "United States": 389,
-          "United Kingdom": 34,
+          "United States": 400,
+          "United Kingdom": 35,
           "Japan": 14,
-          "Ireland": 11,
           "Australia": 10,
+          "Ireland": 10,
+          "Singapore": 9,
           "Germany": 7,
-          "Singapore": 6,
-          "South Korea": 5,
-          "France": 4,
+          "South Korea": 6,
+          "France": 5,
           "India": 3,
           "Canada": 2,
           "Switzerland": 2
@@ -810,6 +822,29 @@
             ]
           },
           {
+            "key": "distributed",
+            "label": "Distributed across time zones",
+            "severity": "high",
+            "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
+            "count": 2,
+            "examples": [
+              {
+                "title": "Applied AI Architect",
+                "location": "Mumbai, India",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5247989008",
+                "matched": "across time zones",
+                "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
+              },
+              {
+                "title": "Applied AI Architect",
+                "location": "Bangalore, India",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390746008",
+                "matched": "across time zones",
+                "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
+              }
+            ]
+          },
+          {
             "key": "oncall",
             "label": "On-call access",
             "severity": "high",
@@ -822,38 +857,6 @@
                 "url": "https://job-boards.greenhouse.io/anthropic/jobs/5391151008",
                 "matched": "on call",
                 "excerpt": "ifications Hands-on experience building with LLMs and agentic tooling: prompt and workflow design, tool/function calling, MCP or comparable integration frameworks, and evaluating agent output quality Experience working across A"
-              }
-            ]
-          },
-          {
-            "key": "follow_the_sun",
-            "label": "Follow-the-sun support",
-            "severity": "high",
-            "why": "A rotation that hands the same production access around the globe every eight hours.",
-            "count": 1,
-            "examples": [
-              {
-                "title": "Country Lead, Data Center Security",
-                "location": "Sydney, Australia",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5311686008",
-                "matched": "follow-the-sun",
-                "excerpt": "regional security controls Provide after-hours coverage and structured handoffs to US-based teams as part of follow-the-sun security operations Minimum qualifications Hands-on experience administering enterprise physical security sys"
-              }
-            ]
-          },
-          {
-            "key": "round_clock",
-            "label": "Round-the-clock coverage",
-            "severity": "medium",
-            "why": "Continuous coverage from one time zone is rare; assume more than one.",
-            "count": 1,
-            "examples": [
-              {
-                "title": "Country Lead, Data Center Security",
-                "location": "Sydney, Australia",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5311686008",
-                "matched": "24/7",
-                "excerpt": "a feature: this role anchors coverage and escalation when the US is offline, and may help stand up a regional 24/7 monitoring capability as the program matures. Key responsibilities Serve as the regional operations lead for"
               }
             ]
           },
@@ -930,11 +933,8 @@
           "sha256": "8d3c9629d73c5991",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2018-05-14",
-            "last": "2018-09-15"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -963,10 +963,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 155,
-            "revisions": 154,
+            "captures": 156,
+            "revisions": 155,
             "first": "2018-11-17",
-            "last": "2026-07-18"
+            "last": "2026-08-18"
           }
         },
         {
@@ -978,8 +978,11 @@
           "sha256": "253254e28bc2ff29",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2021-05-16",
+            "last": "2025-10-08"
           }
         }
       ],
@@ -1024,7 +1027,7 @@
               "location": "Hybrid",
               "url": "https://boards.greenhouse.io/cloudflare/jobs/7462799?gh_jid=7462799",
               "matched": "on-call",
-              "excerpt": "Join us in our mission to help build a better internet for everyone! This role may require flexibility to be on-call outside of standard working hours to address technical issues as needed. Equity This role is eligible to part"
+              "excerpt": "Join us in our mission to help build a better internet for everyone! This role may require flexibility to be on-call outside of standard working hours to address technical issues as needed. Compensation Compensation may be adj"
             }
           ],
           "question": "For out-of-hours incidents, who is on the rotation, where are they, and is their access to customer data logged and reviewable by the customer?"
@@ -1077,13 +1080,13 @@
         "sensitivity_score": 10,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": true
+        "source_documents_changed": false
       },
       "jobs": {
         "ok": true,
-        "total": 304,
+        "total": 305,
         "placeable": 7,
-        "unplaceable": 297,
+        "unplaceable": 298,
         "eea": 0,
         "non_eea": 7,
         "countries": {
@@ -1112,7 +1115,7 @@
                 "location": "Hybrid",
                 "url": "https://boards.greenhouse.io/cloudflare/jobs/7462799?gh_jid=7462799",
                 "matched": "on-call",
-                "excerpt": "Join us in our mission to help build a better internet for everyone! This role may require flexibility to be on-call outside of standard working hours to address technical issues as needed. Equity This role is eligible to part"
+                "excerpt": "Join us in our mission to help build a better internet for everyone! This role may require flexibility to be on-call outside of standard working hours to address technical issues as needed. Compensation Compensation may be adj"
               },
               {
                 "title": "Distributed Systems Engineer - Data Platform - Analytics and Alerts",
@@ -1244,49 +1247,58 @@
       "category": "Observability",
       "public_evidence_only": true,
       "surface": {
-        "grade": "68",
+        "grade": "43",
         "posture": "public evidence index",
         "confidence": "bounded",
-        "summary": "3 public documents · 4 open reconciliations"
+        "summary": "3 public documents · 3 open reconciliations"
       },
       "documents": [
         {
           "kind": "privacy",
           "url": "https://www.datadoghq.com/legal/privacy/",
           "path": "data/snapshots/datadog/privacy.txt",
-          "lines": 456,
-          "chars": 26200,
-          "sha256": "9da08ec768f6c700",
+          "lines": 455,
+          "chars": 26184,
+          "sha256": "58ce48c87de09d47",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2017-06-30",
+            "last": "2025-04-25"
           }
         },
         {
           "kind": "dpa",
           "url": "https://www.datadoghq.com/legal/data-processing-addendum/",
           "path": "data/snapshots/datadog/dpa.txt",
-          "lines": 472,
-          "chars": 29850,
-          "sha256": "f4f4a18f47205c0a",
+          "lines": 471,
+          "chars": 29834,
+          "sha256": "46bae6a6ca8c08ed",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 33,
+            "revisions": 32,
+            "first": "2022-05-28",
+            "last": "2026-08-03"
           }
         },
         {
           "kind": "subprocessors",
           "url": "https://www.datadoghq.com/legal/subprocessors/",
           "path": "data/snapshots/datadog/subprocessors.txt",
-          "lines": 271,
-          "chars": 5012,
-          "sha256": "b5a9ad2baa6f3dd5",
+          "lines": 270,
+          "chars": 4996,
+          "sha256": "b5c3e88a3bf3e9d9",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 19,
+            "revisions": 18,
+            "first": "2024-05-24",
+            "last": "2026-05-25"
           }
         }
       ],
@@ -1356,24 +1368,6 @@
             }
           ],
           "question": "For out-of-hours incidents, who is on the rotation, where are they, and is their access to customer data logged and reviewable by the customer?"
-        },
-        {
-          "rule": "subprocessor_gap",
-          "severity": "low",
-          "headline": "Segment appears in hiring, not in the published documents",
-          "detail": "Engineering job descriptions name Segment, but it does not appear anywhere in the legal documents collected including the sub-processor list at https://www.datadoghq.com/legal/subprocessors/.",
-          "claim": null,
-          "evidence": [
-            {
-              "kind": "job",
-              "title": "Area Vice President, Enterprise Security Sales",
-              "location": "New York, New York, USA; San Francisco, California, USA",
-              "url": "https://careers.datadoghq.com/detail/7508990/?gh_jid=7508990",
-              "matched": "segment",
-              "excerpt": "cialists are deployed to create, accelerate, and expand pipeline alongside Enterprise AEs. Define and execute segment-level growth strategies across enterprise customers, including net-new acquisition, platform expansion, and m"
-            }
-          ],
-          "question": "Is Segment a sub-processor? If it is, when was it added to the list, and were customers notified? If it never touches customer data, what is it used for?"
         }
       ],
       "classification": {
@@ -1423,26 +1417,26 @@
         "sensitivity_score": 20,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": false
+        "source_documents_changed": true
       },
       "jobs": {
         "ok": true,
-        "total": 435,
-        "placeable": 435,
+        "total": 442,
+        "placeable": 442,
         "unplaceable": 0,
-        "eea": 91,
-        "non_eea": 344,
+        "eea": 93,
+        "non_eea": 349,
         "countries": {
-          "United States": 214,
-          "France": 50,
+          "United States": 217,
+          "France": 52,
           "Japan": 46,
-          "Ireland": 24,
+          "Ireland": 26,
           "Singapore": 18,
           "Brazil": 17,
           "United Kingdom": 17,
-          "Netherlands": 15,
+          "Netherlands": 16,
           "Spain": 15,
-          "South Korea": 10,
+          "South Korea": 12,
           "Australia": 10,
           "Portugal": 8,
           "India": 7,
@@ -1517,13 +1511,6 @@
             "count": 3,
             "examples": [
               {
-                "title": "Area Vice President, Enterprise Security Sales",
-                "location": "New York, New York, USA; San Francisco, California, USA",
-                "url": "https://careers.datadoghq.com/detail/7508990/?gh_jid=7508990",
-                "matched": "segment",
-                "excerpt": "cialists are deployed to create, accelerate, and expand pipeline alongside Enterprise AEs. Define and execute segment-level growth strategies across enterprise customers, including net-new acquisition, platform expansion, and m"
-              },
-              {
                 "title": "Group Product Manager - Bring Your Own Cloud",
                 "location": "New York, New York, USA",
                 "url": "https://careers.datadoghq.com/detail/8024863/?gh_jid=8024863",
@@ -1536,6 +1523,13 @@
                 "url": "https://careers.datadoghq.com/detail/8049521/?gh_jid=8049521",
                 "matched": "Salesforce",
                 "excerpt": "p; Alliances organization, ensuring execution is timely, accurate, and scalable. Build, maintain, and enhance Salesforce reports and dashboards to provide visibility into pipeline, partner performance, and other key business metri"
+              },
+              {
+                "title": "GTM Strategy and Operations Associate",
+                "location": "New York, New York, USA",
+                "url": "https://careers.datadoghq.com/detail/7843331/?gh_jid=7843331",
+                "matched": "Salesforce",
+                "excerpt": "egration: Collaborate with GTM Systems to maintain and improve integrations between sales productivity tools, Salesforce CRM, and the broader GTM tech stack Set the standard: Build and enforce governance frameworks, acceptable use"
               }
             ]
           },
@@ -1557,7 +1551,77 @@
           }
         ]
       },
-      "drift": []
+      "drift": [
+        {
+          "id": "datadog-privacy-2026-08-21",
+          "vendor_id": "datadog",
+          "vendor_name": "Datadog",
+          "document": "privacy",
+          "document_label": "Privacy policy",
+          "date": "2026-08-21",
+          "url": "https://www.datadoghq.com/legal/privacy/",
+          "hunks": [
+            {
+              "before": null,
+              "after": "Data Observability"
+            },
+            {
+              "before": "Quality Monitoring",
+              "after": null
+            },
+            {
+              "before": "Jobs Monitoring",
+              "after": null
+            }
+          ]
+        },
+        {
+          "id": "datadog-dpa-2026-08-21",
+          "vendor_id": "datadog",
+          "vendor_name": "Datadog",
+          "document": "dpa",
+          "document_label": "Data processing agreement",
+          "date": "2026-08-21",
+          "url": "https://www.datadoghq.com/legal/data-processing-addendum/",
+          "hunks": [
+            {
+              "before": null,
+              "after": "Data Observability"
+            },
+            {
+              "before": "Quality Monitoring",
+              "after": null
+            },
+            {
+              "before": "Jobs Monitoring",
+              "after": null
+            }
+          ]
+        },
+        {
+          "id": "datadog-subprocessors-2026-08-21",
+          "vendor_id": "datadog",
+          "vendor_name": "Datadog",
+          "document": "subprocessors",
+          "document_label": "Sub-processor list",
+          "date": "2026-08-21",
+          "url": "https://www.datadoghq.com/legal/subprocessors/",
+          "hunks": [
+            {
+              "before": null,
+              "after": "Data Observability"
+            },
+            {
+              "before": "Quality Monitoring",
+              "after": null
+            },
+            {
+              "before": "Jobs Monitoring",
+              "after": null
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "stripe",
@@ -1565,7 +1629,7 @@
       "category": "Payments",
       "public_evidence_only": true,
       "surface": {
-        "grade": "41",
+        "grade": "47",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "3 public documents · 3 open reconciliations"
@@ -1779,18 +1843,18 @@
       },
       "jobs": {
         "ok": true,
-        "total": 576,
-        "placeable": 507,
-        "unplaceable": 69,
+        "total": 569,
+        "placeable": 502,
+        "unplaceable": 67,
         "eea": 66,
-        "non_eea": 441,
+        "non_eea": 436,
         "countries": {
-          "United States": 266,
+          "United States": 262,
           "Canada": 54,
           "Ireland": 52,
-          "Singapore": 41,
+          "Singapore": 39,
           "India": 39,
-          "United Kingdom": 31,
+          "United Kingdom": 33,
           "Mexico": 25,
           "Australia": 11,
           "Japan": 4,
@@ -1815,7 +1879,7 @@
             "label": "Travel expected",
             "severity": "high",
             "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 2,
+            "count": 4,
             "examples": [
               {
                 "title": "Account Executive, Existing Business, Platforms",
@@ -1830,6 +1894,13 @@
                 "url": "https://stripe.com/jobs/search?gh_jid=8060387",
                 "matched": "willing to travel",
                 "excerpt": "s, rapidly evolving environments and balancing&nbsp;strategic thinking with hands-on execution. ● Based in or willing to travel frequently San Francisco, CA . &nbsp; Preferred qualifications ● Background in platform or ecosystem sales (e"
+              },
+              {
+                "title": "Communities Partner Development Manager, SaaS Platforms",
+                "location": "US-Remote",
+                "url": "https://stripe.com/jobs/search?gh_jid=8103952",
+                "matched": "willingness to travel",
+                "excerpt": "ayment or financial-services technology, industry trends, and the competitive landscape Bachelor’s degree and willingness to travel Preferred qualifications Experience working in the financial services or payments industry Strong written and"
               }
             ]
           },
@@ -1905,7 +1976,7 @@
       "category": "Design SaaS",
       "public_evidence_only": true,
       "surface": {
-        "grade": "48",
+        "grade": "73",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "3 public documents · 1 open reconciliations"
@@ -1921,7 +1992,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectTimeout"
+            "reason": "ConnectionError"
           }
         },
         {
@@ -1933,27 +2004,21 @@
           "sha256": "4bde694018c282cd",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 14,
-            "revisions": 13,
-            "first": "2025-04-01",
-            "last": "2026-06-20"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
           "kind": "subprocessors",
           "url": "https://www.figma.com/sub-processors/",
           "path": "data/snapshots/figma/subprocessors.txt",
-          "lines": 311,
-          "chars": 7712,
-          "sha256": "d3dfe39c1a7b2473",
+          "lines": 326,
+          "chars": 8005,
+          "sha256": "afbbe2131f13839e",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 81,
-            "revisions": 80,
-            "first": "2019-04-01",
-            "last": "2026-07-28"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
@@ -1962,7 +2027,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "148 of 163 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "146 of 161 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -1971,7 +2036,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 99 open roles"
+              "excerpt": "United States: 96 open roles"
             },
             {
               "kind": "stat",
@@ -2052,25 +2117,25 @@
         "sensitivity_score": 30,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": false
+        "source_documents_changed": true
       },
       "jobs": {
         "ok": true,
-        "total": 163,
-        "placeable": 163,
+        "total": 161,
+        "placeable": 161,
         "unplaceable": 0,
         "eea": 15,
-        "non_eea": 148,
+        "non_eea": 146,
         "countries": {
-          "United States": 99,
+          "United States": 96,
           "United Kingdom": 18,
           "Japan": 10,
           "Germany": 8,
           "Singapore": 7,
           "France": 6,
           "Israel": 5,
+          "Australia": 4,
           "Brazil": 4,
-          "Australia": 3,
           "India": 2,
           "Ireland": 1
         },
@@ -2202,6 +2267,41 @@
       },
       "drift": [
         {
+          "id": "figma-subprocessors-2026-08-21",
+          "vendor_id": "figma",
+          "vendor_name": "Figma",
+          "document": "subprocessors",
+          "document_label": "Sub-processor list",
+          "date": "2026-08-21",
+          "url": "https://www.figma.com/sub-processors/",
+          "hunks": [
+            {
+              "before": null,
+              "after": "United States"
+            },
+            {
+              "before": null,
+              "after": "Customer Content"
+            },
+            {
+              "before": null,
+              "after": "Digital Ocean"
+            },
+            {
+              "before": null,
+              "after": "Payload"
+            },
+            {
+              "before": null,
+              "after": "Ephemeral Processing"
+            },
+            {
+              "before": null,
+              "after": "EU, Indonesia, Malaysia"
+            }
+          ]
+        },
+        {
           "id": "figma-dpa-2026-08-14",
           "vendor_id": "figma",
           "vendor_name": "Figma",
@@ -2274,8 +2374,11 @@
           "sha256": "b8fd30b8b1e6bdaa",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2015-04-16",
+            "last": "2026-02-17"
           }
         },
         {
@@ -2288,10 +2391,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 78,
-            "revisions": 77,
+            "captures": 80,
+            "revisions": 79,
             "first": "2020-11-27",
-            "last": "2026-08-09"
+            "last": "2026-08-18"
           }
         },
         {
@@ -2431,31 +2534,31 @@
       },
       "jobs": {
         "ok": true,
-        "total": 199,
-        "placeable": 192,
+        "total": 206,
+        "placeable": 199,
         "unplaceable": 7,
-        "eea": 27,
-        "non_eea": 165,
+        "eea": 28,
+        "non_eea": 171,
         "countries": {
-          "United States": 87,
-          "Canada": 44,
-          "United Kingdom": 39,
-          "India": 35,
+          "United States": 93,
+          "Canada": 49,
+          "United Kingdom": 42,
+          "India": 36,
           "Germany": 15,
           "Ireland": 10,
-          "Poland": 7,
+          "Poland": 8,
           "Netherlands": 6,
           "United Arab Emirates": 6,
           "France": 6,
           "Japan": 5,
+          "Israel": 5,
           "Singapore": 5,
           "Italy": 4,
           "Australia": 4,
-          "Israel": 4,
-          "Brazil": 3,
           "Spain": 3,
           "Mexico": 3,
           "Austria": 3,
+          "Brazil": 2,
           "Denmark": 2,
           "Sweden": 2,
           "Switzerland": 1,
@@ -2470,7 +2573,7 @@
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 10,
+            "count": 11,
             "examples": [
               {
                 "title": "Commercial Legal Counsel, Public Sector ",
@@ -2510,18 +2613,18 @@
                 "excerpt": "o make unit economics part of the system design. Own the reliability model for cell infrastructure, including on-call practices, incident response, and postmortem follow-through. Partner with adjacent teams such as Git infrastr"
               },
               {
+                "title": "Intermediate Software Engineer, Security Factory: Vulnerability Management ",
+                "location": "Remote, Canada; Remote, Israel; Remote, United Kingdom; Remote, United States",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8688078002",
+                "matched": "on-call",
+                "excerpt": "ze impediments to our efficiency as a team (\"technical debt\"), propose and implement solutions Participate in on-call rotations to assist troubleshooting product operations, security operations, and urgent engineering issues. W"
+              },
+              {
                 "title": "Intermediate Support Engineer",
                 "location": "Bangalore, India",
                 "url": "https://job-boards.greenhouse.io/gitlab/jobs/8687026002",
                 "matched": "on-call",
                 "excerpt": "able Counterparts) to solve challenging cases and share knowledge. Participate in regular weekday and weekend on-call rotations (daytime only), providing emergency support for Self-managed and SaaS customers and coordinating in"
-              },
-              {
-                "title": "Intermediate Support Engineer (SHIFT)",
-                "location": "Remote, United Kingdom",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8684078002",
-                "matched": "on-call",
-                "excerpt": "bers (for example: as a Support Stable Counterpart ) Participate in regular rotations for weekday and weekend on-call coverage (daytime only), providing emergency support to our Self-managed and SaaS customers, or working with"
               }
             ]
           },
@@ -2547,7 +2650,7 @@
                 "excerpt": "teams and creating clear, accountable operating practices in a distributed or remote environment. Ability and willingness to travel in line with business needs and GitLab's travel policy. About the team The Solutions Architects team at GitLa"
               },
               {
-                "title": "Manager, Solutions Architects",
+                "title": "Manager, Solutions Architects - San Francisco ",
                 "location": "Remote, US",
                 "url": "https://job-boards.greenhouse.io/gitlab/jobs/8396674002",
                 "matched": "willingness to travel",
@@ -2684,7 +2787,7 @@
       "category": "Search and data",
       "public_evidence_only": true,
       "surface": {
-        "grade": "57",
+        "grade": "58",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "1 public documents · 1 open reconciliations"
@@ -2769,19 +2872,19 @@
       },
       "jobs": {
         "ok": true,
-        "total": 263,
-        "placeable": 263,
+        "total": 249,
+        "placeable": 249,
         "unplaceable": 0,
-        "eea": 100,
-        "non_eea": 163,
+        "eea": 89,
+        "non_eea": 160,
         "countries": {
-          "United States": 91,
-          "Canada": 28,
-          "Spain": 27,
-          "Greece": 16,
-          "Ireland": 15,
+          "United States": 92,
+          "Canada": 25,
+          "Spain": 23,
           "United Kingdom": 12,
+          "Ireland": 12,
           "Portugal": 12,
+          "Greece": 12,
           "India": 9,
           "Germany": 7,
           "Norway": 7,
@@ -2793,10 +2896,10 @@
           "Saudi Arabia": 3,
           "Poland": 3,
           "Belgium": 3,
-          "Switzerland": 2,
           "Costa Rica": 2,
           "Mexico": 2,
           "United Arab Emirates": 1,
+          "Switzerland": 1,
           "South Korea": 1,
           "Hungary": 1,
           "Denmark": 1,
@@ -2858,8 +2961,8 @@
               },
               {
                 "title": "Principal AI Ecosystem Architect - OpenAI/Anthropic",
-                "location": "San Francisco, CA",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8047165&gh_jid=8047165",
+                "location": "Washington, United States",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8065489&gh_jid=8065489",
                 "matched": "Willingness to travel",
                 "excerpt": "ve presenting at a developer conference and working through an architecture question with a partner engineer. Willingness to travel 30% to partner offices, events, and conferences. Bonus Points Direct experience working with OpenAI and/or An"
               }
@@ -2937,7 +3040,7 @@
       "category": "App hosting",
       "public_evidence_only": true,
       "surface": {
-        "grade": "55",
+        "grade": "72",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "2 public documents · 2 open reconciliations"
@@ -2952,8 +3055,11 @@
           "sha256": "245c0fd1c2ba7f7c",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 9,
+            "revisions": 8,
+            "first": "2026-06-11",
+            "last": "2026-08-13"
           }
         },
         {
@@ -2965,11 +3071,8 @@
           "sha256": "c6f2954ea450f34e",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 146,
-            "revisions": 145,
-            "first": "2020-04-23",
-            "last": "2026-08-11"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
@@ -3065,9 +3168,9 @@
       },
       "jobs": {
         "ok": true,
-        "total": 83,
+        "total": 84,
         "placeable": 81,
-        "unplaceable": 2,
+        "unplaceable": 3,
         "eea": 9,
         "non_eea": 72,
         "countries": {

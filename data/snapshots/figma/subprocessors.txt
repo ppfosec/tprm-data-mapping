@@ -1,5 +1,5 @@
 # source: https://www.figma.com/sub-processors/
-# collected: 2026-08-20
+# collected: 2026-08-21
 
 Figma Sub-processors
 Last Updated:
@@ -46,6 +46,11 @@ Identifiers associated with Customer accounts and their authorized users (such a
 Datadog, Inc.
 All Services
 Infrastructure monitoring and debugging
+United States
+Customer Content
+Digital Ocean
+Payload
+Ephemeral Processing
 United States
 Customer Content
 Functional Software, Inc.
@@ -160,6 +165,11 @@ Create Without Limits Technologies Inc.
 (dba Enhancor)
 Figma Weave
 Selectable AI model provider
+EU, Indonesia, Malaysia
+Prompt Inputs and Outputs
+Eleven Labs Inc.
+Figma Weave
+Selectable AI model provider
 United States
 Prompt Inputs and Outputs
 Features & Labels, Inc.
@@ -201,6 +211,11 @@ Selectable AI model provider
 United States
 Prompt Inputs and Outputs
 Runway AI, Inc.
+Figma Weave
+Selectable AI model provider
+United States
+Prompt Inputs and Outputs
+World Labs Technologies, Inc.
 Figma Weave
 Selectable AI model provider
 United States
