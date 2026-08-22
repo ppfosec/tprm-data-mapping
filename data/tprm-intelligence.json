@@ -547,7 +547,7 @@
       "category": "Model provider",
       "public_evidence_only": true,
       "surface": {
-        "grade": "50",
+        "grade": "46",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "5 public documents · 3 open reconciliations"
@@ -611,8 +611,11 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 53,
+            "revisions": 52,
+            "first": "2024-09-26",
+            "last": "2026-08-01"
           }
         },
         {
@@ -634,7 +637,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "476 of 498 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "492 of 516 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -643,19 +646,15 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 400 open roles"
+              "excerpt": "United States: 409 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 35 open roles"
+              "excerpt": "United Kingdom: 39 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "Japan: 14 open roles"
-            },
-            {
-              "kind": "stat",
-              "excerpt": "Australia: 10 open roles"
+              "excerpt": "Japan: 15 open roles"
             }
           ],
           "question": "Which roles can access production data, and from which countries? Does the residency commitment cover support and engineering access, or only data at rest?"
@@ -673,19 +672,11 @@
           "evidence": [
             {
               "kind": "job",
-              "title": "Applied AI Architect",
-              "location": "Mumbai, India",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5247989008",
-              "matched": "across time zones",
-              "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
-            },
-            {
-              "kind": "job",
-              "title": "Applied AI Architect",
-              "location": "Bangalore, India",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390746008",
-              "matched": "across time zones",
-              "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
+              "title": "AI Operations Engineer, Partnerships",
+              "location": "San Francisco, CA",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5391151008",
+              "matched": "on call",
+              "excerpt": "ifications Hands-on experience building with LLMs and agentic tooling: prompt and workflow design, tool/function calling, MCP or comparable integration frameworks, and evaluating agent output quality Experience working across A"
             }
           ],
           "question": "For out-of-hours incidents, who is on the rotation, where are they, and is their access to customer data logged and reviewable by the customer?"
@@ -777,24 +768,24 @@
       },
       "jobs": {
         "ok": true,
-        "total": 499,
-        "placeable": 498,
+        "total": 517,
+        "placeable": 516,
         "unplaceable": 1,
-        "eea": 22,
-        "non_eea": 476,
+        "eea": 24,
+        "non_eea": 492,
         "countries": {
-          "United States": 400,
-          "United Kingdom": 35,
-          "Japan": 14,
+          "United States": 409,
+          "United Kingdom": 39,
+          "Japan": 15,
+          "Ireland": 11,
           "Australia": 10,
-          "Ireland": 10,
           "Singapore": 9,
-          "Germany": 7,
+          "Germany": 8,
           "South Korea": 6,
           "France": 5,
-          "India": 3,
-          "Canada": 2,
-          "Switzerland": 2
+          "India": 4,
+          "Switzerland": 3,
+          "Canada": 2
         },
         "scanned": 26,
         "signals": [
@@ -822,29 +813,6 @@
             ]
           },
           {
-            "key": "distributed",
-            "label": "Distributed across time zones",
-            "severity": "high",
-            "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 2,
-            "examples": [
-              {
-                "title": "Applied AI Architect",
-                "location": "Mumbai, India",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5247989008",
-                "matched": "across time zones",
-                "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
-              },
-              {
-                "title": "Applied AI Architect",
-                "location": "Bangalore, India",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390746008",
-                "matched": "across time zones",
-                "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
-              }
-            ]
-          },
-          {
             "key": "oncall",
             "label": "On-call access",
             "severity": "high",
@@ -857,6 +825,22 @@
                 "url": "https://job-boards.greenhouse.io/anthropic/jobs/5391151008",
                 "matched": "on call",
                 "excerpt": "ifications Hands-on experience building with LLMs and agentic tooling: prompt and workflow design, tool/function calling, MCP or comparable integration frameworks, and evaluating agent output quality Experience working across A"
+              }
+            ]
+          },
+          {
+            "key": "distributed",
+            "label": "Distributed across time zones",
+            "severity": "high",
+            "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
+            "count": 1,
+            "examples": [
+              {
+                "title": "Applied AI Architect",
+                "location": "Bangalore, India",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390746008",
+                "matched": "across time zones",
+                "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
               }
             ]
           },
@@ -918,7 +902,7 @@
       "category": "Edge network",
       "public_evidence_only": true,
       "surface": {
-        "grade": "50",
+        "grade": "47",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "4 public documents · 2 open reconciliations"
@@ -946,11 +930,8 @@
           "sha256": "d999aff5712a68aa",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 281,
-            "revisions": 280,
-            "first": "2021-09-03",
-            "last": "2026-08-15"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -963,10 +944,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 156,
-            "revisions": 155,
+            "captures": 154,
+            "revisions": 153,
             "first": "2018-11-17",
-            "last": "2026-08-18"
+            "last": "2026-05-20"
           }
         },
         {
@@ -1084,15 +1065,16 @@
       },
       "jobs": {
         "ok": true,
-        "total": 305,
-        "placeable": 7,
-        "unplaceable": 298,
-        "eea": 0,
+        "total": 308,
+        "placeable": 8,
+        "unplaceable": 300,
+        "eea": 1,
         "non_eea": 7,
         "countries": {
           "India": 3,
           "United States": 3,
-          "Japan": 1
+          "Japan": 1,
+          "Portugal": 1
         },
         "scanned": 26,
         "signals": [
@@ -1131,30 +1113,21 @@
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 1,
+            "count": 2,
             "examples": [
+              {
+                "title": "Associate General Counsel, Privacy Compliance",
+                "location": "Hybrid",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8144669?gh_jid=8144669",
+                "matched": "globally distributed",
+                "excerpt": "and digestible for non-lawyers&nbsp; A willingness to work flexibly on occasion to accommodate working with a globally distributed team Technical background / expertise is highly desired – while a science or technical degree is not a prereq"
+              },
               {
                 "title": "Engineering Manager, Cloudflare Network Interconnect",
                 "location": "Hybrid",
                 "url": "https://boards.greenhouse.io/cloudflare/jobs/8083701?gh_jid=8083701",
                 "matched": "distributed team",
                 "excerpt": "argest customers. What you'll do As an Engineering Manager on the CNI team you will hire, mentor, and coach a distributed team of Software Engineers. You will play a key role in developing the team and shaping its culture and technical"
-              }
-            ]
-          },
-          {
-            "key": "travel",
-            "label": "Travel expected",
-            "severity": "high",
-            "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 1,
-            "examples": [
-              {
-                "title": "Principal Solutions Architect, Public Sector Federal",
-                "location": "Hybrid",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/8131824?gh_jid=8131824",
-                "matched": "Travel up to 40%",
-                "excerpt": "eation and delivery. Contribute industry expertise to guide Cloudflare’s go-to-market and platform evolution. Travel up to 40% during the quarter to support partner engagements, attend conferences, represent Cloudflare at industry event"
               }
             ]
           },
@@ -1187,22 +1160,6 @@
                 "url": "https://boards.greenhouse.io/cloudflare/jobs/8054669?gh_jid=8054669",
                 "matched": "Snowflake",
                 "excerpt": "h a focus on enabling GTM organizations. Columnar/OLAP or lakehouse experience (ClickHouse, DuckDB, BigQuery, Snowflake, Iceberg, Starrocks).Familiarity with the Salesforce data model and CRM/API integrations. Familiarity with de"
-              }
-            ]
-          },
-          {
-            "key": "gov_enclave",
-            "label": "Government enclave",
-            "severity": "low",
-            "why": "A separate sovereign estate exists, which confirms the commercial one is not it.",
-            "count": 1,
-            "examples": [
-              {
-                "title": "Principal Solutions Architect, Public Sector Federal",
-                "location": "Hybrid",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/8131824?gh_jid=8131824",
-                "matched": "FEDRAMP",
-                "excerpt": "el. Aware of government and industry standards, frameworks and compliance requirements (i.e, HIPAA, PCI, SOX, FEDRAMP, GDPR, NIS2, etc.). Experience in designing architecture, migration, and implementation of cloud, edge and on"
               }
             ]
           }
@@ -1247,7 +1204,7 @@
       "category": "Observability",
       "public_evidence_only": true,
       "surface": {
-        "grade": "43",
+        "grade": "42",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "3 public documents · 3 open reconciliations"
@@ -1294,11 +1251,8 @@
           "sha256": "b5c3e88a3bf3e9d9",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 19,
-            "revisions": 18,
-            "first": "2024-05-24",
-            "last": "2026-05-25"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
@@ -1417,29 +1371,29 @@
         "sensitivity_score": 20,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": true
+        "source_documents_changed": false
       },
       "jobs": {
         "ok": true,
-        "total": 442,
-        "placeable": 442,
+        "total": 448,
+        "placeable": 448,
         "unplaceable": 0,
         "eea": 93,
-        "non_eea": 349,
+        "non_eea": 355,
         "countries": {
-          "United States": 217,
+          "United States": 221,
           "France": 52,
           "Japan": 46,
           "Ireland": 26,
           "Singapore": 18,
+          "United Kingdom": 18,
           "Brazil": 17,
-          "United Kingdom": 17,
           "Netherlands": 16,
           "Spain": 15,
           "South Korea": 12,
           "Australia": 10,
+          "India": 8,
           "Portugal": 8,
-          "India": 7,
           "Germany": 6,
           "Italy": 5,
           "Mexico": 4,
@@ -1508,7 +1462,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 3,
+            "count": 2,
             "examples": [
               {
                 "title": "Group Product Manager - Bring Your Own Cloud",
@@ -1523,13 +1477,6 @@
                 "url": "https://careers.datadoghq.com/detail/8049521/?gh_jid=8049521",
                 "matched": "Salesforce",
                 "excerpt": "p; Alliances organization, ensuring execution is timely, accurate, and scalable. Build, maintain, and enhance Salesforce reports and dashboards to provide visibility into pipeline, partner performance, and other key business metri"
-              },
-              {
-                "title": "GTM Strategy and Operations Associate",
-                "location": "New York, New York, USA",
-                "url": "https://careers.datadoghq.com/detail/7843331/?gh_jid=7843331",
-                "matched": "Salesforce",
-                "excerpt": "egration: Collaborate with GTM Systems to maintain and improve integrations between sales productivity tools, Salesforce CRM, and the broader GTM tech stack Set the standard: Build and enforce governance frameworks, acceptable use"
               }
             ]
           },
@@ -1629,7 +1576,7 @@
       "category": "Payments",
       "public_evidence_only": true,
       "surface": {
-        "grade": "47",
+        "grade": "45",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "3 public documents · 3 open reconciliations"
@@ -1644,11 +1591,8 @@
           "sha256": "ff0e2b002da0ad9f",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2008-07-19",
-            "last": "2020-05-01"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -1661,10 +1605,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 219,
-            "revisions": 218,
+            "captures": 213,
+            "revisions": 212,
             "first": "2022-05-27",
-            "last": "2026-08-15"
+            "last": "2026-08-03"
           }
         },
         {
@@ -1677,10 +1621,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 94,
-            "revisions": 93,
+            "captures": 89,
+            "revisions": 88,
             "first": "2022-12-05",
-            "last": "2026-08-15"
+            "last": "2026-08-03"
           }
         }
       ],
@@ -1843,32 +1787,32 @@
       },
       "jobs": {
         "ok": true,
-        "total": 569,
-        "placeable": 502,
+        "total": 576,
+        "placeable": 509,
         "unplaceable": 67,
-        "eea": 66,
-        "non_eea": 436,
+        "eea": 69,
+        "non_eea": 440,
         "countries": {
-          "United States": 262,
-          "Canada": 54,
-          "Ireland": 52,
-          "Singapore": 39,
+          "United States": 261,
+          "Canada": 56,
+          "Ireland": 54,
+          "Singapore": 40,
           "India": 39,
           "United Kingdom": 33,
-          "Mexico": 25,
+          "Mexico": 27,
           "Australia": 11,
+          "Spain": 5,
           "Japan": 4,
-          "Spain": 4,
           "Germany": 3,
           "Israel": 2,
           "Italy": 2,
+          "Brazil": 2,
           "France": 2,
           "Romania": 2,
           "Taiwan": 1,
           "Luxembourg": 1,
           "United Arab Emirates": 1,
           "New Zealand": 1,
-          "Brazil": 1,
           "Hong Kong": 1,
           "Thailand": 1
         },
@@ -1879,7 +1823,7 @@
             "label": "Travel expected",
             "severity": "high",
             "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 4,
+            "count": 3,
             "examples": [
               {
                 "title": "Account Executive, Existing Business, Platforms",
@@ -1889,16 +1833,16 @@
                 "excerpt": "would be in addition to the base salary. 40 hrs/week Hybrid: 50% remote work permitted. 10 – 20% domestic and international travel required involving in-person meetings with users, company on-sites, industry conferences. Multiple Positions"
               },
               {
-                "title": "Account Executive, Strategic Platform Partnerships",
-                "location": "San Francisco, CA",
-                "url": "https://stripe.com/jobs/search?gh_jid=8060387",
-                "matched": "willing to travel",
-                "excerpt": "s, rapidly evolving environments and balancing&nbsp;strategic thinking with hands-on execution. ● Based in or willing to travel frequently San Francisco, CA . &nbsp; Preferred qualifications ● Background in platform or ecosystem sales (e"
+                "title": "Communities Partner Development Manager, SaaS Platforms",
+                "location": "US-Remote",
+                "url": "https://stripe.com/jobs/search?gh_jid=8103952",
+                "matched": "willingness to travel",
+                "excerpt": "ayment or financial-services technology, industry trends, and the competitive landscape Bachelor’s degree and willingness to travel Preferred qualifications Experience working in the financial services or payments industry Strong written and"
               },
               {
                 "title": "Communities Partner Development Manager, SaaS Platforms",
                 "location": "US-Remote",
-                "url": "https://stripe.com/jobs/search?gh_jid=8103952",
+                "url": "https://stripe.com/jobs/search?gh_jid=8138000",
                 "matched": "willingness to travel",
                 "excerpt": "ayment or financial-services technology, industry trends, and the competitive landscape Bachelor’s degree and willingness to travel Preferred qualifications Experience working in the financial services or payments industry Strong written and"
               }
@@ -1976,7 +1920,7 @@
       "category": "Design SaaS",
       "public_evidence_only": true,
       "surface": {
-        "grade": "73",
+        "grade": "48",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "3 public documents · 1 open reconciliations"
@@ -1991,8 +1935,11 @@
           "sha256": "6e2b46ec94fc52f7",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 262,
+            "revisions": 261,
+            "first": "2024-01-18",
+            "last": "2026-08-18"
           }
         },
         {
@@ -2004,8 +1951,11 @@
           "sha256": "4bde694018c282cd",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 14,
+            "revisions": 13,
+            "first": "2025-04-01",
+            "last": "2026-06-20"
           }
         },
         {
@@ -2017,8 +1967,11 @@
           "sha256": "afbbe2131f13839e",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 80,
+            "revisions": 79,
+            "first": "2019-04-01",
+            "last": "2026-07-17"
           }
         }
       ],
@@ -2036,11 +1989,11 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 96 open roles"
+              "excerpt": "United States: 94 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 18 open roles"
+              "excerpt": "United Kingdom: 19 open roles"
             },
             {
               "kind": "stat",
@@ -2117,7 +2070,7 @@
         "sensitivity_score": 30,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": true
+        "source_documents_changed": false
       },
       "jobs": {
         "ok": true,
@@ -2127,11 +2080,11 @@
         "eea": 15,
         "non_eea": 146,
         "countries": {
-          "United States": 96,
-          "United Kingdom": 18,
+          "United States": 94,
+          "United Kingdom": 19,
           "Japan": 10,
           "Germany": 8,
-          "Singapore": 7,
+          "Singapore": 8,
           "France": 6,
           "Israel": 5,
           "Australia": 4,
@@ -2359,10 +2312,10 @@
       "category": "DevOps platform",
       "public_evidence_only": true,
       "surface": {
-        "grade": "50",
+        "grade": "53",
         "posture": "public evidence index",
         "confidence": "bounded",
-        "summary": "3 public documents · 2 open reconciliations"
+        "summary": "3 public documents · 3 open reconciliations"
       },
       "documents": [
         {
@@ -2374,11 +2327,8 @@
           "sha256": "b8fd30b8b1e6bdaa",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2015-04-16",
-            "last": "2026-02-17"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -2390,11 +2340,8 @@
           "sha256": "b9e8de6a4bacb426",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 80,
-            "revisions": 79,
-            "first": "2020-11-27",
-            "last": "2026-08-18"
+            "ok": false,
+            "reason": "ReadTimeout"
           }
         },
         {
@@ -2417,6 +2364,24 @@
       ],
       "findings": [
         {
+          "rule": "subprocessor_gap",
+          "severity": "medium",
+          "headline": "Salesforce appears in hiring, not in the published documents",
+          "detail": "Engineering job descriptions name Salesforce, but it does not appear anywhere in the legal documents collected including the sub-processor list at https://about.gitlab.com/privacy/subprocessors/.",
+          "claim": null,
+          "evidence": [
+            {
+              "kind": "job",
+              "title": "Director, Support (Bengaluru)",
+              "location": "Bangalore, India",
+              "url": "https://job-boards.greenhouse.io/gitlab/jobs/8629019002",
+              "matched": "Zendesk",
+              "excerpt": "ry tooling, Kubernetes, or cloud-native infrastructure, along with experience using support platforms such as Zendesk, Salesforce, Decagon, or equivalent tools. Experience with GitLab as a user, administrator, or customer is he"
+            }
+          ],
+          "question": "Is Salesforce a sub-processor? If it is, when was it added to the list, and were customers notified? If it never touches customer data, what is it used for?"
+        },
+        {
           "rule": "access_vs_rotation",
           "severity": "medium",
           "headline": "Restricted-access language alongside global rotations",
@@ -2429,19 +2394,19 @@
           "evidence": [
             {
               "kind": "job",
-              "title": "Commercial Legal Counsel, Public Sector ",
-              "location": "Remote, US",
-              "url": "https://job-boards.greenhouse.io/gitlab/jobs/8562593002",
-              "matched": "globally distributed",
-              "excerpt": "ional leadership. Ability to create and deliver training for sales team members. Comfort working in a remote, globally distributed environment across time zones, with a willingness to learn GitLab and its products (including using GitLab in"
-            },
-            {
-              "kind": "job",
               "title": "Director, Support (Bengaluru)",
               "location": "Bangalore, India",
               "url": "https://job-boards.greenhouse.io/gitlab/jobs/8629019002",
               "matched": "across time zones",
               "excerpt": "lve complex problems collectively, participate in pairing sessions and one-on-ones, and stay in communication across time zones through deliberate asynchronous work habits. Support is where customers meet GitLab, and we take that serious"
+            },
+            {
+              "kind": "job",
+              "title": "Director, Support (EMEA)",
+              "location": "Remote, United Kingdom",
+              "url": "https://job-boards.greenhouse.io/gitlab/jobs/8629005002",
+              "matched": "distributed team",
+              "excerpt": "of GitLab. An overview of this role As Director, Support Engineering for EMEA, you'll manage an experienced, distributed team serving enterprise customers across Europe, the Middle East, and Africa. Reporting to the Vice President of S"
             }
           ],
           "question": "For out-of-hours incidents, who is on the rotation, where are they, and is their access to customer data logged and reviewable by the customer?"
@@ -2455,17 +2420,17 @@
           "evidence": [
             {
               "kind": "job",
-              "title": "Customer Success Architect",
-              "location": "Remote, United Arab Emirates",
-              "url": "https://job-boards.greenhouse.io/gitlab/jobs/8617525002",
+              "title": "Customer Success Architect, CEUR",
+              "location": "Remote, Germany",
+              "url": "https://job-boards.greenhouse.io/gitlab/jobs/8646852002",
               "matched": "segment",
               "excerpt": "to define and achieve business outcomes Familiarity working with customers of sizes relevant to the assigned segment Exceptional verbal, written, organizational, presentation, and communications skills Detailed oriented and an"
             },
             {
               "kind": "job",
-              "title": "Customer Success Architect, CEUR",
-              "location": "Remote, Germany",
-              "url": "https://job-boards.greenhouse.io/gitlab/jobs/8646852002",
+              "title": "Customer Success Architect, EMEA",
+              "location": "Remote, Austria; Remote, France; Remote, Germany",
+              "url": "https://job-boards.greenhouse.io/gitlab/jobs/8561952002",
               "matched": "segment",
               "excerpt": "to define and achieve business outcomes Familiarity working with customers of sizes relevant to the assigned segment Exceptional verbal, written, organizational, presentation, and communications skills Detailed oriented and an"
             }
@@ -2534,33 +2499,33 @@
       },
       "jobs": {
         "ok": true,
-        "total": 206,
-        "placeable": 199,
+        "total": 204,
+        "placeable": 197,
         "unplaceable": 7,
         "eea": 28,
-        "non_eea": 171,
+        "non_eea": 169,
         "countries": {
           "United States": 93,
-          "Canada": 49,
+          "Canada": 48,
           "United Kingdom": 42,
           "India": 36,
           "Germany": 15,
           "Ireland": 10,
           "Poland": 8,
           "Netherlands": 6,
-          "United Arab Emirates": 6,
           "France": 6,
-          "Japan": 5,
+          "United Arab Emirates": 5,
           "Israel": 5,
           "Singapore": 5,
           "Italy": 4,
           "Australia": 4,
+          "Japan": 4,
           "Spain": 3,
           "Mexico": 3,
           "Austria": 3,
-          "Brazil": 2,
-          "Denmark": 2,
           "Sweden": 2,
+          "Denmark": 2,
+          "Brazil": 1,
           "Switzerland": 1,
           "Philippines": 1,
           "South Korea": 1,
@@ -2576,13 +2541,6 @@
             "count": 11,
             "examples": [
               {
-                "title": "Commercial Legal Counsel, Public Sector ",
-                "location": "Remote, US",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8562593002",
-                "matched": "globally distributed",
-                "excerpt": "ional leadership. Ability to create and deliver training for sales team members. Comfort working in a remote, globally distributed environment across time zones, with a willingness to learn GitLab and its products (including using GitLab in"
-              },
-              {
                 "title": "Director, Support (Bengaluru)",
                 "location": "Bangalore, India",
                 "url": "https://job-boards.greenhouse.io/gitlab/jobs/8629019002",
@@ -2595,6 +2553,13 @@
                 "url": "https://job-boards.greenhouse.io/gitlab/jobs/8629005002",
                 "matched": "distributed team",
                 "excerpt": "of GitLab. An overview of this role As Director, Support Engineering for EMEA, you'll manage an experienced, distributed team serving enterprise customers across Europe, the Middle East, and Africa. Reporting to the Vice President of S"
+              },
+              {
+                "title": "Hyperscaler Operations Manager",
+                "location": "Remote, Canada; Remote, US",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8632005002",
+                "matched": "distributed team",
+                "excerpt": "emonstrated ability to design and document complex operational processes enabling consistent execution across distributed teams Hands-on experience working with AI tools and building agents to automate operational workflows; comfort eva"
               }
             ]
           },
@@ -2603,7 +2568,7 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 5,
+            "count": 6,
             "examples": [
               {
                 "title": "Engineering Manager, Cell Infrastructure",
@@ -2614,7 +2579,7 @@
               },
               {
                 "title": "Intermediate Software Engineer, Security Factory: Vulnerability Management ",
-                "location": "Remote, Canada; Remote, Israel; Remote, United Kingdom; Remote, United States",
+                "location": "Remote, Canada; Remote, Israel; Remote, United Kingdom",
                 "url": "https://job-boards.greenhouse.io/gitlab/jobs/8688078002",
                 "matched": "on-call",
                 "excerpt": "ze impediments to our efficiency as a team (\"technical debt\"), propose and implement solutions Participate in on-call rotations to assist troubleshooting product operations, security operations, and urgent engineering issues. W"
@@ -2696,11 +2661,11 @@
                 "excerpt": "or physical disability, genetic information (including family medical history), discharge status from the military, protected veteran status (which includes disabled veterans, recently separated veterans, active duty wartim"
               },
               {
-                "title": "Commercial Legal Counsel, Public Sector ",
-                "location": "Remote, US",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8562593002",
-                "matched": "FedRAMP",
-                "excerpt": "ments subject to FAR/DFARS requirements, GSA Schedule terms, and agency-specific flow-down clauses. Advise on FedRAMP-related contracting obligations, including data sovereignty commitments, government-specific data handling re"
+                "title": "Customer Success Architect, CEUR",
+                "location": "Remote, Germany",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8646852002",
+                "matched": "itar",
+                "excerpt": "or physical disability, genetic information (including family medical history), discharge status from the military, protected veteran status (which includes disabled veterans, recently separated veterans, active duty wartim"
               }
             ]
           },
@@ -2711,13 +2676,6 @@
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
             "count": 10,
             "examples": [
-              {
-                "title": "Customer Success Architect",
-                "location": "Remote, United Arab Emirates",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8617525002",
-                "matched": "segment",
-                "excerpt": "to define and achieve business outcomes Familiarity working with customers of sizes relevant to the assigned segment Exceptional verbal, written, organizational, presentation, and communications skills Detailed oriented and an"
-              },
               {
                 "title": "Customer Success Architect, CEUR",
                 "location": "Remote, Germany",
@@ -2731,6 +2689,13 @@
                 "url": "https://job-boards.greenhouse.io/gitlab/jobs/8561952002",
                 "matched": "segment",
                 "excerpt": "to define and achieve business outcomes Familiarity working with customers of sizes relevant to the assigned segment Exceptional verbal, written, organizational, presentation, and communications skills Detailed oriented and an"
+              },
+              {
+                "title": "Director, Support (Bengaluru)",
+                "location": "Bangalore, India",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8629019002",
+                "matched": "Zendesk",
+                "excerpt": "ry tooling, Kubernetes, or cloud-native infrastructure, along with experience using support platforms such as Zendesk, Salesforce, Decagon, or equivalent tools. Experience with GitLab as a user, administrator, or customer is he"
               }
             ]
           },
@@ -2739,15 +2704,8 @@
             "label": "Sovereignty workstream",
             "severity": "low",
             "why": "They are staffing the problem, which is a good sign and an admission it is open.",
-            "count": 2,
+            "count": 1,
             "examples": [
-              {
-                "title": "Commercial Legal Counsel, Public Sector ",
-                "location": "Remote, US",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8562593002",
-                "matched": "sovereign",
-                "excerpt": "rms, and agency-specific flow-down clauses. Advise on FedRAMP-related contracting obligations, including data sovereignty commitments, government-specific data handling requirements, and authorized use restrictions applicable to"
-              },
               {
                 "title": "Engineering Manager, Cell Infrastructure",
                 "location": "Bangalore, India",
@@ -2875,17 +2833,17 @@
         "total": 249,
         "placeable": 249,
         "unplaceable": 0,
-        "eea": 89,
-        "non_eea": 160,
+        "eea": 88,
+        "non_eea": 161,
         "countries": {
           "United States": 92,
-          "Canada": 25,
+          "Canada": 24,
           "Spain": 23,
           "United Kingdom": 12,
-          "Ireland": 12,
           "Portugal": 12,
           "Greece": 12,
-          "India": 9,
+          "India": 11,
+          "Ireland": 11,
           "Germany": 7,
           "Norway": 7,
           "Singapore": 5,
@@ -2898,8 +2856,8 @@
           "Belgium": 3,
           "Costa Rica": 2,
           "Mexico": 2,
-          "United Arab Emirates": 1,
           "Switzerland": 1,
+          "United Arab Emirates": 1,
           "South Korea": 1,
           "Hungary": 1,
           "Denmark": 1,
@@ -2916,13 +2874,6 @@
             "count": 6,
             "examples": [
               {
-                "title": "AI Security - Principal Security Research Engineer I",
-                "location": "United States",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8079640&gh_jid=8079640",
-                "matched": "distributed team",
-                "excerpt": "egrating LLM APIs into production applications You work autonomously and can drive decisions and results in a distributed team by leveraging asynchronous, direct, and transparent communication. Previous successes in presenting findings"
-              },
-              {
                 "title": "Associate Corporate Counsel - Legal Product, IP, and Marketing",
                 "location": "Canada",
                 "url": "https://jobs.elastic.co/jobs?gh_jid=8122981&gh_jid=8122981",
@@ -2935,6 +2886,13 @@
                 "url": "https://jobs.elastic.co/jobs?gh_jid=8093273&gh_jid=8093273",
                 "matched": "across time zones",
                 "excerpt": "orkflows and \"productization\" processes that help a legal team scale. Global Perspective: Comfortable working across time zones and cultures in a distributed culture with a flexible approach to problem-solving. Compensation for this role"
+              },
+              {
+                "title": "Director, Cloud Billing Operations",
+                "location": "United States",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8121037&gh_jid=8121037",
+                "matched": "across multiple time zones",
+                "excerpt": "ne customer billing experiences. Global Team Leadership: Lead, develop, and enable a distributed, global team across multiple time zones, building a robust organization with robust cross-training and structured documentation What You Bring 10+ ye"
               }
             ]
           },
@@ -2943,7 +2901,7 @@
             "label": "Travel expected",
             "severity": "high",
             "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 4,
+            "count": 5,
             "examples": [
               {
                 "title": "Marketplace Sales Specialist - EMEA (Azure, AWS & Google Cloud)",
@@ -2961,8 +2919,8 @@
               },
               {
                 "title": "Principal AI Ecosystem Architect - OpenAI/Anthropic",
-                "location": "Washington, United States",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8065489&gh_jid=8065489",
+                "location": "San Francisco, CA",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8047165&gh_jid=8047165",
                 "matched": "Willingness to travel",
                 "excerpt": "ve presenting at a developer conference and working through an architecture question with a partner engineer. Willingness to travel 30% to partner offices, events, and conferences. Bonus Points Direct experience working with OpenAI and/or An"
               }
@@ -2973,7 +2931,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 5,
+            "count": 7,
             "examples": [
               {
                 "title": "Cloud Billing Associate",
@@ -3040,7 +2998,7 @@
       "category": "App hosting",
       "public_evidence_only": true,
       "surface": {
-        "grade": "72",
+        "grade": "54",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "2 public documents · 2 open reconciliations"
@@ -3056,10 +3014,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 9,
-            "revisions": 8,
-            "first": "2026-06-11",
-            "last": "2026-08-13"
+            "captures": 14,
+            "revisions": 13,
+            "first": "2026-06-08",
+            "last": "2026-08-12"
           }
         },
         {
@@ -3071,8 +3029,11 @@
           "sha256": "c6f2954ea450f34e",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 145,
+            "revisions": 144,
+            "first": "2020-04-23",
+            "last": "2026-08-11"
           }
         }
       ],
@@ -3168,19 +3129,19 @@
       },
       "jobs": {
         "ok": true,
-        "total": 84,
-        "placeable": 81,
+        "total": 83,
+        "placeable": 80,
         "unplaceable": 3,
         "eea": 9,
-        "non_eea": 72,
+        "non_eea": 71,
         "countries": {
-          "United States": 63,
+          "United States": 62,
           "United Kingdom": 18,
           "Germany": 9,
           "Australia": 3,
           "India": 3
         },
-        "scanned": 22,
+        "scanned": 20,
         "signals": [
           {
             "key": "oncall",
@@ -3256,7 +3217,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 3,
+            "count": 2,
             "examples": [
               {
                 "title": "Head of Field Engineering Operations",
@@ -3271,13 +3232,6 @@
                 "url": "https://job-boards.greenhouse.io/vercel/jobs/6144467004",
                 "matched": "Salesforce",
                 "excerpt": "r our core martech stack—including our marketing automation platform ( Customer.io ) and its integration with Salesforce, Snowflake, and downstream systems —keeping tools tightly connected and data flowing reliably Build, QA, and"
-              },
-              {
-                "title": "Partner Operations Lead",
-                "location": "Hybrid - San Francisco, New York City, Austin",
-                "url": "https://job-boards.greenhouse.io/vercel/jobs/6087001004",
-                "matched": "Salesforce",
-                "excerpt": ": Own and optimize the Partner Operations tech stack, ensuring a best-in-class partner experience across PRM (Salesforce Communities), Tackle.io , Crossbeam, and LMS— managing integrations, improving adoption, and driving continuo"
               }
             ]
           }
