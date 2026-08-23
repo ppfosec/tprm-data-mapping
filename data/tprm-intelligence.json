@@ -612,10 +612,10 @@
           "diff": null,
           "archive": {
             "ok": true,
-            "captures": 53,
-            "revisions": 52,
+            "captures": 61,
+            "revisions": 60,
             "first": "2024-09-26",
-            "last": "2026-08-01"
+            "last": "2026-08-16"
           }
         },
         {
@@ -627,8 +627,11 @@
           "sha256": "cc6e6d21a41fed8e",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 11,
+            "revisions": 10,
+            "first": "2026-07-14",
+            "last": "2026-08-20"
           }
         }
       ],
@@ -837,7 +840,7 @@
             "examples": [
               {
                 "title": "Applied AI Architect",
-                "location": "Bangalore, India",
+                "location": "Mumbai, India",
                 "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390746008",
                 "matched": "across time zones",
                 "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
@@ -917,8 +920,11 @@
           "sha256": "8d3c9629d73c5991",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2018-05-14",
+            "last": "2018-09-15"
           }
         },
         {
@@ -930,8 +936,11 @@
           "sha256": "d999aff5712a68aa",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 281,
+            "revisions": 280,
+            "first": "2021-09-03",
+            "last": "2026-08-15"
           }
         },
         {
@@ -944,10 +953,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 154,
-            "revisions": 153,
+            "captures": 156,
+            "revisions": 155,
             "first": "2018-11-17",
-            "last": "2026-05-20"
+            "last": "2026-08-18"
           }
         },
         {
@@ -1251,8 +1260,11 @@
           "sha256": "b5c3e88a3bf3e9d9",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 20,
+            "revisions": 19,
+            "first": "2024-05-24",
+            "last": "2026-08-21"
           }
         }
       ],
@@ -1591,8 +1603,11 @@
           "sha256": "ff0e2b002da0ad9f",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2008-07-19",
+            "last": "2020-05-01"
           }
         },
         {
@@ -1605,10 +1620,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 213,
-            "revisions": 212,
+            "captures": 219,
+            "revisions": 218,
             "first": "2022-05-27",
-            "last": "2026-08-03"
+            "last": "2026-08-15"
           }
         },
         {
@@ -1620,11 +1635,8 @@
           "sha256": "08c0eec1eefcd1e4",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 89,
-            "revisions": 88,
-            "first": "2022-12-05",
-            "last": "2026-08-03"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         }
       ],
@@ -1787,17 +1799,17 @@
       },
       "jobs": {
         "ok": true,
-        "total": 576,
-        "placeable": 509,
+        "total": 575,
+        "placeable": 508,
         "unplaceable": 67,
         "eea": 69,
-        "non_eea": 440,
+        "non_eea": 439,
         "countries": {
           "United States": 261,
           "Canada": 56,
           "Ireland": 54,
           "Singapore": 40,
-          "India": 39,
+          "India": 38,
           "United Kingdom": 33,
           "Mexico": 27,
           "Australia": 11,
@@ -1936,10 +1948,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 262,
-            "revisions": 261,
+            "captures": 280,
+            "revisions": 279,
             "first": "2024-01-18",
-            "last": "2026-08-18"
+            "last": "2026-08-21"
           }
         },
         {
@@ -1967,11 +1979,8 @@
           "sha256": "afbbe2131f13839e",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 80,
-            "revisions": 79,
-            "first": "2019-04-01",
-            "last": "2026-07-17"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         }
       ],
@@ -2312,7 +2321,7 @@
       "category": "DevOps platform",
       "public_evidence_only": true,
       "surface": {
-        "grade": "53",
+        "grade": "75",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "3 public documents · 3 open reconciliations"
@@ -2328,7 +2337,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -2354,11 +2363,8 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": true,
-            "captures": 23,
-            "revisions": 22,
-            "first": "2023-11-29",
-            "last": "2026-07-07"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         }
       ],
@@ -2523,8 +2529,8 @@
           "Spain": 3,
           "Mexico": 3,
           "Austria": 3,
-          "Sweden": 2,
           "Denmark": 2,
+          "Sweden": 2,
           "Brazil": 1,
           "Switzerland": 1,
           "Philippines": 1,
@@ -3014,10 +3020,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 14,
-            "revisions": 13,
+            "captures": 17,
+            "revisions": 16,
             "first": "2026-06-08",
-            "last": "2026-08-12"
+            "last": "2026-08-13"
           }
         },
         {
@@ -3030,8 +3036,8 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 145,
-            "revisions": 144,
+            "captures": 146,
+            "revisions": 145,
             "first": "2020-04-23",
             "last": "2026-08-11"
           }

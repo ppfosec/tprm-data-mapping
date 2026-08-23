@@ -1,5 +1,5 @@
 # source: https://about.gitlab.com/privacy/
-# collected: 2026-08-22
+# collected: 2026-08-23
 
 Close
 To search repositories and projects, login to
