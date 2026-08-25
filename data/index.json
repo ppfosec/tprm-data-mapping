@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T04:17:56+00:00",
+  "generated_at": "2026-08-25T04:18:57+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -171,33 +171,34 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 11,
-            "revisions": 10,
+            "captures": 13,
+            "revisions": 12,
             "first": "2026-07-14",
-            "last": "2026-08-20"
+            "last": "2026-08-24"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 517,
-        "placeable": 516,
+        "total": 537,
+        "placeable": 536,
         "unplaceable": 1,
-        "eea": 24,
-        "non_eea": 492,
+        "eea": 25,
+        "non_eea": 511,
         "countries": {
-          "United States": 409,
-          "United Kingdom": 39,
-          "Japan": 15,
+          "United States": 426,
+          "United Kingdom": 42,
+          "Japan": 13,
           "Ireland": 11,
           "Australia": 10,
           "Singapore": 9,
           "Germany": 8,
-          "South Korea": 6,
+          "South Korea": 7,
           "France": 5,
           "India": 4,
           "Switzerland": 3,
-          "Canada": 2
+          "Canada": 2,
+          "Spain": 1
         },
         "scanned": 26,
         "signals": [
@@ -236,7 +237,7 @@
                 "location": "San Francisco, CA",
                 "url": "https://job-boards.greenhouse.io/anthropic/jobs/5391151008",
                 "matched": "on call",
-                "excerpt": "ifications Hands-on experience building with LLMs and agentic tooling: prompt and workflow design, tool/function calling, MCP or comparable integration frameworks, and evaluating agent output quality Experience working across A"
+                "excerpt": "fications: Hands-on experience building with LLMs and agentic tooling: prompt and workflow design, tool/function calling, MCP or comparable integration frameworks, and evaluating agent output quality Experience working across A"
               }
             ]
           },
@@ -311,7 +312,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "492 of 516 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "511 of 536 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -320,15 +321,15 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 409 open roles"
+              "excerpt": "United States: 426 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 39 open roles"
+              "excerpt": "United Kingdom: 42 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "Japan: 15 open roles"
+              "excerpt": "Japan: 13 open roles"
             }
           ],
           "question": "Which roles can access production data, and from which countries? Does the residency commitment cover support and engineering access, or only data at rest?"
@@ -350,7 +351,7 @@
               "location": "San Francisco, CA",
               "url": "https://job-boards.greenhouse.io/anthropic/jobs/5391151008",
               "matched": "on call",
-              "excerpt": "ifications Hands-on experience building with LLMs and agentic tooling: prompt and workflow design, tool/function calling, MCP or comparable integration frameworks, and evaluating agent output quality Experience working across A"
+              "excerpt": "fications: Hands-on experience building with LLMs and agentic tooling: prompt and workflow design, tool/function calling, MCP or comparable integration frameworks, and evaluating agent output quality Experience working across A"
             }
           ],
           "question": "For out-of-hours incidents, who is on the rotation, where are they, and is their access to customer data logged and reviewable by the customer?"
@@ -466,11 +467,8 @@
           "sha256": "8d3c9629d73c5991",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2018-05-14",
-            "last": "2018-09-15"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -498,11 +496,8 @@
           "sha256": "3669d59798194699",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 156,
-            "revisions": 155,
-            "first": "2018-11-17",
-            "last": "2026-08-18"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -514,19 +509,16 @@
           "sha256": "253254e28bc2ff29",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2021-05-16",
-            "last": "2025-10-08"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 308,
+        "total": 306,
         "placeable": 8,
-        "unplaceable": 300,
+        "unplaceable": 298,
         "eea": 1,
         "non_eea": 7,
         "countries": {
@@ -542,7 +534,7 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 9,
+            "count": 10,
             "examples": [
               {
                 "title": "AI Security Research & Red Team Engineer",
@@ -591,6 +583,22 @@
             ]
           },
           {
+            "key": "travel",
+            "label": "Travel expected",
+            "severity": "high",
+            "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
+            "count": 1,
+            "examples": [
+              {
+                "title": "Principal Solutions Architect, Public Sector Federal",
+                "location": "Hybrid",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8131824?gh_jid=8131824",
+                "matched": "Travel up to 40%",
+                "excerpt": "eation and delivery. Contribute industry expertise to guide Cloudflare’s go-to-market and platform evolution. Travel up to 40% during the quarter to support partner engagements, attend conferences, represent Cloudflare at industry event"
+              }
+            ]
+          },
+          {
             "key": "round_clock",
             "label": "Round-the-clock coverage",
             "severity": "medium",
@@ -619,6 +627,22 @@
                 "url": "https://boards.greenhouse.io/cloudflare/jobs/8054669?gh_jid=8054669",
                 "matched": "Snowflake",
                 "excerpt": "h a focus on enabling GTM organizations. Columnar/OLAP or lakehouse experience (ClickHouse, DuckDB, BigQuery, Snowflake, Iceberg, Starrocks).Familiarity with the Salesforce data model and CRM/API integrations. Familiarity with de"
+              }
+            ]
+          },
+          {
+            "key": "gov_enclave",
+            "label": "Government enclave",
+            "severity": "low",
+            "why": "A separate sovereign estate exists, which confirms the commercial one is not it.",
+            "count": 1,
+            "examples": [
+              {
+                "title": "Principal Solutions Architect, Public Sector Federal",
+                "location": "Hybrid",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8131824?gh_jid=8131824",
+                "matched": "FEDRAMP",
+                "excerpt": "el. Aware of government and industry standards, frameworks and compliance requirements (i.e, HIPAA, PCI, SOX, FEDRAMP, GDPR, NIS2, etc.). Experience in designing architecture, migration, and implementation of cloud, edge and on"
               }
             ]
           }
@@ -793,11 +817,8 @@
           "sha256": "46bae6a6ca8c08ed",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 33,
-            "revisions": 32,
-            "first": "2022-05-28",
-            "last": "2026-08-03"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -809,34 +830,31 @@
           "sha256": "b5c3e88a3bf3e9d9",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 20,
-            "revisions": 19,
-            "first": "2024-05-24",
-            "last": "2026-08-21"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 448,
-        "placeable": 448,
+        "total": 452,
+        "placeable": 452,
         "unplaceable": 0,
         "eea": 93,
-        "non_eea": 355,
+        "non_eea": 359,
         "countries": {
-          "United States": 221,
-          "France": 52,
-          "Japan": 46,
-          "Ireland": 26,
+          "United States": 223,
+          "France": 53,
+          "Japan": 47,
+          "Ireland": 24,
           "Singapore": 18,
           "United Kingdom": 18,
-          "Brazil": 17,
           "Netherlands": 16,
+          "Brazil": 16,
           "Spain": 15,
-          "South Korea": 12,
-          "Australia": 10,
-          "India": 8,
+          "South Korea": 14,
+          "Australia": 9,
+          "India": 9,
           "Portugal": 8,
           "Germany": 6,
           "Italy": 5,
@@ -851,6 +869,7 @@
           "Colombia": 1,
           "Chile": 1,
           "Poland": 1,
+          "Austria": 1,
           "South Africa": 1
         },
         "scanned": 26,
@@ -1171,11 +1190,8 @@
           "sha256": "92101146b860c664",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 219,
-            "revisions": 218,
-            "first": "2022-05-27",
-            "last": "2026-08-15"
+            "ok": false,
+            "reason": "ReadTimeout"
           }
         },
         {
@@ -1187,38 +1203,41 @@
           "sha256": "08c0eec1eefcd1e4",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 94,
+            "revisions": 93,
+            "first": "2022-12-05",
+            "last": "2026-08-15"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 575,
-        "placeable": 508,
+        "total": 583,
+        "placeable": 516,
         "unplaceable": 67,
         "eea": 69,
-        "non_eea": 439,
+        "non_eea": 447,
         "countries": {
-          "United States": 261,
-          "Canada": 56,
+          "United States": 268,
+          "Canada": 59,
           "Ireland": 54,
-          "Singapore": 40,
-          "India": 38,
-          "United Kingdom": 33,
+          "Singapore": 41,
+          "India": 36,
+          "United Kingdom": 32,
           "Mexico": 27,
           "Australia": 11,
+          "Japan": 5,
           "Spain": 5,
-          "Japan": 4,
           "Germany": 3,
-          "Israel": 2,
+          "Israel": 3,
           "Italy": 2,
           "Brazil": 2,
           "France": 2,
+          "Luxembourg": 2,
+          "United Arab Emirates": 2,
           "Romania": 2,
           "Taiwan": 1,
-          "Luxembourg": 1,
-          "United Arab Emirates": 1,
           "New Zealand": 1,
           "Hong Kong": 1,
           "Thailand": 1
@@ -1242,32 +1261,16 @@
               {
                 "title": "Communities Partner Development Manager, SaaS Platforms",
                 "location": "US-Remote",
-                "url": "https://stripe.com/jobs/search?gh_jid=8103952",
+                "url": "https://stripe.com/jobs/search?gh_jid=8138000",
                 "matched": "willingness to travel",
                 "excerpt": "ayment or financial-services technology, industry trends, and the competitive landscape Bachelor’s degree and willingness to travel Preferred qualifications Experience working in the financial services or payments industry Strong written and"
               },
               {
                 "title": "Communities Partner Development Manager, SaaS Platforms",
                 "location": "US-Remote",
-                "url": "https://stripe.com/jobs/search?gh_jid=8138000",
+                "url": "https://stripe.com/jobs/search?gh_jid=8103952",
                 "matched": "willingness to travel",
                 "excerpt": "ayment or financial-services technology, industry trends, and the competitive landscape Bachelor’s degree and willingness to travel Preferred qualifications Experience working in the financial services or payments industry Strong written and"
-              }
-            ]
-          },
-          {
-            "key": "distributed",
-            "label": "Distributed across time zones",
-            "severity": "high",
-            "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 1,
-            "examples": [
-              {
-                "title": "Chief Compliance Officer (APAC)",
-                "location": "Singapore",
-                "url": "https://stripe.com/jobs/search?gh_jid=8023529",
-                "matched": "distributed team",
-                "excerpt": "AC markets. Foster a culture of compliance, collaboration, and continuous improvement across a geographically distributed team. &nbsp; Qualifications: Experience: 12+ years of experience in compliance and financial crime, with significa"
               }
             ]
           },
@@ -1337,28 +1340,6 @@
             }
           ],
           "question": "Is Databricks a sub-processor? If it is, when was it added to the list, and were customers notified? If it never touches customer data, what is it used for?"
-        },
-        {
-          "rule": "access_vs_rotation",
-          "severity": "medium",
-          "headline": "Restricted-access language alongside global rotations",
-          "detail": "The documents describe access controls in principle, while postings describe distributed across time zones. Both can be true; the reconciliation is what a reviewer needs to see.",
-          "claim": {
-            "kind": "dpa",
-            "text": "(b) ensure that all persons Stripe authorizes to Process Personal Data are granted access to Personal Data on a need-to-know basis and are committed to respecting the confidentiality of that Personal Data;",
-            "url": "https://stripe.com/legal/dpa"
-          },
-          "evidence": [
-            {
-              "kind": "job",
-              "title": "Chief Compliance Officer (APAC)",
-              "location": "Singapore",
-              "url": "https://stripe.com/jobs/search?gh_jid=8023529",
-              "matched": "distributed team",
-              "excerpt": "AC markets. Foster a culture of compliance, collaboration, and continuous improvement across a geographically distributed team. &nbsp; Qualifications: Experience: 12+ years of experience in compliance and financial crime, with significa"
-            }
-          ],
-          "question": "For out-of-hours incidents, who is on the rotation, where are they, and is their access to customer data logged and reviewable by the customer?"
         },
         {
           "rule": "subprocessor_gap",
@@ -1477,9 +1458,9 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 45,
+        "total": 41,
         "footprint": 22,
-        "access": 23,
+        "access": 19,
         "transparency": 0,
         "record": 0
       },
@@ -1518,11 +1499,8 @@
           "sha256": "4bde694018c282cd",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 14,
-            "revisions": 13,
-            "first": "2025-04-01",
-            "last": "2026-06-20"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -1535,19 +1513,19 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectTimeout"
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 161,
-        "placeable": 161,
+        "total": 159,
+        "placeable": 159,
         "unplaceable": 0,
         "eea": 15,
-        "non_eea": 146,
+        "non_eea": 144,
         "countries": {
-          "United States": 94,
+          "United States": 92,
           "United Kingdom": 19,
           "Japan": 10,
           "Germany": 8,
@@ -1690,7 +1668,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "146 of 161 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "144 of 159 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -1699,7 +1677,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 94 open roles"
+              "excerpt": "United States: 92 open roles"
             },
             {
               "kind": "stat",
@@ -1895,7 +1873,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectTimeout"
+            "reason": "ReadTimeout"
           }
         },
         {
@@ -1908,7 +1886,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ReadTimeout"
+            "reason": "ConnectionError"
           }
         },
         {
@@ -1922,43 +1900,43 @@
           "diff": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectTimeout"
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 204,
-        "placeable": 197,
+        "total": 210,
+        "placeable": 203,
         "unplaceable": 7,
         "eea": 28,
-        "non_eea": 169,
+        "non_eea": 175,
         "countries": {
-          "United States": 93,
-          "Canada": 48,
-          "United Kingdom": 42,
-          "India": 36,
+          "United States": 94,
+          "Canada": 49,
+          "United Kingdom": 43,
+          "India": 39,
           "Germany": 15,
-          "Ireland": 10,
+          "Ireland": 11,
           "Poland": 8,
-          "Netherlands": 6,
           "France": 6,
+          "Netherlands": 5,
           "United Arab Emirates": 5,
+          "Australia": 5,
           "Israel": 5,
           "Singapore": 5,
           "Italy": 4,
-          "Australia": 4,
           "Japan": 4,
           "Spain": 3,
           "Mexico": 3,
           "Austria": 3,
           "Denmark": 2,
-          "Sweden": 2,
+          "Turkey": 2,
           "Brazil": 1,
+          "Sweden": 1,
           "Switzerland": 1,
           "Philippines": 1,
-          "South Korea": 1,
-          "Turkey": 1
+          "South Korea": 1
         },
         "scanned": 26,
         "signals": [
@@ -2103,7 +2081,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 10,
+            "count": 9,
             "examples": [
               {
                 "title": "Customer Success Architect, CEUR",
@@ -2282,8 +2260,8 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 75,
-        "footprint": 21,
+        "total": 76,
+        "footprint": 22,
         "access": 25,
         "transparency": 4,
         "record": 25
@@ -2327,49 +2305,47 @@
           "sha256": "5369d10f45a8d597",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2018-05-23",
-            "last": "2026-02-01"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 249,
-        "placeable": 249,
+        "total": 279,
+        "placeable": 279,
         "unplaceable": 0,
-        "eea": 88,
-        "non_eea": 161,
+        "eea": 107,
+        "non_eea": 172,
         "countries": {
-          "United States": 92,
-          "Canada": 24,
-          "Spain": 23,
-          "United Kingdom": 12,
-          "Portugal": 12,
-          "Greece": 12,
-          "India": 11,
-          "Ireland": 11,
+          "United States": 94,
+          "Spain": 27,
+          "Canada": 26,
+          "Portugal": 16,
+          "Greece": 16,
+          "Ireland": 15,
+          "United Kingdom": 13,
+          "India": 12,
           "Germany": 7,
           "Norway": 7,
+          "Poland": 6,
           "Singapore": 5,
           "Romania": 4,
+          "Switzerland": 3,
           "France": 3,
           "Brazil": 3,
           "Japan": 3,
           "Saudi Arabia": 3,
-          "Poland": 3,
           "Belgium": 3,
+          "Australia": 2,
           "Costa Rica": 2,
           "Mexico": 2,
-          "Switzerland": 1,
+          "Israel": 2,
           "United Arab Emirates": 1,
           "South Korea": 1,
           "Hungary": 1,
           "Denmark": 1,
-          "Netherlands": 1,
-          "Australia": 1
+          "Netherlands": 1
         },
         "scanned": 26,
         "signals": [
@@ -2378,7 +2354,7 @@
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 6,
+            "count": 9,
             "examples": [
               {
                 "title": "Associate Corporate Counsel - Legal Product, IP, and Marketing",
@@ -2395,11 +2371,11 @@
                 "excerpt": "orkflows and \"productization\" processes that help a legal team scale. Global Perspective: Comfortable working across time zones and cultures in a distributed culture with a flexible approach to problem-solving. Compensation for this role"
               },
               {
-                "title": "Director, Cloud Billing Operations",
-                "location": "United States",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8121037&gh_jid=8121037",
-                "matched": "across multiple time zones",
-                "excerpt": "ne customer billing experiences. Global Team Leadership: Lead, develop, and enable a distributed, global team across multiple time zones, building a robust organization with robust cross-training and structured documentation What You Bring 10+ ye"
+                "title": "Consulting Architect - Security (Canberra)",
+                "location": "Australia",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8138599&gh_jid=8138599",
+                "matched": "distributed team",
+                "excerpt": "ases Ability and willingness to travel from time to time as required Comfortable working remotely in a highly distributed team Bonus Points BS in Computer Science or related Information Security / Cybersecurity field Certifications and"
               }
             ]
           },
@@ -2408,8 +2384,15 @@
             "label": "Travel expected",
             "severity": "high",
             "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 5,
+            "count": 7,
             "examples": [
+              {
+                "title": "Consulting Architect - Security (Canberra)",
+                "location": "Australia",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8138599&gh_jid=8138599",
+                "matched": "willingness to travel",
+                "excerpt": "corporate environment like Python, Javascript, Go or Chef/Puppet etc. Understanding of databases Ability and willingness to travel from time to time as required Comfortable working remotely in a highly distributed team Bonus Points BS in Co"
+              },
               {
                 "title": "Marketplace Sales Specialist - EMEA (Azure, AWS & Google Cloud)",
                 "location": "Barcelona, Spain",
@@ -2423,13 +2406,6 @@
                 "url": "https://jobs.elastic.co/jobs?gh_jid=8091966&gh_jid=8091966",
                 "matched": "travel up to 30%",
                 "excerpt": "as to action; you inspire partner teams to work on what is most relevant, not just what is urgent. Ability to travel up to 30%. #PM-LI1 Additional Information - We Take Care of Our People As a distributed company, diversity drives our i"
-              },
-              {
-                "title": "Principal AI Ecosystem Architect - OpenAI/Anthropic",
-                "location": "San Francisco, CA",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8047165&gh_jid=8047165",
-                "matched": "Willingness to travel",
-                "excerpt": "ve presenting at a developer conference and working through an architecture question with a partner engineer. Willingness to travel 30% to partner offices, events, and conferences. Bonus Points Direct experience working with OpenAI and/or An"
               }
             ]
           },
@@ -2438,7 +2414,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 7,
+            "count": 5,
             "examples": [
               {
                 "title": "Cloud Billing Associate",
@@ -2558,11 +2534,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 58,
-        "footprint": 16,
+        "total": 82,
+        "footprint": 15,
         "access": 25,
         "transparency": 17,
-        "record": 0
+        "record": 25
       },
       "drift": []
     },
@@ -2609,13 +2585,13 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 83,
-        "placeable": 80,
+        "total": 82,
+        "placeable": 79,
         "unplaceable": 3,
         "eea": 9,
-        "non_eea": 71,
+        "non_eea": 70,
         "countries": {
-          "United States": 62,
+          "United States": 61,
           "United Kingdom": 18,
           "Germany": 9,
           "Australia": 3,
