@@ -1,5 +1,5 @@
 # source: https://www.anthropic.com/legal/privacy
-# collected: 2026-08-25
+# collected: 2026-08-26
 
 Anthropic is an AI safety and research company working to build reliable, interpretable, and steerable AI systems.
 This Privacy Policy explains how we collect, use, disclose, and process your personal data when you use our website, Claude.ai, or other Anthropic products and services (the “Services”).
