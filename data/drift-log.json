@@ -1,5 +1,40 @@
 [
   {
+    "id": "anthropic-dpa-2026-08-28",
+    "vendor_id": "anthropic",
+    "vendor_name": "Anthropic",
+    "document": "dpa",
+    "document_label": "Data processing agreement",
+    "date": "2026-08-28",
+    "url": "https://www.anthropic.com/legal/k12-dpa",
+    "hunks": [
+      {
+        "before": "DPA",
+        "after": "“DPA”"
+      },
+      {
+        "before": "means all applicable privacy or Privacy Laws and regulations relating to the processing of personal information, as may be amended from time to time.",
+        "after": "means all applicable privacy or data protection laws and regulations relating to the processing of personal information, as may be amended from time to time."
+      },
+      {
+        "before": "means a request from an individual, including students or students’ parents/guardians, to exercise their personal information-related rights under Applicable Privacy Laws, such as rights to access, correct, or delete personal information.",
+        "after": "means a request from an individual, including students or students’ parents/guardians, to exercise their personal information-related rights under Applicable Data Protection Laws, such as rights to access, correct, or delete personal information."
+      },
+      {
+        "before": "“Subprocesor”",
+        "after": "“Subprocessor”"
+      },
+      {
+        "before": "as used in this DPA have the meanings given by Applicable Privacy Laws.",
+        "after": "as used in this DPA have the meanings given by Applicable Data Protection Laws."
+      },
+      {
+        "before": ", respectively, as required by Applicable Privacy Laws.",
+        "after": ", respectively, as required by Applicable Data Protection Laws."
+      }
+    ]
+  },
+  {
     "id": "datadog-privacy-2026-08-21",
     "vendor_id": "datadog",
     "vendor_name": "Datadog",
