@@ -594,8 +594,11 @@
           "sha256": "85c78c93175ffb26",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2024-02-21",
+            "last": "2026-03-20"
           }
         },
         {
@@ -608,8 +611,11 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 61,
+            "revisions": 60,
+            "first": "2024-09-26",
+            "last": "2026-08-16"
           }
         },
         {
@@ -621,8 +627,11 @@
           "sha256": "b5c2883bfc8d9aed",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 15,
+            "revisions": 14,
+            "first": "2026-07-14",
+            "last": "2026-08-27"
           }
         }
       ],
@@ -631,7 +640,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "532 of 561 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "540 of 569 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -640,15 +649,15 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 441 open roles"
+              "excerpt": "United States: 447 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 47 open roles"
+              "excerpt": "United Kingdom: 48 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "Japan: 15 open roles"
+              "excerpt": "Japan: 16 open roles"
             }
           ],
           "question": "Which roles can access production data, and from which countries? Does the residency commitment cover support and engineering access, or only data at rest?"
@@ -758,19 +767,19 @@
         "sensitivity_score": 10,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": true
+        "source_documents_changed": false
       },
       "jobs": {
         "ok": true,
-        "total": 563,
-        "placeable": 561,
+        "total": 571,
+        "placeable": 569,
         "unplaceable": 2,
         "eea": 29,
-        "non_eea": 532,
+        "non_eea": 540,
         "countries": {
-          "United States": 441,
-          "United Kingdom": 47,
-          "Japan": 15,
+          "United States": 447,
+          "United Kingdom": 48,
+          "Japan": 16,
           "Ireland": 11,
           "Singapore": 10,
           "South Korea": 10,
@@ -949,8 +958,11 @@
           "sha256": "8d3c9629d73c5991",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2018-05-14",
+            "last": "2018-09-15"
           }
         },
         {
@@ -994,8 +1006,11 @@
           "sha256": "253254e28bc2ff29",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2021-05-16",
+            "last": "2025-10-08"
           }
         }
       ],
@@ -1097,9 +1112,9 @@
       },
       "jobs": {
         "ok": true,
-        "total": 313,
+        "total": 309,
         "placeable": 8,
-        "unplaceable": 305,
+        "unplaceable": 301,
         "eea": 1,
         "non_eea": 7,
         "countries": {
@@ -1115,7 +1130,7 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 5,
+            "count": 6,
             "examples": [
               {
                 "title": "AI Security Research & Red Team Engineer",
@@ -1297,8 +1312,11 @@
           "sha256": "58ce48c87de09d47",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2017-06-30",
+            "last": "2025-04-25"
           }
         },
         {
@@ -1310,11 +1328,8 @@
           "sha256": "46bae6a6ca8c08ed",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 33,
-            "revisions": 32,
-            "first": "2022-05-28",
-            "last": "2026-08-03"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -1326,8 +1341,11 @@
           "sha256": "b5c3e88a3bf3e9d9",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 21,
+            "revisions": 20,
+            "first": "2024-05-24",
+            "last": "2026-08-24"
           }
         }
       ],
@@ -1450,13 +1468,13 @@
       },
       "jobs": {
         "ok": true,
-        "total": 452,
-        "placeable": 452,
+        "total": 454,
+        "placeable": 454,
         "unplaceable": 0,
         "eea": 91,
-        "non_eea": 361,
+        "non_eea": 363,
         "countries": {
-          "United States": 226,
+          "United States": 228,
           "France": 51,
           "Japan": 47,
           "Ireland": 24,
@@ -1481,8 +1499,8 @@
           "Canada": 1,
           "Colombia": 1,
           "Chile": 1,
-          "Austria": 1,
-          "Poland": 1
+          "Poland": 1,
+          "Austria": 1
         },
         "scanned": 26,
         "signals": [
@@ -1658,7 +1676,7 @@
       "category": "Payments",
       "public_evidence_only": true,
       "surface": {
-        "grade": "63",
+        "grade": "38",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "3 public documents · 2 open reconciliations"
@@ -1673,8 +1691,11 @@
           "sha256": "ff0e2b002da0ad9f",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2008-07-19",
+            "last": "2020-05-01"
           }
         },
         {
@@ -1686,8 +1707,11 @@
           "sha256": "92101146b860c664",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 223,
+            "revisions": 222,
+            "first": "2022-05-27",
+            "last": "2026-08-25"
           }
         },
         {
@@ -1699,8 +1723,11 @@
           "sha256": "08c0eec1eefcd1e4",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 96,
+            "revisions": 95,
+            "first": "2022-12-05",
+            "last": "2026-08-25"
           }
         }
       ],
@@ -1841,23 +1868,23 @@
       },
       "jobs": {
         "ok": true,
-        "total": 575,
-        "placeable": 513,
+        "total": 573,
+        "placeable": 511,
         "unplaceable": 62,
         "eea": 64,
-        "non_eea": 449,
+        "non_eea": 447,
         "countries": {
-          "United States": 274,
-          "Canada": 55,
+          "United States": 272,
+          "Canada": 54,
           "Ireland": 51,
-          "Singapore": 38,
+          "Singapore": 40,
           "India": 37,
           "United Kingdom": 31,
-          "Mexico": 29,
+          "Mexico": 28,
           "Australia": 9,
           "Spain": 5,
-          "Japan": 4,
           "Israel": 4,
+          "Japan": 3,
           "Germany": 2,
           "Italy": 2,
           "Taiwan": 2,
@@ -2010,7 +2037,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "147 of 161 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "149 of 163 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -2019,7 +2046,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 96 open roles"
+              "excerpt": "United States: 98 open roles"
             },
             {
               "kind": "stat",
@@ -2104,13 +2131,13 @@
       },
       "jobs": {
         "ok": true,
-        "total": 161,
-        "placeable": 161,
+        "total": 163,
+        "placeable": 163,
         "unplaceable": 0,
         "eea": 14,
-        "non_eea": 147,
+        "non_eea": 149,
         "countries": {
-          "United States": 96,
+          "United States": 98,
           "United Kingdom": 20,
           "Japan": 10,
           "Germany": 8,
@@ -2235,8 +2262,15 @@
             "label": "Government enclave",
             "severity": "low",
             "why": "A separate sovereign estate exists, which confirms the commercial one is not it.",
-            "count": 1,
+            "count": 2,
             "examples": [
+              {
+                "title": "Federal Compliance Manager",
+                "location": "San Francisco, CA • New York, NY • United States",
+                "url": "https://boards.greenhouse.io/figma/jobs/6145639004?gh_jid=6145639004",
+                "matched": "FedRAMP",
+                "excerpt": "s and product engineering teams to document and implement control requirements, ensuring adherence to Figma's FedRAMP cloud security standards. Responsibilities include supporting the analysis and remediation of security contro"
+              },
               {
                 "title": "Manager, Security Operations",
                 "location": "San Francisco, CA • New York, NY • United States",
@@ -2342,7 +2376,7 @@
       "category": "DevOps platform",
       "public_evidence_only": true,
       "surface": {
-        "grade": "75",
+        "grade": "50",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "3 public documents · 3 open reconciliations"
@@ -2358,7 +2392,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ReadTimeout"
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -2370,8 +2404,11 @@
           "sha256": "b9e8de6a4bacb426",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 80,
+            "revisions": 79,
+            "first": "2020-11-27",
+            "last": "2026-08-18"
           }
         },
         {
@@ -2384,8 +2421,11 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 23,
+            "revisions": 22,
+            "first": "2023-11-29",
+            "last": "2026-07-07"
           }
         }
       ],
@@ -2526,13 +2566,13 @@
       },
       "jobs": {
         "ok": true,
-        "total": 219,
-        "placeable": 213,
+        "total": 220,
+        "placeable": 214,
         "unplaceable": 6,
         "eea": 30,
-        "non_eea": 183,
+        "non_eea": 184,
         "countries": {
-          "United States": 99,
+          "United States": 100,
           "Canada": 54,
           "United Kingdom": 44,
           "India": 37,
@@ -2565,7 +2605,7 @@
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 12,
+            "count": 11,
             "examples": [
               {
                 "title": "Customer Success Architect",
@@ -2595,7 +2635,7 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 5,
+            "count": 6,
             "examples": [
               {
                 "title": "Engineering Manager, Cell Infrastructure",
@@ -2701,7 +2741,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 9,
+            "count": 8,
             "examples": [
               {
                 "title": "Customer Success Architect, CEUR",
@@ -2772,7 +2812,7 @@
       "category": "Search and data",
       "public_evidence_only": true,
       "surface": {
-        "grade": "57",
+        "grade": "82",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "1 public documents · 1 open reconciliations"
@@ -2787,11 +2827,8 @@
           "sha256": "5369d10f45a8d597",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2018-05-23",
-            "last": "2026-02-01"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         }
       ],
@@ -2857,17 +2894,17 @@
       },
       "jobs": {
         "ok": true,
-        "total": 337,
-        "placeable": 337,
+        "total": 336,
+        "placeable": 336,
         "unplaceable": 0,
         "eea": 133,
-        "non_eea": 204,
+        "non_eea": 203,
         "countries": {
           "United States": 102,
           "Spain": 32,
-          "Canada": 31,
-          "Portugal": 20,
+          "Canada": 30,
           "Greece": 20,
+          "Portugal": 20,
           "Ireland": 19,
           "India": 18,
           "United Kingdom": 15,
@@ -2902,15 +2939,15 @@
             "examples": [
               {
                 "title": "Associate Corporate Counsel - Legal Product, IP, and Marketing",
-                "location": "United States",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8093273&gh_jid=8093273",
+                "location": "Canada",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8122981&gh_jid=8122981",
                 "matched": "across time zones",
                 "excerpt": "orkflows and \"productization\" processes that help a legal team scale. Global Perspective: Comfortable working across time zones and cultures in a distributed culture with a flexible approach to problem-solving. Compensation for this role"
               },
               {
                 "title": "Associate Corporate Counsel - Legal Product, IP, and Marketing",
-                "location": "Canada",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8122981&gh_jid=8122981",
+                "location": "United States",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8093273&gh_jid=8093273",
                 "matched": "across time zones",
                 "excerpt": "orkflows and \"productization\" processes that help a legal team scale. Global Perspective: Comfortable working across time zones and cultures in a distributed culture with a flexible approach to problem-solving. Compensation for this role"
               },
@@ -3025,7 +3062,7 @@
       "category": "App hosting",
       "public_evidence_only": true,
       "surface": {
-        "grade": "61",
+        "grade": "55",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "2 public documents · 2 open reconciliations"
@@ -3040,11 +3077,8 @@
           "sha256": "245c0fd1c2ba7f7c",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 20,
-            "revisions": 19,
-            "first": "2026-06-08",
-            "last": "2026-08-28"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -3056,8 +3090,11 @@
           "sha256": "c6f2954ea450f34e",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 148,
+            "revisions": 147,
+            "first": "2020-04-23",
+            "last": "2026-08-26"
           }
         }
       ],
