@@ -628,10 +628,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 15,
-            "revisions": 14,
+            "captures": 17,
+            "revisions": 16,
             "first": "2026-07-14",
-            "last": "2026-08-27"
+            "last": "2026-08-30"
           }
         }
       ],
@@ -974,11 +974,8 @@
           "sha256": "d999aff5712a68aa",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 282,
-            "revisions": 281,
-            "first": "2021-09-03",
-            "last": "2026-08-26"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -990,11 +987,8 @@
           "sha256": "3669d59798194699",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 156,
-            "revisions": 155,
-            "first": "2018-11-17",
-            "last": "2026-08-18"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -1328,8 +1322,11 @@
           "sha256": "46bae6a6ca8c08ed",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 33,
+            "revisions": 32,
+            "first": "2022-05-28",
+            "last": "2026-08-03"
           }
         },
         {
@@ -1499,8 +1496,8 @@
           "Canada": 1,
           "Colombia": 1,
           "Chile": 1,
-          "Poland": 1,
-          "Austria": 1
+          "Austria": 1,
+          "Poland": 1
         },
         "scanned": 26,
         "signals": [
@@ -1723,11 +1720,8 @@
           "sha256": "08c0eec1eefcd1e4",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 96,
-            "revisions": 95,
-            "first": "2022-12-05",
-            "last": "2026-08-25"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         }
       ],
@@ -1868,13 +1862,13 @@
       },
       "jobs": {
         "ok": true,
-        "total": 573,
-        "placeable": 511,
-        "unplaceable": 62,
+        "total": 574,
+        "placeable": 510,
+        "unplaceable": 64,
         "eea": 64,
-        "non_eea": 447,
+        "non_eea": 446,
         "countries": {
-          "United States": 272,
+          "United States": 271,
           "Canada": 54,
           "Ireland": 51,
           "Singapore": 40,
@@ -2391,8 +2385,11 @@
           "sha256": "b8fd30b8b1e6bdaa",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2015-04-16",
+            "last": "2026-02-17"
           }
         },
         {
@@ -2812,7 +2809,7 @@
       "category": "Search and data",
       "public_evidence_only": true,
       "surface": {
-        "grade": "82",
+        "grade": "57",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "1 public documents · 1 open reconciliations"
@@ -2827,8 +2824,11 @@
           "sha256": "5369d10f45a8d597",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2018-05-23",
+            "last": "2026-02-01"
           }
         }
       ],
