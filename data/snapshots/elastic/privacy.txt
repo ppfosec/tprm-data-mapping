@@ -1,5 +1,5 @@
 # source: https://www.elastic.co/legal/privacy-statement
-# collected: 2026-08-30
+# collected: 2026-08-31
 
 General Privacy Statement
 Effective Date:

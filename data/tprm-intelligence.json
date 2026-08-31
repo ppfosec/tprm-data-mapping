@@ -594,11 +594,8 @@
           "sha256": "85c78c93175ffb26",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2024-02-21",
-            "last": "2026-03-20"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -611,11 +608,8 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": true,
-            "captures": 61,
-            "revisions": 60,
-            "first": "2024-09-26",
-            "last": "2026-08-16"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -627,11 +621,8 @@
           "sha256": "b5c2883bfc8d9aed",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 17,
-            "revisions": 16,
-            "first": "2026-07-14",
-            "last": "2026-08-30"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
@@ -958,11 +949,8 @@
           "sha256": "8d3c9629d73c5991",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2018-05-14",
-            "last": "2018-09-15"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -975,7 +963,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectTimeout"
+            "reason": "ConnectionError"
           }
         },
         {
@@ -988,7 +976,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectTimeout"
+            "reason": "ConnectionError"
           }
         },
         {
@@ -1106,9 +1094,9 @@
       },
       "jobs": {
         "ok": true,
-        "total": 309,
+        "total": 305,
         "placeable": 8,
-        "unplaceable": 301,
+        "unplaceable": 297,
         "eea": 1,
         "non_eea": 7,
         "countries": {
@@ -1205,6 +1193,36 @@
             ]
           },
           {
+            "key": "named_tooling",
+            "label": "Named internal tooling",
+            "severity": "low",
+            "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
+            "count": 3,
+            "examples": [
+              {
+                "title": "People Operations Specialist, Singapore (6 Month Contract)",
+                "location": "Hybrid",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8161038?gh_jid=8161038",
+                "matched": "Zendesk",
+                "excerpt": "dynamic environment, with the ability to manage shifting priorities efficiently. Familiarity with Workday or Zendesk would be an advantage. &nbsp; What Makes Cloudflare Special? We’re not just a highly ambitious, large-scale t"
+              },
+              {
+                "title": "Principal Engineer - GTM Data Platform",
+                "location": "Hybrid",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8054669?gh_jid=8054669",
+                "matched": "Snowflake",
+                "excerpt": "h a focus on enabling GTM organizations. Columnar/OLAP or lakehouse experience (ClickHouse, DuckDB, BigQuery, Snowflake, Iceberg, Starrocks).Familiarity with the Salesforce data model and CRM/API integrations. Familiarity with de"
+              },
+              {
+                "title": "Senior Cloudflare One GTM Specialist",
+                "location": "Distributed",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/7534033?gh_jid=7534033",
+                "matched": "segment",
+                "excerpt": "esponsible for growing Cloudflare One (CF1) revenue and product adoption. In this role, you will serve as the segment lead for CF1 sales. You will advise the sales leaders on opportunities and programs to grow CF1 revenue, part"
+              }
+            ]
+          },
+          {
             "key": "gov_enclave",
             "label": "Government enclave",
             "severity": "low",
@@ -1224,29 +1242,6 @@
                 "url": "https://boards.greenhouse.io/cloudflare/jobs/8131824?gh_jid=8131824",
                 "matched": "FEDRAMP",
                 "excerpt": "el. Aware of government and industry standards, frameworks and compliance requirements (i.e, HIPAA, PCI, SOX, FEDRAMP, GDPR, NIS2, etc.). Experience in designing architecture, migration, and implementation of cloud, edge and on"
-              }
-            ]
-          },
-          {
-            "key": "named_tooling",
-            "label": "Named internal tooling",
-            "severity": "low",
-            "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 2,
-            "examples": [
-              {
-                "title": "People Operations Specialist, Singapore (6 Month Contract)",
-                "location": "Hybrid",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/8161038?gh_jid=8161038",
-                "matched": "Zendesk",
-                "excerpt": "dynamic environment, with the ability to manage shifting priorities efficiently. Familiarity with Workday or Zendesk would be an advantage. &nbsp; What Makes Cloudflare Special? We’re not just a highly ambitious, large-scale t"
-              },
-              {
-                "title": "Principal Engineer - GTM Data Platform",
-                "location": "Hybrid",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/8054669?gh_jid=8054669",
-                "matched": "Snowflake",
-                "excerpt": "h a focus on enabling GTM organizations. Columnar/OLAP or lakehouse experience (ClickHouse, DuckDB, BigQuery, Snowflake, Iceberg, Starrocks).Familiarity with the Salesforce data model and CRM/API integrations. Familiarity with de"
               }
             ]
           }
@@ -1465,25 +1460,25 @@
       },
       "jobs": {
         "ok": true,
-        "total": 454,
-        "placeable": 454,
+        "total": 451,
+        "placeable": 451,
         "unplaceable": 0,
         "eea": 91,
-        "non_eea": 363,
+        "non_eea": 360,
         "countries": {
           "United States": 228,
           "France": 51,
           "Japan": 47,
           "Ireland": 24,
           "Singapore": 18,
-          "United Kingdom": 18,
+          "United Kingdom": 17,
           "Brazil": 16,
           "Netherlands": 15,
           "Spain": 15,
           "South Korea": 12,
-          "Australia": 11,
-          "India": 8,
+          "Australia": 10,
           "Portugal": 8,
+          "India": 7,
           "Germany": 7,
           "Italy": 5,
           "Israel": 4,
@@ -1496,8 +1491,8 @@
           "Canada": 1,
           "Colombia": 1,
           "Chile": 1,
-          "Austria": 1,
-          "Poland": 1
+          "Poland": 1,
+          "Austria": 1
         },
         "scanned": 26,
         "signals": [
@@ -1705,10 +1700,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 223,
-            "revisions": 222,
+            "captures": 224,
+            "revisions": 223,
             "first": "2022-05-27",
-            "last": "2026-08-25"
+            "last": "2026-08-29"
           }
         },
         {
@@ -1721,7 +1716,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectTimeout"
+            "reason": "ConnectionError"
           }
         }
       ],
@@ -1862,20 +1857,20 @@
       },
       "jobs": {
         "ok": true,
-        "total": 574,
+        "total": 573,
         "placeable": 510,
-        "unplaceable": 64,
+        "unplaceable": 63,
         "eea": 64,
         "non_eea": 446,
         "countries": {
-          "United States": 271,
+          "United States": 272,
           "Canada": 54,
           "Ireland": 51,
           "Singapore": 40,
-          "India": 37,
+          "India": 36,
           "United Kingdom": 31,
           "Mexico": 28,
-          "Australia": 9,
+          "Australia": 8,
           "Spain": 5,
           "Israel": 4,
           "Japan": 3,
@@ -1987,10 +1982,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 286,
-            "revisions": 285,
+            "captures": 287,
+            "revisions": 286,
             "first": "2024-01-18",
-            "last": "2026-08-25"
+            "last": "2026-08-30"
           }
         },
         {
@@ -2002,11 +1997,8 @@
           "sha256": "4bde694018c282cd",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 14,
-            "revisions": 13,
-            "first": "2025-04-01",
-            "last": "2026-06-20"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -2018,11 +2010,8 @@
           "sha256": "afbbe2131f13839e",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 81,
-            "revisions": 80,
-            "first": "2019-04-01",
-            "last": "2026-07-28"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
@@ -2370,7 +2359,7 @@
       "category": "DevOps platform",
       "public_evidence_only": true,
       "surface": {
-        "grade": "50",
+        "grade": "54",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "3 public documents · 3 open reconciliations"
@@ -2385,11 +2374,8 @@
           "sha256": "b8fd30b8b1e6bdaa",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2015-04-16",
-            "last": "2026-02-17"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -2401,11 +2387,8 @@
           "sha256": "b9e8de6a4bacb426",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 80,
-            "revisions": 79,
-            "first": "2020-11-27",
-            "last": "2026-08-18"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -2563,15 +2546,15 @@
       },
       "jobs": {
         "ok": true,
-        "total": 220,
-        "placeable": 214,
+        "total": 221,
+        "placeable": 215,
         "unplaceable": 6,
         "eea": 30,
-        "non_eea": 184,
+        "non_eea": 185,
         "countries": {
           "United States": 100,
           "Canada": 54,
-          "United Kingdom": 44,
+          "United Kingdom": 45,
           "India": 37,
           "Germany": 15,
           "Ireland": 11,
@@ -2712,15 +2695,15 @@
             "examples": [
               {
                 "title": "Associate Solutions Architect (French or German fluency) ",
-                "location": "Remote, Spain",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8687171002",
+                "location": "Remote Ireland",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8675543002",
                 "matched": "itar",
                 "excerpt": "or physical disability, genetic information (including family medical history), discharge status from the military, protected veteran status (which includes disabled veterans, recently separated veterans, active duty wartim"
               },
               {
                 "title": "Associate Solutions Architect (French or German fluency) ",
-                "location": "Remote Ireland",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8675543002",
+                "location": "Remote, Spain",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8687171002",
                 "matched": "itar",
                 "excerpt": "or physical disability, genetic information (including family medical history), discharge status from the military, protected veteran status (which includes disabled veterans, recently separated veterans, active duty wartim"
               },
@@ -2894,15 +2877,15 @@
       },
       "jobs": {
         "ok": true,
-        "total": 336,
-        "placeable": 336,
+        "total": 342,
+        "placeable": 342,
         "unplaceable": 0,
-        "eea": 133,
-        "non_eea": 203,
+        "eea": 134,
+        "non_eea": 208,
         "countries": {
-          "United States": 102,
-          "Spain": 32,
-          "Canada": 30,
+          "United States": 105,
+          "Spain": 33,
+          "Canada": 31,
           "Greece": 20,
           "Portugal": 20,
           "Ireland": 19,
@@ -2919,10 +2902,10 @@
           "Australia": 3,
           "France": 3,
           "Brazil": 3,
+          "United Arab Emirates": 2,
           "Costa Rica": 2,
           "Mexico": 2,
           "Israel": 2,
-          "United Arab Emirates": 1,
           "South Korea": 1,
           "Hungary": 1,
           "Denmark": 1,
@@ -2939,15 +2922,15 @@
             "examples": [
               {
                 "title": "Associate Corporate Counsel - Legal Product, IP, and Marketing",
-                "location": "Canada",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8122981&gh_jid=8122981",
+                "location": "United States",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8093273&gh_jid=8093273",
                 "matched": "across time zones",
                 "excerpt": "orkflows and \"productization\" processes that help a legal team scale. Global Perspective: Comfortable working across time zones and cultures in a distributed culture with a flexible approach to problem-solving. Compensation for this role"
               },
               {
                 "title": "Associate Corporate Counsel - Legal Product, IP, and Marketing",
-                "location": "United States",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8093273&gh_jid=8093273",
+                "location": "Canada",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8122981&gh_jid=8122981",
                 "matched": "across time zones",
                 "excerpt": "orkflows and \"productization\" processes that help a legal team scale. Global Perspective: Comfortable working across time zones and cultures in a distributed culture with a flexible approach to problem-solving. Compensation for this role"
               },
@@ -3077,8 +3060,11 @@
           "sha256": "245c0fd1c2ba7f7c",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 21,
+            "revisions": 20,
+            "first": "2026-06-08",
+            "last": "2026-08-28"
           }
         },
         {
