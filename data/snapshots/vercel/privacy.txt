@@ -1,5 +1,5 @@
 # source: https://vercel.com/legal/privacy-notice
-# collected: 2026-08-31
+# collected: 2026-09-01
 
 Privacy Notice
 Last Updated
@@ -27,7 +27,6 @@ United States
 EEA and UK
 Contact Us
 Previous Versions
-Download PDF
 At Vercel, we respect customers' need for privacy.
 We offer our Sites and Services (defined below) to customers and users either directly or via a reseller.
 Where we refer to our "Customers" in this Privacy Notice, we refer to customers that have entered into an agreement with us or our resellers to use the Services (each, an "Agreement").
@@ -680,7 +679,6 @@ United States
 Previous Versions
 The previous versions of our Privacy Policies are listed below:
 March 15, 2021
-April 22, 2024
-March 17, 2026
+April 23, 2024
 Effective Date:
 June 1, 2026

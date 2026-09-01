@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T10:09:06+00:00",
+  "generated_at": "2026-09-01T08:56:49+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -137,8 +137,11 @@
           "sha256": "85c78c93175ffb26",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2024-02-21",
+            "last": "2026-03-20"
           }
         },
         {
@@ -151,8 +154,11 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 62,
+            "revisions": 61,
+            "first": "2024-09-26",
+            "last": "2026-08-30"
           }
         },
         {
@@ -164,20 +170,23 @@
           "sha256": "b5c2883bfc8d9aed",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 19,
+            "revisions": 18,
+            "first": "2026-07-14",
+            "last": "2026-08-31"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 571,
-        "placeable": 569,
+        "total": 569,
+        "placeable": 567,
         "unplaceable": 2,
-        "eea": 29,
+        "eea": 27,
         "non_eea": 540,
         "countries": {
-          "United States": 447,
+          "United States": 448,
           "United Kingdom": 48,
           "Japan": 16,
           "Ireland": 11,
@@ -185,11 +194,11 @@
           "South Korea": 10,
           "Germany": 9,
           "Australia": 8,
-          "France": 6,
-          "India": 4,
-          "Spain": 2,
+          "France": 5,
+          "India": 3,
           "Canada": 2,
           "Switzerland": 2,
+          "Spain": 1,
           "Italy": 1
         },
         "scanned": 26,
@@ -304,7 +313,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "540 of 569 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "540 of 567 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -313,7 +322,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 447 open roles"
+              "excerpt": "United States: 448 open roles"
             },
             {
               "kind": "stat",
@@ -495,8 +504,11 @@
           "sha256": "8d3c9629d73c5991",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2018-05-14",
+            "last": "2018-09-15"
           }
         },
         {
@@ -521,8 +533,11 @@
           "sha256": "3669d59798194699",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 156,
+            "revisions": 155,
+            "first": "2018-11-17",
+            "last": "2026-08-18"
           }
         },
         {
@@ -534,25 +549,23 @@
           "sha256": "253254e28bc2ff29",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2021-05-16",
-            "last": "2025-10-08"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 305,
-        "placeable": 8,
-        "unplaceable": 297,
-        "eea": 1,
+        "total": 315,
+        "placeable": 9,
+        "unplaceable": 306,
+        "eea": 2,
         "non_eea": 7,
         "countries": {
           "India": 3,
           "United States": 3,
           "Japan": 1,
+          "France": 1,
           "Portugal": 1
         },
         "scanned": 26,
@@ -794,8 +807,8 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 47,
-        "footprint": 22,
+        "total": 44,
+        "footprint": 19,
         "access": 25,
         "transparency": 0,
         "record": 0
@@ -850,11 +863,8 @@
           "sha256": "58ce48c87de09d47",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2017-06-30",
-            "last": "2025-04-25"
+            "ok": false,
+            "reason": "ReadTimeout"
           }
         },
         {
@@ -892,20 +902,20 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 451,
-        "placeable": 451,
+        "total": 455,
+        "placeable": 455,
         "unplaceable": 0,
-        "eea": 91,
-        "non_eea": 360,
+        "eea": 94,
+        "non_eea": 361,
         "countries": {
           "United States": 228,
-          "France": 51,
+          "France": 52,
           "Japan": 47,
-          "Ireland": 24,
-          "Singapore": 18,
+          "Ireland": 26,
+          "Singapore": 19,
           "United Kingdom": 17,
+          "Netherlands": 16,
           "Brazil": 16,
-          "Netherlands": 15,
           "Spain": 15,
           "South Korea": 12,
           "Australia": 10,
@@ -1267,36 +1277,39 @@
           "sha256": "08c0eec1eefcd1e4",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 97,
+            "revisions": 96,
+            "first": "2022-12-05",
+            "last": "2026-08-29"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 573,
-        "placeable": 510,
-        "unplaceable": 63,
-        "eea": 64,
-        "non_eea": 446,
+        "total": 582,
+        "placeable": 521,
+        "unplaceable": 61,
+        "eea": 67,
+        "non_eea": 454,
         "countries": {
-          "United States": 272,
-          "Canada": 54,
+          "United States": 274,
+          "Canada": 56,
           "Ireland": 51,
           "Singapore": 40,
           "India": 36,
-          "United Kingdom": 31,
+          "United Kingdom": 33,
           "Mexico": 28,
-          "Australia": 8,
-          "Spain": 5,
+          "Australia": 10,
+          "Spain": 6,
           "Israel": 4,
+          "Romania": 4,
           "Japan": 3,
           "Germany": 2,
           "Italy": 2,
           "Taiwan": 2,
           "Brazil": 2,
           "Luxembourg": 2,
-          "Romania": 2,
           "France": 1,
           "United Arab Emirates": 1,
           "New Zealand": 1,
@@ -1348,7 +1361,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 4,
+            "count": 3,
             "examples": [
               {
                 "title": "Account Executive, Platforms Hunter (Central Eastern Europe)",
@@ -1511,9 +1524,9 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 38,
+        "total": 36,
         "footprint": 22,
-        "access": 16,
+        "access": 14,
         "transparency": 0,
         "record": 0
       },
@@ -1553,7 +1566,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "ReadTimeout"
           }
         },
         {
@@ -1572,14 +1585,14 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 163,
-        "placeable": 163,
+        "total": 161,
+        "placeable": 161,
         "unplaceable": 0,
         "eea": 14,
-        "non_eea": 149,
+        "non_eea": 147,
         "countries": {
-          "United States": 98,
-          "United Kingdom": 20,
+          "United States": 97,
+          "United Kingdom": 19,
           "Japan": 10,
           "Germany": 8,
           "Singapore": 6,
@@ -1728,7 +1741,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "149 of 163 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "147 of 161 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -1737,11 +1750,11 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 98 open roles"
+              "excerpt": "United States: 97 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 20 open roles"
+              "excerpt": "United Kingdom: 19 open roles"
             },
             {
               "kind": "stat",
@@ -1932,8 +1945,11 @@
           "sha256": "b8fd30b8b1e6bdaa",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2015-04-16",
+            "last": "2026-02-17"
           }
         },
         {
@@ -1945,8 +1961,11 @@
           "sha256": "b9e8de6a4bacb426",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 81,
+            "revisions": 80,
+            "first": "2020-11-27",
+            "last": "2026-08-28"
           }
         },
         {
@@ -1970,19 +1989,19 @@
       "jobs": {
         "ok": true,
         "total": 221,
-        "placeable": 215,
-        "unplaceable": 6,
-        "eea": 30,
+        "placeable": 216,
+        "unplaceable": 5,
+        "eea": 31,
         "non_eea": 185,
         "countries": {
-          "United States": 100,
-          "Canada": 54,
+          "United States": 102,
+          "Canada": 55,
           "United Kingdom": 45,
-          "India": 37,
+          "India": 36,
           "Germany": 15,
-          "Ireland": 11,
+          "Ireland": 12,
           "Poland": 9,
-          "Netherlands": 7,
+          "Netherlands": 8,
           "France": 6,
           "Israel": 6,
           "United Arab Emirates": 5,
@@ -2323,11 +2342,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 54,
-        "footprint": 22,
+        "total": 50,
+        "footprint": 21,
         "access": 25,
         "transparency": 4,
-        "record": 3
+        "record": 0
       },
       "drift": [
         {
@@ -2368,49 +2387,46 @@
           "sha256": "5369d10f45a8d597",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2018-05-23",
-            "last": "2026-02-01"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 342,
-        "placeable": 342,
+        "total": 344,
+        "placeable": 344,
         "unplaceable": 0,
-        "eea": 134,
-        "non_eea": 208,
+        "eea": 133,
+        "non_eea": 211,
         "countries": {
-          "United States": 105,
+          "United States": 107,
           "Spain": 33,
           "Canada": 31,
           "Greece": 20,
           "Portugal": 20,
+          "India": 19,
           "Ireland": 19,
-          "India": 18,
           "United Kingdom": 15,
           "Norway": 11,
           "Poland": 10,
           "Romania": 8,
-          "Germany": 7,
           "Switzerland": 7,
           "Singapore": 7,
+          "Germany": 6,
           "Japan": 6,
           "Saudi Arabia": 4,
           "Australia": 3,
           "France": 3,
           "Brazil": 3,
           "United Arab Emirates": 2,
-          "Costa Rica": 2,
           "Mexico": 2,
           "Israel": 2,
-          "South Korea": 1,
+          "South Korea": 2,
           "Hungary": 1,
           "Denmark": 1,
-          "Belgium": 1
+          "Belgium": 1,
+          "Costa Rica": 1
         },
         "scanned": 26,
         "signals": [
@@ -2449,7 +2465,7 @@
             "label": "Travel expected",
             "severity": "high",
             "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 7,
+            "count": 8,
             "examples": [
               {
                 "title": "Consulting Architect - Observability",
@@ -2479,7 +2495,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 5,
+            "count": 4,
             "examples": [
               {
                 "title": "Cloud Billing Associate",
@@ -2496,11 +2512,11 @@
                 "excerpt": "erformance to meet demanding SLAs, optimizing JVM heap, garbage collection, caching layers, and Apache Lucene segment merging. High-Throughput Ingestion: Build robust ingestion pipelines and bulk indexing strategies handling hi"
               },
               {
-                "title": "Director, Cloud Billing Operations",
-                "location": "United States",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8121037&gh_jid=8121037",
+                "title": "Help Desk Operations Manager, Partner Revenue Strategy & Operations",
+                "location": "India",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8059813&gh_jid=8059813",
                 "matched": "Salesforce",
-                "excerpt": "ing operational controls, and spearheading cross-functional system implementations (ERP, Billing Engines, CRP/Salesforce, MP portals). Executive Presence &amp; Stakeholder Management: Outstanding interpersonal, communication, and"
+                "excerpt": "position leading a team 2+ years with process improvement 2+ years of experience with CRM systems, preferably Salesforce #LI-AS3 Additional Information - We Take Care of Our People As a distributed company, diversity drives our id"
               }
             ]
           },
@@ -2599,11 +2615,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 57,
+        "total": 82,
         "footprint": 15,
         "access": 25,
         "transparency": 17,
-        "record": 0
+        "record": 25
       },
       "drift": []
     },
@@ -2619,16 +2635,16 @@
           "kind": "privacy",
           "url": "https://vercel.com/legal/privacy-notice",
           "path": "data/snapshots/vercel/privacy.txt",
-          "lines": 683,
-          "chars": 50677,
-          "sha256": "245c0fd1c2ba7f7c",
+          "lines": 681,
+          "chars": 50649,
+          "sha256": "41039595323c550e",
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 21,
-            "revisions": 20,
+            "captures": 23,
+            "revisions": 22,
             "first": "2026-06-08",
-            "last": "2026-08-28"
+            "last": "2026-08-31"
           }
         },
         {
@@ -2640,23 +2656,20 @@
           "sha256": "c6f2954ea450f34e",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 148,
-            "revisions": 147,
-            "first": "2020-04-23",
-            "last": "2026-08-26"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 91,
-        "placeable": 88,
+        "total": 89,
+        "placeable": 86,
         "unplaceable": 3,
         "eea": 9,
-        "non_eea": 79,
+        "non_eea": 77,
         "countries": {
-          "United States": 68,
+          "United States": 66,
           "United Kingdom": 18,
           "Germany": 9,
           "India": 4,
@@ -2853,16 +2866,40 @@
         "sensitivity_score": 20,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": false
+        "source_documents_changed": true
       },
       "score": {
-        "total": 55,
+        "total": 58,
         "footprint": 22,
         "access": 25,
         "transparency": 8,
-        "record": 0
+        "record": 3
       },
-      "drift": []
+      "drift": [
+        {
+          "id": "vercel-privacy-2026-09-01",
+          "vendor_id": "vercel",
+          "vendor_name": "Vercel",
+          "document": "privacy",
+          "document_label": "Privacy policy",
+          "date": "2026-09-01",
+          "url": "https://vercel.com/legal/privacy-notice",
+          "hunks": [
+            {
+              "before": "Download PDF",
+              "after": null
+            },
+            {
+              "before": "April 22, 2024",
+              "after": "April 23, 2024"
+            },
+            {
+              "before": "March 17, 2026",
+              "after": null
+            }
+          ]
+        }
+      ]
     }
   ]
 }

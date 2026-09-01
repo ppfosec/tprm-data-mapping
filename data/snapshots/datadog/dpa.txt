@@ -1,5 +1,5 @@
 # source: https://www.datadoghq.com/legal/data-processing-addendum/
-# collected: 2026-08-31
+# collected: 2026-09-01
 
 Product
 Infrastructure
