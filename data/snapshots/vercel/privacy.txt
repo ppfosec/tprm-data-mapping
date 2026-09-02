@@ -1,5 +1,5 @@
 # source: https://vercel.com/legal/privacy-notice
-# collected: 2026-09-01
+# collected: 2026-09-02
 
 Privacy Notice
 Last Updated

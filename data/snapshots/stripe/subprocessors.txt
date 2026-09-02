@@ -1,5 +1,5 @@
 # source: https://stripe.com/legal/service-providers
-# collected: 2026-09-01
+# collected: 2026-09-02
 
 Last updated:
 December 20, 2025

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T08:56:49+00:00",
+  "generated_at": "2026-09-02T08:15:29+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -171,28 +171,28 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 19,
-            "revisions": 18,
+            "captures": 20,
+            "revisions": 19,
             "first": "2026-07-14",
-            "last": "2026-08-31"
+            "last": "2026-09-02"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 569,
-        "placeable": 567,
+        "total": 577,
+        "placeable": 575,
         "unplaceable": 2,
         "eea": 27,
-        "non_eea": 540,
+        "non_eea": 548,
         "countries": {
-          "United States": 448,
-          "United Kingdom": 48,
-          "Japan": 16,
-          "Ireland": 11,
+          "United States": 458,
+          "United Kingdom": 47,
+          "Japan": 15,
           "Singapore": 10,
           "South Korea": 10,
-          "Germany": 9,
+          "Germany": 10,
+          "Ireland": 10,
           "Australia": 8,
           "France": 5,
           "India": 3,
@@ -313,7 +313,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "540 of 567 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "548 of 575 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -322,15 +322,19 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 448 open roles"
+              "excerpt": "United States: 458 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 48 open roles"
+              "excerpt": "United Kingdom: 47 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "Japan: 16 open roles"
+              "excerpt": "Japan: 15 open roles"
+            },
+            {
+              "kind": "stat",
+              "excerpt": "Singapore: 10 open roles"
             }
           ],
           "question": "Which roles can access production data, and from which countries? Does the residency commitment cover support and engineering access, or only data at rest?"
@@ -520,8 +524,11 @@
           "sha256": "d999aff5712a68aa",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 285,
+            "revisions": 284,
+            "first": "2021-09-03",
+            "last": "2026-08-31"
           }
         },
         {
@@ -549,21 +556,24 @@
           "sha256": "253254e28bc2ff29",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2021-05-16",
+            "last": "2025-10-08"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 315,
-        "placeable": 9,
-        "unplaceable": 306,
+        "total": 324,
+        "placeable": 8,
+        "unplaceable": 316,
         "eea": 2,
-        "non_eea": 7,
+        "non_eea": 6,
         "countries": {
           "India": 3,
-          "United States": 3,
+          "United States": 2,
           "Japan": 1,
           "France": 1,
           "Portugal": 1
@@ -575,7 +585,7 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 6,
+            "count": 5,
             "examples": [
               {
                 "title": "AI Security Research & Red Team Engineer",
@@ -656,36 +666,6 @@
             ]
           },
           {
-            "key": "named_tooling",
-            "label": "Named internal tooling",
-            "severity": "low",
-            "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 3,
-            "examples": [
-              {
-                "title": "People Operations Specialist, Singapore (6 Month Contract)",
-                "location": "Hybrid",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/8161038?gh_jid=8161038",
-                "matched": "Zendesk",
-                "excerpt": "dynamic environment, with the ability to manage shifting priorities efficiently. Familiarity with Workday or Zendesk would be an advantage. &nbsp; What Makes Cloudflare Special? We’re not just a highly ambitious, large-scale t"
-              },
-              {
-                "title": "Principal Engineer - GTM Data Platform",
-                "location": "Hybrid",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/8054669?gh_jid=8054669",
-                "matched": "Snowflake",
-                "excerpt": "h a focus on enabling GTM organizations. Columnar/OLAP or lakehouse experience (ClickHouse, DuckDB, BigQuery, Snowflake, Iceberg, Starrocks).Familiarity with the Salesforce data model and CRM/API integrations. Familiarity with de"
-              },
-              {
-                "title": "Senior Cloudflare One GTM Specialist",
-                "location": "Distributed",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/7534033?gh_jid=7534033",
-                "matched": "segment",
-                "excerpt": "esponsible for growing Cloudflare One (CF1) revenue and product adoption. In this role, you will serve as the segment lead for CF1 sales. You will advise the sales leaders on opportunities and programs to grow CF1 revenue, part"
-              }
-            ]
-          },
-          {
             "key": "gov_enclave",
             "label": "Government enclave",
             "severity": "low",
@@ -705,6 +685,29 @@
                 "url": "https://boards.greenhouse.io/cloudflare/jobs/8131824?gh_jid=8131824",
                 "matched": "FEDRAMP",
                 "excerpt": "el. Aware of government and industry standards, frameworks and compliance requirements (i.e, HIPAA, PCI, SOX, FEDRAMP, GDPR, NIS2, etc.). Experience in designing architecture, migration, and implementation of cloud, edge and on"
+              }
+            ]
+          },
+          {
+            "key": "named_tooling",
+            "label": "Named internal tooling",
+            "severity": "low",
+            "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
+            "count": 2,
+            "examples": [
+              {
+                "title": "People Operations Specialist, Singapore (6 Month Contract)",
+                "location": "Hybrid",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8161038?gh_jid=8161038",
+                "matched": "Zendesk",
+                "excerpt": "dynamic environment, with the ability to manage shifting priorities efficiently. Familiarity with Workday or Zendesk would be an advantage. &nbsp; What Makes Cloudflare Special? We’re not just a highly ambitious, large-scale t"
+              },
+              {
+                "title": "Principal Engineer - GTM Data Platform",
+                "location": "Hybrid",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8054669?gh_jid=8054669",
+                "matched": "Snowflake",
+                "excerpt": "h a focus on enabling GTM organizations. Columnar/OLAP or lakehouse experience (ClickHouse, DuckDB, BigQuery, Snowflake, Iceberg, Starrocks).Familiarity with the Salesforce data model and CRM/API integrations. Familiarity with de"
               }
             ]
           }
@@ -864,7 +867,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ReadTimeout"
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -876,11 +879,8 @@
           "sha256": "46bae6a6ca8c08ed",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 33,
-            "revisions": 32,
-            "first": "2022-05-28",
-            "last": "2026-08-03"
+            "ok": false,
+            "reason": "ReadTimeout"
           }
         },
         {
@@ -892,41 +892,38 @@
           "sha256": "b5c3e88a3bf3e9d9",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 21,
-            "revisions": 20,
-            "first": "2024-05-24",
-            "last": "2026-08-24"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 455,
-        "placeable": 455,
+        "total": 443,
+        "placeable": 443,
         "unplaceable": 0,
-        "eea": 94,
-        "non_eea": 361,
+        "eea": 92,
+        "non_eea": 351,
         "countries": {
-          "United States": 228,
-          "France": 52,
+          "United States": 218,
+          "France": 51,
           "Japan": 47,
-          "Ireland": 26,
+          "Ireland": 24,
           "Singapore": 19,
-          "United Kingdom": 17,
+          "United Kingdom": 19,
+          "Brazil": 17,
           "Netherlands": 16,
-          "Brazil": 16,
           "Spain": 15,
           "South Korea": 12,
-          "Australia": 10,
+          "Australia": 9,
           "Portugal": 8,
           "India": 7,
           "Germany": 7,
           "Italy": 5,
-          "Israel": 4,
           "Indonesia": 4,
           "Sweden": 4,
           "Saudi Arabia": 3,
+          "Israel": 3,
           "Mexico": 3,
           "Denmark": 3,
           "Switzerland": 2,
@@ -1150,11 +1147,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 44,
+        "total": 69,
         "footprint": 20,
         "access": 24,
         "transparency": 0,
-        "record": 0
+        "record": 25
       },
       "drift": [
         {
@@ -1245,11 +1242,8 @@
           "sha256": "ff0e2b002da0ad9f",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2008-07-19",
-            "last": "2020-05-01"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -1287,24 +1281,24 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 582,
-        "placeable": 521,
-        "unplaceable": 61,
-        "eea": 67,
-        "non_eea": 454,
+        "total": 592,
+        "placeable": 529,
+        "unplaceable": 63,
+        "eea": 66,
+        "non_eea": 463,
         "countries": {
-          "United States": 274,
-          "Canada": 56,
+          "United States": 280,
+          "Canada": 57,
           "Ireland": 51,
-          "Singapore": 40,
-          "India": 36,
-          "United Kingdom": 33,
+          "Singapore": 42,
+          "United Kingdom": 35,
+          "India": 35,
           "Mexico": 28,
           "Australia": 10,
           "Spain": 6,
           "Israel": 4,
-          "Romania": 4,
           "Japan": 3,
+          "Romania": 3,
           "Germany": 2,
           "Italy": 2,
           "Taiwan": 2,
@@ -1313,6 +1307,7 @@
           "France": 1,
           "United Arab Emirates": 1,
           "New Zealand": 1,
+          "Hong Kong": 1,
           "Thailand": 1
         },
         "scanned": 26,
@@ -1337,22 +1332,6 @@
                 "url": "https://stripe.com/jobs/search?gh_jid=8157577",
                 "matched": "willing to travel",
                 "excerpt": "s, rapidly evolving environments and balancing&nbsp;strategic thinking with hands-on execution. ● Based in or willing to travel frequently San Francisco, CA. New York, NY (Hybrid) is also acceptable.&nbsp; &nbsp; Preferred qualifications"
-              }
-            ]
-          },
-          {
-            "key": "anywhere",
-            "label": "Location-agnostic hiring",
-            "severity": "high",
-            "why": "Staff placement is unconstrained, so staff location relative to your data is too.",
-            "count": 1,
-            "examples": [
-              {
-                "title": "Cloud Security Engineer",
-                "location": "Seattle",
-                "url": "https://stripe.com/jobs/search?gh_jid=7867389",
-                "matched": "from anywhere in the world",
-                "excerpt": "all over the world. We process payments, run marketplaces, detect fraud, help entrepreneurs start a business from anywhere in the world, build world-class developer-friendly APIs, and more. Nearly every system we operate interacts with sensitive"
               }
             ]
           },
@@ -1524,9 +1503,9 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 36,
+        "total": 33,
         "footprint": 22,
-        "access": 14,
+        "access": 11,
         "transparency": 0,
         "record": 0
       },
@@ -1544,9 +1523,9 @@
           "kind": "privacy",
           "url": "https://www.figma.com/legal/privacy/",
           "path": "data/snapshots/figma/privacy.txt",
-          "lines": 590,
-          "chars": 54764,
-          "sha256": "6e2b46ec94fc52f7",
+          "lines": 591,
+          "chars": 54787,
+          "sha256": "14b1ae957872913e",
           "note": null,
           "archive": {
             "ok": true,
@@ -1565,8 +1544,11 @@
           "sha256": "4bde694018c282cd",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ReadTimeout"
+            "ok": true,
+            "captures": 14,
+            "revisions": 13,
+            "first": "2025-04-01",
+            "last": "2026-06-20"
           }
         },
         {
@@ -1578,8 +1560,11 @@
           "sha256": "afbbe2131f13839e",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 81,
+            "revisions": 80,
+            "first": "2019-04-01",
+            "last": "2026-07-28"
           }
         }
       ],
@@ -1591,8 +1576,8 @@
         "eea": 14,
         "non_eea": 147,
         "countries": {
-          "United States": 97,
-          "United Kingdom": 19,
+          "United States": 99,
+          "United Kingdom": 17,
           "Japan": 10,
           "Germany": 8,
           "Singapore": 6,
@@ -1686,7 +1671,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 4,
+            "count": 5,
             "examples": [
               {
                 "title": "Data Engineer",
@@ -1750,11 +1735,11 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 97 open roles"
+              "excerpt": "United States: 99 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 19 open roles"
+              "excerpt": "United Kingdom: 17 open roles"
             },
             {
               "kind": "stat",
@@ -1831,7 +1816,7 @@
         "sensitivity_score": 30,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": false
+        "source_documents_changed": true
       },
       "score": {
         "total": 48,
@@ -1841,6 +1826,25 @@
         "record": 0
       },
       "drift": [
+        {
+          "id": "figma-privacy-2026-09-02",
+          "vendor_id": "figma",
+          "vendor_name": "Figma",
+          "document": "privacy",
+          "document_label": "Privacy policy",
+          "date": "2026-09-02",
+          "url": "https://www.figma.com/legal/privacy/",
+          "hunks": [
+            {
+              "before": "June 2, 2026",
+              "after": "September 1, 2026"
+            },
+            {
+              "before": null,
+              "after": "September 1, 2026"
+            }
+          ]
+        },
         {
           "id": "figma-subprocessors-2026-08-21",
           "vendor_id": "figma",
@@ -1961,11 +1965,8 @@
           "sha256": "b9e8de6a4bacb426",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 81,
-            "revisions": 80,
-            "first": "2020-11-27",
-            "last": "2026-08-28"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -1978,36 +1979,33 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": true,
-            "captures": 23,
-            "revisions": 22,
-            "first": "2023-11-29",
-            "last": "2026-07-07"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 221,
-        "placeable": 216,
+        "total": 220,
+        "placeable": 215,
         "unplaceable": 5,
-        "eea": 31,
-        "non_eea": 185,
+        "eea": 33,
+        "non_eea": 182,
         "countries": {
-          "United States": 102,
-          "Canada": 55,
+          "United States": 99,
+          "Canada": 54,
           "United Kingdom": 45,
-          "India": 36,
+          "India": 37,
           "Germany": 15,
           "Ireland": 12,
           "Poland": 9,
           "Netherlands": 8,
-          "France": 6,
           "Israel": 6,
           "United Arab Emirates": 5,
-          "Australia": 5,
+          "France": 5,
           "Singapore": 5,
           "Italy": 4,
+          "Australia": 4,
           "Japan": 4,
           "Spain": 3,
           "Mexico": 3,
@@ -2388,21 +2386,21 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "ReadTimeout"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 344,
-        "placeable": 344,
+        "total": 342,
+        "placeable": 342,
         "unplaceable": 0,
         "eea": 133,
-        "non_eea": 211,
+        "non_eea": 209,
         "countries": {
-          "United States": 107,
+          "United States": 105,
           "Spain": 33,
-          "Canada": 31,
+          "Canada": 32,
           "Greece": 20,
           "Portugal": 20,
           "India": 19,
@@ -2413,8 +2411,8 @@
           "Romania": 8,
           "Switzerland": 7,
           "Singapore": 7,
-          "Germany": 6,
           "Japan": 6,
+          "Germany": 5,
           "Saudi Arabia": 4,
           "Australia": 3,
           "France": 3,
@@ -2422,10 +2420,11 @@
           "United Arab Emirates": 2,
           "Mexico": 2,
           "Israel": 2,
-          "South Korea": 2,
+          "South Korea": 1,
           "Hungary": 1,
           "Denmark": 1,
           "Belgium": 1,
+          "Netherlands": 1,
           "Costa Rica": 1
         },
         "scanned": 26,
@@ -2435,7 +2434,7 @@
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 11,
+            "count": 10,
             "examples": [
               {
                 "title": "Associate Corporate Counsel - Legal Product, IP, and Marketing",
@@ -2465,7 +2464,7 @@
             "label": "Travel expected",
             "severity": "high",
             "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 8,
+            "count": 7,
             "examples": [
               {
                 "title": "Consulting Architect - Observability",
@@ -2641,10 +2640,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 23,
-            "revisions": 22,
+            "captures": 24,
+            "revisions": 23,
             "first": "2026-06-08",
-            "last": "2026-08-31"
+            "last": "2026-09-01"
           }
         },
         {
@@ -2656,8 +2655,11 @@
           "sha256": "c6f2954ea450f34e",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 147,
+            "revisions": 146,
+            "first": "2020-04-23",
+            "last": "2026-08-26"
           }
         }
       ],
@@ -2866,14 +2868,14 @@
         "sensitivity_score": 20,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": true
+        "source_documents_changed": false
       },
       "score": {
-        "total": 58,
+        "total": 55,
         "footprint": 22,
         "access": 25,
         "transparency": 8,
-        "record": 3
+        "record": 0
       },
       "drift": [
         {

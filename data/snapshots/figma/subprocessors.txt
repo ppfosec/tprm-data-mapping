@@ -1,5 +1,5 @@
 # source: https://www.figma.com/sub-processors/
-# collected: 2026-09-01
+# collected: 2026-09-02
 
 Figma Sub-processors
 Last Updated:

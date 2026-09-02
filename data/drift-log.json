@@ -1,5 +1,24 @@
 [
   {
+    "id": "figma-privacy-2026-09-02",
+    "vendor_id": "figma",
+    "vendor_name": "Figma",
+    "document": "privacy",
+    "document_label": "Privacy policy",
+    "date": "2026-09-02",
+    "url": "https://www.figma.com/legal/privacy/",
+    "hunks": [
+      {
+        "before": "June 2, 2026",
+        "after": "September 1, 2026"
+      },
+      {
+        "before": null,
+        "after": "September 1, 2026"
+      }
+    ]
+  },
+  {
     "id": "vercel-privacy-2026-09-01",
     "vendor_id": "vercel",
     "vendor_name": "Vercel",
