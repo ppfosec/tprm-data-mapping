@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T08:15:29+00:00",
+  "generated_at": "2026-09-03T08:22:09+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -170,31 +170,28 @@
           "sha256": "b5c2883bfc8d9aed",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 20,
-            "revisions": 19,
-            "first": "2026-07-14",
-            "last": "2026-09-02"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 577,
-        "placeable": 575,
+        "total": 581,
+        "placeable": 579,
         "unplaceable": 2,
-        "eea": 27,
-        "non_eea": 548,
+        "eea": 28,
+        "non_eea": 551,
         "countries": {
-          "United States": 458,
-          "United Kingdom": 47,
-          "Japan": 15,
+          "United States": 460,
+          "United Kingdom": 49,
+          "Japan": 14,
           "Singapore": 10,
           "South Korea": 10,
           "Germany": 10,
           "Ireland": 10,
           "Australia": 8,
-          "France": 5,
+          "France": 6,
           "India": 3,
           "Canada": 2,
           "Switzerland": 2,
@@ -313,7 +310,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "548 of 575 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "551 of 579 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -322,15 +319,15 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 458 open roles"
+              "excerpt": "United States: 460 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 47 open roles"
+              "excerpt": "United Kingdom: 49 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "Japan: 15 open roles"
+              "excerpt": "Japan: 14 open roles"
             },
             {
               "kind": "stat",
@@ -524,11 +521,8 @@
           "sha256": "d999aff5712a68aa",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 285,
-            "revisions": 284,
-            "first": "2021-09-03",
-            "last": "2026-08-31"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -556,19 +550,16 @@
           "sha256": "253254e28bc2ff29",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2021-05-16",
-            "last": "2025-10-08"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 324,
+        "total": 322,
         "placeable": 8,
-        "unplaceable": 316,
+        "unplaceable": 314,
         "eea": 2,
         "non_eea": 6,
         "countries": {
@@ -867,7 +858,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectTimeout"
+            "reason": "ConnectionError"
           }
         },
         {
@@ -879,8 +870,11 @@
           "sha256": "46bae6a6ca8c08ed",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ReadTimeout"
+            "ok": true,
+            "captures": 33,
+            "revisions": 32,
+            "first": "2022-05-28",
+            "last": "2026-08-03"
           }
         },
         {
@@ -893,7 +887,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectTimeout"
+            "reason": "ConnectionError"
           }
         }
       ],
@@ -905,16 +899,16 @@
         "eea": 92,
         "non_eea": 351,
         "countries": {
-          "United States": 218,
+          "United States": 219,
           "France": 51,
           "Japan": 47,
           "Ireland": 24,
+          "United Kingdom": 20,
           "Singapore": 19,
-          "United Kingdom": 19,
           "Brazil": 17,
           "Netherlands": 16,
-          "Spain": 15,
-          "South Korea": 12,
+          "Spain": 14,
+          "South Korea": 13,
           "Australia": 9,
           "Portugal": 8,
           "India": 7,
@@ -922,10 +916,10 @@
           "Italy": 5,
           "Indonesia": 4,
           "Sweden": 4,
-          "Saudi Arabia": 3,
-          "Israel": 3,
           "Mexico": 3,
           "Denmark": 3,
+          "Saudi Arabia": 2,
+          "Israel": 2,
           "Switzerland": 2,
           "Canada": 1,
           "Colombia": 1,
@@ -940,7 +934,7 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 4,
+            "count": 3,
             "examples": [
               {
                 "title": "Director, Engineering - Cloud Observability",
@@ -1147,11 +1141,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 69,
+        "total": 40,
         "footprint": 20,
-        "access": 24,
+        "access": 20,
         "transparency": 0,
-        "record": 25
+        "record": 0
       },
       "drift": [
         {
@@ -1242,8 +1236,11 @@
           "sha256": "ff0e2b002da0ad9f",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2008-07-19",
+            "last": "2020-05-01"
           }
         },
         {
@@ -1281,20 +1278,20 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 592,
-        "placeable": 529,
-        "unplaceable": 63,
+        "total": 596,
+        "placeable": 534,
+        "unplaceable": 62,
         "eea": 66,
-        "non_eea": 463,
+        "non_eea": 468,
         "countries": {
-          "United States": 280,
-          "Canada": 57,
+          "United States": 282,
+          "Canada": 56,
           "Ireland": 51,
-          "Singapore": 42,
+          "Singapore": 43,
+          "India": 37,
           "United Kingdom": 35,
-          "India": 35,
-          "Mexico": 28,
-          "Australia": 10,
+          "Mexico": 27,
+          "Australia": 11,
           "Spain": 6,
           "Israel": 4,
           "Japan": 3,
@@ -1570,15 +1567,15 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 161,
-        "placeable": 161,
+        "total": 160,
+        "placeable": 160,
         "unplaceable": 0,
         "eea": 14,
-        "non_eea": 147,
+        "non_eea": 146,
         "countries": {
           "United States": 99,
           "United Kingdom": 17,
-          "Japan": 10,
+          "Japan": 9,
           "Germany": 8,
           "Singapore": 6,
           "France": 5,
@@ -1726,7 +1723,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "147 of 161 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "146 of 160 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -1743,7 +1740,7 @@
             },
             {
               "kind": "stat",
-              "excerpt": "Japan: 10 open roles"
+              "excerpt": "Japan: 9 open roles"
             }
           ],
           "question": "Which roles can access production data, and from which countries? Does the residency commitment cover support and engineering access, or only data at rest?"
@@ -1816,7 +1813,7 @@
         "sensitivity_score": 30,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": true
+        "source_documents_changed": false
       },
       "score": {
         "total": 48,
@@ -1949,11 +1946,8 @@
           "sha256": "b8fd30b8b1e6bdaa",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2015-04-16",
-            "last": "2026-02-17"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -1966,7 +1960,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectTimeout"
+            "reason": "ConnectionError"
           }
         },
         {
@@ -1980,27 +1974,27 @@
           "diff": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectTimeout"
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 220,
-        "placeable": 215,
+        "total": 234,
+        "placeable": 229,
         "unplaceable": 5,
-        "eea": 33,
-        "non_eea": 182,
+        "eea": 36,
+        "non_eea": 193,
         "countries": {
-          "United States": 99,
-          "Canada": 54,
-          "United Kingdom": 45,
-          "India": 37,
+          "United States": 103,
+          "Canada": 58,
+          "United Kingdom": 48,
+          "India": 42,
           "Germany": 15,
           "Ireland": 12,
-          "Poland": 9,
+          "Poland": 12,
           "Netherlands": 8,
-          "Israel": 6,
+          "Israel": 7,
           "United Arab Emirates": 5,
           "France": 5,
           "Singapore": 5,
@@ -2340,11 +2334,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 50,
+        "total": 75,
         "footprint": 21,
         "access": 25,
         "transparency": 4,
-        "record": 0
+        "record": 25
       },
       "drift": [
         {
@@ -2385,34 +2379,37 @@
           "sha256": "5369d10f45a8d597",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ReadTimeout"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2018-05-23",
+            "last": "2026-02-01"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 342,
-        "placeable": 342,
+        "total": 361,
+        "placeable": 361,
         "unplaceable": 0,
-        "eea": 133,
-        "non_eea": 209,
+        "eea": 140,
+        "non_eea": 221,
         "countries": {
-          "United States": 105,
-          "Spain": 33,
-          "Canada": 32,
-          "Greece": 20,
-          "Portugal": 20,
-          "India": 19,
-          "Ireland": 19,
-          "United Kingdom": 15,
+          "United States": 111,
+          "Canada": 34,
+          "Spain": 34,
+          "Greece": 21,
+          "Portugal": 21,
+          "India": 20,
+          "Ireland": 20,
+          "United Kingdom": 18,
+          "Poland": 11,
           "Norway": 11,
-          "Poland": 10,
           "Romania": 8,
+          "Germany": 7,
           "Switzerland": 7,
           "Singapore": 7,
           "Japan": 6,
-          "Germany": 5,
           "Saudi Arabia": 4,
           "Australia": 3,
           "France": 3,
@@ -2434,7 +2431,7 @@
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 10,
+            "count": 11,
             "examples": [
               {
                 "title": "Associate Corporate Counsel - Legal Product, IP, and Marketing",
@@ -2464,7 +2461,7 @@
             "label": "Travel expected",
             "severity": "high",
             "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 7,
+            "count": 6,
             "examples": [
               {
                 "title": "Consulting Architect - Observability",
@@ -2524,8 +2521,15 @@
             "label": "Nationality restriction",
             "severity": "low",
             "why": "Some roles are nationality-gated, which means the rest are deliberately not.",
-            "count": 1,
+            "count": 2,
             "examples": [
+              {
+                "title": "Consulting Architect - Security (EMEA / Public Sector eligible ) ",
+                "location": "Germany",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8153274&gh_jid=8153274",
+                "matched": "security clearance",
+                "excerpt": "s, with the ability to pivot easily between delivery and strategic engagements Eligibility to obtain national security clearance in your country of employment (screening sponsored by Elastic where required) Willingness to travel and work"
+              },
               {
                 "title": "Elastic Consulting Architect - Public Sector",
                 "location": "United Kingdom",
@@ -2614,11 +2618,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 82,
+        "total": 57,
         "footprint": 15,
         "access": 25,
         "transparency": 17,
-        "record": 25
+        "record": 0
       },
       "drift": []
     },
@@ -2665,14 +2669,14 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 89,
-        "placeable": 86,
+        "total": 88,
+        "placeable": 85,
         "unplaceable": 3,
         "eea": 9,
-        "non_eea": 77,
+        "non_eea": 76,
         "countries": {
-          "United States": 66,
-          "United Kingdom": 18,
+          "United States": 67,
+          "United Kingdom": 16,
           "Germany": 9,
           "India": 4,
           "Australia": 3
