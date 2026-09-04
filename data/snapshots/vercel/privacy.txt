@@ -1,5 +1,5 @@
 # source: https://vercel.com/legal/privacy-notice
-# collected: 2026-09-03
+# collected: 2026-09-04
 
 Privacy Notice
 Last Updated
@@ -680,5 +680,6 @@ Previous Versions
 The previous versions of our Privacy Policies are listed below:
 March 15, 2021
 April 23, 2024
+March 17, 2026
 Effective Date:
 June 1, 2026

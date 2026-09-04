@@ -1,5 +1,5 @@
 # source: https://www.figma.com/legal/dpa/
-# collected: 2026-09-03
+# collected: 2026-09-04
 
 Figma Legal
 The information provided here is for Figma customers and users who have questions about our terms, policies, intellectual property, and compliance.

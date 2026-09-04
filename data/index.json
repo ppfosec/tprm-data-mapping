@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T08:22:09+00:00",
+  "generated_at": "2026-09-04T08:19:13+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -171,25 +171,25 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "ConnectTimeout"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 581,
-        "placeable": 579,
+        "total": 590,
+        "placeable": 588,
         "unplaceable": 2,
-        "eea": 28,
-        "non_eea": 551,
+        "eea": 29,
+        "non_eea": 559,
         "countries": {
-          "United States": 460,
-          "United Kingdom": 49,
+          "United States": 466,
+          "United Kingdom": 51,
           "Japan": 14,
+          "Ireland": 11,
           "Singapore": 10,
           "South Korea": 10,
           "Germany": 10,
-          "Ireland": 10,
           "Australia": 8,
           "France": 6,
           "India": 3,
@@ -310,7 +310,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "551 of 579 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "559 of 588 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -319,19 +319,15 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 460 open roles"
+              "excerpt": "United States: 466 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 49 open roles"
+              "excerpt": "United Kingdom: 51 open roles"
             },
             {
               "kind": "stat",
               "excerpt": "Japan: 14 open roles"
-            },
-            {
-              "kind": "stat",
-              "excerpt": "Singapore: 10 open roles"
             }
           ],
           "question": "Which roles can access production data, and from which countries? Does the residency commitment cover support and engineering access, or only data at rest?"
@@ -505,11 +501,8 @@
           "sha256": "8d3c9629d73c5991",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2018-05-14",
-            "last": "2018-09-15"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -521,8 +514,11 @@
           "sha256": "d999aff5712a68aa",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 285,
+            "revisions": 284,
+            "first": "2021-09-03",
+            "last": "2026-08-31"
           }
         },
         {
@@ -550,16 +546,19 @@
           "sha256": "253254e28bc2ff29",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2021-05-16",
+            "last": "2025-10-08"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 322,
+        "total": 331,
         "placeable": 8,
-        "unplaceable": 314,
+        "unplaceable": 323,
         "eea": 2,
         "non_eea": 6,
         "countries": {
@@ -576,7 +575,7 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 5,
+            "count": 6,
             "examples": [
               {
                 "title": "AI Security Research & Red Team Engineer",
@@ -857,8 +856,11 @@
           "sha256": "58ce48c87de09d47",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2017-06-30",
+            "last": "2025-04-25"
           }
         },
         {
@@ -886,8 +888,11 @@
           "sha256": "b5c3e88a3bf3e9d9",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 21,
+            "revisions": 20,
+            "first": "2024-05-24",
+            "last": "2026-08-24"
           }
         }
       ],
@@ -896,17 +901,17 @@
         "total": 443,
         "placeable": 443,
         "unplaceable": 0,
-        "eea": 92,
-        "non_eea": 351,
+        "eea": 91,
+        "non_eea": 352,
         "countries": {
-          "United States": 219,
-          "France": 51,
-          "Japan": 47,
+          "United States": 216,
+          "France": 49,
+          "Japan": 48,
           "Ireland": 24,
           "United Kingdom": 20,
           "Singapore": 19,
-          "Brazil": 17,
-          "Netherlands": 16,
+          "Brazil": 18,
+          "Netherlands": 17,
           "Spain": 14,
           "South Korea": 13,
           "Australia": 9,
@@ -920,12 +925,13 @@
           "Denmark": 3,
           "Saudi Arabia": 2,
           "Israel": 2,
+          "Canada": 2,
           "Switzerland": 2,
-          "Canada": 1,
           "Colombia": 1,
           "Chile": 1,
+          "Austria": 1,
           "Poland": 1,
-          "Austria": 1
+          "South Africa": 1
         },
         "scanned": 26,
         "signals": [
@@ -934,7 +940,7 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 3,
+            "count": 4,
             "examples": [
               {
                 "title": "Director, Engineering - Cloud Observability",
@@ -1141,9 +1147,9 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 40,
+        "total": 44,
         "footprint": 20,
-        "access": 20,
+        "access": 24,
         "transparency": 0,
         "record": 0
       },
@@ -1278,19 +1284,19 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 596,
-        "placeable": 534,
-        "unplaceable": 62,
-        "eea": 66,
-        "non_eea": 468,
+        "total": 613,
+        "placeable": 550,
+        "unplaceable": 63,
+        "eea": 69,
+        "non_eea": 481,
         "countries": {
-          "United States": 282,
+          "United States": 287,
           "Canada": 56,
-          "Ireland": 51,
-          "Singapore": 43,
-          "India": 37,
-          "United Kingdom": 35,
-          "Mexico": 27,
+          "Ireland": 54,
+          "Singapore": 46,
+          "India": 38,
+          "United Kingdom": 37,
+          "Mexico": 29,
           "Australia": 11,
           "Spain": 6,
           "Israel": 4,
@@ -1525,11 +1531,8 @@
           "sha256": "14b1ae957872913e",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 287,
-            "revisions": 286,
-            "first": "2024-01-18",
-            "last": "2026-08-30"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -1567,16 +1570,16 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 160,
-        "placeable": 160,
+        "total": 157,
+        "placeable": 157,
         "unplaceable": 0,
-        "eea": 14,
-        "non_eea": 146,
+        "eea": 13,
+        "non_eea": 144,
         "countries": {
-          "United States": 99,
+          "United States": 97,
           "United Kingdom": 17,
           "Japan": 9,
-          "Germany": 8,
+          "Germany": 7,
           "Singapore": 6,
           "France": 5,
           "Israel": 5,
@@ -1609,11 +1612,11 @@
                 "excerpt": "om idea to product, Figma empowers teams to streamline workflows, move faster, and work together in real time from anywhere in the world. If you're excited to shape the future of design and collaboration, join us! As a member of our Customer Oper"
               },
               {
-                "title": "Data Engineer",
-                "location": "San Francisco, CA • New York, NY • United States",
-                "url": "https://boards.greenhouse.io/figma/jobs/5220003004?gh_jid=5220003004",
+                "title": "Data Scientist, Core Data -  PhD (2026)",
+                "location": "San Francisco, CA • New York, NY",
+                "url": "https://boards.greenhouse.io/figma/jobs/5976930004?gh_jid=5976930004",
                 "matched": "from anywhere in the world",
-                "excerpt": "om idea to product, Figma empowers teams to streamline workflows, move faster, and work together in real time from anywhere in the world. If you're excited to shape the future of design and collaboration, join us! We are looking for an experience"
+                "excerpt": "om idea to product, Figma empowers teams to streamline workflows, move faster, and work together in real time from anywhere in the world. If you're excited to shape the future of design and collaboration, join us! We're looking for a research-min"
               }
             ]
           },
@@ -1668,15 +1671,8 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 5,
+            "count": 4,
             "examples": [
-              {
-                "title": "Data Engineer",
-                "location": "San Francisco, CA • New York, NY • United States",
-                "url": "https://boards.greenhouse.io/figma/jobs/5220003004?gh_jid=5220003004",
-                "matched": "Snowflake",
-                "excerpt": "hear from you if you have: 4 + years in a relevant field. Fluency with both SQL and Python. Familiarity with Snowflake, dbt, Dagster, and ETL/reverse ETL tools. Excellent judgment and creative problem solving skills. A self-star"
-              },
               {
                 "title": "Data Scientist, Core Data -  PhD (2026)",
                 "location": "San Francisco, CA • New York, NY",
@@ -1690,6 +1686,13 @@
                 "url": "https://boards.greenhouse.io/figma/jobs/6013304004?gh_jid=6013304004",
                 "matched": "Snowflake",
                 "excerpt": "nue recognition principles (ASC 606) Experience with modern analytics and data engineering tools such as DBT, Snowflake, Git, Spark, Presto, or similar technologies Experience supporting IPO readiness, public company reporting, S"
+              },
+              {
+                "title": "GTM Systems Architect",
+                "location": "San Francisco, CA • New York, NY • United States",
+                "url": "https://boards.greenhouse.io/figma/jobs/6167305004?gh_jid=6167305004",
+                "matched": "Salesforce",
+                "excerpt": "n and collaboration, join us! The GTM Systems Architect is responsible for optimizing, scaling, and governing Salesforce to support various cross functional teams. This role combines business analysis, systems expertise, data stew"
               }
             ]
           },
@@ -1723,7 +1726,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "146 of 160 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "144 of 157 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -1732,7 +1735,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 99 open roles"
+              "excerpt": "United States: 97 open roles"
             },
             {
               "kind": "stat",
@@ -1744,6 +1747,24 @@
             }
           ],
           "question": "Which roles can access production data, and from which countries? Does the residency commitment cover support and engineering access, or only data at rest?"
+        },
+        {
+          "rule": "subprocessor_gap",
+          "severity": "medium",
+          "headline": "Salesforce appears in hiring, not in the published documents",
+          "detail": "Engineering job descriptions name Salesforce, but it does not appear anywhere in the legal documents collected including the sub-processor list at https://www.figma.com/sub-processors/.",
+          "claim": null,
+          "evidence": [
+            {
+              "kind": "job",
+              "title": "GTM Systems Architect",
+              "location": "San Francisco, CA • New York, NY • United States",
+              "url": "https://boards.greenhouse.io/figma/jobs/6167305004?gh_jid=6167305004",
+              "matched": "Salesforce",
+              "excerpt": "n and collaboration, join us! The GTM Systems Architect is responsible for optimizing, scaling, and governing Salesforce to support various cross functional teams. This role combines business analysis, systems expertise, data stew"
+            }
+          ],
+          "question": "Is Salesforce a sub-processor? If it is, when was it added to the list, and were customers notified? If it never touches customer data, what is it used for?"
         }
       ],
       "data_classification": {
@@ -1946,8 +1967,11 @@
           "sha256": "b8fd30b8b1e6bdaa",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2015-04-16",
+            "last": "2026-02-17"
           }
         },
         {
@@ -1959,8 +1983,11 @@
           "sha256": "b9e8de6a4bacb426",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 81,
+            "revisions": 80,
+            "first": "2020-11-27",
+            "last": "2026-08-28"
           }
         },
         {
@@ -1973,42 +2000,42 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 23,
+            "revisions": 22,
+            "first": "2023-11-29",
+            "last": "2026-07-07"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 234,
-        "placeable": 229,
+        "total": 231,
+        "placeable": 226,
         "unplaceable": 5,
-        "eea": 36,
-        "non_eea": 193,
+        "eea": 35,
+        "non_eea": 191,
         "countries": {
-          "United States": 103,
-          "Canada": 58,
-          "United Kingdom": 48,
-          "India": 42,
-          "Germany": 15,
-          "Ireland": 12,
-          "Poland": 12,
-          "Netherlands": 8,
+          "United States": 104,
+          "Canada": 61,
+          "United Kingdom": 45,
+          "India": 43,
+          "Germany": 13,
+          "Poland": 13,
+          "Ireland": 11,
+          "Netherlands": 7,
           "Israel": 7,
-          "United Arab Emirates": 5,
-          "France": 5,
           "Singapore": 5,
-          "Italy": 4,
-          "Australia": 4,
+          "Spain": 4,
+          "United Arab Emirates": 4,
           "Japan": 4,
-          "Spain": 3,
+          "Italy": 3,
+          "Australia": 3,
           "Mexico": 3,
-          "Austria": 3,
-          "Denmark": 2,
+          "France": 3,
           "Turkey": 2,
           "Brazil": 1,
-          "Switzerland": 1,
-          "Sweden": 1,
+          "Austria": 1,
           "Philippines": 1,
           "South Korea": 1
         },
@@ -2079,7 +2106,7 @@
             "label": "Travel expected",
             "severity": "high",
             "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 5,
+            "count": 4,
             "examples": [
               {
                 "title": "Manager, Solutions Architect - CEUR",
@@ -2155,7 +2182,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 8,
+            "count": 7,
             "examples": [
               {
                 "title": "Customer Success Architect, CEUR",
@@ -2165,18 +2192,18 @@
                 "excerpt": "to define and achieve business outcomes Familiarity working with customers of sizes relevant to the assigned segment Exceptional verbal, written, organizational, presentation, and communications skills Detailed oriented and an"
               },
               {
-                "title": "Customer Success Architect, EMEA",
-                "location": "Remote, Austria; Remote, France; Remote, Germany",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8561952002",
-                "matched": "segment",
-                "excerpt": "to define and achieve business outcomes Familiarity working with customers of sizes relevant to the assigned segment Exceptional verbal, written, organizational, presentation, and communications skills Detailed oriented and an"
-              },
-              {
                 "title": "Director, Support (Bengaluru)",
                 "location": "Bangalore, India",
                 "url": "https://job-boards.greenhouse.io/gitlab/jobs/8629019002",
                 "matched": "Zendesk",
                 "excerpt": "ry tooling, Kubernetes, or cloud-native infrastructure, along with experience using support platforms such as Zendesk, Salesforce, Decagon, or equivalent tools. Experience with GitLab as a user, administrator, or customer is he"
+              },
+              {
+                "title": "Director, Support (EMEA)",
+                "location": "Remote, United Kingdom",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8629005002",
+                "matched": "Zendesk",
+                "excerpt": "executives and work with others synchronously and asynchronously. Proficiency with support platforms such as Zendesk, Salesforce, Decagon, or equivalent tools. Knowledge of DevSecOps, continuous integration and continuous deli"
               }
             ]
           },
@@ -2213,6 +2240,14 @@
               "url": "https://job-boards.greenhouse.io/gitlab/jobs/8629019002",
               "matched": "Zendesk",
               "excerpt": "ry tooling, Kubernetes, or cloud-native infrastructure, along with experience using support platforms such as Zendesk, Salesforce, Decagon, or equivalent tools. Experience with GitLab as a user, administrator, or customer is he"
+            },
+            {
+              "kind": "job",
+              "title": "Director, Support (EMEA)",
+              "location": "Remote, United Kingdom",
+              "url": "https://job-boards.greenhouse.io/gitlab/jobs/8629005002",
+              "matched": "Zendesk",
+              "excerpt": "executives and work with others synchronously and asynchronously. Proficiency with support platforms such as Zendesk, Salesforce, Decagon, or equivalent tools. Knowledge of DevSecOps, continuous integration and continuous deli"
             }
           ],
           "question": "Is Salesforce a sub-processor? If it is, when was it added to the list, and were customers notified? If it never touches customer data, what is it used for?"
@@ -2259,14 +2294,6 @@
               "title": "Customer Success Architect, CEUR",
               "location": "Remote, Germany",
               "url": "https://job-boards.greenhouse.io/gitlab/jobs/8646852002",
-              "matched": "segment",
-              "excerpt": "to define and achieve business outcomes Familiarity working with customers of sizes relevant to the assigned segment Exceptional verbal, written, organizational, presentation, and communications skills Detailed oriented and an"
-            },
-            {
-              "kind": "job",
-              "title": "Customer Success Architect, EMEA",
-              "location": "Remote, Austria; Remote, France; Remote, Germany",
-              "url": "https://job-boards.greenhouse.io/gitlab/jobs/8561952002",
               "matched": "segment",
               "excerpt": "to define and achieve business outcomes Familiarity working with customers of sizes relevant to the assigned segment Exceptional verbal, written, organizational, presentation, and communications skills Detailed oriented and an"
             }
@@ -2334,11 +2361,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 75,
+        "total": 50,
         "footprint": 21,
         "access": 25,
         "transparency": 4,
-        "record": 25
+        "record": 0
       },
       "drift": [
         {
@@ -2379,42 +2406,39 @@
           "sha256": "5369d10f45a8d597",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2018-05-23",
-            "last": "2026-02-01"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 361,
-        "placeable": 361,
+        "total": 362,
+        "placeable": 362,
         "unplaceable": 0,
-        "eea": 140,
-        "non_eea": 221,
+        "eea": 145,
+        "non_eea": 217,
         "countries": {
-          "United States": 111,
+          "United States": 108,
+          "Spain": 35,
           "Canada": 34,
-          "Spain": 34,
-          "Greece": 21,
-          "Portugal": 21,
-          "India": 20,
-          "Ireland": 20,
+          "Greece": 22,
+          "Portugal": 22,
+          "Ireland": 21,
+          "India": 18,
           "United Kingdom": 18,
-          "Poland": 11,
-          "Norway": 11,
+          "Poland": 12,
+          "Norway": 12,
           "Romania": 8,
           "Germany": 7,
           "Switzerland": 7,
           "Singapore": 7,
           "Japan": 6,
           "Saudi Arabia": 4,
+          "Brazil": 4,
           "Australia": 3,
-          "France": 3,
-          "Brazil": 3,
           "United Arab Emirates": 2,
+          "France": 2,
           "Mexico": 2,
           "Israel": 2,
           "South Korea": 1,
@@ -2435,15 +2459,15 @@
             "examples": [
               {
                 "title": "Associate Corporate Counsel - Legal Product, IP, and Marketing",
-                "location": "United States",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8093273&gh_jid=8093273",
+                "location": "Canada",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8122981&gh_jid=8122981",
                 "matched": "across time zones",
                 "excerpt": "orkflows and \"productization\" processes that help a legal team scale. Global Perspective: Comfortable working across time zones and cultures in a distributed culture with a flexible approach to problem-solving. Compensation for this role"
               },
               {
                 "title": "Associate Corporate Counsel - Legal Product, IP, and Marketing",
-                "location": "Canada",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8122981&gh_jid=8122981",
+                "location": "United States",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8093273&gh_jid=8093273",
                 "matched": "across time zones",
                 "excerpt": "orkflows and \"productization\" processes that help a legal team scale. Global Perspective: Comfortable working across time zones and cultures in a distributed culture with a flexible approach to problem-solving. Compensation for this role"
               },
@@ -2461,8 +2485,15 @@
             "label": "Travel expected",
             "severity": "high",
             "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 6,
+            "count": 7,
             "examples": [
+              {
+                "title": "Cloud Marketplace Development Manager",
+                "location": "Bangalore, India",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8083417&gh_jid=8083417",
+                "matched": "Willing to travel",
+                "excerpt": "al structuring Understanding of analytics, search, or big data markets / products or ability to learn quickly Willing to travel up to 10% of the time. &nbsp; Additional Information - We Take Care of Our People As a distributed company, d"
+              },
               {
                 "title": "Consulting Architect - Observability",
                 "location": "India",
@@ -2476,13 +2507,6 @@
                 "url": "https://jobs.elastic.co/jobs?gh_jid=7447236&gh_jid=7447236",
                 "matched": "willingness to travel",
                 "excerpt": "conversations. Proven ability to lead and articulate technical solutions to stakeholders. Travel: Ability and willingness to travel to client sites periodically as required for project success (up to 20%)&nbsp; Work Style: Comfortable workin"
-              },
-              {
-                "title": "Consulting Architect - Security",
-                "location": "India",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=7447426&gh_jid=7447426",
-                "matched": "willingness to travel",
-                "excerpt": "ions to stakeholders. Experience contributing to an open-source project or documentation. Travel: Ability and willingness to travel to client sites periodically as required for project success (up to 20%)&nbsp; Bonus Points Any cloud service"
               }
             ]
           },
@@ -2491,15 +2515,8 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 4,
+            "count": 3,
             "examples": [
-              {
-                "title": "Cloud Billing Associate",
-                "location": "Bangalore, India",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=7991494&gh_jid=7991494",
-                "matched": "Salesforce",
-                "excerpt": "ing of cloud technologies, e.g., AWS, Azure, Google and cloud billing models a plus Experience with NetSuite, Salesforce, Stripe Comfort using basic AI tools to increase efficiency and support day-to-day operations &nbsp; #LI-DS1"
-              },
               {
                 "title": "Consulting Architect - Search",
                 "location": "United States",
@@ -2513,6 +2530,13 @@
                 "url": "https://jobs.elastic.co/jobs?gh_jid=8059813&gh_jid=8059813",
                 "matched": "Salesforce",
                 "excerpt": "position leading a team 2+ years with process improvement 2+ years of experience with CRM systems, preferably Salesforce #LI-AS3 Additional Information - We Take Care of Our People As a distributed company, diversity drives our id"
+              },
+              {
+                "title": "International Revenue Strategy & Operations Manager",
+                "location": "Singapore",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8045062&gh_jid=8045062",
+                "matched": "Salesforce",
+                "excerpt": "demands with a sense of urgency. Ability to thrive in a fast paced start-up environment. Experience with the Salesforce.com platform Experience with Microsoft Office Suite. Bonus Points Proficiency in Japanese Language is a plus."
               }
             ]
           },
@@ -2618,11 +2642,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 57,
+        "total": 82,
         "footprint": 15,
         "access": 25,
         "transparency": 17,
-        "record": 0
+        "record": 25
       },
       "drift": []
     },
@@ -2638,16 +2662,13 @@
           "kind": "privacy",
           "url": "https://vercel.com/legal/privacy-notice",
           "path": "data/snapshots/vercel/privacy.txt",
-          "lines": 681,
-          "chars": 50649,
-          "sha256": "41039595323c550e",
+          "lines": 682,
+          "chars": 50664,
+          "sha256": "1089987c0a57208c",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 24,
-            "revisions": 23,
-            "first": "2026-06-08",
-            "last": "2026-09-01"
+            "ok": false,
+            "reason": "ReadTimeout"
           }
         },
         {
@@ -2872,7 +2893,7 @@
         "sensitivity_score": 20,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": false
+        "source_documents_changed": true
       },
       "score": {
         "total": 55,
@@ -2882,6 +2903,21 @@
         "record": 0
       },
       "drift": [
+        {
+          "id": "vercel-privacy-2026-09-04",
+          "vendor_id": "vercel",
+          "vendor_name": "Vercel",
+          "document": "privacy",
+          "document_label": "Privacy policy",
+          "date": "2026-09-04",
+          "url": "https://vercel.com/legal/privacy-notice",
+          "hunks": [
+            {
+              "before": null,
+              "after": "March 17, 2026"
+            }
+          ]
+        },
         {
           "id": "vercel-privacy-2026-09-01",
           "vendor_id": "vercel",
