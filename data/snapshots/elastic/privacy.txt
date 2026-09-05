@@ -1,10 +1,10 @@
 # source: https://www.elastic.co/legal/privacy-statement
-# collected: 2026-09-04
+# collected: 2026-09-05
 
 General Privacy Statement
 Effective Date:
-April 24, 2026
-This General Privacy Statement (also referred to as our "Privacy Statement") explains how Elastic N.V. and its subsidiaries and affiliated companies ("Elastic," "we," "our," or "us") collect, use, share, and otherwise process information that identifies or could be identifiable to you ("personal data" or "personal information").
+September 7, 2026
+This General Privacy Statement (also referred to as our "Privacy Statement" or "Statement") explains how Elastic N.V. and its subsidiaries and affiliated companies ("Elastic," "we," "our," or "us") collect, use, share, and otherwise process information that identifies or could be identifiable to you ("personal data" or "personal information").
 Residents of the EEA, United Kingdom, or Switzerland
 If EEA, UK, or Swiss data protection law applies to the processing of your personal data, you can review the "Your privacy rights" section below to learn more about your rights and Elastic's compliance with applicable laws.
 California residents
@@ -43,23 +43,14 @@ This General Privacy Statement explains your rights and choices related to the p
 You visit, interact with, or use any of our websites, social media pages, or marketing or sales communications or register for our products and services ("Online Properties")
 You visit, interact with, or use any of our offices, events, sales, marketing, and other offline activities ("Offline Properties")(collectively, the "Properties")
 This General Privacy Statement does not cover:
-Automatic collection from our products and services:
-This Statement does not cover the information we may automatically collect in connection with your use of Elastic products and services as a customer or user.
-Please see our
+Personal data processed by Elastic according to our
 Product Privacy Statement
-for that information.
-Candidate information:
-This Statement does not cover information related to our employment recruiting efforts.
-Please see our
-Applicant Privacy Statement
-for that information.
-Customer Content:
-Certain Elastic products permit customers to ingest or upload and submit content to the products ("Customer Content").
-This notice does not cover Customer Content, including any personal data about you that may be contained in Customer Content, because the Customer, rather than Elastic, controls how Customer Content is processed.
-Any questions about the processing of Customer Content should be addressed to the Customer directly.
-Organizational use:
-When you use our products or services on behalf of an organization (e.g., your employer), your use is administered and provisioned by your organization under its policies regarding the use and protection of personal data.
-If you have questions about how your data is being accessed or used by your organization, please refer to your organization's privacy policy and direct your inquiries to your organization's system administrator.
+This Statement does not cover the information we may automatically collect in connection with your use of Elastic products and services as a customer or user.
+Personal data processed by Elastic according to our
+Candidate Privacy Statement
+when an individual applies or is referred for a role with Elastic through our Site or otherwise.
+Personal data processed by Elastic as a Processor.
+This Statement does not apply to personal data processed by Elastic in the role of a Processor or Service Provider (as applicable), including information processed for the operation and efficacy of Elastic's Products, which is subject to the terms of the applicable customer agreement.
 Elastic determines the purposes and means for the processing (i.e., we are the data controller) of your personal data as described in this Privacy Statement unless expressly specified otherwise.
 Information we collect and how we collect it
 Elastic collects personal data and other information from you directly, through automated means, and from third parties.
@@ -111,7 +102,9 @@ Business operations.
 We use your information to conduct ordinary business operations (e.g., business research and analytics, corporate reporting and management, staff training and quality assurance purposes, and outreach).
 Security.
 We use the information to maintain the integrity and security of our websites, products, and services and to prevent and detect security threats, fraud, or other criminal or malicious activity that might compromise your information or the information of other customers or website visitors.
-Further details are provided in the "Network and information security" section below.
+Further details are provided in the "
+Network and information security
+" section below.
 Third-party social networks.
 We may use personal data to interact with you on third party social networks (subject to that network's terms of use).
 Conferences and events.
@@ -131,6 +124,12 @@ You can pause, stop, or opt out of these conversations at any time.
 Data collected from these marketing campaigns is not used by our third-party vendors to train their own generalized AI models.
 Comply with law.
 We use your information as required to be compliant with applicable laws, regulations, court orders, government, and law enforcement requests.
+With machine learning and artificial intelligence.
+We use artificial intelligence and machine learning to help process personal data more efficiently for the purposes described in this Statement.
+This includes using such technologies to communicate with you and respond to requests which do not warrant human intervention, to personalize your experience and deliver relevant content, to develop and improve our products, features, and services, to conduct our business operations, and to protect the security of our Properties, including as described in the "
+Network and information security"
+section below.
+We do not use or allow the use of your personal data to train any generative artificial intelligence model.
 Other legitimate business purposes.
 We may use your information when it is necessary for other legitimate purposes, such as protecting Elastic's confidential and proprietary information.
 How we share the information
@@ -174,14 +173,14 @@ As necessary to comply with our legal obligations
 To protect your vital interests or those of others
 As necessary for our (or others') legitimate interests, including our interests in, unless those interests are overridden by your interests or fundamental rights and freedoms, which require protection of personal data
 Network and information security
-In the pursuit of our legitimate interest to protect our networks and information systems from accidental events and malicious actions that could compromise the availability, authenticity, integrity, or confidentiality of data, or the integrity, safety, security, or resilience of Elastic’s websites, systems, networks, and offerings (“Elastic Assets”), we collect and process the following network and information security information (“Cybersecurity Indicators”):
+In the pursuit of our legitimate interest to protect our networks and information systems from accidental events and malicious actions that could compromise the availability, authenticity, integrity, or confidentiality of data, or the integrity, safety, security, or resilience of Elastic's websites, systems, networks, products, and offerings ("Elastic Assets"), we collect and process the following network and information security information ("Cybersecurity Indicators"):
 Information on the networks and network identifiers associated with the sources and destinations of detected or suspected cyber threats (which may include IP addresses, URLs, DNS queries, and other indicators of compromise)
 Security sensor detections and performance metrics in Elastic Assets
 Identifiers of users, devices, and other objects operating in or interacting with Elastic Assets
 Security configurations of Elastic Assets
-Metadata, hashes, and contents of potentially malicious executable binaries, and other untrusted files interacting with Elastic Assets
-Samples of code that might interfere with, disable, misuse, or threaten Elastic Assets, our employees, users, customers, or other business partners
-Any personal data captured as part of such Cybersecurity Indicators is only processed to the extent and for the duration strictly necessary and proportionate to mitigate and manage the related cybersecurity risk, and to comply with our legal obligations to prevent, detect, and respond to security incidents.
+Metadata, hashes, and contents of potentially malicious executable binaries, and other untrusted files, samples, and file metadata interacting with Elastic Assets
+Samples of code, or natural language inputs or outputs, that might interfere with, disable, misuse, or threaten Elastic Assets, our employees, users, customers, other business partners, or the secure use of our products
+Any personal data captured as part of such Cybersecurity Indicators is processed to the extent and for the duration necessary and proportionate to mitigate and manage the related cybersecurity risk, and to comply with our legal obligations to prevent, detect, and respond to security incidents.
 International data transfers
 Elastic operates globally, which means personal data collected in the European Economic Area ("
 EEA
@@ -215,7 +214,7 @@ Department of Commerce that it adheres to the Swiss-U.S.
 Data Privacy Framework Principles (Swiss-U.S.
 DPF Principles) with regard to the processing of personal data received from Switzerland in reliance on the Swiss-U.S.
 DPF.
-If there is any conflict between the terms in this privacy statement and the EU-U.S.
+If there is any conflict between the terms in this Privacy Statement and the EU-U.S.
 DPF Principles and/or the Swiss-U.S.
 DPF Principles, the Principles shall govern.
 Elastic's commitments under the Data Privacy Framework are subject to the investigatory and enforcement powers of the United States Federal Trade Commission.
@@ -227,22 +226,22 @@ Elastic maintains contracts with these third parties restricting their access, u
 Your privacy rights
 Depending on where you live, you may have certain rights such as:
 Access:
-To request and obtain a copy of your personal data that is held by Elastic
+To request and obtain a copy of your personal data that is held by Elastic.
 Rectification:
-To request the correction of your personal data held by Elastic in order to update any incomplete or inaccurate information
+To request the correction of your personal data held by Elastic in order to update any incomplete or inaccurate information.
 Deletion:
-To request to have your personal data held by Elastic deleted
+To request to have your personal data held by Elastic deleted.
 Restrict processing:
 To request that we restrict the processing of your personal data where:
-You dispute the accuracy of the data
-The processing is unlawful, but you do not wish to have it delete
-Elastic no longer needs the data, but you need it to assert, exercise, or defend legal claims
+You dispute the accuracy of the data.
+The processing is unlawful, but you do not wish to have it delete.
+Elastic no longer needs the data, but you need it to assert, exercise, or defend legal claims.
 Objection:
-To object to the further processing of your personal data at any time
+To object to the further processing of your personal data at any time.
 Portability:
-To request to receive the personal data you have provided to Elastic in a structured, commonly used, machine-readable format
+To request to receive the personal data you have provided to Elastic in a structured, commonly used, machine-readable format.
 Withdrawal of consent:
-To request to withdraw consent at any time, where previously given
+To request to withdraw consent at any time, where previously given.
 If your personal data is to be used for a new purpose that is materially different from that for which it was originally collected or subsequently authorized, or is disclosed to a non-agent third party in a manner that is not specified in this Statement, we will provide you with an opportunity to choose whether to have your personal data used or disclosed in such a manner.
 Requests opt-out of such uses or disclosures should be sent to us as specified in the "How to contact us" section of this Statement below.
 Certain personal data, such as information about medical or health conditions, racial or ethnic origin, and religious or political beliefs, may be considered "Sensitive Personal Data." Elastic will not process Sensitive Personal Data for a purpose other than for the purpose it was originally collected or subsequently authorized unless we have received your affirmative and explicit consent.
@@ -263,7 +262,7 @@ You may also have the right to complain to a data protection authority about our
 In compliance with the EU-U.S.
 DPF, the UK Extension to the EU-U.S.
 DPF, and the Swiss-U.S.
-DPF, Elastic commits to cooperate and comply respectively with the advice of the panel established by the EU data protection authorities (DPAs), the UK Information Commissioner’s Office (ICO) and the Gibraltar Regulatory Authority (GRA), and the Swiss Federal Data Protection and Information Commissioner (FDPIC) with regard to unresolved complaints concerning our handling of personal data received in reliance on the EU-U.S.
+DPF, Elastic commits to cooperate and comply respectively with the advice of the panel established by the EU data protection authorities (DPAs), the UK Information Commission Office (fka ICO) and the Gibraltar Regulatory Authority (GRA), and the Swiss Federal Data Protection and Information Commissioner (FDPIC) with regard to unresolved complaints concerning our handling of personal data received in reliance on the EU-U.S.
 DPF, the UK Extension to the EU-U.S.
 DPF, and the Swiss-U.S.
 DPF.
@@ -271,6 +270,20 @@ If Elastic itself, or through cooperation with the relevant DPA, does not resolv
 For more information on this option, please see
 Annex I
 of the Data Privacy Framework Principles.
+UK Data Privacy Complaints
+If you are located in the United Kingdom, you have the right to lodge a complaint with Elastic regarding how we handle your personal data.
+We are committed to addressing your concerns promptly and transparently through the following process:
+Submitting a Complaint:
+You may submit a data protection complaint directly to us at any time by contacting our Privacy Team through this
+form
+Acknowledgment:
+We will formally acknowledge receipt of your complaint within thirty (30) days of receiving it.
+Investigation & Communication:
+Without undue delay, we will take all appropriate steps to respond to your complaint, including conducting any necessary internal enquiries.
+We will keep you reasonably informed of our progress throughout this process.
+Outcome:
+Once our review is complete, we will, without undue delay, notify you of the final outcome and resolution of your complaint.
+If you remain unsatisfied with our response, UK residents also have the right to escalate their complaint directly to the UK Information Commission (fka "ICO").
 Subscription communications and general communications
 You have the option of subscribing to communications from us.
 Elastic subscription communications include email newsletters, software updates, and maintenance notifications that may be expressly requested by you or which you consented to receive.

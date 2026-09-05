@@ -1,5 +1,40 @@
 [
   {
+    "id": "elastic-privacy-2026-09-05",
+    "vendor_id": "elastic",
+    "vendor_name": "Elastic",
+    "document": "privacy",
+    "document_label": "Privacy policy",
+    "date": "2026-09-05",
+    "url": "https://www.elastic.co/legal/privacy-statement",
+    "hunks": [
+      {
+        "before": "April 24, 2026",
+        "after": "September 7, 2026"
+      },
+      {
+        "before": "This General Privacy Statement (also referred to as our \"Privacy Statement\") explains how Elastic N.V. and its subsidiaries and affiliated companies (\"Elastic,\" \"we,\" \"our,\" or \"us\") collect, use, share, and otherwise process information that identifies or could be identifiable to you (\"personal data\" or \"personal information\").",
+        "after": "This General Privacy Statement (also referred to as our \"Privacy Statement\" or \"Statement\") explains how Elastic N.V. and its subsidiaries and affiliated companies (\"Elastic,\" \"we,\" \"our,\" or \"us\") collect, use, share, and otherwise process information that identifies or could be identifiable to you (\"personal data\" or \"personal information\")."
+      },
+      {
+        "before": "Automatic collection from our products and services:",
+        "after": "Personal data processed by Elastic according to our"
+      },
+      {
+        "before": null,
+        "after": "Product Privacy Statement"
+      },
+      {
+        "before": "Please see our",
+        "after": "Personal data processed by Elastic according to our"
+      },
+      {
+        "before": "Product Privacy Statement",
+        "after": "Candidate Privacy Statement"
+      }
+    ]
+  },
+  {
     "id": "vercel-privacy-2026-09-04",
     "vendor_id": "vercel",
     "vendor_name": "Vercel",

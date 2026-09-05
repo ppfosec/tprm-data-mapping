@@ -578,11 +578,8 @@
           "sha256": "8dac92944a88d6dd",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2024-02-25",
-            "last": "2026-03-08"
+            "ok": false,
+            "reason": "ReadTimeout"
           }
         },
         {
@@ -594,11 +591,8 @@
           "sha256": "85c78c93175ffb26",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2024-02-21",
-            "last": "2026-03-20"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -611,11 +605,8 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": true,
-            "captures": 62,
-            "revisions": 61,
-            "first": "2024-09-26",
-            "last": "2026-08-30"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -627,8 +618,11 @@
           "sha256": "b5c2883bfc8d9aed",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 20,
+            "revisions": 19,
+            "first": "2026-07-14",
+            "last": "2026-09-05"
           }
         }
       ],
@@ -637,7 +631,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "559 of 588 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "565 of 593 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -646,7 +640,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 466 open roles"
+              "excerpt": "United States: 472 open roles"
             },
             {
               "kind": "stat",
@@ -655,6 +649,10 @@
             {
               "kind": "stat",
               "excerpt": "Japan: 14 open roles"
+            },
+            {
+              "kind": "stat",
+              "excerpt": "Singapore: 10 open roles"
             }
           ],
           "question": "Which roles can access production data, and from which countries? Does the residency commitment cover support and engineering access, or only data at rest?"
@@ -768,19 +766,19 @@
       },
       "jobs": {
         "ok": true,
-        "total": 590,
-        "placeable": 588,
+        "total": 595,
+        "placeable": 593,
         "unplaceable": 2,
-        "eea": 29,
-        "non_eea": 559,
+        "eea": 28,
+        "non_eea": 565,
         "countries": {
-          "United States": 466,
+          "United States": 472,
           "United Kingdom": 51,
           "Japan": 14,
-          "Ireland": 11,
           "Singapore": 10,
           "South Korea": 10,
           "Germany": 10,
+          "Ireland": 10,
           "Australia": 8,
           "France": 6,
           "India": 3,
@@ -940,7 +938,7 @@
       "category": "Edge network",
       "public_evidence_only": true,
       "surface": {
-        "grade": "44",
+        "grade": "42",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "4 public documents · 2 open reconciliations"
@@ -956,7 +954,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectTimeout"
+            "reason": "ReadTimeout"
           }
         },
         {
@@ -984,11 +982,8 @@
           "sha256": "3669d59798194699",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 156,
-            "revisions": 155,
-            "first": "2018-11-17",
-            "last": "2026-08-18"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -1000,11 +995,8 @@
           "sha256": "253254e28bc2ff29",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2021-05-16",
-            "last": "2025-10-08"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
@@ -1106,17 +1098,17 @@
       },
       "jobs": {
         "ok": true,
-        "total": 331,
-        "placeable": 8,
-        "unplaceable": 323,
+        "total": 332,
+        "placeable": 6,
+        "unplaceable": 326,
         "eea": 2,
-        "non_eea": 6,
+        "non_eea": 4,
         "countries": {
-          "India": 3,
-          "United States": 2,
+          "India": 2,
           "Japan": 1,
           "France": 1,
-          "Portugal": 1
+          "Portugal": 1,
+          "United States": 1
         },
         "scanned": 26,
         "signals": [
@@ -1405,11 +1397,11 @@
             },
             {
               "kind": "job",
-              "title": "Enterprise IT Support Technician I",
-              "location": "Paris, France",
-              "url": "https://careers.datadoghq.com/detail/8035671/?gh_jid=8035671",
-              "matched": "on call",
-              "excerpt": "timize daily workflows. Participate in deployment and security related projects Participate in the IT Support on call rotation &nbsp; Who You Are: 1+ years of experience in an IT Support role, preferably supporting a corporate"
+              "title": "Federal Support Engineer 3",
+              "location": "Denver, Colorado, USA",
+              "url": "https://careers.datadoghq.com/detail/7997846/?gh_jid=7997846",
+              "matched": "on-call",
+              "excerpt": "fying root causes across APIs, networking, cloud infrastructure, and operating‑system layers. Able to work an on-call rotating schedule that requires weekend availability &nbsp; Datadog values people from all walks of life. We"
             }
           ],
           "question": "For out-of-hours incidents, who is on the rotation, where are they, and is their access to customer data logged and reviewable by the customer?"
@@ -1466,40 +1458,38 @@
       },
       "jobs": {
         "ok": true,
-        "total": 443,
-        "placeable": 443,
+        "total": 441,
+        "placeable": 441,
         "unplaceable": 0,
-        "eea": 91,
-        "non_eea": 352,
+        "eea": 90,
+        "non_eea": 351,
         "countries": {
-          "United States": 216,
+          "United States": 217,
           "France": 49,
           "Japan": 48,
-          "Ireland": 24,
+          "Ireland": 25,
+          "Singapore": 20,
           "United Kingdom": 20,
-          "Singapore": 19,
-          "Brazil": 18,
           "Netherlands": 17,
+          "Brazil": 17,
           "Spain": 14,
           "South Korea": 13,
-          "Australia": 9,
+          "Australia": 10,
           "Portugal": 8,
           "India": 7,
           "Germany": 7,
           "Italy": 5,
           "Indonesia": 4,
-          "Sweden": 4,
           "Mexico": 3,
-          "Denmark": 3,
+          "Sweden": 3,
           "Saudi Arabia": 2,
           "Israel": 2,
-          "Canada": 2,
+          "Denmark": 2,
           "Switzerland": 2,
           "Colombia": 1,
           "Chile": 1,
-          "Austria": 1,
           "Poland": 1,
-          "South Africa": 1
+          "Austria": 1
         },
         "scanned": 26,
         "signals": [
@@ -1518,18 +1508,18 @@
                 "excerpt": "lent in NYC, Boston, and Paris, mentor Engineering Managers toward Director readiness, and participate in the on-call rotation Who You Are: You have directly managed Engineering Managers, not just individual contributors&nbsp;"
               },
               {
-                "title": "Enterprise IT Support Technician I",
-                "location": "Paris, France",
-                "url": "https://careers.datadoghq.com/detail/8035671/?gh_jid=8035671",
-                "matched": "on call",
-                "excerpt": "timize daily workflows. Participate in deployment and security related projects Participate in the IT Support on call rotation &nbsp; Who You Are: 1+ years of experience in an IT Support role, preferably supporting a corporate"
-              },
-              {
                 "title": "Federal Support Engineer 3",
                 "location": "Denver, Colorado, USA",
                 "url": "https://careers.datadoghq.com/detail/7997846/?gh_jid=7997846",
                 "matched": "on-call",
                 "excerpt": "fying root causes across APIs, networking, cloud infrastructure, and operating‑system layers. Able to work an on-call rotating schedule that requires weekend availability &nbsp; Datadog values people from all walks of life. We"
+              },
+              {
+                "title": "Manager I, Engineering - Code Security",
+                "location": "Paris, France",
+                "url": "https://careers.datadoghq.com/detail/8108378/?gh_jid=8108378",
+                "matched": "on-call",
+                "excerpt": "ser Experience Stay hands-on: contribute to code review, weigh in on design decisions, and participate in the on-call rotation Bring AI deeply into how the team builds, from adopting agentic coding tools to rethinking workflows"
               }
             ]
           },
@@ -1690,11 +1680,8 @@
           "sha256": "ff0e2b002da0ad9f",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2008-07-19",
-            "last": "2020-05-01"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -1706,11 +1693,8 @@
           "sha256": "92101146b860c664",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 224,
-            "revisions": 223,
-            "first": "2022-05-27",
-            "last": "2026-08-29"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -1867,27 +1851,27 @@
       },
       "jobs": {
         "ok": true,
-        "total": 613,
+        "total": 614,
         "placeable": 550,
-        "unplaceable": 63,
+        "unplaceable": 64,
         "eea": 69,
         "non_eea": 481,
         "countries": {
-          "United States": 287,
-          "Canada": 56,
+          "United States": 289,
+          "Canada": 57,
           "Ireland": 54,
-          "Singapore": 46,
+          "Singapore": 44,
           "India": 38,
           "United Kingdom": 37,
-          "Mexico": 29,
+          "Mexico": 27,
           "Australia": 11,
           "Spain": 6,
           "Israel": 4,
           "Japan": 3,
+          "Taiwan": 3,
           "Romania": 3,
           "Germany": 2,
           "Italy": 2,
-          "Taiwan": 2,
           "Brazil": 2,
           "Luxembourg": 2,
           "France": 1,
@@ -1976,8 +1960,11 @@
           "sha256": "14b1ae957872913e",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 287,
+            "revisions": 286,
+            "first": "2024-01-18",
+            "last": "2026-08-30"
           }
         },
         {
@@ -2425,11 +2412,8 @@
           "sha256": "b9e8de6a4bacb426",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 81,
-            "revisions": 80,
-            "first": "2020-11-27",
-            "last": "2026-08-28"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -2442,11 +2426,8 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": true,
-            "captures": 23,
-            "revisions": 22,
-            "first": "2023-11-29",
-            "last": "2026-07-07"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         }
       ],
@@ -2587,19 +2568,19 @@
       },
       "jobs": {
         "ok": true,
-        "total": 231,
-        "placeable": 226,
+        "total": 227,
+        "placeable": 222,
         "unplaceable": 5,
-        "eea": 35,
-        "non_eea": 191,
+        "eea": 34,
+        "non_eea": 188,
         "countries": {
-          "United States": 104,
-          "Canada": 61,
-          "United Kingdom": 45,
+          "United States": 102,
+          "Canada": 60,
+          "United Kingdom": 44,
           "India": 43,
           "Germany": 13,
-          "Poland": 13,
-          "Ireland": 11,
+          "Poland": 12,
+          "Ireland": 10,
           "Netherlands": 7,
           "Israel": 7,
           "Singapore": 5,
@@ -2610,11 +2591,11 @@
           "Australia": 3,
           "Mexico": 3,
           "France": 3,
-          "Turkey": 2,
           "Brazil": 1,
           "Austria": 1,
           "Philippines": 1,
-          "South Korea": 1
+          "South Korea": 1,
+          "Turkey": 1
         },
         "scanned": 26,
         "signals": [
@@ -2733,15 +2714,15 @@
             "examples": [
               {
                 "title": "Associate Solutions Architect (French or German fluency) ",
-                "location": "Remote Ireland",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8675543002",
+                "location": "Remote, Spain",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8687171002",
                 "matched": "itar",
                 "excerpt": "or physical disability, genetic information (including family medical history), discharge status from the military, protected veteran status (which includes disabled veterans, recently separated veterans, active duty wartim"
               },
               {
                 "title": "Associate Solutions Architect (French or German fluency) ",
-                "location": "Remote, Spain",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8687171002",
+                "location": "Remote Ireland",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8675543002",
                 "matched": "itar",
                 "excerpt": "or physical disability, genetic information (including family medical history), discharge status from the military, protected veteran status (which includes disabled veterans, recently separated veterans, active duty wartim"
               },
@@ -2830,7 +2811,7 @@
       "category": "Search and data",
       "public_evidence_only": true,
       "surface": {
-        "grade": "82",
+        "grade": "57",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "1 public documents · 1 open reconciliations"
@@ -2840,13 +2821,16 @@
           "kind": "privacy",
           "url": "https://www.elastic.co/legal/privacy-statement",
           "path": "data/snapshots/elastic/privacy.txt",
-          "lines": 329,
-          "chars": 30068,
-          "sha256": "5369d10f45a8d597",
+          "lines": 342,
+          "chars": 31374,
+          "sha256": "f16e61179955461e",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2018-05-23",
+            "last": "2026-02-01"
           }
         }
       ],
@@ -2908,23 +2892,23 @@
         "sensitivity_score": 20,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": false
+        "source_documents_changed": true
       },
       "jobs": {
         "ok": true,
-        "total": 362,
-        "placeable": 362,
+        "total": 365,
+        "placeable": 365,
         "unplaceable": 0,
-        "eea": 145,
-        "non_eea": 217,
+        "eea": 146,
+        "non_eea": 219,
         "countries": {
-          "United States": 108,
-          "Spain": 35,
+          "United States": 110,
+          "Spain": 36,
           "Canada": 34,
-          "Greece": 22,
           "Portugal": 22,
+          "Greece": 22,
           "Ireland": 21,
-          "India": 18,
+          "India": 19,
           "United Kingdom": 18,
           "Poland": 12,
           "Norway": 12,
@@ -2940,7 +2924,6 @@
           "France": 2,
           "Mexico": 2,
           "Israel": 2,
-          "South Korea": 1,
           "Hungary": 1,
           "Denmark": 1,
           "Belgium": 1,
@@ -2958,15 +2941,15 @@
             "examples": [
               {
                 "title": "Associate Corporate Counsel - Legal Product, IP, and Marketing",
-                "location": "Canada",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8122981&gh_jid=8122981",
+                "location": "United States",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8093273&gh_jid=8093273",
                 "matched": "across time zones",
                 "excerpt": "orkflows and \"productization\" processes that help a legal team scale. Global Perspective: Comfortable working across time zones and cultures in a distributed culture with a flexible approach to problem-solving. Compensation for this role"
               },
               {
                 "title": "Associate Corporate Counsel - Legal Product, IP, and Marketing",
-                "location": "United States",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8093273&gh_jid=8093273",
+                "location": "Canada",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8122981&gh_jid=8122981",
                 "matched": "across time zones",
                 "excerpt": "orkflows and \"productization\" processes that help a legal team scale. Global Perspective: Comfortable working across time zones and cultures in a distributed culture with a flexible approach to problem-solving. Compensation for this role"
               },
@@ -3080,7 +3063,43 @@
           }
         ]
       },
-      "drift": []
+      "drift": [
+        {
+          "id": "elastic-privacy-2026-09-05",
+          "vendor_id": "elastic",
+          "vendor_name": "Elastic",
+          "document": "privacy",
+          "document_label": "Privacy policy",
+          "date": "2026-09-05",
+          "url": "https://www.elastic.co/legal/privacy-statement",
+          "hunks": [
+            {
+              "before": "April 24, 2026",
+              "after": "September 7, 2026"
+            },
+            {
+              "before": "This General Privacy Statement (also referred to as our \"Privacy Statement\") explains how Elastic N.V. and its subsidiaries and affiliated companies (\"Elastic,\" \"we,\" \"our,\" or \"us\") collect, use, share, and otherwise process information that identifies or could be identifiable to you (\"personal data\" or \"personal information\").",
+              "after": "This General Privacy Statement (also referred to as our \"Privacy Statement\" or \"Statement\") explains how Elastic N.V. and its subsidiaries and affiliated companies (\"Elastic,\" \"we,\" \"our,\" or \"us\") collect, use, share, and otherwise process information that identifies or could be identifiable to you (\"personal data\" or \"personal information\")."
+            },
+            {
+              "before": "Automatic collection from our products and services:",
+              "after": "Personal data processed by Elastic according to our"
+            },
+            {
+              "before": null,
+              "after": "Product Privacy Statement"
+            },
+            {
+              "before": "Please see our",
+              "after": "Personal data processed by Elastic according to our"
+            },
+            {
+              "before": "Product Privacy Statement",
+              "after": "Candidate Privacy Statement"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "vercel",
@@ -3103,8 +3122,11 @@
           "sha256": "1089987c0a57208c",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ReadTimeout"
+            "ok": true,
+            "captures": 26,
+            "revisions": 25,
+            "first": "2026-06-08",
+            "last": "2026-09-04"
           }
         },
         {
@@ -3212,17 +3234,17 @@
         "sensitivity_score": 20,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": true
+        "source_documents_changed": false
       },
       "jobs": {
         "ok": true,
-        "total": 88,
-        "placeable": 85,
-        "unplaceable": 3,
+        "total": 86,
+        "placeable": 84,
+        "unplaceable": 2,
         "eea": 9,
-        "non_eea": 76,
+        "non_eea": 75,
         "countries": {
-          "United States": 67,
+          "United States": 66,
           "United Kingdom": 16,
           "Germany": 9,
           "India": 4,

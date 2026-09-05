@@ -1,5 +1,5 @@
 # source: https://www.figma.com/legal/privacy/
-# collected: 2026-09-04
+# collected: 2026-09-05
 
 Figma Legal
 The information provided here is for Figma customers and users who have questions about our terms, policies, intellectual property, and compliance.
