@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T08:03:58+00:00",
+  "generated_at": "2026-09-06T08:09:53+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -121,8 +121,11 @@
           "sha256": "8dac92944a88d6dd",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ReadTimeout"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2024-02-25",
+            "last": "2026-03-08"
           }
         },
         {
@@ -134,8 +137,11 @@
           "sha256": "85c78c93175ffb26",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2024-02-21",
+            "last": "2026-03-20"
           }
         },
         {
@@ -148,8 +154,11 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 62,
+            "revisions": 61,
+            "first": "2024-09-26",
+            "last": "2026-08-30"
           }
         },
         {
@@ -162,22 +171,22 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 20,
-            "revisions": 19,
+            "captures": 22,
+            "revisions": 21,
             "first": "2026-07-14",
-            "last": "2026-09-05"
+            "last": "2026-09-03"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 595,
-        "placeable": 593,
+        "total": 593,
+        "placeable": 591,
         "unplaceable": 2,
         "eea": 28,
-        "non_eea": 565,
+        "non_eea": 563,
         "countries": {
-          "United States": 472,
+          "United States": 470,
           "United Kingdom": 51,
           "Japan": 14,
           "Singapore": 10,
@@ -304,7 +313,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "565 of 593 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "563 of 591 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -313,7 +322,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 472 open roles"
+              "excerpt": "United States: 470 open roles"
             },
             {
               "kind": "stat",
@@ -499,8 +508,11 @@
           "sha256": "8d3c9629d73c5991",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ReadTimeout"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2018-05-14",
+            "last": "2018-09-15"
           }
         },
         {
@@ -513,10 +525,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 285,
-            "revisions": 284,
+            "captures": 286,
+            "revisions": 285,
             "first": "2021-09-03",
-            "last": "2026-08-31"
+            "last": "2026-09-03"
           }
         },
         {
@@ -528,8 +540,11 @@
           "sha256": "3669d59798194699",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 156,
+            "revisions": 155,
+            "first": "2018-11-17",
+            "last": "2026-08-18"
           }
         },
         {
@@ -541,16 +556,19 @@
           "sha256": "253254e28bc2ff29",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2021-05-16",
+            "last": "2025-10-08"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 332,
+        "total": 331,
         "placeable": 6,
-        "unplaceable": 326,
+        "unplaceable": 325,
         "eea": 2,
         "non_eea": 4,
         "countries": {
@@ -848,11 +866,8 @@
           "sha256": "58ce48c87de09d47",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2017-06-30",
-            "last": "2025-04-25"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -864,11 +879,8 @@
           "sha256": "46bae6a6ca8c08ed",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 33,
-            "revisions": 32,
-            "first": "2022-05-28",
-            "last": "2026-08-03"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -920,8 +932,8 @@
           "Switzerland": 2,
           "Colombia": 1,
           "Chile": 1,
-          "Poland": 1,
-          "Austria": 1
+          "Austria": 1,
+          "Poland": 1
         },
         "scanned": 26,
         "signals": [
@@ -1137,11 +1149,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 44,
+        "total": 49,
         "footprint": 20,
         "access": 24,
         "transparency": 0,
-        "record": 0
+        "record": 5
       },
       "drift": [
         {
@@ -1232,8 +1244,11 @@
           "sha256": "ff0e2b002da0ad9f",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2008-07-19",
+            "last": "2020-05-01"
           }
         },
         {
@@ -1245,8 +1260,11 @@
           "sha256": "92101146b860c664",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 225,
+            "revisions": 224,
+            "first": "2022-05-27",
+            "last": "2026-08-29"
           }
         },
         {
@@ -1259,8 +1277,8 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 97,
-            "revisions": 96,
+            "captures": 98,
+            "revisions": 97,
             "first": "2022-12-05",
             "last": "2026-08-29"
           }
@@ -1268,13 +1286,13 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 614,
-        "placeable": 550,
+        "total": 615,
+        "placeable": 551,
         "unplaceable": 64,
         "eea": 69,
-        "non_eea": 481,
+        "non_eea": 482,
         "countries": {
-          "United States": 289,
+          "United States": 290,
           "Canada": 57,
           "Ireland": 54,
           "Singapore": 44,
@@ -1516,10 +1534,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 287,
-            "revisions": 286,
+            "captures": 292,
+            "revisions": 291,
             "first": "2024-01-18",
-            "last": "2026-08-30"
+            "last": "2026-09-01"
           }
         },
         {
@@ -1547,11 +1565,8 @@
           "sha256": "afbbe2131f13839e",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 81,
-            "revisions": 80,
-            "first": "2019-04-01",
-            "last": "2026-07-28"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
@@ -1954,11 +1969,8 @@
           "sha256": "b8fd30b8b1e6bdaa",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2015-04-16",
-            "last": "2026-02-17"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -1971,7 +1983,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "ReadTimeout"
           }
         },
         {
@@ -1984,28 +1996,31 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 24,
+            "revisions": 23,
+            "first": "2023-11-29",
+            "last": "2026-07-07"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 227,
-        "placeable": 222,
+        "total": 229,
+        "placeable": 224,
         "unplaceable": 5,
         "eea": 34,
-        "non_eea": 188,
+        "non_eea": 190,
         "countries": {
-          "United States": 102,
-          "Canada": 60,
-          "United Kingdom": 44,
+          "United States": 104,
+          "Canada": 62,
+          "United Kingdom": 46,
           "India": 43,
           "Germany": 13,
           "Poland": 12,
           "Ireland": 10,
+          "Israel": 9,
           "Netherlands": 7,
-          "Israel": 7,
           "Singapore": 5,
           "Spain": 4,
           "United Arab Emirates": 4,
@@ -2137,15 +2152,15 @@
             "examples": [
               {
                 "title": "Associate Solutions Architect (French or German fluency) ",
-                "location": "Remote, Spain",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8687171002",
+                "location": "Remote Ireland",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8675543002",
                 "matched": "itar",
                 "excerpt": "or physical disability, genetic information (including family medical history), discharge status from the military, protected veteran status (which includes disabled veterans, recently separated veterans, active duty wartim"
               },
               {
                 "title": "Associate Solutions Architect (French or German fluency) ",
-                "location": "Remote Ireland",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8675543002",
+                "location": "Remote, Spain",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8687171002",
                 "matched": "itar",
                 "excerpt": "or physical disability, genetic information (including family medical history), discharge status from the military, protected veteran status (which includes disabled veterans, recently separated veterans, active duty wartim"
               },
@@ -2342,11 +2357,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 50,
+        "total": 52,
         "footprint": 21,
         "access": 25,
         "transparency": 4,
-        "record": 0
+        "record": 2
       },
       "drift": [
         {
@@ -2406,8 +2421,8 @@
           "United States": 110,
           "Spain": 36,
           "Canada": 34,
-          "Portugal": 22,
           "Greece": 22,
+          "Portugal": 22,
           "Ireland": 21,
           "India": 19,
           "United Kingdom": 18,
@@ -2622,7 +2637,7 @@
         "sensitivity_score": 20,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": true
+        "source_documents_changed": false
       },
       "score": {
         "total": 57,
@@ -2687,8 +2702,8 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 26,
-            "revisions": 25,
+            "captures": 25,
+            "revisions": 24,
             "first": "2026-06-08",
             "last": "2026-09-04"
           }
