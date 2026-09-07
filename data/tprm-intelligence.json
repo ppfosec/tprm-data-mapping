@@ -594,11 +594,8 @@
           "sha256": "85c78c93175ffb26",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2024-02-21",
-            "last": "2026-03-20"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -611,11 +608,8 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": true,
-            "captures": 62,
-            "revisions": 61,
-            "first": "2024-09-26",
-            "last": "2026-08-30"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -627,11 +621,8 @@
           "sha256": "b5c2883bfc8d9aed",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 22,
-            "revisions": 21,
-            "first": "2026-07-14",
-            "last": "2026-09-03"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
@@ -640,7 +631,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "563 of 591 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "562 of 590 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -649,11 +640,11 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 470 open roles"
+              "excerpt": "United States: 468 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 51 open roles"
+              "excerpt": "United Kingdom: 50 open roles"
             },
             {
               "kind": "stat",
@@ -775,14 +766,14 @@
       },
       "jobs": {
         "ok": true,
-        "total": 593,
-        "placeable": 591,
+        "total": 592,
+        "placeable": 590,
         "unplaceable": 2,
         "eea": 28,
-        "non_eea": 563,
+        "non_eea": 562,
         "countries": {
-          "United States": 470,
-          "United Kingdom": 51,
+          "United States": 468,
+          "United Kingdom": 50,
           "Japan": 14,
           "Singapore": 10,
           "South Korea": 10,
@@ -791,8 +782,8 @@
           "Australia": 8,
           "France": 6,
           "India": 3,
+          "Switzerland": 3,
           "Canada": 2,
-          "Switzerland": 2,
           "Spain": 1,
           "Italy": 1
         },
@@ -1116,9 +1107,9 @@
       },
       "jobs": {
         "ok": true,
-        "total": 331,
+        "total": 332,
         "placeable": 6,
-        "unplaceable": 325,
+        "unplaceable": 326,
         "eea": 2,
         "non_eea": 4,
         "countries": {
@@ -1470,23 +1461,23 @@
       },
       "jobs": {
         "ok": true,
-        "total": 441,
-        "placeable": 441,
+        "total": 443,
+        "placeable": 443,
         "unplaceable": 0,
         "eea": 90,
-        "non_eea": 351,
+        "non_eea": 353,
         "countries": {
           "United States": 217,
           "France": 49,
           "Japan": 48,
           "Ireland": 25,
-          "Singapore": 20,
+          "Singapore": 21,
           "United Kingdom": 20,
           "Netherlands": 17,
           "Brazil": 17,
           "Spain": 14,
           "South Korea": 13,
-          "Australia": 10,
+          "Australia": 11,
           "Portugal": 8,
           "India": 7,
           "Germany": 7,
@@ -1692,11 +1683,8 @@
           "sha256": "ff0e2b002da0ad9f",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2008-07-19",
-            "last": "2020-05-01"
+            "ok": false,
+            "reason": "ReadTimeout"
           }
         },
         {
@@ -1709,10 +1697,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 225,
-            "revisions": 224,
+            "captures": 226,
+            "revisions": 225,
             "first": "2022-05-27",
-            "last": "2026-08-29"
+            "last": "2026-09-05"
           }
         },
         {
@@ -1725,10 +1713,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 98,
-            "revisions": 97,
+            "captures": 99,
+            "revisions": 98,
             "first": "2022-12-05",
-            "last": "2026-08-29"
+            "last": "2026-09-05"
           }
         }
       ],
@@ -1869,17 +1857,17 @@
       },
       "jobs": {
         "ok": true,
-        "total": 615,
-        "placeable": 551,
-        "unplaceable": 64,
-        "eea": 69,
-        "non_eea": 482,
+        "total": 622,
+        "placeable": 557,
+        "unplaceable": 65,
+        "eea": 71,
+        "non_eea": 486,
         "countries": {
           "United States": 290,
           "Canada": 57,
-          "Ireland": 54,
-          "Singapore": 44,
-          "India": 38,
+          "Ireland": 55,
+          "Singapore": 47,
+          "India": 39,
           "United Kingdom": 37,
           "Mexico": 27,
           "Australia": 11,
@@ -1892,6 +1880,7 @@
           "Italy": 2,
           "Brazil": 2,
           "Luxembourg": 2,
+          "Sweden": 1,
           "France": 1,
           "United Arab Emirates": 1,
           "New Zealand": 1,
@@ -1978,11 +1967,8 @@
           "sha256": "14b1ae957872913e",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 292,
-            "revisions": 291,
-            "first": "2024-01-18",
-            "last": "2026-09-01"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -1994,11 +1980,8 @@
           "sha256": "4bde694018c282cd",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 14,
-            "revisions": 13,
-            "first": "2025-04-01",
-            "last": "2026-06-20"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -2010,8 +1993,11 @@
           "sha256": "afbbe2131f13839e",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 81,
+            "revisions": 80,
+            "first": "2019-04-01",
+            "last": "2026-07-28"
           }
         }
       ],
@@ -2396,7 +2382,7 @@
       "category": "DevOps platform",
       "public_evidence_only": true,
       "surface": {
-        "grade": "52",
+        "grade": "50",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "3 public documents · 3 open reconciliations"
@@ -2424,8 +2410,11 @@
           "sha256": "b9e8de6a4bacb426",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ReadTimeout"
+            "ok": true,
+            "captures": 81,
+            "revisions": 80,
+            "first": "2020-11-27",
+            "last": "2026-08-28"
           }
         },
         {
@@ -2438,11 +2427,8 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": true,
-            "captures": 24,
-            "revisions": 23,
-            "first": "2023-11-29",
-            "last": "2026-07-07"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
@@ -2826,7 +2812,7 @@
       "category": "Search and data",
       "public_evidence_only": true,
       "surface": {
-        "grade": "57",
+        "grade": "82",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "1 public documents · 1 open reconciliations"
@@ -2841,11 +2827,8 @@
           "sha256": "f16e61179955461e",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2018-05-23",
-            "last": "2026-02-01"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
@@ -2911,19 +2894,19 @@
       },
       "jobs": {
         "ok": true,
-        "total": 365,
-        "placeable": 365,
+        "total": 366,
+        "placeable": 366,
         "unplaceable": 0,
         "eea": 146,
-        "non_eea": 219,
+        "non_eea": 220,
         "countries": {
           "United States": 110,
           "Spain": 36,
           "Canada": 34,
-          "Greece": 22,
           "Portugal": 22,
+          "Greece": 22,
           "Ireland": 21,
-          "India": 19,
+          "India": 20,
           "United Kingdom": 18,
           "Poland": 12,
           "Norway": 12,
@@ -2956,15 +2939,15 @@
             "examples": [
               {
                 "title": "Associate Corporate Counsel - Legal Product, IP, and Marketing",
-                "location": "United States",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8093273&gh_jid=8093273",
+                "location": "Canada",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8122981&gh_jid=8122981",
                 "matched": "across time zones",
                 "excerpt": "orkflows and \"productization\" processes that help a legal team scale. Global Perspective: Comfortable working across time zones and cultures in a distributed culture with a flexible approach to problem-solving. Compensation for this role"
               },
               {
                 "title": "Associate Corporate Counsel - Legal Product, IP, and Marketing",
-                "location": "Canada",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8122981&gh_jid=8122981",
+                "location": "United States",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8093273&gh_jid=8093273",
                 "matched": "across time zones",
                 "excerpt": "orkflows and \"productization\" processes that help a legal team scale. Global Perspective: Comfortable working across time zones and cultures in a distributed culture with a flexible approach to problem-solving. Compensation for this role"
               },
@@ -3012,7 +2995,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 3,
+            "count": 4,
             "examples": [
               {
                 "title": "Consulting Architect - Search",
@@ -3022,18 +3005,18 @@
                 "excerpt": "erformance to meet demanding SLAs, optimizing JVM heap, garbage collection, caching layers, and Apache Lucene segment merging. High-Throughput Ingestion: Build robust ingestion pipelines and bulk indexing strategies handling hi"
               },
               {
+                "title": "Coordinator, Marketing Operations (Fixed Term)",
+                "location": "Bangalore, India",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8161139&gh_jid=8161139",
+                "matched": "Salesforce",
+                "excerpt": "xed organization. Tool Proficiency : High competence in budget/project management platforms (e.g., Allocadia, Salesforce, or similar). Operational Mindset : A proactive approach to identifying bottlenecks; you don’t just execute t"
+              },
+              {
                 "title": "Help Desk Operations Manager, Partner Revenue Strategy & Operations",
                 "location": "India",
                 "url": "https://jobs.elastic.co/jobs?gh_jid=8059813&gh_jid=8059813",
                 "matched": "Salesforce",
                 "excerpt": "position leading a team 2+ years with process improvement 2+ years of experience with CRM systems, preferably Salesforce #LI-AS3 Additional Information - We Take Care of Our People As a distributed company, diversity drives our id"
-              },
-              {
-                "title": "International Revenue Strategy & Operations Manager",
-                "location": "Singapore",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8045062&gh_jid=8045062",
-                "matched": "Salesforce",
-                "excerpt": "demands with a sense of urgency. Ability to thrive in a fast paced start-up environment. Experience with the Salesforce.com platform Experience with Microsoft Office Suite. Bonus Points Proficiency in Japanese Language is a plus."
               }
             ]
           },
@@ -3138,10 +3121,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 25,
-            "revisions": 24,
+            "captures": 29,
+            "revisions": 28,
             "first": "2026-06-08",
-            "last": "2026-09-04"
+            "last": "2026-09-06"
           }
         },
         {
@@ -3154,10 +3137,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 147,
-            "revisions": 146,
+            "captures": 149,
+            "revisions": 148,
             "first": "2020-04-23",
-            "last": "2026-08-26"
+            "last": "2026-09-06"
           }
         }
       ],
