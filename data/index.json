@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T08:44:54+00:00",
+  "generated_at": "2026-09-08T08:23:03+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -137,8 +137,11 @@
           "sha256": "85c78c93175ffb26",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2024-02-21",
+            "last": "2026-03-20"
           }
         },
         {
@@ -151,8 +154,11 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 62,
+            "revisions": 61,
+            "first": "2024-09-26",
+            "last": "2026-08-30"
           }
         },
         {
@@ -164,26 +170,29 @@
           "sha256": "b5c2883bfc8d9aed",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 24,
+            "revisions": 23,
+            "first": "2026-07-14",
+            "last": "2026-09-07"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 592,
-        "placeable": 590,
+        "total": 587,
+        "placeable": 585,
         "unplaceable": 2,
-        "eea": 28,
-        "non_eea": 562,
+        "eea": 27,
+        "non_eea": 558,
         "countries": {
-          "United States": 468,
-          "United Kingdom": 50,
+          "United States": 466,
+          "United Kingdom": 48,
           "Japan": 14,
           "Singapore": 10,
-          "South Korea": 10,
-          "Germany": 10,
           "Ireland": 10,
+          "South Korea": 10,
+          "Germany": 9,
           "Australia": 8,
           "France": 6,
           "India": 3,
@@ -304,7 +313,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "562 of 590 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "558 of 585 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -313,11 +322,11 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 468 open roles"
+              "excerpt": "United States: 466 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 50 open roles"
+              "excerpt": "United Kingdom: 48 open roles"
             },
             {
               "kind": "stat",
@@ -516,10 +525,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 286,
-            "revisions": 285,
+            "captures": 287,
+            "revisions": 286,
             "first": "2021-09-03",
-            "last": "2026-09-03"
+            "last": "2026-09-05"
           }
         },
         {
@@ -547,19 +556,16 @@
           "sha256": "253254e28bc2ff29",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2021-05-16",
-            "last": "2025-10-08"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 332,
+        "total": 334,
         "placeable": 6,
-        "unplaceable": 326,
+        "unplaceable": 328,
         "eea": 2,
         "non_eea": 4,
         "countries": {
@@ -586,18 +592,18 @@
                 "excerpt": "ring partner\" for SIRT. By conducting unannounced exercises, you help them refine their playbooks, test their on-call rotations, and ensure their forensic tooling is effective under pressure. Threat Detection &amp; Threat Engin"
               },
               {
+                "title": "Distributed Systems Engineer - Data Platform (Delivery, Database, Retrieval)",
+                "location": "Hybrid",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/7462801?gh_jid=7462801",
+                "matched": "on-call",
+                "excerpt": "ou! Join us in our mission to help build a better internet for everyone! This role requires flexibility to be on-call outside of standard working hours to address technical issues as needed. Compensation Compensation may be adj"
+              },
+              {
                 "title": "Engineering Manager, Cloudflare Network Interconnect",
                 "location": "Hybrid",
                 "url": "https://boards.greenhouse.io/cloudflare/jobs/8083701?gh_jid=8083701",
                 "matched": "on-call",
                 "excerpt": "eam to lead design and implementation. Taking responsibility for the team's production services by organizing on-call rotations, handling customer escalations, and overseeing incident response and follow-up. Driving reliability"
-              },
-              {
-                "title": "Network Deployment Engineer - APJC",
-                "location": "Hybrid",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/8088046?gh_jid=8088046",
-                "matched": "on-call",
-                "excerpt": "ce with continuous / rapid deployment. Experience working in a 24/7/365 mission-critical service environment (on-call rotation required) Knowledge of the OSI-model and experience isolating network, hardware and software issues."
               }
             ]
           },
@@ -741,11 +747,11 @@
             },
             {
               "kind": "job",
-              "title": "Engineering Manager, Cloudflare Network Interconnect",
+              "title": "Distributed Systems Engineer - Data Platform (Delivery, Database, Retrieval)",
               "location": "Hybrid",
-              "url": "https://boards.greenhouse.io/cloudflare/jobs/8083701?gh_jid=8083701",
+              "url": "https://boards.greenhouse.io/cloudflare/jobs/7462801?gh_jid=7462801",
               "matched": "on-call",
-              "excerpt": "eam to lead design and implementation. Taking responsibility for the team's production services by organizing on-call rotations, handling customer escalations, and overseeing incident response and follow-up. Driving reliability"
+              "excerpt": "ou! Join us in our mission to help build a better internet for everyone! This role requires flexibility to be on-call outside of standard working hours to address technical issues as needed. Compensation Compensation may be adj"
             }
           ],
           "question": "For out-of-hours incidents, who is on the rotation, where are they, and is their access to customer data logged and reviewable by the customer?"
@@ -896,20 +902,20 @@
         "total": 443,
         "placeable": 443,
         "unplaceable": 0,
-        "eea": 90,
-        "non_eea": 353,
+        "eea": 91,
+        "non_eea": 352,
         "countries": {
-          "United States": 217,
-          "France": 49,
+          "United States": 216,
+          "France": 50,
           "Japan": 48,
           "Ireland": 25,
           "Singapore": 21,
           "United Kingdom": 20,
           "Netherlands": 17,
           "Brazil": 17,
-          "Spain": 14,
+          "Spain": 15,
           "South Korea": 13,
-          "Australia": 11,
+          "Australia": 12,
           "Portugal": 8,
           "India": 7,
           "Germany": 7,
@@ -923,8 +929,8 @@
           "Switzerland": 2,
           "Colombia": 1,
           "Chile": 1,
-          "Austria": 1,
-          "Poland": 1
+          "Poland": 1,
+          "Austria": 1
         },
         "scanned": 26,
         "signals": [
@@ -1235,8 +1241,11 @@
           "sha256": "ff0e2b002da0ad9f",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ReadTimeout"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2008-07-19",
+            "last": "2020-05-01"
           }
         },
         {
@@ -1274,21 +1283,21 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 622,
-        "placeable": 557,
+        "total": 620,
+        "placeable": 555,
         "unplaceable": 65,
-        "eea": 71,
-        "non_eea": 486,
+        "eea": 73,
+        "non_eea": 482,
         "countries": {
-          "United States": 290,
-          "Canada": 57,
-          "Ireland": 55,
-          "Singapore": 47,
-          "India": 39,
+          "United States": 289,
+          "Ireland": 57,
+          "Canada": 56,
+          "Singapore": 49,
+          "India": 38,
           "United Kingdom": 37,
-          "Mexico": 27,
+          "Mexico": 25,
           "Australia": 11,
-          "Spain": 6,
+          "Spain": 5,
           "Israel": 4,
           "Japan": 3,
           "Taiwan": 3,
@@ -1302,6 +1311,7 @@
           "United Arab Emirates": 1,
           "New Zealand": 1,
           "Hong Kong": 1,
+          "Poland": 1,
           "Thailand": 1
         },
         "scanned": 26,
@@ -1522,8 +1532,11 @@
           "sha256": "14b1ae957872913e",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 294,
+            "revisions": 293,
+            "first": "2024-01-18",
+            "last": "2026-09-07"
           }
         },
         {
@@ -1535,8 +1548,11 @@
           "sha256": "4bde694018c282cd",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 14,
+            "revisions": 13,
+            "first": "2025-04-01",
+            "last": "2026-06-20"
           }
         },
         {
@@ -1548,11 +1564,8 @@
           "sha256": "afbbe2131f13839e",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 81,
-            "revisions": 80,
-            "first": "2019-04-01",
-            "last": "2026-07-28"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
@@ -1985,23 +1998,26 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 24,
+            "revisions": 23,
+            "first": "2023-11-29",
+            "last": "2026-07-07"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 229,
-        "placeable": 224,
+        "total": 227,
+        "placeable": 222,
         "unplaceable": 5,
         "eea": 34,
-        "non_eea": 190,
+        "non_eea": 188,
         "countries": {
           "United States": 104,
           "Canada": 62,
           "United Kingdom": 46,
-          "India": 43,
+          "India": 41,
           "Germany": 13,
           "Poland": 12,
           "Ireland": 10,
@@ -2138,15 +2154,15 @@
             "examples": [
               {
                 "title": "Associate Solutions Architect (French or German fluency) ",
-                "location": "Remote Ireland",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8675543002",
+                "location": "Remote, Spain",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8687171002",
                 "matched": "itar",
                 "excerpt": "or physical disability, genetic information (including family medical history), discharge status from the military, protected veteran status (which includes disabled veterans, recently separated veterans, active duty wartim"
               },
               {
                 "title": "Associate Solutions Architect (French or German fluency) ",
-                "location": "Remote, Spain",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8687171002",
+                "location": "Remote Ireland",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8675543002",
                 "matched": "itar",
                 "excerpt": "or physical disability, genetic information (including family medical history), discharge status from the military, protected veteran status (which includes disabled veterans, recently separated veterans, active duty wartim"
               },
@@ -2164,7 +2180,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 7,
+            "count": 6,
             "examples": [
               {
                 "title": "Customer Success Architect, CEUR",
@@ -2389,25 +2405,25 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "http 503"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 366,
-        "placeable": 366,
+        "total": 368,
+        "placeable": 368,
         "unplaceable": 0,
         "eea": 146,
-        "non_eea": 220,
+        "non_eea": 222,
         "countries": {
-          "United States": 110,
-          "Spain": 36,
-          "Canada": 34,
-          "Portugal": 22,
+          "United States": 112,
+          "Canada": 35,
+          "Spain": 35,
           "Greece": 22,
+          "Portugal": 22,
           "Ireland": 21,
-          "India": 20,
+          "India": 19,
           "United Kingdom": 18,
           "Poland": 12,
           "Norway": 12,
@@ -2416,13 +2432,15 @@
           "Switzerland": 7,
           "Singapore": 7,
           "Japan": 6,
-          "Saudi Arabia": 4,
           "Brazil": 4,
           "Australia": 3,
+          "Saudi Arabia": 3,
           "United Arab Emirates": 2,
           "France": 2,
           "Mexico": 2,
           "Israel": 2,
+          "Italy": 1,
+          "New Zealand": 1,
           "Hungary": 1,
           "Denmark": 1,
           "Belgium": 1,
@@ -2440,15 +2458,15 @@
             "examples": [
               {
                 "title": "Associate Corporate Counsel - Legal Product, IP, and Marketing",
-                "location": "Canada",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8122981&gh_jid=8122981",
+                "location": "United States",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8093273&gh_jid=8093273",
                 "matched": "across time zones",
                 "excerpt": "orkflows and \"productization\" processes that help a legal team scale. Global Perspective: Comfortable working across time zones and cultures in a distributed culture with a flexible approach to problem-solving. Compensation for this role"
               },
               {
                 "title": "Associate Corporate Counsel - Legal Product, IP, and Marketing",
-                "location": "United States",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8093273&gh_jid=8093273",
+                "location": "Canada",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8122981&gh_jid=8122981",
                 "matched": "across time zones",
                 "excerpt": "orkflows and \"productization\" processes that help a legal team scale. Global Perspective: Comfortable working across time zones and cultures in a distributed culture with a flexible approach to problem-solving. Compensation for this role"
               },
@@ -2700,23 +2718,20 @@
           "sha256": "c6f2954ea450f34e",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 149,
-            "revisions": 148,
-            "first": "2020-04-23",
-            "last": "2026-09-06"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 86,
-        "placeable": 84,
+        "total": 87,
+        "placeable": 85,
         "unplaceable": 2,
         "eea": 9,
-        "non_eea": 75,
+        "non_eea": 76,
         "countries": {
-          "United States": 66,
+          "United States": 67,
           "United Kingdom": 16,
           "Germany": 9,
           "India": 4,
