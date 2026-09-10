@@ -1,5 +1,5 @@
 # source: https://www.elastic.co/legal/privacy-statement
-# collected: 2026-09-09
+# collected: 2026-09-10
 
 General Privacy Statement
 Effective Date:
@@ -262,7 +262,7 @@ You may also have the right to complain to a data protection authority about our
 In compliance with the EU-U.S.
 DPF, the UK Extension to the EU-U.S.
 DPF, and the Swiss-U.S.
-DPF, Elastic commits to cooperate and comply respectively with the advice of the panel established by the EU data protection authorities (DPAs), the UK Information Commission Office (fka ICO) and the Gibraltar Regulatory Authority (GRA), and the Swiss Federal Data Protection and Information Commissioner (FDPIC) with regard to unresolved complaints concerning our handling of personal data received in reliance on the EU-U.S.
+DPF, Elastic commits to cooperate and comply respectively with the advice of the panel established by the EU data protection authorities (DPAs), the UK Information Commission (fka ICO) and the Gibraltar Regulatory Authority (GRA), and the Swiss Federal Data Protection and Information Commissioner (FDPIC) with regard to unresolved complaints concerning our handling of personal data received in reliance on the EU-U.S.
 DPF, the UK Extension to the EU-U.S.
 DPF, and the Swiss-U.S.
 DPF.

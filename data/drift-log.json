@@ -1,5 +1,20 @@
 [
   {
+    "id": "elastic-privacy-2026-09-10",
+    "vendor_id": "elastic",
+    "vendor_name": "Elastic",
+    "document": "privacy",
+    "document_label": "Privacy policy",
+    "date": "2026-09-10",
+    "url": "https://www.elastic.co/legal/privacy-statement",
+    "hunks": [
+      {
+        "before": "DPF, Elastic commits to cooperate and comply respectively with the advice of the panel established by the EU data protection authorities (DPAs), the UK Information Commission Office (fka ICO) and the Gibraltar Regulatory Authority (GRA), and the Swiss Federal Data Protection and Information Commissioner (FDPIC) with regard to unresolved complaints concerning our handling of personal data received in reliance on the EU-U.S.",
+        "after": "DPF, Elastic commits to cooperate and comply respectively with the advice of the panel established by the EU data protection authorities (DPAs), the UK Information Commission (fka ICO) and the Gibraltar Regulatory Authority (GRA), and the Swiss Federal Data Protection and Information Commissioner (FDPIC) with regard to unresolved complaints concerning our handling of personal data received in reliance on the EU-U.S."
+      }
+    ]
+  },
+  {
     "id": "elastic-privacy-2026-09-05",
     "vendor_id": "elastic",
     "vendor_name": "Elastic",
