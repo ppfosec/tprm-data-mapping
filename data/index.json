@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T08:25:28+00:00",
+  "generated_at": "2026-09-12T08:20:01+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -100,9 +100,9 @@
           "kind": "privacy",
           "url": "https://www.anthropic.com/legal/privacy",
           "path": "data/snapshots/anthropic/privacy.txt",
-          "lines": 456,
-          "chars": 37521,
-          "sha256": "e29848accd9e38b9",
+          "lines": 491,
+          "chars": 39483,
+          "sha256": "6e132921a3eb10a3",
           "note": null,
           "archive": {
             "ok": true,
@@ -137,11 +137,8 @@
           "sha256": "85c78c93175ffb26",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2024-02-21",
-            "last": "2026-03-20"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -155,7 +152,7 @@
           "diff": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -168,30 +165,30 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "ConnectTimeout"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 594,
-        "placeable": 592,
+        "total": 595,
+        "placeable": 593,
         "unplaceable": 2,
-        "eea": 27,
-        "non_eea": 565,
+        "eea": 26,
+        "non_eea": 567,
         "countries": {
-          "United States": 473,
+          "United States": 474,
           "United Kingdom": 50,
           "Japan": 14,
-          "Ireland": 10,
-          "South Korea": 10,
+          "South Korea": 11,
           "Singapore": 9,
+          "Ireland": 9,
           "Germany": 8,
           "Australia": 7,
           "France": 7,
-          "India": 3,
+          "Canada": 3,
           "Switzerland": 3,
-          "Canada": 2,
+          "India": 2,
           "Spain": 1,
           "Italy": 1
         },
@@ -307,7 +304,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "565 of 592 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "567 of 593 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -316,7 +313,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 473 open roles"
+              "excerpt": "United States: 474 open roles"
             },
             {
               "kind": "stat",
@@ -325,6 +322,10 @@
             {
               "kind": "stat",
               "excerpt": "Japan: 14 open roles"
+            },
+            {
+              "kind": "stat",
+              "excerpt": "South Korea: 11 open roles"
             }
           ],
           "question": "Which roles can access production data, and from which countries? Does the residency commitment cover support and engineering access, or only data at rest?"
@@ -434,7 +435,7 @@
         "sensitivity_score": 10,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": false
+        "source_documents_changed": true
       },
       "score": {
         "total": 44,
@@ -444,6 +445,41 @@
         "record": 0
       },
       "drift": [
+        {
+          "id": "anthropic-privacy-2026-09-12",
+          "vendor_id": "anthropic",
+          "vendor_name": "Anthropic",
+          "document": "privacy",
+          "document_label": "Privacy policy",
+          "date": "2026-09-12",
+          "url": "https://www.anthropic.com/legal/privacy",
+          "hunks": [
+            {
+              "before": null,
+              "after": "This section applies to the extent that Anthropic is subject to the Personal Information Protection Act (“PIPA”), and supplements the information in the Privacy Policy."
+            },
+            {
+              "before": null,
+              "after": "This is an addendum to the Privacy Policy and should be read in conjunction with the Privacy Policy."
+            },
+            {
+              "before": null,
+              "after": "In case of any inconsistency between the Privacy Policy and this Addendum, this Addendum prevails for users in the Republic of Korea."
+            },
+            {
+              "before": null,
+              "after": "This Addendum may be amended or updated from time to time."
+            },
+            {
+              "before": null,
+              "after": "Items of Personal Data Collected and Purpose of Use"
+            },
+            {
+              "before": null,
+              "after": "In addition to “1."
+            }
+          ]
+        },
         {
           "id": "anthropic-dpa-2026-08-28",
           "vendor_id": "anthropic",
@@ -498,8 +534,11 @@
           "sha256": "8d3c9629d73c5991",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2018-05-14",
+            "last": "2018-09-15"
           }
         },
         {
@@ -553,13 +592,13 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 353,
-        "placeable": 6,
-        "unplaceable": 347,
+        "total": 358,
+        "placeable": 5,
+        "unplaceable": 353,
         "eea": 2,
-        "non_eea": 4,
+        "non_eea": 3,
         "countries": {
-          "India": 2,
+          "India": 1,
           "Japan": 1,
           "France": 1,
           "Portugal": 1,
@@ -572,7 +611,7 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 6,
+            "count": 7,
             "examples": [
               {
                 "title": "AI Security Research & Red Team Engineer",
@@ -790,8 +829,8 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 42,
-        "footprint": 17,
+        "total": 40,
+        "footprint": 15,
         "access": 25,
         "transparency": 0,
         "record": 0
@@ -841,9 +880,9 @@
           "kind": "privacy",
           "url": "https://www.datadoghq.com/legal/privacy/",
           "path": "data/snapshots/datadog/privacy.txt",
-          "lines": 455,
-          "chars": 26184,
-          "sha256": "58ce48c87de09d47",
+          "lines": 454,
+          "chars": 26276,
+          "sha256": "5ba0ae3eedc6b12d",
           "note": null,
           "archive": {
             "ok": true,
@@ -857,63 +896,66 @@
           "kind": "dpa",
           "url": "https://www.datadoghq.com/legal/data-processing-addendum/",
           "path": "data/snapshots/datadog/dpa.txt",
-          "lines": 471,
-          "chars": 29834,
-          "sha256": "46bae6a6ca8c08ed",
+          "lines": 470,
+          "chars": 29926,
+          "sha256": "0872909011330b18",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 33,
+            "revisions": 32,
+            "first": "2022-05-28",
+            "last": "2026-08-03"
           }
         },
         {
           "kind": "subprocessors",
           "url": "https://www.datadoghq.com/legal/subprocessors/",
           "path": "data/snapshots/datadog/subprocessors.txt",
-          "lines": 270,
-          "chars": 4996,
-          "sha256": "b5c3e88a3bf3e9d9",
+          "lines": 269,
+          "chars": 5088,
+          "sha256": "30731a3ad8d38ffb",
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "ConnectTimeout"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 450,
-        "placeable": 450,
+        "total": 446,
+        "placeable": 446,
         "unplaceable": 0,
         "eea": 95,
-        "non_eea": 355,
+        "non_eea": 351,
         "countries": {
-          "United States": 217,
-          "France": 55,
+          "United States": 214,
+          "France": 56,
           "Japan": 48,
           "Ireland": 25,
           "Singapore": 23,
-          "United Kingdom": 21,
+          "United Kingdom": 20,
           "Brazil": 16,
           "Spain": 16,
           "Netherlands": 15,
-          "South Korea": 13,
           "Australia": 13,
+          "South Korea": 13,
           "India": 7,
           "Germany": 7,
           "Portugal": 7,
           "Italy": 5,
           "Indonesia": 4,
           "Sweden": 3,
-          "Saudi Arabia": 2,
           "Israel": 2,
           "Denmark": 2,
           "Switzerland": 2,
           "Mexico": 2,
           "Colombia": 1,
           "Chile": 1,
+          "Poland": 1,
           "Austria": 1,
-          "Poland": 1
+          "Saudi Arabia": 1
         },
         "scanned": 26,
         "signals": [
@@ -1110,7 +1152,7 @@
         "sensitivity_score": 20,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": false
+        "source_documents_changed": true
       },
       "score": {
         "total": 40,
@@ -1120,6 +1162,111 @@
         "record": 0
       },
       "drift": [
+        {
+          "id": "datadog-privacy-2026-09-12",
+          "vendor_id": "datadog",
+          "vendor_name": "Datadog",
+          "document": "privacy",
+          "document_label": "Privacy policy",
+          "date": "2026-09-12",
+          "url": "https://www.datadoghq.com/legal/privacy/",
+          "hunks": [
+            {
+              "before": "Metrics",
+              "after": "Custom Metrics"
+            },
+            {
+              "before": null,
+              "after": "Network Monitoring"
+            },
+            {
+              "before": "Network Monitoring",
+              "after": "Serverless Monitoring"
+            },
+            {
+              "before": "Serverless",
+              "after": null
+            },
+            {
+              "before": "Cloudcraft",
+              "after": null
+            },
+            {
+              "before": "Sensitive Data Scanner",
+              "after": null
+            }
+          ]
+        },
+        {
+          "id": "datadog-dpa-2026-09-12",
+          "vendor_id": "datadog",
+          "vendor_name": "Datadog",
+          "document": "dpa",
+          "document_label": "Data processing agreement",
+          "date": "2026-09-12",
+          "url": "https://www.datadoghq.com/legal/data-processing-addendum/",
+          "hunks": [
+            {
+              "before": "Metrics",
+              "after": "Custom Metrics"
+            },
+            {
+              "before": null,
+              "after": "Network Monitoring"
+            },
+            {
+              "before": "Network Monitoring",
+              "after": "Serverless Monitoring"
+            },
+            {
+              "before": "Serverless",
+              "after": null
+            },
+            {
+              "before": "Cloudcraft",
+              "after": null
+            },
+            {
+              "before": "Sensitive Data Scanner",
+              "after": null
+            }
+          ]
+        },
+        {
+          "id": "datadog-subprocessors-2026-09-12",
+          "vendor_id": "datadog",
+          "vendor_name": "Datadog",
+          "document": "subprocessors",
+          "document_label": "Sub-processor list",
+          "date": "2026-09-12",
+          "url": "https://www.datadoghq.com/legal/subprocessors/",
+          "hunks": [
+            {
+              "before": "Metrics",
+              "after": "Custom Metrics"
+            },
+            {
+              "before": null,
+              "after": "Network Monitoring"
+            },
+            {
+              "before": "Network Monitoring",
+              "after": "Serverless Monitoring"
+            },
+            {
+              "before": "Serverless",
+              "after": null
+            },
+            {
+              "before": "Cloudcraft",
+              "after": null
+            },
+            {
+              "before": "Sensitive Data Scanner",
+              "after": null
+            }
+          ]
+        },
         {
           "id": "datadog-privacy-2026-08-21",
           "vendor_id": "datadog",
@@ -1208,11 +1355,8 @@
           "sha256": "ff0e2b002da0ad9f",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2008-07-19",
-            "last": "2020-05-01"
+            "ok": false,
+            "reason": "http 503"
           }
         },
         {
@@ -1240,28 +1384,25 @@
           "sha256": "08c0eec1eefcd1e4",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 101,
-            "revisions": 100,
-            "first": "2022-12-05",
-            "last": "2026-09-10"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 626,
-        "placeable": 558,
-        "unplaceable": 68,
-        "eea": 70,
-        "non_eea": 488,
+        "total": 635,
+        "placeable": 562,
+        "unplaceable": 73,
+        "eea": 72,
+        "non_eea": 490,
         "countries": {
-          "United States": 295,
-          "Ireland": 55,
+          "United States": 298,
+          "Ireland": 57,
           "Canada": 53,
           "Singapore": 49,
-          "United Kingdom": 40,
-          "India": 38,
+          "United Kingdom": 41,
+          "India": 37,
           "Mexico": 26,
           "Australia": 9,
           "Israel": 4,
@@ -1474,7 +1615,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -1486,8 +1627,11 @@
           "sha256": "4bde694018c282cd",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 15,
+            "revisions": 14,
+            "first": "2025-04-01",
+            "last": "2026-09-09"
           }
         },
         {
@@ -1499,29 +1643,32 @@
           "sha256": "afbbe2131f13839e",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 81,
+            "revisions": 80,
+            "first": "2019-04-01",
+            "last": "2026-07-28"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 157,
-        "placeable": 157,
+        "total": 153,
+        "placeable": 153,
         "unplaceable": 0,
         "eea": 12,
-        "non_eea": 145,
+        "non_eea": 141,
         "countries": {
           "United States": 96,
-          "United Kingdom": 18,
+          "United Kingdom": 17,
           "Japan": 9,
           "Germany": 7,
-          "Singapore": 7,
+          "Singapore": 5,
           "France": 5,
           "Israel": 5,
           "Australia": 4,
           "Brazil": 4,
-          "India": 2
+          "India": 1
         },
         "scanned": 26,
         "signals": [
@@ -1654,7 +1801,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "145 of 157 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "141 of 153 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -1667,7 +1814,7 @@
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 18 open roles"
+              "excerpt": "United Kingdom: 17 open roles"
             },
             {
               "kind": "stat",
@@ -1765,11 +1912,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 73,
+        "total": 48,
         "footprint": 23,
         "access": 25,
         "transparency": 0,
-        "record": 25
+        "record": 0
       },
       "drift": [
         {
@@ -1895,8 +2042,11 @@
           "sha256": "b8fd30b8b1e6bdaa",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2015-04-16",
+            "last": "2026-02-17"
           }
         },
         {
@@ -1935,20 +2085,20 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 224,
-        "placeable": 217,
-        "unplaceable": 7,
-        "eea": 35,
+        "total": 226,
+        "placeable": 218,
+        "unplaceable": 8,
+        "eea": 36,
         "non_eea": 182,
         "countries": {
           "United States": 102,
           "Canada": 64,
-          "United Kingdom": 46,
+          "United Kingdom": 48,
           "India": 37,
+          "Poland": 15,
           "Germany": 14,
-          "Poland": 14,
-          "Israel": 10,
           "Ireland": 10,
+          "Israel": 10,
           "Netherlands": 7,
           "Spain": 5,
           "Singapore": 5,
@@ -2297,41 +2447,24 @@
       "hq": "United States / Netherlands",
       "hq_iso": "US",
       "site": "https://www.elastic.co",
-      "docs": [
-        {
-          "kind": "privacy",
-          "url": "https://www.elastic.co/legal/privacy-statement",
-          "path": "data/snapshots/elastic/privacy.txt",
-          "lines": 342,
-          "chars": 31367,
-          "sha256": "7c8cc77af2219f99",
-          "note": null,
-          "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2018-05-23",
-            "last": "2026-02-01"
-          }
-        }
-      ],
+      "docs": [],
       "jobs": {
         "ok": true,
-        "total": 352,
-        "placeable": 352,
+        "total": 356,
+        "placeable": 356,
         "unplaceable": 0,
-        "eea": 142,
+        "eea": 146,
         "non_eea": 210,
         "countries": {
-          "United States": 107,
-          "Spain": 35,
-          "Canada": 32,
-          "Greece": 21,
-          "Portugal": 21,
+          "United States": 104,
+          "Spain": 36,
+          "Canada": 31,
+          "Portugal": 22,
+          "Greece": 22,
           "Ireland": 20,
-          "India": 17,
-          "United Kingdom": 16,
-          "Poland": 12,
+          "India": 18,
+          "United Kingdom": 17,
+          "Poland": 13,
           "Norway": 11,
           "Switzerland": 8,
           "Romania": 8,
@@ -2341,17 +2474,18 @@
           "Brazil": 4,
           "Mexico": 3,
           "Israel": 3,
+          "Costa Rica": 2,
           "Australia": 2,
           "United Arab Emirates": 2,
           "France": 2,
           "Saudi Arabia": 2,
+          "South Korea": 1,
           "Italy": 1,
           "New Zealand": 1,
           "Hungary": 1,
           "Denmark": 1,
           "Belgium": 1,
-          "Netherlands": 1,
-          "Costa Rica": 1
+          "Netherlands": 1
         },
         "scanned": 26,
         "signals": [
@@ -2360,7 +2494,7 @@
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 10,
+            "count": 12,
             "examples": [
               {
                 "title": "Associate Corporate Counsel - Legal Product, IP, and Marketing",
@@ -2390,7 +2524,7 @@
             "label": "Travel expected",
             "severity": "high",
             "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 9,
+            "count": 11,
             "examples": [
               {
                 "title": "Cloud Marketplace Development Manager",
@@ -2495,6 +2629,20 @@
           "claim": null,
           "evidence": [],
           "question": "Where is the current sub-processor list published, and how are customers notified before a new one is added?"
+        },
+        {
+          "rule": "no_transfer_mechanism",
+          "severity": "medium",
+          "headline": "No transfer mechanism named in the documents collected",
+          "detail": "None of the collected documents mention standard contractual clauses, an adequacy decision, the Data Privacy Framework or binding corporate rules, while hiring spans 30 countries. The mechanism may live in a document this collector did not reach.",
+          "claim": null,
+          "evidence": [
+            {
+              "kind": "stat",
+              "excerpt": "30 countries in open roles"
+            }
+          ],
+          "question": "Which transfer mechanism applies to our data, and where is it published?"
         }
       ],
       "data_classification": {
@@ -2544,14 +2692,14 @@
         "sensitivity_score": 20,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": false
+        "source_documents_changed": true
       },
       "score": {
-        "total": 57,
+        "total": 90,
         "footprint": 15,
         "access": 25,
-        "transparency": 17,
-        "record": 0
+        "transparency": 25,
+        "record": 25
       },
       "drift": [
         {
@@ -2623,11 +2771,8 @@
           "sha256": "1089987c0a57208c",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 30,
-            "revisions": 29,
-            "first": "2026-06-08",
-            "last": "2026-09-08"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -2639,20 +2784,23 @@
           "sha256": "c6f2954ea450f34e",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 152,
+            "revisions": 151,
+            "first": "2020-04-23",
+            "last": "2026-09-10"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 84,
-        "placeable": 81,
+        "total": 86,
+        "placeable": 83,
         "unplaceable": 3,
         "eea": 7,
-        "non_eea": 74,
+        "non_eea": 76,
         "countries": {
-          "United States": 65,
+          "United States": 67,
           "United Kingdom": 14,
           "Germany": 7,
           "India": 4,

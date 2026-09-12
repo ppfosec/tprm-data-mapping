@@ -1,5 +1,145 @@
 [
   {
+    "id": "anthropic-privacy-2026-09-12",
+    "vendor_id": "anthropic",
+    "vendor_name": "Anthropic",
+    "document": "privacy",
+    "document_label": "Privacy policy",
+    "date": "2026-09-12",
+    "url": "https://www.anthropic.com/legal/privacy",
+    "hunks": [
+      {
+        "before": null,
+        "after": "This section applies to the extent that Anthropic is subject to the Personal Information Protection Act (“PIPA”), and supplements the information in the Privacy Policy."
+      },
+      {
+        "before": null,
+        "after": "This is an addendum to the Privacy Policy and should be read in conjunction with the Privacy Policy."
+      },
+      {
+        "before": null,
+        "after": "In case of any inconsistency between the Privacy Policy and this Addendum, this Addendum prevails for users in the Republic of Korea."
+      },
+      {
+        "before": null,
+        "after": "This Addendum may be amended or updated from time to time."
+      },
+      {
+        "before": null,
+        "after": "Items of Personal Data Collected and Purpose of Use"
+      },
+      {
+        "before": null,
+        "after": "In addition to “1."
+      }
+    ]
+  },
+  {
+    "id": "datadog-privacy-2026-09-12",
+    "vendor_id": "datadog",
+    "vendor_name": "Datadog",
+    "document": "privacy",
+    "document_label": "Privacy policy",
+    "date": "2026-09-12",
+    "url": "https://www.datadoghq.com/legal/privacy/",
+    "hunks": [
+      {
+        "before": "Metrics",
+        "after": "Custom Metrics"
+      },
+      {
+        "before": null,
+        "after": "Network Monitoring"
+      },
+      {
+        "before": "Network Monitoring",
+        "after": "Serverless Monitoring"
+      },
+      {
+        "before": "Serverless",
+        "after": null
+      },
+      {
+        "before": "Cloudcraft",
+        "after": null
+      },
+      {
+        "before": "Sensitive Data Scanner",
+        "after": null
+      }
+    ]
+  },
+  {
+    "id": "datadog-dpa-2026-09-12",
+    "vendor_id": "datadog",
+    "vendor_name": "Datadog",
+    "document": "dpa",
+    "document_label": "Data processing agreement",
+    "date": "2026-09-12",
+    "url": "https://www.datadoghq.com/legal/data-processing-addendum/",
+    "hunks": [
+      {
+        "before": "Metrics",
+        "after": "Custom Metrics"
+      },
+      {
+        "before": null,
+        "after": "Network Monitoring"
+      },
+      {
+        "before": "Network Monitoring",
+        "after": "Serverless Monitoring"
+      },
+      {
+        "before": "Serverless",
+        "after": null
+      },
+      {
+        "before": "Cloudcraft",
+        "after": null
+      },
+      {
+        "before": "Sensitive Data Scanner",
+        "after": null
+      }
+    ]
+  },
+  {
+    "id": "datadog-subprocessors-2026-09-12",
+    "vendor_id": "datadog",
+    "vendor_name": "Datadog",
+    "document": "subprocessors",
+    "document_label": "Sub-processor list",
+    "date": "2026-09-12",
+    "url": "https://www.datadoghq.com/legal/subprocessors/",
+    "hunks": [
+      {
+        "before": "Metrics",
+        "after": "Custom Metrics"
+      },
+      {
+        "before": null,
+        "after": "Network Monitoring"
+      },
+      {
+        "before": "Network Monitoring",
+        "after": "Serverless Monitoring"
+      },
+      {
+        "before": "Serverless",
+        "after": null
+      },
+      {
+        "before": "Cloudcraft",
+        "after": null
+      },
+      {
+        "before": "Sensitive Data Scanner",
+        "after": null
+      }
+    ]
+  },
+  {
     "id": "elastic-privacy-2026-09-10",
     "vendor_id": "elastic",
     "vendor_name": "Elastic",
