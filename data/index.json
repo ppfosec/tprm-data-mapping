@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T08:20:01+00:00",
+  "generated_at": "2026-09-13T08:36:55+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -137,8 +137,11 @@
           "sha256": "85c78c93175ffb26",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2024-02-21",
+            "last": "2026-03-20"
           }
         },
         {
@@ -151,8 +154,11 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 63,
+            "revisions": 62,
+            "first": "2024-09-26",
+            "last": "2026-09-11"
           }
         },
         {
@@ -164,20 +170,23 @@
           "sha256": "b5c2883bfc8d9aed",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 29,
+            "revisions": 28,
+            "first": "2026-07-14",
+            "last": "2026-09-11"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 595,
-        "placeable": 593,
+        "total": 596,
+        "placeable": 594,
         "unplaceable": 2,
         "eea": 26,
-        "non_eea": 567,
+        "non_eea": 568,
         "countries": {
-          "United States": 474,
+          "United States": 475,
           "United Kingdom": 50,
           "Japan": 14,
           "South Korea": 11,
@@ -304,7 +313,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "567 of 593 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "568 of 594 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -313,7 +322,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 474 open roles"
+              "excerpt": "United States: 475 open roles"
             },
             {
               "kind": "stat",
@@ -435,7 +444,7 @@
         "sensitivity_score": 10,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": true
+        "source_documents_changed": false
       },
       "score": {
         "total": 44,
@@ -582,11 +591,8 @@
           "sha256": "253254e28bc2ff29",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2021-05-16",
-            "last": "2025-10-08"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         }
       ],
@@ -917,8 +923,11 @@
           "sha256": "30731a3ad8d38ffb",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 21,
+            "revisions": 20,
+            "first": "2024-05-24",
+            "last": "2026-08-24"
           }
         }
       ],
@@ -939,8 +948,8 @@
           "Brazil": 16,
           "Spain": 16,
           "Netherlands": 15,
-          "Australia": 13,
           "South Korea": 13,
+          "Australia": 13,
           "India": 7,
           "Germany": 7,
           "Portugal": 7,
@@ -1152,7 +1161,7 @@
         "sensitivity_score": 20,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": true
+        "source_documents_changed": false
       },
       "score": {
         "total": 40,
@@ -1355,8 +1364,11 @@
           "sha256": "ff0e2b002da0ad9f",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "http 503"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2008-07-19",
+            "last": "2020-05-01"
           }
         },
         {
@@ -1384,25 +1396,28 @@
           "sha256": "08c0eec1eefcd1e4",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 101,
+            "revisions": 100,
+            "first": "2022-12-05",
+            "last": "2026-09-10"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 635,
-        "placeable": 562,
+        "total": 633,
+        "placeable": 560,
         "unplaceable": 73,
-        "eea": 72,
-        "non_eea": 490,
+        "eea": 73,
+        "non_eea": 487,
         "countries": {
-          "United States": 298,
-          "Ireland": 57,
+          "United States": 296,
+          "Ireland": 58,
           "Canada": 53,
           "Singapore": 49,
           "United Kingdom": 41,
-          "India": 37,
+          "India": 36,
           "Mexico": 26,
           "Australia": 9,
           "Israel": 4,
@@ -1614,8 +1629,11 @@
           "sha256": "14b1ae957872913e",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 298,
+            "revisions": 297,
+            "first": "2024-01-18",
+            "last": "2026-09-11"
           }
         },
         {
@@ -2058,11 +2076,8 @@
           "sha256": "b9e8de6a4bacb426",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 81,
-            "revisions": 80,
-            "first": "2020-11-27",
-            "last": "2026-08-28"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -2085,15 +2100,15 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 226,
-        "placeable": 218,
+        "total": 227,
+        "placeable": 219,
         "unplaceable": 8,
         "eea": 36,
-        "non_eea": 182,
+        "non_eea": 183,
         "countries": {
           "United States": 102,
           "Canada": 64,
-          "United Kingdom": 48,
+          "United Kingdom": 49,
           "India": 37,
           "Poland": 15,
           "Germany": 14,
@@ -2257,7 +2272,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 7,
+            "count": 6,
             "examples": [
               {
                 "title": "Customer Success Architect, CEUR",
@@ -2447,7 +2462,24 @@
       "hq": "United States / Netherlands",
       "hq_iso": "US",
       "site": "https://www.elastic.co",
-      "docs": [],
+      "docs": [
+        {
+          "kind": "privacy",
+          "url": "https://www.elastic.co/legal/privacy-statement",
+          "path": "data/snapshots/elastic/privacy.txt",
+          "lines": 342,
+          "chars": 31367,
+          "sha256": "7c8cc77af2219f99",
+          "note": null,
+          "archive": {
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2018-05-23",
+            "last": "2026-02-01"
+          }
+        }
+      ],
       "jobs": {
         "ok": true,
         "total": 356,
@@ -2459,8 +2491,8 @@
           "United States": 104,
           "Spain": 36,
           "Canada": 31,
-          "Portugal": 22,
           "Greece": 22,
+          "Portugal": 22,
           "Ireland": 20,
           "India": 18,
           "United Kingdom": 17,
@@ -2498,15 +2530,15 @@
             "examples": [
               {
                 "title": "Associate Corporate Counsel - Legal Product, IP, and Marketing",
-                "location": "Canada",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8122981&gh_jid=8122981",
+                "location": "United States",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8093273&gh_jid=8093273",
                 "matched": "across time zones",
                 "excerpt": "orkflows and \"productization\" processes that help a legal team scale. Global Perspective: Comfortable working across time zones and cultures in a distributed culture with a flexible approach to problem-solving. Compensation for this role"
               },
               {
                 "title": "Associate Corporate Counsel - Legal Product, IP, and Marketing",
-                "location": "United States",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8093273&gh_jid=8093273",
+                "location": "Canada",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8122981&gh_jid=8122981",
                 "matched": "across time zones",
                 "excerpt": "orkflows and \"productization\" processes that help a legal team scale. Global Perspective: Comfortable working across time zones and cultures in a distributed culture with a flexible approach to problem-solving. Compensation for this role"
               },
@@ -2629,20 +2661,6 @@
           "claim": null,
           "evidence": [],
           "question": "Where is the current sub-processor list published, and how are customers notified before a new one is added?"
-        },
-        {
-          "rule": "no_transfer_mechanism",
-          "severity": "medium",
-          "headline": "No transfer mechanism named in the documents collected",
-          "detail": "None of the collected documents mention standard contractual clauses, an adequacy decision, the Data Privacy Framework or binding corporate rules, while hiring spans 30 countries. The mechanism may live in a document this collector did not reach.",
-          "claim": null,
-          "evidence": [
-            {
-              "kind": "stat",
-              "excerpt": "30 countries in open roles"
-            }
-          ],
-          "question": "Which transfer mechanism applies to our data, and where is it published?"
         }
       ],
       "data_classification": {
@@ -2695,11 +2713,11 @@
         "source_documents_changed": true
       },
       "score": {
-        "total": 90,
+        "total": 57,
         "footprint": 15,
         "access": 25,
-        "transparency": 25,
-        "record": 25
+        "transparency": 17,
+        "record": 0
       },
       "drift": [
         {
@@ -2784,11 +2802,8 @@
           "sha256": "c6f2954ea450f34e",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 152,
-            "revisions": 151,
-            "first": "2020-04-23",
-            "last": "2026-09-10"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         }
       ],
@@ -2986,11 +3001,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 49,
+        "total": 74,
         "footprint": 23,
         "access": 18,
         "transparency": 8,
-        "record": 0
+        "record": 25
       },
       "drift": [
         {
