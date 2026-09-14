@@ -578,11 +578,8 @@
           "sha256": "8dac92944a88d6dd",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2024-02-25",
-            "last": "2026-03-08"
+            "ok": false,
+            "reason": "ReadTimeout"
           }
         },
         {
@@ -594,11 +591,8 @@
           "sha256": "85c78c93175ffb26",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2024-02-21",
-            "last": "2026-03-20"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -611,11 +605,8 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": true,
-            "captures": 63,
-            "revisions": 62,
-            "first": "2024-09-26",
-            "last": "2026-09-11"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -627,11 +618,8 @@
           "sha256": "b5c2883bfc8d9aed",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 29,
-            "revisions": 28,
-            "first": "2026-07-14",
-            "last": "2026-09-11"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
@@ -1013,11 +1001,8 @@
           "sha256": "d999aff5712a68aa",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 287,
-            "revisions": 286,
-            "first": "2021-09-03",
-            "last": "2026-09-05"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -1029,11 +1014,8 @@
           "sha256": "3669d59798194699",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 156,
-            "revisions": 155,
-            "first": "2018-11-17",
-            "last": "2026-08-18"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -1046,7 +1028,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectTimeout"
+            "reason": "ConnectionError"
           }
         }
       ],
@@ -1148,9 +1130,9 @@
       },
       "jobs": {
         "ok": true,
-        "total": 358,
+        "total": 356,
         "placeable": 5,
-        "unplaceable": 353,
+        "unplaceable": 351,
         "eea": 2,
         "non_eea": 3,
         "countries": {
@@ -1212,22 +1194,6 @@
                 "url": "https://boards.greenhouse.io/cloudflare/jobs/8083701?gh_jid=8083701",
                 "matched": "distributed team",
                 "excerpt": "argest customers. What you'll do As an Engineering Manager on the CNI team you will hire, mentor, and coach a distributed team of Software Engineers. You will play a key role in developing the team and shaping its culture and technical"
-              }
-            ]
-          },
-          {
-            "key": "travel",
-            "label": "Travel expected",
-            "severity": "high",
-            "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 1,
-            "examples": [
-              {
-                "title": "Principal Solutions Architect, APJC (Developer Platform) - Mandarin Speaking",
-                "location": "Hybrid",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/8179387?gh_jid=8179387",
-                "matched": "travel up to 30%",
-                "excerpt": "cal-communication skills across developer, architectural, and executive audiences. Willingness and ability to travel up to 30%, primarily within APJC, including mainland China. Nice-to-Have Experience building and operating production a"
               }
             ]
           },
@@ -1342,11 +1308,8 @@
           "sha256": "5ba0ae3eedc6b12d",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2017-06-30",
-            "last": "2025-04-25"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -1374,11 +1337,8 @@
           "sha256": "30731a3ad8d38ffb",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 21,
-            "revisions": 20,
-            "first": "2024-05-24",
-            "last": "2026-08-24"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
@@ -1501,28 +1461,28 @@
       },
       "jobs": {
         "ok": true,
-        "total": 446,
-        "placeable": 446,
+        "total": 442,
+        "placeable": 442,
         "unplaceable": 0,
         "eea": 95,
-        "non_eea": 351,
+        "non_eea": 347,
         "countries": {
           "United States": 214,
           "France": 56,
-          "Japan": 48,
+          "Japan": 47,
           "Ireland": 25,
-          "Singapore": 23,
+          "Singapore": 21,
           "United Kingdom": 20,
           "Brazil": 16,
           "Spain": 16,
           "Netherlands": 15,
           "South Korea": 13,
-          "Australia": 13,
-          "India": 7,
+          "Australia": 12,
+          "India": 8,
           "Germany": 7,
           "Portugal": 7,
           "Italy": 5,
-          "Indonesia": 4,
+          "Indonesia": 3,
           "Sweden": 3,
           "Israel": 2,
           "Denmark": 2,
@@ -1797,7 +1757,7 @@
       "category": "Payments",
       "public_evidence_only": true,
       "surface": {
-        "grade": "30",
+        "grade": "55",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "3 public documents · 1 open reconciliations"
@@ -1812,11 +1772,8 @@
           "sha256": "ff0e2b002da0ad9f",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2008-07-19",
-            "last": "2020-05-01"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -1828,11 +1785,8 @@
           "sha256": "92101146b860c664",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 228,
-            "revisions": 227,
-            "first": "2022-05-27",
-            "last": "2026-09-10"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -1844,11 +1798,8 @@
           "sha256": "08c0eec1eefcd1e4",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 101,
-            "revisions": 100,
-            "first": "2022-12-05",
-            "last": "2026-09-10"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
@@ -1971,16 +1922,16 @@
       },
       "jobs": {
         "ok": true,
-        "total": 633,
-        "placeable": 560,
+        "total": 631,
+        "placeable": 558,
         "unplaceable": 73,
-        "eea": 73,
-        "non_eea": 487,
+        "eea": 72,
+        "non_eea": 486,
         "countries": {
           "United States": 296,
-          "Ireland": 58,
+          "Ireland": 57,
           "Canada": 53,
-          "Singapore": 49,
+          "Singapore": 48,
           "United Kingdom": 41,
           "India": 36,
           "Mexico": 26,
@@ -2075,10 +2026,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 298,
-            "revisions": 297,
+            "captures": 300,
+            "revisions": 299,
             "first": "2024-01-18",
-            "last": "2026-09-11"
+            "last": "2026-09-13"
           }
         },
         {
@@ -2518,8 +2469,11 @@
           "sha256": "b9e8de6a4bacb426",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 81,
+            "revisions": 80,
+            "first": "2020-11-27",
+            "last": "2026-08-28"
           }
         },
         {
@@ -2670,19 +2624,19 @@
       "jobs": {
         "ok": true,
         "total": 227,
-        "placeable": 219,
-        "unplaceable": 8,
+        "placeable": 218,
+        "unplaceable": 9,
         "eea": 36,
-        "non_eea": 183,
+        "non_eea": 182,
         "countries": {
           "United States": 102,
           "Canada": 64,
           "United Kingdom": 49,
-          "India": 37,
+          "India": 36,
           "Poland": 15,
           "Germany": 14,
-          "Ireland": 10,
           "Israel": 10,
+          "Ireland": 10,
           "Netherlands": 7,
           "Spain": 5,
           "Singapore": 5,
@@ -2765,7 +2719,7 @@
             "label": "Travel expected",
             "severity": "high",
             "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 4,
+            "count": 3,
             "examples": [
               {
                 "title": "Manager, Solutions Architect - CEUR",
@@ -2775,16 +2729,16 @@
                 "excerpt": "an eye for how that same mindset can be turned outward to deepen and elevate customer engagement. Ability and willingness to travel in line with business needs and GitLab's travel policy. About the team The Solutions Architects team at GitLa"
               },
               {
-                "title": "Manager, Solutions Architect - India ",
-                "location": "Remote, India",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8627761002",
-                "matched": "willingness to travel",
-                "excerpt": "teams and creating clear, accountable operating practices in a distributed or remote environment. Ability and willingness to travel in line with business needs and GitLab's travel policy. About the team The Solutions Architects team at GitLa"
-              },
-              {
                 "title": "Manager, Solutions Architects - San Francisco ",
                 "location": "Remote, US",
                 "url": "https://job-boards.greenhouse.io/gitlab/jobs/8396674002",
+                "matched": "willingness to travel",
+                "excerpt": "arity with cloud computing concepts, related technologies, and common customer adoption patterns. Ability and willingness to travel in line with business needs and the company's travel policy, and openness to learning and using GitLab and re"
+              },
+              {
+                "title": "Manager, Solutions Architecture - East ",
+                "location": "Remote, United States",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8641849002",
                 "matched": "willingness to travel",
                 "excerpt": "arity with cloud computing concepts, related technologies, and common customer adoption patterns. Ability and willingness to travel in line with business needs and the company's travel policy, and openness to learning and using GitLab and re"
               }
@@ -2841,7 +2795,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 6,
+            "count": 7,
             "examples": [
               {
                 "title": "Customer Success Architect, CEUR",
@@ -2896,7 +2850,7 @@
       "category": "Search and data",
       "public_evidence_only": true,
       "surface": {
-        "grade": "57",
+        "grade": "82",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "1 public documents · 1 open reconciliations"
@@ -2911,11 +2865,8 @@
           "sha256": "7c8cc77af2219f99",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2018-05-23",
-            "last": "2026-02-01"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
@@ -2977,17 +2928,17 @@
         "sensitivity_score": 20,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": true
+        "source_documents_changed": false
       },
       "jobs": {
         "ok": true,
-        "total": 356,
-        "placeable": 356,
+        "total": 357,
+        "placeable": 357,
         "unplaceable": 0,
         "eea": 146,
-        "non_eea": 210,
+        "non_eea": 211,
         "countries": {
-          "United States": 104,
+          "United States": 105,
           "Spain": 36,
           "Canada": 31,
           "Greece": 22,
@@ -3210,7 +3161,7 @@
       "category": "App hosting",
       "public_evidence_only": true,
       "surface": {
-        "grade": "74",
+        "grade": "49",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "2 public documents · 2 open reconciliations"
@@ -3225,8 +3176,11 @@
           "sha256": "1089987c0a57208c",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 30,
+            "revisions": 29,
+            "first": "2026-06-08",
+            "last": "2026-09-08"
           }
         },
         {
@@ -3238,8 +3192,11 @@
           "sha256": "c6f2954ea450f34e",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 152,
+            "revisions": 151,
+            "first": "2020-04-23",
+            "last": "2026-09-10"
           }
         }
       ],
