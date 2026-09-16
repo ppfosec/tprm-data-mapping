@@ -547,7 +547,7 @@
       "category": "Model provider",
       "public_evidence_only": true,
       "surface": {
-        "grade": "44",
+        "grade": "67",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "5 public documents · 3 open reconciliations"
@@ -562,11 +562,8 @@
           "sha256": "6e132921a3eb10a3",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2024-02-25",
-            "last": "2025-11-02"
+            "ok": false,
+            "reason": "http 503"
           }
         },
         {
@@ -579,7 +576,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ReadTimeout"
+            "reason": "http 503"
           }
         },
         {
@@ -628,7 +625,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "568 of 594 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "568 of 593 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -637,11 +634,11 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 475 open roles"
+              "excerpt": "United States: 473 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 50 open roles"
+              "excerpt": "United Kingdom: 51 open roles"
             },
             {
               "kind": "stat",
@@ -763,21 +760,21 @@
       },
       "jobs": {
         "ok": true,
-        "total": 596,
-        "placeable": 594,
+        "total": 595,
+        "placeable": 593,
         "unplaceable": 2,
-        "eea": 26,
+        "eea": 25,
         "non_eea": 568,
         "countries": {
-          "United States": 475,
-          "United Kingdom": 50,
+          "United States": 473,
+          "United Kingdom": 51,
           "Japan": 14,
           "South Korea": 11,
           "Singapore": 9,
           "Ireland": 9,
+          "Australia": 8,
           "Germany": 8,
-          "Australia": 7,
-          "France": 7,
+          "France": 6,
           "Canada": 3,
           "Switzerland": 3,
           "India": 2,
@@ -839,7 +836,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 2,
+            "count": 1,
             "examples": [
               {
                 "title": "AI Operations Engineer, Partnerships",
@@ -847,13 +844,6 @@
                 "url": "https://job-boards.greenhouse.io/anthropic/jobs/5391151008",
                 "matched": "Salesforce",
                 "excerpt": "eworks, and evaluating agent output quality Experience working across APIs and business systems — CRMs (e.g., Salesforce), PRM/partner portals, LMS/certification platforms, spreadsheet-based tools, Slack, and email — and scripting"
-              },
-              {
-                "title": "Applied AI Architect, Beneficial Deployments (Life Sciences)",
-                "location": "London, UK",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5413642008",
-                "matched": "segment",
-                "excerpt": "Institute. You'll drive engagements from discovery through deployment, working closely with the life sciences segment lead and Applied AI Engineers to deliver impact. This role will be part of the founding Beneficial Deployment"
               }
             ]
           },
@@ -970,7 +960,7 @@
       "category": "Edge network",
       "public_evidence_only": true,
       "surface": {
-        "grade": "40",
+        "grade": "65",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "4 public documents · 2 open reconciliations"
@@ -985,11 +975,8 @@
           "sha256": "8d3c9629d73c5991",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2018-05-14",
-            "last": "2018-09-15"
+            "ok": false,
+            "reason": "http 503"
           }
         },
         {
@@ -1015,7 +1002,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "http 503"
           }
         },
         {
@@ -1073,7 +1060,7 @@
               "location": "Hybrid",
               "url": "https://boards.greenhouse.io/cloudflare/jobs/7462801?gh_jid=7462801",
               "matched": "on-call",
-              "excerpt": "ou! Join us in our mission to help build a better internet for everyone! This role requires flexibility to be on-call outside of standard working hours to address technical issues as needed. Compensation Compensation may be adj"
+              "excerpt": "Evaluate technologies and contribute to the next generation of Cloudflare’s data platform. Participate in an on-call rotation for the production systems owned by your team. What We’re Looking For At least three years of profes"
             }
           ],
           "question": "For out-of-hours incidents, who is on the rotation, where are they, and is their access to customer data logged and reviewable by the customer?"
@@ -1130,9 +1117,9 @@
       },
       "jobs": {
         "ok": true,
-        "total": 356,
+        "total": 355,
         "placeable": 5,
-        "unplaceable": 351,
+        "unplaceable": 350,
         "eea": 2,
         "non_eea": 3,
         "countries": {
@@ -1149,7 +1136,7 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 7,
+            "count": 8,
             "examples": [
               {
                 "title": "AI Security Research & Red Team Engineer",
@@ -1163,7 +1150,7 @@
                 "location": "Hybrid",
                 "url": "https://boards.greenhouse.io/cloudflare/jobs/7462801?gh_jid=7462801",
                 "matched": "on-call",
-                "excerpt": "ou! Join us in our mission to help build a better internet for everyone! This role requires flexibility to be on-call outside of standard working hours to address technical issues as needed. Compensation Compensation may be adj"
+                "excerpt": "Evaluate technologies and contribute to the next generation of Cloudflare’s data platform. Participate in an on-call rotation for the production systems owned by your team. What We’re Looking For At least three years of profes"
               },
               {
                 "title": "Engineering Manager, Cloudflare Network Interconnect",
@@ -1202,8 +1189,15 @@
             "label": "Round-the-clock coverage",
             "severity": "medium",
             "why": "Continuous coverage from one time zone is rare; assume more than one.",
-            "count": 1,
+            "count": 2,
             "examples": [
+              {
+                "title": "Network Deployment Engineer",
+                "location": "Hybrid",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8099671?gh_jid=8099671",
+                "matched": "24/7",
+                "excerpt": "etc) or higher. Linux certifications. Experience with continuous / rapid deployment. Experience working in a 24/7/365 mission-critical service environment (on-call rotation required) Knowledge of the OSI-model and experienc"
+              },
               {
                 "title": "Network Deployment Engineer - APJC",
                 "location": "Hybrid",
@@ -1293,7 +1287,7 @@
       "category": "Observability",
       "public_evidence_only": true,
       "surface": {
-        "grade": "40",
+        "grade": "61",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "3 public documents · 3 open reconciliations"
@@ -1309,7 +1303,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "http 503"
           }
         },
         {
@@ -1321,11 +1315,8 @@
           "sha256": "0872909011330b18",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 33,
-            "revisions": 32,
-            "first": "2022-05-28",
-            "last": "2026-08-03"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -1461,31 +1452,31 @@
       },
       "jobs": {
         "ok": true,
-        "total": 442,
-        "placeable": 442,
+        "total": 450,
+        "placeable": 450,
         "unplaceable": 0,
-        "eea": 95,
-        "non_eea": 347,
+        "eea": 100,
+        "non_eea": 350,
         "countries": {
-          "United States": 214,
-          "France": 56,
+          "United States": 215,
+          "France": 58,
           "Japan": 47,
-          "Ireland": 25,
-          "Singapore": 21,
-          "United Kingdom": 20,
+          "Ireland": 24,
+          "United Kingdom": 22,
+          "Singapore": 20,
+          "Netherlands": 17,
           "Brazil": 16,
           "Spain": 16,
-          "Netherlands": 15,
           "South Korea": 13,
           "Australia": 12,
-          "India": 8,
-          "Germany": 7,
+          "India": 9,
+          "Germany": 8,
           "Portugal": 7,
           "Italy": 5,
+          "Sweden": 4,
+          "Denmark": 3,
           "Indonesia": 3,
-          "Sweden": 3,
           "Israel": 2,
-          "Denmark": 2,
           "Switzerland": 2,
           "Mexico": 2,
           "Colombia": 1,
@@ -1501,7 +1492,7 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 4,
+            "count": 3,
             "examples": [
               {
                 "title": "Federal Support Engineer 3",
@@ -1531,7 +1522,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 5,
+            "count": 6,
             "examples": [
               {
                 "title": "Group Product Manager - Bring Your Own Cloud",
@@ -1757,7 +1748,7 @@
       "category": "Payments",
       "public_evidence_only": true,
       "surface": {
-        "grade": "55",
+        "grade": "59",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "3 public documents · 1 open reconciliations"
@@ -1773,7 +1764,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "ReadTimeout"
           }
         },
         {
@@ -1922,19 +1913,19 @@
       },
       "jobs": {
         "ok": true,
-        "total": 631,
-        "placeable": 558,
-        "unplaceable": 73,
-        "eea": 72,
-        "non_eea": 486,
+        "total": 647,
+        "placeable": 573,
+        "unplaceable": 74,
+        "eea": 75,
+        "non_eea": 498,
         "countries": {
-          "United States": 296,
-          "Ireland": 57,
-          "Canada": 53,
-          "Singapore": 48,
-          "United Kingdom": 41,
-          "India": 36,
-          "Mexico": 26,
+          "United States": 308,
+          "Ireland": 60,
+          "Canada": 51,
+          "Singapore": 49,
+          "United Kingdom": 42,
+          "India": 38,
+          "Mexico": 25,
           "Australia": 9,
           "Israel": 4,
           "Spain": 4,
@@ -1959,7 +1950,7 @@
             "label": "Travel expected",
             "severity": "high",
             "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 1,
+            "count": 2,
             "examples": [
               {
                 "title": "Account Executive, Strategic Platform Partnerships",
@@ -1967,6 +1958,13 @@
                 "url": "https://stripe.com/jobs/search?gh_jid=8157577",
                 "matched": "willing to travel",
                 "excerpt": "s, rapidly evolving environments and balancing&nbsp;strategic thinking with hands-on execution. ● Based in or willing to travel frequently San Francisco, CA. New York, NY (Hybrid) is also acceptable.&nbsp; &nbsp; Preferred qualifications"
+              },
+              {
+                "title": "Channel Sales Executive, SaaS Platforms",
+                "location": "Chicago",
+                "url": "https://stripe.com/jobs/search?gh_jid=8126984",
+                "matched": "Willingness to travel",
+                "excerpt": "build and execute territory and opportunity-specific plans, leveraging tools such as Salesforce and Crossbeam Willingness to travel up to 25% Preferred qualifications Strong communication and presentation skills, including the ability to com"
               }
             ]
           },
@@ -1975,7 +1973,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 4,
+            "count": 5,
             "examples": [
               {
                 "title": "Account Executive, Platforms Hunter (Central Eastern Europe)",
@@ -2025,11 +2023,8 @@
           "sha256": "14b1ae957872913e",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 300,
-            "revisions": 299,
-            "first": "2024-01-18",
-            "last": "2026-09-13"
+            "ok": false,
+            "reason": "http 503"
           }
         },
         {
@@ -2041,11 +2036,8 @@
           "sha256": "4bde694018c282cd",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 15,
-            "revisions": 14,
-            "first": "2025-04-01",
-            "last": "2026-09-09"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -2058,10 +2050,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 81,
-            "revisions": 80,
+            "captures": 82,
+            "revisions": 81,
             "first": "2019-04-01",
-            "last": "2026-07-28"
+            "last": "2026-09-14"
           }
         }
       ],
@@ -2070,7 +2062,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "141 of 153 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "145 of 157 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -2079,11 +2071,11 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 96 open roles"
+              "excerpt": "United States: 101 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 17 open roles"
+              "excerpt": "United Kingdom: 18 open roles"
             },
             {
               "kind": "stat",
@@ -2182,21 +2174,21 @@
       },
       "jobs": {
         "ok": true,
-        "total": 153,
-        "placeable": 153,
+        "total": 157,
+        "placeable": 157,
         "unplaceable": 0,
         "eea": 12,
-        "non_eea": 141,
+        "non_eea": 145,
         "countries": {
-          "United States": 96,
-          "United Kingdom": 17,
+          "United States": 101,
+          "United Kingdom": 18,
           "Japan": 9,
           "Germany": 7,
-          "Singapore": 5,
           "France": 5,
-          "Israel": 5,
+          "Singapore": 4,
           "Australia": 4,
           "Brazil": 4,
+          "Israel": 4,
           "India": 1
         },
         "scanned": 26,
@@ -2223,11 +2215,11 @@
                 "excerpt": "om idea to product, Figma empowers teams to streamline workflows, move faster, and work together in real time from anywhere in the world. If you're excited to shape the future of design and collaboration, join us! As a member of our Customer Oper"
               },
               {
-                "title": "Data Scientist, Core Data -  PhD (2026)",
+                "title": "Data Science Intern (2027)",
                 "location": "San Francisco, CA • New York, NY",
-                "url": "https://boards.greenhouse.io/figma/jobs/5976930004?gh_jid=5976930004",
+                "url": "https://boards.greenhouse.io/figma/jobs/6178857004?gh_jid=6178857004",
                 "matched": "from anywhere in the world",
-                "excerpt": "om idea to product, Figma empowers teams to streamline workflows, move faster, and work together in real time from anywhere in the world. If you're excited to shape the future of design and collaboration, join us! We're looking for a research-min"
+                "excerpt": "om idea to product, Figma empowers teams to streamline workflows, move faster, and work together in real time from anywhere in the world. If you're excited to shape the future of design and collaboration, join us! Figma’s Data Science team partne"
               }
             ]
           },
@@ -2438,7 +2430,7 @@
       "category": "DevOps platform",
       "public_evidence_only": true,
       "surface": {
-        "grade": "50",
+        "grade": "75",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "3 public documents · 3 open reconciliations"
@@ -2453,11 +2445,8 @@
           "sha256": "b8fd30b8b1e6bdaa",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2015-04-16",
-            "last": "2026-02-17"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -2469,11 +2458,8 @@
           "sha256": "b9e8de6a4bacb426",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 81,
-            "revisions": 80,
-            "first": "2020-11-27",
-            "last": "2026-08-28"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -2486,11 +2472,8 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": true,
-            "captures": 24,
-            "revisions": 23,
-            "first": "2023-11-29",
-            "last": "2026-07-07"
+            "ok": false,
+            "reason": "ReadTimeout"
           }
         }
       ],
@@ -2623,27 +2606,27 @@
       },
       "jobs": {
         "ok": true,
-        "total": 227,
-        "placeable": 218,
-        "unplaceable": 9,
-        "eea": 36,
+        "total": 224,
+        "placeable": 216,
+        "unplaceable": 8,
+        "eea": 34,
         "non_eea": 182,
         "countries": {
-          "United States": 102,
-          "Canada": 64,
-          "United Kingdom": 49,
-          "India": 36,
+          "United States": 100,
+          "Canada": 61,
+          "United Kingdom": 48,
+          "India": 35,
           "Poland": 15,
-          "Germany": 14,
+          "Germany": 12,
           "Israel": 10,
-          "Ireland": 10,
-          "Netherlands": 7,
-          "Spain": 5,
-          "Singapore": 5,
+          "Ireland": 9,
+          "Netherlands": 6,
+          "Singapore": 6,
+          "Spain": 4,
           "Australia": 4,
           "France": 4,
+          "Japan": 4,
           "Mexico": 3,
-          "Japan": 3,
           "United Arab Emirates": 3,
           "Italy": 2,
           "South Korea": 2,
@@ -2932,30 +2915,30 @@
       },
       "jobs": {
         "ok": true,
-        "total": 357,
-        "placeable": 357,
+        "total": 356,
+        "placeable": 356,
         "unplaceable": 0,
-        "eea": 146,
-        "non_eea": 211,
+        "eea": 147,
+        "non_eea": 209,
         "countries": {
-          "United States": 105,
+          "United States": 107,
           "Spain": 36,
           "Canada": 31,
-          "Greece": 22,
           "Portugal": 22,
-          "Ireland": 20,
-          "India": 18,
+          "Greece": 22,
+          "Ireland": 21,
           "United Kingdom": 17,
+          "India": 16,
           "Poland": 13,
           "Norway": 11,
           "Switzerland": 8,
           "Romania": 8,
           "Germany": 7,
-          "Japan": 6,
           "Singapore": 6,
-          "Brazil": 4,
+          "Japan": 4,
+          "Israel": 4,
           "Mexico": 3,
-          "Israel": 3,
+          "Brazil": 3,
           "Costa Rica": 2,
           "Australia": 2,
           "United Arab Emirates": 2,
@@ -3161,7 +3144,7 @@
       "category": "App hosting",
       "public_evidence_only": true,
       "surface": {
-        "grade": "49",
+        "grade": "74",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "2 public documents · 2 open reconciliations"
@@ -3176,11 +3159,8 @@
           "sha256": "1089987c0a57208c",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 30,
-            "revisions": 29,
-            "first": "2026-06-08",
-            "last": "2026-09-08"
+            "ok": false,
+            "reason": "http 503"
           }
         },
         {
@@ -3192,11 +3172,8 @@
           "sha256": "c6f2954ea450f34e",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 152,
-            "revisions": 151,
-            "first": "2020-04-23",
-            "last": "2026-09-10"
+            "ok": false,
+            "reason": "http 503"
           }
         }
       ],
@@ -3292,15 +3269,15 @@
       },
       "jobs": {
         "ok": true,
-        "total": 86,
-        "placeable": 83,
+        "total": 85,
+        "placeable": 82,
         "unplaceable": 3,
-        "eea": 7,
-        "non_eea": 76,
+        "eea": 8,
+        "non_eea": 74,
         "countries": {
-          "United States": 67,
-          "United Kingdom": 14,
-          "Germany": 7,
+          "United States": 65,
+          "United Kingdom": 15,
+          "Germany": 8,
           "India": 4,
           "Australia": 3
         },
