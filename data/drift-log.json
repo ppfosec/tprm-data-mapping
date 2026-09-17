@@ -1,5 +1,40 @@
 [
   {
+    "id": "elastic-privacy-2026-09-17",
+    "vendor_id": "elastic",
+    "vendor_name": "Elastic",
+    "document": "privacy",
+    "document_label": "Privacy policy",
+    "date": "2026-09-17",
+    "url": "https://www.elastic.co/legal/privacy-statement",
+    "hunks": [
+      {
+        "before": "when an individual applies or is referred for a role with Elastic through our Site or otherwise.",
+        "after": "when an individual applies or is referred for a role with Elastic through our site or otherwise."
+      },
+      {
+        "before": "Personal data processed by Elastic as a Processor.",
+        "after": "Personal data processed by Elastic as a Processor:"
+      },
+      {
+        "before": "Manage Your Customer Experience.",
+        "after": "Manage your customer experience."
+      },
+      {
+        "before": "Education and training:",
+        "after": "Education and training."
+      },
+      {
+        "before": "This includes using such technologies to communicate with you and respond to requests which do not warrant human intervention, to personalize your experience and deliver relevant content, to develop and improve our products, features, and services, to conduct our business operations, and to protect the security of our Properties, including as described in the \"",
+        "after": "This includes using such technologies to communicate with you and respond to requests which do not warrant human intervention; to personalize your experience and deliver relevant content; to develop and improve our products, features, and services; to conduct our business operations; and to protect the security of our Properties, including as described in the \""
+      },
+      {
+        "before": "UK Data Privacy Complaints",
+        "after": "UK data privacy complaints"
+      }
+    ]
+  },
+  {
     "id": "anthropic-privacy-2026-09-12",
     "vendor_id": "anthropic",
     "vendor_name": "Anthropic",

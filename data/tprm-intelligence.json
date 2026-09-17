@@ -547,7 +547,7 @@
       "category": "Model provider",
       "public_evidence_only": true,
       "surface": {
-        "grade": "67",
+        "grade": "42",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "5 public documents · 3 open reconciliations"
@@ -562,8 +562,11 @@
           "sha256": "6e132921a3eb10a3",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "http 503"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2024-02-25",
+            "last": "2025-11-02"
           }
         },
         {
@@ -575,8 +578,11 @@
           "sha256": "8dac92944a88d6dd",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "http 503"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2024-02-25",
+            "last": "2026-03-08"
           }
         },
         {
@@ -588,8 +594,11 @@
           "sha256": "85c78c93175ffb26",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2024-02-21",
+            "last": "2026-03-20"
           }
         },
         {
@@ -602,8 +611,11 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 64,
+            "revisions": 63,
+            "first": "2024-09-26",
+            "last": "2026-09-14"
           }
         },
         {
@@ -615,8 +627,11 @@
           "sha256": "b5c2883bfc8d9aed",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 34,
+            "revisions": 33,
+            "first": "2026-07-14",
+            "last": "2026-09-15"
           }
         }
       ],
@@ -625,7 +640,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "568 of 593 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "581 of 606 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -634,11 +649,11 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 473 open roles"
+              "excerpt": "United States: 484 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 51 open roles"
+              "excerpt": "United Kingdom: 53 open roles"
             },
             {
               "kind": "stat",
@@ -760,14 +775,14 @@
       },
       "jobs": {
         "ok": true,
-        "total": 595,
-        "placeable": 593,
+        "total": 608,
+        "placeable": 606,
         "unplaceable": 2,
         "eea": 25,
-        "non_eea": 568,
+        "non_eea": 581,
         "countries": {
-          "United States": 473,
-          "United Kingdom": 51,
+          "United States": 484,
+          "United Kingdom": 53,
           "Japan": 14,
           "South Korea": 11,
           "Singapore": 9,
@@ -960,7 +975,7 @@
       "category": "Edge network",
       "public_evidence_only": true,
       "surface": {
-        "grade": "65",
+        "grade": "40",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "4 public documents · 2 open reconciliations"
@@ -975,8 +990,11 @@
           "sha256": "8d3c9629d73c5991",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "http 503"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2018-05-14",
+            "last": "2018-09-15"
           }
         },
         {
@@ -988,8 +1006,11 @@
           "sha256": "d999aff5712a68aa",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 297,
+            "revisions": 296,
+            "first": "2021-09-03",
+            "last": "2026-09-12"
           }
         },
         {
@@ -1001,8 +1022,11 @@
           "sha256": "3669d59798194699",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "http 503"
+            "ok": true,
+            "captures": 156,
+            "revisions": 155,
+            "first": "2018-11-17",
+            "last": "2026-08-18"
           }
         },
         {
@@ -1014,8 +1038,11 @@
           "sha256": "253254e28bc2ff29",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2021-05-16",
+            "last": "2025-10-08"
           }
         }
       ],
@@ -1117,9 +1144,9 @@
       },
       "jobs": {
         "ok": true,
-        "total": 355,
+        "total": 365,
         "placeable": 5,
-        "unplaceable": 350,
+        "unplaceable": 360,
         "eea": 2,
         "non_eea": 3,
         "countries": {
@@ -1287,7 +1314,7 @@
       "category": "Observability",
       "public_evidence_only": true,
       "surface": {
-        "grade": "61",
+        "grade": "41",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "3 public documents · 3 open reconciliations"
@@ -1303,7 +1330,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "http 503"
+            "reason": "ConnectionError"
           }
         },
         {
@@ -1328,8 +1355,11 @@
           "sha256": "30731a3ad8d38ffb",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 21,
+            "revisions": 20,
+            "first": "2024-05-24",
+            "last": "2026-08-24"
           }
         }
       ],
@@ -1455,20 +1485,20 @@
         "total": 450,
         "placeable": 450,
         "unplaceable": 0,
-        "eea": 100,
-        "non_eea": 350,
+        "eea": 103,
+        "non_eea": 347,
         "countries": {
-          "United States": 215,
-          "France": 58,
+          "United States": 213,
+          "France": 59,
           "Japan": 47,
-          "Ireland": 24,
+          "Ireland": 26,
           "United Kingdom": 22,
           "Singapore": 20,
           "Netherlands": 17,
           "Brazil": 16,
           "Spain": 16,
-          "South Korea": 13,
           "Australia": 12,
+          "South Korea": 11,
           "India": 9,
           "Germany": 8,
           "Portugal": 7,
@@ -1476,9 +1506,9 @@
           "Sweden": 4,
           "Denmark": 3,
           "Indonesia": 3,
+          "Mexico": 3,
           "Israel": 2,
           "Switzerland": 2,
-          "Mexico": 2,
           "Colombia": 1,
           "Chile": 1,
           "Poland": 1,
@@ -1748,7 +1778,7 @@
       "category": "Payments",
       "public_evidence_only": true,
       "surface": {
-        "grade": "59",
+        "grade": "38",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "3 public documents · 1 open reconciliations"
@@ -1763,8 +1793,11 @@
           "sha256": "ff0e2b002da0ad9f",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ReadTimeout"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2008-07-19",
+            "last": "2020-05-01"
           }
         },
         {
@@ -1776,8 +1809,11 @@
           "sha256": "92101146b860c664",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 229,
+            "revisions": 228,
+            "first": "2022-05-27",
+            "last": "2026-09-12"
           }
         },
         {
@@ -1789,8 +1825,11 @@
           "sha256": "08c0eec1eefcd1e4",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 102,
+            "revisions": 101,
+            "first": "2022-12-05",
+            "last": "2026-09-12"
           }
         }
       ],
@@ -1913,23 +1952,23 @@
       },
       "jobs": {
         "ok": true,
-        "total": 647,
-        "placeable": 573,
-        "unplaceable": 74,
-        "eea": 75,
-        "non_eea": 498,
+        "total": 654,
+        "placeable": 582,
+        "unplaceable": 72,
+        "eea": 78,
+        "non_eea": 504,
         "countries": {
-          "United States": 308,
-          "Ireland": 60,
+          "United States": 311,
+          "Ireland": 64,
           "Canada": 51,
-          "Singapore": 49,
+          "Singapore": 50,
           "United Kingdom": 42,
-          "India": 38,
+          "India": 39,
           "Mexico": 25,
-          "Australia": 9,
+          "Australia": 10,
           "Israel": 4,
-          "Spain": 4,
           "Japan": 3,
+          "Spain": 3,
           "Taiwan": 3,
           "Romania": 3,
           "Germany": 2,
@@ -1965,6 +2004,22 @@
                 "url": "https://stripe.com/jobs/search?gh_jid=8126984",
                 "matched": "Willingness to travel",
                 "excerpt": "build and execute territory and opportunity-specific plans, leveraging tools such as Salesforce and Crossbeam Willingness to travel up to 25% Preferred qualifications Strong communication and presentation skills, including the ability to com"
+              }
+            ]
+          },
+          {
+            "key": "anywhere",
+            "label": "Location-agnostic hiring",
+            "severity": "high",
+            "why": "Staff placement is unconstrained, so staff location relative to your data is too.",
+            "count": 1,
+            "examples": [
+              {
+                "title": "Cloud Security Engineer",
+                "location": "Seattle",
+                "url": "https://stripe.com/jobs/search?gh_jid=7867389",
+                "matched": "from anywhere in the world",
+                "excerpt": "all over the world. We process payments, run marketplaces, detect fraud, help entrepreneurs start a business from anywhere in the world, build world-class developer-friendly APIs, and more. Nearly every system we operate interacts with sensitive"
               }
             ]
           },
@@ -2023,8 +2078,11 @@
           "sha256": "14b1ae957872913e",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "http 503"
+            "ok": true,
+            "captures": 301,
+            "revisions": 300,
+            "first": "2024-01-18",
+            "last": "2026-09-15"
           }
         },
         {
@@ -2036,8 +2094,11 @@
           "sha256": "4bde694018c282cd",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 15,
+            "revisions": 14,
+            "first": "2025-04-01",
+            "last": "2026-09-09"
           }
         },
         {
@@ -2049,11 +2110,8 @@
           "sha256": "afbbe2131f13839e",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 82,
-            "revisions": 81,
-            "first": "2019-04-01",
-            "last": "2026-09-14"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
@@ -2062,7 +2120,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "145 of 157 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "141 of 153 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -2071,15 +2129,15 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 101 open roles"
+              "excerpt": "United States: 100 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 18 open roles"
+              "excerpt": "United Kingdom: 19 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "Japan: 9 open roles"
+              "excerpt": "Japan: 8 open roles"
             }
           ],
           "question": "Which roles can access production data, and from which countries? Does the residency commitment cover support and engineering access, or only data at rest?"
@@ -2174,22 +2232,22 @@
       },
       "jobs": {
         "ok": true,
-        "total": 157,
-        "placeable": 157,
+        "total": 153,
+        "placeable": 153,
         "unplaceable": 0,
         "eea": 12,
-        "non_eea": 145,
+        "non_eea": 141,
         "countries": {
-          "United States": 101,
-          "United Kingdom": 18,
-          "Japan": 9,
+          "United States": 100,
+          "United Kingdom": 19,
+          "Japan": 8,
           "Germany": 7,
           "France": 5,
           "Singapore": 4,
           "Australia": 4,
           "Brazil": 4,
-          "Israel": 4,
-          "India": 1
+          "India": 1,
+          "Israel": 1
         },
         "scanned": 26,
         "signals": [
@@ -2208,18 +2266,18 @@
                 "excerpt": "om idea to product, Figma empowers teams to streamline workflows, move faster, and work together in real time from anywhere in the world. If you're excited to shape the future of design and collaboration, join us! The Business Operations team is"
               },
               {
-                "title": "Community Support Specialist (Tokyo, Japan)",
-                "location": "Tokyo, Japan",
-                "url": "https://boards.greenhouse.io/figma/jobs/6123890004?gh_jid=6123890004",
-                "matched": "from anywhere in the world",
-                "excerpt": "om idea to product, Figma empowers teams to streamline workflows, move faster, and work together in real time from anywhere in the world. If you're excited to shape the future of design and collaboration, join us! As a member of our Customer Oper"
-              },
-              {
                 "title": "Data Science Intern (2027)",
                 "location": "San Francisco, CA • New York, NY",
                 "url": "https://boards.greenhouse.io/figma/jobs/6178857004?gh_jid=6178857004",
                 "matched": "from anywhere in the world",
                 "excerpt": "om idea to product, Figma empowers teams to streamline workflows, move faster, and work together in real time from anywhere in the world. If you're excited to shape the future of design and collaboration, join us! Figma’s Data Science team partne"
+              },
+              {
+                "title": "Data Scientist, Core Data -  PhD (2026)",
+                "location": "San Francisco, CA • New York, NY",
+                "url": "https://boards.greenhouse.io/figma/jobs/5976930004?gh_jid=5976930004",
+                "matched": "from anywhere in the world",
+                "excerpt": "om idea to product, Figma empowers teams to streamline workflows, move faster, and work together in real time from anywhere in the world. If you're excited to shape the future of design and collaboration, join us! We're looking for a research-min"
               }
             ]
           },
@@ -2430,7 +2488,7 @@
       "category": "DevOps platform",
       "public_evidence_only": true,
       "surface": {
-        "grade": "75",
+        "grade": "50",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "3 public documents · 3 open reconciliations"
@@ -2446,7 +2504,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "ReadTimeout"
           }
         },
         {
@@ -2458,8 +2516,11 @@
           "sha256": "b9e8de6a4bacb426",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 81,
+            "revisions": 80,
+            "first": "2020-11-27",
+            "last": "2026-08-28"
           }
         },
         {
@@ -2472,8 +2533,11 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": false,
-            "reason": "ReadTimeout"
+            "ok": true,
+            "captures": 24,
+            "revisions": 23,
+            "first": "2023-11-29",
+            "last": "2026-07-07"
           }
         }
       ],
@@ -2485,6 +2549,14 @@
           "detail": "Engineering job descriptions name Salesforce, but it does not appear anywhere in the legal documents collected including the sub-processor list at https://about.gitlab.com/privacy/subprocessors/.",
           "claim": null,
           "evidence": [
+            {
+              "kind": "job",
+              "title": "Associate Revenue Operations Analyst, Policy & Rules of Engagement",
+              "location": "Remote, United States",
+              "url": "https://job-boards.greenhouse.io/gitlab/jobs/8808115002",
+              "matched": "Salesforce",
+              "excerpt": "e Field Sales team. Respond to policy questions and support the resolution of policy-related disputes through Salesforce Chatter, case requests, and the Sales Support Slack channel. Apply established policies carefully and identif"
+            },
             {
               "kind": "job",
               "title": "Director, Support (Bengaluru)",
@@ -2606,16 +2678,16 @@
       },
       "jobs": {
         "ok": true,
-        "total": 224,
-        "placeable": 216,
-        "unplaceable": 8,
+        "total": 220,
+        "placeable": 213,
+        "unplaceable": 7,
         "eea": 34,
-        "non_eea": 182,
+        "non_eea": 179,
         "countries": {
-          "United States": 100,
-          "Canada": 61,
+          "United States": 99,
+          "Canada": 60,
           "United Kingdom": 48,
-          "India": 35,
+          "India": 33,
           "Poland": 15,
           "Germany": 12,
           "Israel": 10,
@@ -2642,7 +2714,7 @@
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 13,
+            "count": 12,
             "examples": [
               {
                 "title": "Customer Success Architect",
@@ -2659,11 +2731,11 @@
                 "excerpt": "lve complex problems collectively, participate in pairing sessions and one-on-ones, and stay in communication across time zones through deliberate asynchronous work habits. Support is where customers meet GitLab, and we take that serious"
               },
               {
-                "title": "Intermediate Security Engineer, Security Incident Response Team (SIRT)",
-                "location": "Remote, Australia",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8782306002",
+                "title": "Engineering Manager, DevOps",
+                "location": "Remote, Canada; Remote, United States",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8789547002",
                 "matched": "globally distributed",
-                "excerpt": "erience or strong desire to learn cloud-based security investigations About the team Security Operations is a globally distributed team of engineers split across 3 core regions; AMER, APAC and EMEA, and is at the forefront of security event"
+                "excerpt": "se products or services of GitLab. An overview of this role In this role, you'll build, manage, and support a globally distributed engineering team delivering high-quality, reliable platform capabilities and user experiences. You'll hire an"
               }
             ]
           },
@@ -2672,7 +2744,7 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 5,
+            "count": 6,
             "examples": [
               {
                 "title": "Intermediate Software Engineer, Security Factory: Vulnerability Management ",
@@ -2751,6 +2823,13 @@
             "count": 26,
             "examples": [
               {
+                "title": "Associate Revenue Operations Analyst, Policy & Rules of Engagement",
+                "location": "Remote, United States",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8808115002",
+                "matched": "itar",
+                "excerpt": "or physical disability, genetic information (including family medical history), discharge status from the military, protected veteran status (which includes disabled veterans, recently separated veterans, active duty wartim"
+              },
+              {
                 "title": "Associate Solutions Architect (French or German fluency) ",
                 "location": "Remote, Spain",
                 "url": "https://job-boards.greenhouse.io/gitlab/jobs/8687171002",
@@ -2763,13 +2842,6 @@
                 "url": "https://job-boards.greenhouse.io/gitlab/jobs/8742716002",
                 "matched": "itar",
                 "excerpt": "or physical disability, genetic information (including family medical history), discharge status from the military, protected veteran status (which includes disabled veterans, recently separated veterans, active duty wartim"
-              },
-              {
-                "title": "Customer Success Architect, CEUR",
-                "location": "Remote, Germany",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8646852002",
-                "matched": "itar",
-                "excerpt": "or physical disability, genetic information (including family medical history), discharge status from the military, protected veteran status (which includes disabled veterans, recently separated veterans, active duty wartim"
               }
             ]
           },
@@ -2778,8 +2850,15 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 7,
+            "count": 6,
             "examples": [
+              {
+                "title": "Associate Revenue Operations Analyst, Policy & Rules of Engagement",
+                "location": "Remote, United States",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8808115002",
+                "matched": "Salesforce",
+                "excerpt": "e Field Sales team. Respond to policy questions and support the resolution of policy-related disputes through Salesforce Chatter, case requests, and the Sales Support Slack channel. Apply established policies carefully and identif"
+              },
               {
                 "title": "Customer Success Architect, CEUR",
                 "location": "Remote, Germany",
@@ -2793,13 +2872,6 @@
                 "url": "https://job-boards.greenhouse.io/gitlab/jobs/8629019002",
                 "matched": "Zendesk",
                 "excerpt": "ry tooling, Kubernetes, or cloud-native infrastructure, along with experience using support platforms such as Zendesk, Salesforce, Decagon, or equivalent tools. Experience with GitLab as a user, administrator, or customer is he"
-              },
-              {
-                "title": "Intermediate Support Engineer",
-                "location": "Bangalore, India",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8687026002",
-                "matched": "Zendesk",
-                "excerpt": "hat you’ll do Support a mix of Self-managed and GitLab.com (SaaS) customers, resolving complex issues through Zendesk tickets, merge requests, email, and video calls. Collaborate with Product, Development, Infrastructure, Custo"
               }
             ]
           }
@@ -2833,7 +2905,7 @@
       "category": "Search and data",
       "public_evidence_only": true,
       "surface": {
-        "grade": "82",
+        "grade": "56",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "1 public documents · 1 open reconciliations"
@@ -2844,12 +2916,15 @@
           "url": "https://www.elastic.co/legal/privacy-statement",
           "path": "data/snapshots/elastic/privacy.txt",
           "lines": 342,
-          "chars": 31367,
-          "sha256": "7c8cc77af2219f99",
+          "chars": 31369,
+          "sha256": "2b4ba1b47e64f285",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2018-05-23",
+            "last": "2026-02-01"
           }
         }
       ],
@@ -2911,28 +2986,28 @@
         "sensitivity_score": 20,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": false
+        "source_documents_changed": true
       },
       "jobs": {
         "ok": true,
-        "total": 356,
-        "placeable": 356,
+        "total": 360,
+        "placeable": 360,
         "unplaceable": 0,
-        "eea": 147,
-        "non_eea": 209,
+        "eea": 152,
+        "non_eea": 208,
         "countries": {
-          "United States": 107,
-          "Spain": 36,
-          "Canada": 31,
-          "Portugal": 22,
-          "Greece": 22,
+          "United States": 108,
+          "Spain": 37,
+          "Canada": 30,
+          "Portugal": 23,
+          "Greece": 23,
           "Ireland": 21,
           "United Kingdom": 17,
-          "India": 16,
-          "Poland": 13,
+          "India": 15,
+          "Poland": 14,
           "Norway": 11,
+          "Romania": 9,
           "Switzerland": 8,
-          "Romania": 8,
           "Germany": 7,
           "Singapore": 6,
           "Japan": 4,
@@ -2944,8 +3019,8 @@
           "United Arab Emirates": 2,
           "France": 2,
           "Saudi Arabia": 2,
-          "South Korea": 1,
           "Italy": 1,
+          "South Korea": 1,
           "New Zealand": 1,
           "Hungary": 1,
           "Denmark": 1,
@@ -2959,7 +3034,7 @@
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 12,
+            "count": 11,
             "examples": [
               {
                 "title": "Associate Corporate Counsel - Legal Product, IP, and Marketing",
@@ -2989,7 +3064,7 @@
             "label": "Travel expected",
             "severity": "high",
             "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 11,
+            "count": 10,
             "examples": [
               {
                 "title": "Cloud Marketplace Development Manager",
@@ -3011,6 +3086,22 @@
                 "url": "https://jobs.elastic.co/jobs?gh_jid=7447236&gh_jid=7447236",
                 "matched": "willingness to travel",
                 "excerpt": "conversations. Proven ability to lead and articulate technical solutions to stakeholders. Travel: Ability and willingness to travel to client sites periodically as required for project success (up to 20%)&nbsp; Work Style: Comfortable workin"
+              }
+            ]
+          },
+          {
+            "key": "replication",
+            "label": "Cross-region replication",
+            "severity": "high",
+            "why": "Resilience design moves copies by default, and failover does not ask permission.",
+            "count": 1,
+            "examples": [
+              {
+                "title": "Consulting Architect - Platform",
+                "location": "India",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=7447426&gh_jid=7447426",
+                "matched": "disaster recovery",
+                "excerpt": "ping and index strategies where the original design no longer holds Lead major-version upgrades, snapshot and disaster recovery strategy, and multi-cluster architectures Diagnose performance problems across the full stack — Elastic, the"
               }
             ]
           },
@@ -3087,6 +3178,41 @@
       },
       "drift": [
         {
+          "id": "elastic-privacy-2026-09-17",
+          "vendor_id": "elastic",
+          "vendor_name": "Elastic",
+          "document": "privacy",
+          "document_label": "Privacy policy",
+          "date": "2026-09-17",
+          "url": "https://www.elastic.co/legal/privacy-statement",
+          "hunks": [
+            {
+              "before": "when an individual applies or is referred for a role with Elastic through our Site or otherwise.",
+              "after": "when an individual applies or is referred for a role with Elastic through our site or otherwise."
+            },
+            {
+              "before": "Personal data processed by Elastic as a Processor.",
+              "after": "Personal data processed by Elastic as a Processor:"
+            },
+            {
+              "before": "Manage Your Customer Experience.",
+              "after": "Manage your customer experience."
+            },
+            {
+              "before": "Education and training:",
+              "after": "Education and training."
+            },
+            {
+              "before": "This includes using such technologies to communicate with you and respond to requests which do not warrant human intervention, to personalize your experience and deliver relevant content, to develop and improve our products, features, and services, to conduct our business operations, and to protect the security of our Properties, including as described in the \"",
+              "after": "This includes using such technologies to communicate with you and respond to requests which do not warrant human intervention; to personalize your experience and deliver relevant content; to develop and improve our products, features, and services; to conduct our business operations; and to protect the security of our Properties, including as described in the \""
+            },
+            {
+              "before": "UK Data Privacy Complaints",
+              "after": "UK data privacy complaints"
+            }
+          ]
+        },
+        {
           "id": "elastic-privacy-2026-09-10",
           "vendor_id": "elastic",
           "vendor_name": "Elastic",
@@ -3144,7 +3270,7 @@
       "category": "App hosting",
       "public_evidence_only": true,
       "surface": {
-        "grade": "74",
+        "grade": "50",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "2 public documents · 2 open reconciliations"
@@ -3160,7 +3286,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "http 503"
+            "reason": "ConnectionError"
           }
         },
         {
@@ -3172,8 +3298,11 @@
           "sha256": "c6f2954ea450f34e",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "http 503"
+            "ok": true,
+            "captures": 153,
+            "revisions": 152,
+            "first": "2020-04-23",
+            "last": "2026-09-16"
           }
         }
       ],
@@ -3269,19 +3398,19 @@
       },
       "jobs": {
         "ok": true,
-        "total": 85,
-        "placeable": 82,
+        "total": 87,
+        "placeable": 84,
         "unplaceable": 3,
         "eea": 8,
-        "non_eea": 74,
+        "non_eea": 76,
         "countries": {
-          "United States": 65,
+          "United States": 67,
           "United Kingdom": 15,
           "Germany": 8,
           "India": 4,
           "Australia": 3
         },
-        "scanned": 20,
+        "scanned": 22,
         "signals": [
           {
             "key": "oncall",
@@ -3343,7 +3472,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 3,
+            "count": 4,
             "examples": [
               {
                 "title": "Head of Field Engineering Operations",
@@ -3360,11 +3489,11 @@
                 "excerpt": "r our core martech stack—including our marketing automation platform ( Customer.io ) and its integration with Salesforce, Snowflake, and downstream systems —keeping tools tightly connected and data flowing reliably Build, QA, and"
               },
               {
-                "title": "Member of the Technical Staff, Financial Data Platform",
-                "location": "Hybrid - San Francisco, New York City",
-                "url": "https://job-boards.greenhouse.io/vercel/jobs/5895013004",
+                "title": "Member of the Technical Staff - Data Platform",
+                "location": "Remote - United States",
+                "url": "https://job-boards.greenhouse.io/vercel/jobs/6188400004",
                 "matched": "Snowflake",
-                "excerpt": "tems, and build reliable, auditable pipelines using modern technologies like Kafka, ClickHouse, Tinybird, and Snowflake. You'll lead from the front, writing production-grade code, setting the bar for data accuracy and governance"
+                "excerpt": "t goals, and build scalable, reliable systems using modern technologies like Kafka, ClickHouse, Tinybird, and Snowflake. You'll lead from the front, writing production-grade code, setting high standards for design and data govern"
               }
             ]
           }

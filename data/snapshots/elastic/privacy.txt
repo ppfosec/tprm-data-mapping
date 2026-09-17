@@ -1,5 +1,5 @@
 # source: https://www.elastic.co/legal/privacy-statement
-# collected: 2026-09-16
+# collected: 2026-09-17
 
 General Privacy Statement
 Effective Date:
@@ -48,8 +48,8 @@ Product Privacy Statement
 This Statement does not cover the information we may automatically collect in connection with your use of Elastic products and services as a customer or user.
 Personal data processed by Elastic according to our
 Candidate Privacy Statement
-when an individual applies or is referred for a role with Elastic through our Site or otherwise.
-Personal data processed by Elastic as a Processor.
+when an individual applies or is referred for a role with Elastic through our site or otherwise.
+Personal data processed by Elastic as a Processor:
 This Statement does not apply to personal data processed by Elastic in the role of a Processor or Service Provider (as applicable), including information processed for the operation and efficacy of Elastic's Products, which is subject to the terms of the applicable customer agreement.
 Elastic determines the purposes and means for the processing (i.e., we are the data controller) of your personal data as described in this Privacy Statement unless expressly specified otherwise.
 Information we collect and how we collect it
@@ -88,7 +88,7 @@ We also use personal data, including financial, credit card, and payment informa
 Provision, administer, and support your account.
 We use your information to provide our products and manage your account.
 Examples include managing product downloads, updates and fixes, providing support and recommendations, and sending other administrative or account-related communications, including release notes.
-Manage Your Customer Experience.
+Manage your customer experience.
 We use your information to maintain accurate contact and registration data, deliver support, and offer products, services, and features.
 We also use your data to deliver personalized communications and create recommendations based on your use of Elastic products, services, and features and your visits on our websites.
 Advertising.
@@ -113,7 +113,7 @@ After the event, Elastic may contact you about the event and related products an
 We may share information about your attendance with your company, and our conference sponsors and partners, to the extent we are legally permitted to do so.
 If a partner or conference sponsor directly requests your personal data at their conference booths or presentations, your information will be handled per their privacy practices.
 We recommend that you review the privacy practices of such partners and sponsors.
-Education and training:
+Education and training.
 If you sign up for an Elastic certification course or training, Elastic will use your information to facilitate the delivery of such course or training.
 Research and innovation.
 We use your information to develop new products, features, and services using research and development tools and incorporating data analysis activities.
@@ -126,7 +126,7 @@ Comply with law.
 We use your information as required to be compliant with applicable laws, regulations, court orders, government, and law enforcement requests.
 With machine learning and artificial intelligence.
 We use artificial intelligence and machine learning to help process personal data more efficiently for the purposes described in this Statement.
-This includes using such technologies to communicate with you and respond to requests which do not warrant human intervention, to personalize your experience and deliver relevant content, to develop and improve our products, features, and services, to conduct our business operations, and to protect the security of our Properties, including as described in the "
+This includes using such technologies to communicate with you and respond to requests which do not warrant human intervention; to personalize your experience and deliver relevant content; to develop and improve our products, features, and services; to conduct our business operations; and to protect the security of our Properties, including as described in the "
 Network and information security"
 section below.
 We do not use or allow the use of your personal data to train any generative artificial intelligence model.
@@ -270,15 +270,15 @@ If Elastic itself, or through cooperation with the relevant DPA, does not resolv
 For more information on this option, please see
 Annex I
 of the Data Privacy Framework Principles.
-UK Data Privacy Complaints
+UK data privacy complaints
 If you are located in the United Kingdom, you have the right to lodge a complaint with Elastic regarding how we handle your personal data.
 We are committed to addressing your concerns promptly and transparently through the following process:
-Submitting a Complaint:
-You may submit a data protection complaint directly to us at any time by contacting our Privacy Team through this
+Submitting a complaint:
+You may submit a data protection complaint directly to us at any time by contacting our Privacy team through this
 form
 Acknowledgment:
 We will formally acknowledge receipt of your complaint within thirty (30) days of receiving it.
-Investigation & Communication:
+Investigation and communication:
 Without undue delay, we will take all appropriate steps to respond to your complaint, including conducting any necessary internal enquiries.
 We will keep you reasonably informed of our progress throughout this process.
 Outcome:
