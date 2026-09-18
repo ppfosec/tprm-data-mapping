@@ -547,7 +547,7 @@
       "category": "Model provider",
       "public_evidence_only": true,
       "surface": {
-        "grade": "42",
+        "grade": "41",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "5 public documents · 3 open reconciliations"
@@ -612,10 +612,10 @@
           "diff": null,
           "archive": {
             "ok": true,
-            "captures": 64,
-            "revisions": 63,
+            "captures": 65,
+            "revisions": 64,
             "first": "2024-09-26",
-            "last": "2026-09-14"
+            "last": "2026-09-17"
           }
         },
         {
@@ -628,10 +628,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 34,
-            "revisions": 33,
+            "captures": 37,
+            "revisions": 36,
             "first": "2026-07-14",
-            "last": "2026-09-15"
+            "last": "2026-09-18"
           }
         }
       ],
@@ -640,7 +640,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "581 of 606 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "582 of 606 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -649,11 +649,11 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 484 open roles"
+              "excerpt": "United States: 487 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 53 open roles"
+              "excerpt": "United Kingdom: 51 open roles"
             },
             {
               "kind": "stat",
@@ -778,18 +778,18 @@
         "total": 608,
         "placeable": 606,
         "unplaceable": 2,
-        "eea": 25,
-        "non_eea": 581,
+        "eea": 24,
+        "non_eea": 582,
         "countries": {
-          "United States": 484,
-          "United Kingdom": 53,
+          "United States": 487,
+          "United Kingdom": 51,
           "Japan": 14,
           "South Korea": 11,
           "Singapore": 9,
-          "Ireland": 9,
+          "Germany": 9,
+          "Ireland": 8,
           "Australia": 8,
-          "Germany": 8,
-          "France": 6,
+          "France": 5,
           "Canada": 3,
           "Switzerland": 3,
           "India": 2,
@@ -875,22 +875,6 @@
                 "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390877008",
                 "matched": "U.S. citizen",
                 "excerpt": "terns You may be a good fit if you have: Due to U.S. Government contract requirements, this position requires U.S. citizenship and an active TS/SCI security clearance Must have prior experience working with US national security (def"
-              }
-            ]
-          },
-          {
-            "key": "sovereignty_work",
-            "label": "Sovereignty workstream",
-            "severity": "low",
-            "why": "They are staffing the problem, which is a good sign and an admission it is open.",
-            "count": 1,
-            "examples": [
-              {
-                "title": "Applied AI Security Architect",
-                "location": "London, UK",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5227641008",
-                "matched": "data residency",
-                "excerpt": "ow do MCP, autonomous agents, and RBAC work together? How do you deploy frontier models in line with GDPR, EU data residency, and the EU AI Act? If working at the intersection of AI adoption and regulated industries excites you, this"
               }
             ]
           }
@@ -1007,8 +991,8 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 297,
-            "revisions": 296,
+            "captures": 296,
+            "revisions": 295,
             "first": "2021-09-03",
             "last": "2026-09-12"
           }
@@ -1144,9 +1128,9 @@
       },
       "jobs": {
         "ok": true,
-        "total": 365,
+        "total": 371,
         "placeable": 5,
-        "unplaceable": 360,
+        "unplaceable": 366,
         "eea": 2,
         "non_eea": 3,
         "countries": {
@@ -1212,6 +1196,29 @@
             ]
           },
           {
+            "key": "travel",
+            "label": "Travel expected",
+            "severity": "high",
+            "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
+            "count": 2,
+            "examples": [
+              {
+                "title": "Principal Solutions Architect, APJC (Developer Platform) - Mandarin Speaking",
+                "location": "Hybrid",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8179387?gh_jid=8179387",
+                "matched": "travel up to 30%",
+                "excerpt": "cal-communication skills across developer, architectural, and executive audiences. Willingness and ability to travel up to 30%, primarily within APJC, including mainland China. Nice-to-Have Experience building and operating production a"
+              },
+              {
+                "title": "Principal Solutions Architect, Public Sector Federal",
+                "location": "Hybrid",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8131824?gh_jid=8131824",
+                "matched": "Travel up to 40%",
+                "excerpt": "eation and delivery. Contribute industry expertise to guide Cloudflare’s go-to-market and platform evolution. Travel up to 40% during the quarter to support partner engagements, attend conferences, represent Cloudflare at industry event"
+              }
+            ]
+          },
+          {
             "key": "round_clock",
             "label": "Round-the-clock coverage",
             "severity": "medium",
@@ -1235,6 +1242,29 @@
             ]
           },
           {
+            "key": "gov_enclave",
+            "label": "Government enclave",
+            "severity": "low",
+            "why": "A separate sovereign estate exists, which confirms the commercial one is not it.",
+            "count": 2,
+            "examples": [
+              {
+                "title": "Global Physical Security Intelligence Specialist",
+                "location": "In-Office",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/7816547?gh_jid=7816547",
+                "matched": "FedRAMP",
+                "excerpt": "ting physical security controls as it relates to various compliance requirements including but not limited to FedRAMP, ISO 27001 and SOC 2; and support internal and external audits of physical security controls. Examples of des"
+              },
+              {
+                "title": "Principal Solutions Architect, Public Sector Federal",
+                "location": "Hybrid",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8131824?gh_jid=8131824",
+                "matched": "FEDRAMP",
+                "excerpt": "el. Aware of government and industry standards, frameworks and compliance requirements (i.e, HIPAA, PCI, SOX, FEDRAMP, GDPR, NIS2, etc.). Experience in designing architecture, migration, and implementation of cloud, edge and on"
+              }
+            ]
+          },
+          {
             "key": "named_tooling",
             "label": "Named internal tooling",
             "severity": "low",
@@ -1254,22 +1284,6 @@
                 "url": "https://boards.greenhouse.io/cloudflare/jobs/8054669?gh_jid=8054669",
                 "matched": "Snowflake",
                 "excerpt": "h a focus on enabling GTM organizations. Columnar/OLAP or lakehouse experience (ClickHouse, DuckDB, BigQuery, Snowflake, Iceberg, Starrocks).Familiarity with the Salesforce data model and CRM/API integrations. Familiarity with de"
-              }
-            ]
-          },
-          {
-            "key": "gov_enclave",
-            "label": "Government enclave",
-            "severity": "low",
-            "why": "A separate sovereign estate exists, which confirms the commercial one is not it.",
-            "count": 1,
-            "examples": [
-              {
-                "title": "Global Physical Security Intelligence Specialist",
-                "location": "In-Office",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/7816547?gh_jid=7816547",
-                "matched": "FedRAMP",
-                "excerpt": "ting physical security controls as it relates to various compliance requirements including but not limited to FedRAMP, ISO 27001 and SOC 2; and support internal and external audits of physical security controls. Examples of des"
               }
             ]
           }
@@ -1314,7 +1328,7 @@
       "category": "Observability",
       "public_evidence_only": true,
       "surface": {
-        "grade": "41",
+        "grade": "36",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "3 public documents · 3 open reconciliations"
@@ -1330,7 +1344,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "ReadTimeout"
           }
         },
         {
@@ -1342,8 +1356,11 @@
           "sha256": "0872909011330b18",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 33,
+            "revisions": 32,
+            "first": "2022-05-28",
+            "last": "2026-08-03"
           }
         },
         {
@@ -1482,26 +1499,26 @@
       },
       "jobs": {
         "ok": true,
-        "total": 450,
-        "placeable": 450,
+        "total": 449,
+        "placeable": 449,
         "unplaceable": 0,
-        "eea": 103,
-        "non_eea": 347,
+        "eea": 99,
+        "non_eea": 350,
         "countries": {
-          "United States": 213,
-          "France": 59,
+          "United States": 215,
+          "France": 57,
           "Japan": 47,
-          "Ireland": 26,
+          "Ireland": 24,
           "United Kingdom": 22,
           "Singapore": 20,
           "Netherlands": 17,
           "Brazil": 16,
-          "Spain": 16,
+          "Spain": 14,
+          "South Korea": 13,
           "Australia": 12,
-          "South Korea": 11,
-          "India": 9,
-          "Germany": 8,
-          "Portugal": 7,
+          "India": 8,
+          "Germany": 7,
+          "Portugal": 6,
           "Italy": 5,
           "Sweden": 4,
           "Denmark": 3,
@@ -1778,7 +1795,7 @@
       "category": "Payments",
       "public_evidence_only": true,
       "surface": {
-        "grade": "38",
+        "grade": "41",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "3 public documents · 1 open reconciliations"
@@ -1952,30 +1969,30 @@
       },
       "jobs": {
         "ok": true,
-        "total": 654,
-        "placeable": 582,
+        "total": 667,
+        "placeable": 595,
         "unplaceable": 72,
-        "eea": 78,
-        "non_eea": 504,
+        "eea": 77,
+        "non_eea": 518,
         "countries": {
-          "United States": 311,
-          "Ireland": 64,
-          "Canada": 51,
-          "Singapore": 50,
-          "United Kingdom": 42,
-          "India": 39,
-          "Mexico": 25,
+          "United States": 322,
+          "Ireland": 63,
+          "Canada": 52,
+          "Singapore": 51,
+          "United Kingdom": 43,
+          "India": 38,
+          "Mexico": 26,
           "Australia": 10,
-          "Israel": 4,
           "Japan": 3,
-          "Spain": 3,
+          "Israel": 3,
+          "France": 3,
           "Taiwan": 3,
           "Romania": 3,
           "Germany": 2,
-          "France": 2,
+          "Spain": 2,
           "Brazil": 2,
-          "Luxembourg": 2,
           "Sweden": 1,
+          "Luxembourg": 1,
           "New Zealand": 1,
           "Hong Kong": 1,
           "Poland": 1,
@@ -1989,7 +2006,7 @@
             "label": "Travel expected",
             "severity": "high",
             "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 2,
+            "count": 3,
             "examples": [
               {
                 "title": "Account Executive, Strategic Platform Partnerships",
@@ -2004,6 +2021,13 @@
                 "url": "https://stripe.com/jobs/search?gh_jid=8126984",
                 "matched": "Willingness to travel",
                 "excerpt": "build and execute territory and opportunity-specific plans, leveraging tools such as Salesforce and Crossbeam Willingness to travel up to 25% Preferred qualifications Strong communication and presentation skills, including the ability to com"
+              },
+              {
+                "title": "Communities Partner Development Manager, SaaS Platforms",
+                "location": "US-Remote",
+                "url": "https://stripe.com/jobs/search?gh_jid=8103952",
+                "matched": "willingness to travel",
+                "excerpt": "ayment or financial-services technology, industry trends, and the competitive landscape Bachelor’s degree and willingness to travel Preferred qualifications Experience working in the financial services or payments industry Strong written and"
               }
             ]
           },
@@ -2078,11 +2102,8 @@
           "sha256": "14b1ae957872913e",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 301,
-            "revisions": 300,
-            "first": "2024-01-18",
-            "last": "2026-09-15"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -2110,8 +2131,11 @@
           "sha256": "afbbe2131f13839e",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 82,
+            "revisions": 81,
+            "first": "2019-04-01",
+            "last": "2026-09-14"
           }
         }
       ],
@@ -2120,7 +2144,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "141 of 153 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "140 of 152 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -2129,7 +2153,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 100 open roles"
+              "excerpt": "United States: 99 open roles"
             },
             {
               "kind": "stat",
@@ -2232,13 +2256,13 @@
       },
       "jobs": {
         "ok": true,
-        "total": 153,
-        "placeable": 153,
+        "total": 152,
+        "placeable": 152,
         "unplaceable": 0,
         "eea": 12,
-        "non_eea": 141,
+        "non_eea": 140,
         "countries": {
-          "United States": 100,
+          "United States": 99,
           "United Kingdom": 19,
           "Japan": 8,
           "Germany": 7,
@@ -2503,8 +2527,11 @@
           "sha256": "b8fd30b8b1e6bdaa",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ReadTimeout"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2015-04-16",
+            "last": "2026-02-17"
           }
         },
         {
@@ -2678,33 +2705,33 @@
       },
       "jobs": {
         "ok": true,
-        "total": 220,
-        "placeable": 213,
-        "unplaceable": 7,
-        "eea": 34,
-        "non_eea": 179,
+        "total": 215,
+        "placeable": 207,
+        "unplaceable": 8,
+        "eea": 32,
+        "non_eea": 175,
         "countries": {
-          "United States": 99,
-          "Canada": 60,
-          "United Kingdom": 48,
-          "India": 33,
+          "United States": 98,
+          "Canada": 59,
+          "United Kingdom": 46,
+          "India": 28,
           "Poland": 15,
           "Germany": 12,
-          "Israel": 10,
-          "Ireland": 9,
+          "Israel": 9,
+          "Ireland": 8,
           "Netherlands": 6,
           "Singapore": 6,
-          "Spain": 4,
-          "Australia": 4,
+          "Australia": 5,
           "France": 4,
           "Japan": 4,
           "Mexico": 3,
+          "Spain": 3,
           "United Arab Emirates": 3,
-          "Italy": 2,
           "South Korea": 2,
           "Brazil": 1,
           "Austria": 1,
           "Philippines": 1,
+          "Italy": 1,
           "Turkey": 1
         },
         "scanned": 26,
@@ -2714,7 +2741,7 @@
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 12,
+            "count": 13,
             "examples": [
               {
                 "title": "Customer Success Architect",
@@ -2731,7 +2758,7 @@
                 "excerpt": "lve complex problems collectively, participate in pairing sessions and one-on-ones, and stay in communication across time zones through deliberate asynchronous work habits. Support is where customers meet GitLab, and we take that serious"
               },
               {
-                "title": "Engineering Manager, DevOps",
+                "title": "Engineering Manager, Core DevOps",
                 "location": "Remote, Canada; Remote, United States",
                 "url": "https://job-boards.greenhouse.io/gitlab/jobs/8789547002",
                 "matched": "globally distributed",
@@ -2830,16 +2857,16 @@
                 "excerpt": "or physical disability, genetic information (including family medical history), discharge status from the military, protected veteran status (which includes disabled veterans, recently separated veterans, active duty wartim"
               },
               {
-                "title": "Associate Solutions Architect (French or German fluency) ",
-                "location": "Remote, Spain",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8687171002",
+                "title": "Customer Success Architect",
+                "location": "Remote, United States",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8742716002",
                 "matched": "itar",
                 "excerpt": "or physical disability, genetic information (including family medical history), discharge status from the military, protected veteran status (which includes disabled veterans, recently separated veterans, active duty wartim"
               },
               {
-                "title": "Customer Success Architect",
-                "location": "Remote, United States",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8742716002",
+                "title": "Customer Success Architect, CEUR",
+                "location": "Remote, Germany",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8646852002",
                 "matched": "itar",
                 "excerpt": "or physical disability, genetic information (including family medical history), discharge status from the military, protected veteran status (which includes disabled veterans, recently separated veterans, active duty wartim"
               }
@@ -2850,7 +2877,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 6,
+            "count": 7,
             "examples": [
               {
                 "title": "Associate Revenue Operations Analyst, Policy & Rules of Engagement",
@@ -2905,7 +2932,7 @@
       "category": "Search and data",
       "public_evidence_only": true,
       "surface": {
-        "grade": "56",
+        "grade": "57",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "1 public documents · 1 open reconciliations"
@@ -2986,39 +3013,39 @@
         "sensitivity_score": 20,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": true
+        "source_documents_changed": false
       },
       "jobs": {
         "ok": true,
-        "total": 360,
-        "placeable": 360,
+        "total": 356,
+        "placeable": 356,
         "unplaceable": 0,
-        "eea": 152,
-        "non_eea": 208,
+        "eea": 149,
+        "non_eea": 207,
         "countries": {
           "United States": 108,
           "Spain": 37,
           "Canada": 30,
-          "Portugal": 23,
-          "Greece": 23,
+          "Portugal": 22,
+          "Greece": 22,
           "Ireland": 21,
           "United Kingdom": 17,
           "India": 15,
           "Poland": 14,
-          "Norway": 11,
+          "Norway": 10,
           "Romania": 9,
           "Switzerland": 8,
           "Germany": 7,
           "Singapore": 6,
-          "Japan": 4,
+          "Brazil": 4,
           "Israel": 4,
           "Mexico": 3,
-          "Brazil": 3,
+          "Japan": 3,
           "Costa Rica": 2,
-          "Australia": 2,
           "United Arab Emirates": 2,
           "France": 2,
           "Saudi Arabia": 2,
+          "Australia": 1,
           "Italy": 1,
           "South Korea": 1,
           "New Zealand": 1,
@@ -3034,19 +3061,19 @@
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 11,
+            "count": 12,
             "examples": [
               {
                 "title": "Associate Corporate Counsel - Legal Product, IP, and Marketing",
-                "location": "United States",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8093273&gh_jid=8093273",
+                "location": "Canada",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8122981&gh_jid=8122981",
                 "matched": "across time zones",
                 "excerpt": "orkflows and \"productization\" processes that help a legal team scale. Global Perspective: Comfortable working across time zones and cultures in a distributed culture with a flexible approach to problem-solving. Compensation for this role"
               },
               {
                 "title": "Associate Corporate Counsel - Legal Product, IP, and Marketing",
-                "location": "Canada",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8122981&gh_jid=8122981",
+                "location": "United States",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8093273&gh_jid=8093273",
                 "matched": "across time zones",
                 "excerpt": "orkflows and \"productization\" processes that help a legal team scale. Global Perspective: Comfortable working across time zones and cultures in a distributed culture with a flexible approach to problem-solving. Compensation for this role"
               },
@@ -3064,7 +3091,7 @@
             "label": "Travel expected",
             "severity": "high",
             "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 10,
+            "count": 11,
             "examples": [
               {
                 "title": "Cloud Marketplace Development Manager",
@@ -3286,7 +3313,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -3337,11 +3364,11 @@
             },
             {
               "kind": "job",
-              "title": "Software Engineer, Deployment Infrastructure",
+              "title": "Software Engineer, Agentic Infrastructure",
               "location": "Hybrid - San Francisco, New York City",
-              "url": "https://job-boards.greenhouse.io/vercel/jobs/5633880004",
+              "url": "https://job-boards.greenhouse.io/vercel/jobs/6199608004",
               "matched": "on-call",
-              "excerpt": "D at Vercel by setting standards for scalability, reliability, and developer productivity. Participate in the on-call rotation, taking responsibility for the reliability of critical systems. Contribute to the open-source commun"
+              "excerpt": "e at Vercel by setting standards for scalability, reliability, and developer productivity. Participate in the on-call rotation, taking responsibility for the reliability of critical systems. Contribute to the open-source commun"
             }
           ],
           "question": "For out-of-hours incidents, who is on the rotation, where are they, and is their access to customer data logged and reviewable by the customer?"
@@ -3398,17 +3425,17 @@
       },
       "jobs": {
         "ok": true,
-        "total": 87,
-        "placeable": 84,
+        "total": 84,
+        "placeable": 81,
         "unplaceable": 3,
         "eea": 8,
-        "non_eea": 76,
+        "non_eea": 73,
         "countries": {
-          "United States": 67,
+          "United States": 66,
           "United Kingdom": 15,
           "Germany": 8,
-          "India": 4,
-          "Australia": 3
+          "Australia": 3,
+          "India": 2
         },
         "scanned": 22,
         "signals": [
@@ -3427,11 +3454,11 @@
                 "excerpt": "and urgent requests as they arise, as well as contributing to the build-out and continuous improvement of the on-call process to enhance efficiency and effectiveness. Continuously act as a guardian to enable the business to nav"
               },
               {
-                "title": "Software Engineer, Deployment Infrastructure",
+                "title": "Software Engineer, Agentic Infrastructure",
                 "location": "Hybrid - San Francisco, New York City",
-                "url": "https://job-boards.greenhouse.io/vercel/jobs/5633880004",
+                "url": "https://job-boards.greenhouse.io/vercel/jobs/6199608004",
                 "matched": "on-call",
-                "excerpt": "D at Vercel by setting standards for scalability, reliability, and developer productivity. Participate in the on-call rotation, taking responsibility for the reliability of critical systems. Contribute to the open-source commun"
+                "excerpt": "e at Vercel by setting standards for scalability, reliability, and developer productivity. Participate in the on-call rotation, taking responsibility for the reliability of critical systems. Contribute to the open-source commun"
               }
             ]
           },
