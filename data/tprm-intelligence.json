@@ -594,11 +594,8 @@
           "sha256": "85c78c93175ffb26",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2024-02-21",
-            "last": "2026-03-20"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -611,11 +608,8 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": true,
-            "captures": 65,
-            "revisions": 64,
-            "first": "2024-09-26",
-            "last": "2026-09-17"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -627,11 +621,8 @@
           "sha256": "b5c2883bfc8d9aed",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 37,
-            "revisions": 36,
-            "first": "2026-07-14",
-            "last": "2026-09-18"
+            "ok": false,
+            "reason": "ReadTimeout"
           }
         }
       ],
@@ -640,7 +631,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "582 of 606 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "583 of 607 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -649,11 +640,11 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 487 open roles"
+              "excerpt": "United States: 488 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 51 open roles"
+              "excerpt": "United Kingdom: 50 open roles"
             },
             {
               "kind": "stat",
@@ -775,23 +766,23 @@
       },
       "jobs": {
         "ok": true,
-        "total": 608,
-        "placeable": 606,
+        "total": 609,
+        "placeable": 607,
         "unplaceable": 2,
         "eea": 24,
-        "non_eea": 582,
+        "non_eea": 583,
         "countries": {
-          "United States": 487,
-          "United Kingdom": 51,
+          "United States": 488,
+          "United Kingdom": 50,
           "Japan": 14,
           "South Korea": 11,
+          "Germany": 10,
           "Singapore": 9,
-          "Germany": 9,
-          "Ireland": 8,
           "Australia": 8,
+          "Ireland": 7,
           "France": 5,
+          "Switzerland": 4,
           "Canada": 3,
-          "Switzerland": 3,
           "India": 2,
           "Spain": 1,
           "Italy": 1
@@ -1006,11 +997,8 @@
           "sha256": "3669d59798194699",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 156,
-            "revisions": 155,
-            "first": "2018-11-17",
-            "last": "2026-08-18"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -1022,11 +1010,8 @@
           "sha256": "253254e28bc2ff29",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2021-05-16",
-            "last": "2025-10-08"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         }
       ],
@@ -1067,11 +1052,11 @@
             },
             {
               "kind": "job",
-              "title": "Distributed Systems Engineer - Data Platform (Delivery, Database, Retrieval)",
+              "title": "Data Center Engineer",
               "location": "Hybrid",
-              "url": "https://boards.greenhouse.io/cloudflare/jobs/7462801?gh_jid=7462801",
+              "url": "https://boards.greenhouse.io/cloudflare/jobs/8074364?gh_jid=8074364",
               "matched": "on-call",
-              "excerpt": "Evaluate technologies and contribute to the next generation of Cloudflare’s data platform. Participate in an on-call rotation for the production systems owned by your team. What We’re Looking For At least three years of profes"
+              "excerpt": "esponsibilities (prioritization, planning, scheduling, status reporting) such as JIRA Participate in a shared on-call rotation to maintain 24×7 operational availability of the global network. Other Responsibilities May Include"
             }
           ],
           "question": "For out-of-hours incidents, who is on the rotation, where are they, and is their access to customer data logged and reviewable by the customer?"
@@ -1128,9 +1113,9 @@
       },
       "jobs": {
         "ok": true,
-        "total": 371,
+        "total": 380,
         "placeable": 5,
-        "unplaceable": 366,
+        "unplaceable": 375,
         "eea": 2,
         "non_eea": 3,
         "countries": {
@@ -1147,7 +1132,7 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 8,
+            "count": 9,
             "examples": [
               {
                 "title": "AI Security Research & Red Team Engineer",
@@ -1157,18 +1142,18 @@
                 "excerpt": "ring partner\" for SIRT. By conducting unannounced exercises, you help them refine their playbooks, test their on-call rotations, and ensure their forensic tooling is effective under pressure. Threat Detection &amp; Threat Engin"
               },
               {
+                "title": "Data Center Engineer",
+                "location": "Hybrid",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8074364?gh_jid=8074364",
+                "matched": "on-call",
+                "excerpt": "esponsibilities (prioritization, planning, scheduling, status reporting) such as JIRA Participate in a shared on-call rotation to maintain 24×7 operational availability of the global network. Other Responsibilities May Include"
+              },
+              {
                 "title": "Distributed Systems Engineer - Data Platform (Delivery, Database, Retrieval)",
                 "location": "Hybrid",
                 "url": "https://boards.greenhouse.io/cloudflare/jobs/7462801?gh_jid=7462801",
                 "matched": "on-call",
                 "excerpt": "Evaluate technologies and contribute to the next generation of Cloudflare’s data platform. Participate in an on-call rotation for the production systems owned by your team. What We’re Looking For At least three years of profes"
-              },
-              {
-                "title": "Engineering Manager, Cloudflare Network Interconnect",
-                "location": "Hybrid",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/8083701?gh_jid=8083701",
-                "matched": "on-call",
-                "excerpt": "eam to lead design and implementation. Taking responsibility for the team's production services by organizing on-call rotations, handling customer escalations, and overseeing incident response and follow-up. Driving reliability"
               }
             ]
           },
@@ -1242,29 +1227,6 @@
             ]
           },
           {
-            "key": "gov_enclave",
-            "label": "Government enclave",
-            "severity": "low",
-            "why": "A separate sovereign estate exists, which confirms the commercial one is not it.",
-            "count": 2,
-            "examples": [
-              {
-                "title": "Global Physical Security Intelligence Specialist",
-                "location": "In-Office",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/7816547?gh_jid=7816547",
-                "matched": "FedRAMP",
-                "excerpt": "ting physical security controls as it relates to various compliance requirements including but not limited to FedRAMP, ISO 27001 and SOC 2; and support internal and external audits of physical security controls. Examples of des"
-              },
-              {
-                "title": "Principal Solutions Architect, Public Sector Federal",
-                "location": "Hybrid",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/8131824?gh_jid=8131824",
-                "matched": "FEDRAMP",
-                "excerpt": "el. Aware of government and industry standards, frameworks and compliance requirements (i.e, HIPAA, PCI, SOX, FEDRAMP, GDPR, NIS2, etc.). Experience in designing architecture, migration, and implementation of cloud, edge and on"
-              }
-            ]
-          },
-          {
             "key": "named_tooling",
             "label": "Named internal tooling",
             "severity": "low",
@@ -1284,6 +1246,22 @@
                 "url": "https://boards.greenhouse.io/cloudflare/jobs/8054669?gh_jid=8054669",
                 "matched": "Snowflake",
                 "excerpt": "h a focus on enabling GTM organizations. Columnar/OLAP or lakehouse experience (ClickHouse, DuckDB, BigQuery, Snowflake, Iceberg, Starrocks).Familiarity with the Salesforce data model and CRM/API integrations. Familiarity with de"
+              }
+            ]
+          },
+          {
+            "key": "gov_enclave",
+            "label": "Government enclave",
+            "severity": "low",
+            "why": "A separate sovereign estate exists, which confirms the commercial one is not it.",
+            "count": 1,
+            "examples": [
+              {
+                "title": "Principal Solutions Architect, Public Sector Federal",
+                "location": "Hybrid",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8131824?gh_jid=8131824",
+                "matched": "FEDRAMP",
+                "excerpt": "el. Aware of government and industry standards, frameworks and compliance requirements (i.e, HIPAA, PCI, SOX, FEDRAMP, GDPR, NIS2, etc.). Experience in designing architecture, migration, and implementation of cloud, edge and on"
               }
             ]
           }
@@ -1328,7 +1306,7 @@
       "category": "Observability",
       "public_evidence_only": true,
       "surface": {
-        "grade": "36",
+        "grade": "37",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "3 public documents · 3 open reconciliations"
@@ -1343,8 +1321,11 @@
           "sha256": "5ba0ae3eedc6b12d",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ReadTimeout"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2017-06-30",
+            "last": "2025-04-25"
           }
         },
         {
@@ -1499,26 +1480,26 @@
       },
       "jobs": {
         "ok": true,
-        "total": 449,
-        "placeable": 449,
+        "total": 453,
+        "placeable": 453,
         "unplaceable": 0,
         "eea": 99,
-        "non_eea": 350,
+        "non_eea": 354,
         "countries": {
-          "United States": 215,
-          "France": 57,
+          "United States": 217,
+          "France": 56,
           "Japan": 47,
-          "Ireland": 24,
-          "United Kingdom": 22,
+          "Ireland": 25,
+          "United Kingdom": 24,
           "Singapore": 20,
-          "Netherlands": 17,
-          "Brazil": 16,
-          "Spain": 14,
+          "Netherlands": 19,
+          "Brazil": 17,
+          "Spain": 15,
           "South Korea": 13,
           "Australia": 12,
           "India": 8,
+          "Portugal": 7,
           "Germany": 7,
-          "Portugal": 6,
           "Italy": 5,
           "Sweden": 4,
           "Denmark": 3,
@@ -1528,8 +1509,8 @@
           "Switzerland": 2,
           "Colombia": 1,
           "Chile": 1,
-          "Poland": 1,
           "Austria": 1,
+          "Poland": 1,
           "Saudi Arabia": 1
         },
         "scanned": 26,
@@ -1798,7 +1779,7 @@
         "grade": "41",
         "posture": "public evidence index",
         "confidence": "bounded",
-        "summary": "3 public documents · 1 open reconciliations"
+        "summary": "3 public documents · 2 open reconciliations"
       },
       "documents": [
         {
@@ -1827,10 +1808,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 229,
-            "revisions": 228,
+            "captures": 231,
+            "revisions": 230,
             "first": "2022-05-27",
-            "last": "2026-09-12"
+            "last": "2026-09-17"
           }
         },
         {
@@ -1843,14 +1824,32 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 102,
-            "revisions": 101,
+            "captures": 104,
+            "revisions": 103,
             "first": "2022-12-05",
-            "last": "2026-09-12"
+            "last": "2026-09-17"
           }
         }
       ],
       "findings": [
+        {
+          "rule": "subprocessor_gap",
+          "severity": "medium",
+          "headline": "Databricks appears in hiring, not in the published documents",
+          "detail": "Engineering job descriptions name Databricks, but it does not appear anywhere in the legal documents collected including the sub-processor list at https://stripe.com/legal/service-providers.",
+          "claim": null,
+          "evidence": [
+            {
+              "kind": "job",
+              "title": "Accounting AI Solutions Lead",
+              "location": "Seattle, San Francisco, New York",
+              "url": "https://stripe.com/jobs/search?gh_jid=8103750",
+              "matched": "Databricks",
+              "excerpt": "window functions, and joins for data analysis and pipeline logic Familiarity with modern data tools (Python, Databricks, ETL/ELT processes, data pipelines) and coding with AI assistance Comprehensive understanding of AI fundament"
+            }
+          ],
+          "question": "Is Databricks a sub-processor? If it is, when was it added to the list, and were customers notified? If it never touches customer data, what is it used for?"
+        },
         {
           "rule": "subprocessor_gap",
           "severity": "low",
@@ -1860,19 +1859,19 @@
           "evidence": [
             {
               "kind": "job",
-              "title": "Account Executive, Platforms Hunter (Central Eastern Europe)",
-              "location": "Dublin",
-              "url": "https://stripe.com/jobs/search?gh_jid=8121659",
-              "matched": "segment",
-              "excerpt": "act. Own the complete sales cycle, from lead generation through to product adoption within the target Startup segment. Develop robust outbound strategies and execute creative prospecting programmes to create and nurture new bus"
-            },
-            {
-              "kind": "job",
               "title": "Account Executive, Platforms Hunter (German fluency)",
               "location": "Dublin",
               "url": "https://stripe.com/jobs/search?gh_jid=8129702",
               "matched": "segment",
               "excerpt": "act. Own the complete sales cycle, from lead generation through to product adoption within the target Startup segment. Develop robust outbound strategies and execute creative prospecting programmes to create and nurture new bus"
+            },
+            {
+              "kind": "job",
+              "title": "Account Executive, Startups SaaS Platforms Grower",
+              "location": "Dublin",
+              "url": "https://stripe.com/jobs/search?gh_jid=8119498",
+              "matched": "segment",
+              "excerpt": "re a curious, well-rounded strategic seller who builds strong relationships with Stripe’s clients in this key segment. You’re comfortable owning your territory and balancing a mix of high-value, strategic deals with smaller, hi"
             }
           ],
           "question": "Is Segment a sub-processor? If it is, when was it added to the list, and were customers notified? If it never touches customer data, what is it used for?"
@@ -1972,8 +1971,8 @@
         "total": 667,
         "placeable": 595,
         "unplaceable": 72,
-        "eea": 77,
-        "non_eea": 518,
+        "eea": 76,
+        "non_eea": 519,
         "countries": {
           "United States": 322,
           "Ireland": 63,
@@ -1981,7 +1980,7 @@
           "Singapore": 51,
           "United Kingdom": 43,
           "India": 38,
-          "Mexico": 26,
+          "Mexico": 27,
           "Australia": 10,
           "Japan": 3,
           "Israel": 3,
@@ -1996,7 +1995,6 @@
           "New Zealand": 1,
           "Hong Kong": 1,
           "Poland": 1,
-          "Italy": 1,
           "Thailand": 1
         },
         "scanned": 26,
@@ -2052,15 +2050,8 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 5,
+            "count": 4,
             "examples": [
-              {
-                "title": "Account Executive, Platforms Hunter (Central Eastern Europe)",
-                "location": "Dublin",
-                "url": "https://stripe.com/jobs/search?gh_jid=8121659",
-                "matched": "segment",
-                "excerpt": "act. Own the complete sales cycle, from lead generation through to product adoption within the target Startup segment. Develop robust outbound strategies and execute creative prospecting programmes to create and nurture new bus"
-              },
               {
                 "title": "Account Executive, Platforms Hunter (German fluency)",
                 "location": "Dublin",
@@ -2074,6 +2065,13 @@
                 "url": "https://stripe.com/jobs/search?gh_jid=8119498",
                 "matched": "segment",
                 "excerpt": "re a curious, well-rounded strategic seller who builds strong relationships with Stripe’s clients in this key segment. You’re comfortable owning your territory and balancing a mix of high-value, strategic deals with smaller, hi"
+              },
+              {
+                "title": "Accounting AI Solutions Lead",
+                "location": "Seattle, San Francisco, New York",
+                "url": "https://stripe.com/jobs/search?gh_jid=8103750",
+                "matched": "Databricks",
+                "excerpt": "window functions, and joins for data analysis and pipeline logic Familiarity with modern data tools (Python, Databricks, ETL/ELT processes, data pipelines) and coding with AI assistance Comprehensive understanding of AI fundament"
               }
             ]
           }
@@ -2115,11 +2113,8 @@
           "sha256": "4bde694018c282cd",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 15,
-            "revisions": 14,
-            "first": "2025-04-01",
-            "last": "2026-09-09"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -2144,7 +2139,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "140 of 152 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "139 of 152 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -2259,17 +2254,17 @@
         "total": 152,
         "placeable": 152,
         "unplaceable": 0,
-        "eea": 12,
-        "non_eea": 140,
+        "eea": 13,
+        "non_eea": 139,
         "countries": {
           "United States": 99,
           "United Kingdom": 19,
           "Japan": 8,
           "Germany": 7,
-          "France": 5,
+          "France": 6,
           "Singapore": 4,
           "Australia": 4,
-          "Brazil": 4,
+          "Brazil": 3,
           "India": 1,
           "Israel": 1
         },
@@ -2512,7 +2507,7 @@
       "category": "DevOps platform",
       "public_evidence_only": true,
       "surface": {
-        "grade": "50",
+        "grade": "52",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "3 public documents · 3 open reconciliations"
@@ -2527,11 +2522,8 @@
           "sha256": "b8fd30b8b1e6bdaa",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2015-04-16",
-            "last": "2026-02-17"
+            "ok": false,
+            "reason": "ReadTimeout"
           }
         },
         {
@@ -2543,11 +2535,8 @@
           "sha256": "b9e8de6a4bacb426",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 81,
-            "revisions": 80,
-            "first": "2020-11-27",
-            "last": "2026-08-28"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -2705,16 +2694,16 @@
       },
       "jobs": {
         "ok": true,
-        "total": 215,
-        "placeable": 207,
+        "total": 216,
+        "placeable": 208,
         "unplaceable": 8,
         "eea": 32,
-        "non_eea": 175,
+        "non_eea": 176,
         "countries": {
-          "United States": 98,
-          "Canada": 59,
-          "United Kingdom": 46,
-          "India": 28,
+          "United States": 99,
+          "Canada": 60,
+          "United Kingdom": 45,
+          "India": 29,
           "Poland": 15,
           "Germany": 12,
           "Israel": 9,
@@ -3017,41 +3006,41 @@
       },
       "jobs": {
         "ok": true,
-        "total": 356,
-        "placeable": 356,
+        "total": 358,
+        "placeable": 358,
         "unplaceable": 0,
-        "eea": 149,
-        "non_eea": 207,
+        "eea": 147,
+        "non_eea": 211,
         "countries": {
-          "United States": 108,
-          "Spain": 37,
-          "Canada": 30,
-          "Portugal": 22,
-          "Greece": 22,
-          "Ireland": 21,
-          "United Kingdom": 17,
+          "United States": 109,
+          "Spain": 36,
+          "Canada": 31,
+          "Greece": 21,
+          "Portugal": 21,
+          "Ireland": 20,
+          "United Kingdom": 18,
           "India": 15,
           "Poland": 14,
           "Norway": 10,
           "Romania": 9,
+          "Germany": 8,
           "Switzerland": 8,
-          "Germany": 7,
           "Singapore": 6,
           "Brazil": 4,
           "Israel": 4,
           "Mexico": 3,
           "Japan": 3,
           "Costa Rica": 2,
+          "Australia": 2,
           "United Arab Emirates": 2,
           "France": 2,
           "Saudi Arabia": 2,
-          "Australia": 1,
+          "Belgium": 2,
           "Italy": 1,
           "South Korea": 1,
           "New Zealand": 1,
           "Hungary": 1,
           "Denmark": 1,
-          "Belgium": 1,
           "Netherlands": 1
         },
         "scanned": 26,
@@ -3061,7 +3050,7 @@
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 12,
+            "count": 11,
             "examples": [
               {
                 "title": "Associate Corporate Counsel - Legal Product, IP, and Marketing",
@@ -3091,7 +3080,7 @@
             "label": "Travel expected",
             "severity": "high",
             "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 11,
+            "count": 10,
             "examples": [
               {
                 "title": "Cloud Marketplace Development Manager",
@@ -3137,7 +3126,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 3,
+            "count": 4,
             "examples": [
               {
                 "title": "Consulting Architect - Search",
@@ -3312,8 +3301,11 @@
           "sha256": "1089987c0a57208c",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 34,
+            "revisions": 33,
+            "first": "2026-06-08",
+            "last": "2026-09-18"
           }
         },
         {
@@ -3326,10 +3318,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 153,
-            "revisions": 152,
+            "captures": 154,
+            "revisions": 153,
             "first": "2020-04-23",
-            "last": "2026-09-16"
+            "last": "2026-09-18"
           }
         }
       ],
@@ -3431,13 +3423,13 @@
         "eea": 8,
         "non_eea": 73,
         "countries": {
-          "United States": 66,
-          "United Kingdom": 15,
+          "United States": 65,
+          "United Kingdom": 16,
           "Germany": 8,
           "Australia": 3,
           "India": 2
         },
-        "scanned": 22,
+        "scanned": 23,
         "signals": [
           {
             "key": "oncall",
