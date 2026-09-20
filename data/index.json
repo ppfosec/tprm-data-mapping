@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T08:29:52+00:00",
+  "generated_at": "2026-09-20T08:51:57+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -137,8 +137,11 @@
           "sha256": "85c78c93175ffb26",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2024-02-21",
+            "last": "2026-03-20"
           }
         },
         {
@@ -151,8 +154,11 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 65,
+            "revisions": 64,
+            "first": "2024-09-26",
+            "last": "2026-09-17"
           }
         },
         {
@@ -164,20 +170,23 @@
           "sha256": "b5c2883bfc8d9aed",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ReadTimeout"
+            "ok": true,
+            "captures": 40,
+            "revisions": 39,
+            "first": "2026-07-14",
+            "last": "2026-09-19"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 609,
-        "placeable": 607,
+        "total": 611,
+        "placeable": 609,
         "unplaceable": 2,
         "eea": 24,
-        "non_eea": 583,
+        "non_eea": 585,
         "countries": {
-          "United States": 488,
+          "United States": 490,
           "United Kingdom": 50,
           "Japan": 14,
           "South Korea": 11,
@@ -281,7 +290,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "583 of 607 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "585 of 609 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -290,7 +299,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 488 open roles"
+              "excerpt": "United States: 490 open roles"
             },
             {
               "kind": "stat",
@@ -527,11 +536,8 @@
           "sha256": "d999aff5712a68aa",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 296,
-            "revisions": 295,
-            "first": "2021-09-03",
-            "last": "2026-09-12"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -544,7 +550,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectTimeout"
+            "reason": "ConnectionError"
           }
         },
         {
@@ -557,15 +563,15 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectTimeout"
+            "reason": "ReadTimeout"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 380,
+        "total": 379,
         "placeable": 5,
-        "unplaceable": 375,
+        "unplaceable": 374,
         "eea": 2,
         "non_eea": 3,
         "countries": {
@@ -1360,10 +1366,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 231,
-            "revisions": 230,
+            "captures": 232,
+            "revisions": 231,
             "first": "2022-05-27",
-            "last": "2026-09-17"
+            "last": "2026-09-19"
           }
         },
         {
@@ -1385,20 +1391,20 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 667,
-        "placeable": 595,
+        "total": 665,
+        "placeable": 593,
         "unplaceable": 72,
         "eea": 76,
-        "non_eea": 519,
+        "non_eea": 517,
         "countries": {
-          "United States": 322,
+          "United States": 319,
           "Ireland": 63,
           "Canada": 52,
           "Singapore": 51,
           "United Kingdom": 43,
           "India": 38,
           "Mexico": 27,
-          "Australia": 10,
+          "Australia": 11,
           "Japan": 3,
           "Israel": 3,
           "France": 3,
@@ -1440,7 +1446,7 @@
               {
                 "title": "Communities Partner Development Manager, SaaS Platforms",
                 "location": "US-Remote",
-                "url": "https://stripe.com/jobs/search?gh_jid=8103952",
+                "url": "https://stripe.com/jobs/search?gh_jid=8138000",
                 "matched": "willingness to travel",
                 "excerpt": "ayment or financial-services technology, industry trends, and the competitive landscape Bachelor’s degree and willingness to travel Preferred qualifications Experience working in the financial services or payments industry Strong written and"
               }
@@ -1655,8 +1661,11 @@
           "sha256": "14b1ae957872913e",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 303,
+            "revisions": 302,
+            "first": "2024-01-18",
+            "last": "2026-09-17"
           }
         },
         {
@@ -1668,8 +1677,11 @@
           "sha256": "4bde694018c282cd",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 15,
+            "revisions": 14,
+            "first": "2025-04-01",
+            "last": "2026-09-09"
           }
         },
         {
@@ -2081,7 +2093,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ReadTimeout"
+            "reason": "ConnectionError"
           }
         },
         {
@@ -2094,7 +2106,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectTimeout"
+            "reason": "ConnectionError"
           }
         },
         {
@@ -2866,8 +2878,8 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 34,
-            "revisions": 33,
+            "captures": 35,
+            "revisions": 34,
             "first": "2026-06-08",
             "last": "2026-09-18"
           }
@@ -2882,10 +2894,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 154,
-            "revisions": 153,
+            "captures": 156,
+            "revisions": 155,
             "first": "2020-04-23",
-            "last": "2026-09-18"
+            "last": "2026-09-19"
           }
         }
       ],
