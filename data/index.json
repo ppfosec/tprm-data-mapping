@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T08:51:57+00:00",
+  "generated_at": "2026-09-21T09:29:34+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -105,11 +105,8 @@
           "sha256": "6e132921a3eb10a3",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2024-02-25",
-            "last": "2025-11-02"
+            "ok": false,
+            "reason": "ReadTimeout"
           }
         },
         {
@@ -121,11 +118,8 @@
           "sha256": "8dac92944a88d6dd",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2024-02-25",
-            "last": "2026-03-08"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -137,11 +131,8 @@
           "sha256": "85c78c93175ffb26",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2024-02-21",
-            "last": "2026-03-20"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -154,11 +145,8 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": true,
-            "captures": 65,
-            "revisions": 64,
-            "first": "2024-09-26",
-            "last": "2026-09-17"
+            "ok": false,
+            "reason": "http 503"
           }
         },
         {
@@ -170,39 +158,59 @@
           "sha256": "b5c2883bfc8d9aed",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 40,
-            "revisions": 39,
-            "first": "2026-07-14",
-            "last": "2026-09-19"
+            "ok": false,
+            "reason": "http 503"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 611,
-        "placeable": 609,
+        "total": 614,
+        "placeable": 612,
         "unplaceable": 2,
         "eea": 24,
-        "non_eea": 585,
+        "non_eea": 588,
         "countries": {
           "United States": 490,
           "United Kingdom": 50,
           "Japan": 14,
           "South Korea": 11,
+          "Singapore": 10,
           "Germany": 10,
-          "Singapore": 9,
           "Australia": 8,
           "Ireland": 7,
           "France": 5,
+          "India": 4,
           "Switzerland": 4,
           "Canada": 3,
-          "India": 2,
           "Spain": 1,
           "Italy": 1
         },
         "scanned": 26,
         "signals": [
+          {
+            "key": "distributed",
+            "label": "Distributed across time zones",
+            "severity": "high",
+            "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
+            "count": 2,
+            "examples": [
+              {
+                "title": "Applied AI Architect",
+                "location": "Bangalore, India",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390746008",
+                "matched": "across time zones",
+                "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
+              },
+              {
+                "title": "Applied AI Architect",
+                "location": "Mumbai, India",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
+                "matched": "across time zones",
+                "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
+              }
+            ]
+          },
           {
             "key": "replication",
             "label": "Cross-region replication",
@@ -232,22 +240,6 @@
                 "url": "https://job-boards.greenhouse.io/anthropic/jobs/5391151008",
                 "matched": "on call",
                 "excerpt": "fications: Hands-on experience building with LLMs and agentic tooling: prompt and workflow design, tool/function calling, MCP or comparable integration frameworks, and evaluating agent output quality Experience working across A"
-              }
-            ]
-          },
-          {
-            "key": "distributed",
-            "label": "Distributed across time zones",
-            "severity": "high",
-            "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 1,
-            "examples": [
-              {
-                "title": "Applied AI Architect",
-                "location": "Bangalore, India",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390746008",
-                "matched": "across time zones",
-                "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
               }
             ]
           },
@@ -290,7 +282,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "585 of 609 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "588 of 612 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -329,11 +321,19 @@
           "evidence": [
             {
               "kind": "job",
-              "title": "AI Operations Engineer, Partnerships",
-              "location": "San Francisco, CA",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5391151008",
-              "matched": "on call",
-              "excerpt": "fications: Hands-on experience building with LLMs and agentic tooling: prompt and workflow design, tool/function calling, MCP or comparable integration frameworks, and evaluating agent output quality Experience working across A"
+              "title": "Applied AI Architect",
+              "location": "Bangalore, India",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390746008",
+              "matched": "across time zones",
+              "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
+            },
+            {
+              "kind": "job",
+              "title": "Applied AI Architect",
+              "location": "Mumbai, India",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
+              "matched": "across time zones",
+              "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
             }
           ],
           "question": "For out-of-hours incidents, who is on the rotation, where are they, and is their access to customer data logged and reviewable by the customer?"
@@ -424,11 +424,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 41,
+        "total": 70,
         "footprint": 24,
-        "access": 13,
+        "access": 17,
         "transparency": 4,
-        "record": 0
+        "record": 25
       },
       "drift": [
         {
@@ -520,11 +520,8 @@
           "sha256": "8d3c9629d73c5991",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2018-05-14",
-            "last": "2018-09-15"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -537,7 +534,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -549,8 +546,11 @@
           "sha256": "3669d59798194699",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 156,
+            "revisions": 155,
+            "first": "2018-11-17",
+            "last": "2026-08-18"
           }
         },
         {
@@ -563,15 +563,15 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ReadTimeout"
+            "reason": "http 503"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 379,
+        "total": 378,
         "placeable": 5,
-        "unplaceable": 374,
+        "unplaceable": 373,
         "eea": 2,
         "non_eea": 3,
         "countries": {
@@ -687,15 +687,8 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 2,
+            "count": 1,
             "examples": [
-              {
-                "title": "People Operations Specialist, Singapore (6 Month Contract)",
-                "location": "Hybrid",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/8161038?gh_jid=8161038",
-                "matched": "Zendesk",
-                "excerpt": "dynamic environment, with the ability to manage shifting priorities efficiently. Familiarity with Workday or Zendesk would be an advantage. &nbsp; What Makes Cloudflare Special? We’re not just a highly ambitious, large-scale t"
-              },
               {
                 "title": "Principal Engineer - GTM Data Platform",
                 "location": "Hybrid",
@@ -876,11 +869,8 @@
           "sha256": "5ba0ae3eedc6b12d",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2017-06-30",
-            "last": "2025-04-25"
+            "ok": false,
+            "reason": "ReadTimeout"
           }
         },
         {
@@ -908,47 +898,44 @@
           "sha256": "30731a3ad8d38ffb",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 21,
-            "revisions": 20,
-            "first": "2024-05-24",
-            "last": "2026-08-24"
+            "ok": false,
+            "reason": "ReadTimeout"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 453,
-        "placeable": 453,
+        "total": 454,
+        "placeable": 454,
         "unplaceable": 0,
-        "eea": 99,
+        "eea": 100,
         "non_eea": 354,
         "countries": {
           "United States": 217,
           "France": 56,
           "Japan": 47,
-          "Ireland": 25,
-          "United Kingdom": 24,
-          "Singapore": 20,
-          "Netherlands": 19,
+          "Ireland": 26,
+          "United Kingdom": 25,
+          "Netherlands": 20,
+          "Singapore": 19,
           "Brazil": 17,
           "Spain": 15,
           "South Korea": 13,
-          "Australia": 12,
+          "Australia": 11,
           "India": 8,
           "Portugal": 7,
           "Germany": 7,
           "Italy": 5,
           "Sweden": 4,
+          "Israel": 3,
           "Denmark": 3,
           "Indonesia": 3,
           "Mexico": 3,
-          "Israel": 2,
           "Switzerland": 2,
           "Colombia": 1,
           "Chile": 1,
-          "Austria": 1,
           "Poland": 1,
+          "Austria": 1,
           "Saudi Arabia": 1
         },
         "scanned": 26,
@@ -1149,8 +1136,8 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 37,
-        "footprint": 20,
+        "total": 36,
+        "footprint": 19,
         "access": 17,
         "transparency": 0,
         "record": 0
@@ -1349,11 +1336,8 @@
           "sha256": "ff0e2b002da0ad9f",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2008-07-19",
-            "last": "2020-05-01"
+            "ok": false,
+            "reason": "http 503"
           }
         },
         {
@@ -1365,11 +1349,8 @@
           "sha256": "92101146b860c664",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 232,
-            "revisions": 231,
-            "first": "2022-05-27",
-            "last": "2026-09-19"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -1381,27 +1362,24 @@
           "sha256": "08c0eec1eefcd1e4",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 104,
-            "revisions": 103,
-            "first": "2022-12-05",
-            "last": "2026-09-17"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 665,
-        "placeable": 593,
-        "unplaceable": 72,
-        "eea": 76,
+        "total": 668,
+        "placeable": 595,
+        "unplaceable": 73,
+        "eea": 78,
         "non_eea": 517,
         "countries": {
           "United States": 319,
-          "Ireland": 63,
+          "Ireland": 64,
           "Canada": 52,
-          "Singapore": 51,
-          "United Kingdom": 43,
+          "Singapore": 50,
+          "United Kingdom": 44,
           "India": 38,
           "Mexico": 27,
           "Australia": 11,
@@ -1413,6 +1391,7 @@
           "Germany": 2,
           "Spain": 2,
           "Brazil": 2,
+          "Italy": 1,
           "Sweden": 1,
           "Luxembourg": 1,
           "New Zealand": 1,
@@ -1636,11 +1615,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 41,
+        "total": 66,
         "footprint": 22,
         "access": 19,
         "transparency": 0,
-        "record": 0
+        "record": 25
       },
       "drift": []
     },
@@ -1661,11 +1640,8 @@
           "sha256": "14b1ae957872913e",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 303,
-            "revisions": 302,
-            "first": "2024-01-18",
-            "last": "2026-09-17"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -1677,11 +1653,8 @@
           "sha256": "4bde694018c282cd",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 15,
-            "revisions": 14,
-            "first": "2025-04-01",
-            "last": "2026-09-09"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -1693,28 +1666,25 @@
           "sha256": "afbbe2131f13839e",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 82,
-            "revisions": 81,
-            "first": "2019-04-01",
-            "last": "2026-09-14"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 152,
-        "placeable": 152,
+        "total": 153,
+        "placeable": 153,
         "unplaceable": 0,
         "eea": 13,
-        "non_eea": 139,
+        "non_eea": 140,
         "countries": {
           "United States": 99,
           "United Kingdom": 19,
           "Japan": 8,
           "Germany": 7,
           "France": 6,
-          "Singapore": 4,
+          "Singapore": 5,
           "Australia": 4,
           "Brazil": 3,
           "India": 1,
@@ -1851,7 +1821,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "139 of 152 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "140 of 153 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -1962,11 +1932,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 48,
+        "total": 73,
         "footprint": 23,
         "access": 25,
         "transparency": 0,
-        "record": 0
+        "record": 25
       },
       "drift": [
         {
@@ -2093,7 +2063,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "http 503"
           }
         },
         {
@@ -2119,23 +2089,20 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": true,
-            "captures": 24,
-            "revisions": 23,
-            "first": "2023-11-29",
-            "last": "2026-07-07"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 216,
+        "total": 215,
         "placeable": 208,
-        "unplaceable": 8,
+        "unplaceable": 7,
         "eea": 32,
         "non_eea": 176,
         "countries": {
-          "United States": 99,
+          "United States": 100,
           "Canada": 60,
           "United Kingdom": 45,
           "India": 29,
@@ -2150,8 +2117,8 @@
           "Japan": 4,
           "Mexico": 3,
           "Spain": 3,
-          "United Arab Emirates": 3,
           "South Korea": 2,
+          "United Arab Emirates": 2,
           "Brazil": 1,
           "Austria": 1,
           "Philippines": 1,
@@ -2464,11 +2431,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 52,
+        "total": 75,
         "footprint": 21,
         "access": 25,
         "transparency": 4,
-        "record": 2
+        "record": 25
       },
       "drift": [
         {
@@ -2509,27 +2476,24 @@
           "sha256": "2b4ba1b47e64f285",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2018-05-23",
-            "last": "2026-02-01"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 358,
-        "placeable": 358,
+        "total": 357,
+        "placeable": 357,
         "unplaceable": 0,
-        "eea": 147,
+        "eea": 146,
         "non_eea": 211,
         "countries": {
           "United States": 109,
-          "Spain": 36,
+          "Spain": 35,
           "Canada": 31,
-          "Greece": 21,
           "Portugal": 21,
+          "Greece": 21,
           "Ireland": 20,
           "United Kingdom": 18,
           "India": 15,
@@ -2567,15 +2531,15 @@
             "examples": [
               {
                 "title": "Associate Corporate Counsel - Legal Product, IP, and Marketing",
-                "location": "Canada",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8122981&gh_jid=8122981",
+                "location": "United States",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8093273&gh_jid=8093273",
                 "matched": "across time zones",
                 "excerpt": "orkflows and \"productization\" processes that help a legal team scale. Global Perspective: Comfortable working across time zones and cultures in a distributed culture with a flexible approach to problem-solving. Compensation for this role"
               },
               {
                 "title": "Associate Corporate Counsel - Legal Product, IP, and Marketing",
-                "location": "United States",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8093273&gh_jid=8093273",
+                "location": "Canada",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8122981&gh_jid=8122981",
                 "matched": "across time zones",
                 "excerpt": "orkflows and \"productization\" processes that help a legal team scale. Global Perspective: Comfortable working across time zones and cultures in a distributed culture with a flexible approach to problem-solving. Compensation for this role"
               },
@@ -2766,11 +2730,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 57,
+        "total": 82,
         "footprint": 15,
         "access": 25,
         "transparency": 17,
-        "record": 0
+        "record": 25
       },
       "drift": [
         {
@@ -2877,11 +2841,8 @@
           "sha256": "1089987c0a57208c",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 35,
-            "revisions": 34,
-            "first": "2026-06-08",
-            "last": "2026-09-18"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -2893,11 +2854,8 @@
           "sha256": "c6f2954ea450f34e",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 156,
-            "revisions": 155,
-            "first": "2020-04-23",
-            "last": "2026-09-19"
+            "ok": false,
+            "reason": "http 503"
           }
         }
       ],
@@ -3095,11 +3053,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 50,
+        "total": 75,
         "footprint": 23,
         "access": 19,
         "transparency": 8,
-        "record": 0
+        "record": 25
       },
       "drift": [
         {
