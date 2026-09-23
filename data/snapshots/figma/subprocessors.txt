@@ -1,9 +1,9 @@
 # source: https://www.figma.com/sub-processors/
-# collected: 2026-09-22
+# collected: 2026-09-23
 
 Figma Sub-processors
 Last Updated:
-August 7, 2026
+September 22, 2026
 This page lists the sub-processors that Figma engages to process Customer Content (as defined in
 Figma’s Data Processing Addendum
 ) on behalf of Customers and to support the delivery of our offerings, products and services (“Services”).
@@ -38,11 +38,22 @@ Community, Figma AI, Figma Weave
 Content moderation and safety filtering
 United States
 Prompt Inputs and Outputs
+Automattic Inc.
+(Akismet)
+Community, Figma AI, Figma Weave
+Content moderation and safety filtering
+United States
+Prompt Inputs and Outputs
 Cloudflare, Ltd.
 All Services
 Web infrastructure
 United States
 Identifiers associated with Customer accounts and their authorized users (such as name, email address, user ID, IP address) (“Authorized User Data”)
+Cloudinary
+Figma Weave
+Cloud Infrastructure Provider
+United States
+Customer Content containing Image and Video
 Datadog, Inc.
 All Services
 Infrastructure monitoring and debugging
@@ -150,6 +161,11 @@ Applicable Service(s)
 Processing Activities
 Location
 Categories of Personal Data Processed
+Anthropic PBC
+Figma Weave
+AI model provider
+United States
+Prompt Inputs and Outputs
 Bria Artificial Intelligence Ltd
 Figma Weave
 Selectable AI model provider
@@ -183,6 +199,11 @@ Freepik, Inc.
 Figma Weave
 Selectable AI model provider
 Belgium, Netherlands, Spain
+Prompt Inputs and Outputs
+Google LLC
+Figma Weave
+AI model provider
+United States
 Prompt Inputs and Outputs
 Kling AI Pte.
 Ltd.
@@ -220,6 +241,8 @@ Figma Weave
 Selectable AI model provider
 United States
 Prompt Inputs and Outputs
+* These sub-processors are used by Weave Tools, a Figma AI feature powered by Figma Weave.
+When using Weave Tools, Users select the tool rather than the specific underlying model.
 Customer Communication and Support
 Sub-processor
 Applicable Service(s)
