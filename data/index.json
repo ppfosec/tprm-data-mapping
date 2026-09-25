@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T08:45:02+00:00",
+  "generated_at": "2026-09-25T09:12:30+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -154,11 +154,8 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": true,
-            "captures": 68,
-            "revisions": 67,
-            "first": "2024-09-26",
-            "last": "2026-09-23"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -170,27 +167,24 @@
           "sha256": "b5c2883bfc8d9aed",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 45,
-            "revisions": 44,
-            "first": "2026-07-14",
-            "last": "2026-09-24"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 630,
-        "placeable": 628,
+        "total": 623,
+        "placeable": 621,
         "unplaceable": 2,
-        "eea": 27,
-        "non_eea": 601,
+        "eea": 26,
+        "non_eea": 595,
         "countries": {
-          "United States": 501,
+          "United States": 494,
           "United Kingdom": 53,
           "Japan": 14,
           "South Korea": 12,
-          "Singapore": 10,
+          "Singapore": 11,
           "Germany": 10,
           "Ireland": 8,
           "Australia": 7,
@@ -198,7 +192,6 @@
           "India": 4,
           "Canada": 3,
           "Switzerland": 3,
-          "Spain": 1,
           "Italy": 1,
           "Belgium": 1
         },
@@ -213,15 +206,15 @@
             "examples": [
               {
                 "title": "Applied AI Architect",
-                "location": "Mumbai, India",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
+                "location": "Bangalore, India",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390746008",
                 "matched": "across time zones",
                 "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
               },
               {
                 "title": "Applied AI Architect",
-                "location": "Bangalore, India",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390746008",
+                "location": "Mumbai, India",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
                 "matched": "across time zones",
                 "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
               }
@@ -282,7 +275,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "601 of 628 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "595 of 621 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -291,7 +284,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 501 open roles"
+              "excerpt": "United States: 494 open roles"
             },
             {
               "kind": "stat",
@@ -322,16 +315,16 @@
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Mumbai, India",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
+              "location": "Bangalore, India",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390746008",
               "matched": "across time zones",
               "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
             },
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Bangalore, India",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390746008",
+              "location": "Mumbai, India",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
               "matched": "across time zones",
               "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
             }
@@ -533,8 +526,11 @@
           "sha256": "d999aff5712a68aa",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 305,
+            "revisions": 304,
+            "first": "2021-09-03",
+            "last": "2026-09-22"
           }
         },
         {
@@ -572,9 +568,9 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 382,
+        "total": 387,
         "placeable": 4,
-        "unplaceable": 378,
+        "unplaceable": 383,
         "eea": 1,
         "non_eea": 3,
         "countries": {
@@ -658,6 +654,22 @@
                 "url": "https://boards.greenhouse.io/cloudflare/jobs/8131824?gh_jid=8131824",
                 "matched": "Travel up to 40%",
                 "excerpt": "eation and delivery. Contribute industry expertise to guide Cloudflare’s go-to-market and platform evolution. Travel up to 40% during the quarter to support partner engagements, attend conferences, represent Cloudflare at industry event"
+              }
+            ]
+          },
+          {
+            "key": "replication",
+            "label": "Cross-region replication",
+            "severity": "high",
+            "why": "Resilience design moves copies by default, and failover does not ask permission.",
+            "count": 1,
+            "examples": [
+              {
+                "title": "Network Deployment Engineer",
+                "location": "Hybrid",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8099671?gh_jid=8099671",
+                "matched": "multi-region",
+                "excerpt": "g concepts (Nginx, HAProxy). Basic program management experience using JIRA, Excel, or Google Sheets to track multi-region rollouts. Multi-lingual capabilities and experience managing infrastructure across diverse international regi"
               }
             ]
           },
@@ -887,11 +899,8 @@
           "sha256": "5ba0ae3eedc6b12d",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2017-06-30",
-            "last": "2025-04-19"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -903,11 +912,8 @@
           "sha256": "0872909011330b18",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 33,
-            "revisions": 32,
-            "first": "2022-05-28",
-            "last": "2026-08-03"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -929,23 +935,23 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 443,
-        "placeable": 443,
+        "total": 448,
+        "placeable": 448,
         "unplaceable": 0,
-        "eea": 96,
-        "non_eea": 347,
+        "eea": 99,
+        "non_eea": 349,
         "countries": {
-          "United States": 212,
-          "France": 54,
-          "Japan": 47,
+          "United States": 214,
+          "France": 56,
+          "Japan": 48,
           "Ireland": 23,
-          "United Kingdom": 22,
           "Netherlands": 21,
-          "Singapore": 18,
-          "Brazil": 16,
+          "United Kingdom": 21,
+          "Singapore": 17,
+          "Brazil": 17,
           "Spain": 15,
-          "South Korea": 13,
-          "Australia": 12,
+          "South Korea": 14,
+          "Australia": 13,
           "India": 10,
           "Germany": 7,
           "Portugal": 6,
@@ -996,15 +1002,15 @@
             "examples": [
               {
                 "title": "Global Safety & Security Manager",
-                "location": "Singapore, Singapore",
-                "url": "https://careers.datadoghq.com/detail/8223272/?gh_jid=8223272",
+                "location": "Sydney, Australia",
+                "url": "https://careers.datadoghq.com/detail/8224963/?gh_jid=8224963",
                 "matched": "international travel",
                 "excerpt": "ice and collaboration. This position is based in our Sydney or Singapore office and will require domestic and international travel. The role will focus particularly on developing our safety compliance, security program development and matur"
               },
               {
                 "title": "Global Safety & Security Manager",
-                "location": "Sydney, Australia",
-                "url": "https://careers.datadoghq.com/detail/8224963/?gh_jid=8224963",
+                "location": "Singapore, Singapore",
+                "url": "https://careers.datadoghq.com/detail/8223272/?gh_jid=8223272",
                 "matched": "international travel",
                 "excerpt": "ice and collaboration. This position is based in our Sydney or Singapore office and will require domestic and international travel. The role will focus particularly on developing our safety compliance, security program development and matur"
               }
@@ -1176,11 +1182,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 40,
-        "footprint": 20,
+        "total": 44,
+        "footprint": 19,
         "access": 20,
         "transparency": 0,
-        "record": 0
+        "record": 5
       },
       "drift": [
         {
@@ -1376,11 +1382,8 @@
           "sha256": "ff0e2b002da0ad9f",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2008-07-19",
-            "last": "2020-04-30"
+            "ok": false,
+            "reason": "ReadTimeout"
           }
         },
         {
@@ -1392,8 +1395,11 @@
           "sha256": "92101146b860c664",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 243,
+            "revisions": 242,
+            "first": "2022-05-27",
+            "last": "2026-09-21"
           }
         },
         {
@@ -1412,19 +1418,19 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 692,
-        "placeable": 614,
-        "unplaceable": 78,
-        "eea": 79,
-        "non_eea": 535,
+        "total": 691,
+        "placeable": 615,
+        "unplaceable": 76,
+        "eea": 82,
+        "non_eea": 533,
         "countries": {
-          "United States": 330,
-          "Ireland": 64,
-          "Canada": 54,
-          "Singapore": 52,
+          "United States": 327,
+          "Ireland": 67,
+          "Singapore": 53,
+          "Canada": 50,
           "United Kingdom": 43,
-          "India": 38,
-          "Mexico": 30,
+          "India": 40,
+          "Mexico": 31,
           "Australia": 11,
           "Japan": 4,
           "Germany": 3,
@@ -1684,7 +1690,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ReadTimeout"
+            "reason": "ConnectionError"
           }
         },
         {
@@ -1722,21 +1728,21 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 159,
-        "placeable": 159,
+        "total": 162,
+        "placeable": 162,
         "unplaceable": 0,
-        "eea": 13,
-        "non_eea": 146,
+        "eea": 14,
+        "non_eea": 148,
         "countries": {
-          "United States": 103,
+          "United States": 107,
           "United Kingdom": 19,
+          "Germany": 8,
           "Japan": 8,
-          "Germany": 7,
-          "Singapore": 6,
           "France": 6,
+          "Singapore": 5,
           "Australia": 4,
           "Brazil": 3,
-          "India": 2,
+          "India": 1,
           "Israel": 1
         },
         "scanned": 26,
@@ -1870,7 +1876,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "146 of 159 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "148 of 162 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -1879,7 +1885,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 103 open roles"
+              "excerpt": "United States: 107 open roles"
             },
             {
               "kind": "stat",
@@ -2189,20 +2195,20 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 207,
-        "placeable": 199,
+        "total": 201,
+        "placeable": 193,
         "unplaceable": 8,
-        "eea": 27,
-        "non_eea": 172,
+        "eea": 25,
+        "non_eea": 168,
         "countries": {
-          "United States": 100,
+          "United States": 98,
           "Canada": 60,
-          "United Kingdom": 43,
-          "India": 28,
-          "Poland": 13,
+          "United Kingdom": 41,
+          "India": 27,
           "Germany": 11,
+          "Poland": 10,
           "Israel": 9,
-          "Ireland": 7,
+          "Ireland": 8,
           "France": 5,
           "Netherlands": 5,
           "Singapore": 5,
@@ -2225,7 +2231,7 @@
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 13,
+            "count": 14,
             "examples": [
               {
                 "title": "Customer Success Architect",
@@ -2235,18 +2241,18 @@
                 "excerpt": "ons, guide roadmaps, and navigate escalations.&nbsp; We work in an all-remote, asynchronous way, coordinating across time zones to support a focused set of strategic accounts and ensure long-term customer success. How GitLab Supports Ful"
               },
               {
+                "title": "Director, Legal - Employment",
+                "location": "Remote Ireland; Remote, United Kingdom",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8842584002",
+                "matched": "globally distributed",
+                "excerpt": "ions outside EMEA as needed. Use GitLab to collaborate transparently and work effectively in an asynchronous, globally distributed environment. What you’ll bring A Juris Doctor (JD), Bachelor of Laws (LLB), or local equivalent, admitted to"
+              },
+              {
                 "title": "Director, Support (Bengaluru)",
                 "location": "Bangalore, India",
                 "url": "https://job-boards.greenhouse.io/gitlab/jobs/8629019002",
                 "matched": "across time zones",
                 "excerpt": "lve complex problems collectively, participate in pairing sessions and one-on-ones, and stay in communication across time zones through deliberate asynchronous work habits. Support is where customers meet GitLab, and we take that serious"
-              },
-              {
-                "title": "Engineering Manager, Core DevOps",
-                "location": "Remote, Canada; Remote, United States",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8789547002",
-                "matched": "globally distributed",
-                "excerpt": "se products or services of GitLab. An overview of this role In this role, you'll build, manage, and support a globally distributed engineering team delivering high-quality, reliable platform capabilities and user experiences. You'll hire an"
               }
             ]
           },
@@ -2343,13 +2349,6 @@
             "count": 26,
             "examples": [
               {
-                "title": "Associate Revenue Operations Analyst, Policy & Rules of Engagement",
-                "location": "Remote, United States",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8808115002",
-                "matched": "itar",
-                "excerpt": "or physical disability, genetic information (including family medical history), discharge status from the military, protected veteran status (which includes disabled veterans, recently separated veterans, active duty wartim"
-              },
-              {
                 "title": "Customer Success Architect",
                 "location": "Remote, United States",
                 "url": "https://job-boards.greenhouse.io/gitlab/jobs/8742716002",
@@ -2362,6 +2361,13 @@
                 "url": "https://job-boards.greenhouse.io/gitlab/jobs/8646852002",
                 "matched": "itar",
                 "excerpt": "or physical disability, genetic information (including family medical history), discharge status from the military, protected veteran status (which includes disabled veterans, recently separated veterans, active duty wartim"
+              },
+              {
+                "title": "Director, Engineering, Platform Operations & Productivity",
+                "location": "Bangalore, India",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8626772002",
+                "matched": "itar",
+                "excerpt": "or physical disability, genetic information (including family medical history), discharge status from the military, protected veteran status (which includes disabled veterans, recently separated veterans, active duty wartim"
               }
             ]
           },
@@ -2370,15 +2376,8 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 7,
+            "count": 6,
             "examples": [
-              {
-                "title": "Associate Revenue Operations Analyst, Policy & Rules of Engagement",
-                "location": "Remote, United States",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8808115002",
-                "matched": "Salesforce",
-                "excerpt": "e Field Sales team. Respond to policy questions and support the resolution of policy-related disputes through Salesforce Chatter, case requests, and the Sales Support Slack channel. Apply established policies carefully and identif"
-              },
               {
                 "title": "Customer Success Architect, CEUR",
                 "location": "Remote, Germany",
@@ -2392,6 +2391,13 @@
                 "url": "https://job-boards.greenhouse.io/gitlab/jobs/8629019002",
                 "matched": "Zendesk",
                 "excerpt": "ry tooling, Kubernetes, or cloud-native infrastructure, along with experience using support platforms such as Zendesk, Salesforce, Decagon, or equivalent tools. Experience with GitLab as a user, administrator, or customer is he"
+              },
+              {
+                "title": "Intermediate Support Engineer",
+                "location": "Bangalore, India",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8687026002",
+                "matched": "Zendesk",
+                "excerpt": "hat you’ll do Support a mix of Self-managed and GitLab.com (SaaS) customers, resolving complex issues through Zendesk tickets, merge requests, email, and video calls. Collaborate with Product, Development, Infrastructure, Custo"
               }
             ]
           }
@@ -2405,14 +2411,6 @@
           "detail": "Engineering job descriptions name Salesforce, but it does not appear anywhere in the legal documents collected including the sub-processor list at https://about.gitlab.com/privacy/subprocessors/.",
           "claim": null,
           "evidence": [
-            {
-              "kind": "job",
-              "title": "Associate Revenue Operations Analyst, Policy & Rules of Engagement",
-              "location": "Remote, United States",
-              "url": "https://job-boards.greenhouse.io/gitlab/jobs/8808115002",
-              "matched": "Salesforce",
-              "excerpt": "e Field Sales team. Respond to policy questions and support the resolution of policy-related disputes through Salesforce Chatter, case requests, and the Sales Support Slack channel. Apply established policies carefully and identif"
-            },
             {
               "kind": "job",
               "title": "Director, Support (Bengaluru)",
@@ -2445,11 +2443,11 @@
             },
             {
               "kind": "job",
-              "title": "Director, Support (Bengaluru)",
-              "location": "Bangalore, India",
-              "url": "https://job-boards.greenhouse.io/gitlab/jobs/8629019002",
-              "matched": "across time zones",
-              "excerpt": "lve complex problems collectively, participate in pairing sessions and one-on-ones, and stay in communication across time zones through deliberate asynchronous work habits. Support is where customers meet GitLab, and we take that serious"
+              "title": "Director, Legal - Employment",
+              "location": "Remote Ireland; Remote, United Kingdom",
+              "url": "https://job-boards.greenhouse.io/gitlab/jobs/8842584002",
+              "matched": "globally distributed",
+              "excerpt": "ions outside EMEA as needed. Use GitLab to collaborate transparently and work effectively in an asynchronous, globally distributed environment. What you’ll bring A Juris Doctor (JD), Bachelor of Laws (LLB), or local equivalent, admitted to"
             }
           ],
           "question": "For out-of-hours incidents, who is on the rotation, where are they, and is their access to customer data logged and reviewable by the customer?"
@@ -2578,42 +2576,39 @@
           "sha256": "2b4ba1b47e64f285",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2018-05-23",
-            "last": "2026-01-01"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 369,
-        "placeable": 369,
+        "total": 389,
+        "placeable": 389,
         "unplaceable": 0,
-        "eea": 158,
-        "non_eea": 211,
+        "eea": 166,
+        "non_eea": 223,
         "countries": {
-          "United States": 104,
-          "Spain": 38,
+          "United States": 112,
+          "Spain": 39,
           "Canada": 33,
-          "Ireland": 24,
-          "Portugal": 23,
-          "Greece": 22,
-          "United Kingdom": 21,
-          "Poland": 15,
-          "India": 14,
+          "Ireland": 25,
+          "Portugal": 25,
+          "Greece": 24,
+          "United Kingdom": 22,
+          "Poland": 17,
+          "India": 15,
           "Norway": 11,
           "Romania": 10,
-          "Switzerland": 8,
+          "Switzerland": 9,
           "Germany": 7,
           "Singapore": 6,
           "Brazil": 4,
           "Israel": 4,
           "Mexico": 3,
+          "Australia": 3,
           "Japan": 3,
           "Costa Rica": 2,
-          "Australia": 2,
           "United Arab Emirates": 2,
           "France": 2,
           "Saudi Arabia": 2,
@@ -2637,15 +2632,15 @@
             "examples": [
               {
                 "title": "Associate Corporate Counsel - Legal Product, IP, and Marketing",
-                "location": "Canada",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8122981&gh_jid=8122981",
+                "location": "United States",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8093273&gh_jid=8093273",
                 "matched": "across time zones",
                 "excerpt": "orkflows and \"productization\" processes that help a legal team scale. Global Perspective: Comfortable working across time zones and cultures in a distributed culture with a flexible approach to problem-solving. Compensation for this role"
               },
               {
                 "title": "Associate Corporate Counsel - Legal Product, IP, and Marketing",
-                "location": "United States",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8093273&gh_jid=8093273",
+                "location": "Canada",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8122981&gh_jid=8122981",
                 "matched": "across time zones",
                 "excerpt": "orkflows and \"productization\" processes that help a legal team scale. Global Perspective: Comfortable working across time zones and cultures in a distributed culture with a flexible approach to problem-solving. Compensation for this role"
               },
@@ -2663,7 +2658,7 @@
             "label": "Travel expected",
             "severity": "high",
             "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 10,
+            "count": 11,
             "examples": [
               {
                 "title": "Consulting Architect - Observability",
@@ -2709,15 +2704,8 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 4,
+            "count": 3,
             "examples": [
-              {
-                "title": "Consulting Architect - Search",
-                "location": "United States",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8128798&gh_jid=8128798",
-                "matched": "segment",
-                "excerpt": "erformance to meet demanding SLAs, optimizing JVM heap, garbage collection, caching layers, and Apache Lucene segment merging. High-Throughput Ingestion: Build robust ingestion pipelines and bulk indexing strategies handling hi"
-              },
               {
                 "title": "Coordinator, Marketing Operations (Fixed Term)",
                 "location": "Bangalore, India",
@@ -2731,6 +2719,13 @@
                 "url": "https://jobs.elastic.co/jobs?gh_jid=8045062&gh_jid=8045062",
                 "matched": "Salesforce",
                 "excerpt": "demands with a sense of urgency. Ability to thrive in a fast paced start-up environment. Experience with the Salesforce.com platform Experience with Microsoft Office Suite. Bonus Points Proficiency in Japanese Language is a plus."
+              },
+              {
+                "title": "IT Support Admin",
+                "location": "Sydney, Australia",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8142818&gh_jid=8142818",
+                "matched": "Salesforce",
+                "excerpt": "rk configuration and administration Experience with cloud-hosted solutions (Google Workspace, Okta, NetSuite, Salesforce) Experience working with Cisco, Meraki, HP, and other network solutions Hands-on experience with common offic"
               }
             ]
           },
@@ -2836,11 +2831,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 56,
+        "total": 81,
         "footprint": 14,
         "access": 25,
         "transparency": 17,
-        "record": 0
+        "record": 25
       },
       "drift": [
         {
@@ -2947,11 +2942,8 @@
           "sha256": "1089987c0a57208c",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 38,
-            "revisions": 37,
-            "first": "2026-06-08",
-            "last": "2026-09-22"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -2970,13 +2962,13 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 87,
-        "placeable": 82,
+        "total": 89,
+        "placeable": 84,
         "unplaceable": 5,
         "eea": 8,
-        "non_eea": 74,
+        "non_eea": 76,
         "countries": {
-          "United States": 66,
+          "United States": 68,
           "United Kingdom": 16,
           "Germany": 8,
           "Australia": 3,
@@ -3176,11 +3168,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 56,
+        "total": 81,
         "footprint": 23,
         "access": 25,
         "transparency": 8,
-        "record": 0
+        "record": 25
       },
       "drift": [
         {
