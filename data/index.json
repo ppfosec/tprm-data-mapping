@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T08:51:51+00:00",
+  "generated_at": "2026-09-27T09:36:04+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -105,11 +105,8 @@
           "sha256": "6e132921a3eb10a3",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2024-02-25",
-            "last": "2025-11-01"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -121,11 +118,8 @@
           "sha256": "8dac92944a88d6dd",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2024-02-25",
-            "last": "2026-03-01"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -137,11 +131,8 @@
           "sha256": "85c78c93175ffb26",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2024-02-21",
-            "last": "2026-03-15"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -154,11 +145,8 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": true,
-            "captures": 69,
-            "revisions": 68,
-            "first": "2024-09-26",
-            "last": "2026-09-23"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -170,23 +158,20 @@
           "sha256": "b5c2883bfc8d9aed",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 48,
-            "revisions": 47,
-            "first": "2026-07-14",
-            "last": "2026-09-26"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 619,
-        "placeable": 617,
+        "total": 618,
+        "placeable": 616,
         "unplaceable": 2,
         "eea": 26,
-        "non_eea": 591,
+        "non_eea": 590,
         "countries": {
-          "United States": 489,
+          "United States": 488,
           "United Kingdom": 53,
           "Japan": 15,
           "South Korea": 12,
@@ -212,15 +197,15 @@
             "examples": [
               {
                 "title": "Applied AI Architect",
-                "location": "Mumbai, India",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
+                "location": "Bangalore, India",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390746008",
                 "matched": "across time zones",
                 "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
               },
               {
                 "title": "Applied AI Architect",
-                "location": "Bangalore, India",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390746008",
+                "location": "Mumbai, India",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
                 "matched": "across time zones",
                 "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
               }
@@ -281,7 +266,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "591 of 617 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "590 of 616 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -290,7 +275,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 489 open roles"
+              "excerpt": "United States: 488 open roles"
             },
             {
               "kind": "stat",
@@ -321,16 +306,16 @@
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Mumbai, India",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
+              "location": "Bangalore, India",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390746008",
               "matched": "across time zones",
               "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
             },
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Bangalore, India",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390746008",
+              "location": "Mumbai, India",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
               "matched": "across time zones",
               "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
             }
@@ -423,11 +408,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 44,
+        "total": 69,
         "footprint": 24,
         "access": 16,
         "transparency": 4,
-        "record": 0
+        "record": 25
       },
       "drift": [
         {
@@ -536,8 +521,8 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 307,
-            "revisions": 306,
+            "captures": 308,
+            "revisions": 307,
             "first": "2021-09-03",
             "last": "2026-09-22"
           }
@@ -577,9 +562,9 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 395,
+        "total": 394,
         "placeable": 4,
-        "unplaceable": 391,
+        "unplaceable": 390,
         "eea": 1,
         "non_eea": 3,
         "countries": {
@@ -953,13 +938,13 @@
         "total": 449,
         "placeable": 449,
         "unplaceable": 0,
-        "eea": 99,
-        "non_eea": 350,
+        "eea": 98,
+        "non_eea": 351,
         "countries": {
-          "United States": 215,
+          "United States": 216,
           "France": 56,
           "Japan": 48,
-          "Ireland": 23,
+          "Ireland": 22,
           "Netherlands": 21,
           "United Kingdom": 21,
           "Singapore": 17,
@@ -1017,15 +1002,15 @@
             "examples": [
               {
                 "title": "Global Safety & Security Manager",
-                "location": "Sydney, Australia",
-                "url": "https://careers.datadoghq.com/detail/8224963/?gh_jid=8224963",
+                "location": "Singapore, Singapore",
+                "url": "https://careers.datadoghq.com/detail/8223272/?gh_jid=8223272",
                 "matched": "international travel",
                 "excerpt": "ice and collaboration. This position is based in our Sydney or Singapore office and will require domestic and international travel. The role will focus particularly on developing our safety compliance, security program development and matur"
               },
               {
                 "title": "Global Safety & Security Manager",
-                "location": "Singapore, Singapore",
-                "url": "https://careers.datadoghq.com/detail/8223272/?gh_jid=8223272",
+                "location": "Sydney, Australia",
+                "url": "https://careers.datadoghq.com/detail/8224963/?gh_jid=8224963",
                 "matched": "international travel",
                 "excerpt": "ice and collaboration. This position is based in our Sydney or Singapore office and will require domestic and international travel. The role will focus particularly on developing our safety compliance, security program development and matur"
               }
@@ -1197,8 +1182,8 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 39,
-        "footprint": 19,
+        "total": 40,
+        "footprint": 20,
         "access": 20,
         "transparency": 0,
         "record": 0
@@ -1397,8 +1382,11 @@
           "sha256": "ff0e2b002da0ad9f",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2008-07-19",
+            "last": "2020-04-30"
           }
         },
         {
@@ -1410,39 +1398,33 @@
           "sha256": "92101146b860c664",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 243,
-            "revisions": 242,
-            "first": "2022-05-27",
-            "last": "2026-09-21"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
           "kind": "subprocessors",
           "url": "https://stripe.com/legal/service-providers",
           "path": "data/snapshots/stripe/subprocessors.txt",
-          "lines": 438,
-          "chars": 16825,
-          "sha256": "08c0eec1eefcd1e4",
+          "lines": 476,
+          "chars": 17902,
+          "sha256": "b8ebc4c7ee506979",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 109,
-            "revisions": 108,
-            "first": "2022-12-05",
-            "last": "2026-09-21"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 703,
-        "placeable": 629,
+        "total": 702,
+        "placeable": 628,
         "unplaceable": 74,
         "eea": 84,
-        "non_eea": 545,
+        "non_eea": 544,
         "countries": {
-          "United States": 338,
+          "United States": 337,
           "Ireland": 69,
           "Singapore": 53,
           "Canada": 50,
@@ -1491,7 +1473,7 @@
               {
                 "title": "Communities Partner Development Manager, SaaS Platforms",
                 "location": "US-Remote",
-                "url": "https://stripe.com/jobs/search?gh_jid=8138000",
+                "url": "https://stripe.com/jobs/search?gh_jid=8103952",
                 "matched": "willingness to travel",
                 "excerpt": "ayment or financial-services technology, industry trends, and the competitive landscape Bachelor’s degree and willingness to travel Preferred qualifications Experience working in the financial services or payments industry Strong written and"
               }
@@ -1546,24 +1528,6 @@
         ]
       },
       "crosschecks": [
-        {
-          "rule": "subprocessor_gap",
-          "severity": "medium",
-          "headline": "Databricks appears in hiring, not in the published documents",
-          "detail": "Engineering job descriptions name Databricks, but it does not appear anywhere in the legal documents collected including the sub-processor list at https://stripe.com/legal/service-providers.",
-          "claim": null,
-          "evidence": [
-            {
-              "kind": "job",
-              "title": "Accounting AI Solutions Lead",
-              "location": "Seattle, San Francisco, New York",
-              "url": "https://stripe.com/jobs/search?gh_jid=8103750",
-              "matched": "Databricks",
-              "excerpt": "window functions, and joins for data analysis and pipeline logic Familiarity with modern data tools (Python, Databricks, ETL/ELT processes, data pipelines) and coding with AI assistance Comprehensive understanding of AI fundament"
-            }
-          ],
-          "question": "Is Databricks a sub-processor? If it is, when was it added to the list, and were customers notified? If it never touches customer data, what is it used for?"
-        },
         {
           "rule": "subprocessor_gap",
           "severity": "low",
@@ -1678,7 +1642,7 @@
         "sensitivity_score": 30,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": false
+        "source_documents_changed": true
       },
       "score": {
         "total": 41,
@@ -1687,7 +1651,43 @@
         "transparency": 0,
         "record": 0
       },
-      "drift": []
+      "drift": [
+        {
+          "id": "stripe-subprocessors-2026-09-27",
+          "vendor_id": "stripe",
+          "vendor_name": "Stripe",
+          "document": "subprocessors",
+          "document_label": "Sub-processor list",
+          "date": "2026-09-27",
+          "url": "https://stripe.com/legal/service-providers",
+          "hunks": [
+            {
+              "before": "December 20, 2025",
+              "after": "September 27, 2026"
+            },
+            {
+              "before": "converted Stripe, Inc. into Stripe, LLC.",
+              "after": "removed all references to Stripe, Inc., as this entity no longer exists"
+            },
+            {
+              "before": "This change goes into effect on January 3, 2026",
+              "after": "removed Stripe Payments Europe, Limited - Italian Branch, and added our new Italian Affiliate, Stripe Italy S.r.l."
+            },
+            {
+              "before": "added Stripe Technology Company Limited (STC) as a Stripe Affiliate.",
+              "after": "added Metronome Technologies, Inc., a company Stripe acquired"
+            },
+            {
+              "before": "STC is a new data controller for Stripe in the EMEA and APAC regions.",
+              "after": "updated the name of LemonSqueezy, LLC to its new name Sold Through Link, LLC"
+            },
+            {
+              "before": "Please visit our",
+              "after": "added Microsoft Corporation and Snowflake, Inc. as cloud service providers"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "figma",
@@ -1707,10 +1707,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 306,
-            "revisions": 305,
+            "captures": 307,
+            "revisions": 306,
             "first": "2024-01-18",
-            "last": "2026-09-17"
+            "last": "2026-09-26"
           }
         },
         {
@@ -1738,11 +1738,8 @@
           "sha256": "6a0860b07ee4b942",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 84,
-            "revisions": 83,
-            "first": "2019-04-01",
-            "last": "2026-09-14"
+            "ok": false,
+            "reason": "ReadTimeout"
           }
         }
       ],
@@ -2171,7 +2168,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectTimeout"
+            "reason": "ConnectionError"
           }
         },
         {
@@ -2184,32 +2181,29 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": true,
-            "captures": 26,
-            "revisions": 25,
-            "first": "2023-11-29",
-            "last": "2026-07-07"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 198,
-        "placeable": 190,
+        "total": 199,
+        "placeable": 191,
         "unplaceable": 8,
         "eea": 25,
-        "non_eea": 165,
+        "non_eea": 166,
         "countries": {
           "United States": 94,
           "Canada": 59,
           "United Kingdom": 42,
-          "India": 29,
+          "India": 30,
           "Germany": 11,
           "Poland": 10,
           "Israel": 9,
           "Ireland": 8,
-          "Netherlands": 5,
           "France": 5,
+          "Netherlands": 5,
           "Singapore": 5,
           "Japan": 4,
           "Australia": 3,
@@ -2961,7 +2955,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectTimeout"
+            "reason": "ConnectionError"
           }
         }
       ],

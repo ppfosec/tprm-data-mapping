@@ -1,8 +1,8 @@
 # source: https://stripe.com/legal/service-providers
-# collected: 2026-09-26
+# collected: 2026-09-27
 
 Last updated:
-December 20, 2025
+September 27, 2026
 To support Stripe in delivering its Services, Stripe engages service providers, Sub-Processors and affiliates to assist Stripe with its data processing activities on behalf of Stripe Business Users as defined in our Stripe Services Agreement.
 Summary of Changes
 We’ve updated this page because we strive to be clear about our use of Personal Data and the third party service providers we engage.
@@ -10,28 +10,20 @@ The below outlines a few highlights of the changes we made, so please review thi
 If you have questions or queries, please
 contact us
 You will see that in our List of Affiliates we have:
-converted Stripe, Inc. into Stripe, LLC.
-This change goes into effect on January 3, 2026
-added Stripe Technology Company Limited (STC) as a Stripe Affiliate.
-STC is a new data controller for Stripe in the EMEA and APAC regions.
-Please visit our
-Privacy Center
-for more information on Stripe data controllers
-updated the description of Stripe Payment Europe Limited (SPEL) to clarify SPEL’s role in User contracting for certain jurisdictions
-updated the purpose of processing description for Stripe Payments Europe, Limited - Italian Branch to clarify this Affiliate provides local marketing and customer support services within Italy going forward
-added Stripe Technology Europe, Limited as a new Stripe Affiliate Sub-processor (although this entity was already mentioned, it wasn’t separately listed);
-Stripe Global Technology, LLC, a new Stripe Affiliate Sub-processor;
-Lemon Squeezy, LLC, an acquired Stripe Affiliate Sub-processor;
-TPS Unlimited, Inc., a Stripe-owned TaxJar entity we will start using towards the end of 2025 for Stripe Tax filings;
-Horkos, Inc.
-(d/b/a Privy), a recently-acquired company in the stablecoin space; and Bridge Ventures, LLC, Bridge Building Sp.
-Z.o.o., and Bridge Building S.A., another recently-acquired company also in the stablecoin space
-Similarly, in our list of Sub-processors we:
-added NETSTARS Co., Ltd., a payment method integration service provider for Japan
-added FreedomPay, Inc. as a payment gateway service provider for Terminal
-added Jack Henry & Associates, Inc. and Mitek Systems, Inc., two parties we use for check scanning for payments and remote deposits
-removed Khoros, LLC and replaced them with Sprinklr Inc.
-removed Romania as a processing location for Cognizant Worldwide Limited and added India
+removed all references to Stripe, Inc., as this entity no longer exists
+removed Stripe Payments Europe, Limited - Italian Branch, and added our new Italian Affiliate, Stripe Italy S.r.l.
+added Metronome Technologies, Inc., a company Stripe acquired
+updated the name of LemonSqueezy, LLC to its new name Sold Through Link, LLC
+added Microsoft Corporation and Snowflake, Inc. as cloud service providers
+added a new dedicated section for Data Pipeline and added five Cloud service providers for Stripe Data Pipeline:
+Amazon Web Services, Inc., Databricks, Inc., Google LLC, Microsoft Corporation, and Snowflake Inc.
+updated the purpose of processing description for Adish Co., Ltd. by removing “in Japanese”
+moved Inscribe AI, Inc. from the Identity subsection to the general list of Sub-processors since we also use this party for other Capital and Financial Connections
+added a new subsection for Consumer Issuing and added two Sub-processors to this category:
+LoanPro Software, LLC and January Technologies, Inc.
+removed Mitek Systems, Inc.
+added direct links to acquired Affiliate’s own sub-processors list for Bridge, TaxJar, and Privy
+updated the list of Service Providers for Terminal with new fulfillment and distribution partners
 What is a Sub-processor?
 When Stripe engages third party service providers in our capacity as a data processor for our Business Users’ personal data, the General Data Protection Regulation (“GDPR”) and a number of other global privacy frameworks call these third-party service providers sub-processors.
 Sub-processors are service providers who have or potentially will have access to or process personal data that Stripe processes for, and on behalf of, Stripe’s Business Users.
@@ -53,6 +45,14 @@ Business User data and Representative Data.
 Furthermore, in order to meet regulatory data localization requirements for Indian payment transactions, Stripe India Private Limited stores certain data on servers located in India
 Cloud service provider
 India
+Microsoft Corporation (Microsoft Azure)
+Business User and Representative data and End Customer data
+Cloud Service Provider
+United States
+Snowflake, Inc.
+Business User data and End Customer data.
+Cloud Service Provider
+United States
 Sprinklr, Inc.
 Information included in the query as provided by the requester
 Tool to help manage incoming queries via social media
@@ -77,9 +77,9 @@ Jack Henry & Associates, Inc.
 Business User data & End Customer data
 Paper check scanning and verification for electronic clearance
 United States
-Mitek Systems, Inc.
-Business User data & End Customer data
-Paper check scanning and verification for electronic clearance
+InscribeAI, Inc.
+End Customer data
+identity verification for End Customers of Business Users
 United States
 User Support
 TELUS International (Cda)
@@ -117,18 +117,23 @@ Customer service tool that supports customer interactions e.g. email
 United States
 Adish Co., Ltd.
 Information included in the queries raised by the individuals contacting Stripe support
-Provide Business User support in Japanese
+Provide Business User support
 Japan
+End Customer Credit Card Services
+LoanProSoftware, LLC
+End Customer data of customers and applicants for a credit card for personal use through a Business User.
+Loan management services
+United States
+January Technologies, Inc.
+End Customer data of customers and applicants for a credit card for personal use through a Business User.
+Manages collections relating to credit cards
+United States
 Stripe Identity
 Trulioo Information Services, Inc.
 End Customer data
 Identity verification for End Customers of Business Users
 Canada
 London Stock Exchange Group plc
-End Customer data
-Identity verification for End Customers of Business Users
-United States
-InscribeAI, Inc.
 End Customer data
 Identity verification for End Customers of Business Users
 United States
@@ -151,6 +156,27 @@ United States
 Lob.com, Inc.
 End Customer data
 Identity verification for End Customers of Business Users
+United States
+Data Pipeline
+Amazon Web Services, Inc.
+Business User data and End Customer data
+Cloud service provider for Stripe Data Pipeline
+United States
+Databricks, Inc.
+Business User data and End Customer data
+Cloud service provider for Stripe Data Pipeline
+United States
+Google LLC
+Business User data and End Customer data
+Cloud service provider for Stripe Data Pipeline
+United States
+Microsoft Corporation
+Business User data and End Customer data
+Cloud service provider for Stripe Data Pipeline
+United States
+Snowflake Inc.
+Business User data and End Customer data
+Cloud service provider for Stripe Data Pipeline
 United States
 Stripe Atlas
 LegalInc.com, Inc.
@@ -225,10 +251,10 @@ Cardholder name, PAN, CVV, expiration date, shipping address
 Printing the cards for Stripe Issuing
 United States
 Stripe Terminal
-Lantec (UK) Ltd
+Various fulfillment and distribution partners, such as Rush Order, Inc., VeriFone, Inc., POS Portal, Inc./ScanSource, Inc., Flexport, Inc., Federal Express Corporation, POSDATA Group, Inc., Technology Recovery Group Ltd., TRG Poland Sp. z o.o., and UKPR Terminal Services Limited
 Business User name and address for shipping purposes
-To enable hardware ordered from Stripe to be shipped to Business Users in Europe
-United Kingdom
+To enable hardware ordered from Stripe to be shipped to Business Users and to enable warranty claims and repairs for those hardware
+Various
 List of Affiliates
 Other Stripe Entities Involved in Offering the Services
 Stripe may need to rely on Stripe affiliates to help provide the Services to our Business Users, their Customers and our End Users.
@@ -247,8 +273,7 @@ Stripe Brokering, Inc.
 AMER
 United States
 Provide lending facilitation services to bank partners in connection with Stripe Capital loans in the United States
-Stripe, Inc.
-(until January 2, 2026) Stripe, LLC (per January 3, 2026)
+Stripe, LLC
 AMER
 United States
 Please see
@@ -268,23 +293,36 @@ Stripe Global Technology, LLC
 AMER
 United States
 UX and related services in connection with the stablecoin financial account product
-Lemon Squeezy, LLC
+Sold Through Link, LLC (fka Lemon Squeezy, LLC)
 AMER
 United States
 Merchant of record related services
-TPS Unlimited, Inc.
+TPS Unlimited, Inc.(d/b/a TaxJar)
 AMER
 United States
-Tax-filing related services
+Tax-filing related services.
+See
+here
+for TaxJar’s own sub-processor list.
 Horkos, Inc.
 (d/b/a Privy)
 AMER
 United States
-Crypto and stablecoin related services
+Crypto and stablecoin related services.
+See
+here
+for Privy’s own sub-processor list.
 Bridge Ventures, LLC
 AMER
 United States
-Crypto and stablecoin related services
+Crypto and stablecoin related services.
+See
+here
+for Bridge’s own sub-processor list.
+Metronome Technologies, Inc.
+AMER
+United States
+Usage-based billing and metering related services
 Stripe Payments Australia Pty Ltd A.C.N. 160 180 343
 APAC
 Australia
@@ -368,7 +406,7 @@ Stripe Israel Payments Ltd.
 EMEA
 Israel
 Provide local marketing and customer support services within Israel
-Stripe Payments Europe, Limited - Italian Branch
+Stripe Italy S.r.l.
 EMEA
 Italy
 Provide local marketing and customer support services within Italy
