@@ -1,5 +1,5 @@
 # source: https://stripe.com/legal/dpa
-# collected: 2026-09-27
+# collected: 2026-09-28
 
 If you would like more information on our Data Processing Agreement, please see our
 FAQs
@@ -8,17 +8,13 @@ Need a copy of this Data Processing Agreement?
 Click
 here
 Last updated:
-November 18, 2025
+September 28, 2026
+1.
+Scope.
 This Data Processing Agreement (“
 DPA
-”) is subject to and forms part of the Agreement and governs Stripe’s and its Affiliates’ Processing of Personal Data.
-1.
-Structure.
-If User's Stripe Account is located in North America or South America, User enters this DPA with Stripe, LLC.
-If User's Stripe Account is located elsewhere, User enters this DPA with Stripe Payments Europe, Limited (“
-SPEL
-”).
-Accordingly, references in this DPA to “Stripe” mean Stripe, LLC or SPEL, as applicable.
+”) is between the Stripe entity specified in the Agreement (and its Affiliate(s), collectively “Stripe”) and the User specified in the Agreement, and is subject to and incorporated by reference into the Agreement.
+This DPA governs Stripe’s and its Aﬃliates’ Processing of Personal Data.
 2.
 Stripe as Data Processor and Data Controller.
 Data Processing Roles
@@ -27,7 +23,8 @@ When Stripe Processes Personal Data as a Data Processor, it is acting as a Data 
 Stripe as a Data Controller
 When Stripe Processes Personal Data as a Data Controller it:
 - has the sole and exclusive authority to determine the purposes and means of Processing Personal Data it receives from or through User; and
-- may engage a Stripe Affiliate to act as (a) a Joint Controller to provide Authorized Services; and (b) a Data Processor to provide services other than Authorized Services.
+- may engage a Stripe Aﬃliate to act as (a) a Joint Controller to provide products and services, including Authorized Services;
+(b) an independent Data Controller to provide Authorized Services; and (c) a Data Processor to provide services other than Authorized Services.
 Data Processing Purposes
 Stripe as a Data Processor
 The purposes of Stripe’s Processing of Personal Data in its capacity as a Data Processor are to:
@@ -46,7 +43,7 @@ Stripe as a Data Processor and a Data Controller
 Data Subjects
 Stripe may Process the Personal Data of Customers, representatives and any natural person who accesses or uses the Stripe Account.
 Personal Data
-If applicable, Stripe may Process Payment Method Account Details, bank account details, billing/shipping address, name, order description (including date, time, amount, product or service description), device ID, email address, IP address/location, order ID, payment card details, tax ID/status, unique customer identifier, identity information including government issued documents (e.g., national IDs, driver’s licenses and passports).
+If applicable, Stripe may Process Payment Method Account Details, bank account details, billing/shipping address, name, order description (including date, time, amount, product or service description), device ID, email address, IP address/location, order ID, payment card details, tax ID/status, unique customer identiﬁer, identity information including government issued documents (e.g., national IDs, driver’s licenses and passports), cryptocurrency wallet address.
 Sensitive Data
 If applicable, Stripe may Process Sensitive Data (e.g., facial recognition data).
 Duration of Processing
@@ -67,7 +64,7 @@ Stripe will inform User if, in its opinion, Instructions violate or infringe DP 
 (iii) restrict or object to Stripe’s Processing; or (iv) data portability (collectively “
 Data Subject Request
 ”).
-Other than to request further information, identify the Data Subject, and, if applicable, direct the Data Subject to User as Data Controller, Stripe will not respond to these requests unless User instruct Stripe in writing to do so.
+Other than to request further information, identify the Data Subject, and, if applicable, direct the Data Subject to User as Data Controller, Stripe will not respond to these requests unless User instructs Stripe in writing to do so.
 Taking into account the nature of the Processing, Stripe will assist User by appropriate technical and organizational measures, insofar as this is possible, to enable User to meet its obligation to respond to a Data Subject Request;
 (d) inform User of each law enforcement request Stripe receives from a Governmental Authority requiring Stripe to disclose Personal Data or participate in an investigation requiring Stripe to disclose Personal Data, unless prohibited by Law;
 (e) provide User with reasonable assistance, following User's written request, to help User comply with its obligations under DP Law and, taking into account the nature of the Processing and the information available to Stripe, Stripe will provide reasonable information to help User conduct a data protection impact assessment or consult with a Supervisory Authority.
@@ -87,12 +84,14 @@ User may reasonably object to a change on legitimate grounds within 30 days afte
 User acknowledges that Stripe’s Sub-processors are essential to provide the Services and that if User objects to Stripe’s use of a Sub-processor, then notwithstanding anything to the contrary in the Agreement (including this DPA), Stripe will not be obligated to provide User the Services for which Stripe uses that Sub-processor.
 (b) Stripe will enter into a written agreement with each Sub-processor that imposes on that Sub-processor obligations comparable to those imposed on Stripe under this DPA, including the obligation to implement appropriate Data Security Measures.
 If a Sub-processor fails to fulfill its data protection obligations under that agreement, Stripe will remain liable to User for the acts and omissions of its Sub-processor to the same extent Stripe would be liable if performing the relevant Services directly under this DPA.
-3.3 CCPA.
-To the extent the CCPA applies and Stripe is acting as a Data Processor, Stripe will not (except to provide Stripe's services as permitted by Law):
-(a) sell or share (as defined under the CCPA) Personal Data;
-(b) retain, use or disclose Personal Data outside of its direct business relationship with User other than to provide Stripe’s products and services and as required to comply with Law; and (c) combine Personal Data received from or through User with Personal Data received from or on behalf of an individual or collected from Stripe's own interactions with the individual.
-Stripe certifies that it understands and will comply with the requirements in this DPA relating to the CCPA and will provide the same level of privacy protection to Personal Data as required by the CCPA.
-Stripe will inform User if it determines that it can no longer meet its obligations under the CCPA and will take reasonable and appropriate steps to remediate any unauthorized Processing of Personal Data.
+3.3 United States Specific Data Protection Obligations.
+To the extent that US State DP Law applies and Stripe is acting as a Data Processor, Stripe certifies that it understands and will comply with its obligations under US State Privacy Law to:
+(a) not sell or share (as deﬁned under the CCPA) Personal Data;
+(b) only Process Personal Data for the purposes set out in this DPA, the Agreement or otherwise permitted by Law;
+(c) not retain, use or disclose Personal Data outside of its direct business relationship with User other than to provide Stripe’s products and services and as required to comply with Law; and
+(d) not combine Personal Data received from or through User with Personal Data received from or on behalf of an individual or collected from Stripe's own interactions with the individual, unless permitted by US State DP Law or at the individual's direction.
+(e) provide no less than the level of protection to Personal Data as required by US State DP Law; and
+(f) inform User if it determines that it can no longer meet its obligations under the US State DP Law and will grant User the right to take reasonable and appropriate steps to remediate any unauthorized Processing of Personal Data.
 3.4 Disclaimer of Liability.
 Notwithstanding anything to the contrary in the Agreement, including this DPA, Stripe and its Affiliates will not be liable for any claim made by a Data Subject arising from or related to Stripe’s or any of its Affiliates’ acts or omissions, to the extent that Stripe was acting in accordance with User's Instructions.
 4.
@@ -159,10 +158,11 @@ DP Law
 ” means Law that applies to Personal Data Processing under the Agreement and this DPA, including international, federal, state, provincial and local Law relating in any way to privacy, data protection or data security.
 EEA
 ” means the European Economic Area.
-EEA SCCs
-” means Module 1 (Transfer:
-Controller to Controller) and Module 2 (Transfer:
-Controller to Processor) of the standard contractual clauses set out in the European Commission Implementing Decision (EU) 2021/914 on standard contractual clauses for the transfer of personal data to third countries according to the GDPR.
+“EEA SCCs”
+means Module 1 (Transfer:
+Controller to Controller), Module 2 (Transfer:
+Controller to Processor) and, as applicable, Module 3 (Transfer:
+Processor to Processor) of the standard contractual clauses set out in the European Commission Implementing Decision (EU) 2021/914 on standard contractual clauses for the transfer of personal data to third countries according to the GDPR.
 GDPR
 ” means General Data Protection Regulation (EU) 2016/679.
 Instructions
@@ -196,6 +196,8 @@ UK GDPR
 ” means the GDPR, as transposed into United Kingdom national law by operation of section 3 of the European Union (Withdrawal) Act 2018 and as amended by the Data Protection, Privacy and Electronic Communications (Amendments etc.) (EU Exit) Regulations 2019.
 UK International Data Transfer Addendum
 ” means the international data transfer addendum to the EEA SCCs issued by the United Kingdom’s Information Commissioner's Office.
+“US State DP Law”
+means DP Law applicable in the United States, which may include, among others, the CCPA, the Virginia Consumer Data Protection Act, the Colorado Privacy Act, the Connecticut Data Privacy Act, and the Utah Consumer Privacy Act.
 EXHIBIT:
 STRIPE DATA SECURITY
 Security Programs and Policies
@@ -296,12 +298,12 @@ Encryption
 Stripe applies data encryption mechanisms at multiple points in Stripe’s service to mitigate the risk of unauthorized access to Stripe data at rest and in transit.
 Access to Stripe cryptographic key materials is restricted to a limited number of authorized Personnel.
 Encryption in transit.
-To protect data in transit, Stripe requires all inbound and outbound data connections to be encrypted using the TLS 1.2 protocol.
-For data traversing Stripe’s internal production networks, Stripe uses mTLS to encrypt connections between production systems.
+To protect data in transit, Stripe requires all inbound and outbound data connections to be encrypted using cryptographic protocols, cipher suites, and key exchange mechanisms approved under current NIST guidelines.
+For data traversing Stripe’s internal production networks, Stripe uses mutual authentication and encryption (mTLS) to secure connections between production systems.
 Encryption at rest.
-To protect data at rest, Stripe uses industry standard encryption (AES-256) to encrypt all production data stored in server infrastructure.
+To protect data at rest, Stripe encrypts all production data stored in server infrastructure using encryption algorithms and key lengths that meet or exceed NIST recommendations for symmetric encryption.
 Payment Card and Banking Account Data Tokenization.
-Payment card and bank numbers are separately encrypted using industry standard encryption (AES-256) at the data level and stored in a separate data vault that is highly restricted.
+Payment card and bank numbers are stored in a separate, highly restricted data vault and are separately encrypted at the data level using NIST-approved symmetric encryption algorithms and key lengths.
 Decryption keys are stored on separate machines.
 Tokens are generated to support Stripe data processing.
 Reviews, Audit Reports and Security Questionnaires

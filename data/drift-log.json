@@ -1,5 +1,40 @@
 [
   {
+    "id": "stripe-dpa-2026-09-28",
+    "vendor_id": "stripe",
+    "vendor_name": "Stripe",
+    "document": "dpa",
+    "document_label": "Data processing agreement",
+    "date": "2026-09-28",
+    "url": "https://stripe.com/legal/dpa",
+    "hunks": [
+      {
+        "before": "November 18, 2025",
+        "after": "September 28, 2026"
+      },
+      {
+        "before": null,
+        "after": "1."
+      },
+      {
+        "before": null,
+        "after": "Scope."
+      },
+      {
+        "before": "”) is subject to and forms part of the Agreement and governs Stripe’s and its Affiliates’ Processing of Personal Data.",
+        "after": "”) is between the Stripe entity specified in the Agreement (and its Affiliate(s), collectively “Stripe”) and the User specified in the Agreement, and is subject to and incorporated by reference into the Agreement."
+      },
+      {
+        "before": "1.",
+        "after": "This DPA governs Stripe’s and its Aﬃliates’ Processing of Personal Data."
+      },
+      {
+        "before": "Structure.",
+        "after": null
+      }
+    ]
+  },
+  {
     "id": "stripe-subprocessors-2026-09-27",
     "vendor_id": "stripe",
     "vendor_name": "Stripe",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T09:36:04+00:00",
+  "generated_at": "2026-09-28T10:16:10+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -106,7 +106,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "http 503"
           }
         },
         {
@@ -119,7 +119,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "http 503"
           }
         },
         {
@@ -132,7 +132,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "http 503"
           }
         },
         {
@@ -146,7 +146,7 @@
           "diff": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "http 503"
           }
         },
         {
@@ -165,15 +165,15 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 618,
-        "placeable": 616,
+        "total": 617,
+        "placeable": 615,
         "unplaceable": 2,
         "eea": 26,
-        "non_eea": 590,
+        "non_eea": 589,
         "countries": {
-          "United States": 488,
-          "United Kingdom": 53,
-          "Japan": 15,
+          "United States": 487,
+          "United Kingdom": 54,
+          "Japan": 14,
           "South Korea": 12,
           "Singapore": 10,
           "Germany": 10,
@@ -266,7 +266,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "590 of 616 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "589 of 615 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -275,15 +275,15 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 488 open roles"
+              "excerpt": "United States: 487 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 53 open roles"
+              "excerpt": "United Kingdom: 54 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "Japan: 15 open roles"
+              "excerpt": "Japan: 14 open roles"
             },
             {
               "kind": "stat",
@@ -504,11 +504,8 @@
           "sha256": "8d3c9629d73c5991",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2018-05-14",
-            "last": "2018-09-15"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -520,11 +517,8 @@
           "sha256": "d999aff5712a68aa",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 308,
-            "revisions": 307,
-            "first": "2021-09-03",
-            "last": "2026-09-22"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -552,19 +546,16 @@
           "sha256": "253254e28bc2ff29",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2021-05-16",
-            "last": "2025-10-03"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 394,
+        "total": 395,
         "placeable": 4,
-        "unplaceable": 390,
+        "unplaceable": 391,
         "eea": 1,
         "non_eea": 3,
         "countries": {
@@ -893,11 +884,8 @@
           "sha256": "5ba0ae3eedc6b12d",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2017-06-30",
-            "last": "2025-04-19"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -909,11 +897,8 @@
           "sha256": "0872909011330b18",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 33,
-            "revisions": 32,
-            "first": "2022-05-28",
-            "last": "2026-08-03"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -925,25 +910,22 @@
           "sha256": "30731a3ad8d38ffb",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 21,
-            "revisions": 20,
-            "first": "2024-05-24",
-            "last": "2026-08-24"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 449,
-        "placeable": 449,
+        "total": 444,
+        "placeable": 444,
         "unplaceable": 0,
-        "eea": 98,
-        "non_eea": 351,
+        "eea": 97,
+        "non_eea": 347,
         "countries": {
           "United States": 216,
-          "France": 56,
-          "Japan": 48,
+          "France": 55,
+          "Japan": 45,
           "Ireland": 22,
           "Netherlands": 21,
           "United Kingdom": 21,
@@ -952,7 +934,7 @@
           "Spain": 15,
           "South Korea": 14,
           "Australia": 13,
-          "India": 10,
+          "India": 9,
           "Germany": 7,
           "Portugal": 6,
           "Italy": 5,
@@ -964,8 +946,8 @@
           "Switzerland": 2,
           "Colombia": 1,
           "Chile": 1,
-          "Poland": 1,
           "Austria": 1,
+          "Poland": 1,
           "Saudi Arabia": 1
         },
         "scanned": 26,
@@ -1002,15 +984,15 @@
             "examples": [
               {
                 "title": "Global Safety & Security Manager",
-                "location": "Singapore, Singapore",
-                "url": "https://careers.datadoghq.com/detail/8223272/?gh_jid=8223272",
+                "location": "Sydney, Australia",
+                "url": "https://careers.datadoghq.com/detail/8224963/?gh_jid=8224963",
                 "matched": "international travel",
                 "excerpt": "ice and collaboration. This position is based in our Sydney or Singapore office and will require domestic and international travel. The role will focus particularly on developing our safety compliance, security program development and matur"
               },
               {
                 "title": "Global Safety & Security Manager",
-                "location": "Sydney, Australia",
-                "url": "https://careers.datadoghq.com/detail/8224963/?gh_jid=8224963",
+                "location": "Singapore, Singapore",
+                "url": "https://careers.datadoghq.com/detail/8223272/?gh_jid=8223272",
                 "matched": "international travel",
                 "excerpt": "ice and collaboration. This position is based in our Sydney or Singapore office and will require domestic and international travel. The role will focus particularly on developing our safety compliance, security program development and matur"
               }
@@ -1182,11 +1164,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 40,
+        "total": 65,
         "footprint": 20,
         "access": 20,
         "transparency": 0,
-        "record": 0
+        "record": 25
       },
       "drift": [
         {
@@ -1382,24 +1364,24 @@
           "sha256": "ff0e2b002da0ad9f",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2008-07-19",
-            "last": "2020-04-30"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
           "kind": "dpa",
           "url": "https://stripe.com/legal/dpa",
           "path": "data/snapshots/stripe/dpa.txt",
-          "lines": 319,
-          "chars": 27981,
-          "sha256": "92101146b860c664",
+          "lines": 321,
+          "chars": 28681,
+          "sha256": "2da116f320774a92",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 243,
+            "revisions": 242,
+            "first": "2022-05-27",
+            "last": "2026-09-21"
           }
         },
         {
@@ -1411,8 +1393,11 @@
           "sha256": "b8ebc4c7ee506979",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 109,
+            "revisions": 108,
+            "first": "2022-12-05",
+            "last": "2026-09-21"
           }
         }
       ],
@@ -1429,7 +1414,7 @@
           "Singapore": 53,
           "Canada": 50,
           "United Kingdom": 46,
-          "India": 40,
+          "India": 39,
           "Mexico": 31,
           "Australia": 11,
           "Japan": 4,
@@ -1653,6 +1638,41 @@
       },
       "drift": [
         {
+          "id": "stripe-dpa-2026-09-28",
+          "vendor_id": "stripe",
+          "vendor_name": "Stripe",
+          "document": "dpa",
+          "document_label": "Data processing agreement",
+          "date": "2026-09-28",
+          "url": "https://stripe.com/legal/dpa",
+          "hunks": [
+            {
+              "before": "November 18, 2025",
+              "after": "September 28, 2026"
+            },
+            {
+              "before": null,
+              "after": "1."
+            },
+            {
+              "before": null,
+              "after": "Scope."
+            },
+            {
+              "before": "”) is subject to and forms part of the Agreement and governs Stripe’s and its Affiliates’ Processing of Personal Data.",
+              "after": "”) is between the Stripe entity specified in the Agreement (and its Affiliate(s), collectively “Stripe”) and the User specified in the Agreement, and is subject to and incorporated by reference into the Agreement."
+            },
+            {
+              "before": "1.",
+              "after": "This DPA governs Stripe’s and its Aﬃliates’ Processing of Personal Data."
+            },
+            {
+              "before": "Structure.",
+              "after": null
+            }
+          ]
+        },
+        {
           "id": "stripe-subprocessors-2026-09-27",
           "vendor_id": "stripe",
           "vendor_name": "Stripe",
@@ -1707,8 +1727,8 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 307,
-            "revisions": 306,
+            "captures": 308,
+            "revisions": 307,
             "first": "2024-01-18",
             "last": "2026-09-26"
           }
@@ -1722,11 +1742,8 @@
           "sha256": "4bde694018c282cd",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 15,
-            "revisions": 14,
-            "first": "2025-04-01",
-            "last": "2026-09-09"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -1739,7 +1756,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ReadTimeout"
+            "reason": "ConnectionError"
           }
         }
       ],
@@ -1754,12 +1771,12 @@
           "United States": 108,
           "United Kingdom": 19,
           "Germany": 8,
-          "Japan": 8,
+          "Japan": 7,
           "Singapore": 5,
           "France": 5,
           "Australia": 4,
           "Brazil": 4,
-          "India": 1,
+          "India": 2,
           "Israel": 1
         },
         "scanned": 26,
@@ -1910,7 +1927,7 @@
             },
             {
               "kind": "stat",
-              "excerpt": "Japan: 8 open roles"
+              "excerpt": "Japan: 7 open roles"
             }
           ],
           "question": "Which roles can access production data, and from which countries? Does the residency commitment cover support and engineering access, or only data at rest?"
@@ -2151,11 +2168,8 @@
           "sha256": "b8fd30b8b1e6bdaa",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2015-04-16",
-            "last": "2026-02-13"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -2168,7 +2182,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "ReadTimeout"
           }
         },
         {
@@ -2188,23 +2202,23 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 199,
-        "placeable": 191,
+        "total": 198,
+        "placeable": 190,
         "unplaceable": 8,
         "eea": 25,
-        "non_eea": 166,
+        "non_eea": 165,
         "countries": {
-          "United States": 94,
-          "Canada": 59,
-          "United Kingdom": 42,
-          "India": 30,
+          "United States": 93,
+          "Canada": 58,
+          "United Kingdom": 41,
+          "India": 29,
           "Germany": 11,
           "Poland": 10,
           "Israel": 9,
           "Ireland": 8,
+          "Singapore": 6,
           "France": 5,
           "Netherlands": 5,
-          "Singapore": 5,
           "Japan": 4,
           "Australia": 3,
           "Mexico": 2,
@@ -2524,11 +2538,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 51,
+        "total": 76,
         "footprint": 22,
         "access": 25,
         "transparency": 4,
-        "record": 0
+        "record": 25
       },
       "drift": [
         {
@@ -2658,15 +2672,15 @@
             "examples": [
               {
                 "title": "Associate Corporate Counsel - Legal Product, IP, and Marketing",
-                "location": "United States",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8093273&gh_jid=8093273",
+                "location": "Canada",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8122981&gh_jid=8122981",
                 "matched": "across time zones",
                 "excerpt": "orkflows and \"productization\" processes that help a legal team scale. Global Perspective: Comfortable working across time zones and cultures in a distributed culture with a flexible approach to problem-solving. Compensation for this role"
               },
               {
                 "title": "Associate Corporate Counsel - Legal Product, IP, and Marketing",
-                "location": "Canada",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8122981&gh_jid=8122981",
+                "location": "United States",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8093273&gh_jid=8093273",
                 "matched": "across time zones",
                 "excerpt": "orkflows and \"productization\" processes that help a legal team scale. Global Perspective: Comfortable working across time zones and cultures in a distributed culture with a flexible approach to problem-solving. Compensation for this role"
               },
@@ -2939,10 +2953,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 38,
-            "revisions": 37,
+            "captures": 39,
+            "revisions": 38,
             "first": "2026-06-08",
-            "last": "2026-09-22"
+            "last": "2026-09-27"
           }
         },
         {
@@ -2954,8 +2968,11 @@
           "sha256": "c6f2954ea450f34e",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 163,
+            "revisions": 162,
+            "first": "2020-04-23",
+            "last": "2026-09-27"
           }
         }
       ],
@@ -3049,7 +3066,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 4,
+            "count": 5,
             "examples": [
               {
                 "title": "Head of Field Engineering Operations",
@@ -3059,18 +3076,18 @@
                 "excerpt": ", Professional Services, Customer Success Engineering) Proficiency in core GTM systems and architecture (e.g. Salesforce administration and architecture, including custom objects, flows, reporting, and integration with ecosystem a"
               },
               {
+                "title": "Head of Solutions Architecture, Startups",
+                "location": "Hybrid - San Francisco, New York City, Austin",
+                "url": "https://job-boards.greenhouse.io/vercel/jobs/6119846004",
+                "matched": "segment",
+                "excerpt": "gration plans, and high-stakes presentations. Beyond running the team, you will shape how Vercel wins in this segment. You will turn patterns from the field into repeatable plays and carry what startups tell you back to our eng"
+              },
+              {
                 "title": "Marketing Operations Manager",
                 "location": "Hybrid - San Francisco, Austin",
                 "url": "https://job-boards.greenhouse.io/vercel/jobs/6144467004",
                 "matched": "Salesforce",
                 "excerpt": "r our core martech stack—including our marketing automation platform ( Customer.io ) and its integration with Salesforce, Snowflake, and downstream systems —keeping tools tightly connected and data flowing reliably Build, QA, and"
-              },
-              {
-                "title": "Software Engineer - Data Platform",
-                "location": "Remote - United States",
-                "url": "https://job-boards.greenhouse.io/vercel/jobs/6188400004",
-                "matched": "Snowflake",
-                "excerpt": "t goals, and build scalable, reliable systems using modern technologies like Kafka, ClickHouse, Tinybird, and Snowflake. You'll lead from the front, writing production-grade code, setting high standards for design and data govern"
               }
             ]
           }
