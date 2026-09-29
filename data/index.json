@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T10:16:10+00:00",
+  "generated_at": "2026-09-29T10:15:39+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -105,8 +105,11 @@
           "sha256": "6e132921a3eb10a3",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "http 503"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2024-02-25",
+            "last": "2025-11-01"
           }
         },
         {
@@ -119,7 +122,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "http 503"
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -132,7 +135,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "http 503"
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -145,8 +148,11 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": false,
-            "reason": "http 503"
+            "ok": true,
+            "captures": 71,
+            "revisions": 70,
+            "first": "2024-09-26",
+            "last": "2026-09-28"
           }
         },
         {
@@ -158,31 +164,34 @@
           "sha256": "b5c2883bfc8d9aed",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 52,
+            "revisions": 51,
+            "first": "2026-07-14",
+            "last": "2026-09-28"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 617,
-        "placeable": 615,
+        "total": 630,
+        "placeable": 628,
         "unplaceable": 2,
-        "eea": 26,
-        "non_eea": 589,
+        "eea": 25,
+        "non_eea": 603,
         "countries": {
-          "United States": 487,
-          "United Kingdom": 54,
-          "Japan": 14,
-          "South Korea": 12,
+          "United States": 491,
+          "United Kingdom": 57,
+          "Japan": 16,
+          "South Korea": 13,
           "Singapore": 10,
-          "Germany": 10,
+          "Australia": 10,
+          "Germany": 9,
           "Ireland": 8,
-          "Australia": 8,
           "France": 6,
-          "India": 4,
+          "India": 5,
+          "Switzerland": 4,
           "Canada": 3,
-          "Switzerland": 3,
           "Italy": 1,
           "Belgium": 1
         },
@@ -197,15 +206,15 @@
             "examples": [
               {
                 "title": "Applied AI Architect",
-                "location": "Bangalore, India",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390746008",
+                "location": "Mumbai, India",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
                 "matched": "across time zones",
                 "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
               },
               {
                 "title": "Applied AI Architect",
-                "location": "Mumbai, India",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
+                "location": "Bangalore, India",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390746008",
                 "matched": "across time zones",
                 "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
               }
@@ -266,7 +275,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "589 of 615 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "603 of 628 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -275,19 +284,19 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 487 open roles"
+              "excerpt": "United States: 491 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 54 open roles"
+              "excerpt": "United Kingdom: 57 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "Japan: 14 open roles"
+              "excerpt": "Japan: 16 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "South Korea: 12 open roles"
+              "excerpt": "South Korea: 13 open roles"
             }
           ],
           "question": "Which roles can access production data, and from which countries? Does the residency commitment cover support and engineering access, or only data at rest?"
@@ -306,16 +315,16 @@
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Bangalore, India",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390746008",
+              "location": "Mumbai, India",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
               "matched": "across time zones",
               "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
             },
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Mumbai, India",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
+              "location": "Bangalore, India",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390746008",
               "matched": "across time zones",
               "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
             }
@@ -408,11 +417,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 69,
+        "total": 44,
         "footprint": 24,
         "access": 16,
         "transparency": 4,
-        "record": 25
+        "record": 0
       },
       "drift": [
         {
@@ -500,12 +509,15 @@
           "url": "https://www.cloudflare.com/privacypolicy/",
           "path": "data/snapshots/cloudflare/privacy.txt",
           "lines": 649,
-          "chars": 47137,
-          "sha256": "8d3c9629d73c5991",
+          "chars": 47138,
+          "sha256": "2c740120d037970f",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2018-05-14",
+            "last": "2018-09-15"
           }
         },
         {
@@ -518,7 +530,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -547,15 +559,15 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "ConnectTimeout"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 395,
+        "total": 402,
         "placeable": 4,
-        "unplaceable": 391,
+        "unplaceable": 398,
         "eea": 1,
         "non_eea": 3,
         "countries": {
@@ -825,7 +837,7 @@
         "sensitivity_score": 10,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": false
+        "source_documents_changed": true
       },
       "score": {
         "total": 44,
@@ -835,6 +847,21 @@
         "record": 0
       },
       "drift": [
+        {
+          "id": "cloudflare-privacy-2026-09-29",
+          "vendor_id": "cloudflare",
+          "vendor_name": "Cloudflare",
+          "document": "privacy",
+          "document_label": "Privacy policy",
+          "date": "2026-09-29",
+          "url": "https://www.cloudflare.com/privacypolicy/",
+          "hunks": [
+            {
+              "before": "(“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information.",
+              "after": "(\u0000“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information."
+            }
+          ]
+        },
         {
           "id": "cloudflare-privacy-2026-08-20",
           "vendor_id": "cloudflare",
@@ -879,58 +906,64 @@
           "kind": "privacy",
           "url": "https://www.datadoghq.com/legal/privacy/",
           "path": "data/snapshots/datadog/privacy.txt",
-          "lines": 454,
-          "chars": 26276,
-          "sha256": "5ba0ae3eedc6b12d",
+          "lines": 455,
+          "chars": 26296,
+          "sha256": "3584067664bd7167",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2017-06-30",
+            "last": "2025-04-19"
           }
         },
         {
           "kind": "dpa",
           "url": "https://www.datadoghq.com/legal/data-processing-addendum/",
           "path": "data/snapshots/datadog/dpa.txt",
-          "lines": 470,
-          "chars": 29926,
-          "sha256": "0872909011330b18",
+          "lines": 471,
+          "chars": 29946,
+          "sha256": "5db7e30225b6d5fc",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 33,
+            "revisions": 32,
+            "first": "2022-05-28",
+            "last": "2026-08-03"
           }
         },
         {
           "kind": "subprocessors",
           "url": "https://www.datadoghq.com/legal/subprocessors/",
           "path": "data/snapshots/datadog/subprocessors.txt",
-          "lines": 269,
-          "chars": 5088,
-          "sha256": "30731a3ad8d38ffb",
+          "lines": 270,
+          "chars": 5108,
+          "sha256": "f95ffbb90f9ae86e",
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "ConnectTimeout"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 444,
-        "placeable": 444,
+        "total": 437,
+        "placeable": 437,
         "unplaceable": 0,
-        "eea": 97,
-        "non_eea": 347,
+        "eea": 96,
+        "non_eea": 341,
         "countries": {
-          "United States": 216,
-          "France": 55,
-          "Japan": 45,
-          "Ireland": 22,
+          "United States": 210,
+          "France": 54,
+          "Japan": 44,
           "Netherlands": 21,
+          "Ireland": 21,
           "United Kingdom": 21,
+          "Brazil": 18,
           "Singapore": 17,
-          "Brazil": 17,
           "Spain": 15,
           "South Korea": 14,
           "Australia": 13,
@@ -942,12 +975,12 @@
           "Denmark": 3,
           "Indonesia": 3,
           "Mexico": 3,
-          "Israel": 2,
           "Switzerland": 2,
+          "Israel": 1,
           "Colombia": 1,
           "Chile": 1,
-          "Austria": 1,
           "Poland": 1,
+          "Austria": 1,
           "Saudi Arabia": 1
         },
         "scanned": 26,
@@ -1003,7 +1036,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 7,
+            "count": 6,
             "examples": [
               {
                 "title": "Group Product Manager - Bring Your Own Cloud",
@@ -1013,18 +1046,18 @@
                 "excerpt": "Google Cloud) Demonstrated track record of working with executives and engineers alike Prior experience with Snowflake, Databricks, Splunk, or ClickHouse is a strong plus MBA is a strong plus &nbsp; Datadog values people from al"
               },
               {
-                "title": "GTM Operations Associate",
-                "location": "New York, New York, USA",
-                "url": "https://careers.datadoghq.com/detail/8049521/?gh_jid=8049521",
-                "matched": "Salesforce",
-                "excerpt": "p; Alliances organization, ensuring execution is timely, accurate, and scalable. Build, maintain, and enhance Salesforce reports and dashboards to provide visibility into pipeline, partner performance, and other key business metri"
-              },
-              {
                 "title": "GTM Strategy and Operations Associate",
                 "location": "New York, New York, USA",
                 "url": "https://careers.datadoghq.com/detail/7843331/?gh_jid=7843331",
                 "matched": "Salesforce",
                 "excerpt": "egration: Collaborate with GTM Systems to maintain and improve integrations between sales productivity tools, Salesforce CRM, and the broader GTM tech stack Set the standard: Build and enforce governance frameworks, acceptable use"
+              },
+              {
+                "title": "GTM Strategy/Operations Associate - New York",
+                "location": "New York, New York, USA",
+                "url": "https://careers.datadoghq.com/detail/8179647/?gh_jid=8179647",
+                "matched": "segment",
+                "excerpt": "complex operations, and more.&nbsp; In this role, you will serve as the strategic partner for our Enterprise segment in the Americas region, identifying opportunities for revenue growth &amp; sales force effectiveness, spearhe"
               }
             ]
           },
@@ -1112,6 +1145,24 @@
             }
           ],
           "question": "For out-of-hours incidents, who is on the rotation, where are they, and is their access to customer data logged and reviewable by the customer?"
+        },
+        {
+          "rule": "subprocessor_gap",
+          "severity": "low",
+          "headline": "Segment appears in hiring, not in the published documents",
+          "detail": "Engineering job descriptions name Segment, but it does not appear anywhere in the legal documents collected including the sub-processor list at https://www.datadoghq.com/legal/subprocessors/.",
+          "claim": null,
+          "evidence": [
+            {
+              "kind": "job",
+              "title": "GTM Strategy/Operations Associate - New York",
+              "location": "New York, New York, USA",
+              "url": "https://careers.datadoghq.com/detail/8179647/?gh_jid=8179647",
+              "matched": "segment",
+              "excerpt": "complex operations, and more.&nbsp; In this role, you will serve as the strategic partner for our Enterprise segment in the Americas region, identifying opportunities for revenue growth &amp; sales force effectiveness, spearhe"
+            }
+          ],
+          "question": "Is Segment a sub-processor? If it is, when was it added to the list, and were customers notified? If it never touches customer data, what is it used for?"
         }
       ],
       "data_classification": {
@@ -1161,16 +1212,61 @@
         "sensitivity_score": 20,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": false
+        "source_documents_changed": true
       },
       "score": {
-        "total": 65,
+        "total": 40,
         "footprint": 20,
         "access": 20,
         "transparency": 0,
-        "record": 25
+        "record": 0
       },
       "drift": [
+        {
+          "id": "datadog-privacy-2026-09-29",
+          "vendor_id": "datadog",
+          "vendor_name": "Datadog",
+          "document": "privacy",
+          "document_label": "Privacy policy",
+          "date": "2026-09-29",
+          "url": "https://www.datadoghq.com/legal/privacy/",
+          "hunks": [
+            {
+              "before": null,
+              "after": "Database Visibility"
+            }
+          ]
+        },
+        {
+          "id": "datadog-dpa-2026-09-29",
+          "vendor_id": "datadog",
+          "vendor_name": "Datadog",
+          "document": "dpa",
+          "document_label": "Data processing agreement",
+          "date": "2026-09-29",
+          "url": "https://www.datadoghq.com/legal/data-processing-addendum/",
+          "hunks": [
+            {
+              "before": null,
+              "after": "Database Visibility"
+            }
+          ]
+        },
+        {
+          "id": "datadog-subprocessors-2026-09-29",
+          "vendor_id": "datadog",
+          "vendor_name": "Datadog",
+          "document": "subprocessors",
+          "document_label": "Sub-processor list",
+          "date": "2026-09-29",
+          "url": "https://www.datadoghq.com/legal/subprocessors/",
+          "hunks": [
+            {
+              "before": null,
+              "after": "Database Visibility"
+            }
+          ]
+        },
         {
           "id": "datadog-privacy-2026-09-12",
           "vendor_id": "datadog",
@@ -1275,75 +1371,6 @@
               "after": null
             }
           ]
-        },
-        {
-          "id": "datadog-privacy-2026-08-21",
-          "vendor_id": "datadog",
-          "vendor_name": "Datadog",
-          "document": "privacy",
-          "document_label": "Privacy policy",
-          "date": "2026-08-21",
-          "url": "https://www.datadoghq.com/legal/privacy/",
-          "hunks": [
-            {
-              "before": null,
-              "after": "Data Observability"
-            },
-            {
-              "before": "Quality Monitoring",
-              "after": null
-            },
-            {
-              "before": "Jobs Monitoring",
-              "after": null
-            }
-          ]
-        },
-        {
-          "id": "datadog-dpa-2026-08-21",
-          "vendor_id": "datadog",
-          "vendor_name": "Datadog",
-          "document": "dpa",
-          "document_label": "Data processing agreement",
-          "date": "2026-08-21",
-          "url": "https://www.datadoghq.com/legal/data-processing-addendum/",
-          "hunks": [
-            {
-              "before": null,
-              "after": "Data Observability"
-            },
-            {
-              "before": "Quality Monitoring",
-              "after": null
-            },
-            {
-              "before": "Jobs Monitoring",
-              "after": null
-            }
-          ]
-        },
-        {
-          "id": "datadog-subprocessors-2026-08-21",
-          "vendor_id": "datadog",
-          "vendor_name": "Datadog",
-          "document": "subprocessors",
-          "document_label": "Sub-processor list",
-          "date": "2026-08-21",
-          "url": "https://www.datadoghq.com/legal/subprocessors/",
-          "hunks": [
-            {
-              "before": null,
-              "after": "Data Observability"
-            },
-            {
-              "before": "Quality Monitoring",
-              "after": null
-            },
-            {
-              "before": "Jobs Monitoring",
-              "after": null
-            }
-          ]
         }
       ]
     },
@@ -1364,8 +1391,11 @@
           "sha256": "ff0e2b002da0ad9f",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2008-07-19",
+            "last": "2020-04-30"
           }
         },
         {
@@ -1393,34 +1423,31 @@
           "sha256": "b8ebc4c7ee506979",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 109,
-            "revisions": 108,
-            "first": "2022-12-05",
-            "last": "2026-09-21"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 702,
+        "total": 705,
         "placeable": 628,
-        "unplaceable": 74,
-        "eea": 84,
-        "non_eea": 544,
+        "unplaceable": 77,
+        "eea": 83,
+        "non_eea": 545,
         "countries": {
-          "United States": 337,
-          "Ireland": 69,
+          "United States": 335,
+          "Ireland": 67,
           "Singapore": 53,
           "Canada": 50,
           "United Kingdom": 46,
-          "India": 39,
+          "India": 41,
           "Mexico": 31,
           "Australia": 11,
           "Japan": 4,
+          "France": 4,
           "Germany": 3,
           "Israel": 3,
-          "France": 3,
           "Taiwan": 3,
           "Romania": 3,
           "Brazil": 2,
@@ -1439,7 +1466,7 @@
             "label": "Travel expected",
             "severity": "high",
             "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 3,
+            "count": 2,
             "examples": [
               {
                 "title": "Account Executive, Strategic Platform Partnerships",
@@ -1454,13 +1481,6 @@
                 "url": "https://stripe.com/jobs/search?gh_jid=8126984",
                 "matched": "Willingness to travel",
                 "excerpt": "build and execute territory and opportunity-specific plans, leveraging tools such as Salesforce and Crossbeam Willingness to travel up to 25% Preferred qualifications Strong communication and presentation skills, including the ability to com"
-              },
-              {
-                "title": "Communities Partner Development Manager, SaaS Platforms",
-                "location": "US-Remote",
-                "url": "https://stripe.com/jobs/search?gh_jid=8103952",
-                "matched": "willingness to travel",
-                "excerpt": "ayment or financial-services technology, industry trends, and the competitive landscape Bachelor’s degree and willingness to travel Preferred qualifications Experience working in the financial services or payments industry Strong written and"
               }
             ]
           },
@@ -1627,12 +1647,12 @@
         "sensitivity_score": 30,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": true
+        "source_documents_changed": false
       },
       "score": {
-        "total": 41,
+        "total": 38,
         "footprint": 22,
-        "access": 19,
+        "access": 16,
         "transparency": 0,
         "record": 0
       },
@@ -1730,7 +1750,7 @@
             "captures": 308,
             "revisions": 307,
             "first": "2024-01-18",
-            "last": "2026-09-26"
+            "last": "2026-09-28"
           }
         },
         {
@@ -1742,8 +1762,11 @@
           "sha256": "4bde694018c282cd",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 15,
+            "revisions": 14,
+            "first": "2025-04-01",
+            "last": "2026-09-09"
           }
         },
         {
@@ -1755,20 +1778,23 @@
           "sha256": "6a0860b07ee4b942",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 84,
+            "revisions": 83,
+            "first": "2019-04-01",
+            "last": "2026-09-14"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 163,
-        "placeable": 163,
+        "total": 165,
+        "placeable": 165,
         "unplaceable": 0,
         "eea": 13,
-        "non_eea": 150,
+        "non_eea": 152,
         "countries": {
-          "United States": 108,
+          "United States": 110,
           "United Kingdom": 19,
           "Germany": 8,
           "Japan": 7,
@@ -1910,7 +1936,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "150 of 163 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "152 of 165 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -1919,7 +1945,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 108 open roles"
+              "excerpt": "United States: 110 open roles"
             },
             {
               "kind": "stat",
@@ -2169,7 +2195,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -2182,7 +2208,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ReadTimeout"
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -2195,16 +2221,19 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 26,
+            "revisions": 25,
+            "first": "2023-11-29",
+            "last": "2026-07-07"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 198,
+        "total": 199,
         "placeable": 190,
-        "unplaceable": 8,
+        "unplaceable": 9,
         "eea": 25,
         "non_eea": 165,
         "countries": {
@@ -2217,8 +2246,8 @@
           "Israel": 9,
           "Ireland": 8,
           "Singapore": 6,
-          "France": 5,
           "Netherlands": 5,
+          "France": 5,
           "Japan": 4,
           "Australia": 3,
           "Mexico": 2,
@@ -2298,19 +2327,12 @@
             "label": "Travel expected",
             "severity": "high",
             "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 2,
+            "count": 1,
             "examples": [
               {
                 "title": "Manager, Solutions Architects - San Francisco ",
                 "location": "Remote, US",
                 "url": "https://job-boards.greenhouse.io/gitlab/jobs/8396674002",
-                "matched": "willingness to travel",
-                "excerpt": "arity with cloud computing concepts, related technologies, and common customer adoption patterns. Ability and willingness to travel in line with business needs and the company's travel policy, and openness to learning and using GitLab and re"
-              },
-              {
-                "title": "Manager, Solutions Architecture - East ",
-                "location": "Remote, United States",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8641849002",
                 "matched": "willingness to travel",
                 "excerpt": "arity with cloud computing concepts, related technologies, and common customer adoption patterns. Ability and willingness to travel in line with business needs and the company's travel policy, and openness to learning and using GitLab and re"
               }
@@ -2383,7 +2405,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 5,
+            "count": 6,
             "examples": [
               {
                 "title": "Customer Success Architect, CEUR",
@@ -2538,11 +2560,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 76,
+        "total": 51,
         "footprint": 22,
         "access": 25,
         "transparency": 4,
-        "record": 25
+        "record": 0
       },
       "drift": [
         {
@@ -2593,19 +2615,19 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 384,
-        "placeable": 384,
+        "total": 387,
+        "placeable": 387,
         "unplaceable": 0,
-        "eea": 162,
-        "non_eea": 222,
+        "eea": 159,
+        "non_eea": 228,
         "countries": {
-          "United States": 112,
+          "United States": 118,
           "Spain": 38,
           "Canada": 33,
-          "Ireland": 25,
-          "Portugal": 24,
-          "Greece": 23,
-          "United Kingdom": 22,
+          "Ireland": 24,
+          "Portugal": 23,
+          "Greece": 22,
+          "United Kingdom": 21,
           "Poland": 16,
           "India": 15,
           "Norway": 11,
@@ -2613,8 +2635,8 @@
           "Switzerland": 9,
           "Germany": 7,
           "Singapore": 5,
+          "Israel": 5,
           "Brazil": 4,
-          "Israel": 4,
           "Mexico": 3,
           "Australia": 3,
           "Japan": 3,
@@ -2638,7 +2660,7 @@
             "label": "Travel expected",
             "severity": "high",
             "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 12,
+            "count": 11,
             "examples": [
               {
                 "title": "Consulting Architect - Observability",
@@ -2668,7 +2690,7 @@
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 11,
+            "count": 10,
             "examples": [
               {
                 "title": "Associate Corporate Counsel - Legal Product, IP, and Marketing",
@@ -2841,8 +2863,8 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 56,
-        "footprint": 14,
+        "total": 57,
+        "footprint": 15,
         "access": 25,
         "transparency": 17,
         "record": 0
@@ -2953,8 +2975,8 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 39,
-            "revisions": 38,
+            "captures": 40,
+            "revisions": 39,
             "first": "2026-06-08",
             "last": "2026-09-27"
           }
@@ -2978,19 +3000,19 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 88,
-        "placeable": 83,
+        "total": 90,
+        "placeable": 85,
         "unplaceable": 5,
         "eea": 8,
-        "non_eea": 75,
+        "non_eea": 77,
         "countries": {
-          "United States": 67,
+          "United States": 69,
           "United Kingdom": 16,
           "Germany": 8,
           "Australia": 3,
           "India": 2
         },
-        "scanned": 24,
+        "scanned": 25,
         "signals": [
           {
             "key": "travel",

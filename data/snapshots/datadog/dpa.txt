@@ -1,5 +1,5 @@
 # source: https://www.datadoghq.com/legal/data-processing-addendum/
-# collected: 2026-09-28
+# collected: 2026-09-29
 
 Product
 Infrastructure
@@ -156,6 +156,7 @@ Real-Time BI
 On-Premises Monitoring
 Log Analysis & Correlation
 CNAPP
+Database Visibility
 About
 Contact
 Partners
