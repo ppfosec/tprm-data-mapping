@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T10:15:39+00:00",
+  "generated_at": "2026-09-30T10:01:51+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -121,8 +121,11 @@
           "sha256": "8dac92944a88d6dd",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2024-02-25",
+            "last": "2026-03-01"
           }
         },
         {
@@ -134,8 +137,11 @@
           "sha256": "85c78c93175ffb26",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2024-02-21",
+            "last": "2026-03-15"
           }
         },
         {
@@ -165,29 +171,29 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 52,
-            "revisions": 51,
+            "captures": 53,
+            "revisions": 52,
             "first": "2026-07-14",
-            "last": "2026-09-28"
+            "last": "2026-09-29"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 630,
-        "placeable": 628,
+        "total": 638,
+        "placeable": 636,
         "unplaceable": 2,
-        "eea": 25,
-        "non_eea": 603,
+        "eea": 26,
+        "non_eea": 610,
         "countries": {
-          "United States": 491,
-          "United Kingdom": 57,
-          "Japan": 16,
+          "United States": 500,
+          "United Kingdom": 54,
+          "Japan": 17,
           "South Korea": 13,
           "Singapore": 10,
           "Australia": 10,
+          "Ireland": 9,
           "Germany": 9,
-          "Ireland": 8,
           "France": 6,
           "India": 5,
           "Switzerland": 4,
@@ -206,15 +212,15 @@
             "examples": [
               {
                 "title": "Applied AI Architect",
-                "location": "Mumbai, India",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
+                "location": "Bangalore, India",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390746008",
                 "matched": "across time zones",
                 "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
               },
               {
                 "title": "Applied AI Architect",
-                "location": "Bangalore, India",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390746008",
+                "location": "Mumbai, India",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
                 "matched": "across time zones",
                 "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
               }
@@ -275,7 +281,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "603 of 628 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "610 of 636 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -284,15 +290,15 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 491 open roles"
+              "excerpt": "United States: 500 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 57 open roles"
+              "excerpt": "United Kingdom: 54 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "Japan: 16 open roles"
+              "excerpt": "Japan: 17 open roles"
             },
             {
               "kind": "stat",
@@ -315,16 +321,16 @@
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Mumbai, India",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
+              "location": "Bangalore, India",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390746008",
               "matched": "across time zones",
               "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
             },
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Bangalore, India",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390746008",
+              "location": "Mumbai, India",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
               "matched": "across time zones",
               "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
             }
@@ -509,8 +515,8 @@
           "url": "https://www.cloudflare.com/privacypolicy/",
           "path": "data/snapshots/cloudflare/privacy.txt",
           "lines": 649,
-          "chars": 47138,
-          "sha256": "2c740120d037970f",
+          "chars": 47137,
+          "sha256": "8d3c9629d73c5991",
           "note": null,
           "archive": {
             "ok": true,
@@ -529,8 +535,11 @@
           "sha256": "d999aff5712a68aa",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 310,
+            "revisions": 309,
+            "first": "2021-09-03",
+            "last": "2026-09-27"
           }
         },
         {
@@ -559,15 +568,15 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectTimeout"
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 402,
+        "total": 399,
         "placeable": 4,
-        "unplaceable": 398,
+        "unplaceable": 395,
         "eea": 1,
         "non_eea": 3,
         "countries": {
@@ -613,7 +622,7 @@
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 2,
+            "count": 3,
             "examples": [
               {
                 "title": "Associate General Counsel, Privacy Compliance",
@@ -621,6 +630,13 @@
                 "url": "https://boards.greenhouse.io/cloudflare/jobs/8144669?gh_jid=8144669",
                 "matched": "globally distributed",
                 "excerpt": "and digestible for non-lawyers&nbsp; A willingness to work flexibly on occasion to accommodate working with a globally distributed team Technical background / expertise is highly desired – while a science or technical degree is not a prereq"
+              },
+              {
+                "title": "Data Center Site Selection - Hyperscale",
+                "location": "Hybrid",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8234130?gh_jid=8234130",
+                "matched": "across time zones",
+                "excerpt": "ws how utility interconnection and substation timelines actually work Can run several site processes at once, across time zones, with incomplete information Has taken a campus or BTS lease from LOI to execution Willing to travel ~30% Int"
               },
               {
                 "title": "Engineering Manager, Cloudflare Network Interconnect",
@@ -639,18 +655,18 @@
             "count": 2,
             "examples": [
               {
+                "title": "Data Center Site Selection - Hyperscale",
+                "location": "Hybrid",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8234130?gh_jid=8234130",
+                "matched": "Willing to travel",
+                "excerpt": "at once, across time zones, with incomplete information Has taken a campus or BTS lease from LOI to execution Willing to travel ~30% International deal experience preferred Bachelor’s degree or equivalent experience required Nice to have"
+              },
+              {
                 "title": "Principal Solutions Architect, APJC (Developer Platform) - Mandarin Speaking",
                 "location": "Hybrid",
                 "url": "https://boards.greenhouse.io/cloudflare/jobs/8179387?gh_jid=8179387",
                 "matched": "travel up to 30%",
-                "excerpt": "cal-communication skills across developer, architectural, and executive audiences. Willingness and ability to travel up to 30%, primarily within APJC, including mainland China. Nice-to-Have Experience building and operating production a"
-              },
-              {
-                "title": "Principal Solutions Architect, Public Sector Federal",
-                "location": "Hybrid",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/8131824?gh_jid=8131824",
-                "matched": "Travel up to 40%",
-                "excerpt": "eation and delivery. Contribute industry expertise to guide Cloudflare’s go-to-market and platform evolution. Travel up to 40% during the quarter to support partner engagements, attend conferences, represent Cloudflare at industry event"
+                "excerpt": "n, and facilitation skills tailored for developer, architectural, and executive audiences. Travel: Ability to travel up to 30%, primarily within APJC and mainland China (supported by flexible planning). Nice-to-Have (Bonus Skills) Exper"
               }
             ]
           },
@@ -698,46 +714,21 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 1,
+            "count": 2,
             "examples": [
+              {
+                "title": "Principal, EMEA Sales Strategy and Operations",
+                "location": "Hybrid",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8232768?gh_jid=8232768",
+                "matched": "Salesforce",
+                "excerpt": ", pipeline management best practices, forecasting, territory/quota design, incentive comp, CRM systems (e.g., Salesforce) Experience to use AI to drive automation, innovation and improve efficiency. Exceptional cross-functional co"
+              },
               {
                 "title": "Principal Engineer - GTM Data Platform",
                 "location": "Hybrid",
                 "url": "https://boards.greenhouse.io/cloudflare/jobs/8054669?gh_jid=8054669",
                 "matched": "Snowflake",
                 "excerpt": "h a focus on enabling GTM organizations. Columnar/OLAP or lakehouse experience (ClickHouse, DuckDB, BigQuery, Snowflake, Iceberg, Starrocks).Familiarity with the Salesforce data model and CRM/API integrations. Familiarity with de"
-              }
-            ]
-          },
-          {
-            "key": "gov_enclave",
-            "label": "Government enclave",
-            "severity": "low",
-            "why": "A separate sovereign estate exists, which confirms the commercial one is not it.",
-            "count": 1,
-            "examples": [
-              {
-                "title": "Principal Solutions Architect, Public Sector Federal",
-                "location": "Hybrid",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/8131824?gh_jid=8131824",
-                "matched": "FEDRAMP",
-                "excerpt": "el. Aware of government and industry standards, frameworks and compliance requirements (i.e, HIPAA, PCI, SOX, FEDRAMP, GDPR, NIS2, etc.). Experience in designing architecture, migration, and implementation of cloud, edge and on"
-              }
-            ]
-          },
-          {
-            "key": "sovereignty_work",
-            "label": "Sovereignty workstream",
-            "severity": "low",
-            "why": "They are staffing the problem, which is a good sign and an admission it is open.",
-            "count": 1,
-            "examples": [
-              {
-                "title": "Principal Solutions Architect - SAARC",
-                "location": "Hybrid",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/8219990?gh_jid=8219990",
-                "matched": "Sovereign",
-                "excerpt": "stomers' enterprise architects and engineering leadership. Translate industry trends like Zero Trust, Digital Sovereignty, AI workload security, cloud-to-edge migration into actionable architectural strategies tailored to each cu"
               }
             ]
           }
@@ -848,6 +839,21 @@
       },
       "drift": [
         {
+          "id": "cloudflare-privacy-2026-09-30",
+          "vendor_id": "cloudflare",
+          "vendor_name": "Cloudflare",
+          "document": "privacy",
+          "document_label": "Privacy policy",
+          "date": "2026-09-30",
+          "url": "https://www.cloudflare.com/privacypolicy/",
+          "hunks": [
+            {
+              "before": "(\u0000“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information.",
+              "after": "(“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information."
+            }
+          ]
+        },
+        {
           "id": "cloudflare-privacy-2026-09-29",
           "vendor_id": "cloudflare",
           "vendor_name": "Cloudflare",
@@ -911,11 +917,8 @@
           "sha256": "3584067664bd7167",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2017-06-30",
-            "last": "2025-04-19"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -927,11 +930,8 @@
           "sha256": "5db7e30225b6d5fc",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 33,
-            "revisions": 32,
-            "first": "2022-05-28",
-            "last": "2026-08-03"
+            "ok": false,
+            "reason": "http 503"
           }
         },
         {
@@ -944,43 +944,43 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectTimeout"
+            "reason": "http 503"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 437,
-        "placeable": 437,
+        "total": 436,
+        "placeable": 436,
         "unplaceable": 0,
         "eea": 96,
-        "non_eea": 341,
+        "non_eea": 340,
         "countries": {
-          "United States": 210,
-          "France": 54,
-          "Japan": 44,
-          "Netherlands": 21,
-          "Ireland": 21,
-          "United Kingdom": 21,
+          "United States": 211,
+          "France": 53,
+          "Japan": 42,
+          "Ireland": 22,
+          "Netherlands": 20,
+          "United Kingdom": 20,
+          "Singapore": 18,
           "Brazil": 18,
-          "Singapore": 17,
           "Spain": 15,
           "South Korea": 14,
           "Australia": 13,
-          "India": 9,
-          "Germany": 7,
+          "India": 8,
+          "Germany": 6,
           "Portugal": 6,
           "Italy": 5,
-          "Sweden": 4,
-          "Denmark": 3,
           "Indonesia": 3,
+          "Sweden": 3,
           "Mexico": 3,
+          "Denmark": 2,
           "Switzerland": 2,
           "Israel": 1,
           "Colombia": 1,
           "Chile": 1,
-          "Poland": 1,
           "Austria": 1,
+          "Poland": 1,
           "Saudi Arabia": 1
         },
         "scanned": 26,
@@ -1212,14 +1212,14 @@
         "sensitivity_score": 20,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": true
+        "source_documents_changed": false
       },
       "score": {
-        "total": 40,
-        "footprint": 20,
+        "total": 64,
+        "footprint": 19,
         "access": 20,
         "transparency": 0,
-        "record": 0
+        "record": 25
       },
       "drift": [
         {
@@ -1423,25 +1423,28 @@
           "sha256": "b8ebc4c7ee506979",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 109,
+            "revisions": 108,
+            "first": "2022-12-05",
+            "last": "2026-09-21"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 705,
-        "placeable": 628,
-        "unplaceable": 77,
-        "eea": 83,
-        "non_eea": 545,
+        "total": 712,
+        "placeable": 632,
+        "unplaceable": 80,
+        "eea": 82,
+        "non_eea": 550,
         "countries": {
           "United States": 335,
           "Ireland": 67,
           "Singapore": 53,
-          "Canada": 50,
-          "United Kingdom": 46,
-          "India": 41,
+          "Canada": 51,
+          "United Kingdom": 48,
+          "India": 42,
           "Mexico": 31,
           "Australia": 11,
           "Japan": 4,
@@ -1452,7 +1455,6 @@
           "Romania": 3,
           "Brazil": 2,
           "Spain": 2,
-          "Italy": 1,
           "Sweden": 1,
           "Luxembourg": 1,
           "New Zealand": 1,
@@ -1747,8 +1749,8 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 308,
-            "revisions": 307,
+            "captures": 310,
+            "revisions": 309,
             "first": "2024-01-18",
             "last": "2026-09-28"
           }
@@ -1762,11 +1764,8 @@
           "sha256": "4bde694018c282cd",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 15,
-            "revisions": 14,
-            "first": "2025-04-01",
-            "last": "2026-09-09"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -1778,23 +1777,20 @@
           "sha256": "6a0860b07ee4b942",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 84,
-            "revisions": 83,
-            "first": "2019-04-01",
-            "last": "2026-09-14"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 165,
-        "placeable": 165,
+        "total": 163,
+        "placeable": 163,
         "unplaceable": 0,
         "eea": 13,
-        "non_eea": 152,
+        "non_eea": 150,
         "countries": {
-          "United States": 110,
+          "United States": 108,
           "United Kingdom": 19,
           "Germany": 8,
           "Japan": 7,
@@ -1838,29 +1834,6 @@
             ]
           },
           {
-            "key": "distributed",
-            "label": "Distributed across time zones",
-            "severity": "high",
-            "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 2,
-            "examples": [
-              {
-                "title": "Manager, Solutions Consulting (London, United Kingdom)",
-                "location": "London, England",
-                "url": "https://boards.greenhouse.io/figma/jobs/6111591004?gh_jid=6111591004",
-                "matched": "across multiple time zones",
-                "excerpt": "not required, it’s an added plus if you also have: Experience using or working with Figma Experience working across multiple time zones At Figma, one of our values is Grow as you go. We believe in hiring smart, curious people who are excited to"
-              },
-              {
-                "title": "Manager, Solutions Consulting (Tokyo, Japan)",
-                "location": "Tokyo, Japan",
-                "url": "https://boards.greenhouse.io/figma/jobs/6134908004?gh_jid=6134908004",
-                "matched": "across multiple time zones",
-                "excerpt": "scripting, querying, or prototyping Practical experience using or working with Figma Experience leading teams across multiple time zones At Figma, one of our values is Grow as you go. We believe in hiring smart, curious people who are excited to"
-              }
-            ]
-          },
-          {
             "key": "oncall",
             "label": "On-call access",
             "severity": "high",
@@ -1873,6 +1846,22 @@
                 "url": "https://boards.greenhouse.io/figma/jobs/6092343004?gh_jid=6092343004",
                 "matched": "on call",
                 "excerpt": "en the problem is hard Bring a sharp, independent voice into company planning and our biggest capital-allocation calls We'd love to hear from you if you have: You’re always the one handed the hardest, vaguest, most important pr"
+              }
+            ]
+          },
+          {
+            "key": "distributed",
+            "label": "Distributed across time zones",
+            "severity": "high",
+            "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
+            "count": 1,
+            "examples": [
+              {
+                "title": "Manager, Solutions Consulting (Tokyo, Japan)",
+                "location": "Tokyo, Japan",
+                "url": "https://boards.greenhouse.io/figma/jobs/6134908004?gh_jid=6134908004",
+                "matched": "across multiple time zones",
+                "excerpt": "scripting, querying, or prototyping Practical experience using or working with Figma Experience leading teams across multiple time zones At Figma, one of our values is Grow as you go. We believe in hiring smart, curious people who are excited to"
               }
             ]
           },
@@ -1936,7 +1925,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "152 of 165 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "150 of 163 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -1945,7 +1934,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 110 open roles"
+              "excerpt": "United States: 108 open roles"
             },
             {
               "kind": "stat",
@@ -2195,7 +2184,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectTimeout"
+            "reason": "ReadTimeout"
           }
         },
         {
@@ -2207,8 +2196,11 @@
           "sha256": "b9e8de6a4bacb426",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 82,
+            "revisions": 81,
+            "first": "2020-11-27",
+            "last": "2026-08-28"
           }
         },
         {
@@ -2232,33 +2224,31 @@
       "jobs": {
         "ok": true,
         "total": 199,
-        "placeable": 190,
-        "unplaceable": 9,
-        "eea": 25,
+        "placeable": 189,
+        "unplaceable": 10,
+        "eea": 24,
         "non_eea": 165,
         "countries": {
-          "United States": 93,
-          "Canada": 58,
-          "United Kingdom": 41,
-          "India": 29,
-          "Germany": 11,
+          "United States": 96,
+          "Canada": 62,
+          "United Kingdom": 40,
+          "India": 26,
+          "Germany": 10,
           "Poland": 10,
           "Israel": 9,
-          "Ireland": 8,
-          "Singapore": 6,
+          "Ireland": 7,
           "Netherlands": 5,
-          "France": 5,
-          "Japan": 4,
+          "Singapore": 5,
+          "France": 4,
           "Australia": 3,
+          "Japan": 3,
           "Mexico": 2,
-          "Spain": 2,
           "South Korea": 2,
           "United Arab Emirates": 2,
+          "Turkey": 2,
           "Brazil": 1,
-          "Austria": 1,
-          "Philippines": 1,
-          "Italy": 1,
-          "Turkey": 1
+          "Spain": 1,
+          "Austria": 1
         },
         "scanned": 26,
         "signals": [
@@ -2605,41 +2595,38 @@
           "sha256": "2b4ba1b47e64f285",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2018-05-23",
-            "last": "2026-01-01"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 387,
-        "placeable": 387,
+        "total": 391,
+        "placeable": 391,
         "unplaceable": 0,
-        "eea": 159,
-        "non_eea": 228,
+        "eea": 155,
+        "non_eea": 236,
         "countries": {
-          "United States": 118,
+          "United States": 120,
           "Spain": 38,
-          "Canada": 33,
-          "Ireland": 24,
-          "Portugal": 23,
-          "Greece": 22,
+          "Canada": 36,
+          "Ireland": 23,
+          "Portugal": 22,
           "United Kingdom": 21,
+          "Greece": 21,
+          "India": 16,
           "Poland": 16,
-          "India": 15,
-          "Norway": 11,
+          "Norway": 10,
           "Romania": 10,
           "Switzerland": 9,
           "Germany": 7,
           "Singapore": 5,
           "Israel": 5,
+          "Australia": 4,
           "Brazil": 4,
+          "Japan": 4,
           "Mexico": 3,
-          "Australia": 3,
-          "Japan": 3,
           "Costa Rica": 2,
           "United Arab Emirates": 2,
           "France": 2,
@@ -2690,7 +2677,7 @@
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 10,
+            "count": 9,
             "examples": [
               {
                 "title": "Associate Corporate Counsel - Legal Product, IP, and Marketing",
@@ -2863,11 +2850,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 57,
+        "total": 82,
         "footprint": 15,
         "access": 25,
         "transparency": 17,
-        "record": 0
+        "record": 25
       },
       "drift": [
         {
@@ -2974,11 +2961,8 @@
           "sha256": "1089987c0a57208c",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 40,
-            "revisions": 39,
-            "first": "2026-06-08",
-            "last": "2026-09-27"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -2990,23 +2974,20 @@
           "sha256": "c6f2954ea450f34e",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 163,
-            "revisions": 162,
-            "first": "2020-04-23",
-            "last": "2026-09-27"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 90,
-        "placeable": 85,
+        "total": 91,
+        "placeable": 86,
         "unplaceable": 5,
         "eea": 8,
-        "non_eea": 77,
+        "non_eea": 78,
         "countries": {
-          "United States": 69,
+          "United States": 70,
           "United Kingdom": 16,
           "Germany": 8,
           "Australia": 3,
@@ -3206,11 +3187,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 56,
+        "total": 81,
         "footprint": 23,
         "access": 25,
         "transparency": 8,
-        "record": 0
+        "record": 25
       },
       "drift": [
         {
