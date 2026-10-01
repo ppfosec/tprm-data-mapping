@@ -631,7 +631,7 @@
             "captures": 53,
             "revisions": 52,
             "first": "2026-07-14",
-            "last": "2026-09-29"
+            "last": "2026-09-30"
           }
         }
       ],
@@ -640,7 +640,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "610 of 636 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "610 of 633 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -653,7 +653,7 @@
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 54 open roles"
+              "excerpt": "United Kingdom: 53 open roles"
             },
             {
               "kind": "stat",
@@ -680,16 +680,16 @@
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Bangalore, India",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390746008",
+              "location": "Mumbai, India",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
               "matched": "across time zones",
               "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
             },
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Mumbai, India",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
+              "location": "Bangalore, India",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390746008",
               "matched": "across time zones",
               "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
             }
@@ -783,22 +783,22 @@
       },
       "jobs": {
         "ok": true,
-        "total": 638,
-        "placeable": 636,
+        "total": 635,
+        "placeable": 633,
         "unplaceable": 2,
-        "eea": 26,
+        "eea": 23,
         "non_eea": 610,
         "countries": {
           "United States": 500,
-          "United Kingdom": 54,
+          "United Kingdom": 53,
           "Japan": 17,
           "South Korea": 13,
-          "Singapore": 10,
+          "Singapore": 11,
           "Australia": 10,
-          "Ireland": 9,
           "Germany": 9,
-          "France": 6,
+          "Ireland": 7,
           "India": 5,
+          "France": 5,
           "Switzerland": 4,
           "Canada": 3,
           "Italy": 1,
@@ -815,15 +815,15 @@
             "examples": [
               {
                 "title": "Applied AI Architect",
-                "location": "Bangalore, India",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390746008",
+                "location": "Mumbai, India",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
                 "matched": "across time zones",
                 "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
               },
               {
                 "title": "Applied AI Architect",
-                "location": "Mumbai, India",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
+                "location": "Bangalore, India",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390746008",
                 "matched": "across time zones",
                 "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
               }
@@ -958,7 +958,7 @@
       "category": "Edge network",
       "public_evidence_only": true,
       "surface": {
-        "grade": "44",
+        "grade": "70",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "4 public documents · 2 open reconciliations"
@@ -973,11 +973,8 @@
           "sha256": "8d3c9629d73c5991",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2018-05-14",
-            "last": "2018-09-15"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -989,11 +986,8 @@
           "sha256": "d999aff5712a68aa",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 310,
-            "revisions": 309,
-            "first": "2021-09-03",
-            "last": "2026-09-27"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -1005,11 +999,8 @@
           "sha256": "3669d59798194699",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 158,
-            "revisions": 157,
-            "first": "2018-11-17",
-            "last": "2026-08-18"
+            "ok": false,
+            "reason": "ReadTimeout"
           }
         },
         {
@@ -1022,7 +1013,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "http 503"
           }
         }
       ],
@@ -1063,11 +1054,11 @@
             },
             {
               "kind": "job",
-              "title": "Distributed Systems Engineer - Data Platform (Delivery, Database, Retrieval)",
+              "title": "Data Center Engineer",
               "location": "Hybrid",
-              "url": "https://boards.greenhouse.io/cloudflare/jobs/7462801?gh_jid=7462801",
+              "url": "https://boards.greenhouse.io/cloudflare/jobs/8074364?gh_jid=8074364",
               "matched": "on-call",
-              "excerpt": "Evaluate technologies and contribute to the next generation of Cloudflare’s data platform. Participate in an on-call rotation for the production systems owned by your team. What We’re Looking For At least three years of profes"
+              "excerpt": "esponsibilities (prioritization, planning, scheduling, status reporting) such as JIRA Participate in a shared on-call rotation to maintain 24×7 operational availability of the global network. Other Responsibilities May Include"
             }
           ],
           "question": "For out-of-hours incidents, who is on the rotation, where are they, and is their access to customer data logged and reviewable by the customer?"
@@ -1120,16 +1111,17 @@
         "sensitivity_score": 10,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": true
+        "source_documents_changed": false
       },
       "jobs": {
         "ok": true,
-        "total": 399,
-        "placeable": 4,
-        "unplaceable": 395,
+        "total": 402,
+        "placeable": 5,
+        "unplaceable": 397,
         "eea": 1,
-        "non_eea": 3,
+        "non_eea": 4,
         "countries": {
+          "Singapore": 1,
           "India": 1,
           "Japan": 1,
           "Portugal": 1,
@@ -1142,7 +1134,7 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 9,
+            "count": 10,
             "examples": [
               {
                 "title": "AI Security Research & Red Team Engineer",
@@ -1152,18 +1144,18 @@
                 "excerpt": "ring partner\" for SIRT. By conducting unannounced exercises, you help them refine their playbooks, test their on-call rotations, and ensure their forensic tooling is effective under pressure. Threat Detection &amp; Threat Engin"
               },
               {
+                "title": "Data Center Engineer",
+                "location": "Hybrid",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8074364?gh_jid=8074364",
+                "matched": "on-call",
+                "excerpt": "esponsibilities (prioritization, planning, scheduling, status reporting) such as JIRA Participate in a shared on-call rotation to maintain 24×7 operational availability of the global network. Other Responsibilities May Include"
+              },
+              {
                 "title": "Distributed Systems Engineer - Data Platform (Delivery, Database, Retrieval)",
                 "location": "Hybrid",
                 "url": "https://boards.greenhouse.io/cloudflare/jobs/7462801?gh_jid=7462801",
                 "matched": "on-call",
                 "excerpt": "Evaluate technologies and contribute to the next generation of Cloudflare’s data platform. Participate in an on-call rotation for the production systems owned by your team. What We’re Looking For At least three years of profes"
-              },
-              {
-                "title": "Engineering Manager, Agentic Internet & Data Insights",
-                "location": "Hybrid",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/8143649?gh_jid=8143649",
-                "matched": "on call",
-                "excerpt": "ons, ask the right questions when something is going wrong, and step into a technical problem when the situation calls for it. At the same time, we are looking for a manager, not a tech lead with direct reports. Your success wi"
               }
             ]
           },
@@ -1353,7 +1345,7 @@
       "category": "Observability",
       "public_evidence_only": true,
       "surface": {
-        "grade": "64",
+        "grade": "65",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "3 public documents · 4 open reconciliations"
@@ -1382,7 +1374,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "http 503"
+            "reason": "ConnectionError"
           }
         },
         {
@@ -1395,7 +1387,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "http 503"
+            "reason": "ConnectionError"
           }
         }
       ],
@@ -1536,27 +1528,27 @@
       },
       "jobs": {
         "ok": true,
-        "total": 436,
-        "placeable": 436,
+        "total": 437,
+        "placeable": 437,
         "unplaceable": 0,
-        "eea": 96,
-        "non_eea": 340,
+        "eea": 95,
+        "non_eea": 342,
         "countries": {
-          "United States": 211,
-          "France": 53,
+          "United States": 210,
+          "France": 51,
           "Japan": 42,
-          "Ireland": 22,
-          "Netherlands": 20,
+          "Netherlands": 22,
+          "Ireland": 21,
+          "Singapore": 21,
           "United Kingdom": 20,
-          "Singapore": 18,
-          "Brazil": 18,
-          "Spain": 15,
+          "Brazil": 17,
           "South Korea": 14,
-          "Australia": 13,
+          "Australia": 14,
+          "Spain": 13,
           "India": 8,
-          "Germany": 6,
-          "Portugal": 6,
-          "Italy": 5,
+          "Germany": 5,
+          "Portugal": 5,
+          "Italy": 4,
           "Indonesia": 3,
           "Sweden": 3,
           "Mexico": 3,
@@ -1565,8 +1557,8 @@
           "Israel": 1,
           "Colombia": 1,
           "Chile": 1,
-          "Austria": 1,
           "Poland": 1,
+          "Austria": 1,
           "Saudi Arabia": 1
         },
         "scanned": 26,
@@ -1824,7 +1816,7 @@
       "category": "Payments",
       "public_evidence_only": true,
       "surface": {
-        "grade": "38",
+        "grade": "45",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "3 public documents · 1 open reconciliations"
@@ -1839,11 +1831,8 @@
           "sha256": "ff0e2b002da0ad9f",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2008-07-19",
-            "last": "2020-04-30"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -1855,11 +1844,8 @@
           "sha256": "2da116f320774a92",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 243,
-            "revisions": 242,
-            "first": "2022-05-27",
-            "last": "2026-09-21"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -1998,28 +1984,28 @@
       },
       "jobs": {
         "ok": true,
-        "total": 712,
-        "placeable": 632,
+        "total": 714,
+        "placeable": 634,
         "unplaceable": 80,
-        "eea": 82,
-        "non_eea": 550,
+        "eea": 85,
+        "non_eea": 549,
         "countries": {
-          "United States": 335,
-          "Ireland": 67,
+          "United States": 336,
+          "Ireland": 69,
+          "Canada": 54,
           "Singapore": 53,
-          "Canada": 51,
-          "United Kingdom": 48,
-          "India": 42,
-          "Mexico": 31,
-          "Australia": 11,
+          "United Kingdom": 47,
+          "India": 41,
+          "Mexico": 30,
+          "Australia": 10,
           "Japan": 4,
           "France": 4,
           "Germany": 3,
           "Israel": 3,
           "Taiwan": 3,
+          "Spain": 3,
           "Romania": 3,
           "Brazil": 2,
-          "Spain": 2,
           "Sweden": 1,
           "Luxembourg": 1,
           "New Zealand": 1,
@@ -2033,7 +2019,7 @@
             "label": "Travel expected",
             "severity": "high",
             "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 2,
+            "count": 4,
             "examples": [
               {
                 "title": "Account Executive, Strategic Platform Partnerships",
@@ -2048,6 +2034,13 @@
                 "url": "https://stripe.com/jobs/search?gh_jid=8126984",
                 "matched": "Willingness to travel",
                 "excerpt": "build and execute territory and opportunity-specific plans, leveraging tools such as Salesforce and Crossbeam Willingness to travel up to 25% Preferred qualifications Strong communication and presentation skills, including the ability to com"
+              },
+              {
+                "title": "Communities Partner Development Manager, SaaS Platforms",
+                "location": "US-Remote",
+                "url": "https://stripe.com/jobs/search?gh_jid=8138000",
+                "matched": "willingness to travel",
+                "excerpt": "ayment or financial-services technology, industry trends, and the competitive landscape Bachelor’s degree and willingness to travel Preferred qualifications Experience working in the financial services or payments industry Strong written and"
               }
             ]
           },
@@ -2178,7 +2171,7 @@
       "category": "Design SaaS",
       "public_evidence_only": true,
       "surface": {
-        "grade": "48",
+        "grade": "59",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "3 public documents · 1 open reconciliations"
@@ -2193,11 +2186,8 @@
           "sha256": "14b1ae957872913e",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 310,
-            "revisions": 309,
-            "first": "2024-01-18",
-            "last": "2026-09-28"
+            "ok": false,
+            "reason": "http 503"
           }
         },
         {
@@ -2209,8 +2199,11 @@
           "sha256": "4bde694018c282cd",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 15,
+            "revisions": 14,
+            "first": "2025-04-01",
+            "last": "2026-09-09"
           }
         },
         {
@@ -2232,7 +2225,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "150 of 163 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "152 of 165 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -2241,7 +2234,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 108 open roles"
+              "excerpt": "United States: 109 open roles"
             },
             {
               "kind": "stat",
@@ -2326,20 +2319,20 @@
       },
       "jobs": {
         "ok": true,
-        "total": 163,
-        "placeable": 163,
+        "total": 165,
+        "placeable": 165,
         "unplaceable": 0,
         "eea": 13,
-        "non_eea": 150,
+        "non_eea": 152,
         "countries": {
-          "United States": 108,
+          "United States": 109,
           "United Kingdom": 19,
           "Germany": 8,
           "Japan": 7,
           "Singapore": 5,
           "France": 5,
+          "Brazil": 5,
           "Australia": 4,
-          "Brazil": 4,
           "India": 2,
           "Israel": 1
         },
@@ -2626,7 +2619,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ReadTimeout"
+            "reason": "ConnectionError"
           }
         },
         {
@@ -2792,19 +2785,19 @@
       },
       "jobs": {
         "ok": true,
-        "total": 199,
-        "placeable": 189,
-        "unplaceable": 10,
-        "eea": 24,
+        "total": 202,
+        "placeable": 191,
+        "unplaceable": 11,
+        "eea": 26,
         "non_eea": 165,
         "countries": {
-          "United States": 96,
-          "Canada": 62,
-          "United Kingdom": 40,
-          "India": 26,
+          "United States": 97,
+          "Canada": 59,
+          "United Kingdom": 41,
+          "India": 27,
+          "Poland": 12,
           "Germany": 10,
-          "Poland": 10,
-          "Israel": 9,
+          "Israel": 8,
           "Ireland": 7,
           "Netherlands": 5,
           "Singapore": 5,
@@ -3019,7 +3012,7 @@
       "category": "Search and data",
       "public_evidence_only": true,
       "surface": {
-        "grade": "82",
+        "grade": "57",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "1 public documents · 1 open reconciliations"
@@ -3034,8 +3027,11 @@
           "sha256": "2b4ba1b47e64f285",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2018-05-23",
+            "last": "2026-01-01"
           }
         }
       ],
@@ -3101,22 +3097,22 @@
       },
       "jobs": {
         "ok": true,
-        "total": 391,
-        "placeable": 391,
+        "total": 394,
+        "placeable": 394,
         "unplaceable": 0,
-        "eea": 155,
-        "non_eea": 236,
+        "eea": 159,
+        "non_eea": 235,
         "countries": {
-          "United States": 120,
-          "Spain": 38,
+          "United States": 121,
+          "Spain": 39,
           "Canada": 36,
           "Ireland": 23,
-          "Portugal": 22,
+          "Portugal": 23,
+          "Greece": 22,
           "United Kingdom": 21,
-          "Greece": 21,
-          "India": 16,
           "Poland": 16,
-          "Norway": 10,
+          "India": 14,
+          "Norway": 11,
           "Romania": 10,
           "Switzerland": 9,
           "Germany": 7,
@@ -3411,7 +3407,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "ReadTimeout"
           }
         }
       ],
