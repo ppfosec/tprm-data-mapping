@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T10:34:22+00:00",
+  "generated_at": "2026-10-02T10:10:35+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -171,29 +171,29 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 53,
-            "revisions": 52,
+            "captures": 55,
+            "revisions": 54,
             "first": "2026-07-14",
-            "last": "2026-09-30"
+            "last": "2026-10-01"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 635,
-        "placeable": 633,
+        "total": 637,
+        "placeable": 635,
         "unplaceable": 2,
-        "eea": 23,
-        "non_eea": 610,
+        "eea": 24,
+        "non_eea": 611,
         "countries": {
-          "United States": 500,
-          "United Kingdom": 53,
+          "United States": 501,
+          "United Kingdom": 52,
           "Japan": 17,
           "South Korea": 13,
-          "Singapore": 11,
+          "Singapore": 12,
           "Australia": 10,
           "Germany": 9,
-          "Ireland": 7,
+          "Ireland": 8,
           "India": 5,
           "France": 5,
           "Switzerland": 4,
@@ -281,7 +281,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "610 of 633 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "611 of 635 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -290,11 +290,11 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 500 open roles"
+              "excerpt": "United States: 501 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 53 open roles"
+              "excerpt": "United Kingdom: 52 open roles"
             },
             {
               "kind": "stat",
@@ -520,7 +520,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -533,7 +533,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -545,8 +545,11 @@
           "sha256": "3669d59798194699",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ReadTimeout"
+            "ok": true,
+            "captures": 158,
+            "revisions": 157,
+            "first": "2018-11-17",
+            "last": "2026-08-18"
           }
         },
         {
@@ -558,16 +561,19 @@
           "sha256": "253254e28bc2ff29",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "http 503"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2021-05-16",
+            "last": "2025-10-03"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 402,
+        "total": 401,
         "placeable": 5,
-        "unplaceable": 397,
+        "unplaceable": 396,
         "eea": 1,
         "non_eea": 4,
         "countries": {
@@ -584,7 +590,7 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 10,
+            "count": 11,
             "examples": [
               {
                 "title": "AI Security Research & Red Team Engineer",
@@ -644,7 +650,7 @@
             "label": "Travel expected",
             "severity": "high",
             "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 2,
+            "count": 1,
             "examples": [
               {
                 "title": "Data Center Site Selection - Hyperscale",
@@ -652,13 +658,22 @@
                 "url": "https://boards.greenhouse.io/cloudflare/jobs/8234130?gh_jid=8234130",
                 "matched": "Willing to travel",
                 "excerpt": "at once, across time zones, with incomplete information Has taken a campus or BTS lease from LOI to execution Willing to travel ~30% International deal experience preferred Bachelor’s degree or equivalent experience required Nice to have"
-              },
+              }
+            ]
+          },
+          {
+            "key": "follow_the_sun",
+            "label": "Follow-the-sun support",
+            "severity": "high",
+            "why": "A rotation that hands the same production access around the globe every eight hours.",
+            "count": 1,
+            "examples": [
               {
-                "title": "Principal Solutions Architect, APJC (Developer Platform) - Mandarin Speaking",
+                "title": "Engineering Manager, Edge SRE",
                 "location": "Hybrid",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/8179387?gh_jid=8179387",
-                "matched": "travel up to 30%",
-                "excerpt": "n, and facilitation skills tailored for developer, architectural, and executive audiences. Travel: Ability to travel up to 30%, primarily within APJC and mainland China (supported by flexible planning). Nice-to-Have (Bonus Skills) Exper"
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8243207?gh_jid=8243207",
+                "matched": "follow the sun",
+                "excerpt": "responsible for production reliability. SREs are based&nbsp; in locations in Asia, Europe and the US enabling follow the sun coverage during daytime hours. SREs are supported by all engineering teams at Cloudflare who participate in o"
               }
             ]
           },
@@ -746,7 +761,7 @@
           "rule": "access_vs_rotation",
           "severity": "medium",
           "headline": "Restricted-access language alongside global rotations",
-          "detail": "The documents describe access controls in principle, while postings describe distributed across time zones, on-call access, round-the-clock coverage. Both can be true; the reconciliation is what a reviewer needs to see.",
+          "detail": "The documents describe access controls in principle, while postings describe distributed across time zones, follow-the-sun support, on-call access, round-the-clock coverage. Both can be true; the reconciliation is what a reviewer needs to see.",
           "claim": {
             "kind": "dpa",
             "text": "d) ensure that only authorized personnel have access to such Personal Data and that any persons whom it authorizes to have access to the Personal Data are under contractual or statutory obligations of confidentiality;",
@@ -823,11 +838,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 70,
+        "total": 45,
         "footprint": 20,
         "access": 25,
         "transparency": 0,
-        "record": 25
+        "record": 0
       },
       "drift": [
         {
@@ -909,8 +924,11 @@
           "sha256": "3584067664bd7167",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2017-06-30",
+            "last": "2025-04-19"
           }
         },
         {
@@ -922,8 +940,11 @@
           "sha256": "5db7e30225b6d5fc",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 33,
+            "revisions": 32,
+            "first": "2022-05-28",
+            "last": "2026-08-03"
           }
         },
         {
@@ -935,32 +956,35 @@
           "sha256": "f95ffbb90f9ae86e",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 22,
+            "revisions": 21,
+            "first": "2024-05-24",
+            "last": "2026-09-29"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 437,
-        "placeable": 437,
+        "total": 440,
+        "placeable": 440,
         "unplaceable": 0,
-        "eea": 95,
-        "non_eea": 342,
+        "eea": 97,
+        "non_eea": 343,
         "countries": {
-          "United States": 210,
-          "France": 51,
+          "United States": 212,
+          "France": 53,
           "Japan": 42,
-          "Netherlands": 22,
-          "Ireland": 21,
-          "Singapore": 21,
+          "Ireland": 22,
+          "Netherlands": 21,
+          "Singapore": 20,
           "United Kingdom": 20,
           "Brazil": 17,
           "South Korea": 14,
           "Australia": 14,
           "Spain": 13,
           "India": 8,
-          "Germany": 5,
+          "Germany": 6,
           "Portugal": 5,
           "Italy": 4,
           "Indonesia": 3,
@@ -1207,11 +1231,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 65,
-        "footprint": 20,
+        "total": 39,
+        "footprint": 19,
         "access": 20,
         "transparency": 0,
-        "record": 25
+        "record": 0
       },
       "drift": [
         {
@@ -1383,8 +1407,11 @@
           "sha256": "ff0e2b002da0ad9f",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2008-07-19",
+            "last": "2020-04-30"
           }
         },
         {
@@ -1396,8 +1423,11 @@
           "sha256": "2da116f320774a92",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 243,
+            "revisions": 242,
+            "first": "2022-05-27",
+            "last": "2026-09-21"
           }
         },
         {
@@ -1409,29 +1439,26 @@
           "sha256": "b8ebc4c7ee506979",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 109,
-            "revisions": 108,
-            "first": "2022-12-05",
-            "last": "2026-09-21"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 714,
-        "placeable": 634,
-        "unplaceable": 80,
+        "total": 711,
+        "placeable": 632,
+        "unplaceable": 79,
         "eea": 85,
-        "non_eea": 549,
+        "non_eea": 547,
         "countries": {
-          "United States": 336,
+          "United States": 337,
           "Ireland": 69,
-          "Canada": 54,
-          "Singapore": 53,
-          "United Kingdom": 47,
-          "India": 41,
-          "Mexico": 30,
+          "Canada": 56,
+          "Singapore": 52,
+          "United Kingdom": 46,
+          "India": 39,
+          "Mexico": 29,
           "Australia": 10,
           "Japan": 4,
           "France": 4,
@@ -1454,7 +1481,7 @@
             "label": "Travel expected",
             "severity": "high",
             "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 4,
+            "count": 3,
             "examples": [
               {
                 "title": "Account Executive, Strategic Platform Partnerships",
@@ -1473,7 +1500,7 @@
               {
                 "title": "Communities Partner Development Manager, SaaS Platforms",
                 "location": "US-Remote",
-                "url": "https://stripe.com/jobs/search?gh_jid=8138000",
+                "url": "https://stripe.com/jobs/search?gh_jid=8103952",
                 "matched": "willingness to travel",
                 "excerpt": "ayment or financial-services technology, industry trends, and the competitive landscape Bachelor’s degree and willingness to travel Preferred qualifications Experience working in the financial services or payments industry Strong written and"
               }
@@ -1511,7 +1538,7 @@
               },
               {
                 "title": "Account Executive, Startups SaaS Platforms Grower",
-                "location": "Dublin",
+                "location": "Dublin or London",
                 "url": "https://stripe.com/jobs/search?gh_jid=8119498",
                 "matched": "segment",
                 "excerpt": "re a curious, well-rounded strategic seller who builds strong relationships with Stripe’s clients in this key segment. You’re comfortable owning your territory and balancing a mix of high-value, strategic deals with smaller, hi"
@@ -1546,7 +1573,7 @@
             {
               "kind": "job",
               "title": "Account Executive, Startups SaaS Platforms Grower",
-              "location": "Dublin",
+              "location": "Dublin or London",
               "url": "https://stripe.com/jobs/search?gh_jid=8119498",
               "matched": "segment",
               "excerpt": "re a curious, well-rounded strategic seller who builds strong relationships with Stripe’s clients in this key segment. You’re comfortable owning your territory and balancing a mix of high-value, strategic deals with smaller, hi"
@@ -1645,9 +1672,9 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 45,
+        "total": 41,
         "footprint": 22,
-        "access": 23,
+        "access": 19,
         "transparency": 0,
         "record": 0
       },
@@ -1741,8 +1768,11 @@
           "sha256": "14b1ae957872913e",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "http 503"
+            "ok": true,
+            "captures": 313,
+            "revisions": 312,
+            "first": "2024-01-18",
+            "last": "2026-10-01"
           }
         },
         {
@@ -1770,26 +1800,29 @@
           "sha256": "6a0860b07ee4b942",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 84,
+            "revisions": 83,
+            "first": "2019-04-01",
+            "last": "2026-09-14"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 165,
-        "placeable": 165,
+        "total": 164,
+        "placeable": 164,
         "unplaceable": 0,
         "eea": 13,
-        "non_eea": 152,
+        "non_eea": 151,
         "countries": {
           "United States": 109,
           "United Kingdom": 19,
           "Germany": 8,
           "Japan": 7,
-          "Singapore": 5,
           "France": 5,
           "Brazil": 5,
+          "Singapore": 4,
           "Australia": 4,
           "India": 2,
           "Israel": 1
@@ -1918,7 +1951,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "152 of 165 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "151 of 164 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -2011,11 +2044,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 59,
+        "total": 48,
         "footprint": 23,
         "access": 25,
         "transparency": 0,
-        "record": 11
+        "record": 0
       },
       "drift": [
         {
@@ -2177,7 +2210,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -2206,26 +2239,23 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": true,
-            "captures": 26,
-            "revisions": 25,
-            "first": "2023-11-29",
-            "last": "2026-07-07"
+            "ok": false,
+            "reason": "ReadTimeout"
           }
         }
       ],
       "jobs": {
         "ok": true,
         "total": 202,
-        "placeable": 191,
-        "unplaceable": 11,
+        "placeable": 192,
+        "unplaceable": 10,
         "eea": 26,
-        "non_eea": 165,
+        "non_eea": 166,
         "countries": {
-          "United States": 97,
-          "Canada": 59,
+          "United States": 99,
+          "Canada": 62,
           "United Kingdom": 41,
-          "India": 27,
+          "India": 28,
           "Poland": 12,
           "Germany": 10,
           "Israel": 8,
@@ -2233,15 +2263,15 @@
           "Netherlands": 5,
           "Singapore": 5,
           "France": 4,
+          "Japan": 4,
           "Australia": 3,
-          "Japan": 3,
-          "Mexico": 2,
           "South Korea": 2,
-          "United Arab Emirates": 2,
-          "Turkey": 2,
+          "Mexico": 1,
           "Brazil": 1,
           "Spain": 1,
-          "Austria": 1
+          "Austria": 1,
+          "United Arab Emirates": 1,
+          "Turkey": 1
         },
         "scanned": 26,
         "signals": [
@@ -2252,6 +2282,13 @@
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
             "count": 14,
             "examples": [
+              {
+                "title": "Associate Revenue Operations Manager, India",
+                "location": "Remote, India",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8859694002",
+                "matched": "across time zones",
+                "excerpt": "approach to working with data Clear and concise written communication, particularly in asynchronous settings across time zones Collaborative and comfortable asking questions; you will be supported, not left to figure things out alone In"
+              },
               {
                 "title": "Customer Success Architect",
                 "location": "Remote, United States",
@@ -2265,13 +2302,6 @@
                 "url": "https://job-boards.greenhouse.io/gitlab/jobs/8842584002",
                 "matched": "globally distributed",
                 "excerpt": "ions outside EMEA as needed. Use GitLab to collaborate transparently and work effectively in an asynchronous, globally distributed environment. What you’ll bring A Juris Doctor (JD), Bachelor of Laws (LLB), or local equivalent, admitted to"
-              },
-              {
-                "title": "Director, Support (Bengaluru)",
-                "location": "Bangalore, India",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8629019002",
-                "matched": "across time zones",
-                "excerpt": "lve complex problems collectively, participate in pairing sessions and one-on-ones, and stay in communication across time zones through deliberate asynchronous work habits. Support is where customers meet GitLab, and we take that serious"
               }
             ]
           },
@@ -2361,6 +2391,13 @@
             "count": 26,
             "examples": [
               {
+                "title": "Associate Revenue Operations Manager, India",
+                "location": "Remote, India",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8859694002",
+                "matched": "itar",
+                "excerpt": "or physical disability, genetic information (including family medical history), discharge status from the military, protected veteran status (which includes disabled veterans, recently separated veterans, active duty wartim"
+              },
+              {
                 "title": "Customer Success Architect",
                 "location": "Remote, United States",
                 "url": "https://job-boards.greenhouse.io/gitlab/jobs/8742716002",
@@ -2371,13 +2408,6 @@
                 "title": "Customer Success Architect, CEUR",
                 "location": "Remote, Germany",
                 "url": "https://job-boards.greenhouse.io/gitlab/jobs/8646852002",
-                "matched": "itar",
-                "excerpt": "or physical disability, genetic information (including family medical history), discharge status from the military, protected veteran status (which includes disabled veterans, recently separated veterans, active duty wartim"
-              },
-              {
-                "title": "Director, Engineering, Platform Operations & Productivity",
-                "location": "Bangalore, India",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8626772002",
                 "matched": "itar",
                 "excerpt": "or physical disability, genetic information (including family medical history), discharge status from the military, protected veteran status (which includes disabled veterans, recently separated veterans, active duty wartim"
               }
@@ -2391,6 +2421,13 @@
             "count": 6,
             "examples": [
               {
+                "title": "Associate Revenue Operations Manager, India",
+                "location": "Remote, India",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8859694002",
+                "matched": "Salesforce",
+                "excerpt": "sibilities Support cross-functional annual planning activities related to territory carving and deployment in Salesforce for the APJ region, with guidance from senior team members Help maintain and document territory operations pr"
+              },
+              {
                 "title": "Customer Success Architect, CEUR",
                 "location": "Remote, Germany",
                 "url": "https://job-boards.greenhouse.io/gitlab/jobs/8646852002",
@@ -2403,13 +2440,6 @@
                 "url": "https://job-boards.greenhouse.io/gitlab/jobs/8629019002",
                 "matched": "Zendesk",
                 "excerpt": "ry tooling, Kubernetes, or cloud-native infrastructure, along with experience using support platforms such as Zendesk, Salesforce, Decagon, or equivalent tools. Experience with GitLab as a user, administrator, or customer is he"
-              },
-              {
-                "title": "Intermediate Support Engineer",
-                "location": "Bangalore, India",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8687026002",
-                "matched": "Zendesk",
-                "excerpt": "hat you’ll do Support a mix of Self-managed and GitLab.com (SaaS) customers, resolving complex issues through Zendesk tickets, merge requests, email, and video calls. Collaborate with Product, Development, Infrastructure, Custo"
               }
             ]
           }
@@ -2423,6 +2453,14 @@
           "detail": "Engineering job descriptions name Salesforce, but it does not appear anywhere in the legal documents collected including the sub-processor list at https://about.gitlab.com/privacy/subprocessors/.",
           "claim": null,
           "evidence": [
+            {
+              "kind": "job",
+              "title": "Associate Revenue Operations Manager, India",
+              "location": "Remote, India",
+              "url": "https://job-boards.greenhouse.io/gitlab/jobs/8859694002",
+              "matched": "Salesforce",
+              "excerpt": "sibilities Support cross-functional annual planning activities related to territory carving and deployment in Salesforce for the APJ region, with guidance from senior team members Help maintain and document territory operations pr"
+            },
             {
               "kind": "job",
               "title": "Director, Support (Bengaluru)",
@@ -2447,19 +2485,19 @@
           "evidence": [
             {
               "kind": "job",
+              "title": "Associate Revenue Operations Manager, India",
+              "location": "Remote, India",
+              "url": "https://job-boards.greenhouse.io/gitlab/jobs/8859694002",
+              "matched": "across time zones",
+              "excerpt": "approach to working with data Clear and concise written communication, particularly in asynchronous settings across time zones Collaborative and comfortable asking questions; you will be supported, not left to figure things out alone In"
+            },
+            {
+              "kind": "job",
               "title": "Customer Success Architect",
               "location": "Remote, United States",
               "url": "https://job-boards.greenhouse.io/gitlab/jobs/8742716002",
               "matched": "across time zones",
               "excerpt": "ons, guide roadmaps, and navigate escalations.&nbsp; We work in an all-remote, asynchronous way, coordinating across time zones to support a focused set of strategic accounts and ensure long-term customer success. How GitLab Supports Ful"
-            },
-            {
-              "kind": "job",
-              "title": "Director, Legal - Employment",
-              "location": "Remote Ireland; Remote, United Kingdom",
-              "url": "https://job-boards.greenhouse.io/gitlab/jobs/8842584002",
-              "matched": "globally distributed",
-              "excerpt": "ions outside EMEA as needed. Use GitLab to collaborate transparently and work effectively in an asynchronous, globally distributed environment. What you’ll bring A Juris Doctor (JD), Bachelor of Laws (LLB), or local equivalent, admitted to"
             }
           ],
           "question": "For out-of-hours incidents, who is on the rotation, where are they, and is their access to customer data logged and reviewable by the customer?"
@@ -2598,14 +2636,14 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 394,
-        "placeable": 394,
+        "total": 393,
+        "placeable": 393,
         "unplaceable": 0,
-        "eea": 159,
-        "non_eea": 235,
+        "eea": 157,
+        "non_eea": 236,
         "countries": {
-          "United States": 121,
-          "Spain": 39,
+          "United States": 123,
+          "Spain": 37,
           "Canada": 36,
           "Ireland": 23,
           "Portugal": 23,
@@ -2622,10 +2660,10 @@
           "Australia": 4,
           "Brazil": 4,
           "Japan": 4,
-          "Mexico": 3,
           "Costa Rica": 2,
           "United Arab Emirates": 2,
           "France": 2,
+          "Mexico": 2,
           "Saudi Arabia": 2,
           "Belgium": 2,
           "South Africa": 1,
@@ -2958,7 +2996,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -2970,20 +3008,23 @@
           "sha256": "c6f2954ea450f34e",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ReadTimeout"
+            "ok": true,
+            "captures": 164,
+            "revisions": 163,
+            "first": "2020-04-23",
+            "last": "2026-09-30"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 91,
-        "placeable": 86,
+        "total": 89,
+        "placeable": 84,
         "unplaceable": 5,
         "eea": 8,
-        "non_eea": 78,
+        "non_eea": 76,
         "countries": {
-          "United States": 70,
+          "United States": 68,
           "United Kingdom": 16,
           "Germany": 8,
           "Australia": 3,
@@ -3183,11 +3224,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 81,
+        "total": 56,
         "footprint": 23,
         "access": 25,
         "transparency": 8,
-        "record": 25
+        "record": 0
       },
       "drift": [
         {
