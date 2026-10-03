@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T10:10:35+00:00",
+  "generated_at": "2026-10-03T09:28:54+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -137,11 +137,8 @@
           "sha256": "85c78c93175ffb26",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2024-02-21",
-            "last": "2026-03-15"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -154,11 +151,8 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": true,
-            "captures": 71,
-            "revisions": 70,
-            "first": "2024-09-26",
-            "last": "2026-09-28"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -171,28 +165,28 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 55,
-            "revisions": 54,
+            "captures": 56,
+            "revisions": 55,
             "first": "2026-07-14",
-            "last": "2026-10-01"
+            "last": "2026-10-02"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 637,
-        "placeable": 635,
+        "total": 641,
+        "placeable": 639,
         "unplaceable": 2,
-        "eea": 24,
-        "non_eea": 611,
+        "eea": 25,
+        "non_eea": 614,
         "countries": {
-          "United States": 501,
+          "United States": 504,
           "United Kingdom": 52,
           "Japan": 17,
           "South Korea": 13,
           "Singapore": 12,
           "Australia": 10,
-          "Germany": 9,
+          "Germany": 10,
           "Ireland": 8,
           "India": 5,
           "France": 5,
@@ -281,7 +275,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "611 of 635 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "614 of 639 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -290,7 +284,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 501 open roles"
+              "excerpt": "United States: 504 open roles"
             },
             {
               "kind": "stat",
@@ -520,7 +514,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectTimeout"
+            "reason": "ConnectionError"
           }
         },
         {
@@ -533,7 +527,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectTimeout"
+            "reason": "ConnectionError"
           }
         },
         {
@@ -545,11 +539,8 @@
           "sha256": "3669d59798194699",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 158,
-            "revisions": 157,
-            "first": "2018-11-17",
-            "last": "2026-08-18"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         },
         {
@@ -561,19 +552,16 @@
           "sha256": "253254e28bc2ff29",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2021-05-16",
-            "last": "2025-10-03"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 401,
+        "total": 405,
         "placeable": 5,
-        "unplaceable": 396,
+        "unplaceable": 400,
         "eea": 1,
         "non_eea": 4,
         "countries": {
@@ -838,11 +826,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 45,
+        "total": 70,
         "footprint": 20,
         "access": 25,
         "transparency": 0,
-        "record": 0
+        "record": 25
       },
       "drift": [
         {
@@ -966,16 +954,16 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 440,
-        "placeable": 440,
+        "total": 445,
+        "placeable": 445,
         "unplaceable": 0,
-        "eea": 97,
-        "non_eea": 343,
+        "eea": 100,
+        "non_eea": 345,
         "countries": {
-          "United States": 212,
-          "France": 53,
+          "United States": 214,
+          "France": 55,
           "Japan": 42,
-          "Ireland": 22,
+          "Ireland": 23,
           "Netherlands": 21,
           "Singapore": 20,
           "United Kingdom": 20,
@@ -1006,7 +994,7 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 2,
+            "count": 3,
             "examples": [
               {
                 "title": "Federal Support Engineer 3",
@@ -1021,6 +1009,13 @@
                 "url": "https://careers.datadoghq.com/detail/8108378/?gh_jid=8108378",
                 "matched": "on-call",
                 "excerpt": "ser Experience Stay hands-on: contribute to code review, weigh in on design decisions, and participate in the on-call rotation Bring AI deeply into how the team builds, from adopting agentic coding tools to rethinking workflows"
+              },
+              {
+                "title": "Manager I, Engineering - Security Libraries",
+                "location": "Paris, France",
+                "url": "https://careers.datadoghq.com/detail/8094219/?gh_jid=8094219",
+                "matched": "on-call",
+                "excerpt": "ng senior ICs as technical leaders Own team delivery and productivity: planning, milestones, reviews, and the on-call rotation Set product direction with Product Management and balance priorities across App &amp; API Protection"
               }
             ]
           },
@@ -1033,15 +1028,15 @@
             "examples": [
               {
                 "title": "Global Safety & Security Manager",
-                "location": "Sydney, Australia",
-                "url": "https://careers.datadoghq.com/detail/8224963/?gh_jid=8224963",
+                "location": "Singapore, Singapore",
+                "url": "https://careers.datadoghq.com/detail/8223272/?gh_jid=8223272",
                 "matched": "international travel",
                 "excerpt": "ice and collaboration. This position is based in our Sydney or Singapore office and will require domestic and international travel. The role will focus particularly on developing our safety compliance, security program development and matur"
               },
               {
                 "title": "Global Safety & Security Manager",
-                "location": "Singapore, Singapore",
-                "url": "https://careers.datadoghq.com/detail/8223272/?gh_jid=8223272",
+                "location": "Sydney, Australia",
+                "url": "https://careers.datadoghq.com/detail/8224963/?gh_jid=8224963",
                 "matched": "international travel",
                 "excerpt": "ice and collaboration. This position is based in our Sydney or Singapore office and will require domestic and international travel. The role will focus particularly on developing our safety compliance, security program development and matur"
               }
@@ -1231,9 +1226,9 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 39,
+        "total": 43,
         "footprint": 19,
-        "access": 20,
+        "access": 24,
         "transparency": 0,
         "record": 0
       },
@@ -1439,22 +1434,25 @@
           "sha256": "b8ebc4c7ee506979",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 109,
+            "revisions": 108,
+            "first": "2022-12-05",
+            "last": "2026-09-21"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 711,
-        "placeable": 632,
-        "unplaceable": 79,
+        "total": 715,
+        "placeable": 635,
+        "unplaceable": 80,
         "eea": 85,
-        "non_eea": 547,
+        "non_eea": 550,
         "countries": {
-          "United States": 337,
+          "United States": 341,
           "Ireland": 69,
-          "Canada": 56,
+          "Canada": 55,
           "Singapore": 52,
           "United Kingdom": 46,
           "India": 39,
@@ -1481,7 +1479,7 @@
             "label": "Travel expected",
             "severity": "high",
             "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 3,
+            "count": 2,
             "examples": [
               {
                 "title": "Account Executive, Strategic Platform Partnerships",
@@ -1496,13 +1494,6 @@
                 "url": "https://stripe.com/jobs/search?gh_jid=8126984",
                 "matched": "Willingness to travel",
                 "excerpt": "build and execute territory and opportunity-specific plans, leveraging tools such as Salesforce and Crossbeam Willingness to travel up to 25% Preferred qualifications Strong communication and presentation skills, including the ability to com"
-              },
-              {
-                "title": "Communities Partner Development Manager, SaaS Platforms",
-                "location": "US-Remote",
-                "url": "https://stripe.com/jobs/search?gh_jid=8103952",
-                "matched": "willingness to travel",
-                "excerpt": "ayment or financial-services technology, industry trends, and the competitive landscape Bachelor’s degree and willingness to travel Preferred qualifications Experience working in the financial services or payments industry Strong written and"
               }
             ]
           },
@@ -1672,9 +1663,9 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 41,
+        "total": 38,
         "footprint": 22,
-        "access": 19,
+        "access": 16,
         "transparency": 0,
         "record": 0
       },
@@ -1769,10 +1760,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 313,
-            "revisions": 312,
+            "captures": 316,
+            "revisions": 315,
             "first": "2024-01-18",
-            "last": "2026-10-01"
+            "last": "2026-10-02"
           }
         },
         {
@@ -1810,13 +1801,13 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 164,
-        "placeable": 164,
+        "total": 162,
+        "placeable": 162,
         "unplaceable": 0,
         "eea": 13,
-        "non_eea": 151,
+        "non_eea": 149,
         "countries": {
-          "United States": 109,
+          "United States": 107,
           "United Kingdom": 19,
           "Germany": 8,
           "Japan": 7,
@@ -1896,15 +1887,8 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 5,
+            "count": 4,
             "examples": [
-              {
-                "title": "Data Scientist  ",
-                "location": "San Francisco, CA • New York, NY • United States",
-                "url": "https://boards.greenhouse.io/figma/jobs/5552580004?gh_jid=5552580004",
-                "matched": "Snowflake",
-                "excerpt": "pting language like Python or R, along with experience working with distributed data systems (e.g., Redshift, Snowflake, Presto, Hive, Spark) Strong foundation in statistical methods, experimentation, and/or forecasting A track r"
-              },
               {
                 "title": "Data Scientist, Core Data -  PhD (2026)",
                 "location": "San Francisco, CA • New York, NY",
@@ -1918,6 +1902,13 @@
                 "url": "https://boards.greenhouse.io/figma/jobs/6013304004?gh_jid=6013304004",
                 "matched": "Snowflake",
                 "excerpt": "nue recognition principles (ASC 606) Experience with modern analytics and data engineering tools such as DBT, Snowflake, Git, Spark, Presto, or similar technologies Experience supporting IPO readiness, public company reporting, S"
+              },
+              {
+                "title": "GTM Systems Architect",
+                "location": "San Francisco, CA • New York, NY • United States",
+                "url": "https://boards.greenhouse.io/figma/jobs/6167305004?gh_jid=6167305004",
+                "matched": "Salesforce",
+                "excerpt": "n and collaboration, join us! The GTM Systems Architect is responsible for optimizing, scaling, and governing Salesforce to support various cross functional teams. This role combines business analysis, systems expertise, data stew"
               }
             ]
           },
@@ -1951,7 +1942,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "151 of 164 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "149 of 162 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -1960,7 +1951,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 109 open roles"
+              "excerpt": "United States: 107 open roles"
             },
             {
               "kind": "stat",
@@ -1972,6 +1963,24 @@
             }
           ],
           "question": "Which roles can access production data, and from which countries? Does the residency commitment cover support and engineering access, or only data at rest?"
+        },
+        {
+          "rule": "subprocessor_gap",
+          "severity": "medium",
+          "headline": "Salesforce appears in hiring, not in the published documents",
+          "detail": "Engineering job descriptions name Salesforce, but it does not appear anywhere in the legal documents collected including the sub-processor list at https://www.figma.com/sub-processors/.",
+          "claim": null,
+          "evidence": [
+            {
+              "kind": "job",
+              "title": "GTM Systems Architect",
+              "location": "San Francisco, CA • New York, NY • United States",
+              "url": "https://boards.greenhouse.io/figma/jobs/6167305004?gh_jid=6167305004",
+              "matched": "Salesforce",
+              "excerpt": "n and collaboration, join us! The GTM Systems Architect is responsible for optimizing, scaling, and governing Salesforce to support various cross functional teams. This role combines business analysis, systems expertise, data stew"
+            }
+          ],
+          "question": "Is Salesforce a sub-processor? If it is, when was it added to the list, and were customers notified? If it never touches customer data, what is it used for?"
         }
       ],
       "data_classification": {
@@ -2209,8 +2218,11 @@
           "sha256": "b8fd30b8b1e6bdaa",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2015-04-16",
+            "last": "2026-02-13"
           }
         },
         {
@@ -2239,37 +2251,41 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": false,
-            "reason": "ReadTimeout"
+            "ok": true,
+            "captures": 26,
+            "revisions": 25,
+            "first": "2023-11-29",
+            "last": "2026-07-07"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 202,
-        "placeable": 192,
+        "total": 211,
+        "placeable": 201,
         "unplaceable": 10,
-        "eea": 26,
-        "non_eea": 166,
+        "eea": 32,
+        "non_eea": 169,
         "countries": {
-          "United States": 99,
-          "Canada": 62,
-          "United Kingdom": 41,
+          "United States": 103,
+          "Canada": 64,
+          "United Kingdom": 39,
           "India": 28,
-          "Poland": 12,
-          "Germany": 10,
+          "Germany": 13,
+          "Poland": 11,
           "Israel": 8,
-          "Ireland": 7,
-          "Netherlands": 5,
+          "Ireland": 5,
           "Singapore": 5,
           "France": 4,
+          "Netherlands": 4,
           "Japan": 4,
           "Australia": 3,
           "South Korea": 2,
-          "Mexico": 1,
           "Brazil": 1,
-          "Spain": 1,
+          "Mexico": 1,
+          "Sweden": 1,
           "Austria": 1,
+          "Switzerland": 1,
           "United Arab Emirates": 1,
           "Turkey": 1
         },
@@ -2418,7 +2434,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 6,
+            "count": 7,
             "examples": [
               {
                 "title": "Associate Revenue Operations Manager, India",
@@ -2581,8 +2597,8 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 51,
-        "footprint": 22,
+        "total": 50,
+        "footprint": 21,
         "access": 25,
         "transparency": 4,
         "record": 0
@@ -2626,25 +2642,22 @@
           "sha256": "2b4ba1b47e64f285",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2018-05-23",
-            "last": "2026-01-01"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 393,
-        "placeable": 393,
+        "total": 394,
+        "placeable": 394,
         "unplaceable": 0,
         "eea": 157,
-        "non_eea": 236,
+        "non_eea": 237,
         "countries": {
           "United States": 123,
+          "Canada": 37,
           "Spain": 37,
-          "Canada": 36,
           "Ireland": 23,
           "Portugal": 23,
           "Greece": 22,
@@ -2884,11 +2897,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 57,
+        "total": 82,
         "footprint": 15,
         "access": 25,
         "transparency": 17,
-        "record": 0
+        "record": 25
       },
       "drift": [
         {
@@ -2995,8 +3008,11 @@
           "sha256": "1089987c0a57208c",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 43,
+            "revisions": 42,
+            "first": "2026-06-08",
+            "last": "2026-10-02"
           }
         },
         {
@@ -3008,29 +3024,26 @@
           "sha256": "c6f2954ea450f34e",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 164,
-            "revisions": 163,
-            "first": "2020-04-23",
-            "last": "2026-09-30"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 89,
-        "placeable": 84,
+        "total": 85,
+        "placeable": 80,
         "unplaceable": 5,
-        "eea": 8,
+        "eea": 4,
         "non_eea": 76,
         "countries": {
-          "United States": 68,
-          "United Kingdom": 16,
-          "Germany": 8,
+          "United States": 64,
+          "United Kingdom": 14,
+          "Germany": 4,
           "Australia": 3,
           "India": 2
         },
-        "scanned": 25,
+        "scanned": 21,
         "signals": [
           {
             "key": "travel",
@@ -3087,7 +3100,7 @@
             "examples": [
               {
                 "title": "Security Engineer, Detection Response",
-                "location": "Hybrid - San Francisco, New York City, London, Berlin",
+                "location": "Hybrid - San Francisco, New York City, London",
                 "url": "https://job-boards.greenhouse.io/vercel/jobs/6111332004",
                 "matched": "on-call",
                 "excerpt": "and urgent requests as they arise, as well as contributing to the build-out and continuous improvement of the on-call process to enhance efficiency and effectiveness. Continuously act as a guardian to enable the business to nav"
@@ -3106,7 +3119,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 5,
+            "count": 4,
             "examples": [
               {
                 "title": "Head of Field Engineering Operations",
@@ -3123,11 +3136,11 @@
                 "excerpt": "gration plans, and high-stakes presentations. Beyond running the team, you will shape how Vercel wins in this segment. You will turn patterns from the field into repeatable plays and carry what startups tell you back to our eng"
               },
               {
-                "title": "Marketing Operations Manager",
-                "location": "Hybrid - San Francisco, Austin",
-                "url": "https://job-boards.greenhouse.io/vercel/jobs/6144467004",
-                "matched": "Salesforce",
-                "excerpt": "r our core martech stack—including our marketing automation platform ( Customer.io ) and its integration with Salesforce, Snowflake, and downstream systems —keeping tools tightly connected and data flowing reliably Build, QA, and"
+                "title": "Software Engineer - Data Platform",
+                "location": "Remote - United States",
+                "url": "https://job-boards.greenhouse.io/vercel/jobs/6188400004",
+                "matched": "Snowflake",
+                "excerpt": "t goals, and build scalable, reliable systems using modern technologies like Kafka, ClickHouse, Tinybird, and Snowflake. You'll lead from the front, writing production-grade code, setting high standards for design and data govern"
               }
             ]
           }
@@ -3224,8 +3237,8 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 56,
-        "footprint": 23,
+        "total": 57,
+        "footprint": 24,
         "access": 25,
         "transparency": 8,
         "record": 0
