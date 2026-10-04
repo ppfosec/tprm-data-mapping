@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T09:28:54+00:00",
+  "generated_at": "2026-10-04T09:58:48+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -137,8 +137,11 @@
           "sha256": "85c78c93175ffb26",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2024-02-21",
+            "last": "2026-03-15"
           }
         },
         {
@@ -151,8 +154,11 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 71,
+            "revisions": 70,
+            "first": "2024-09-26",
+            "last": "2026-09-28"
           }
         },
         {
@@ -165,22 +171,22 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 56,
-            "revisions": 55,
+            "captures": 58,
+            "revisions": 57,
             "first": "2026-07-14",
-            "last": "2026-10-02"
+            "last": "2026-10-04"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 641,
-        "placeable": 639,
+        "total": 639,
+        "placeable": 637,
         "unplaceable": 2,
         "eea": 25,
-        "non_eea": 614,
+        "non_eea": 612,
         "countries": {
-          "United States": 504,
+          "United States": 502,
           "United Kingdom": 52,
           "Japan": 17,
           "South Korea": 13,
@@ -206,15 +212,15 @@
             "examples": [
               {
                 "title": "Applied AI Architect",
-                "location": "Mumbai, India",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
+                "location": "Bangalore, India",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390746008",
                 "matched": "across time zones",
                 "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
               },
               {
                 "title": "Applied AI Architect",
-                "location": "Bangalore, India",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390746008",
+                "location": "Mumbai, India",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
                 "matched": "across time zones",
                 "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
               }
@@ -275,7 +281,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "614 of 639 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "612 of 637 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -284,7 +290,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 504 open roles"
+              "excerpt": "United States: 502 open roles"
             },
             {
               "kind": "stat",
@@ -315,16 +321,16 @@
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Mumbai, India",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
+              "location": "Bangalore, India",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390746008",
               "matched": "across time zones",
               "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
             },
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Bangalore, India",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390746008",
+              "location": "Mumbai, India",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
               "matched": "across time zones",
               "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
             }
@@ -513,8 +519,11 @@
           "sha256": "8d3c9629d73c5991",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2018-05-14",
+            "last": "2018-09-15"
           }
         },
         {
@@ -526,8 +535,11 @@
           "sha256": "d999aff5712a68aa",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 311,
+            "revisions": 310,
+            "first": "2021-09-03",
+            "last": "2026-10-01"
           }
         },
         {
@@ -539,8 +551,11 @@
           "sha256": "3669d59798194699",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 158,
+            "revisions": 157,
+            "first": "2018-11-17",
+            "last": "2026-08-18"
           }
         },
         {
@@ -552,8 +567,11 @@
           "sha256": "253254e28bc2ff29",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2021-05-16",
+            "last": "2025-10-03"
           }
         }
       ],
@@ -826,11 +844,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 70,
+        "total": 45,
         "footprint": 20,
         "access": 25,
         "transparency": 0,
-        "record": 25
+        "record": 0
       },
       "drift": [
         {
@@ -954,13 +972,13 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 445,
-        "placeable": 445,
+        "total": 444,
+        "placeable": 444,
         "unplaceable": 0,
         "eea": 100,
-        "non_eea": 345,
+        "non_eea": 344,
         "countries": {
-          "United States": 214,
+          "United States": 213,
           "France": 55,
           "Japan": 42,
           "Ireland": 23,
@@ -968,8 +986,8 @@
           "Singapore": 20,
           "United Kingdom": 20,
           "Brazil": 17,
-          "South Korea": 14,
           "Australia": 14,
+          "South Korea": 14,
           "Spain": 13,
           "India": 8,
           "Germany": 6,
@@ -983,8 +1001,8 @@
           "Israel": 1,
           "Colombia": 1,
           "Chile": 1,
-          "Poland": 1,
           "Austria": 1,
+          "Poland": 1,
           "Saudi Arabia": 1
         },
         "scanned": 26,
@@ -994,7 +1012,7 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 3,
+            "count": 4,
             "examples": [
               {
                 "title": "Federal Support Engineer 3",
@@ -1028,15 +1046,15 @@
             "examples": [
               {
                 "title": "Global Safety & Security Manager",
-                "location": "Singapore, Singapore",
-                "url": "https://careers.datadoghq.com/detail/8223272/?gh_jid=8223272",
+                "location": "Sydney, Australia",
+                "url": "https://careers.datadoghq.com/detail/8224963/?gh_jid=8224963",
                 "matched": "international travel",
                 "excerpt": "ice and collaboration. This position is based in our Sydney or Singapore office and will require domestic and international travel. The role will focus particularly on developing our safety compliance, security program development and matur"
               },
               {
                 "title": "Global Safety & Security Manager",
-                "location": "Sydney, Australia",
-                "url": "https://careers.datadoghq.com/detail/8224963/?gh_jid=8224963",
+                "location": "Singapore, Singapore",
+                "url": "https://careers.datadoghq.com/detail/8223272/?gh_jid=8223272",
                 "matched": "international travel",
                 "excerpt": "ice and collaboration. This position is based in our Sydney or Singapore office and will require domestic and international travel. The role will focus particularly on developing our safety compliance, security program development and matur"
               }
@@ -1226,9 +1244,9 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 43,
+        "total": 44,
         "footprint": 19,
-        "access": 24,
+        "access": 25,
         "transparency": 0,
         "record": 0
       },
@@ -1444,18 +1462,18 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 715,
-        "placeable": 635,
+        "total": 716,
+        "placeable": 636,
         "unplaceable": 80,
         "eea": 85,
-        "non_eea": 550,
+        "non_eea": 551,
         "countries": {
           "United States": 341,
           "Ireland": 69,
           "Canada": 55,
           "Singapore": 52,
           "United Kingdom": 46,
-          "India": 39,
+          "India": 40,
           "Mexico": 29,
           "Australia": 10,
           "Japan": 4,
@@ -1760,10 +1778,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 316,
-            "revisions": 315,
+            "captures": 318,
+            "revisions": 317,
             "first": "2024-01-18",
-            "last": "2026-10-02"
+            "last": "2026-10-03"
           }
         },
         {
@@ -1775,11 +1793,8 @@
           "sha256": "4bde694018c282cd",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 15,
-            "revisions": 14,
-            "first": "2025-04-01",
-            "last": "2026-09-09"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -2642,20 +2657,23 @@
           "sha256": "2b4ba1b47e64f285",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2018-05-23",
+            "last": "2026-01-01"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 394,
-        "placeable": 394,
+        "total": 392,
+        "placeable": 392,
         "unplaceable": 0,
         "eea": 157,
-        "non_eea": 237,
+        "non_eea": 235,
         "countries": {
-          "United States": 123,
+          "United States": 121,
           "Canada": 37,
           "Spain": 37,
           "Ireland": 23,
@@ -2897,11 +2915,11 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 82,
+        "total": 57,
         "footprint": 15,
         "access": 25,
         "transparency": 17,
-        "record": 25
+        "record": 0
       },
       "drift": [
         {
@@ -3024,8 +3042,11 @@
           "sha256": "c6f2954ea450f34e",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 165,
+            "revisions": 164,
+            "first": "2020-04-23",
+            "last": "2026-09-30"
           }
         }
       ],
