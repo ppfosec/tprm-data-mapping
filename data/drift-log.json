@@ -1,5 +1,20 @@
 [
   {
+    "id": "figma-subprocessors-2026-10-06",
+    "vendor_id": "figma",
+    "vendor_name": "Figma",
+    "document": "subprocessors",
+    "document_label": "Sub-processor list",
+    "date": "2026-10-06",
+    "url": "https://www.figma.com/sub-processors/",
+    "hunks": [
+      {
+        "before": "Figma Weave AI Sub-Processors",
+        "after": "Figma Weave AI Sub-Processors*"
+      }
+    ]
+  },
+  {
     "id": "cloudflare-privacy-2026-09-30",
     "vendor_id": "cloudflare",
     "vendor_name": "Cloudflare",

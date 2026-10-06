@@ -1,5 +1,5 @@
 # source: https://www.figma.com/sub-processors/
-# collected: 2026-10-05
+# collected: 2026-10-06
 
 Figma Sub-processors
 Last Updated:
@@ -155,7 +155,7 @@ United States*
 Prompt Inputs and Outputs
 *Where necessary to improve latency and Service reliability, requests may be routed through global data centers.
 When this happens, any data processed from that location is processed exclusively in volatile memory during the active request and the cache is automatically cleared within two hours.
-Figma Weave AI Sub-Processors
+Figma Weave AI Sub-Processors*
 Sub-processor
 Applicable Service(s)
 Processing Activities
