@@ -1,5 +1,55 @@
 [
   {
+    "id": "anthropic-other-2026-10-09",
+    "vendor_id": "anthropic",
+    "vendor_name": "Anthropic",
+    "document": "other",
+    "document_label": "Other legal page",
+    "date": "2026-10-09",
+    "url": "https://www.anthropic.com/legal/aup",
+    "hunks": [
+      {
+        "before": "Our Usage Policy (also referred to as our “Acceptable Use Policy” or “AUP”) applies to anyone who can submit inputs to Anthropic’s products and/or services, including via any authorized resellers or passthrough access, all of whom we refer to as “users.” The Usage Policy is intended to help our users stay safe and promote the responsible use of our products and services.",
+        "after": "Download PDF version"
+      },
+      {
+        "before": "The Usage Policy is categorized according to who can use our products and for what purposes.",
+        "after": "Our Usage Policy (also referred to as our “Acceptable Use Policy” or “AUP”) applies to anyone who submits inputs to Anthropic’s products or services, all of whom we refer to as “users.” This includes individuals using our apps (such as"
+      },
+      {
+        "before": null,
+        "after": "Claude.ai"
+      },
+      {
+        "before": null,
+        "after": "and Claude Code), developers and businesses using our API and developer platforms, customers accessing Claude through cloud providers and authorized resellers, and the end users of products or services integrating Claude."
+      },
+      {
+        "before": null,
+        "after": "The Usage Policy is intended to prevent our products and services from being used to create or contribute to real-world harm, and to promote the responsible use of our products and services."
+      },
+      {
+        "before": null,
+        "after": "Please review this Usage Policy carefully before using our products or services."
+      }
+    ]
+  },
+  {
+    "id": "cloudflare-privacy-2026-10-09",
+    "vendor_id": "cloudflare",
+    "vendor_name": "Cloudflare",
+    "document": "privacy",
+    "document_label": "Privacy policy",
+    "date": "2026-10-09",
+    "url": "https://www.cloudflare.com/privacypolicy/",
+    "hunks": [
+      {
+        "before": "(“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information.",
+        "after": "(\u0000\u0000“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information."
+      }
+    ]
+  },
+  {
     "id": "figma-subprocessors-2026-10-06",
     "vendor_id": "figma",
     "vendor_name": "Figma",
