@@ -594,8 +594,11 @@
           "sha256": "d67c8f3b26ce129d",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2024-02-21",
+            "last": "2026-03-15"
           }
         },
         {
@@ -608,8 +611,11 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 71,
+            "revisions": 70,
+            "first": "2024-09-26",
+            "last": "2026-09-28"
           }
         },
         {
@@ -621,8 +627,11 @@
           "sha256": "b5c2883bfc8d9aed",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 64,
+            "revisions": 63,
+            "first": "2026-07-14",
+            "last": "2026-10-09"
           }
         }
       ],
@@ -631,7 +640,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "614 of 642 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "616 of 643 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -644,7 +653,7 @@
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 47 open roles"
+              "excerpt": "United Kingdom: 46 open roles"
             },
             {
               "kind": "stat",
@@ -671,16 +680,16 @@
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Mumbai, India",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
+              "location": "Bangalore, India",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390746008",
               "matched": "across time zones",
               "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
             },
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Bangalore, India",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390746008",
+              "location": "Mumbai, India",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
               "matched": "across time zones",
               "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
             }
@@ -770,29 +779,29 @@
         "sensitivity_score": 10,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": true
+        "source_documents_changed": false
       },
       "jobs": {
         "ok": true,
-        "total": 644,
-        "placeable": 642,
+        "total": 645,
+        "placeable": 643,
         "unplaceable": 2,
-        "eea": 28,
-        "non_eea": 614,
+        "eea": 27,
+        "non_eea": 616,
         "countries": {
           "United States": 513,
-          "United Kingdom": 47,
+          "United Kingdom": 46,
           "Japan": 17,
           "South Korea": 15,
-          "Singapore": 11,
+          "Singapore": 12,
           "Germany": 10,
-          "Ireland": 9,
-          "Australia": 8,
+          "Australia": 9,
+          "Ireland": 8,
           "France": 6,
           "India": 4,
           "Canada": 3,
+          "Switzerland": 3,
           "Italy": 2,
-          "Switzerland": 2,
           "Spain": 1
         },
         "scanned": 26,
@@ -806,15 +815,15 @@
             "examples": [
               {
                 "title": "Applied AI Architect",
-                "location": "Mumbai, India",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
+                "location": "Bangalore, India",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390746008",
                 "matched": "across time zones",
                 "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
               },
               {
                 "title": "Applied AI Architect",
-                "location": "Bangalore, India",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390746008",
+                "location": "Mumbai, India",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
                 "matched": "across time zones",
                 "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
               },
@@ -1002,12 +1011,12 @@
           "url": "https://www.cloudflare.com/privacypolicy/",
           "path": "data/snapshots/cloudflare/privacy.txt",
           "lines": 649,
-          "chars": 47139,
-          "sha256": "cbeba0023dac377d",
+          "chars": 47137,
+          "sha256": "8d3c9629d73c5991",
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectionError"
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -1023,7 +1032,7 @@
             "captures": 315,
             "revisions": 314,
             "first": "2021-09-03",
-            "last": "2026-10-06"
+            "last": "2026-10-07"
           }
         },
         {
@@ -1035,8 +1044,11 @@
           "sha256": "3669d59798194699",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ReadTimeout"
+            "ok": true,
+            "captures": 158,
+            "revisions": 157,
+            "first": "2018-11-17",
+            "last": "2026-08-18"
           }
         },
         {
@@ -1093,11 +1105,11 @@
             },
             {
               "kind": "job",
-              "title": "Engineering Manager, Agentic Internet & Data Insights",
+              "title": "Data Center Engineer",
               "location": "Hybrid",
-              "url": "https://boards.greenhouse.io/cloudflare/jobs/8143649?gh_jid=8143649",
-              "matched": "on call",
-              "excerpt": "ons, ask the right questions when something is going wrong, and step into a technical problem when the situation calls for it. At the same time, we are looking for a manager, not a tech lead with direct reports. Your success wi"
+              "url": "https://boards.greenhouse.io/cloudflare/jobs/8074364?gh_jid=8074364",
+              "matched": "on-call",
+              "excerpt": "esponsibilities (prioritization, planning, scheduling, status reporting) such as JIRA Participate in a shared on-call rotation to maintain 24×7 operational availability of the global network. Other Responsibilities May Include"
             }
           ],
           "question": "For out-of-hours incidents, who is on the rotation, where are they, and is their access to customer data logged and reviewable by the customer?"
@@ -1154,9 +1166,9 @@
       },
       "jobs": {
         "ok": true,
-        "total": 419,
+        "total": 424,
         "placeable": 5,
-        "unplaceable": 414,
+        "unplaceable": 419,
         "eea": 1,
         "non_eea": 4,
         "countries": {
@@ -1173,7 +1185,7 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 9,
+            "count": 8,
             "examples": [
               {
                 "title": "AI Security Research & Red Team Engineer",
@@ -1183,18 +1195,18 @@
                 "excerpt": "ring partner\" for SIRT. By conducting unannounced exercises, you help them refine their playbooks, test their on-call rotations, and ensure their forensic tooling is effective under pressure. Threat Detection &amp; Threat Engin"
               },
               {
+                "title": "Data Center Engineer",
+                "location": "Hybrid",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8074364?gh_jid=8074364",
+                "matched": "on-call",
+                "excerpt": "esponsibilities (prioritization, planning, scheduling, status reporting) such as JIRA Participate in a shared on-call rotation to maintain 24×7 operational availability of the global network. Other Responsibilities May Include"
+              },
+              {
                 "title": "Engineering Manager, Agentic Internet & Data Insights",
                 "location": "Hybrid",
                 "url": "https://boards.greenhouse.io/cloudflare/jobs/8143649?gh_jid=8143649",
                 "matched": "on call",
                 "excerpt": "ons, ask the right questions when something is going wrong, and step into a technical problem when the situation calls for it. At the same time, we are looking for a manager, not a tech lead with direct reports. Your success wi"
-              },
-              {
-                "title": "Engineering Manager, Cloudflare Network Interconnect",
-                "location": "Hybrid",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/8083701?gh_jid=8083701",
-                "matched": "on-call",
-                "excerpt": "eam to lead design and implementation. Taking responsibility for the team's production services by organizing on-call rotations, handling customer escalations, and overseeing incident response and follow-up. Driving reliability"
               }
             ]
           },
@@ -1304,7 +1316,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 3,
+            "count": 2,
             "examples": [
               {
                 "title": "People Operations Specialist, Singapore (6 Month Contract)",
@@ -1319,19 +1331,27 @@
                 "url": "https://boards.greenhouse.io/cloudflare/jobs/8232768?gh_jid=8232768",
                 "matched": "Salesforce",
                 "excerpt": ", pipeline management best practices, forecasting, territory/quota design, incentive comp, CRM systems (e.g., Salesforce) Experience to use AI to drive automation, innovation and improve efficiency. Exceptional cross-functional co"
-              },
-              {
-                "title": "Principal Engineer - GTM Data Platform",
-                "location": "Hybrid",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/8054669?gh_jid=8054669",
-                "matched": "Snowflake",
-                "excerpt": "h a focus on enabling GTM organizations. Columnar/OLAP or lakehouse experience (ClickHouse, DuckDB, BigQuery, Snowflake, Iceberg, Starrocks).Familiarity with the Salesforce data model and CRM/API integrations. Familiarity with de"
               }
             ]
           }
         ]
       },
       "drift": [
+        {
+          "id": "cloudflare-privacy-2026-10-10",
+          "vendor_id": "cloudflare",
+          "vendor_name": "Cloudflare",
+          "document": "privacy",
+          "document_label": "Privacy policy",
+          "date": "2026-10-10",
+          "url": "https://www.cloudflare.com/privacypolicy/",
+          "hunks": [
+            {
+              "before": "(\u0000\u0000“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information.",
+              "after": "(“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information."
+            }
+          ]
+        },
         {
           "id": "cloudflare-privacy-2026-10-09",
           "vendor_id": "cloudflare",
@@ -1415,7 +1435,7 @@
       "category": "Observability",
       "public_evidence_only": true,
       "surface": {
-        "grade": "44",
+        "grade": "40",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "3 public documents · 5 open reconciliations"
@@ -1430,8 +1450,11 @@
           "sha256": "3584067664bd7167",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2017-06-30",
+            "last": "2025-04-19"
           }
         },
         {
@@ -1443,8 +1466,11 @@
           "sha256": "5db7e30225b6d5fc",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 33,
+            "revisions": 32,
+            "first": "2022-05-28",
+            "last": "2026-08-03"
           }
         },
         {
@@ -1619,16 +1645,16 @@
       },
       "jobs": {
         "ok": true,
-        "total": 431,
-        "placeable": 431,
+        "total": 435,
+        "placeable": 435,
         "unplaceable": 0,
-        "eea": 93,
-        "non_eea": 338,
+        "eea": 94,
+        "non_eea": 341,
         "countries": {
-          "United States": 217,
+          "United States": 220,
           "France": 51,
           "Japan": 38,
-          "Ireland": 22,
+          "Ireland": 23,
           "United Kingdom": 21,
           "Netherlands": 20,
           "Singapore": 17,
@@ -1647,8 +1673,8 @@
           "Switzerland": 2,
           "Israel": 1,
           "Chile": 1,
-          "Poland": 1,
           "Austria": 1,
+          "Poland": 1,
           "Saudi Arabia": 1
         },
         "scanned": 26,
@@ -1906,7 +1932,7 @@
       "category": "Payments",
       "public_evidence_only": true,
       "surface": {
-        "grade": "33",
+        "grade": "29",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "3 public documents · 1 open reconciliations"
@@ -2080,27 +2106,27 @@
       },
       "jobs": {
         "ok": true,
-        "total": 732,
-        "placeable": 648,
-        "unplaceable": 84,
-        "eea": 93,
-        "non_eea": 555,
+        "total": 729,
+        "placeable": 647,
+        "unplaceable": 82,
+        "eea": 96,
+        "non_eea": 551,
         "countries": {
-          "United States": 337,
-          "Ireland": 77,
-          "Singapore": 54,
-          "Canada": 54,
+          "United States": 335,
+          "Ireland": 78,
+          "Singapore": 53,
+          "Canada": 53,
+          "United Kingdom": 46,
           "India": 45,
-          "United Kingdom": 44,
           "Mexico": 32,
           "Australia": 11,
           "France": 5,
+          "Romania": 5,
           "Japan": 4,
-          "Romania": 4,
-          "Israel": 3,
+          "Spain": 4,
           "Taiwan": 3,
-          "Spain": 3,
           "Thailand": 2,
+          "Israel": 1,
           "Germany": 1,
           "Sweden": 1,
           "Luxembourg": 1,
@@ -2114,7 +2140,7 @@
             "label": "Travel expected",
             "severity": "high",
             "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 2,
+            "count": 1,
             "examples": [
               {
                 "title": "Account Executive, Strategic Platform Partnerships",
@@ -2122,13 +2148,6 @@
                 "url": "https://stripe.com/jobs/search?gh_jid=8157577",
                 "matched": "willing to travel",
                 "excerpt": "s, rapidly evolving environments and balancing&nbsp;strategic thinking with hands-on execution. ● Based in or willing to travel frequently San Francisco, CA. New York, NY (Hybrid) is also acceptable.&nbsp; &nbsp; Preferred qualifications"
-              },
-              {
-                "title": "Channel Sales Executive, SaaS Platforms",
-                "location": "Chicago",
-                "url": "https://stripe.com/jobs/search?gh_jid=8126984",
-                "matched": "Willingness to travel",
-                "excerpt": "build and execute territory and opportunity-specific plans, leveraging tools such as Salesforce and Crossbeam Willingness to travel up to 25% Preferred qualifications Strong communication and presentation skills, including the ability to com"
               }
             ]
           },
@@ -2137,7 +2156,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 6,
+            "count": 5,
             "examples": [
               {
                 "title": "Account Executive - Platforms Hunter (French Fluency)",
@@ -2243,7 +2262,7 @@
       "category": "Design SaaS",
       "public_evidence_only": true,
       "surface": {
-        "grade": "59",
+        "grade": "48",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "3 public documents · 1 open reconciliations"
@@ -2258,8 +2277,11 @@
           "sha256": "14b1ae957872913e",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 322,
+            "revisions": 321,
+            "first": "2024-01-18",
+            "last": "2026-10-07"
           }
         },
         {
@@ -2287,8 +2309,11 @@
           "sha256": "51b859e77af1086e",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 84,
+            "revisions": 83,
+            "first": "2019-04-01",
+            "last": "2026-09-14"
           }
         }
       ],
@@ -2297,7 +2322,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "140 of 153 placeable roles name no EEA site — most prominently United States, United Kingdom. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "137 of 150 placeable roles name no EEA site — most prominently United States, United Kingdom. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -2306,7 +2331,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 104 open roles"
+              "excerpt": "United States: 101 open roles"
             },
             {
               "kind": "stat",
@@ -2387,13 +2412,13 @@
       },
       "jobs": {
         "ok": true,
-        "total": 153,
-        "placeable": 153,
+        "total": 150,
+        "placeable": 150,
         "unplaceable": 0,
         "eea": 13,
-        "non_eea": 140,
+        "non_eea": 137,
         "countries": {
-          "United States": 104,
+          "United States": 101,
           "United Kingdom": 19,
           "Germany": 8,
           "France": 5,
@@ -2473,7 +2498,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 4,
+            "count": 3,
             "examples": [
               {
                 "title": "Data Scientist  ",
@@ -2483,18 +2508,18 @@
                 "excerpt": "pting language like Python or R, along with experience working with distributed data systems (e.g., Redshift, Snowflake, Presto, Hive, Spark) Strong foundation in statistical methods, experimentation, and/or forecasting A track r"
               },
               {
-                "title": "Data Scientist, Finance",
-                "location": "San Francisco, CA • New York, NY • United States",
-                "url": "https://boards.greenhouse.io/figma/jobs/6013304004?gh_jid=6013304004",
-                "matched": "Snowflake",
-                "excerpt": "nue recognition principles (ASC 606) Experience with modern analytics and data engineering tools such as DBT, Snowflake, Git, Spark, Presto, or similar technologies Experience supporting IPO readiness, public company reporting, S"
-              },
-              {
                 "title": "Security Scientist",
                 "location": "San Francisco, CA • New York, NY • United States",
                 "url": "https://boards.greenhouse.io/figma/jobs/6180172004?gh_jid=6180172004",
                 "matched": "Snowflake",
                 "excerpt": "ge Experience working with distributed data processing systems and frameworks such as Hive, Redshift, Presto, Snowflake, or Spark Strong knowledge of statistical methods and experimental design Excellent judgment and creative pro"
+              },
+              {
+                "title": "Software Engineer - Data Infrastructure",
+                "location": "San Francisco, CA • New York, NY • United States",
+                "url": "https://boards.greenhouse.io/figma/jobs/5551686004?gh_jid=5551686004",
+                "matched": "Snowflake",
+                "excerpt": "ss teams that rely on data for insights and strategy. Our team owns and scales critical platforms such as the Snowflake data warehouse, ML Datalake, orchestration and pipeline infrastructure, and large-scale data ingestion and pr"
               }
             ]
           },
@@ -2702,7 +2727,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ReadTimeout"
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -2731,8 +2756,11 @@
           "note": "published but not extractable as text (client-rendered)",
           "diff": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 26,
+            "revisions": 25,
+            "first": "2023-11-29",
+            "last": "2026-07-07"
           }
         }
       ],
@@ -2873,22 +2901,22 @@
       },
       "jobs": {
         "ok": true,
-        "total": 219,
-        "placeable": 206,
-        "unplaceable": 13,
+        "total": 221,
+        "placeable": 209,
+        "unplaceable": 12,
         "eea": 38,
-        "non_eea": 168,
+        "non_eea": 171,
         "countries": {
-          "United States": 106,
-          "Canada": 71,
-          "United Kingdom": 49,
-          "India": 28,
-          "Germany": 14,
-          "Poland": 13,
-          "Ireland": 11,
-          "Israel": 8,
-          "France": 7,
-          "Netherlands": 7,
+          "United States": 108,
+          "Canada": 75,
+          "United Kingdom": 50,
+          "India": 30,
+          "Poland": 14,
+          "Germany": 13,
+          "Ireland": 10,
+          "Israel": 9,
+          "France": 6,
+          "Netherlands": 6,
           "Australia": 6,
           "Spain": 5,
           "Singapore": 4,
@@ -2909,7 +2937,7 @@
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 14,
+            "count": 15,
             "examples": [
               {
                 "title": "Associate Revenue Operations Manager, India",
@@ -3116,7 +3144,7 @@
       "category": "Search and data",
       "public_evidence_only": true,
       "surface": {
-        "grade": "82",
+        "grade": "57",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "1 public documents · 1 open reconciliations"
@@ -3131,8 +3159,11 @@
           "sha256": "2b4ba1b47e64f285",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2018-05-23",
+            "last": "2026-01-01"
           }
         }
       ],
@@ -3198,20 +3229,20 @@
       },
       "jobs": {
         "ok": true,
-        "total": 417,
-        "placeable": 417,
+        "total": 409,
+        "placeable": 409,
         "unplaceable": 0,
-        "eea": 168,
-        "non_eea": 249,
+        "eea": 169,
+        "non_eea": 240,
         "countries": {
-          "United States": 127,
-          "Spain": 38,
-          "Canada": 37,
-          "Greece": 26,
-          "Ireland": 24,
-          "Portugal": 24,
-          "United Kingdom": 23,
-          "Poland": 20,
+          "United States": 122,
+          "Spain": 35,
+          "Canada": 32,
+          "Greece": 27,
+          "Ireland": 25,
+          "Portugal": 25,
+          "United Kingdom": 24,
+          "Poland": 21,
           "India": 18,
           "Norway": 11,
           "Romania": 11,
@@ -3242,7 +3273,7 @@
             "label": "Travel expected",
             "severity": "high",
             "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 14,
+            "count": 16,
             "examples": [
               {
                 "title": "Consulting Architect - Observability",
@@ -3272,7 +3303,7 @@
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 11,
+            "count": 12,
             "examples": [
               {
                 "title": "Consulting Architect - Observability",
@@ -3348,15 +3379,8 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 2,
+            "count": 1,
             "examples": [
-              {
-                "title": "Coordinator, Marketing Operations (Fixed Term)",
-                "location": "Bangalore, India",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8161139&gh_jid=8161139",
-                "matched": "Salesforce",
-                "excerpt": "xed organization. Tool Proficiency : High competence in budget/project management platforms (e.g., Allocadia, Salesforce, or similar). Operational Mindset : A proactive approach to identifying bottlenecks; you don’t just execute t"
-              },
               {
                 "title": "IT Support Admin",
                 "location": "Sydney, Australia",
@@ -3478,7 +3502,7 @@
       "category": "App hosting",
       "public_evidence_only": true,
       "surface": {
-        "grade": "82",
+        "grade": "57",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "2 public documents · 2 open reconciliations"
@@ -3493,8 +3517,11 @@
           "sha256": "1089987c0a57208c",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 46,
+            "revisions": 45,
+            "first": "2026-06-08",
+            "last": "2026-10-08"
           }
         },
         {
@@ -3507,7 +3534,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "http 503"
+            "reason": "ConnectTimeout"
           }
         }
       ],
@@ -3603,13 +3630,13 @@
       },
       "jobs": {
         "ok": true,
-        "total": 88,
-        "placeable": 85,
+        "total": 89,
+        "placeable": 86,
         "unplaceable": 3,
         "eea": 4,
-        "non_eea": 81,
+        "non_eea": 82,
         "countries": {
-          "United States": 69,
+          "United States": 70,
           "United Kingdom": 14,
           "Germany": 4,
           "Australia": 3,
