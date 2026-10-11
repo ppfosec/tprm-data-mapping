@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T10:09:56+00:00",
+  "generated_at": "2026-10-11T10:22:26+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -561,8 +561,11 @@
           "sha256": "8d3c9629d73c5991",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2018-05-14",
+            "last": "2018-09-15"
           }
         },
         {
@@ -575,10 +578,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 315,
-            "revisions": 314,
+            "captures": 316,
+            "revisions": 315,
             "first": "2021-09-03",
-            "last": "2026-10-07"
+            "last": "2026-10-10"
           }
         },
         {
@@ -606,11 +609,8 @@
           "sha256": "253254e28bc2ff29",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2021-05-16",
-            "last": "2025-10-03"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         }
       ],
@@ -880,7 +880,7 @@
         "sensitivity_score": 10,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": true
+        "source_documents_changed": false
       },
       "score": {
         "total": 45,
@@ -1515,11 +1515,8 @@
           "sha256": "2da116f320774a92",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 243,
-            "revisions": 242,
-            "first": "2022-05-27",
-            "last": "2026-09-21"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -1544,13 +1541,13 @@
         "total": 729,
         "placeable": 647,
         "unplaceable": 82,
-        "eea": 96,
-        "non_eea": 551,
+        "eea": 95,
+        "non_eea": 552,
         "countries": {
-          "United States": 335,
-          "Ireland": 78,
-          "Singapore": 53,
+          "United States": 336,
+          "Ireland": 77,
           "Canada": 53,
+          "Singapore": 52,
           "United Kingdom": 46,
           "India": 45,
           "Mexico": 32,
@@ -1832,11 +1829,8 @@
           "sha256": "14b1ae957872913e",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 322,
-            "revisions": 321,
-            "first": "2024-01-18",
-            "last": "2026-10-07"
+            "ok": false,
+            "reason": "ConnectTimeout"
           }
         },
         {
@@ -2284,8 +2278,11 @@
           "sha256": "b8fd30b8b1e6bdaa",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 500,
+            "revisions": 499,
+            "first": "2015-04-16",
+            "last": "2026-02-13"
           }
         },
         {
@@ -3082,8 +3079,8 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 46,
-            "revisions": 45,
+            "captures": 47,
+            "revisions": 46,
             "first": "2026-06-08",
             "last": "2026-10-08"
           }
@@ -3097,8 +3094,11 @@
           "sha256": "c6f2954ea450f34e",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectTimeout"
+            "ok": true,
+            "captures": 167,
+            "revisions": 166,
+            "first": "2020-04-23",
+            "last": "2026-10-09"
           }
         }
       ],
