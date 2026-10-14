@@ -1,5 +1,5 @@
 # source: https://www.datadoghq.com/legal/subprocessors/
-# collected: 2026-10-13
+# collected: 2026-10-14
 
 Product
 Infrastructure
