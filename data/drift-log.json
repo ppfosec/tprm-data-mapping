@@ -1,5 +1,110 @@
 [
   {
+    "id": "datadog-subprocessors-2026-10-17",
+    "vendor_id": "datadog",
+    "vendor_name": "Datadog",
+    "document": "subprocessors",
+    "document_label": "Sub-processor list",
+    "date": "2026-10-17",
+    "url": "https://www.datadoghq.com/legal/subprocessors/",
+    "hunks": [
+      {
+        "before": "April 22, 2026",
+        "after": "October 16, 2026"
+      },
+      {
+        "before": null,
+        "after": "October 13, 2026"
+      },
+      {
+        "before": "Vendor",
+        "after": "Subprocessor"
+      },
+      {
+        "before": null,
+        "after": "United States"
+      },
+      {
+        "before": null,
+        "after": "AI services"
+      },
+      {
+        "before": null,
+        "after": "Baseten Labs, Inc."
+      }
+    ]
+  },
+  {
+    "id": "stripe-privacy-2026-10-17",
+    "vendor_id": "stripe",
+    "vendor_name": "Stripe",
+    "document": "privacy",
+    "document_label": "Privacy policy",
+    "date": "2026-10-17",
+    "url": "https://stripe.com/en-ca/privacy",
+    "hunks": [
+      {
+        "before": "April 28, 2026",
+        "after": "January 16, 2025"
+      },
+      {
+        "before": "Individuals and businesses of all sizes use our technology and services to facilitate purchases, accept payments, send payouts, and manage their online businesses.",
+        "after": "Individuals and businesses of all sizes use our technology and services to facilitate purchases, accept payments, send payouts, and manage online businesses."
+      },
+      {
+        "before": "This Privacy Policy (“Policy”) describes the Personal Data that we collect, how we use and share it, and how you can reach us with privacy-related inquiries.",
+        "after": "This Privacy Policy (“Policy”) describes the Personal Data that we collect, how we use and share it, and details on how you can reach us with privacy-related inquiries."
+      },
+      {
+        "before": "In this Policy, “Stripe”, “we”, “our,” or “us” refers to the Stripe entity responsible for the collection, use, processing, and handling of Personal Data as described in this document.",
+        "after": "In this Policy, “Stripe”, “we”, “our,” or “us” refers to the Stripe entity responsible for the collection, use, and handling of Personal Data as described in this document."
+      },
+      {
+        "before": "Depending on your jurisdiction, the specific Stripe entity responsible for your Personal Data might vary.",
+        "after": "Depending on your jurisdiction, the specific Stripe entity accountable for your Personal Data might vary."
+      },
+      {
+        "before": "“Services” refers to the products, services, devices, and applications that we provide under the Stripe Services Agreement or the Stripe Credit Card Terms of Service (collectively, “Business Services”), or the Stripe Consumer Terms of Service (“End User Services”); websites (“Sites”) like Stripe.com and Link.com; and other Stripe applications and online services.",
+        "after": "“Services” refers to the products, services, devices, and applications, that we provide under the Stripe Services Agreement (“Business Services”) or the Stripe Consumer Terms of Service (“End User Services”); websites (“Sites”) like Stripe.com and Link.com; and other Stripe applications and online services."
+      }
+    ]
+  },
+  {
+    "id": "stripe-dpa-2026-10-17",
+    "vendor_id": "stripe",
+    "vendor_name": "Stripe",
+    "document": "dpa",
+    "document_label": "Data processing agreement",
+    "date": "2026-10-17",
+    "url": "https://stripe.com/en-ca/legal/dpa",
+    "hunks": [
+      {
+        "before": "Last updated:",
+        "after": "Last updated: 28 September 2026"
+      },
+      {
+        "before": "September 28, 2026",
+        "after": null
+      },
+      {
+        "before": "This Data Processing Agreement (“",
+        "after": "This Data Processing Agreement (\""
+      },
+      {
+        "before": "”) is between the Stripe entity specified in the Agreement (and its Affiliate(s), collectively “Stripe”) and the User specified in the Agreement, and is subject to and incorporated by reference into the Agreement.",
+        "after": "\") is between the Stripe entity specified in the Agreement (and its Affiliate(s), collectively \"Stripe\") and the User specified in the Agreement, and is subject to and incorporated by reference into the Agreement."
+      },
+      {
+        "before": "This DPA governs Stripe’s and its Aﬃliates’ Processing of Personal Data.",
+        "after": "This DPA governs Stripe's and its Affiliates' Processing of Personal Data."
+      },
+      {
+        "before": "Stripe as Data Processor and Data Controller.",
+        "after": "Stripe as Data Processor and Data Controller"
+      }
+    ]
+  },
+  {
     "id": "cloudflare-privacy-2026-10-16",
     "vendor_id": "cloudflare",
     "vendor_name": "Cloudflare",

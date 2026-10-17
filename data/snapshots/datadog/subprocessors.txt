@@ -1,5 +1,5 @@
 # source: https://www.datadoghq.com/legal/subprocessors/
-# collected: 2026-10-16
+# collected: 2026-10-17
 
 Product
 Infrastructure
@@ -175,13 +175,14 @@ Security Labs
 Docs
 Login
 Last updated
-April 22, 2026
+October 16, 2026
+October 13, 2026
 Datadog Subprocessors
 What is a subprocessor?
 In order to provide our services, Datadog may engage third parties or other members of the Datadog corporate group (affiliates) to carry out data-processing activities that involve access to customer data.
 These organizations, called “subprocessors,” are identified below with their locations and the types of services they provide to Datadog.
 Third-Party Subprocessors
-Vendor
+Subprocessor
 Country
 Purpose of Processing
 Amazon Web Services, Inc.
@@ -192,6 +193,15 @@ Japan
 United Kingdom
 Infrastructure services
 Anthropic, PBC
+United States
+AI services
+Baseten Labs, Inc.
+United States
+AI services
+Databricks, Inc.
+United States
+AI services
+Fireworks.ai, Inc.
 United States
 AI services
 Google LLC
@@ -220,6 +230,9 @@ Customer support platform
 Snowflake, Inc.
 United States
 Data warehouse services
+Together Computer, Inc.
+United States
+AI services
 Twilio, Inc.
 United States
 Communication services
@@ -229,7 +242,7 @@ Communication services
 Zendesk, Inc.
 United States
 Customer support platform
-Affiliates
+Datadog Affiliates
 Name
 Location
 Datadog Arabia
@@ -262,6 +275,8 @@ Datadog México, S. de R.L. de C.V.
 Mexico
 Datadog Netherlands BV
 Netherlands
+Datadog Portugal, Unipessoal Lda.
+Portugal
 Datadog Services Canada, Inc.
 Canada
 DDog Singapore PTE.
