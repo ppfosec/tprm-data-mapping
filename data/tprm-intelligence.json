@@ -612,10 +612,10 @@
           "diff": null,
           "archive": {
             "ok": true,
-            "captures": 79,
-            "revisions": 78,
+            "captures": 73,
+            "revisions": 72,
             "first": "2024-09-26",
-            "last": "2026-10-18"
+            "last": "2026-10-19"
           }
         },
         {
@@ -628,10 +628,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 70,
-            "revisions": 69,
+            "captures": 72,
+            "revisions": 71,
             "first": "2026-07-14",
-            "last": "2026-10-17"
+            "last": "2026-10-19"
           }
         }
       ],
@@ -640,7 +640,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "627 of 653 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "629 of 655 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -649,7 +649,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 524 open roles"
+              "excerpt": "United States: 526 open roles"
             },
             {
               "kind": "stat",
@@ -680,16 +680,16 @@
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Mumbai, India",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
+              "location": "Bangalore, India",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
               "matched": "across time zones",
               "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
             },
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Bangalore, India",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
+              "location": "Mumbai, India",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
               "matched": "across time zones",
               "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
             }
@@ -783,13 +783,13 @@
       },
       "jobs": {
         "ok": true,
-        "total": 655,
-        "placeable": 653,
+        "total": 657,
+        "placeable": 655,
         "unplaceable": 2,
         "eea": 26,
-        "non_eea": 627,
+        "non_eea": 629,
         "countries": {
-          "United States": 524,
+          "United States": 526,
           "United Kingdom": 49,
           "Japan": 15,
           "South Korea": 14,
@@ -814,15 +814,15 @@
             "examples": [
               {
                 "title": "Applied AI Architect",
-                "location": "Mumbai, India",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
+                "location": "Bangalore, India",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
                 "matched": "across time zones",
                 "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
               },
               {
                 "title": "Applied AI Architect",
-                "location": "Bangalore, India",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
+                "location": "Mumbai, India",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
                 "matched": "across time zones",
                 "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
               }
@@ -1161,9 +1161,9 @@
       },
       "jobs": {
         "ok": true,
-        "total": 435,
+        "total": 433,
         "placeable": 3,
-        "unplaceable": 432,
+        "unplaceable": 430,
         "eea": 1,
         "non_eea": 2,
         "countries": {
@@ -1587,11 +1587,11 @@
       },
       "jobs": {
         "ok": true,
-        "total": 433,
-        "placeable": 433,
+        "total": 435,
+        "placeable": 435,
         "unplaceable": 0,
         "eea": 92,
-        "non_eea": 341,
+        "non_eea": 343,
         "countries": {
           "United States": 222,
           "France": 50,
@@ -1599,25 +1599,25 @@
           "Ireland": 24,
           "United Kingdom": 21,
           "Netherlands": 20,
-          "Singapore": 17,
+          "Singapore": 18,
           "South Korea": 14,
-          "Australia": 13,
+          "Australia": 14,
           "Brazil": 13,
           "Spain": 13,
-          "India": 10,
+          "India": 11,
           "Portugal": 6,
           "Germany": 5,
           "Mexico": 4,
           "Italy": 4,
-          "Indonesia": 3,
           "Sweden": 3,
           "Israel": 2,
           "Denmark": 2,
+          "Indonesia": 2,
           "Switzerland": 2,
-          "Canada": 1,
           "Chile": 1,
-          "Austria": 1,
+          "Canada": 1,
           "Poland": 1,
+          "Austria": 1,
           "Saudi Arabia": 1
         },
         "scanned": 26,
@@ -2038,30 +2038,30 @@
         "sensitivity_score": 30,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": true
+        "source_documents_changed": false
       },
       "jobs": {
         "ok": true,
-        "total": 732,
-        "placeable": 660,
-        "unplaceable": 72,
-        "eea": 97,
-        "non_eea": 563,
+        "total": 727,
+        "placeable": 656,
+        "unplaceable": 71,
+        "eea": 95,
+        "non_eea": 561,
         "countries": {
-          "United States": 349,
+          "United States": 348,
           "Ireland": 75,
           "Canada": 54,
-          "Singapore": 48,
-          "United Kingdom": 48,
-          "India": 48,
+          "Singapore": 49,
+          "United Kingdom": 47,
+          "India": 47,
           "Mexico": 31,
           "Australia": 10,
-          "Romania": 6,
+          "Romania": 5,
           "Japan": 4,
           "Germany": 4,
           "France": 4,
-          "Spain": 4,
           "Taiwan": 3,
+          "Spain": 3,
           "Luxembourg": 2,
           "Thailand": 2,
           "Netherlands": 1,
@@ -2338,7 +2338,7 @@
       "category": "Design SaaS",
       "public_evidence_only": true,
       "surface": {
-        "grade": "48",
+        "grade": "45",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "3 public documents · 1 open reconciliations"
@@ -2503,10 +2503,11 @@
           "Germany": 8,
           "Brazil": 5,
           "France": 4,
-          "Japan": 3,
           "Australia": 3,
           "Singapore": 2,
+          "Japan": 2,
           "India": 1,
+          "South Korea": 1,
           "Israel": 1
         },
         "scanned": 26,
@@ -2538,22 +2539,6 @@
                 "url": "https://boards.greenhouse.io/figma/jobs/6201407004?gh_jid=6201407004",
                 "matched": "from anywhere in the world",
                 "excerpt": "om idea to product, Figma empowers teams to streamline workflows, move faster, and work together in real time from anywhere in the world. If you're excited to shape the future of design and collaboration, join us! We are looking for a Data Platfo"
-              }
-            ]
-          },
-          {
-            "key": "distributed",
-            "label": "Distributed across time zones",
-            "severity": "high",
-            "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 1,
-            "examples": [
-              {
-                "title": "Manager, Solutions Consulting (Tokyo, Japan)",
-                "location": "Tokyo, Japan",
-                "url": "https://boards.greenhouse.io/figma/jobs/6134908004?gh_jid=6134908004",
-                "matched": "across multiple time zones",
-                "excerpt": "scripting, querying, or prototyping Practical experience using or working with Figma Experience leading teams across multiple time zones At Figma, one of our values is Grow as you go. We believe in hiring smart, curious people who are excited to"
               }
             ]
           },
@@ -2782,7 +2767,7 @@
       "category": "DevOps platform",
       "public_evidence_only": true,
       "surface": {
-        "grade": "50",
+        "grade": "49",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "3 public documents · 2 open reconciliations"
@@ -2954,19 +2939,19 @@
       },
       "jobs": {
         "ok": true,
-        "total": 232,
-        "placeable": 223,
-        "unplaceable": 9,
-        "eea": 39,
-        "non_eea": 184,
+        "total": 229,
+        "placeable": 221,
+        "unplaceable": 8,
+        "eea": 40,
+        "non_eea": 181,
         "countries": {
           "United States": 110,
           "Canada": 73,
           "United Kingdom": 50,
-          "India": 34,
+          "India": 31,
           "Poland": 13,
           "Ireland": 12,
-          "Germany": 10,
+          "Germany": 11,
           "Israel": 8,
           "Australia": 8,
           "France": 7,
@@ -2989,7 +2974,7 @@
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 17,
+            "count": 16,
             "examples": [
               {
                 "title": "Associate Revenue Operations Manager, India",
@@ -3019,7 +3004,7 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 5,
+            "count": 4,
             "examples": [
               {
                 "title": "Distinguished Engineer, Core DevOps",
@@ -3029,18 +3014,18 @@
                 "excerpt": "ribute to the technical hiring bar for senior individual contributors. Participate in the Incident Management on-call rotation to help meet availability goals for GitLab.com, and complete Interview Training to participate in hi"
               },
               {
-                "title": "Intermediate Backend Engineer - Code Security",
-                "location": "Bangalore, India",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8894531002",
-                "matched": "on-call",
-                "excerpt": "code that meets our internal standards, and help maintain those standards through code review. Participate in on-call rotations to troubleshoot product operations, security operations, and urgent engineering issues. What you’ll"
-              },
-              {
                 "title": "Intermediate Software Engineer, Security Factory: Vulnerability Management ",
                 "location": "Remote, Canada; Remote, Israel; Remote, United Kingdom",
                 "url": "https://job-boards.greenhouse.io/gitlab/jobs/8688078002",
                 "matched": "on-call",
                 "excerpt": "ze impediments to our efficiency as a team (\"technical debt\"), propose and implement solutions Participate in on-call rotations to assist troubleshooting product operations, security operations, and urgent engineering issues. W"
+              },
+              {
+                "title": "Intermediate Support Engineer (SHIFT) ",
+                "location": "Remote, United Kingdom",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8684061002",
+                "matched": "on-call",
+                "excerpt": "bers (for example: as a Support Stable Counterpart ) Participate in regular rotations for weekday and weekend on-call coverage (daytime only), providing emergency support to our Self-managed and SaaS customers, or working with"
               }
             ]
           },
@@ -3148,7 +3133,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 3,
+            "count": 4,
             "examples": [
               {
                 "title": "Associate Revenue Operations Manager, India",
