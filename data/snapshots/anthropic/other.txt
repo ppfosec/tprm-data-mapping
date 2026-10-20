@@ -1,7 +1,6 @@
 # source: https://www.anthropic.com/legal/aup
-# collected: 2026-10-19
+# collected: 2026-10-20
 
-Download PDF version
 Our Usage Policy (also referred to as our “Acceptable Use Policy” or “AUP”) applies to anyone who submits inputs to Anthropic’s products or services, all of whom we refer to as “users.” This includes individuals using our apps (such as
 Claude.ai
 and Claude Code), developers and businesses using our API and developer platforms, customers accessing Claude through cloud providers and authorized resellers, and the end users of products or services integrating Claude.

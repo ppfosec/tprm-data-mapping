@@ -1,5 +1,5 @@
 # source: https://www.datadoghq.com/legal/subprocessors/
-# collected: 2026-10-19
+# collected: 2026-10-20
 
 Product
 Infrastructure
@@ -176,7 +176,6 @@ Docs
 Login
 Last updated
 October 16, 2026
-October 13, 2026
 Datadog Subprocessors
 What is a subprocessor?
 In order to provide our services, Datadog may engage third parties or other members of the Datadog corporate group (affiliates) to carry out data-processing activities that involve access to customer data.
@@ -218,6 +217,9 @@ Email and office applications
 Microsoft Corporation (Azure)
 United States
 Infrastructure services
+Nebius, Inc.
+United States
+AI services
 OpenAI, LLC
 United States
 AI services

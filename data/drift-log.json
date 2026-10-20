@@ -1,5 +1,97 @@
 [
   {
+    "id": "anthropic-other-2026-10-20",
+    "vendor_id": "anthropic",
+    "vendor_name": "Anthropic",
+    "document": "other",
+    "document_label": "Other legal page",
+    "date": "2026-10-20",
+    "url": "https://www.anthropic.com/legal/aup",
+    "hunks": [
+      {
+        "before": "Download PDF version",
+        "after": null
+      }
+    ]
+  },
+  {
+    "id": "anthropic-dpa-2026-10-20",
+    "vendor_id": "anthropic",
+    "vendor_name": "Anthropic",
+    "document": "dpa",
+    "document_label": "Data processing agreement",
+    "date": "2026-10-20",
+    "url": "https://www.anthropic.com/legal/data-processing-addendum",
+    "hunks": [
+      {
+        "before": "This U.S.",
+        "after": "This Data Processing Addendum ("
+      },
+      {
+        "before": "K-12 Data Processing Agreement (this",
+        "after": null
+      },
+      {
+        "before": ") is incorporated into and forms part of the Anthropic U.S K-12 Terms of Service or other agreement between Customer and Anthropic that references this DPA and governs Customer’s use of the Services (the",
+        "after": ") is incorporated into and forms part of the Anthropic Commercial Terms of Service or other agreement between Customer and Anthropic that references this DPA and governs Customer’s use of the Services (the"
+      },
+      {
+        "before": "“Applicable Data Protection Laws”",
+        "after": "\"Applicable Data Protection Laws\""
+      },
+      {
+        "before": "means all applicable privacy or data protection laws and regulations relating to the processing of personal information, as may be amended from time to time.",
+        "after": "means all applicable privacy or data protection laws and regulations relating to the processing of personal data, as may be amended from time to time."
+      },
+      {
+        "before": "“Customer Personal Data”",
+        "after": "\"Customer Personal Data\""
+      }
+    ]
+  },
+  {
+    "id": "cloudflare-privacy-2026-10-20",
+    "vendor_id": "cloudflare",
+    "vendor_name": "Cloudflare",
+    "document": "privacy",
+    "document_label": "Privacy policy",
+    "date": "2026-10-20",
+    "url": "https://www.cloudflare.com/privacypolicy/",
+    "hunks": [
+      {
+        "before": "(“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information.",
+        "after": "(\u0000\u0000“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information."
+      }
+    ]
+  },
+  {
+    "id": "datadog-subprocessors-2026-10-20",
+    "vendor_id": "datadog",
+    "vendor_name": "Datadog",
+    "document": "subprocessors",
+    "document_label": "Sub-processor list",
+    "date": "2026-10-20",
+    "url": "https://www.datadoghq.com/legal/subprocessors/",
+    "hunks": [
+      {
+        "before": "October 13, 2026",
+        "after": null
+      },
+      {
+        "before": null,
+        "after": "Nebius, Inc."
+      },
+      {
+        "before": null,
+        "after": "United States"
+      },
+      {
+        "before": null,
+        "after": "AI services"
+      }
+    ]
+  },
+  {
     "id": "stripe-privacy-2026-10-18",
     "vendor_id": "stripe",
     "vendor_name": "Stripe",

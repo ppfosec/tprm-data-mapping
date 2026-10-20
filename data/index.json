@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T09:02:40+00:00",
+  "generated_at": "2026-10-20T08:40:50+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -132,9 +132,9 @@
           "kind": "other",
           "url": "https://www.anthropic.com/legal/aup",
           "path": "data/snapshots/anthropic/other.txt",
-          "lines": 280,
-          "chars": 30779,
-          "sha256": "d67c8f3b26ce129d",
+          "lines": 279,
+          "chars": 30758,
+          "sha256": "966a0dcb1b5c5355",
           "note": null,
           "archive": {
             "ok": true,
@@ -155,46 +155,46 @@
           "diff": null,
           "archive": {
             "ok": true,
-            "captures": 73,
-            "revisions": 72,
+            "captures": 80,
+            "revisions": 79,
             "first": "2024-09-26",
-            "last": "2026-10-19"
+            "last": "2026-10-20"
           }
         },
         {
           "kind": "dpa",
-          "url": "https://www.anthropic.com/legal/k12-dpa",
+          "url": "https://www.anthropic.com/legal/data-processing-addendum",
           "path": "data/snapshots/anthropic/dpa.txt",
-          "lines": 269,
-          "chars": 23127,
-          "sha256": "b5c2883bfc8d9aed",
+          "lines": 455,
+          "chars": 34257,
+          "sha256": "ee0c3bd8ba8b443c",
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 72,
-            "revisions": 71,
-            "first": "2026-07-14",
-            "last": "2026-10-19"
+            "captures": 75,
+            "revisions": 74,
+            "first": "2025-03-11",
+            "last": "2026-10-16"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 657,
-        "placeable": 655,
+        "total": 666,
+        "placeable": 664,
         "unplaceable": 2,
-        "eea": 26,
-        "non_eea": 629,
+        "eea": 29,
+        "non_eea": 635,
         "countries": {
-          "United States": 526,
-          "United Kingdom": 49,
-          "Japan": 15,
+          "United States": 532,
+          "United Kingdom": 48,
+          "Japan": 16,
           "South Korea": 14,
+          "Germany": 12,
           "Singapore": 11,
-          "Germany": 11,
           "Ireland": 9,
           "Australia": 9,
-          "France": 5,
+          "France": 7,
           "India": 4,
           "Switzerland": 4,
           "Canada": 3,
@@ -280,7 +280,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "629 of 655 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "635 of 664 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -289,15 +289,15 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 526 open roles"
+              "excerpt": "United States: 532 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 49 open roles"
+              "excerpt": "United Kingdom: 48 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "Japan: 15 open roles"
+              "excerpt": "Japan: 16 open roles"
             },
             {
               "kind": "stat",
@@ -419,7 +419,7 @@
         "sensitivity_score": 10,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": false
+        "source_documents_changed": true
       },
       "score": {
         "total": 44,
@@ -429,6 +429,56 @@
         "record": 0
       },
       "drift": [
+        {
+          "id": "anthropic-other-2026-10-20",
+          "vendor_id": "anthropic",
+          "vendor_name": "Anthropic",
+          "document": "other",
+          "document_label": "Other legal page",
+          "date": "2026-10-20",
+          "url": "https://www.anthropic.com/legal/aup",
+          "hunks": [
+            {
+              "before": "Download PDF version",
+              "after": null
+            }
+          ]
+        },
+        {
+          "id": "anthropic-dpa-2026-10-20",
+          "vendor_id": "anthropic",
+          "vendor_name": "Anthropic",
+          "document": "dpa",
+          "document_label": "Data processing agreement",
+          "date": "2026-10-20",
+          "url": "https://www.anthropic.com/legal/data-processing-addendum",
+          "hunks": [
+            {
+              "before": "This U.S.",
+              "after": "This Data Processing Addendum ("
+            },
+            {
+              "before": "K-12 Data Processing Agreement (this",
+              "after": null
+            },
+            {
+              "before": ") is incorporated into and forms part of the Anthropic U.S K-12 Terms of Service or other agreement between Customer and Anthropic that references this DPA and governs Customer’s use of the Services (the",
+              "after": ") is incorporated into and forms part of the Anthropic Commercial Terms of Service or other agreement between Customer and Anthropic that references this DPA and governs Customer’s use of the Services (the"
+            },
+            {
+              "before": "“Applicable Data Protection Laws”",
+              "after": "\"Applicable Data Protection Laws\""
+            },
+            {
+              "before": "means all applicable privacy or data protection laws and regulations relating to the processing of personal information, as may be amended from time to time.",
+              "after": "means all applicable privacy or data protection laws and regulations relating to the processing of personal data, as may be amended from time to time."
+            },
+            {
+              "before": "“Customer Personal Data”",
+              "after": "\"Customer Personal Data\""
+            }
+          ]
+        },
         {
           "id": "anthropic-other-2026-10-09",
           "vendor_id": "anthropic",
@@ -549,8 +599,8 @@
           "url": "https://www.cloudflare.com/privacypolicy/",
           "path": "data/snapshots/cloudflare/privacy.txt",
           "lines": 649,
-          "chars": 47137,
-          "sha256": "8d3c9629d73c5991",
+          "chars": 47139,
+          "sha256": "cbeba0023dac377d",
           "note": null,
           "archive": {
             "ok": true,
@@ -586,10 +636,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 158,
-            "revisions": 157,
+            "captures": 159,
+            "revisions": 158,
             "first": "2018-11-17",
-            "last": "2026-08-18"
+            "last": "2026-10-14"
           }
         },
         {
@@ -611,9 +661,9 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 433,
+        "total": 437,
         "placeable": 3,
-        "unplaceable": 430,
+        "unplaceable": 434,
         "eea": 1,
         "non_eea": 2,
         "countries": {
@@ -658,7 +708,7 @@
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 4,
+            "count": 5,
             "examples": [
               {
                 "title": "Associate General Counsel, Privacy Compliance",
@@ -688,7 +738,7 @@
             "label": "Travel expected",
             "severity": "high",
             "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 1,
+            "count": 2,
             "examples": [
               {
                 "title": "Data Center Site Selection - Hyperscale",
@@ -696,6 +746,13 @@
                 "url": "https://boards.greenhouse.io/cloudflare/jobs/8234130?gh_jid=8234130",
                 "matched": "Willing to travel",
                 "excerpt": "at once, across time zones, with incomplete information Has taken a campus or BTS lease from LOI to execution Willing to travel ~30% International deal experience preferred Bachelor’s degree or equivalent experience required Nice to have"
+              },
+              {
+                "title": "Engineering Manager, Data Center Operations",
+                "location": "Hybrid",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8293647?gh_jid=8293647",
+                "matched": "frequent travel",
+                "excerpt": "risk and availability reporting to leadership. Ability to travel regularly to data center sites. Expect more frequent travel during site builds, shifting to periodic visits as sites reach steady state. Preferred Qualifications Experie"
               }
             ]
           },
@@ -739,16 +796,16 @@
             "count": 2,
             "examples": [
               {
+                "title": "Engineering Manager, Data Center Operations",
+                "location": "Hybrid",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8293647?gh_jid=8293647",
+                "matched": "around the clock",
+                "excerpt": "Center Operations manager to build and run the team that brings these new sites online and keeps them running around the clock. You will build a distributed team of Data Center Engineers from the ground up. You'll own sites across their"
+              },
+              {
                 "title": "Network Deployment Engineer",
                 "location": "Hybrid",
                 "url": "https://boards.greenhouse.io/cloudflare/jobs/8099671?gh_jid=8099671",
-                "matched": "24/7",
-                "excerpt": "etc) or higher. Linux certifications. Experience with continuous / rapid deployment. Experience working in a 24/7/365 mission-critical service environment (on-call rotation required) Knowledge of the OSI-model and experienc"
-              },
-              {
-                "title": "Network Deployment Engineer - APJC",
-                "location": "Hybrid",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/8088046?gh_jid=8088046",
                 "matched": "24/7",
                 "excerpt": "etc) or higher. Linux certifications. Experience with continuous / rapid deployment. Experience working in a 24/7/365 mission-critical service environment (on-call rotation required) Knowledge of the OSI-model and experienc"
               }
@@ -866,7 +923,7 @@
         "sensitivity_score": 10,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": false
+        "source_documents_changed": true
       },
       "score": {
         "total": 42,
@@ -876,6 +933,21 @@
         "record": 0
       },
       "drift": [
+        {
+          "id": "cloudflare-privacy-2026-10-20",
+          "vendor_id": "cloudflare",
+          "vendor_name": "Cloudflare",
+          "document": "privacy",
+          "document_label": "Privacy policy",
+          "date": "2026-10-20",
+          "url": "https://www.cloudflare.com/privacypolicy/",
+          "hunks": [
+            {
+              "before": "(“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information.",
+              "after": "(\u0000\u0000“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information."
+            }
+          ]
+        },
         {
           "id": "cloudflare-privacy-2026-10-16",
           "vendor_id": "cloudflare",
@@ -950,21 +1022,6 @@
               "after": "(“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information."
             }
           ]
-        },
-        {
-          "id": "cloudflare-privacy-2026-09-29",
-          "vendor_id": "cloudflare",
-          "vendor_name": "Cloudflare",
-          "document": "privacy",
-          "document_label": "Privacy policy",
-          "date": "2026-09-29",
-          "url": "https://www.cloudflare.com/privacypolicy/",
-          "hunks": [
-            {
-              "before": "(“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information.",
-              "after": "(\u0000“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information."
-            }
-          ]
         }
       ]
     },
@@ -1012,9 +1069,9 @@
           "kind": "subprocessors",
           "url": "https://www.datadoghq.com/legal/subprocessors/",
           "path": "data/snapshots/datadog/subprocessors.txt",
-          "lines": 285,
-          "chars": 5367,
-          "sha256": "00ba18c000024e07",
+          "lines": 287,
+          "chars": 5389,
+          "sha256": "873f616865552484",
           "note": null,
           "archive": {
             "ok": true,
@@ -1027,37 +1084,37 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 435,
-        "placeable": 435,
+        "total": 432,
+        "placeable": 432,
         "unplaceable": 0,
-        "eea": 92,
+        "eea": 89,
         "non_eea": 343,
         "countries": {
-          "United States": 222,
-          "France": 50,
+          "United States": 220,
+          "France": 47,
           "Japan": 34,
           "Ireland": 24,
-          "United Kingdom": 21,
-          "Netherlands": 20,
+          "Netherlands": 21,
+          "United Kingdom": 20,
           "Singapore": 18,
-          "South Korea": 14,
           "Australia": 14,
+          "South Korea": 14,
           "Brazil": 13,
-          "Spain": 13,
-          "India": 11,
-          "Portugal": 6,
-          "Germany": 5,
+          "India": 12,
+          "Spain": 11,
+          "Portugal": 5,
+          "Germany": 4,
           "Mexico": 4,
-          "Italy": 4,
+          "Israel": 3,
           "Sweden": 3,
-          "Israel": 2,
+          "Italy": 3,
           "Denmark": 2,
           "Indonesia": 2,
-          "Switzerland": 2,
+          "Switzerland": 1,
           "Chile": 1,
           "Canada": 1,
-          "Poland": 1,
           "Austria": 1,
+          "Poland": 1,
           "Saudi Arabia": 1
         },
         "scanned": 26,
@@ -1071,15 +1128,15 @@
             "examples": [
               {
                 "title": "Global Safety & Security Manager",
-                "location": "Sydney, Australia",
-                "url": "https://careers.datadoghq.com/detail/8224963/?gh_jid=8224963",
+                "location": "Singapore, Singapore",
+                "url": "https://careers.datadoghq.com/detail/8223272/?gh_jid=8223272",
                 "matched": "international travel",
                 "excerpt": "ice and collaboration. This position is based in our Sydney or Singapore office and will require domestic and international travel. The role will focus particularly on developing our safety compliance, security program development and matur"
               },
               {
                 "title": "Global Safety & Security Manager",
-                "location": "Singapore, Singapore",
-                "url": "https://careers.datadoghq.com/detail/8223272/?gh_jid=8223272",
+                "location": "Sydney, Australia",
+                "url": "https://careers.datadoghq.com/detail/8224963/?gh_jid=8224963",
                 "matched": "international travel",
                 "excerpt": "ice and collaboration. This position is based in our Sydney or Singapore office and will require domestic and international travel. The role will focus particularly on developing our safety compliance, security program development and matur"
               }
@@ -1256,7 +1313,7 @@
         "sensitivity_score": 20,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": false
+        "source_documents_changed": true
       },
       "score": {
         "total": 37,
@@ -1266,6 +1323,33 @@
         "record": 0
       },
       "drift": [
+        {
+          "id": "datadog-subprocessors-2026-10-20",
+          "vendor_id": "datadog",
+          "vendor_name": "Datadog",
+          "document": "subprocessors",
+          "document_label": "Sub-processor list",
+          "date": "2026-10-20",
+          "url": "https://www.datadoghq.com/legal/subprocessors/",
+          "hunks": [
+            {
+              "before": "October 13, 2026",
+              "after": null
+            },
+            {
+              "before": null,
+              "after": "Nebius, Inc."
+            },
+            {
+              "before": null,
+              "after": "United States"
+            },
+            {
+              "before": null,
+              "after": "AI services"
+            }
+          ]
+        },
         {
           "id": "datadog-subprocessors-2026-10-17",
           "vendor_id": "datadog",
@@ -1380,41 +1464,6 @@
               "after": null
             }
           ]
-        },
-        {
-          "id": "datadog-dpa-2026-09-12",
-          "vendor_id": "datadog",
-          "vendor_name": "Datadog",
-          "document": "dpa",
-          "document_label": "Data processing agreement",
-          "date": "2026-09-12",
-          "url": "https://www.datadoghq.com/legal/data-processing-addendum/",
-          "hunks": [
-            {
-              "before": "Metrics",
-              "after": "Custom Metrics"
-            },
-            {
-              "before": null,
-              "after": "Network Monitoring"
-            },
-            {
-              "before": "Network Monitoring",
-              "after": "Serverless Monitoring"
-            },
-            {
-              "before": "Serverless",
-              "after": null
-            },
-            {
-              "before": "Cloudcraft",
-              "after": null
-            },
-            {
-              "before": "Sensitive Data Scanner",
-              "after": null
-            }
-          ]
         }
       ]
     },
@@ -1477,30 +1526,30 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 727,
-        "placeable": 656,
+        "total": 725,
+        "placeable": 654,
         "unplaceable": 71,
         "eea": 95,
-        "non_eea": 561,
+        "non_eea": 559,
         "countries": {
           "United States": 348,
-          "Ireland": 75,
+          "Ireland": 73,
           "Canada": 54,
           "Singapore": 49,
-          "United Kingdom": 47,
-          "India": 47,
-          "Mexico": 31,
+          "India": 46,
+          "United Kingdom": 45,
+          "Mexico": 30,
           "Australia": 10,
-          "Romania": 5,
+          "Romania": 6,
           "Japan": 4,
           "Germany": 4,
           "France": 4,
           "Taiwan": 3,
+          "Luxembourg": 3,
           "Spain": 3,
-          "Luxembourg": 2,
+          "Israel": 2,
           "Thailand": 2,
           "Netherlands": 1,
-          "Israel": 1,
           "New Zealand": 1,
           "Poland": 1
         },
@@ -1909,10 +1958,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 326,
-            "revisions": 325,
+            "captures": 328,
+            "revisions": 327,
             "first": "2024-01-18",
-            "last": "2026-10-13"
+            "last": "2026-10-15"
           }
         },
         {
@@ -1950,21 +1999,21 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 139,
-        "placeable": 139,
+        "total": 141,
+        "placeable": 141,
         "unplaceable": 0,
         "eea": 12,
-        "non_eea": 127,
+        "non_eea": 129,
         "countries": {
-          "United States": 93,
+          "United States": 94,
           "United Kingdom": 19,
           "Germany": 8,
           "Brazil": 5,
           "France": 4,
           "Australia": 3,
+          "India": 2,
           "Singapore": 2,
           "Japan": 2,
-          "India": 1,
           "South Korea": 1,
           "Israel": 1
         },
@@ -1985,18 +2034,48 @@
                 "excerpt": "om idea to product, Figma empowers teams to streamline workflows, move faster, and work together in real time from anywhere in the world. If you're excited to shape the future of design and collaboration, join us! As a Compliance Engineer at Figm"
               },
               {
+                "title": "Customer Support Specialist (Bengaluru, India)",
+                "location": "Bengaluru, India",
+                "url": "https://boards.greenhouse.io/figma/jobs/6223879004?gh_jid=6223879004",
+                "matched": "from anywhere in the world",
+                "excerpt": "om idea to product, Figma empowers teams to streamline workflows, move faster, and work together in real time from anywhere in the world. If you're excited to shape the future of design and collaboration, join us! As a Customer Support Specialist"
+              },
+              {
                 "title": "Data Engineer Intern (2027)",
                 "location": "San Francisco, CA • New York, NY",
                 "url": "https://boards.greenhouse.io/figma/jobs/6178851004?gh_jid=6178851004",
                 "matched": "from anywhere in the world",
                 "excerpt": "om idea to product, Figma empowers teams to streamline workflows, move faster, and work together in real time from anywhere in the world. If you're excited to shape the future of design and collaboration, join us! We are looking for Data Engineer"
+              }
+            ]
+          },
+          {
+            "key": "named_tooling",
+            "label": "Named internal tooling",
+            "severity": "low",
+            "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
+            "count": 4,
+            "examples": [
+              {
+                "title": "Customer Support Specialist (Bengaluru, India)",
+                "location": "Bengaluru, India",
+                "url": "https://boards.greenhouse.io/figma/jobs/6223879004?gh_jid=6223879004",
+                "matched": "Zendesk",
+                "excerpt": "This is a full-time role based in our Bengaluru office. What you’ll do at Figma: Resolve customer tickets in Zendesk, mostly by email, such as helping a designer get back into a locked account or sorting out who can view and e"
               },
               {
-                "title": "Data Platform Engineer",
+                "title": "Data Scientist  ",
                 "location": "San Francisco, CA • New York, NY • United States",
-                "url": "https://boards.greenhouse.io/figma/jobs/6201407004?gh_jid=6201407004",
-                "matched": "from anywhere in the world",
-                "excerpt": "om idea to product, Figma empowers teams to streamline workflows, move faster, and work together in real time from anywhere in the world. If you're excited to shape the future of design and collaboration, join us! We are looking for a Data Platfo"
+                "url": "https://boards.greenhouse.io/figma/jobs/5552580004?gh_jid=5552580004",
+                "matched": "Snowflake",
+                "excerpt": "pting language like Python or R, along with experience working with distributed data systems (e.g., Redshift, Snowflake, Presto, Hive, Spark) Strong foundation in statistical methods, experimentation, and/or forecasting A track r"
+              },
+              {
+                "title": "Security Scientist",
+                "location": "San Francisco, CA • New York, NY • United States",
+                "url": "https://boards.greenhouse.io/figma/jobs/6180172004?gh_jid=6180172004",
+                "matched": "Snowflake",
+                "excerpt": "ge Experience working with distributed data processing systems and frameworks such as Hive, Redshift, Presto, Snowflake, or Spark Strong knowledge of statistical methods and experimental design Excellent judgment and creative pro"
               }
             ]
           },
@@ -2029,36 +2108,6 @@
                 "excerpt": "it's an added plus if you also have: Operated in a public company environment with SOX, ISO 27001, SOC 2, or FedRAMP requirements Applied AI risk management frameworks such as NIST AI RMF, OECD AI Principles, or ISO 42001 Util"
               }
             ]
-          },
-          {
-            "key": "named_tooling",
-            "label": "Named internal tooling",
-            "severity": "low",
-            "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 3,
-            "examples": [
-              {
-                "title": "Data Scientist  ",
-                "location": "San Francisco, CA • New York, NY • United States",
-                "url": "https://boards.greenhouse.io/figma/jobs/5552580004?gh_jid=5552580004",
-                "matched": "Snowflake",
-                "excerpt": "pting language like Python or R, along with experience working with distributed data systems (e.g., Redshift, Snowflake, Presto, Hive, Spark) Strong foundation in statistical methods, experimentation, and/or forecasting A track r"
-              },
-              {
-                "title": "Security Scientist",
-                "location": "San Francisco, CA • New York, NY • United States",
-                "url": "https://boards.greenhouse.io/figma/jobs/6180172004?gh_jid=6180172004",
-                "matched": "Snowflake",
-                "excerpt": "ge Experience working with distributed data processing systems and frameworks such as Hive, Redshift, Presto, Snowflake, or Spark Strong knowledge of statistical methods and experimental design Excellent judgment and creative pro"
-              },
-              {
-                "title": "Software Engineer - Data Infrastructure",
-                "location": "San Francisco, CA • New York, NY • United States",
-                "url": "https://boards.greenhouse.io/figma/jobs/5551686004?gh_jid=5551686004",
-                "matched": "Snowflake",
-                "excerpt": "ss teams that rely on data for insights and strategy. Our team owns and scales critical platforms such as the Snowflake data warehouse, ML Datalake, orchestration and pipeline infrastructure, and large-scale data ingestion and pr"
-              }
-            ]
           }
         ]
       },
@@ -2067,7 +2116,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "127 of 139 placeable roles name no EEA site — most prominently United States, United Kingdom, Brazil. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "129 of 141 placeable roles name no EEA site — most prominently United States, United Kingdom, Brazil. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -2076,7 +2125,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 93 open roles"
+              "excerpt": "United States: 94 open roles"
             },
             {
               "kind": "stat",
@@ -2160,9 +2209,9 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 45,
+        "total": 46,
         "footprint": 23,
-        "access": 22,
+        "access": 23,
         "transparency": 0,
         "record": 0
       },
@@ -2383,14 +2432,14 @@
         "total": 229,
         "placeable": 221,
         "unplaceable": 8,
-        "eea": 40,
-        "non_eea": 181,
+        "eea": 41,
+        "non_eea": 180,
         "countries": {
-          "United States": 110,
-          "Canada": 73,
-          "United Kingdom": 50,
-          "India": 31,
-          "Poland": 13,
+          "United States": 111,
+          "Canada": 74,
+          "United Kingdom": 49,
+          "India": 30,
+          "Poland": 14,
           "Ireland": 12,
           "Germany": 11,
           "Israel": 8,
@@ -2398,15 +2447,15 @@
           "France": 7,
           "Spain": 7,
           "Netherlands": 6,
+          "Singapore": 6,
           "Brazil": 5,
-          "Singapore": 5,
           "Japan": 4,
           "South Korea": 3,
           "Mexico": 3,
           "Austria": 2,
+          "United Arab Emirates": 2,
           "Sweden": 1,
-          "Switzerland": 1,
-          "United Arab Emirates": 1
+          "Switzerland": 1
         },
         "scanned": 26,
         "signals": [
@@ -2441,6 +2490,36 @@
             ]
           },
           {
+            "key": "replication",
+            "label": "Cross-region replication",
+            "severity": "high",
+            "why": "Resilience design moves copies by default, and failover does not ask permission.",
+            "count": 4,
+            "examples": [
+              {
+                "title": "Cloud Platform Engineer",
+                "location": "Remote, Canada; Remote, United States",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8889193002",
+                "matched": "multi-region",
+                "excerpt": "pproaches Contributions to open-source projects or internal platform tooling Experience with multi-cluster or multi-region Kubernetes architectures Relevant certifications: CKA, CKAD, AWS Solutions Architect, HashiCorp Terraform Ass"
+              },
+              {
+                "title": "Customer Success Architect, Japan",
+                "location": "Remote, Japan",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8880999002",
+                "matched": "multi-region",
+                "excerpt": "s stakeholders on cloud and platform architecture decisions with enterprise-wide impact, which includes&nbsp; multi-region deployment strategy, secrets management architecture and network/security topology for regulated environments"
+              },
+              {
+                "title": "Director, Global People Operations & Compliance",
+                "location": "Remote, Canada; Remote, United States",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8872500002",
+                "matched": "multi-region",
+                "excerpt": "erience leading global teams Proven track record building and scaling people operations functions in complex, multi-regional global organizations Working knowledge of global employment compliance, including direct experience with wo"
+              }
+            ]
+          },
+          {
             "key": "oncall",
             "label": "On-call access",
             "severity": "high",
@@ -2467,36 +2546,6 @@
                 "url": "https://job-boards.greenhouse.io/gitlab/jobs/8684061002",
                 "matched": "on-call",
                 "excerpt": "bers (for example: as a Support Stable Counterpart ) Participate in regular rotations for weekday and weekend on-call coverage (daytime only), providing emergency support to our Self-managed and SaaS customers, or working with"
-              }
-            ]
-          },
-          {
-            "key": "replication",
-            "label": "Cross-region replication",
-            "severity": "high",
-            "why": "Resilience design moves copies by default, and failover does not ask permission.",
-            "count": 3,
-            "examples": [
-              {
-                "title": "Customer Success Architect, Japan",
-                "location": "Remote, Japan",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8880999002",
-                "matched": "multi-region",
-                "excerpt": "s stakeholders on cloud and platform architecture decisions with enterprise-wide impact, which includes&nbsp; multi-region deployment strategy, secrets management architecture and network/security topology for regulated environments"
-              },
-              {
-                "title": "Director, Global People Operations & Compliance",
-                "location": "Remote, Canada; Remote, United States",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8872500002",
-                "matched": "multi-region",
-                "excerpt": "erience leading global teams Proven track record building and scaling people operations functions in complex, multi-regional global organizations Working knowledge of global employment compliance, including direct experience with wo"
-              },
-              {
-                "title": "Principal Site Reliability Engineer, Platform Engineering: Dedicated",
-                "location": "Remote, Canada; Remote, United Kingdom; Remote, United States",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8623592002",
-                "matched": "failover",
-                "excerpt": "liance our customers depend on. You’ll lead platform and operating-model transformation across resilience and failover, tenant orchestration, change management, self-service tooling, and platform integrations. You’ll also help a"
               }
             ]
           },
@@ -2554,16 +2603,16 @@
                 "excerpt": "or physical disability, genetic information (including family medical history), discharge status from the military, protected veteran status (which includes disabled veterans, recently separated veterans, active duty wartim"
               },
               {
-                "title": "Customer Success Architect",
-                "location": "Remote, United States",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8877426002",
+                "title": "Cloud Platform Engineer",
+                "location": "Remote, Canada; Remote, United States",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8889193002",
                 "matched": "itar",
                 "excerpt": "or physical disability, genetic information (including family medical history), discharge status from the military, protected veteran status (which includes disabled veterans, recently separated veterans, active duty wartim"
               },
               {
-                "title": "Customer Success Architect, Japan",
-                "location": "Remote, Japan",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8880999002",
+                "title": "Customer Success Architect",
+                "location": "Remote, United States",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8877426002",
                 "matched": "itar",
                 "excerpt": "or physical disability, genetic information (including family medical history), discharge status from the military, protected veteran status (which includes disabled veterans, recently separated veterans, active duty wartim"
               }
@@ -2574,7 +2623,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 4,
+            "count": 3,
             "examples": [
               {
                 "title": "Associate Revenue Operations Manager, India",
@@ -2771,28 +2820,28 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 380,
-        "placeable": 380,
+        "total": 377,
+        "placeable": 377,
         "unplaceable": 0,
         "eea": 159,
-        "non_eea": 221,
+        "non_eea": 218,
         "countries": {
-          "United States": 114,
-          "Spain": 32,
+          "United States": 111,
+          "Spain": 33,
           "Canada": 29,
           "Greece": 25,
           "United Kingdom": 24,
           "Ireland": 23,
           "Portugal": 23,
-          "Poland": 20,
-          "India": 18,
-          "Norway": 11,
+          "Poland": 19,
+          "India": 17,
           "Romania": 11,
+          "Norway": 11,
           "Germany": 7,
           "Switzerland": 7,
+          "Japan": 6,
           "Australia": 5,
           "Singapore": 5,
-          "Japan": 5,
           "Belgium": 3,
           "Brazil": 3,
           "United Arab Emirates": 2,
@@ -3042,8 +3091,8 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 82,
-        "footprint": 15,
+        "total": 81,
+        "footprint": 14,
         "access": 25,
         "transparency": 17,
         "record": 25
@@ -3173,13 +3222,13 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 93,
-        "placeable": 90,
+        "total": 94,
+        "placeable": 91,
         "unplaceable": 3,
         "eea": 7,
-        "non_eea": 83,
+        "non_eea": 84,
         "countries": {
-          "United States": 70,
+          "United States": 71,
           "United Kingdom": 18,
           "Germany": 7,
           "Australia": 3,
