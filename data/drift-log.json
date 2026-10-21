@@ -1,5 +1,77 @@
 [
   {
+    "id": "anthropic-privacy-2026-10-21",
+    "vendor_id": "anthropic",
+    "vendor_name": "Anthropic",
+    "document": "privacy",
+    "document_label": "Privacy policy",
+    "date": "2026-10-21",
+    "url": "https://www.anthropic.com/legal/privacy",
+    "hunks": [
+      {
+        "before": null,
+        "after": "Section"
+      },
+      {
+        "before": null,
+        "after": "Collection of Personal Data"
+      }
+    ]
+  },
+  {
+    "id": "anthropic-terms-2026-10-21",
+    "vendor_id": "anthropic",
+    "vendor_name": "Anthropic",
+    "document": "terms",
+    "document_label": "Terms",
+    "date": "2026-10-21",
+    "url": "https://www.anthropic.com/legal/commercial-terms",
+    "hunks": [
+      {
+        "before": null,
+        "after": "Section"
+      },
+      {
+        "before": null,
+        "after": "Services"
+      }
+    ]
+  },
+  {
+    "id": "anthropic-dpa-2026-10-21",
+    "vendor_id": "anthropic",
+    "vendor_name": "Anthropic",
+    "document": "dpa",
+    "document_label": "Data processing agreement",
+    "date": "2026-10-21",
+    "url": "https://www.anthropic.com/legal/data-processing-addendum",
+    "hunks": [
+      {
+        "before": null,
+        "after": "Section"
+      },
+      {
+        "before": null,
+        "after": "Definitions"
+      }
+    ]
+  },
+  {
+    "id": "cloudflare-privacy-2026-10-21",
+    "vendor_id": "cloudflare",
+    "vendor_name": "Cloudflare",
+    "document": "privacy",
+    "document_label": "Privacy policy",
+    "date": "2026-10-21",
+    "url": "https://www.cloudflare.com/privacypolicy/",
+    "hunks": [
+      {
+        "before": "(\u0000\u0000“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information.",
+        "after": "(“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information."
+      }
+    ]
+  },
+  {
     "id": "anthropic-other-2026-10-20",
     "vendor_id": "anthropic",
     "vendor_name": "Anthropic",

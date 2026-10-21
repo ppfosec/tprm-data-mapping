@@ -1,6 +1,8 @@
 # source: https://www.anthropic.com/legal/commercial-terms
-# collected: 2026-10-20
+# collected: 2026-10-21
 
+Section
+Services
 Welcome to Anthropic!
 Before accessing our Services, please read these Commercial Terms of Service.
 These Commercial Terms of Service (“

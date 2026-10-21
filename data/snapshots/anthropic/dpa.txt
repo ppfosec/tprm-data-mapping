@@ -1,6 +1,8 @@
 # source: https://www.anthropic.com/legal/data-processing-addendum
-# collected: 2026-10-20
+# collected: 2026-10-21
 
+Section
+Definitions
 This Data Processing Addendum (
 “DPA”
 ) is incorporated into and forms part of the Anthropic Commercial Terms of Service or other agreement between Customer and Anthropic that references this DPA and governs Customer’s use of the Services (the

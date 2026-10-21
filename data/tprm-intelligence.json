@@ -557,9 +557,9 @@
           "kind": "privacy",
           "url": "https://www.anthropic.com/legal/privacy",
           "path": "data/snapshots/anthropic/privacy.txt",
-          "lines": 491,
-          "chars": 39483,
-          "sha256": "6e132921a3eb10a3",
+          "lines": 493,
+          "chars": 39519,
+          "sha256": "24202b8ba5293da6",
           "note": null,
           "archive": {
             "ok": true,
@@ -573,9 +573,9 @@
           "kind": "terms",
           "url": "https://www.anthropic.com/legal/commercial-terms",
           "path": "data/snapshots/anthropic/terms.txt",
-          "lines": 336,
-          "chars": 24318,
-          "sha256": "8dac92944a88d6dd",
+          "lines": 338,
+          "chars": 24335,
+          "sha256": "e6c9681afd27222a",
           "note": null,
           "archive": {
             "ok": true,
@@ -612,26 +612,26 @@
           "diff": null,
           "archive": {
             "ok": true,
-            "captures": 80,
-            "revisions": 79,
+            "captures": 83,
+            "revisions": 82,
             "first": "2024-09-26",
-            "last": "2026-10-20"
+            "last": "2026-10-21"
           }
         },
         {
           "kind": "dpa",
           "url": "https://www.anthropic.com/legal/data-processing-addendum",
           "path": "data/snapshots/anthropic/dpa.txt",
-          "lines": 455,
-          "chars": 34257,
-          "sha256": "ee0c3bd8ba8b443c",
+          "lines": 457,
+          "chars": 34277,
+          "sha256": "1041899ac1f319d9",
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 75,
-            "revisions": 74,
+            "captures": 77,
+            "revisions": 76,
             "first": "2025-03-11",
-            "last": "2026-10-16"
+            "last": "2026-10-20"
           }
         }
       ],
@@ -640,7 +640,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "635 of 664 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "641 of 672 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -649,11 +649,11 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 532 open roles"
+              "excerpt": "United States: 534 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 48 open roles"
+              "excerpt": "United Kingdom: 51 open roles"
             },
             {
               "kind": "stat",
@@ -661,7 +661,7 @@
             },
             {
               "kind": "stat",
-              "excerpt": "South Korea: 14 open roles"
+              "excerpt": "South Korea: 13 open roles"
             }
           ],
           "question": "Which roles can access production data, and from which countries? Does the residency commitment cover support and engineering access, or only data at rest?"
@@ -783,24 +783,24 @@
       },
       "jobs": {
         "ok": true,
-        "total": 666,
-        "placeable": 664,
+        "total": 674,
+        "placeable": 672,
         "unplaceable": 2,
-        "eea": 29,
-        "non_eea": 635,
+        "eea": 31,
+        "non_eea": 641,
         "countries": {
-          "United States": 532,
-          "United Kingdom": 48,
+          "United States": 534,
+          "United Kingdom": 51,
           "Japan": 16,
-          "South Korea": 14,
+          "South Korea": 13,
           "Germany": 12,
           "Singapore": 11,
-          "Ireland": 9,
-          "Australia": 9,
-          "France": 7,
+          "Ireland": 10,
+          "Australia": 10,
+          "France": 8,
           "India": 4,
+          "Canada": 4,
           "Switzerland": 4,
-          "Canada": 3,
           "Italy": 1
         },
         "scanned": 26,
@@ -879,6 +879,63 @@
         ]
       },
       "drift": [
+        {
+          "id": "anthropic-privacy-2026-10-21",
+          "vendor_id": "anthropic",
+          "vendor_name": "Anthropic",
+          "document": "privacy",
+          "document_label": "Privacy policy",
+          "date": "2026-10-21",
+          "url": "https://www.anthropic.com/legal/privacy",
+          "hunks": [
+            {
+              "before": null,
+              "after": "Section"
+            },
+            {
+              "before": null,
+              "after": "Collection of Personal Data"
+            }
+          ]
+        },
+        {
+          "id": "anthropic-terms-2026-10-21",
+          "vendor_id": "anthropic",
+          "vendor_name": "Anthropic",
+          "document": "terms",
+          "document_label": "Terms",
+          "date": "2026-10-21",
+          "url": "https://www.anthropic.com/legal/commercial-terms",
+          "hunks": [
+            {
+              "before": null,
+              "after": "Section"
+            },
+            {
+              "before": null,
+              "after": "Services"
+            }
+          ]
+        },
+        {
+          "id": "anthropic-dpa-2026-10-21",
+          "vendor_id": "anthropic",
+          "vendor_name": "Anthropic",
+          "document": "dpa",
+          "document_label": "Data processing agreement",
+          "date": "2026-10-21",
+          "url": "https://www.anthropic.com/legal/data-processing-addendum",
+          "hunks": [
+            {
+              "before": null,
+              "after": "Section"
+            },
+            {
+              "before": null,
+              "after": "Definitions"
+            }
+          ]
+        },
         {
           "id": "anthropic-other-2026-10-20",
           "vendor_id": "anthropic",
@@ -963,76 +1020,6 @@
               "after": "Please review this Usage Policy carefully before using our products or services."
             }
           ]
-        },
-        {
-          "id": "anthropic-privacy-2026-09-12",
-          "vendor_id": "anthropic",
-          "vendor_name": "Anthropic",
-          "document": "privacy",
-          "document_label": "Privacy policy",
-          "date": "2026-09-12",
-          "url": "https://www.anthropic.com/legal/privacy",
-          "hunks": [
-            {
-              "before": null,
-              "after": "This section applies to the extent that Anthropic is subject to the Personal Information Protection Act (“PIPA”), and supplements the information in the Privacy Policy."
-            },
-            {
-              "before": null,
-              "after": "This is an addendum to the Privacy Policy and should be read in conjunction with the Privacy Policy."
-            },
-            {
-              "before": null,
-              "after": "In case of any inconsistency between the Privacy Policy and this Addendum, this Addendum prevails for users in the Republic of Korea."
-            },
-            {
-              "before": null,
-              "after": "This Addendum may be amended or updated from time to time."
-            },
-            {
-              "before": null,
-              "after": "Items of Personal Data Collected and Purpose of Use"
-            },
-            {
-              "before": null,
-              "after": "In addition to “1."
-            }
-          ]
-        },
-        {
-          "id": "anthropic-dpa-2026-08-28",
-          "vendor_id": "anthropic",
-          "vendor_name": "Anthropic",
-          "document": "dpa",
-          "document_label": "Data processing agreement",
-          "date": "2026-08-28",
-          "url": "https://www.anthropic.com/legal/k12-dpa",
-          "hunks": [
-            {
-              "before": "DPA",
-              "after": "“DPA”"
-            },
-            {
-              "before": "means all applicable privacy or Privacy Laws and regulations relating to the processing of personal information, as may be amended from time to time.",
-              "after": "means all applicable privacy or data protection laws and regulations relating to the processing of personal information, as may be amended from time to time."
-            },
-            {
-              "before": "means a request from an individual, including students or students’ parents/guardians, to exercise their personal information-related rights under Applicable Privacy Laws, such as rights to access, correct, or delete personal information.",
-              "after": "means a request from an individual, including students or students’ parents/guardians, to exercise their personal information-related rights under Applicable Data Protection Laws, such as rights to access, correct, or delete personal information."
-            },
-            {
-              "before": "“Subprocesor”",
-              "after": "“Subprocessor”"
-            },
-            {
-              "before": "as used in this DPA have the meanings given by Applicable Privacy Laws.",
-              "after": "as used in this DPA have the meanings given by Applicable Data Protection Laws."
-            },
-            {
-              "before": ", respectively, as required by Applicable Privacy Laws.",
-              "after": ", respectively, as required by Applicable Data Protection Laws."
-            }
-          ]
         }
       ]
     },
@@ -1053,8 +1040,8 @@
           "url": "https://www.cloudflare.com/privacypolicy/",
           "path": "data/snapshots/cloudflare/privacy.txt",
           "lines": 649,
-          "chars": 47139,
-          "sha256": "cbeba0023dac377d",
+          "chars": 47137,
+          "sha256": "8d3c9629d73c5991",
           "note": null,
           "archive": {
             "ok": true,
@@ -1211,9 +1198,9 @@
       },
       "jobs": {
         "ok": true,
-        "total": 437,
+        "total": 439,
         "placeable": 3,
-        "unplaceable": 434,
+        "unplaceable": 436,
         "eea": 1,
         "non_eea": 2,
         "countries": {
@@ -1228,7 +1215,7 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 9,
+            "count": 10,
             "examples": [
               {
                 "title": "AI Security Research & Red Team Engineer",
@@ -1343,7 +1330,7 @@
             "label": "Round-the-clock coverage",
             "severity": "medium",
             "why": "Continuous coverage from one time zone is rare; assume more than one.",
-            "count": 2,
+            "count": 3,
             "examples": [
               {
                 "title": "Engineering Manager, Data Center Operations",
@@ -1356,6 +1343,13 @@
                 "title": "Network Deployment Engineer",
                 "location": "Hybrid",
                 "url": "https://boards.greenhouse.io/cloudflare/jobs/8099671?gh_jid=8099671",
+                "matched": "24/7",
+                "excerpt": "etc) or higher. Linux certifications. Experience with continuous / rapid deployment. Experience working in a 24/7/365 mission-critical service environment (on-call rotation required) Knowledge of the OSI-model and experienc"
+              },
+              {
+                "title": "Network Deployment Engineer - APJC",
+                "location": "Hybrid",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8088046?gh_jid=8088046",
                 "matched": "24/7",
                 "excerpt": "etc) or higher. Linux certifications. Experience with continuous / rapid deployment. Experience working in a 24/7/365 mission-critical service environment (on-call rotation required) Knowledge of the OSI-model and experienc"
               }
@@ -1380,6 +1374,21 @@
         ]
       },
       "drift": [
+        {
+          "id": "cloudflare-privacy-2026-10-21",
+          "vendor_id": "cloudflare",
+          "vendor_name": "Cloudflare",
+          "document": "privacy",
+          "document_label": "Privacy policy",
+          "date": "2026-10-21",
+          "url": "https://www.cloudflare.com/privacypolicy/",
+          "hunks": [
+            {
+              "before": "(\u0000\u0000“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information.",
+              "after": "(“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information."
+            }
+          ]
+        },
         {
           "id": "cloudflare-privacy-2026-10-20",
           "vendor_id": "cloudflare",
@@ -1454,21 +1463,6 @@
               "after": "(\u0000\u0000“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information."
             }
           ]
-        },
-        {
-          "id": "cloudflare-privacy-2026-09-30",
-          "vendor_id": "cloudflare",
-          "vendor_name": "Cloudflare",
-          "document": "privacy",
-          "document_label": "Privacy policy",
-          "date": "2026-09-30",
-          "url": "https://www.cloudflare.com/privacypolicy/",
-          "hunks": [
-            {
-              "before": "(\u0000“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information.",
-              "after": "(“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information."
-            }
-          ]
         }
       ]
     },
@@ -1478,7 +1472,7 @@
       "category": "Observability",
       "public_evidence_only": true,
       "surface": {
-        "grade": "37",
+        "grade": "40",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "3 public documents · 3 open reconciliations"
@@ -1570,6 +1564,14 @@
               "url": "https://careers.datadoghq.com/detail/8094219/?gh_jid=8094219",
               "matched": "on-call",
               "excerpt": "ng senior ICs as technical leaders Own team delivery and productivity: planning, milestones, reviews, and the on-call rotation Set product direction with Product Management and balance priorities across App &amp; API Protection"
+            },
+            {
+              "kind": "job",
+              "title": "Manager I, Engineering - Sensitive Data Scanner",
+              "location": "Paris, France",
+              "url": "https://careers.datadoghq.com/detail/8102794/?gh_jid=8102794",
+              "matched": "on-call",
+              "excerpt": "ustomer needs and business impact Stay hands-on: contribute to design decisions and participate in the team’s on-call rotation Recruit, mentor, and develop engineers as the team grows beyond its initial size Help build a strong"
             }
           ],
           "question": "For out-of-hours incidents, who is on the rotation, where are they, and is their access to customer data logged and reviewable by the customer?"
@@ -1640,25 +1642,25 @@
         "sensitivity_score": 20,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": true
+        "source_documents_changed": false
       },
       "jobs": {
         "ok": true,
-        "total": 432,
-        "placeable": 432,
+        "total": 435,
+        "placeable": 435,
         "unplaceable": 0,
-        "eea": 89,
-        "non_eea": 343,
+        "eea": 88,
+        "non_eea": 347,
         "countries": {
-          "United States": 220,
-          "France": 47,
-          "Japan": 34,
+          "United States": 225,
+          "France": 46,
+          "Japan": 33,
           "Ireland": 24,
           "Netherlands": 21,
           "United Kingdom": 20,
           "Singapore": 18,
-          "Australia": 14,
-          "South Korea": 14,
+          "Australia": 13,
+          "South Korea": 13,
           "Brazil": 13,
           "India": 12,
           "Spain": 11,
@@ -1671,10 +1673,10 @@
           "Denmark": 2,
           "Indonesia": 2,
           "Switzerland": 1,
-          "Chile": 1,
           "Canada": 1,
-          "Austria": 1,
+          "Chile": 1,
           "Poland": 1,
+          "Austria": 1,
           "Saudi Arabia": 1
         },
         "scanned": 26,
@@ -1688,15 +1690,15 @@
             "examples": [
               {
                 "title": "Global Safety & Security Manager",
-                "location": "Singapore, Singapore",
-                "url": "https://careers.datadoghq.com/detail/8223272/?gh_jid=8223272",
+                "location": "Sydney, Australia",
+                "url": "https://careers.datadoghq.com/detail/8224963/?gh_jid=8224963",
                 "matched": "international travel",
                 "excerpt": "ice and collaboration. This position is based in our Sydney or Singapore office and will require domestic and international travel. The role will focus particularly on developing our safety compliance, security program development and matur"
               },
               {
                 "title": "Global Safety & Security Manager",
-                "location": "Sydney, Australia",
-                "url": "https://careers.datadoghq.com/detail/8224963/?gh_jid=8224963",
+                "location": "Singapore, Singapore",
+                "url": "https://careers.datadoghq.com/detail/8223272/?gh_jid=8223272",
                 "matched": "international travel",
                 "excerpt": "ice and collaboration. This position is based in our Sydney or Singapore office and will require domestic and international travel. The role will focus particularly on developing our safety compliance, security program development and matur"
               }
@@ -1707,7 +1709,7 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 1,
+            "count": 2,
             "examples": [
               {
                 "title": "Manager I, Engineering - Security Libraries",
@@ -1715,6 +1717,13 @@
                 "url": "https://careers.datadoghq.com/detail/8094219/?gh_jid=8094219",
                 "matched": "on-call",
                 "excerpt": "ng senior ICs as technical leaders Own team delivery and productivity: planning, milestones, reviews, and the on-call rotation Set product direction with Product Management and balance priorities across App &amp; API Protection"
+              },
+              {
+                "title": "Manager I, Engineering - Sensitive Data Scanner",
+                "location": "Paris, France",
+                "url": "https://careers.datadoghq.com/detail/8102794/?gh_jid=8102794",
+                "matched": "on-call",
+                "excerpt": "ustomer needs and business impact Stay hands-on: contribute to design decisions and participate in the team’s on-call rotation Recruit, mentor, and develop engineers as the team grows beyond its initial size Help build a strong"
               }
             ]
           },
@@ -2091,19 +2100,19 @@
       },
       "jobs": {
         "ok": true,
-        "total": 725,
-        "placeable": 654,
+        "total": 732,
+        "placeable": 661,
         "unplaceable": 71,
         "eea": 95,
-        "non_eea": 559,
+        "non_eea": 566,
         "countries": {
-          "United States": 348,
+          "United States": 351,
           "Ireland": 73,
-          "Canada": 54,
-          "Singapore": 49,
+          "Canada": 55,
+          "Singapore": 51,
+          "United Kingdom": 47,
           "India": 46,
-          "United Kingdom": 45,
-          "Mexico": 30,
+          "Mexico": 29,
           "Australia": 10,
           "Romania": 6,
           "Japan": 4,
@@ -2387,7 +2396,7 @@
       "category": "Design SaaS",
       "public_evidence_only": true,
       "surface": {
-        "grade": "46",
+        "grade": "48",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "3 public documents · 1 open reconciliations"
@@ -2403,10 +2412,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 328,
-            "revisions": 327,
+            "captures": 329,
+            "revisions": 328,
             "first": "2024-01-18",
-            "last": "2026-10-15"
+            "last": "2026-10-17"
           }
         },
         {
@@ -2447,7 +2456,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "129 of 141 placeable roles name no EEA site — most prominently United States, United Kingdom, Brazil. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "130 of 141 placeable roles name no EEA site — most prominently United States, United Kingdom, Brazil. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -2456,11 +2465,11 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 94 open roles"
+              "excerpt": "United States: 93 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 19 open roles"
+              "excerpt": "United Kingdom: 20 open roles"
             },
             {
               "kind": "stat",
@@ -2544,20 +2553,20 @@
         "total": 141,
         "placeable": 141,
         "unplaceable": 0,
-        "eea": 12,
-        "non_eea": 129,
+        "eea": 11,
+        "non_eea": 130,
         "countries": {
-          "United States": 94,
-          "United Kingdom": 19,
-          "Germany": 8,
+          "United States": 93,
+          "United Kingdom": 20,
+          "Germany": 7,
           "Brazil": 5,
           "France": 4,
           "Australia": 3,
           "India": 2,
           "Singapore": 2,
           "Japan": 2,
-          "South Korea": 1,
-          "Israel": 1
+          "Israel": 2,
+          "South Korea": 1
         },
         "scanned": 26,
         "signals": [
@@ -2588,6 +2597,22 @@
                 "url": "https://boards.greenhouse.io/figma/jobs/6178851004?gh_jid=6178851004",
                 "matched": "from anywhere in the world",
                 "excerpt": "om idea to product, Figma empowers teams to streamline workflows, move faster, and work together in real time from anywhere in the world. If you're excited to shape the future of design and collaboration, join us! We are looking for Data Engineer"
+              }
+            ]
+          },
+          {
+            "key": "distributed",
+            "label": "Distributed across time zones",
+            "severity": "high",
+            "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
+            "count": 1,
+            "examples": [
+              {
+                "title": "Manager, Solutions Consulting",
+                "location": "New York, NY • United States",
+                "url": "https://boards.greenhouse.io/figma/jobs/6223693004?gh_jid=6223693004",
+                "matched": "across multiple time zones",
+                "excerpt": "red, it’s an added plus if you also have: Practical experience using or working with Figma Experience working across multiple time zones&nbsp; Knowledge of light scripting, querying, or prototyping At Figma, one of our values is Grow as you go. W"
               }
             ]
           },
@@ -2988,27 +3013,27 @@
       },
       "jobs": {
         "ok": true,
-        "total": 229,
-        "placeable": 221,
+        "total": 232,
+        "placeable": 224,
         "unplaceable": 8,
-        "eea": 41,
-        "non_eea": 180,
+        "eea": 43,
+        "non_eea": 181,
         "countries": {
-          "United States": 111,
+          "United States": 113,
           "Canada": 74,
-          "United Kingdom": 49,
+          "United Kingdom": 48,
           "India": 30,
           "Poland": 14,
-          "Ireland": 12,
+          "Ireland": 13,
           "Germany": 11,
+          "France": 8,
           "Israel": 8,
           "Australia": 8,
-          "France": 7,
           "Spain": 7,
-          "Netherlands": 6,
           "Singapore": 6,
           "Brazil": 5,
           "Japan": 4,
+          "Netherlands": 4,
           "South Korea": 3,
           "Mexico": 3,
           "Austria": 2,
@@ -3319,24 +3344,24 @@
       },
       "jobs": {
         "ok": true,
-        "total": 377,
-        "placeable": 377,
+        "total": 372,
+        "placeable": 372,
         "unplaceable": 0,
-        "eea": 159,
-        "non_eea": 218,
+        "eea": 157,
+        "non_eea": 215,
         "countries": {
-          "United States": 111,
-          "Spain": 33,
+          "United States": 109,
+          "Spain": 32,
           "Canada": 29,
-          "Greece": 25,
           "United Kingdom": 24,
+          "Greece": 24,
           "Ireland": 23,
-          "Portugal": 23,
+          "Portugal": 22,
           "Poland": 19,
-          "India": 17,
+          "India": 16,
           "Romania": 11,
           "Norway": 11,
-          "Germany": 7,
+          "Germany": 8,
           "Switzerland": 7,
           "Japan": 6,
           "Australia": 5,
@@ -3751,12 +3776,12 @@
         "total": 94,
         "placeable": 91,
         "unplaceable": 3,
-        "eea": 7,
-        "non_eea": 84,
+        "eea": 6,
+        "non_eea": 85,
         "countries": {
-          "United States": 71,
-          "United Kingdom": 18,
-          "Germany": 7,
+          "United States": 72,
+          "United Kingdom": 17,
+          "Germany": 6,
           "Australia": 3,
           "India": 2
         },
@@ -3767,7 +3792,7 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 4,
+            "count": 3,
             "examples": [
               {
                 "title": "Security Software Engineer, Detection & Response",
@@ -3784,41 +3809,11 @@
                 "excerpt": "M (employee identity, SaaS access, devices) and production IAM (service accounts, infrastructure permissions, on-call access) into one identity plane, and enforce least-privilege access across cloud, SaaS, and production infras"
               },
               {
-                "title": "Senior Customer Support Engineer",
-                "location": "Remote - United Kingdom, Germany",
-                "url": "https://job-boards.greenhouse.io/vercel/jobs/5818258004",
+                "title": "Software Engineer, Agentic Infrastructure",
+                "location": "Hybrid - San Francisco, New York City",
+                "url": "https://job-boards.greenhouse.io/vercel/jobs/6199608004",
                 "matched": "on-call",
-                "excerpt": "ng deep to find and resolve root causes. You’re comfortable participating in an occasional weekend or holiday on-call rotation (scheduled in advance) as part of our global coverage model. If you’re based within a pre-determined"
-              }
-            ]
-          },
-          {
-            "key": "distributed",
-            "label": "Distributed across time zones",
-            "severity": "high",
-            "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 3,
-            "examples": [
-              {
-                "title": "Partner Solutions Engineer",
-                "location": "Hybrid - San Francisco",
-                "url": "https://job-boards.greenhouse.io/vercel/jobs/6201179004",
-                "matched": "globally distributed",
-                "excerpt": "ven mindset and are experienced working in a fast-paced environment. You are comfortable working with remote, globally distributed cross-functional teams. You have excellent communication skills and experience advising both technical and no"
-              },
-              {
-                "title": "Partner Solutions Engineer, EMEA",
-                "location": "Hybrid - London, Berlin",
-                "url": "https://job-boards.greenhouse.io/vercel/jobs/6132416004",
-                "matched": "globally distributed",
-                "excerpt": "ven mindset and are experienced working in a fast-paced environment. You are comfortable working with remote, globally distributed cross-functional teams. You have excellent communication skills and experience building and maintaining stron"
-              },
-              {
-                "title": "Senior Customer Support Engineer",
-                "location": "Remote - United Kingdom, Germany",
-                "url": "https://job-boards.greenhouse.io/vercel/jobs/5818258004",
-                "matched": "globally distributed",
-                "excerpt": "rbal communication; able to explain complex systems clearly. You are comfortable working with a fully remote, globally distributed team. You have a passion for delivering a customer experience second to none. You are willing to participate"
+                "excerpt": "e at Vercel by setting standards for scalability, reliability, and developer productivity. Participate in the on-call rotation, taking responsibility for the reliability of critical systems. Contribute to the open-source commun"
               }
             ]
           },
@@ -3834,14 +3829,37 @@
                 "location": "Hybrid - San Francisco",
                 "url": "https://job-boards.greenhouse.io/vercel/jobs/6201179004",
                 "matched": "travel 25%",
-                "excerpt": "erience advising both technical and non-technical stakeholders, from engineers to executives. You are able to travel 25% of the time. Bonus if you: Have built integrations with Vercel's agentic infrastructure products. Have run ce"
+                "excerpt": "erience advising both technical and non-technical stakeholders, from engineers to executives. You are able to travel 25% of the time. Bonus if you Have built integrations with Vercel's agentic infrastructure products. Have run cer"
               },
               {
                 "title": "Partner Solutions Engineer, EMEA",
                 "location": "Hybrid - London, Berlin",
                 "url": "https://job-boards.greenhouse.io/vercel/jobs/6132416004",
                 "matched": "travel 20%",
-                "excerpt": "ce driving the adoption of web technology or previous pre-sales experience. You are based in EMEA and able to travel 20% of the time. Bonus if you: Have built and shipped AI-powered or agentic applications, ideally with the AI SDK"
+                "excerpt": "ce driving the adoption of web technology or previous pre-sales experience. You are based in EMEA and able to travel 20% of the time. Bonus if you Have built and shipped AI-powered or agentic applications, ideally with the AI SDK."
+              }
+            ]
+          },
+          {
+            "key": "distributed",
+            "label": "Distributed across time zones",
+            "severity": "high",
+            "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
+            "count": 2,
+            "examples": [
+              {
+                "title": "Partner Solutions Engineer",
+                "location": "Hybrid - San Francisco",
+                "url": "https://job-boards.greenhouse.io/vercel/jobs/6201179004",
+                "matched": "globally distributed",
+                "excerpt": "ven mindset and are experienced working in a fast-paced environment. You are comfortable working with remote, globally distributed cross-functional teams. You have excellent communication skills and experience advising both technical and no"
+              },
+              {
+                "title": "Partner Solutions Engineer, EMEA",
+                "location": "Hybrid - London, Berlin",
+                "url": "https://job-boards.greenhouse.io/vercel/jobs/6132416004",
+                "matched": "globally distributed",
+                "excerpt": "ven mindset and are experienced working in a fast-paced environment. You are comfortable working with remote, globally distributed cross-functional teams. You have excellent communication skills and experience building and maintaining stron"
               }
             ]
           },
