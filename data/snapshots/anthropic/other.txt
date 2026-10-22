@@ -1,6 +1,8 @@
 # source: https://www.anthropic.com/legal/aup
-# collected: 2026-10-21
+# collected: 2026-10-22
 
+Section
+Universal Usage Standards
 Our Usage Policy (also referred to as our “Acceptable Use Policy” or “AUP”) applies to anyone who submits inputs to Anthropic’s products or services, all of whom we refer to as “users.” This includes individuals using our apps (such as
 Claude.ai
 and Claude Code), developers and businesses using our API and developer platforms, customers accessing Claude through cloud providers and authorized resellers, and the end users of products or services integrating Claude.
@@ -32,8 +34,6 @@ Safeguards Support Center
 This Usage Policy is calibrated to strike an optimal balance between enabling beneficial uses and mitigating potential harms.
 Anthropic may enter into contracts with certain governmental customers that tailor use restrictions to that customer’s public mission and legal authorities if, in Anthropic’s judgment, the contractual use restrictions and applicable safeguards are adequate to mitigate the potential harms addressed by this Usage Policy.
 Universal Usage Standards
-High-risk Use Case Requirements
-Additional Use Case Guidelines
 Do Not Violate Applicable Laws or Engage in Illegal Activity
 This includes using our products or services to:
 Illegally produce, acquire, sell, or distribute controlled or regulated substances
@@ -162,6 +162,7 @@ Depict or request sexual intercourse or sex acts
 Generate content related to sexual fetishes or fantasies
 Facilitate, promote, or depict incest or bestiality
 Engage in erotic chats
+High-risk Use Case Requirements
 Certain uses of our products and services can impact an individual’s health, legal rights, finances, livelihoods, or access to housing, education, or essential services.
 When our products are used for these high-risk use cases, we require that a qualified person remain accountable for what is delivered or decided, and that the impacted individual knows AI was involved in the advice or decision.
 These requirements apply to anyone who uses our products to make a High-risk AI Recommendation or control equipment capable of High-risk Physical Actions.
@@ -252,6 +253,7 @@ Granting eligibility for a healthcare service or program.
 Granting or continuing a public benefit or service.
 Additional legal obligations such as disclosure may still apply.
 A partial approval, reduced amount, or approval with conditions is not considered “wholly favorable.”
+Additional Use Case Guidelines
 The below use cases — regardless of whether they involve High-risk AI Recommendations or Physical Actions — must comply with the additional guidelines provided.
 All consumer-facing chatbots or AI agents that communicate directly with external users
 must

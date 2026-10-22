@@ -1,5 +1,5 @@
 # source: https://www.cloudflare.com/privacypolicy/
-# collected: 2026-10-21
+# collected: 2026-10-22
 
 Privacy Policy
 Overview
@@ -642,8 +642,7 @@ About Cloudflare
 Network map
 Our team
 Logos & press kit
-Diversity, equity, & inclusion
-Impact/ESG
+Impact
 2026
 Cloudflare, Inc.
 Privacy Policy

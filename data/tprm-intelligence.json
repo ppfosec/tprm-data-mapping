@@ -589,9 +589,9 @@
           "kind": "other",
           "url": "https://www.anthropic.com/legal/aup",
           "path": "data/snapshots/anthropic/other.txt",
-          "lines": 279,
-          "chars": 30758,
-          "sha256": "966a0dcb1b5c5355",
+          "lines": 281,
+          "chars": 30792,
+          "sha256": "68661b412cc3fbec",
           "note": null,
           "archive": {
             "ok": true,
@@ -612,10 +612,10 @@
           "diff": null,
           "archive": {
             "ok": true,
-            "captures": 83,
-            "revisions": 82,
+            "captures": 86,
+            "revisions": 85,
             "first": "2024-09-26",
-            "last": "2026-10-21"
+            "last": "2026-10-22"
           }
         },
         {
@@ -628,10 +628,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 77,
-            "revisions": 76,
+            "captures": 78,
+            "revisions": 77,
             "first": "2025-03-11",
-            "last": "2026-10-20"
+            "last": "2026-10-21"
           }
         }
       ],
@@ -640,7 +640,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "641 of 672 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "644 of 676 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -649,7 +649,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 534 open roles"
+              "excerpt": "United States: 536 open roles"
             },
             {
               "kind": "stat",
@@ -680,16 +680,16 @@
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Bangalore, India",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
+              "location": "Mumbai, India",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
               "matched": "across time zones",
               "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
             },
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Mumbai, India",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
+              "location": "Bangalore, India",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
               "matched": "across time zones",
               "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
             }
@@ -783,24 +783,24 @@
       },
       "jobs": {
         "ok": true,
-        "total": 674,
-        "placeable": 672,
+        "total": 678,
+        "placeable": 676,
         "unplaceable": 2,
-        "eea": 31,
-        "non_eea": 641,
+        "eea": 32,
+        "non_eea": 644,
         "countries": {
-          "United States": 534,
+          "United States": 536,
           "United Kingdom": 51,
           "Japan": 16,
           "South Korea": 13,
-          "Germany": 12,
+          "Germany": 13,
           "Singapore": 11,
           "Ireland": 10,
           "Australia": 10,
           "France": 8,
+          "Switzerland": 5,
           "India": 4,
           "Canada": 4,
-          "Switzerland": 4,
           "Italy": 1
         },
         "scanned": 26,
@@ -814,15 +814,15 @@
             "examples": [
               {
                 "title": "Applied AI Architect",
-                "location": "Bangalore, India",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
+                "location": "Mumbai, India",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
                 "matched": "across time zones",
                 "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
               },
               {
                 "title": "Applied AI Architect",
-                "location": "Mumbai, India",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
+                "location": "Bangalore, India",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
                 "matched": "across time zones",
                 "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
               }
@@ -879,6 +879,41 @@
         ]
       },
       "drift": [
+        {
+          "id": "anthropic-other-2026-10-22",
+          "vendor_id": "anthropic",
+          "vendor_name": "Anthropic",
+          "document": "other",
+          "document_label": "Other legal page",
+          "date": "2026-10-22",
+          "url": "https://www.anthropic.com/legal/aup",
+          "hunks": [
+            {
+              "before": null,
+              "after": "Section"
+            },
+            {
+              "before": null,
+              "after": "Universal Usage Standards"
+            },
+            {
+              "before": "High-risk Use Case Requirements",
+              "after": null
+            },
+            {
+              "before": "Additional Use Case Guidelines",
+              "after": null
+            },
+            {
+              "before": null,
+              "after": "High-risk Use Case Requirements"
+            },
+            {
+              "before": null,
+              "after": "Additional Use Case Guidelines"
+            }
+          ]
+        },
         {
           "id": "anthropic-privacy-2026-10-21",
           "vendor_id": "anthropic",
@@ -985,41 +1020,6 @@
               "after": "\"Customer Personal Data\""
             }
           ]
-        },
-        {
-          "id": "anthropic-other-2026-10-09",
-          "vendor_id": "anthropic",
-          "vendor_name": "Anthropic",
-          "document": "other",
-          "document_label": "Other legal page",
-          "date": "2026-10-09",
-          "url": "https://www.anthropic.com/legal/aup",
-          "hunks": [
-            {
-              "before": "Our Usage Policy (also referred to as our “Acceptable Use Policy” or “AUP”) applies to anyone who can submit inputs to Anthropic’s products and/or services, including via any authorized resellers or passthrough access, all of whom we refer to as “users.” The Usage Policy is intended to help our users stay safe and promote the responsible use of our products and services.",
-              "after": "Download PDF version"
-            },
-            {
-              "before": "The Usage Policy is categorized according to who can use our products and for what purposes.",
-              "after": "Our Usage Policy (also referred to as our “Acceptable Use Policy” or “AUP”) applies to anyone who submits inputs to Anthropic’s products or services, all of whom we refer to as “users.” This includes individuals using our apps (such as"
-            },
-            {
-              "before": null,
-              "after": "Claude.ai"
-            },
-            {
-              "before": null,
-              "after": "and Claude Code), developers and businesses using our API and developer platforms, customers accessing Claude through cloud providers and authorized resellers, and the end users of products or services integrating Claude."
-            },
-            {
-              "before": null,
-              "after": "The Usage Policy is intended to prevent our products and services from being used to create or contribute to real-world harm, and to promote the responsible use of our products and services."
-            },
-            {
-              "before": null,
-              "after": "Please review this Usage Policy carefully before using our products or services."
-            }
-          ]
         }
       ]
     },
@@ -1039,9 +1039,9 @@
           "kind": "privacy",
           "url": "https://www.cloudflare.com/privacypolicy/",
           "path": "data/snapshots/cloudflare/privacy.txt",
-          "lines": 649,
-          "chars": 47137,
-          "sha256": "8d3c9629d73c5991",
+          "lines": 648,
+          "chars": 47102,
+          "sha256": "502c7d44ff7d066e",
           "note": null,
           "archive": {
             "ok": true,
@@ -1061,10 +1061,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 316,
-            "revisions": 315,
+            "captures": 317,
+            "revisions": 316,
             "first": "2021-09-03",
-            "last": "2026-10-10"
+            "last": "2026-10-21"
           }
         },
         {
@@ -1198,9 +1198,9 @@
       },
       "jobs": {
         "ok": true,
-        "total": 439,
+        "total": 442,
         "placeable": 3,
-        "unplaceable": 436,
+        "unplaceable": 439,
         "eea": 1,
         "non_eea": 2,
         "countries": {
@@ -1245,7 +1245,7 @@
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 5,
+            "count": 4,
             "examples": [
               {
                 "title": "Associate General Counsel, Privacy Compliance",
@@ -1360,8 +1360,15 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 1,
+            "count": 2,
             "examples": [
+              {
+                "title": "GTM Data Specialist, Consumption & Revenue Operations",
+                "location": "Hybrid",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8301509?gh_jid=8301509",
+                "matched": "Salesforce",
+                "excerpt": "k their output against the data, and can show examples of work you made faster or better with AI Bonus points Salesforce: Experience with reports, SQL, account hierarchies, and ownership rules Building with AI: Experience building"
+              },
               {
                 "title": "IT Operations Specialist I",
                 "location": "In-Office",
@@ -1374,6 +1381,25 @@
         ]
       },
       "drift": [
+        {
+          "id": "cloudflare-privacy-2026-10-22",
+          "vendor_id": "cloudflare",
+          "vendor_name": "Cloudflare",
+          "document": "privacy",
+          "document_label": "Privacy policy",
+          "date": "2026-10-22",
+          "url": "https://www.cloudflare.com/privacypolicy/",
+          "hunks": [
+            {
+              "before": "Diversity, equity, & inclusion",
+              "after": "Impact"
+            },
+            {
+              "before": "Impact/ESG",
+              "after": null
+            }
+          ]
+        },
         {
           "id": "cloudflare-privacy-2026-10-21",
           "vendor_id": "cloudflare",
@@ -1446,21 +1472,6 @@
             {
               "before": "(\u0000\u0000“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information.",
               "after": "(“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information."
-            }
-          ]
-        },
-        {
-          "id": "cloudflare-privacy-2026-10-09",
-          "vendor_id": "cloudflare",
-          "vendor_name": "Cloudflare",
-          "document": "privacy",
-          "document_label": "Privacy policy",
-          "date": "2026-10-09",
-          "url": "https://www.cloudflare.com/privacypolicy/",
-          "hunks": [
-            {
-              "before": "(“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information.",
-              "after": "(\u0000\u0000“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information."
             }
           ]
         }
@@ -1646,22 +1657,22 @@
       },
       "jobs": {
         "ok": true,
-        "total": 435,
-        "placeable": 435,
+        "total": 440,
+        "placeable": 440,
         "unplaceable": 0,
-        "eea": 88,
-        "non_eea": 347,
+        "eea": 90,
+        "non_eea": 350,
         "countries": {
-          "United States": 225,
-          "France": 46,
+          "United States": 227,
+          "France": 47,
           "Japan": 33,
-          "Ireland": 24,
-          "Netherlands": 21,
+          "Ireland": 25,
+          "Netherlands": 22,
           "United Kingdom": 20,
           "Singapore": 18,
-          "Australia": 13,
+          "Brazil": 14,
           "South Korea": 13,
-          "Brazil": 13,
+          "Australia": 13,
           "India": 12,
           "Spain": 11,
           "Portugal": 5,
@@ -1673,10 +1684,10 @@
           "Denmark": 2,
           "Indonesia": 2,
           "Switzerland": 1,
-          "Canada": 1,
           "Chile": 1,
-          "Poland": 1,
+          "Canada": 1,
           "Austria": 1,
+          "Poland": 1,
           "Saudi Arabia": 1
         },
         "scanned": 26,
@@ -1690,15 +1701,15 @@
             "examples": [
               {
                 "title": "Global Safety & Security Manager",
-                "location": "Sydney, Australia",
-                "url": "https://careers.datadoghq.com/detail/8224963/?gh_jid=8224963",
+                "location": "Singapore, Singapore",
+                "url": "https://careers.datadoghq.com/detail/8223272/?gh_jid=8223272",
                 "matched": "international travel",
                 "excerpt": "ice and collaboration. This position is based in our Sydney or Singapore office and will require domestic and international travel. The role will focus particularly on developing our safety compliance, security program development and matur"
               },
               {
                 "title": "Global Safety & Security Manager",
-                "location": "Singapore, Singapore",
-                "url": "https://careers.datadoghq.com/detail/8223272/?gh_jid=8223272",
+                "location": "Sydney, Australia",
+                "url": "https://careers.datadoghq.com/detail/8224963/?gh_jid=8224963",
                 "matched": "international travel",
                 "excerpt": "ice and collaboration. This position is based in our Sydney or Singapore office and will require domestic and international travel. The role will focus particularly on developing our safety compliance, security program development and matur"
               }
@@ -1926,7 +1937,7 @@
       "category": "Payments",
       "public_evidence_only": true,
       "surface": {
-        "grade": "29",
+        "grade": "30",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "3 public documents · 1 open reconciliations"
@@ -2100,28 +2111,28 @@
       },
       "jobs": {
         "ok": true,
-        "total": 732,
-        "placeable": 661,
-        "unplaceable": 71,
-        "eea": 95,
-        "non_eea": 566,
+        "total": 725,
+        "placeable": 653,
+        "unplaceable": 72,
+        "eea": 91,
+        "non_eea": 562,
         "countries": {
-          "United States": 351,
-          "Ireland": 73,
+          "United States": 348,
+          "Ireland": 72,
           "Canada": 55,
           "Singapore": 51,
-          "United Kingdom": 47,
-          "India": 46,
-          "Mexico": 29,
-          "Australia": 10,
+          "United Kingdom": 48,
+          "India": 45,
+          "Mexico": 30,
+          "Australia": 8,
           "Romania": 6,
           "Japan": 4,
-          "Germany": 4,
-          "France": 4,
+          "France": 3,
           "Taiwan": 3,
           "Luxembourg": 3,
           "Spain": 3,
           "Israel": 2,
+          "Germany": 2,
           "Thailand": 2,
           "Netherlands": 1,
           "New Zealand": 1,
@@ -2456,7 +2467,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "130 of 141 placeable roles name no EEA site — most prominently United States, United Kingdom, Brazil. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "128 of 139 placeable roles name no EEA site — most prominently United States, United Kingdom, Brazil. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -2465,11 +2476,11 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 93 open roles"
+              "excerpt": "United States: 91 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 20 open roles"
+              "excerpt": "United Kingdom: 19 open roles"
             },
             {
               "kind": "stat",
@@ -2550,19 +2561,19 @@
       },
       "jobs": {
         "ok": true,
-        "total": 141,
-        "placeable": 141,
+        "total": 139,
+        "placeable": 139,
         "unplaceable": 0,
         "eea": 11,
-        "non_eea": 130,
+        "non_eea": 128,
         "countries": {
-          "United States": 93,
-          "United Kingdom": 20,
+          "United States": 91,
+          "United Kingdom": 19,
           "Germany": 7,
           "Brazil": 5,
           "France": 4,
+          "India": 3,
           "Australia": 3,
-          "India": 2,
           "Singapore": 2,
           "Japan": 2,
           "Israel": 2,
@@ -2578,6 +2589,13 @@
             "count": 26,
             "examples": [
               {
+                "title": "Community Support Specialist (Bengaluru, India)",
+                "location": "Bengaluru, India",
+                "url": "https://boards.greenhouse.io/figma/jobs/6222861004?gh_jid=6222861004",
+                "matched": "from anywhere in the world",
+                "excerpt": "om idea to product, Figma empowers teams to streamline workflows, move faster, and work together in real time from anywhere in the world. If you're excited to shape the future of design and collaboration, join us! As a member of our Customer Oper"
+              },
+              {
                 "title": "Compliance Engineer",
                 "location": "San Francisco, CA • New York, NY • United States",
                 "url": "https://boards.greenhouse.io/figma/jobs/6223155004?gh_jid=6223155004",
@@ -2590,13 +2608,6 @@
                 "url": "https://boards.greenhouse.io/figma/jobs/6223879004?gh_jid=6223879004",
                 "matched": "from anywhere in the world",
                 "excerpt": "om idea to product, Figma empowers teams to streamline workflows, move faster, and work together in real time from anywhere in the world. If you're excited to shape the future of design and collaboration, join us! As a Customer Support Specialist"
-              },
-              {
-                "title": "Data Engineer Intern (2027)",
-                "location": "San Francisco, CA • New York, NY",
-                "url": "https://boards.greenhouse.io/figma/jobs/6178851004?gh_jid=6178851004",
-                "matched": "from anywhere in the world",
-                "excerpt": "om idea to product, Figma empowers teams to streamline workflows, move faster, and work together in real time from anywhere in the world. If you're excited to shape the future of design and collaboration, join us! We are looking for Data Engineer"
               }
             ]
           },
@@ -3016,24 +3027,24 @@
         "total": 232,
         "placeable": 224,
         "unplaceable": 8,
-        "eea": 43,
-        "non_eea": 181,
+        "eea": 45,
+        "non_eea": 179,
         "countries": {
-          "United States": 113,
-          "Canada": 74,
-          "United Kingdom": 48,
-          "India": 30,
+          "United States": 110,
+          "Canada": 72,
+          "United Kingdom": 50,
+          "India": 29,
+          "Ireland": 15,
           "Poland": 14,
-          "Ireland": 13,
-          "Germany": 11,
-          "France": 8,
-          "Israel": 8,
+          "Germany": 12,
+          "France": 9,
+          "Israel": 9,
+          "Spain": 8,
           "Australia": 8,
-          "Spain": 7,
-          "Singapore": 6,
+          "Singapore": 7,
+          "Netherlands": 5,
+          "Japan": 5,
           "Brazil": 5,
-          "Japan": 4,
-          "Netherlands": 4,
           "South Korea": 3,
           "Mexico": 3,
           "Austria": 2,
@@ -3085,7 +3096,7 @@
                 "location": "Remote, Canada; Remote, United States",
                 "url": "https://job-boards.greenhouse.io/gitlab/jobs/8889193002",
                 "matched": "multi-region",
-                "excerpt": "pproaches Contributions to open-source projects or internal platform tooling Experience with multi-cluster or multi-region Kubernetes architectures Relevant certifications: CKA, CKAD, AWS Solutions Architect, HashiCorp Terraform Ass"
+                "excerpt": "bility to document systems and collaborate across teams. Optional: experience with managed, multi-cluster, or multi-region Kubernetes, service meshes, policy as code, observability, or Kubernetes-native infrastructure as code; open"
               },
               {
                 "title": "Customer Success Architect, Japan",
@@ -3262,7 +3273,7 @@
       "category": "Search and data",
       "public_evidence_only": true,
       "surface": {
-        "grade": "81",
+        "grade": "82",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "1 public documents · 1 open reconciliations"
@@ -3344,29 +3355,29 @@
       },
       "jobs": {
         "ok": true,
-        "total": 372,
-        "placeable": 372,
+        "total": 379,
+        "placeable": 379,
         "unplaceable": 0,
-        "eea": 157,
-        "non_eea": 215,
+        "eea": 158,
+        "non_eea": 221,
         "countries": {
-          "United States": 109,
+          "United States": 110,
           "Spain": 32,
-          "Canada": 29,
-          "United Kingdom": 24,
-          "Greece": 24,
-          "Ireland": 23,
-          "Portugal": 22,
-          "Poland": 19,
+          "Canada": 31,
+          "United Kingdom": 27,
+          "Ireland": 24,
+          "Greece": 23,
+          "Portugal": 21,
+          "Poland": 20,
           "India": 16,
-          "Romania": 11,
           "Norway": 11,
+          "Romania": 10,
           "Germany": 8,
           "Switzerland": 7,
           "Japan": 6,
           "Australia": 5,
           "Singapore": 5,
-          "Belgium": 3,
+          "Belgium": 4,
           "Brazil": 3,
           "United Arab Emirates": 2,
           "Mexico": 2,
@@ -3378,6 +3389,7 @@
           "South Korea": 1,
           "France": 1,
           "Indonesia": 1,
+          "Italy": 1,
           "Hungary": 1,
           "Denmark": 1,
           "Netherlands": 1
@@ -3704,19 +3716,19 @@
           "evidence": [
             {
               "kind": "job",
+              "title": "Customer Support Engineer",
+              "location": "Remote - Australia",
+              "url": "https://job-boards.greenhouse.io/vercel/jobs/6230763004",
+              "matched": "on-call",
+              "excerpt": "deep to find and resolve root causes. In addition to this, you will be comfortable with evening, weekend, and on-call work based on a rota system. Ultimately, you will help establish our reputation as a company that is exceptio"
+            },
+            {
+              "kind": "job",
               "title": "Security Software Engineer, Detection & Response",
               "location": "Hybrid - San Francisco, New York City, London",
               "url": "https://job-boards.greenhouse.io/vercel/jobs/6111332004",
               "matched": "on-call",
               "excerpt": "ponse (EDR) and fleet management across Mac, Windows, and Linux, email security, and GitHub controls Join the on-call rotation, work with the managed security operations center (SOC) on escalations, and automate evidence collec"
-            },
-            {
-              "kind": "job",
-              "title": "Security Software Engineer, IAM",
-              "location": "Remote - United States",
-              "url": "https://job-boards.greenhouse.io/vercel/jobs/6093255004",
-              "matched": "on-call",
-              "excerpt": "M (employee identity, SaaS access, devices) and production IAM (service accounts, infrastructure permissions, on-call access) into one identity plane, and enforce least-privilege access across cloud, SaaS, and production infras"
             }
           ],
           "question": "For out-of-hours incidents, who is on the rotation, where are they, and is their access to customer data logged and reviewable by the customer?"
@@ -3782,18 +3794,25 @@
           "United States": 72,
           "United Kingdom": 17,
           "Germany": 6,
-          "Australia": 3,
-          "India": 2
+          "Australia": 4,
+          "India": 1
         },
-        "scanned": 24,
+        "scanned": 26,
         "signals": [
           {
             "key": "oncall",
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 3,
+            "count": 4,
             "examples": [
+              {
+                "title": "Customer Support Engineer",
+                "location": "Remote - Australia",
+                "url": "https://job-boards.greenhouse.io/vercel/jobs/6230763004",
+                "matched": "on-call",
+                "excerpt": "deep to find and resolve root causes. In addition to this, you will be comfortable with evening, weekend, and on-call work based on a rota system. Ultimately, you will help establish our reputation as a company that is exceptio"
+              },
               {
                 "title": "Security Software Engineer, Detection & Response",
                 "location": "Hybrid - San Francisco, New York City, London",
@@ -3807,13 +3826,36 @@
                 "url": "https://job-boards.greenhouse.io/vercel/jobs/6093255004",
                 "matched": "on-call",
                 "excerpt": "M (employee identity, SaaS access, devices) and production IAM (service accounts, infrastructure permissions, on-call access) into one identity plane, and enforce least-privilege access across cloud, SaaS, and production infras"
+              }
+            ]
+          },
+          {
+            "key": "distributed",
+            "label": "Distributed across time zones",
+            "severity": "high",
+            "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
+            "count": 4,
+            "examples": [
+              {
+                "title": "Customer Support Engineer",
+                "location": "Remote - Australia",
+                "url": "https://job-boards.greenhouse.io/vercel/jobs/6230763004",
+                "matched": "globally distributed",
+                "excerpt": "oot causes. Exceptional communication skills, both written and oral. Comfortable working with a fully remote, globally distributed team. Availability to work within a weekend and on-call rota. A passion to deliver a customer experience seco"
               },
               {
-                "title": "Software Engineer, Agentic Infrastructure",
-                "location": "Hybrid - San Francisco, New York City",
-                "url": "https://job-boards.greenhouse.io/vercel/jobs/6199608004",
-                "matched": "on-call",
-                "excerpt": "e at Vercel by setting standards for scalability, reliability, and developer productivity. Participate in the on-call rotation, taking responsibility for the reliability of critical systems. Contribute to the open-source commun"
+                "title": "Engineering Director, Vercel for Platforms",
+                "location": "Hybrid - San Francisco",
+                "url": "https://job-boards.greenhouse.io/vercel/jobs/6231045004",
+                "matched": "across multiple time zones",
+                "excerpt": "with a recommended minimum of four weeks per year, plus paid holidays. Remote-friendly culture with teammates across multiple time zones. Dedicated equipment and work-from-home budget to help you create an effective workspace. The San Francisco,"
+              },
+              {
+                "title": "Partner Solutions Engineer",
+                "location": "Hybrid - San Francisco",
+                "url": "https://job-boards.greenhouse.io/vercel/jobs/6201179004",
+                "matched": "globally distributed",
+                "excerpt": "ven mindset and are experienced working in a fast-paced environment. You are comfortable working with remote, globally distributed cross-functional teams. You have excellent communication skills and experience advising both technical and no"
               }
             ]
           },
@@ -3837,29 +3879,6 @@
                 "url": "https://job-boards.greenhouse.io/vercel/jobs/6132416004",
                 "matched": "travel 20%",
                 "excerpt": "ce driving the adoption of web technology or previous pre-sales experience. You are based in EMEA and able to travel 20% of the time. Bonus if you Have built and shipped AI-powered or agentic applications, ideally with the AI SDK."
-              }
-            ]
-          },
-          {
-            "key": "distributed",
-            "label": "Distributed across time zones",
-            "severity": "high",
-            "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 2,
-            "examples": [
-              {
-                "title": "Partner Solutions Engineer",
-                "location": "Hybrid - San Francisco",
-                "url": "https://job-boards.greenhouse.io/vercel/jobs/6201179004",
-                "matched": "globally distributed",
-                "excerpt": "ven mindset and are experienced working in a fast-paced environment. You are comfortable working with remote, globally distributed cross-functional teams. You have excellent communication skills and experience advising both technical and no"
-              },
-              {
-                "title": "Partner Solutions Engineer, EMEA",
-                "location": "Hybrid - London, Berlin",
-                "url": "https://job-boards.greenhouse.io/vercel/jobs/6132416004",
-                "matched": "globally distributed",
-                "excerpt": "ven mindset and are experienced working in a fast-paced environment. You are comfortable working with remote, globally distributed cross-functional teams. You have excellent communication skills and experience building and maintaining stron"
               }
             ]
           },

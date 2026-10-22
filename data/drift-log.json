@@ -1,5 +1,59 @@
 [
   {
+    "id": "anthropic-other-2026-10-22",
+    "vendor_id": "anthropic",
+    "vendor_name": "Anthropic",
+    "document": "other",
+    "document_label": "Other legal page",
+    "date": "2026-10-22",
+    "url": "https://www.anthropic.com/legal/aup",
+    "hunks": [
+      {
+        "before": null,
+        "after": "Section"
+      },
+      {
+        "before": null,
+        "after": "Universal Usage Standards"
+      },
+      {
+        "before": "High-risk Use Case Requirements",
+        "after": null
+      },
+      {
+        "before": "Additional Use Case Guidelines",
+        "after": null
+      },
+      {
+        "before": null,
+        "after": "High-risk Use Case Requirements"
+      },
+      {
+        "before": null,
+        "after": "Additional Use Case Guidelines"
+      }
+    ]
+  },
+  {
+    "id": "cloudflare-privacy-2026-10-22",
+    "vendor_id": "cloudflare",
+    "vendor_name": "Cloudflare",
+    "document": "privacy",
+    "document_label": "Privacy policy",
+    "date": "2026-10-22",
+    "url": "https://www.cloudflare.com/privacypolicy/",
+    "hunks": [
+      {
+        "before": "Diversity, equity, & inclusion",
+        "after": "Impact"
+      },
+      {
+        "before": "Impact/ESG",
+        "after": null
+      }
+    ]
+  },
+  {
     "id": "anthropic-privacy-2026-10-21",
     "vendor_id": "anthropic",
     "vendor_name": "Anthropic",
