@@ -612,10 +612,10 @@
           "diff": null,
           "archive": {
             "ok": true,
-            "captures": 88,
-            "revisions": 87,
+            "captures": 91,
+            "revisions": 90,
             "first": "2024-09-26",
-            "last": "2026-10-23"
+            "last": "2026-10-24"
           }
         },
         {
@@ -628,10 +628,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 79,
-            "revisions": 78,
+            "captures": 80,
+            "revisions": 79,
             "first": "2025-03-11",
-            "last": "2026-10-22"
+            "last": "2026-10-23"
           }
         }
       ],
@@ -640,7 +640,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "649 of 681 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "646 of 679 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -649,11 +649,11 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 538 open roles"
+              "excerpt": "United States: 536 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 51 open roles"
+              "excerpt": "United Kingdom: 50 open roles"
             },
             {
               "kind": "stat",
@@ -783,20 +783,20 @@
       },
       "jobs": {
         "ok": true,
-        "total": 683,
-        "placeable": 681,
+        "total": 681,
+        "placeable": 679,
         "unplaceable": 2,
-        "eea": 32,
-        "non_eea": 649,
+        "eea": 33,
+        "non_eea": 646,
         "countries": {
-          "United States": 538,
-          "United Kingdom": 51,
+          "United States": 536,
+          "United Kingdom": 50,
           "Japan": 17,
           "South Korea": 14,
           "Germany": 13,
           "Singapore": 11,
+          "Ireland": 11,
           "Australia": 11,
-          "Ireland": 10,
           "France": 8,
           "Switzerland": 5,
           "India": 4,
@@ -1214,9 +1214,9 @@
       },
       "jobs": {
         "ok": true,
-        "total": 446,
+        "total": 453,
         "placeable": 3,
-        "unplaceable": 443,
+        "unplaceable": 450,
         "eea": 1,
         "non_eea": 2,
         "countries": {
@@ -1231,7 +1231,7 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 8,
+            "count": 10,
             "examples": [
               {
                 "title": "AI Security Research & Red Team Engineer",
@@ -1248,11 +1248,11 @@
                 "excerpt": "esponsibilities (prioritization, planning, scheduling, status reporting) such as JIRA Participate in a shared on-call rotation to maintain 24×7 operational availability of the global network. Other Responsibilities May Include"
               },
               {
-                "title": "Engineering Manager, Agentic Internet & Data Insights",
+                "title": "Data Center Network Operations Engineer",
                 "location": "Hybrid",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/8143649?gh_jid=8143649",
-                "matched": "on call",
-                "excerpt": "ons, ask the right questions when something is going wrong, and step into a technical problem when the situation calls for it. At the same time, we are looking for a manager, not a tech lead with direct reports. Your success wi"
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8311378?gh_jid=8311378",
+                "matched": "on-call",
+                "excerpt": "esponsibilities (prioritization, planning, scheduling, status reporting) such as JIRA Participate in a shared on-call rotation to maintain 24×7 operational availability of the global network. Other Responsibilities May Include"
               }
             ]
           },
@@ -1261,15 +1261,8 @@
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 5,
+            "count": 4,
             "examples": [
-              {
-                "title": "Associate General Counsel, Privacy Compliance",
-                "location": "Hybrid",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/8144669?gh_jid=8144669",
-                "matched": "globally distributed",
-                "excerpt": "and digestible for non-lawyers&nbsp; A willingness to work flexibly on occasion to accommodate working with a globally distributed team Technical background / expertise is highly desired – while a science or technical degree is not a prereq"
-              },
               {
                 "title": "Data Center Site Selection - Hyperscale",
                 "location": "Hybrid",
@@ -1283,6 +1276,13 @@
                 "url": "https://boards.greenhouse.io/cloudflare/jobs/8275927?gh_jid=8275927",
                 "matched": "globally distributed",
                 "excerpt": "to understand the business and product challenges and goals and address them using predictive analytics in a globally distributed environment. Understand data landscape i.e tooling, tech stack, source systems etc. and work closely with the"
+              },
+              {
+                "title": "Engineering Manager, Cloudflare Network Interconnect",
+                "location": "Hybrid",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8083701?gh_jid=8083701",
+                "matched": "distributed team",
+                "excerpt": "argest customers. What you'll do As an Engineering Manager on the CNI team you will hire, mentor, and coach a distributed team of Software Engineers. You will play a key role in developing the team and shaping its culture and technical"
               }
             ]
           },
@@ -1643,24 +1643,24 @@
       },
       "jobs": {
         "ok": true,
-        "total": 439,
-        "placeable": 439,
+        "total": 433,
+        "placeable": 433,
         "unplaceable": 0,
-        "eea": 90,
-        "non_eea": 349,
+        "eea": 89,
+        "non_eea": 344,
         "countries": {
-          "United States": 227,
+          "United States": 224,
           "France": 47,
           "Japan": 34,
           "Ireland": 25,
-          "Netherlands": 22,
+          "Netherlands": 21,
           "United Kingdom": 21,
           "Singapore": 20,
           "South Korea": 14,
           "Australia": 13,
-          "Brazil": 13,
+          "Brazil": 11,
+          "Spain": 11,
           "India": 10,
-          "Spain": 10,
           "Portugal": 5,
           "Germany": 4,
           "Mexico": 4,
@@ -1672,8 +1672,8 @@
           "Switzerland": 1,
           "Chile": 1,
           "Canada": 1,
-          "Austria": 1,
           "Poland": 1,
+          "Austria": 1,
           "Saudi Arabia": 1
         },
         "scanned": 26,
@@ -1687,15 +1687,15 @@
             "examples": [
               {
                 "title": "Global Safety & Security Manager",
-                "location": "Singapore, Singapore",
-                "url": "https://careers.datadoghq.com/detail/8223272/?gh_jid=8223272",
+                "location": "Sydney, Australia",
+                "url": "https://careers.datadoghq.com/detail/8224963/?gh_jid=8224963",
                 "matched": "international travel",
                 "excerpt": "ice and collaboration. This position is based in our Sydney or Singapore office and will require domestic and international travel. The role will focus particularly on developing our safety compliance, security program development and matur"
               },
               {
                 "title": "Global Safety & Security Manager",
-                "location": "Sydney, Australia",
-                "url": "https://careers.datadoghq.com/detail/8224963/?gh_jid=8224963",
+                "location": "Singapore, Singapore",
+                "url": "https://careers.datadoghq.com/detail/8223272/?gh_jid=8223272",
                 "matched": "international travel",
                 "excerpt": "ice and collaboration. This position is based in our Sydney or Singapore office and will require domestic and international travel. The role will focus particularly on developing our safety compliance, security program development and matur"
               }
@@ -1933,9 +1933,9 @@
           "kind": "privacy",
           "url": "https://stripe.com/privacy",
           "path": "data/snapshots/stripe/privacy.txt",
-          "lines": 926,
-          "chars": 76486,
-          "sha256": "ff0e2b002da0ad9f",
+          "lines": 929,
+          "chars": 76584,
+          "sha256": "00e791004c241cfb",
           "note": null,
           "archive": {
             "ok": true,
@@ -2093,31 +2093,32 @@
         "sensitivity_score": 30,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": false
+        "source_documents_changed": true
       },
       "jobs": {
         "ok": true,
-        "total": 726,
-        "placeable": 655,
-        "unplaceable": 71,
-        "eea": 93,
-        "non_eea": 562,
+        "total": 720,
+        "placeable": 651,
+        "unplaceable": 69,
+        "eea": 94,
+        "non_eea": 557,
         "countries": {
-          "United States": 349,
+          "United States": 344,
           "Ireland": 72,
-          "Canada": 56,
+          "Canada": 55,
           "Singapore": 51,
-          "United Kingdom": 47,
+          "United Kingdom": 46,
           "India": 46,
           "Mexico": 29,
           "Australia": 9,
-          "Romania": 5,
           "Japan": 4,
+          "France": 4,
+          "Spain": 4,
           "Taiwan": 4,
-          "France": 3,
+          "Romania": 4,
           "Germany": 3,
           "Luxembourg": 3,
-          "Spain": 3,
+          "Brazil": 2,
           "Thailand": 2,
           "Netherlands": 1,
           "Israel": 1,
@@ -2166,17 +2167,40 @@
                 "excerpt": "act. Own the complete sales cycle, from lead generation through to product adoption within the target Startup segment. Develop robust outbound strategies and execute creative prospecting programmes to create and nurture new bus"
               },
               {
-                "title": "Account Executive - Startup SaaS Platforms, Scaled UK Hunter",
+                "title": "Account Executive, SaaS Platforms Grower",
                 "location": "Dublin",
-                "url": "https://stripe.com/jobs/search?gh_jid=8288876",
+                "url": "https://stripe.com/jobs/search?gh_jid=8241294",
                 "matched": "segment",
-                "excerpt": "he team’s dedicated hunter for the earliest stage of the market. You’ll own the pre-revenue and early-revenue segment end to end, from generating pipeline and handling inbound demand to closing deals and getting each new platfo"
+                "excerpt": "re a curious, well-rounded strategic seller who builds strong relationships with Stripe’s clients in this key segment. You’re comfortable owning your territory and balancing a mix of high-value, strategic deals with smaller, hi"
               }
             ]
           }
         ]
       },
       "drift": [
+        {
+          "id": "stripe-privacy-2026-10-24",
+          "vendor_id": "stripe",
+          "vendor_name": "Stripe",
+          "document": "privacy",
+          "document_label": "Privacy policy",
+          "date": "2026-10-24",
+          "url": "https://stripe.com/privacy",
+          "hunks": [
+            {
+              "before": null,
+              "after": "This Privacy Policy will be updated on November 20, 2026."
+            },
+            {
+              "before": null,
+              "after": "Please review the upcoming changes"
+            },
+            {
+              "before": null,
+              "after": "here"
+            }
+          ]
+        },
         {
           "id": "stripe-privacy-2026-10-18",
           "vendor_id": "stripe",
@@ -2351,41 +2375,6 @@
               "after": null
             }
           ]
-        },
-        {
-          "id": "stripe-subprocessors-2026-09-27",
-          "vendor_id": "stripe",
-          "vendor_name": "Stripe",
-          "document": "subprocessors",
-          "document_label": "Sub-processor list",
-          "date": "2026-09-27",
-          "url": "https://stripe.com/legal/service-providers",
-          "hunks": [
-            {
-              "before": "December 20, 2025",
-              "after": "September 27, 2026"
-            },
-            {
-              "before": "converted Stripe, Inc. into Stripe, LLC.",
-              "after": "removed all references to Stripe, Inc., as this entity no longer exists"
-            },
-            {
-              "before": "This change goes into effect on January 3, 2026",
-              "after": "removed Stripe Payments Europe, Limited - Italian Branch, and added our new Italian Affiliate, Stripe Italy S.r.l."
-            },
-            {
-              "before": "added Stripe Technology Company Limited (STC) as a Stripe Affiliate.",
-              "after": "added Metronome Technologies, Inc., a company Stripe acquired"
-            },
-            {
-              "before": "STC is a new data controller for Stripe in the EMEA and APAC regions.",
-              "after": "updated the name of LemonSqueezy, LLC to its new name Sold Through Link, LLC"
-            },
-            {
-              "before": "Please visit our",
-              "after": "added Microsoft Corporation and Snowflake, Inc. as cloud service providers"
-            }
-          ]
         }
       ]
     },
@@ -2437,9 +2426,9 @@
           "kind": "subprocessors",
           "url": "https://www.figma.com/sub-processors/",
           "path": "data/snapshots/figma/subprocessors.txt",
-          "lines": 349,
-          "chars": 8605,
-          "sha256": "51b859e77af1086e",
+          "lines": 354,
+          "chars": 8702,
+          "sha256": "14d55d1fb08279ed",
           "note": null,
           "archive": {
             "ok": true,
@@ -2455,7 +2444,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "130 of 141 placeable roles name no EEA site — most prominently United States, United Kingdom, India. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "127 of 138 placeable roles name no EEA site — most prominently United States, United Kingdom, India. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -2464,11 +2453,11 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 91 open roles"
+              "excerpt": "United States: 89 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 19 open roles"
+              "excerpt": "United Kingdom: 18 open roles"
             },
             {
               "kind": "stat",
@@ -2545,18 +2534,18 @@
         "sensitivity_score": 30,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": false
+        "source_documents_changed": true
       },
       "jobs": {
         "ok": true,
-        "total": 141,
-        "placeable": 141,
+        "total": 138,
+        "placeable": 138,
         "unplaceable": 0,
         "eea": 11,
-        "non_eea": 130,
+        "non_eea": 127,
         "countries": {
-          "United States": 91,
-          "United Kingdom": 19,
+          "United States": 89,
+          "United Kingdom": 18,
           "Germany": 7,
           "India": 5,
           "Brazil": 5,
@@ -2679,6 +2668,41 @@
       },
       "drift": [
         {
+          "id": "figma-subprocessors-2026-10-24",
+          "vendor_id": "figma",
+          "vendor_name": "Figma",
+          "document": "subprocessors",
+          "document_label": "Sub-processor list",
+          "date": "2026-10-24",
+          "url": "https://www.figma.com/sub-processors/",
+          "hunks": [
+            {
+              "before": "September 22, 2026",
+              "after": "October 23, 2026"
+            },
+            {
+              "before": null,
+              "after": "QuiverAI, Inc."
+            },
+            {
+              "before": null,
+              "after": "Figma AI"
+            },
+            {
+              "before": null,
+              "after": "AI model provider"
+            },
+            {
+              "before": null,
+              "after": "United States, EU"
+            },
+            {
+              "before": null,
+              "after": "Prompt Inputs and Outputs"
+            }
+          ]
+        },
+        {
           "id": "figma-subprocessors-2026-10-06",
           "vendor_id": "figma",
           "vendor_name": "Figma",
@@ -2794,41 +2818,6 @@
             {
               "before": "This Data Protection Addendum (“",
               "after": "This Data Processing Addendum (“"
-            }
-          ]
-        },
-        {
-          "id": "figma-subprocessors-2026-08-14",
-          "vendor_id": "figma",
-          "vendor_name": "Figma",
-          "document": "subprocessors",
-          "document_label": "Sub-processor list",
-          "date": "2026-08-14",
-          "url": "https://www.figma.com/sub-processors/",
-          "hunks": [
-            {
-              "before": "June 22, 2026",
-              "after": "August 7, 2026"
-            },
-            {
-              "before": "Infrastructure monitoring",
-              "after": "Infrastructure monitoring and debugging"
-            },
-            {
-              "before": "Authorized User Data",
-              "after": "Customer Content"
-            },
-            {
-              "before": "Authorized User Data",
-              "after": "Customer Content"
-            },
-            {
-              "before": "Authorized User Data",
-              "after": "Customer Content"
-            },
-            {
-              "before": "Groq, Inc.",
-              "after": null
             }
           ]
         }
@@ -3012,23 +3001,23 @@
       },
       "jobs": {
         "ok": true,
-        "total": 231,
-        "placeable": 223,
+        "total": 239,
+        "placeable": 231,
         "unplaceable": 8,
-        "eea": 45,
-        "non_eea": 178,
+        "eea": 47,
+        "non_eea": 184,
         "countries": {
-          "United States": 110,
+          "United States": 114,
           "Canada": 72,
-          "United Kingdom": 49,
+          "United Kingdom": 51,
           "India": 27,
-          "Ireland": 15,
-          "Poland": 14,
-          "Germany": 12,
+          "Ireland": 16,
+          "Poland": 15,
+          "Germany": 13,
           "France": 9,
           "Israel": 9,
+          "Spain": 9,
           "Australia": 9,
-          "Spain": 8,
           "Singapore": 8,
           "Netherlands": 5,
           "Japan": 5,
@@ -3223,11 +3212,11 @@
                 "excerpt": "ry tooling, Kubernetes, or cloud-native infrastructure, along with experience using support platforms such as Zendesk, Salesforce, Decagon, or equivalent tools. Experience with GitLab as a user, administrator, or customer is he"
               },
               {
-                "title": "Intermediate Support Engineer (SHIFT) ",
-                "location": "Remote, United Kingdom",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8684061002",
-                "matched": "Zendesk",
-                "excerpt": "ll do &nbsp;&nbsp; Support a mix of Self-managed and GitLab.com (SaaS) customers and resolve their issues via Zendesk tickets, merge requests, email and video conferencing Collaborate with our Product , Development , Infrastruc"
+                "title": "Ecosystem Operations Specialist",
+                "location": "Remote, Canada; Remote, United States",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8907694002",
+                "matched": "Salesforce",
+                "excerpt": "e with Programs and policy owners on required notifications, documentation, and compliance reporting. Monitor Salesforce and partner-management data for missing links, incorrect ownership, incomplete attribution, failed synchroniz"
               }
             ]
           }
@@ -3261,7 +3250,7 @@
       "category": "Search and data",
       "public_evidence_only": true,
       "surface": {
-        "grade": "82",
+        "grade": "81",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "1 public documents · 1 open reconciliations"
@@ -3343,20 +3332,20 @@
       },
       "jobs": {
         "ok": true,
-        "total": 393,
-        "placeable": 393,
+        "total": 402,
+        "placeable": 402,
         "unplaceable": 0,
-        "eea": 165,
-        "non_eea": 228,
+        "eea": 173,
+        "non_eea": 229,
         "countries": {
-          "United States": 115,
-          "Spain": 34,
+          "United States": 116,
+          "Spain": 36,
           "Canada": 32,
           "United Kingdom": 28,
-          "Greece": 25,
-          "Ireland": 25,
-          "Portugal": 22,
-          "Poland": 21,
+          "Greece": 27,
+          "Ireland": 26,
+          "Portugal": 24,
+          "Poland": 22,
           "India": 15,
           "Norway": 11,
           "Romania": 10,
@@ -3419,7 +3408,7 @@
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 6,
+            "count": 9,
             "examples": [
               {
                 "title": "Consulting Architect - Observability",

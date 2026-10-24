@@ -1,9 +1,9 @@
 # source: https://www.figma.com/sub-processors/
-# collected: 2026-10-23
+# collected: 2026-10-24
 
 Figma Sub-processors
 Last Updated:
-September 22, 2026
+October 23, 2026
 This page lists the sub-processors that Figma engages to process Customer Content (as defined in
 Figma’s Data Processing Addendum
 ) on behalf of Customers and to support the delivery of our offerings, products and services (“Services”).
@@ -148,6 +148,11 @@ Figma AI
 AI model provider
 United States*
 Prompt Inputs and Outputs
+QuiverAI, Inc.
+Figma AI
+AI model provider
+United States, EU
+Prompt Inputs and Outputs
 Recraft, Inc.
 Figma AI
 AI model provider
@@ -181,7 +186,7 @@ Create Without Limits Technologies Inc.
 (dba Enhancor)
 Figma Weave
 Selectable AI model provider
-EU, Indonesia, Malaysia
+United States
 Prompt Inputs and Outputs
 Eleven Labs Inc.
 Figma Weave
@@ -211,7 +216,7 @@ Figma Weave
 Selectable AI model provider
 Singapore
 Prompt Inputs and Outputs
-Lightricks Ltda AI, Inc.
+Lightricks Ltd.
 Figma Weave
 Selectable AI model provider
 EU, Israel, United Kingdom, United States
@@ -223,7 +228,7 @@ United States
 Prompt Inputs and Outputs
 OpenAI, LLC
 Figma Weave
-Selectable AI model provider
+Selectable AI model provider and voice to text transcription
 United States
 Prompt Inputs and Outputs
 Replicate LLC

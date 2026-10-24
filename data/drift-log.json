@@ -1,5 +1,63 @@
 [
   {
+    "id": "stripe-privacy-2026-10-24",
+    "vendor_id": "stripe",
+    "vendor_name": "Stripe",
+    "document": "privacy",
+    "document_label": "Privacy policy",
+    "date": "2026-10-24",
+    "url": "https://stripe.com/privacy",
+    "hunks": [
+      {
+        "before": null,
+        "after": "This Privacy Policy will be updated on November 20, 2026."
+      },
+      {
+        "before": null,
+        "after": "Please review the upcoming changes"
+      },
+      {
+        "before": null,
+        "after": "here"
+      }
+    ]
+  },
+  {
+    "id": "figma-subprocessors-2026-10-24",
+    "vendor_id": "figma",
+    "vendor_name": "Figma",
+    "document": "subprocessors",
+    "document_label": "Sub-processor list",
+    "date": "2026-10-24",
+    "url": "https://www.figma.com/sub-processors/",
+    "hunks": [
+      {
+        "before": "September 22, 2026",
+        "after": "October 23, 2026"
+      },
+      {
+        "before": null,
+        "after": "QuiverAI, Inc."
+      },
+      {
+        "before": null,
+        "after": "Figma AI"
+      },
+      {
+        "before": null,
+        "after": "AI model provider"
+      },
+      {
+        "before": null,
+        "after": "United States, EU"
+      },
+      {
+        "before": null,
+        "after": "Prompt Inputs and Outputs"
+      }
+    ]
+  },
+  {
     "id": "anthropic-other-2026-10-22",
     "vendor_id": "anthropic",
     "vendor_name": "Anthropic",
