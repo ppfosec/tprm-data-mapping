@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T08:14:36+00:00",
+  "generated_at": "2026-10-25T08:32:44+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -155,10 +155,10 @@
           "diff": null,
           "archive": {
             "ok": true,
-            "captures": 91,
-            "revisions": 90,
+            "captures": 93,
+            "revisions": 92,
             "first": "2024-09-26",
-            "last": "2026-10-24"
+            "last": "2026-10-25"
           }
         },
         {
@@ -180,13 +180,13 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 681,
-        "placeable": 679,
+        "total": 682,
+        "placeable": 680,
         "unplaceable": 2,
         "eea": 33,
-        "non_eea": 646,
+        "non_eea": 647,
         "countries": {
-          "United States": 536,
+          "United States": 537,
           "United Kingdom": 50,
           "Japan": 17,
           "South Korea": 14,
@@ -211,15 +211,15 @@
             "examples": [
               {
                 "title": "Applied AI Architect",
-                "location": "Bangalore, India",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
+                "location": "Mumbai, India",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
                 "matched": "across time zones",
                 "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
               },
               {
                 "title": "Applied AI Architect",
-                "location": "Mumbai, India",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
+                "location": "Bangalore, India",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
                 "matched": "across time zones",
                 "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
               }
@@ -296,7 +296,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "646 of 679 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "647 of 680 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -305,7 +305,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 536 open roles"
+              "excerpt": "United States: 537 open roles"
             },
             {
               "kind": "stat",
@@ -336,16 +336,16 @@
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Bangalore, India",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
+              "location": "Mumbai, India",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
               "matched": "across time zones",
               "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
             },
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Mumbai, India",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
+              "location": "Bangalore, India",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
               "matched": "across time zones",
               "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
             }
@@ -602,8 +602,8 @@
           "url": "https://www.cloudflare.com/privacypolicy/",
           "path": "data/snapshots/cloudflare/privacy.txt",
           "lines": 648,
-          "chars": 47102,
-          "sha256": "502c7d44ff7d066e",
+          "chars": 47103,
+          "sha256": "cb4e75ad4a9122d5",
           "note": null,
           "archive": {
             "ok": true,
@@ -664,9 +664,9 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 453,
+        "total": 454,
         "placeable": 3,
-        "unplaceable": 450,
+        "unplaceable": 451,
         "eea": 1,
         "non_eea": 2,
         "countries": {
@@ -910,7 +910,7 @@
         "sensitivity_score": 10,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": false
+        "source_documents_changed": true
       },
       "score": {
         "total": 42,
@@ -920,6 +920,21 @@
         "record": 0
       },
       "drift": [
+        {
+          "id": "cloudflare-privacy-2026-10-25",
+          "vendor_id": "cloudflare",
+          "vendor_name": "Cloudflare",
+          "document": "privacy",
+          "document_label": "Privacy policy",
+          "date": "2026-10-25",
+          "url": "https://www.cloudflare.com/privacypolicy/",
+          "hunks": [
+            {
+              "before": "(“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information.",
+              "after": "(\u0000“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information."
+            }
+          ]
+        },
         {
           "id": "cloudflare-privacy-2026-10-22",
           "vendor_id": "cloudflare",
@@ -996,21 +1011,6 @@
             {
               "before": "(“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information.",
               "after": "(\u0000“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information."
-            }
-          ]
-        },
-        {
-          "id": "cloudflare-privacy-2026-10-10",
-          "vendor_id": "cloudflare",
-          "vendor_name": "Cloudflare",
-          "document": "privacy",
-          "document_label": "Privacy policy",
-          "date": "2026-10-10",
-          "url": "https://www.cloudflare.com/privacypolicy/",
-          "hunks": [
-            {
-              "before": "(\u0000\u0000“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information.",
-              "after": "(“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information."
             }
           ]
         }
@@ -1102,10 +1102,10 @@
           "Denmark": 2,
           "Indonesia": 2,
           "Switzerland": 1,
-          "Chile": 1,
           "Canada": 1,
-          "Poland": 1,
+          "Chile": 1,
           "Austria": 1,
+          "Poland": 1,
           "Saudi Arabia": 1
         },
         "scanned": 26,
@@ -1532,15 +1532,15 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 720,
-        "placeable": 651,
-        "unplaceable": 69,
+        "total": 719,
+        "placeable": 652,
+        "unplaceable": 67,
         "eea": 94,
-        "non_eea": 557,
+        "non_eea": 558,
         "countries": {
-          "United States": 344,
+          "United States": 345,
           "Ireland": 72,
-          "Canada": 55,
+          "Canada": 57,
           "Singapore": 51,
           "United Kingdom": 46,
           "India": 46,
@@ -1727,7 +1727,7 @@
         "sensitivity_score": 30,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": true
+        "source_documents_changed": false
       },
       "score": {
         "total": 29,
@@ -2219,7 +2219,7 @@
         "sensitivity_score": 30,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": true
+        "source_documents_changed": false
       },
       "score": {
         "total": 48,
