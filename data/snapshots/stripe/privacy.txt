@@ -1,5 +1,5 @@
 # source: https://stripe.com/privacy
-# collected: 2026-10-25
+# collected: 2026-10-26
 
 This Privacy Policy will be updated on November 20, 2026.
 Please review the upcoming changes
