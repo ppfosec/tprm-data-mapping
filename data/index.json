@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T09:08:17+00:00",
+  "generated_at": "2026-10-28T09:49:15+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -155,10 +155,10 @@
           "diff": null,
           "archive": {
             "ok": true,
-            "captures": 97,
-            "revisions": 96,
+            "captures": 101,
+            "revisions": 100,
             "first": "2024-09-26",
-            "last": "2026-10-27"
+            "last": "2026-10-28"
           }
         },
         {
@@ -180,24 +180,24 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 679,
-        "placeable": 677,
+        "total": 681,
+        "placeable": 679,
         "unplaceable": 2,
         "eea": 33,
-        "non_eea": 644,
+        "non_eea": 646,
         "countries": {
-          "United States": 535,
-          "United Kingdom": 50,
+          "United States": 538,
+          "United Kingdom": 51,
           "Japan": 16,
           "South Korea": 14,
           "Germany": 13,
           "Singapore": 11,
-          "Ireland": 11,
           "Australia": 11,
-          "France": 8,
+          "Ireland": 10,
+          "France": 9,
           "Switzerland": 5,
           "India": 4,
-          "Canada": 4,
+          "Canada": 3,
           "Italy": 1
         },
         "scanned": 26,
@@ -242,38 +242,6 @@
             ]
           },
           {
-            "key": "oncall",
-            "label": "On-call access",
-            "severity": "high",
-            "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 1,
-            "examples": [
-              {
-                "title": "AI Operations Engineer, Partnerships",
-                "location": "San Francisco, CA",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5391151008",
-                "matched": "on call",
-                "excerpt": "fications: Hands-on experience building with LLMs and agentic tooling: prompt and workflow design, tool/function calling, MCP or comparable integration frameworks, and evaluating agent output quality Experience working across A"
-              }
-            ]
-          },
-          {
-            "key": "named_tooling",
-            "label": "Named internal tooling",
-            "severity": "low",
-            "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 1,
-            "examples": [
-              {
-                "title": "AI Operations Engineer, Partnerships",
-                "location": "San Francisco, CA",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5391151008",
-                "matched": "Salesforce",
-                "excerpt": "eworks, and evaluating agent output quality Experience working across APIs and business systems — CRMs (e.g., Salesforce), PRM/partner portals, LMS/certification platforms, spreadsheet-based tools, Slack, and email — and scripting"
-              }
-            ]
-          },
-          {
             "key": "nationality",
             "label": "Nationality restriction",
             "severity": "low",
@@ -296,7 +264,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "644 of 677 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "646 of 679 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -305,11 +273,11 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 535 open roles"
+              "excerpt": "United States: 538 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 50 open roles"
+              "excerpt": "United Kingdom: 51 open roles"
             },
             {
               "kind": "stat",
@@ -326,7 +294,7 @@
           "rule": "access_vs_rotation",
           "severity": "medium",
           "headline": "Restricted-access language alongside global rotations",
-          "detail": "The documents describe access controls in principle, while postings describe distributed across time zones, on-call access. Both can be true; the reconciliation is what a reviewer needs to see.",
+          "detail": "The documents describe access controls in principle, while postings describe distributed across time zones. Both can be true; the reconciliation is what a reviewer needs to see.",
           "claim": {
             "kind": "terms",
             "text": "Recipient may only share Discloser’s Confidential Information to Recipient’s employees, agents, and advisors that have a need to know such Confidential Information and who are bound to obligations of confidentiality at least as protective as those provided in these Terms (",
@@ -438,9 +406,9 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 45,
+        "total": 40,
         "footprint": 24,
-        "access": 17,
+        "access": 12,
         "transparency": 4,
         "record": 0
       },
@@ -602,8 +570,8 @@
           "url": "https://www.cloudflare.com/privacypolicy/",
           "path": "data/snapshots/cloudflare/privacy.txt",
           "lines": 648,
-          "chars": 47102,
-          "sha256": "502c7d44ff7d066e",
+          "chars": 47104,
+          "sha256": "134f6c8048da2879",
           "note": null,
           "archive": {
             "ok": true,
@@ -623,10 +591,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 317,
-            "revisions": 316,
+            "captures": 319,
+            "revisions": 318,
             "first": "2021-09-03",
-            "last": "2026-10-21"
+            "last": "2026-10-22"
           }
         },
         {
@@ -681,7 +649,7 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 9,
+            "count": 10,
             "examples": [
               {
                 "title": "AI Security Research & Red Team Engineer",
@@ -700,7 +668,7 @@
               {
                 "title": "Data Center Network Operations Engineer",
                 "location": "Hybrid",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/8311378?gh_jid=8311378",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8311376?gh_jid=8311376",
                 "matched": "on-call",
                 "excerpt": "esponsibilities (prioritization, planning, scheduling, status reporting) such as JIRA Participate in a shared on-call rotation to maintain 24×7 operational availability of the global network. Other Responsibilities May Include"
               }
@@ -919,7 +887,7 @@
         "sensitivity_score": 10,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": false
+        "source_documents_changed": true
       },
       "score": {
         "total": 42,
@@ -929,6 +897,21 @@
         "record": 0
       },
       "drift": [
+        {
+          "id": "cloudflare-privacy-2026-10-28",
+          "vendor_id": "cloudflare",
+          "vendor_name": "Cloudflare",
+          "document": "privacy",
+          "document_label": "Privacy policy",
+          "date": "2026-10-28",
+          "url": "https://www.cloudflare.com/privacypolicy/",
+          "hunks": [
+            {
+              "before": "(“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information.",
+              "after": "(\u0000\u0000“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information."
+            }
+          ]
+        },
         {
           "id": "cloudflare-privacy-2026-10-26",
           "vendor_id": "cloudflare",
@@ -1007,21 +990,6 @@
               "after": "(\u0000\u0000“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information."
             }
           ]
-        },
-        {
-          "id": "cloudflare-privacy-2026-10-16",
-          "vendor_id": "cloudflare",
-          "vendor_name": "Cloudflare",
-          "document": "privacy",
-          "document_label": "Privacy policy",
-          "date": "2026-10-16",
-          "url": "https://www.cloudflare.com/privacypolicy/",
-          "hunks": [
-            {
-              "before": "(\u0000“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information.",
-              "after": "(“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information."
-            }
-          ]
         }
       ]
     },
@@ -1084,35 +1052,35 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 428,
-        "placeable": 428,
+        "total": 422,
+        "placeable": 422,
         "unplaceable": 0,
-        "eea": 88,
-        "non_eea": 340,
+        "eea": 86,
+        "non_eea": 336,
         "countries": {
-          "United States": 223,
-          "France": 47,
+          "United States": 219,
+          "France": 45,
           "Japan": 31,
-          "Ireland": 24,
-          "Netherlands": 21,
+          "Ireland": 23,
+          "Netherlands": 22,
           "Singapore": 20,
-          "United Kingdom": 20,
+          "United Kingdom": 19,
           "South Korea": 14,
           "Australia": 13,
+          "Spain": 12,
           "Brazil": 11,
-          "Spain": 11,
           "India": 10,
           "Portugal": 5,
-          "Germany": 4,
           "Mexico": 4,
           "Israel": 3,
           "Sweden": 3,
           "Italy": 3,
+          "Germany": 3,
           "Denmark": 2,
           "Indonesia": 2,
           "Switzerland": 1,
-          "Chile": 1,
           "Canada": 1,
+          "Chile": 1,
           "Austria": 1,
           "Poland": 1,
           "Saudi Arabia": 1
@@ -1147,7 +1115,7 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 2,
+            "count": 1,
             "examples": [
               {
                 "title": "Manager I, Engineering - Security Libraries",
@@ -1155,13 +1123,6 @@
                 "url": "https://careers.datadoghq.com/detail/8094219/?gh_jid=8094219",
                 "matched": "on-call",
                 "excerpt": "ng senior ICs as technical leaders Own team delivery and productivity: planning, milestones, reviews, and the on-call rotation Set product direction with Product Management and balance priorities across App &amp; API Protection"
-              },
-              {
-                "title": "Manager I, Engineering - Sensitive Data Scanner",
-                "location": "Paris, France",
-                "url": "https://careers.datadoghq.com/detail/8102794/?gh_jid=8102794",
-                "matched": "on-call",
-                "excerpt": "ustomer needs and business impact Stay hands-on: contribute to design decisions and participate in the team’s on-call rotation Recruit, mentor, and develop engineers as the team grows beyond its initial size Help build a strong"
               }
             ]
           },
@@ -1220,7 +1181,7 @@
             "examples": [
               {
                 "title": "Information Security Analyst II - Federal Programs",
-                "location": "New York, New York, USA",
+                "location": "Boston, Massachusetts, USA; Denver, Colorado, USA; New York, New York, USA",
                 "url": "https://careers.datadoghq.com/detail/8319487/?gh_jid=8319487",
                 "matched": "FedRAMP",
                 "excerpt": "al Programs team, you will support efforts to respond to U.S. Government regulations and standards, including FedRAMP Rev. 5, FedRAMP 20x, NIST SP 800-53 Rev. 5, the DoD Cloud Computing Security Requirements Guide (CC SRG), and"
@@ -1236,7 +1197,7 @@
             "examples": [
               {
                 "title": "Information Security Analyst II - Federal Programs",
-                "location": "New York, New York, USA",
+                "location": "Boston, Massachusetts, USA; Denver, Colorado, USA; New York, New York, USA",
                 "url": "https://careers.datadoghq.com/detail/8319487/?gh_jid=8319487",
                 "matched": "Security Clearance",
                 "excerpt": "ire a certification in compliance with applicable Government requirements Eligibility to obtain US Government Security Clearance in the future, or current active adjudicated Public Trust Background Investigation, is a plus Ability to comp"
@@ -1282,14 +1243,6 @@
               "url": "https://careers.datadoghq.com/detail/8094219/?gh_jid=8094219",
               "matched": "on-call",
               "excerpt": "ng senior ICs as technical leaders Own team delivery and productivity: planning, milestones, reviews, and the on-call rotation Set product direction with Product Management and balance priorities across App &amp; API Protection"
-            },
-            {
-              "kind": "job",
-              "title": "Manager I, Engineering - Sensitive Data Scanner",
-              "location": "Paris, France",
-              "url": "https://careers.datadoghq.com/detail/8102794/?gh_jid=8102794",
-              "matched": "on-call",
-              "excerpt": "ustomer needs and business impact Stay hands-on: contribute to design decisions and participate in the team’s on-call rotation Recruit, mentor, and develop engineers as the team grows beyond its initial size Help build a strong"
             }
           ],
           "question": "For out-of-hours incidents, who is on the rotation, where are they, and is their access to customer data logged and reviewable by the customer?"
@@ -1363,9 +1316,9 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 43,
+        "total": 39,
         "footprint": 20,
-        "access": 23,
+        "access": 19,
         "transparency": 0,
         "record": 0
       },
@@ -1573,60 +1526,44 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 711,
-        "placeable": 643,
-        "unplaceable": 68,
-        "eea": 93,
-        "non_eea": 550,
+        "total": 716,
+        "placeable": 647,
+        "unplaceable": 69,
+        "eea": 98,
+        "non_eea": 549,
         "countries": {
           "United States": 338,
-          "Ireland": 72,
-          "Canada": 56,
+          "Ireland": 73,
+          "Canada": 58,
           "Singapore": 50,
-          "India": 46,
-          "United Kingdom": 45,
-          "Mexico": 29,
+          "United Kingdom": 46,
+          "India": 45,
+          "Mexico": 28,
           "Australia": 9,
+          "Spain": 7,
           "Japan": 5,
+          "France": 5,
+          "Germany": 5,
           "Taiwan": 5,
-          "France": 4,
-          "Spain": 4,
           "Romania": 4,
-          "Germany": 3,
           "Brazil": 3,
+          "Sweden": 2,
           "Luxembourg": 2,
           "Thailand": 2,
           "Netherlands": 1,
           "Israel": 1,
           "Belgium": 1,
-          "Sweden": 1,
           "New Zealand": 1,
           "Poland": 1
         },
         "scanned": 26,
         "signals": [
           {
-            "key": "travel",
-            "label": "Travel expected",
-            "severity": "high",
-            "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 1,
-            "examples": [
-              {
-                "title": "Account Executive, Strategic Platform Partnerships",
-                "location": "San Francisco, CA; New York, NY",
-                "url": "https://stripe.com/jobs/search?gh_jid=8157577",
-                "matched": "willing to travel",
-                "excerpt": "s, rapidly evolving environments and balancing&nbsp;strategic thinking with hands-on execution. ● Based in or willing to travel frequently San Francisco, CA. New York, NY (Hybrid) is also acceptable.&nbsp; &nbsp; Preferred qualifications"
-              }
-            ]
-          },
-          {
             "key": "named_tooling",
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 6,
+            "count": 7,
             "examples": [
               {
                 "title": "Account Executive - Platforms Hunter (French Fluency)",
@@ -1643,11 +1580,11 @@
                 "excerpt": "act. Own the complete sales cycle, from lead generation through to product adoption within the target Startup segment. Develop robust outbound strategies and execute creative prospecting programmes to create and nurture new bus"
               },
               {
-                "title": "Account Executive, SaaS Platforms Grower",
-                "location": "Dublin",
-                "url": "https://stripe.com/jobs/search?gh_jid=8241294",
+                "title": "Account Executive, Platforms Hunter (Spanish fluency)",
+                "location": "Madrid",
+                "url": "https://stripe.com/jobs/search?gh_jid=8319459",
                 "matched": "segment",
-                "excerpt": "re a curious, well-rounded strategic seller who builds strong relationships with Stripe’s clients in this key segment. You’re comfortable owning your territory and balancing a mix of high-value, strategic deals with smaller, hi"
+                "excerpt": "act. Own the complete sales cycle, from lead generation through to product adoption within the target Startup segment. Develop robust outbound strategies and execute creative prospecting programmes to create and nurture new bus"
               }
             ]
           }
@@ -1771,9 +1708,9 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 29,
+        "total": 26,
         "footprint": 21,
-        "access": 8,
+        "access": 5,
         "transparency": 0,
         "record": 0
       },
@@ -1996,10 +1933,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 329,
-            "revisions": 328,
+            "captures": 335,
+            "revisions": 334,
             "first": "2024-01-18",
-            "last": "2026-10-17"
+            "last": "2026-10-23"
           }
         },
         {
@@ -2028,29 +1965,29 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 84,
-            "revisions": 83,
+            "captures": 86,
+            "revisions": 85,
             "first": "2019-04-01",
-            "last": "2026-09-14"
+            "last": "2026-10-19"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 141,
-        "placeable": 141,
+        "total": 142,
+        "placeable": 142,
         "unplaceable": 0,
-        "eea": 11,
-        "non_eea": 130,
+        "eea": 10,
+        "non_eea": 132,
         "countries": {
-          "United States": 91,
-          "United Kingdom": 18,
+          "United States": 94,
+          "United Kingdom": 17,
           "Germany": 7,
           "Brazil": 5,
           "India": 4,
-          "France": 4,
           "Singapore": 3,
           "Japan": 3,
+          "France": 3,
           "Australia": 3,
           "Israel": 2,
           "South Korea": 1
@@ -2108,7 +2045,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 4,
+            "count": 5,
             "examples": [
               {
                 "title": "Customer Support Specialist (Bengaluru, India)",
@@ -2118,18 +2055,18 @@
                 "excerpt": "This is a full-time role based in our Bengaluru office. What you’ll do at Figma: Resolve customer tickets in Zendesk, mostly by email, such as helping a designer get back into a locked account or sorting out who can view and e"
               },
               {
+                "title": "Data & Integration Engineer, Business Systems",
+                "location": "San Francisco, CA • New York, NY • United States",
+                "url": "https://boards.greenhouse.io/figma/jobs/6233040004?gh_jid=6233040004",
+                "matched": "Salesforce",
+                "excerpt": "h teams across Finance, GTM, People, and Engineering to build reliable integrations and data pipelines across Salesforce, NetSuite, Workday, Snowflake, and other core applications. We’re looking for a Data &amp; Integration Engine"
+              },
+              {
                 "title": "Data Scientist  ",
                 "location": "San Francisco, CA • New York, NY • United States",
                 "url": "https://boards.greenhouse.io/figma/jobs/5552580004?gh_jid=5552580004",
                 "matched": "Snowflake",
                 "excerpt": "pting language like Python or R, along with experience working with distributed data systems (e.g., Redshift, Snowflake, Presto, Hive, Spark) Strong foundation in statistical methods, experimentation, and/or forecasting A track r"
-              },
-              {
-                "title": "Security Scientist",
-                "location": "San Francisco, CA • New York, NY • United States",
-                "url": "https://boards.greenhouse.io/figma/jobs/6180172004?gh_jid=6180172004",
-                "matched": "Snowflake",
-                "excerpt": "ge Experience working with distributed data processing systems and frameworks such as Hive, Redshift, Presto, Snowflake, or Spark Strong knowledge of statistical methods and experimental design Excellent judgment and creative pro"
               }
             ]
           },
@@ -2170,7 +2107,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "130 of 141 placeable roles name no EEA site — most prominently United States, United Kingdom, Brazil. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "132 of 142 placeable roles name no EEA site — most prominently United States, United Kingdom, Brazil. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -2179,11 +2116,11 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 91 open roles"
+              "excerpt": "United States: 94 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 18 open roles"
+              "excerpt": "United Kingdom: 17 open roles"
             },
             {
               "kind": "stat",
@@ -2191,6 +2128,24 @@
             }
           ],
           "question": "Which roles can access production data, and from which countries? Does the residency commitment cover support and engineering access, or only data at rest?"
+        },
+        {
+          "rule": "subprocessor_gap",
+          "severity": "medium",
+          "headline": "Salesforce appears in hiring, not in the published documents",
+          "detail": "Engineering job descriptions name Salesforce, but it does not appear anywhere in the legal documents collected including the sub-processor list at https://www.figma.com/sub-processors/.",
+          "claim": null,
+          "evidence": [
+            {
+              "kind": "job",
+              "title": "Data & Integration Engineer, Business Systems",
+              "location": "San Francisco, CA • New York, NY • United States",
+              "url": "https://boards.greenhouse.io/figma/jobs/6233040004?gh_jid=6233040004",
+              "matched": "Salesforce",
+              "excerpt": "h teams across Finance, GTM, People, and Engineering to build reliable integrations and data pipelines across Salesforce, NetSuite, Workday, Snowflake, and other core applications. We’re looking for a Data &amp; Integration Engine"
+            }
+          ],
+          "question": "Is Salesforce a sub-processor? If it is, when was it added to the list, and were customers notified? If it never touches customer data, what is it used for?"
         }
       ],
       "data_classification": {
@@ -2484,28 +2439,28 @@
       "jobs": {
         "ok": true,
         "total": 238,
-        "placeable": 230,
-        "unplaceable": 8,
-        "eea": 44,
-        "non_eea": 186,
+        "placeable": 231,
+        "unplaceable": 7,
+        "eea": 42,
+        "non_eea": 189,
         "countries": {
-          "United States": 115,
-          "Canada": 72,
-          "United Kingdom": 50,
-          "India": 28,
-          "Ireland": 15,
+          "United States": 117,
+          "Canada": 69,
+          "United Kingdom": 46,
+          "India": 30,
           "Poland": 14,
           "Germany": 13,
-          "Spain": 9,
-          "Israel": 8,
+          "Ireland": 12,
+          "Spain": 8,
           "France": 8,
-          "Australia": 8,
           "Singapore": 8,
+          "Australia": 7,
+          "Israel": 6,
           "Netherlands": 5,
           "Japan": 5,
           "Brazil": 5,
           "South Korea": 4,
-          "Mexico": 3,
+          "Mexico": 2,
           "Austria": 2,
           "United Arab Emirates": 2,
           "Sweden": 1,
@@ -2858,13 +2813,13 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 402,
-        "placeable": 402,
+        "total": 406,
+        "placeable": 406,
         "unplaceable": 0,
-        "eea": 173,
-        "non_eea": 229,
+        "eea": 174,
+        "non_eea": 232,
         "countries": {
-          "United States": 117,
+          "United States": 118,
           "Spain": 36,
           "Canada": 32,
           "United Kingdom": 28,
@@ -2872,21 +2827,21 @@
           "Ireland": 26,
           "Portugal": 24,
           "Poland": 22,
-          "India": 15,
+          "India": 17,
           "Norway": 11,
           "Romania": 10,
           "Germany": 8,
           "Switzerland": 8,
           "Japan": 7,
-          "Australia": 5,
+          "Australia": 6,
           "Belgium": 3,
-          "Singapore": 3,
+          "Netherlands": 3,
           "Brazil": 3,
+          "Singapore": 2,
           "United Arab Emirates": 2,
           "Mexico": 2,
           "Saudi Arabia": 2,
           "Israel": 2,
-          "Netherlands": 2,
           "South Africa": 1,
           "Costa Rica": 1,
           "Austria": 1,
@@ -3236,9 +3191,9 @@
           "kind": "privacy",
           "url": "https://vercel.com/legal/privacy-notice",
           "path": "data/snapshots/vercel/privacy.txt",
-          "lines": 682,
-          "chars": 50664,
-          "sha256": "1089987c0a57208c",
+          "lines": 710,
+          "chars": 51252,
+          "sha256": "ac00daa8060fd2f0",
           "note": null,
           "archive": {
             "ok": false,
@@ -3249,9 +3204,9 @@
           "kind": "dpa",
           "url": "https://vercel.com/legal/dpa",
           "path": "data/snapshots/vercel/dpa.txt",
-          "lines": 760,
-          "chars": 59800,
-          "sha256": "c6f2954ea450f34e",
+          "lines": 817,
+          "chars": 60997,
+          "sha256": "c108eb67ddb02238",
           "note": null,
           "archive": {
             "ok": false,
@@ -3363,7 +3318,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 4,
+            "count": 5,
             "examples": [
               {
                 "title": "Head of Field Engineering Operations",
@@ -3478,7 +3433,7 @@
         "sensitivity_score": 20,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": false
+        "source_documents_changed": true
       },
       "score": {
         "total": 81,
@@ -3488,6 +3443,76 @@
         "record": 25
       },
       "drift": [
+        {
+          "id": "vercel-privacy-2026-10-28",
+          "vendor_id": "vercel",
+          "vendor_name": "Vercel",
+          "document": "privacy",
+          "document_label": "Privacy policy",
+          "date": "2026-10-28",
+          "url": "https://vercel.com/legal/privacy-notice",
+          "hunks": [
+            {
+              "before": null,
+              "after": "Copy link to heading"
+            },
+            {
+              "before": null,
+              "after": "Copy link to heading"
+            },
+            {
+              "before": null,
+              "after": "Copy link to heading"
+            },
+            {
+              "before": null,
+              "after": "Copy link to heading"
+            },
+            {
+              "before": null,
+              "after": "Copy link to heading"
+            },
+            {
+              "before": null,
+              "after": "Copy link to heading"
+            }
+          ]
+        },
+        {
+          "id": "vercel-dpa-2026-10-28",
+          "vendor_id": "vercel",
+          "vendor_name": "Vercel",
+          "document": "dpa",
+          "document_label": "Data processing agreement",
+          "date": "2026-10-28",
+          "url": "https://vercel.com/legal/dpa",
+          "hunks": [
+            {
+              "before": null,
+              "after": "Copy link to heading"
+            },
+            {
+              "before": null,
+              "after": "Copy link to heading"
+            },
+            {
+              "before": null,
+              "after": "Copy link to heading"
+            },
+            {
+              "before": null,
+              "after": "Copy link to heading"
+            },
+            {
+              "before": null,
+              "after": "Copy link to heading"
+            },
+            {
+              "before": null,
+              "after": "Copy link to heading"
+            }
+          ]
+        },
         {
           "id": "vercel-privacy-2026-09-04",
           "vendor_id": "vercel",
