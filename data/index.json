@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T09:49:15+00:00",
+  "generated_at": "2026-10-29T10:08:50+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -155,10 +155,10 @@
           "diff": null,
           "archive": {
             "ok": true,
-            "captures": 101,
-            "revisions": 100,
+            "captures": 103,
+            "revisions": 102,
             "first": "2024-09-26",
-            "last": "2026-10-28"
+            "last": "2026-10-29"
           }
         },
         {
@@ -171,29 +171,29 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 80,
-            "revisions": 79,
+            "captures": 81,
+            "revisions": 80,
             "first": "2025-03-11",
-            "last": "2026-10-23"
+            "last": "2026-10-28"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 681,
-        "placeable": 679,
+        "total": 680,
+        "placeable": 678,
         "unplaceable": 2,
-        "eea": 33,
+        "eea": 32,
         "non_eea": 646,
         "countries": {
-          "United States": 538,
+          "United States": 539,
           "United Kingdom": 51,
           "Japan": 16,
           "South Korea": 14,
           "Germany": 13,
           "Singapore": 11,
-          "Australia": 11,
-          "Ireland": 10,
+          "Australia": 10,
+          "Ireland": 9,
           "France": 9,
           "Switzerland": 5,
           "India": 4,
@@ -211,15 +211,15 @@
             "examples": [
               {
                 "title": "Applied AI Architect",
-                "location": "Mumbai, India",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
+                "location": "Bangalore, India",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
                 "matched": "across time zones",
                 "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
               },
               {
                 "title": "Applied AI Architect",
-                "location": "Bangalore, India",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
+                "location": "Mumbai, India",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
                 "matched": "across time zones",
                 "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
               }
@@ -264,7 +264,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "646 of 679 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "646 of 678 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -273,7 +273,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 538 open roles"
+              "excerpt": "United States: 539 open roles"
             },
             {
               "kind": "stat",
@@ -304,16 +304,16 @@
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Mumbai, India",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
+              "location": "Bangalore, India",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
               "matched": "across time zones",
               "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
             },
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Bangalore, India",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
+              "location": "Mumbai, India",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
               "matched": "across time zones",
               "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
             }
@@ -570,8 +570,8 @@
           "url": "https://www.cloudflare.com/privacypolicy/",
           "path": "data/snapshots/cloudflare/privacy.txt",
           "lines": 648,
-          "chars": 47104,
-          "sha256": "134f6c8048da2879",
+          "chars": 47102,
+          "sha256": "502c7d44ff7d066e",
           "note": null,
           "archive": {
             "ok": true,
@@ -632,9 +632,9 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 461,
+        "total": 460,
         "placeable": 3,
-        "unplaceable": 458,
+        "unplaceable": 457,
         "eea": 1,
         "non_eea": 2,
         "countries": {
@@ -649,7 +649,7 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 10,
+            "count": 9,
             "examples": [
               {
                 "title": "AI Security Research & Red Team Engineer",
@@ -659,9 +659,9 @@
                 "excerpt": "ring partner\" for SIRT. By conducting unannounced exercises, you help them refine their playbooks, test their on-call rotations, and ensure their forensic tooling is effective under pressure. Threat Detection &amp; Threat Engin"
               },
               {
-                "title": "Data Center Engineer",
+                "title": "Data Center Network Operations Engineer",
                 "location": "Hybrid",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/8074364?gh_jid=8074364",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8311378?gh_jid=8311378",
                 "matched": "on-call",
                 "excerpt": "esponsibilities (prioritization, planning, scheduling, status reporting) such as JIRA Participate in a shared on-call rotation to maintain 24×7 operational availability of the global network. Other Responsibilities May Include"
               },
@@ -830,9 +830,9 @@
             },
             {
               "kind": "job",
-              "title": "Data Center Engineer",
+              "title": "Data Center Network Operations Engineer",
               "location": "Hybrid",
-              "url": "https://boards.greenhouse.io/cloudflare/jobs/8074364?gh_jid=8074364",
+              "url": "https://boards.greenhouse.io/cloudflare/jobs/8311378?gh_jid=8311378",
               "matched": "on-call",
               "excerpt": "esponsibilities (prioritization, planning, scheduling, status reporting) such as JIRA Participate in a shared on-call rotation to maintain 24×7 operational availability of the global network. Other Responsibilities May Include"
             }
@@ -897,6 +897,21 @@
         "record": 0
       },
       "drift": [
+        {
+          "id": "cloudflare-privacy-2026-10-29",
+          "vendor_id": "cloudflare",
+          "vendor_name": "Cloudflare",
+          "document": "privacy",
+          "document_label": "Privacy policy",
+          "date": "2026-10-29",
+          "url": "https://www.cloudflare.com/privacypolicy/",
+          "hunks": [
+            {
+              "before": "(\u0000\u0000“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information.",
+              "after": "(“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information."
+            }
+          ]
+        },
         {
           "id": "cloudflare-privacy-2026-10-28",
           "vendor_id": "cloudflare",
@@ -975,21 +990,6 @@
               "after": "(“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information."
             }
           ]
-        },
-        {
-          "id": "cloudflare-privacy-2026-10-20",
-          "vendor_id": "cloudflare",
-          "vendor_name": "Cloudflare",
-          "document": "privacy",
-          "document_label": "Privacy policy",
-          "date": "2026-10-20",
-          "url": "https://www.cloudflare.com/privacypolicy/",
-          "hunks": [
-            {
-              "before": "(“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information.",
-              "after": "(\u0000\u0000“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information."
-            }
-          ]
         }
       ]
     },
@@ -1052,37 +1052,37 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 422,
-        "placeable": 422,
+        "total": 396,
+        "placeable": 396,
         "unplaceable": 0,
-        "eea": 86,
-        "non_eea": 336,
+        "eea": 69,
+        "non_eea": 327,
         "countries": {
-          "United States": 219,
-          "France": 45,
+          "United States": 209,
+          "France": 35,
           "Japan": 31,
-          "Ireland": 23,
-          "Netherlands": 22,
+          "Netherlands": 21,
+          "Ireland": 20,
           "Singapore": 20,
-          "United Kingdom": 19,
+          "United Kingdom": 18,
+          "Australia": 15,
           "South Korea": 14,
-          "Australia": 13,
-          "Spain": 12,
           "Brazil": 11,
           "India": 10,
-          "Portugal": 5,
+          "Spain": 6,
           "Mexico": 4,
           "Israel": 3,
-          "Sweden": 3,
-          "Italy": 3,
-          "Germany": 3,
           "Denmark": 2,
-          "Indonesia": 2,
+          "Sweden": 2,
+          "Germany": 2,
           "Switzerland": 1,
-          "Canada": 1,
+          "Portugal": 1,
           "Chile": 1,
+          "Canada": 1,
+          "Indonesia": 1,
           "Austria": 1,
           "Poland": 1,
+          "Italy": 1,
           "Saudi Arabia": 1
         },
         "scanned": 26,
@@ -1096,15 +1096,15 @@
             "examples": [
               {
                 "title": "Global Safety & Security Manager",
-                "location": "Sydney, Australia",
-                "url": "https://careers.datadoghq.com/detail/8224963/?gh_jid=8224963",
+                "location": "Singapore, Singapore",
+                "url": "https://careers.datadoghq.com/detail/8223272/?gh_jid=8223272",
                 "matched": "international travel",
                 "excerpt": "ice and collaboration. This position is based in our Sydney or Singapore office and will require domestic and international travel. The role will focus particularly on developing our safety compliance, security program development and matur"
               },
               {
                 "title": "Global Safety & Security Manager",
-                "location": "Singapore, Singapore",
-                "url": "https://careers.datadoghq.com/detail/8223272/?gh_jid=8223272",
+                "location": "Sydney, Australia",
+                "url": "https://careers.datadoghq.com/detail/8224963/?gh_jid=8224963",
                 "matched": "international travel",
                 "excerpt": "ice and collaboration. This position is based in our Sydney or Singapore office and will require domestic and international travel. The role will focus particularly on developing our safety compliance, security program development and matur"
               }
@@ -1316,8 +1316,8 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 39,
-        "footprint": 20,
+        "total": 40,
+        "footprint": 21,
         "access": 19,
         "transparency": 0,
         "record": 0
@@ -1526,19 +1526,19 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 716,
-        "placeable": 647,
-        "unplaceable": 69,
-        "eea": 98,
-        "non_eea": 549,
+        "total": 724,
+        "placeable": 653,
+        "unplaceable": 71,
+        "eea": 99,
+        "non_eea": 554,
         "countries": {
-          "United States": 338,
-          "Ireland": 73,
+          "United States": 344,
+          "Ireland": 74,
           "Canada": 58,
-          "Singapore": 50,
+          "Singapore": 48,
           "United Kingdom": 46,
           "India": 45,
-          "Mexico": 28,
+          "Mexico": 27,
           "Australia": 9,
           "Spain": 7,
           "Japan": 5,
@@ -1965,30 +1965,30 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 86,
-            "revisions": 85,
+            "captures": 85,
+            "revisions": 84,
             "first": "2019-04-01",
-            "last": "2026-10-19"
+            "last": "2026-10-18"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 142,
-        "placeable": 142,
+        "total": 141,
+        "placeable": 141,
         "unplaceable": 0,
         "eea": 10,
-        "non_eea": 132,
+        "non_eea": 131,
         "countries": {
-          "United States": 94,
+          "United States": 96,
           "United Kingdom": 17,
           "Germany": 7,
-          "Brazil": 5,
           "India": 4,
           "Singapore": 3,
           "Japan": 3,
           "France": 3,
           "Australia": 3,
+          "Brazil": 2,
           "Israel": 2,
           "South Korea": 1
         },
@@ -2107,7 +2107,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "132 of 142 placeable roles name no EEA site — most prominently United States, United Kingdom, Brazil. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "131 of 141 placeable roles name no EEA site — most prominently United States, United Kingdom, India. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -2116,7 +2116,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 94 open roles"
+              "excerpt": "United States: 96 open roles"
             },
             {
               "kind": "stat",
@@ -2124,7 +2124,7 @@
             },
             {
               "kind": "stat",
-              "excerpt": "Brazil: 5 open roles"
+              "excerpt": "India: 4 open roles"
             }
           ],
           "question": "Which roles can access production data, and from which countries? Does the residency commitment cover support and engineering access, or only data at rest?"
@@ -2438,23 +2438,23 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 238,
-        "placeable": 231,
+        "total": 231,
+        "placeable": 224,
         "unplaceable": 7,
-        "eea": 42,
-        "non_eea": 189,
+        "eea": 43,
+        "non_eea": 181,
         "countries": {
-          "United States": 117,
-          "Canada": 69,
-          "United Kingdom": 46,
-          "India": 30,
-          "Poland": 14,
-          "Germany": 13,
+          "United States": 112,
+          "Canada": 64,
+          "United Kingdom": 48,
+          "India": 28,
+          "Poland": 16,
+          "Germany": 14,
           "Ireland": 12,
-          "Spain": 8,
           "France": 8,
+          "Spain": 8,
           "Singapore": 8,
-          "Australia": 7,
+          "Australia": 6,
           "Israel": 6,
           "Netherlands": 5,
           "Japan": 5,
@@ -2476,13 +2476,6 @@
             "count": 15,
             "examples": [
               {
-                "title": "Associate Revenue Operations Manager, India",
-                "location": "Remote, India",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8859694002",
-                "matched": "across time zones",
-                "excerpt": "approach to working with data Clear and concise written communication, particularly in asynchronous settings across time zones Collaborative and comfortable asking questions; you will be supported, not left to figure things out alone In"
-              },
-              {
                 "title": "Customer Success Architect",
                 "location": "Remote, United States",
                 "url": "https://job-boards.greenhouse.io/gitlab/jobs/8877426002",
@@ -2495,6 +2488,43 @@
                 "url": "https://job-boards.greenhouse.io/gitlab/jobs/8880999002",
                 "matched": "across time zones",
                 "excerpt": "te escalations, and help them realize measurable value from GitLab. Composed of team members working remotely across time zones, we operate asynchronously to support a focused set of strategic accounts across the region. It's a team well"
+              },
+              {
+                "title": "Demo Architect, EMEA",
+                "location": "Remote, Germany; Remote, Poland; Remote, United Kingdom",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8860273002",
+                "matched": "globally distributed",
+                "excerpt": "red tooling and the infrastructure behind internal demo and test instances used across GitLab. We’re a small, globally distributed group that collaborates asynchronously across regions and adapts quickly to changing needs, with a current fo"
+              }
+            ]
+          },
+          {
+            "key": "oncall",
+            "label": "On-call access",
+            "severity": "high",
+            "why": "Out-of-hours production access, granted broadly and audited thinly.",
+            "count": 5,
+            "examples": [
+              {
+                "title": "Distinguished Engineer, Core DevOps",
+                "location": "Remote, Canada; Remote, United Kingdom; Remote, United States",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8831350002",
+                "matched": "on-call",
+                "excerpt": "ribute to the technical hiring bar for senior individual contributors. Participate in the Incident Management on-call rotation to help meet availability goals for GitLab.com, and complete Interview Training to participate in hi"
+              },
+              {
+                "title": "Engineering Manager, Architecture Engineering: Async",
+                "location": "Remote, Poland; Remote, United Kingdom",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8921380002",
+                "matched": "on-call",
+                "excerpt": "admap projects and rescoping work when deadlines can't be met. Run the team's part of GitLab.com's first-tier on-call rotation, including shift coverage, onboarding, and handovers, and serve as incident commander for high-sever"
+              },
+              {
+                "title": "Intermediate Software Engineer, Security Factory: Vulnerability Management ",
+                "location": "Remote, Canada; Remote, Israel; Remote, United Kingdom",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8688078002",
+                "matched": "on-call",
+                "excerpt": "ze impediments to our efficiency as a team (\"technical debt\"), propose and implement solutions Participate in on-call rotations to assist troubleshooting product operations, security operations, and urgent engineering issues. W"
               }
             ]
           },
@@ -2529,36 +2559,6 @@
             ]
           },
           {
-            "key": "oncall",
-            "label": "On-call access",
-            "severity": "high",
-            "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 4,
-            "examples": [
-              {
-                "title": "Distinguished Engineer, Core DevOps",
-                "location": "Remote, Canada; Remote, United Kingdom; Remote, United States",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8831350002",
-                "matched": "on-call",
-                "excerpt": "ribute to the technical hiring bar for senior individual contributors. Participate in the Incident Management on-call rotation to help meet availability goals for GitLab.com, and complete Interview Training to participate in hi"
-              },
-              {
-                "title": "Intermediate Software Engineer, Security Factory: Vulnerability Management ",
-                "location": "Remote, Canada; Remote, Israel; Remote, United Kingdom",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8688078002",
-                "matched": "on-call",
-                "excerpt": "ze impediments to our efficiency as a team (\"technical debt\"), propose and implement solutions Participate in on-call rotations to assist troubleshooting product operations, security operations, and urgent engineering issues. W"
-              },
-              {
-                "title": "Intermediate Support Engineer (SHIFT) ",
-                "location": "Remote, United Kingdom",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8684061002",
-                "matched": "on-call",
-                "excerpt": "bers (for example: as a Support Stable Counterpart ) Participate in regular rotations for weekday and weekend on-call coverage (daytime only), providing emergency support to our Self-managed and SaaS customers, or working with"
-              }
-            ]
-          },
-          {
             "key": "travel",
             "label": "Travel expected",
             "severity": "high",
@@ -2567,7 +2567,7 @@
             "examples": [
               {
                 "title": "Demo Architect, EMEA",
-                "location": "Remote Ireland; Remote, Germany; Remote, Spain; Remote, United Kingdom",
+                "location": "Remote, Germany; Remote, Poland; Remote, United Kingdom",
                 "url": "https://job-boards.greenhouse.io/gitlab/jobs/8860273002",
                 "matched": "willingness to travel",
                 "excerpt": "a seller or Solutions Architect. Ability to operate independently in a remote, asynchronous environment, with willingness to travel periodically for team offsites and occasional in-person planning/whiteboarding sessions. Exposure to technica"
@@ -2582,19 +2582,28 @@
             ]
           },
           {
+            "key": "round_clock",
+            "label": "Round-the-clock coverage",
+            "severity": "medium",
+            "why": "Continuous coverage from one time zone is rare; assume more than one.",
+            "count": 1,
+            "examples": [
+              {
+                "title": "Engineering Manager, Architecture Engineering: Async",
+                "location": "Remote, Poland; Remote, United Kingdom",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8921380002",
+                "matched": "24/7",
+                "excerpt": "defining service-level indicators, setting up burn-rate alerting, and planning capacity. Experience running a 24/7 on-call rotation and coordinating high-severity incidents. A track record of balancing operational work and i"
+              }
+            ]
+          },
+          {
             "key": "gov_enclave",
             "label": "Government enclave",
             "severity": "low",
             "why": "A separate sovereign estate exists, which confirms the commercial one is not it.",
             "count": 26,
             "examples": [
-              {
-                "title": "Associate Revenue Operations Manager, India",
-                "location": "Remote, India",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8859694002",
-                "matched": "itar",
-                "excerpt": "or physical disability, genetic information (including family medical history), discharge status from the military, protected veteran status (which includes disabled veterans, recently separated veterans, active duty wartim"
-              },
               {
                 "title": "Cloud Platform Engineer",
                 "location": "Remote, Canada; Remote, United States",
@@ -2608,6 +2617,13 @@
                 "url": "https://job-boards.greenhouse.io/gitlab/jobs/8877426002",
                 "matched": "itar",
                 "excerpt": "or physical disability, genetic information (including family medical history), discharge status from the military, protected veteran status (which includes disabled veterans, recently separated veterans, active duty wartim"
+              },
+              {
+                "title": "Customer Success Architect, Japan",
+                "location": "Remote, Japan",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8880999002",
+                "matched": "itar",
+                "excerpt": "or physical disability, genetic information (including family medical history), discharge status from the military, protected veteran status (which includes disabled veterans, recently separated veterans, active duty wartim"
               }
             ]
           },
@@ -2616,15 +2632,8 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 6,
+            "count": 5,
             "examples": [
-              {
-                "title": "Associate Revenue Operations Manager, India",
-                "location": "Remote, India",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8859694002",
-                "matched": "Salesforce",
-                "excerpt": "sibilities Support cross-functional annual planning activities related to territory carving and deployment in Salesforce for the APJ region, with guidance from senior team members Help maintain and document territory operations pr"
-              },
               {
                 "title": "Director, Support (Bengaluru)",
                 "location": "Bangalore, India",
@@ -2638,6 +2647,13 @@
                 "url": "https://job-boards.greenhouse.io/gitlab/jobs/8907694002",
                 "matched": "Salesforce",
                 "excerpt": "e with Programs and policy owners on required notifications, documentation, and compliance reporting. Monitor Salesforce and partner-management data for missing links, incorrect ownership, incomplete attribution, failed synchroniz"
+              },
+              {
+                "title": "Intermediate Support Engineer (SHIFT) ",
+                "location": "Remote, United Kingdom",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8684061002",
+                "matched": "Zendesk",
+                "excerpt": "ll do &nbsp;&nbsp; Support a mix of Self-managed and GitLab.com (SaaS) customers and resolve their issues via Zendesk tickets, merge requests, email and video conferencing Collaborate with our Product , Development , Infrastruc"
               }
             ]
           }
@@ -2653,19 +2669,19 @@
           "evidence": [
             {
               "kind": "job",
-              "title": "Associate Revenue Operations Manager, India",
-              "location": "Remote, India",
-              "url": "https://job-boards.greenhouse.io/gitlab/jobs/8859694002",
-              "matched": "Salesforce",
-              "excerpt": "sibilities Support cross-functional annual planning activities related to territory carving and deployment in Salesforce for the APJ region, with guidance from senior team members Help maintain and document territory operations pr"
-            },
-            {
-              "kind": "job",
               "title": "Director, Support (Bengaluru)",
               "location": "Bangalore, India",
               "url": "https://job-boards.greenhouse.io/gitlab/jobs/8629019002",
               "matched": "Zendesk",
               "excerpt": "ry tooling, Kubernetes, or cloud-native infrastructure, along with experience using support platforms such as Zendesk, Salesforce, Decagon, or equivalent tools. Experience with GitLab as a user, administrator, or customer is he"
+            },
+            {
+              "kind": "job",
+              "title": "Ecosystem Operations Specialist",
+              "location": "Remote, Canada; Remote, United States",
+              "url": "https://job-boards.greenhouse.io/gitlab/jobs/8907694002",
+              "matched": "Salesforce",
+              "excerpt": "e with Programs and policy owners on required notifications, documentation, and compliance reporting. Monitor Salesforce and partner-management data for missing links, incorrect ownership, incomplete attribution, failed synchroniz"
             }
           ],
           "question": "Is Salesforce a sub-processor? If it is, when was it added to the list, and were customers notified? If it never touches customer data, what is it used for?"
@@ -2674,7 +2690,7 @@
           "rule": "access_vs_rotation",
           "severity": "medium",
           "headline": "Restricted-access language alongside global rotations",
-          "detail": "The documents describe access controls in principle, while postings describe distributed across time zones, on-call access. Both can be true; the reconciliation is what a reviewer needs to see.",
+          "detail": "The documents describe access controls in principle, while postings describe distributed across time zones, on-call access, round-the-clock coverage. Both can be true; the reconciliation is what a reviewer needs to see.",
           "claim": {
             "kind": "privacy",
             "text": "Our employees, contractors, affiliated organizations, service providers, and sub-processors that process Personal Data may be located in the United States or other countries outside of your home country.",
@@ -2683,19 +2699,19 @@
           "evidence": [
             {
               "kind": "job",
-              "title": "Associate Revenue Operations Manager, India",
-              "location": "Remote, India",
-              "url": "https://job-boards.greenhouse.io/gitlab/jobs/8859694002",
-              "matched": "across time zones",
-              "excerpt": "approach to working with data Clear and concise written communication, particularly in asynchronous settings across time zones Collaborative and comfortable asking questions; you will be supported, not left to figure things out alone In"
-            },
-            {
-              "kind": "job",
               "title": "Customer Success Architect",
               "location": "Remote, United States",
               "url": "https://job-boards.greenhouse.io/gitlab/jobs/8877426002",
               "matched": "across time zones",
               "excerpt": "questions, guide roadmaps, and navigate escalations. We work in an all-remote, asynchronous way, coordinating across time zones to support a focused set of strategic accounts and ensure long-term customer success. How GitLab Supports Ful"
+            },
+            {
+              "kind": "job",
+              "title": "Customer Success Architect, Japan",
+              "location": "Remote, Japan",
+              "url": "https://job-boards.greenhouse.io/gitlab/jobs/8880999002",
+              "matched": "across time zones",
+              "excerpt": "te escalations, and help them realize measurable value from GitLab. Composed of team members working remotely across time zones, we operate asynchronously to support a focused set of strategic accounts across the region. It's a team well"
             }
           ],
           "question": "For out-of-hours incidents, who is on the rotation, where are they, and is their access to customer data logged and reviewable by the customer?"
@@ -2813,37 +2829,37 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 406,
-        "placeable": 406,
+        "total": 404,
+        "placeable": 404,
         "unplaceable": 0,
-        "eea": 174,
-        "non_eea": 232,
+        "eea": 170,
+        "non_eea": 234,
         "countries": {
           "United States": 118,
-          "Spain": 36,
-          "Canada": 32,
+          "Spain": 35,
+          "Canada": 33,
           "United Kingdom": 28,
-          "Greece": 27,
-          "Ireland": 26,
+          "Greece": 26,
+          "Ireland": 25,
           "Portugal": 24,
           "Poland": 22,
           "India": 17,
           "Norway": 11,
           "Romania": 10,
-          "Germany": 8,
           "Switzerland": 8,
+          "Germany": 7,
           "Japan": 7,
           "Australia": 6,
           "Belgium": 3,
           "Netherlands": 3,
           "Brazil": 3,
+          "Costa Rica": 2,
           "Singapore": 2,
           "United Arab Emirates": 2,
           "Mexico": 2,
           "Saudi Arabia": 2,
           "Israel": 2,
           "South Africa": 1,
-          "Costa Rica": 1,
           "Austria": 1,
           "South Korea": 1,
           "France": 1,
@@ -2889,7 +2905,7 @@
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 9,
+            "count": 8,
             "examples": [
               {
                 "title": "Consulting Architect - Observability",
@@ -3216,13 +3232,13 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 93,
-        "placeable": 92,
+        "total": 92,
+        "placeable": 91,
         "unplaceable": 1,
         "eea": 7,
-        "non_eea": 85,
+        "non_eea": 84,
         "countries": {
-          "United States": 73,
+          "United States": 72,
           "United Kingdom": 16,
           "Germany": 7,
           "Australia": 4,
@@ -3253,7 +3269,7 @@
               },
               {
                 "title": "Security Software Engineer, IAM",
-                "location": "Remote - United States",
+                "location": "Hybrid - San Francisco, New York City",
                 "url": "https://job-boards.greenhouse.io/vercel/jobs/6093255004",
                 "matched": "on-call",
                 "excerpt": "M (employee identity, SaaS access, devices) and production IAM (service accounts, infrastructure permissions, on-call access) into one identity plane, and enforce least-privilege access across cloud, SaaS, and production infras"
@@ -3265,7 +3281,7 @@
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 4,
+            "count": 2,
             "examples": [
               {
                 "title": "Customer Support Engineer",
@@ -3280,13 +3296,6 @@
                 "url": "https://job-boards.greenhouse.io/vercel/jobs/6231045004",
                 "matched": "across multiple time zones",
                 "excerpt": "with a recommended minimum of four weeks per year, plus paid holidays. Remote-friendly culture with teammates across multiple time zones. Dedicated equipment and work-from-home budget to help you create an effective workspace. The San Francisco,"
-              },
-              {
-                "title": "Partner Solutions Engineer",
-                "location": "Hybrid - San Francisco",
-                "url": "https://job-boards.greenhouse.io/vercel/jobs/6201179004",
-                "matched": "globally distributed",
-                "excerpt": "ven mindset and are experienced working in a fast-paced environment. You are comfortable working with remote, globally distributed cross-functional teams. You have excellent communication skills and experience advising both technical and no"
               }
             ]
           },
@@ -3433,7 +3442,7 @@
         "sensitivity_score": 20,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": true
+        "source_documents_changed": false
       },
       "score": {
         "total": 81,
