@@ -1,5 +1,5 @@
 # source: https://about.gitlab.com/privacy/subprocessors/
-# collected: 2026-10-29
+# collected: 2026-10-30
 
 GitLab Legal
 Sub-processors of GitLab
@@ -125,6 +125,11 @@ GitLab.com, Dedicated, and Self-Managed
 Decagon AI, Inc.
 United States
 First-Line Customer Support Agent
+GitLab.com, Dedicated, and Self-Managed
+LangChain, Inc.
+United States
+Logging for
+AI-Powered Product Features
 GitLab.com, Dedicated, and Self-Managed
 Professional Services Sub-processors
 These Sub-processors only apply in the event Customer has entered into a

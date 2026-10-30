@@ -612,10 +612,10 @@
           "diff": null,
           "archive": {
             "ok": true,
-            "captures": 103,
-            "revisions": 102,
+            "captures": 105,
+            "revisions": 104,
             "first": "2024-09-26",
-            "last": "2026-10-29"
+            "last": "2026-10-30"
           }
         },
         {
@@ -628,8 +628,8 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 81,
-            "revisions": 80,
+            "captures": 82,
+            "revisions": 81,
             "first": "2025-03-11",
             "last": "2026-10-28"
           }
@@ -640,7 +640,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "646 of 678 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "633 of 668 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -649,7 +649,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 539 open roles"
+              "excerpt": "United States: 528 open roles"
             },
             {
               "kind": "stat",
@@ -658,10 +658,6 @@
             {
               "kind": "stat",
               "excerpt": "Japan: 16 open roles"
-            },
-            {
-              "kind": "stat",
-              "excerpt": "South Korea: 14 open roles"
             }
           ],
           "question": "Which roles can access production data, and from which countries? Does the residency commitment cover support and engineering access, or only data at rest?"
@@ -783,25 +779,26 @@
       },
       "jobs": {
         "ok": true,
-        "total": 680,
-        "placeable": 678,
+        "total": 670,
+        "placeable": 668,
         "unplaceable": 2,
-        "eea": 32,
-        "non_eea": 646,
+        "eea": 35,
+        "non_eea": 633,
         "countries": {
-          "United States": 539,
+          "United States": 528,
           "United Kingdom": 51,
           "Japan": 16,
-          "South Korea": 14,
           "Germany": 13,
+          "South Korea": 12,
           "Singapore": 11,
+          "Ireland": 10,
           "Australia": 10,
-          "Ireland": 9,
           "France": 9,
-          "Switzerland": 5,
           "India": 4,
+          "Switzerland": 4,
           "Canada": 3,
-          "Italy": 1
+          "Italy": 2,
+          "Spain": 1
         },
         "scanned": 26,
         "signals": [
@@ -1123,7 +1120,7 @@
               "kind": "job",
               "title": "Data Center Network Operations Engineer",
               "location": "Hybrid",
-              "url": "https://boards.greenhouse.io/cloudflare/jobs/8311378?gh_jid=8311378",
+              "url": "https://boards.greenhouse.io/cloudflare/jobs/8311366?gh_jid=8311366",
               "matched": "on-call",
               "excerpt": "esponsibilities (prioritization, planning, scheduling, status reporting) such as JIRA Participate in a shared on-call rotation to maintain 24×7 operational availability of the global network. Other Responsibilities May Include"
             }
@@ -1178,13 +1175,13 @@
         "sensitivity_score": 10,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": true
+        "source_documents_changed": false
       },
       "jobs": {
         "ok": true,
-        "total": 460,
+        "total": 464,
         "placeable": 3,
-        "unplaceable": 457,
+        "unplaceable": 461,
         "eea": 1,
         "non_eea": 2,
         "countries": {
@@ -1199,7 +1196,7 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 9,
+            "count": 8,
             "examples": [
               {
                 "title": "AI Security Research & Red Team Engineer",
@@ -1211,7 +1208,7 @@
               {
                 "title": "Data Center Network Operations Engineer",
                 "location": "Hybrid",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/8311378?gh_jid=8311378",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8311366?gh_jid=8311366",
                 "matched": "on-call",
                 "excerpt": "esponsibilities (prioritization, planning, scheduling, status reporting) such as JIRA Participate in a shared on-call rotation to maintain 24×7 operational availability of the global network. Other Responsibilities May Include"
               },
@@ -1229,7 +1226,7 @@
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 4,
+            "count": 3,
             "examples": [
               {
                 "title": "Data Center Site Selection - Hyperscale",
@@ -1246,11 +1243,11 @@
                 "excerpt": "to understand the business and product challenges and goals and address them using predictive analytics in a globally distributed environment. Understand data landscape i.e tooling, tech stack, source systems etc. and work closely with the"
               },
               {
-                "title": "Engineering Manager, Cloudflare Network Interconnect",
+                "title": "Engineering Manager, Data Center Operations",
                 "location": "Hybrid",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/8083701?gh_jid=8083701",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8293647?gh_jid=8293647",
                 "matched": "distributed team",
-                "excerpt": "argest customers. What you'll do As an Engineering Manager on the CNI team you will hire, mentor, and coach a distributed team of Software Engineers. You will play a key role in developing the team and shaping its culture and technical"
+                "excerpt": "and run the team that brings these new sites online and keeps them running around the clock. You will build a distributed team of Data Center Engineers from the ground up. You'll own sites across their full lifecycle: delivering greenfi"
               }
             ]
           },
@@ -1310,6 +1307,29 @@
             ]
           },
           {
+            "key": "named_tooling",
+            "label": "Named internal tooling",
+            "severity": "low",
+            "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
+            "count": 2,
+            "examples": [
+              {
+                "title": "GTM Data Specialist, Consumption & Revenue Operations",
+                "location": "Hybrid",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8301509?gh_jid=8301509",
+                "matched": "Salesforce",
+                "excerpt": "k their output against the data, and can show examples of work you made faster or better with AI Bonus points Salesforce: Experience with reports, SQL, account hierarchies, and ownership rules Building with AI: Experience building"
+              },
+              {
+                "title": "IT Operations Specialist I",
+                "location": "In-Office",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8281074?gh_jid=8281074",
+                "matched": "Zendesk",
+                "excerpt": "ms like Jamf Pro or Kandji. Experience using corporate ticketing platforms such as Jira Service Management or Zendesk. Relevant technical certifications such as Apple Certified Support Professional (ACSP), Google Workspace Admi"
+              }
+            ]
+          },
+          {
             "key": "sovereignty_work",
             "label": "Sovereignty workstream",
             "severity": "low",
@@ -1322,22 +1342,6 @@
                 "url": "https://boards.greenhouse.io/cloudflare/jobs/8319377?gh_jid=8319377",
                 "matched": "sovereign",
                 "excerpt": "ctivity, telco integration Application performance: caching, latency, scaling at the edge Data protection and sovereignty: data residency, encryption and key management, post-quantum readiness Preferred Experience Financial servi"
-              }
-            ]
-          },
-          {
-            "key": "named_tooling",
-            "label": "Named internal tooling",
-            "severity": "low",
-            "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 1,
-            "examples": [
-              {
-                "title": "GTM Data Specialist, Consumption & Revenue Operations",
-                "location": "Hybrid",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/8301509?gh_jid=8301509",
-                "matched": "Salesforce",
-                "excerpt": "k their output against the data, and can show examples of work you made faster or better with AI Bonus points Salesforce: Experience with reports, SQL, account hierarchies, and ownership rules Building with AI: Experience building"
               }
             ]
           }
@@ -1446,7 +1450,7 @@
       "category": "Observability",
       "public_evidence_only": true,
       "surface": {
-        "grade": "40",
+        "grade": "46",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "3 public documents · 3 open reconciliations"
@@ -1533,6 +1537,14 @@
           "evidence": [
             {
               "kind": "job",
+              "title": "Manager I, Engineering - Agent Data Plane",
+              "location": "Madrid, Spain",
+              "url": "https://careers.datadoghq.com/detail/8333737/?gh_jid=8333737",
+              "matched": "on-call",
+              "excerpt": "liability tradeoffs Represent the team in cross-team and technical discussions, and help shape the team's new on-call rotation &nbsp; Who You Are: You have 2+ years of experience managing software engineering teams You have a s"
+            },
+            {
+              "kind": "job",
               "title": "Manager I, Engineering - Security Libraries",
               "location": "Paris, France",
               "url": "https://careers.datadoghq.com/detail/8094219/?gh_jid=8094219",
@@ -1612,24 +1624,24 @@
       },
       "jobs": {
         "ok": true,
-        "total": 396,
-        "placeable": 396,
+        "total": 397,
+        "placeable": 397,
         "unplaceable": 0,
-        "eea": 69,
-        "non_eea": 327,
+        "eea": 68,
+        "non_eea": 329,
         "countries": {
-          "United States": 209,
-          "France": 35,
-          "Japan": 31,
+          "United States": 210,
+          "France": 34,
+          "Japan": 33,
           "Netherlands": 21,
-          "Ireland": 20,
           "Singapore": 20,
+          "Ireland": 19,
           "United Kingdom": 18,
-          "Australia": 15,
           "South Korea": 14,
+          "Australia": 14,
           "Brazil": 11,
           "India": 10,
-          "Spain": 6,
+          "Spain": 7,
           "Mexico": 4,
           "Israel": 3,
           "Denmark": 2,
@@ -1638,8 +1650,8 @@
           "Switzerland": 1,
           "Portugal": 1,
           "Chile": 1,
-          "Canada": 1,
           "Indonesia": 1,
+          "Canada": 1,
           "Austria": 1,
           "Poland": 1,
           "Italy": 1,
@@ -1647,6 +1659,36 @@
         },
         "scanned": 26,
         "signals": [
+          {
+            "key": "oncall",
+            "label": "On-call access",
+            "severity": "high",
+            "why": "Out-of-hours production access, granted broadly and audited thinly.",
+            "count": 3,
+            "examples": [
+              {
+                "title": "Manager I, Engineering - Agent Data Plane",
+                "location": "Madrid, Spain",
+                "url": "https://careers.datadoghq.com/detail/8333737/?gh_jid=8333737",
+                "matched": "on-call",
+                "excerpt": "liability tradeoffs Represent the team in cross-team and technical discussions, and help shape the team's new on-call rotation &nbsp; Who You Are: You have 2+ years of experience managing software engineering teams You have a s"
+              },
+              {
+                "title": "Manager I, Engineering - Security Libraries",
+                "location": "Paris, France",
+                "url": "https://careers.datadoghq.com/detail/8094219/?gh_jid=8094219",
+                "matched": "on-call",
+                "excerpt": "ng senior ICs as technical leaders Own team delivery and productivity: planning, milestones, reviews, and the on-call rotation Set product direction with Product Management and balance priorities across App &amp; API Protection"
+              },
+              {
+                "title": "Manager I, Engineering - Sensitive Data Scanner",
+                "location": "Paris, France",
+                "url": "https://careers.datadoghq.com/detail/8102794/?gh_jid=8102794",
+                "matched": "on-call",
+                "excerpt": "ustomer needs and business impact Stay hands-on: contribute to design decisions and participate in the team’s on-call rotation Recruit, mentor, and develop engineers as the team grows beyond its initial size Help build a strong"
+              }
+            ]
+          },
           {
             "key": "travel",
             "label": "Travel expected",
@@ -1667,22 +1709,6 @@
                 "url": "https://careers.datadoghq.com/detail/8224963/?gh_jid=8224963",
                 "matched": "international travel",
                 "excerpt": "ice and collaboration. This position is based in our Sydney or Singapore office and will require domestic and international travel. The role will focus particularly on developing our safety compliance, security program development and matur"
-              }
-            ]
-          },
-          {
-            "key": "oncall",
-            "label": "On-call access",
-            "severity": "high",
-            "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 1,
-            "examples": [
-              {
-                "title": "Manager I, Engineering - Security Libraries",
-                "location": "Paris, France",
-                "url": "https://careers.datadoghq.com/detail/8094219/?gh_jid=8094219",
-                "matched": "on-call",
-                "excerpt": "ng senior ICs as technical leaders Own team delivery and productivity: planning, milestones, reviews, and the on-call rotation Set product direction with Product Management and balance priorities across App &amp; API Protection"
               }
             ]
           },
@@ -2091,21 +2117,21 @@
       },
       "jobs": {
         "ok": true,
-        "total": 724,
-        "placeable": 653,
-        "unplaceable": 71,
-        "eea": 99,
-        "non_eea": 554,
+        "total": 740,
+        "placeable": 660,
+        "unplaceable": 80,
+        "eea": 101,
+        "non_eea": 559,
         "countries": {
-          "United States": 344,
-          "Ireland": 74,
+          "United States": 348,
+          "Ireland": 76,
           "Canada": 58,
-          "Singapore": 48,
+          "Singapore": 47,
+          "India": 47,
           "United Kingdom": 46,
-          "India": 45,
           "Mexico": 27,
           "Australia": 9,
-          "Spain": 7,
+          "Spain": 8,
           "Japan": 5,
           "France": 5,
           "Germany": 5,
@@ -2118,8 +2144,7 @@
           "Netherlands": 1,
           "Israel": 1,
           "Belgium": 1,
-          "New Zealand": 1,
-          "Poland": 1
+          "New Zealand": 1
         },
         "scanned": 26,
         "signals": [
@@ -2410,10 +2435,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 85,
-            "revisions": 84,
+            "captures": 86,
+            "revisions": 85,
             "first": "2019-04-01",
-            "last": "2026-10-18"
+            "last": "2026-10-19"
           }
         }
       ],
@@ -2431,7 +2456,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 96 open roles"
+              "excerpt": "United States: 95 open roles"
             },
             {
               "kind": "stat",
@@ -2540,15 +2565,15 @@
         "eea": 10,
         "non_eea": 131,
         "countries": {
-          "United States": 96,
+          "United States": 95,
           "United Kingdom": 17,
           "Germany": 7,
           "India": 4,
           "Singapore": 3,
+          "Brazil": 3,
           "Japan": 3,
           "France": 3,
           "Australia": 3,
-          "Brazil": 2,
           "Israel": 2,
           "South Korea": 1
         },
@@ -2851,9 +2876,9 @@
           "kind": "subprocessors",
           "url": "https://about.gitlab.com/privacy/subprocessors/",
           "path": "data/snapshots/gitlab/subprocessors.txt",
-          "lines": 230,
-          "chars": 5295,
-          "sha256": "b9e8de6a4bacb426",
+          "lines": 235,
+          "chars": 5405,
+          "sha256": "24e1348e2eb34348",
           "note": null,
           "archive": {
             "ok": true,
@@ -2993,28 +3018,28 @@
         "sensitivity_score": 10,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": false
+        "source_documents_changed": true
       },
       "jobs": {
         "ok": true,
-        "total": 231,
-        "placeable": 224,
+        "total": 236,
+        "placeable": 229,
         "unplaceable": 7,
         "eea": 43,
-        "non_eea": 181,
+        "non_eea": 186,
         "countries": {
-          "United States": 112,
-          "Canada": 64,
-          "United Kingdom": 48,
+          "United States": 113,
+          "Canada": 65,
+          "United Kingdom": 49,
           "India": 28,
           "Poland": 16,
           "Germany": 14,
-          "Ireland": 12,
-          "France": 8,
-          "Spain": 8,
-          "Singapore": 8,
-          "Australia": 6,
+          "Ireland": 13,
+          "Singapore": 10,
+          "Spain": 9,
+          "Australia": 8,
           "Israel": 6,
+          "France": 6,
           "Netherlands": 5,
           "Japan": 5,
           "Brazil": 5,
@@ -3032,7 +3057,7 @@
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 15,
+            "count": 16,
             "examples": [
               {
                 "title": "Customer Success Architect",
@@ -3191,7 +3216,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 5,
+            "count": 6,
             "examples": [
               {
                 "title": "Director, Support (Bengaluru)",
@@ -3219,6 +3244,37 @@
         ]
       },
       "drift": [
+        {
+          "id": "gitlab-subprocessors-2026-10-30",
+          "vendor_id": "gitlab",
+          "vendor_name": "GitLab",
+          "document": "subprocessors",
+          "document_label": "Sub-processor list",
+          "date": "2026-10-30",
+          "url": "https://about.gitlab.com/privacy/subprocessors/",
+          "hunks": [
+            {
+              "before": null,
+              "after": "LangChain, Inc."
+            },
+            {
+              "before": null,
+              "after": "United States"
+            },
+            {
+              "before": null,
+              "after": "Logging for"
+            },
+            {
+              "before": null,
+              "after": "AI-Powered Product Features"
+            },
+            {
+              "before": null,
+              "after": "GitLab.com, Dedicated, and Self-Managed"
+            }
+          ]
+        },
         {
           "id": "gitlab-privacy-2026-08-14",
           "vendor_id": "gitlab",
@@ -3328,27 +3384,27 @@
       },
       "jobs": {
         "ok": true,
-        "total": 404,
-        "placeable": 404,
+        "total": 402,
+        "placeable": 402,
         "unplaceable": 0,
-        "eea": 170,
-        "non_eea": 234,
+        "eea": 171,
+        "non_eea": 231,
         "countries": {
           "United States": 118,
-          "Spain": 35,
-          "Canada": 33,
+          "Spain": 36,
+          "Canada": 32,
           "United Kingdom": 28,
           "Greece": 26,
           "Ireland": 25,
           "Portugal": 24,
           "Poland": 22,
-          "India": 17,
+          "India": 16,
           "Norway": 11,
           "Romania": 10,
           "Switzerland": 8,
           "Germany": 7,
           "Japan": 7,
-          "Australia": 6,
+          "Australia": 5,
           "Belgium": 3,
           "Netherlands": 3,
           "Brazil": 3,
@@ -3374,7 +3430,7 @@
             "label": "Travel expected",
             "severity": "high",
             "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 9,
+            "count": 8,
             "examples": [
               {
                 "title": "Consulting Architect - Observability",

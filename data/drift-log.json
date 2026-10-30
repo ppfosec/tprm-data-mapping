@@ -1,5 +1,36 @@
 [
   {
+    "id": "gitlab-subprocessors-2026-10-30",
+    "vendor_id": "gitlab",
+    "vendor_name": "GitLab",
+    "document": "subprocessors",
+    "document_label": "Sub-processor list",
+    "date": "2026-10-30",
+    "url": "https://about.gitlab.com/privacy/subprocessors/",
+    "hunks": [
+      {
+        "before": null,
+        "after": "LangChain, Inc."
+      },
+      {
+        "before": null,
+        "after": "United States"
+      },
+      {
+        "before": null,
+        "after": "Logging for"
+      },
+      {
+        "before": null,
+        "after": "AI-Powered Product Features"
+      },
+      {
+        "before": null,
+        "after": "GitLab.com, Dedicated, and Self-Managed"
+      }
+    ]
+  },
+  {
     "id": "cloudflare-privacy-2026-10-29",
     "vendor_id": "cloudflare",
     "vendor_name": "Cloudflare",
