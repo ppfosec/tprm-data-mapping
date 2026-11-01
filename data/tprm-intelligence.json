@@ -612,10 +612,10 @@
           "diff": null,
           "archive": {
             "ok": true,
-            "captures": 107,
-            "revisions": 106,
+            "captures": 109,
+            "revisions": 108,
             "first": "2024-09-26",
-            "last": "2026-10-31"
+            "last": "2026-11-01"
           }
         },
         {
@@ -2110,17 +2110,17 @@
       },
       "jobs": {
         "ok": true,
-        "total": 746,
-        "placeable": 667,
+        "total": 745,
+        "placeable": 666,
         "unplaceable": 79,
         "eea": 105,
-        "non_eea": 562,
+        "non_eea": 561,
         "countries": {
           "United States": 349,
           "Ireland": 77,
           "Canada": 59,
           "United Kingdom": 47,
-          "Singapore": 47,
+          "Singapore": 46,
           "India": 46,
           "Mexico": 27,
           "Australia": 9,
@@ -2548,7 +2548,7 @@
         "sensitivity_score": 30,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": true
+        "source_documents_changed": false
       },
       "jobs": {
         "ok": true,

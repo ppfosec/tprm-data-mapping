@@ -1,5 +1,5 @@
 # source: https://www.anthropic.com/legal/aup
-# collected: 2026-10-31
+# collected: 2026-11-01
 
 Section
 Universal Usage Standards
