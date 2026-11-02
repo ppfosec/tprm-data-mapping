@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T10:36:57+00:00",
+  "generated_at": "2026-11-02T11:22:38+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -155,10 +155,10 @@
           "diff": null,
           "archive": {
             "ok": true,
-            "captures": 109,
-            "revisions": 108,
+            "captures": 111,
+            "revisions": 110,
             "first": "2024-09-26",
-            "last": "2026-11-01"
+            "last": "2026-11-02"
           }
         },
         {
@@ -180,21 +180,21 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 675,
-        "placeable": 673,
+        "total": 678,
+        "placeable": 676,
         "unplaceable": 2,
-        "eea": 35,
+        "eea": 38,
         "non_eea": 638,
         "countries": {
-          "United States": 533,
-          "United Kingdom": 51,
+          "United States": 535,
+          "United Kingdom": 49,
           "Japan": 16,
-          "Germany": 13,
+          "Germany": 15,
           "South Korea": 12,
-          "Singapore": 11,
+          "Australia": 11,
+          "Singapore": 10,
           "Ireland": 10,
-          "Australia": 10,
-          "France": 9,
+          "France": 10,
           "India": 4,
           "Switzerland": 4,
           "Canada": 3,
@@ -208,19 +208,26 @@
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 2,
+            "count": 3,
             "examples": [
               {
                 "title": "Applied AI Architect",
-                "location": "Bangalore, India",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
+                "location": "Mumbai, India",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
                 "matched": "across time zones",
                 "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
               },
               {
                 "title": "Applied AI Architect",
-                "location": "Mumbai, India",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
+                "location": "Sydney, Australia",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5450798008",
+                "matched": "across time zones",
+                "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
+              },
+              {
+                "title": "Applied AI Architect",
+                "location": "Bangalore, India",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
                 "matched": "across time zones",
                 "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
               }
@@ -265,7 +272,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "638 of 673 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "638 of 676 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -274,11 +281,11 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 533 open roles"
+              "excerpt": "United States: 535 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 51 open roles"
+              "excerpt": "United Kingdom: 49 open roles"
             },
             {
               "kind": "stat",
@@ -301,16 +308,16 @@
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Bangalore, India",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
+              "location": "Mumbai, India",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
               "matched": "across time zones",
               "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
             },
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Mumbai, India",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
+              "location": "Sydney, Australia",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5450798008",
               "matched": "across time zones",
               "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
             }
@@ -403,9 +410,9 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 40,
+        "total": 44,
         "footprint": 24,
-        "access": 12,
+        "access": 16,
         "transparency": 4,
         "record": 0
       },
@@ -588,10 +595,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 319,
-            "revisions": 318,
+            "captures": 321,
+            "revisions": 320,
             "first": "2021-09-03",
-            "last": "2026-10-22"
+            "last": "2026-11-01"
           }
         },
         {
@@ -604,10 +611,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 159,
-            "revisions": 158,
+            "captures": 160,
+            "revisions": 159,
             "first": "2018-11-17",
-            "last": "2026-10-14"
+            "last": "2026-11-01"
           }
         },
         {
@@ -629,9 +636,9 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 464,
+        "total": 466,
         "placeable": 3,
-        "unplaceable": 461,
+        "unplaceable": 463,
         "eea": 1,
         "non_eea": 2,
         "countries": {
@@ -646,7 +653,7 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 7,
+            "count": 8,
             "examples": [
               {
                 "title": "AI Security Research & Red Team Engineer",
@@ -757,6 +764,29 @@
             ]
           },
           {
+            "key": "named_tooling",
+            "label": "Named internal tooling",
+            "severity": "low",
+            "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
+            "count": 2,
+            "examples": [
+              {
+                "title": "GTM Data Specialist, Consumption & Revenue Operations",
+                "location": "Hybrid",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8301509?gh_jid=8301509",
+                "matched": "Salesforce",
+                "excerpt": "k their output against the data, and can show examples of work you made faster or better with AI Bonus points Salesforce: Experience with reports, SQL, account hierarchies, and ownership rules Building with AI: Experience building"
+              },
+              {
+                "title": "IT Operations Specialist I",
+                "location": "In-Office",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8281074?gh_jid=8281074",
+                "matched": "Zendesk",
+                "excerpt": "ms like Jamf Pro or Kandji. Experience using corporate ticketing platforms such as Jira Service Management or Zendesk. Relevant technical certifications such as Apple Certified Support Professional (ACSP), Google Workspace Admi"
+              }
+            ]
+          },
+          {
             "key": "sovereignty_work",
             "label": "Sovereignty workstream",
             "severity": "low",
@@ -769,22 +799,6 @@
                 "url": "https://boards.greenhouse.io/cloudflare/jobs/8319377?gh_jid=8319377",
                 "matched": "sovereign",
                 "excerpt": "ctivity, telco integration Application performance: caching, latency, scaling at the edge Data protection and sovereignty: data residency, encryption and key management, post-quantum readiness Preferred Experience Financial servi"
-              }
-            ]
-          },
-          {
-            "key": "named_tooling",
-            "label": "Named internal tooling",
-            "severity": "low",
-            "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 1,
-            "examples": [
-              {
-                "title": "GTM Data Specialist, Consumption & Revenue Operations",
-                "location": "Hybrid",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/8301509?gh_jid=8301509",
-                "matched": "Salesforce",
-                "excerpt": "k their output against the data, and can show examples of work you made faster or better with AI Bonus points Salesforce: Experience with reports, SQL, account hierarchies, and ownership rules Building with AI: Experience building"
               }
             ]
           }
@@ -1052,11 +1066,11 @@
         "total": 397,
         "placeable": 397,
         "unplaceable": 0,
-        "eea": 67,
-        "non_eea": 330,
+        "eea": 68,
+        "non_eea": 329,
         "countries": {
           "United States": 210,
-          "France": 34,
+          "France": 35,
           "Japan": 33,
           "Netherlands": 20,
           "Singapore": 20,
@@ -1065,7 +1079,7 @@
           "South Korea": 14,
           "Australia": 14,
           "Brazil": 11,
-          "India": 10,
+          "India": 9,
           "Spain": 7,
           "Israel": 4,
           "Mexico": 4,
@@ -1074,11 +1088,11 @@
           "Germany": 2,
           "Switzerland": 1,
           "Portugal": 1,
-          "Canada": 1,
           "Chile": 1,
           "Indonesia": 1,
-          "Austria": 1,
+          "Canada": 1,
           "Poland": 1,
+          "Austria": 1,
           "Italy": 1,
           "Saudi Arabia": 1
         },
@@ -1545,22 +1559,22 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 745,
-        "placeable": 666,
-        "unplaceable": 79,
-        "eea": 105,
-        "non_eea": 561,
+        "total": 749,
+        "placeable": 669,
+        "unplaceable": 80,
+        "eea": 106,
+        "non_eea": 563,
         "countries": {
           "United States": 349,
-          "Ireland": 77,
+          "Ireland": 79,
           "Canada": 59,
-          "United Kingdom": 47,
-          "Singapore": 46,
+          "United Kingdom": 48,
+          "Singapore": 47,
           "India": 46,
           "Mexico": 27,
           "Australia": 9,
-          "Spain": 8,
           "Germany": 7,
+          "Spain": 7,
           "Japan": 5,
           "France": 5,
           "Taiwan": 5,
@@ -1599,7 +1613,7 @@
               },
               {
                 "title": "Account Executive, Platforms Hunter (Spanish fluency)",
-                "location": "Madrid",
+                "location": "Dublin ",
                 "url": "https://stripe.com/jobs/search?gh_jid=8319459",
                 "matched": "segment",
                 "excerpt": "act. Own the complete sales cycle, from lead generation through to product adoption within the target Startup segment. Develop robust outbound strategies and execute creative prospecting programmes to create and nurture new bus"
@@ -1951,8 +1965,8 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 335,
-            "revisions": 334,
+            "captures": 337,
+            "revisions": 336,
             "first": "2024-01-18",
             "last": "2026-10-23"
           }
@@ -1992,14 +2006,14 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 140,
-        "placeable": 140,
+        "total": 141,
+        "placeable": 141,
         "unplaceable": 0,
         "eea": 10,
-        "non_eea": 130,
+        "non_eea": 131,
         "countries": {
           "United States": 94,
-          "United Kingdom": 17,
+          "United Kingdom": 18,
           "Germany": 7,
           "India": 4,
           "Singapore": 3,
@@ -2118,7 +2132,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "130 of 140 placeable roles name no EEA site — most prominently United States, United Kingdom, India. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "131 of 141 placeable roles name no EEA site — most prominently United States, United Kingdom, India. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -2131,7 +2145,7 @@
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 17 open roles"
+              "excerpt": "United Kingdom: 18 open roles"
             },
             {
               "kind": "stat",
@@ -2453,25 +2467,25 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 238,
-        "placeable": 231,
+        "total": 235,
+        "placeable": 228,
         "unplaceable": 7,
-        "eea": 42,
-        "non_eea": 189,
+        "eea": 40,
+        "non_eea": 188,
         "countries": {
           "United States": 114,
-          "Canada": 65,
-          "United Kingdom": 48,
-          "India": 30,
-          "Poland": 16,
+          "Canada": 64,
+          "United Kingdom": 46,
+          "India": 28,
+          "Poland": 14,
           "Germany": 14,
-          "Ireland": 12,
+          "Ireland": 11,
           "Singapore": 10,
           "Spain": 8,
           "Australia": 8,
           "France": 6,
-          "Israel": 6,
           "Netherlands": 5,
+          "Israel": 5,
           "Japan": 5,
           "Brazil": 5,
           "South Korea": 4,
@@ -2488,7 +2502,7 @@
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 15,
+            "count": 16,
             "examples": [
               {
                 "title": "Customer Success Architect",
@@ -2647,7 +2661,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 6,
+            "count": 7,
             "examples": [
               {
                 "title": "Data Scientist, Enterprise Analytics",
@@ -2810,8 +2824,8 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 49,
-        "footprint": 20,
+        "total": 50,
+        "footprint": 21,
         "access": 25,
         "transparency": 4,
         "record": 0
@@ -2893,19 +2907,19 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 407,
-        "placeable": 407,
+        "total": 410,
+        "placeable": 410,
         "unplaceable": 0,
-        "eea": 171,
+        "eea": 174,
         "non_eea": 236,
         "countries": {
           "United States": 122,
-          "Spain": 36,
+          "Spain": 37,
           "Canada": 32,
           "United Kingdom": 28,
-          "Greece": 26,
+          "Greece": 27,
           "Ireland": 25,
-          "Portugal": 24,
+          "Portugal": 25,
           "Poland": 22,
           "India": 16,
           "Norway": 11,
