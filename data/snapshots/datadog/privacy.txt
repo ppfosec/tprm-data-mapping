@@ -1,5 +1,5 @@
 # source: https://www.datadoghq.com/legal/privacy/
-# collected: 2026-11-02
+# collected: 2026-11-03
 
 Product
 Infrastructure
@@ -38,7 +38,6 @@ Runtime Code Analysis
 IaC Security
 Secret Scanning
 Cloud Security
-Sensitive Data Scanner
 Cloud Security Posture Management
 Cloud Infrastructure Entitlement Management
 Vulnerability Management
@@ -47,11 +46,12 @@ Cloud Workload Protection
 App & API Protection
 Cloud SIEM
 Bits Security Analyst
+AI Guard
+Sensitive Data Scanner
 Digital Experience
 Product Analytics
 Experiments
-Browser Real User Monitoring
-Mobile Real User Monitoring
+Real User Monitoring
 Session Replay
 Synthetic Monitoring
 Mobile App Testing
@@ -82,6 +82,7 @@ Bits Chat
 Bits Agent Builder
 Bits Code
 Bits Security Analyst
+AI Guard
 Agent Observability
 MCP Server
 Pup CLI

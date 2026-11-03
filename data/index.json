@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T11:22:38+00:00",
+  "generated_at": "2026-11-03T11:00:29+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -155,10 +155,10 @@
           "diff": null,
           "archive": {
             "ok": true,
-            "captures": 111,
-            "revisions": 110,
+            "captures": 114,
+            "revisions": 113,
             "first": "2024-09-26",
-            "last": "2026-11-02"
+            "last": "2026-11-03"
           }
         },
         {
@@ -171,32 +171,32 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 81,
-            "revisions": 80,
+            "captures": 84,
+            "revisions": 83,
             "first": "2025-03-11",
-            "last": "2026-10-28"
+            "last": "2026-11-02"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 678,
-        "placeable": 676,
+        "total": 676,
+        "placeable": 674,
         "unplaceable": 2,
-        "eea": 38,
-        "non_eea": 638,
+        "eea": 37,
+        "non_eea": 637,
         "countries": {
           "United States": 535,
-          "United Kingdom": 49,
+          "United Kingdom": 46,
           "Japan": 16,
           "Germany": 15,
           "South Korea": 12,
           "Australia": 11,
           "Singapore": 10,
-          "Ireland": 10,
           "France": 10,
-          "India": 4,
-          "Switzerland": 4,
+          "Ireland": 9,
+          "India": 5,
+          "Switzerland": 5,
           "Canada": 3,
           "Italy": 2,
           "Spain": 1
@@ -212,6 +212,13 @@
             "examples": [
               {
                 "title": "Applied AI Architect",
+                "location": "Bangalore, India",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
+                "matched": "across time zones",
+                "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
+              },
+              {
+                "title": "Applied AI Architect",
                 "location": "Mumbai, India",
                 "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
                 "matched": "across time zones",
@@ -222,14 +229,7 @@
                 "location": "Sydney, Australia",
                 "url": "https://job-boards.greenhouse.io/anthropic/jobs/5450798008",
                 "matched": "across time zones",
-                "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
-              },
-              {
-                "title": "Applied AI Architect",
-                "location": "Bangalore, India",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
-                "matched": "across time zones",
-                "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
+                "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the Australia market You may be a good fit if you"
               }
             ]
           },
@@ -272,7 +272,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "638 of 676 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "637 of 674 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -285,7 +285,7 @@
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 49 open roles"
+              "excerpt": "United Kingdom: 46 open roles"
             },
             {
               "kind": "stat",
@@ -308,16 +308,16 @@
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Mumbai, India",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
+              "location": "Bangalore, India",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
               "matched": "across time zones",
               "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
             },
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Sydney, Australia",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5450798008",
+              "location": "Mumbai, India",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
               "matched": "across time zones",
               "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
             }
@@ -595,8 +595,8 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 321,
-            "revisions": 320,
+            "captures": 323,
+            "revisions": 322,
             "first": "2021-09-03",
             "last": "2026-11-01"
           }
@@ -636,9 +636,9 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 466,
+        "total": 467,
         "placeable": 3,
-        "unplaceable": 463,
+        "unplaceable": 464,
         "eea": 1,
         "non_eea": 2,
         "countries": {
@@ -653,7 +653,7 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 8,
+            "count": 7,
             "examples": [
               {
                 "title": "AI Security Research & Red Team Engineer",
@@ -713,8 +713,15 @@
             "label": "Travel expected",
             "severity": "high",
             "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 2,
+            "count": 3,
             "examples": [
+              {
+                "title": "Data Center Design Engineer",
+                "location": "Hybrid",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8227832?gh_jid=8227832",
+                "matched": "Travel up to 25%",
+                "excerpt": "s and fulfil ad-hoc reporting requests Research new and innovative power efficiency technologies and programs Travel up to 25% to perform infrastructure audits, validate data center construction work and buildouts, and participate in co"
+              },
               {
                 "title": "Data Center Site Selection - Hyperscale",
                 "location": "Hybrid",
@@ -728,22 +735,6 @@
                 "url": "https://boards.greenhouse.io/cloudflare/jobs/8293647?gh_jid=8293647",
                 "matched": "frequent travel",
                 "excerpt": "risk and availability reporting to leadership. Ability to travel regularly to data center sites. Expect more frequent travel during site builds, shifting to periodic visits as sites reach steady state. Preferred Qualifications Experie"
-              }
-            ]
-          },
-          {
-            "key": "follow_the_sun",
-            "label": "Follow-the-sun support",
-            "severity": "high",
-            "why": "A rotation that hands the same production access around the globe every eight hours.",
-            "count": 1,
-            "examples": [
-              {
-                "title": "Engineering Manager, Edge SRE",
-                "location": "Hybrid",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/8243207?gh_jid=8243207",
-                "matched": "follow the sun",
-                "excerpt": "responsible for production reliability. SREs are based&nbsp; in locations in Asia, Europe and the US enabling follow the sun coverage during daytime hours. SREs are supported by all engineering teams at Cloudflare who participate in o"
               }
             ]
           },
@@ -824,7 +815,7 @@
           "rule": "access_vs_rotation",
           "severity": "medium",
           "headline": "Restricted-access language alongside global rotations",
-          "detail": "The documents describe access controls in principle, while postings describe distributed across time zones, follow-the-sun support, on-call access, round-the-clock coverage. Both can be true; the reconciliation is what a reviewer needs to see.",
+          "detail": "The documents describe access controls in principle, while postings describe distributed across time zones, on-call access, round-the-clock coverage. Both can be true; the reconciliation is what a reviewer needs to see.",
           "claim": {
             "kind": "dpa",
             "text": "d) ensure that only authorized personnel have access to such Personal Data and that any persons whom it authorizes to have access to the Personal Data are under contractual or statutory obligations of confidentiality;",
@@ -1016,9 +1007,9 @@
           "kind": "privacy",
           "url": "https://www.datadoghq.com/legal/privacy/",
           "path": "data/snapshots/datadog/privacy.txt",
-          "lines": 455,
-          "chars": 26296,
-          "sha256": "3584067664bd7167",
+          "lines": 456,
+          "chars": 26278,
+          "sha256": "d07e16c09f2e22f0",
           "note": null,
           "archive": {
             "ok": true,
@@ -1032,9 +1023,9 @@
           "kind": "dpa",
           "url": "https://www.datadoghq.com/legal/data-processing-addendum/",
           "path": "data/snapshots/datadog/dpa.txt",
-          "lines": 471,
-          "chars": 29946,
-          "sha256": "5db7e30225b6d5fc",
+          "lines": 472,
+          "chars": 29928,
+          "sha256": "499e26ae1cfb5c0e",
           "note": null,
           "archive": {
             "ok": true,
@@ -1048,9 +1039,9 @@
           "kind": "subprocessors",
           "url": "https://www.datadoghq.com/legal/subprocessors/",
           "path": "data/snapshots/datadog/subprocessors.txt",
-          "lines": 287,
-          "chars": 5389,
-          "sha256": "873f616865552484",
+          "lines": 288,
+          "chars": 5371,
+          "sha256": "605a97b8c660ba92",
           "note": null,
           "archive": {
             "ok": true,
@@ -1063,38 +1054,38 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 397,
-        "placeable": 397,
+        "total": 402,
+        "placeable": 402,
         "unplaceable": 0,
         "eea": 68,
-        "non_eea": 329,
+        "non_eea": 334,
         "countries": {
-          "United States": 210,
-          "France": 35,
+          "United States": 215,
+          "France": 34,
           "Japan": 33,
+          "Ireland": 20,
           "Netherlands": 20,
           "Singapore": 20,
-          "Ireland": 19,
           "United Kingdom": 18,
           "South Korea": 14,
           "Australia": 14,
           "Brazil": 11,
-          "India": 9,
+          "India": 8,
           "Spain": 7,
           "Israel": 4,
           "Mexico": 4,
           "Denmark": 2,
           "Sweden": 2,
+          "Saudi Arabia": 2,
           "Germany": 2,
           "Switzerland": 1,
           "Portugal": 1,
-          "Chile": 1,
           "Indonesia": 1,
+          "Chile": 1,
           "Canada": 1,
           "Poland": 1,
           "Austria": 1,
-          "Italy": 1,
-          "Saudi Arabia": 1
+          "Italy": 1
         },
         "scanned": 26,
         "signals": [
@@ -1137,15 +1128,15 @@
             "examples": [
               {
                 "title": "Global Safety & Security Manager",
-                "location": "Sydney, Australia",
-                "url": "https://careers.datadoghq.com/detail/8224963/?gh_jid=8224963",
+                "location": "Singapore, Singapore",
+                "url": "https://careers.datadoghq.com/detail/8223272/?gh_jid=8223272",
                 "matched": "international travel",
                 "excerpt": "ice and collaboration. This position is based in our Sydney or Singapore office and will require domestic and international travel. The role will focus particularly on developing our safety compliance, security program development and matur"
               },
               {
                 "title": "Global Safety & Security Manager",
-                "location": "Singapore, Singapore",
-                "url": "https://careers.datadoghq.com/detail/8223272/?gh_jid=8223272",
+                "location": "Sydney, Australia",
+                "url": "https://careers.datadoghq.com/detail/8224963/?gh_jid=8224963",
                 "matched": "international travel",
                 "excerpt": "ice and collaboration. This position is based in our Sydney or Singapore office and will require domestic and international travel. The role will focus particularly on developing our safety compliance, security program development and matur"
               }
@@ -1346,7 +1337,7 @@
         "sensitivity_score": 20,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": false
+        "source_documents_changed": true
       },
       "score": {
         "total": 46,
@@ -1356,6 +1347,111 @@
         "record": 0
       },
       "drift": [
+        {
+          "id": "datadog-privacy-2026-11-03",
+          "vendor_id": "datadog",
+          "vendor_name": "Datadog",
+          "document": "privacy",
+          "document_label": "Privacy policy",
+          "date": "2026-11-03",
+          "url": "https://www.datadoghq.com/legal/privacy/",
+          "hunks": [
+            {
+              "before": "Sensitive Data Scanner",
+              "after": null
+            },
+            {
+              "before": null,
+              "after": "AI Guard"
+            },
+            {
+              "before": null,
+              "after": "Sensitive Data Scanner"
+            },
+            {
+              "before": "Browser Real User Monitoring",
+              "after": "Real User Monitoring"
+            },
+            {
+              "before": "Mobile Real User Monitoring",
+              "after": null
+            },
+            {
+              "before": null,
+              "after": "AI Guard"
+            }
+          ]
+        },
+        {
+          "id": "datadog-dpa-2026-11-03",
+          "vendor_id": "datadog",
+          "vendor_name": "Datadog",
+          "document": "dpa",
+          "document_label": "Data processing agreement",
+          "date": "2026-11-03",
+          "url": "https://www.datadoghq.com/legal/data-processing-addendum/",
+          "hunks": [
+            {
+              "before": "Sensitive Data Scanner",
+              "after": null
+            },
+            {
+              "before": null,
+              "after": "AI Guard"
+            },
+            {
+              "before": null,
+              "after": "Sensitive Data Scanner"
+            },
+            {
+              "before": "Browser Real User Monitoring",
+              "after": "Real User Monitoring"
+            },
+            {
+              "before": "Mobile Real User Monitoring",
+              "after": null
+            },
+            {
+              "before": null,
+              "after": "AI Guard"
+            }
+          ]
+        },
+        {
+          "id": "datadog-subprocessors-2026-11-03",
+          "vendor_id": "datadog",
+          "vendor_name": "Datadog",
+          "document": "subprocessors",
+          "document_label": "Sub-processor list",
+          "date": "2026-11-03",
+          "url": "https://www.datadoghq.com/legal/subprocessors/",
+          "hunks": [
+            {
+              "before": "Sensitive Data Scanner",
+              "after": null
+            },
+            {
+              "before": null,
+              "after": "AI Guard"
+            },
+            {
+              "before": null,
+              "after": "Sensitive Data Scanner"
+            },
+            {
+              "before": "Browser Real User Monitoring",
+              "after": "Real User Monitoring"
+            },
+            {
+              "before": "Mobile Real User Monitoring",
+              "after": null
+            },
+            {
+              "before": null,
+              "after": "AI Guard"
+            }
+          ]
+        },
         {
           "id": "datadog-subprocessors-2026-10-20",
           "vendor_id": "datadog",
@@ -1432,71 +1528,6 @@
               "after": "Database Visibility"
             }
           ]
-        },
-        {
-          "id": "datadog-dpa-2026-09-29",
-          "vendor_id": "datadog",
-          "vendor_name": "Datadog",
-          "document": "dpa",
-          "document_label": "Data processing agreement",
-          "date": "2026-09-29",
-          "url": "https://www.datadoghq.com/legal/data-processing-addendum/",
-          "hunks": [
-            {
-              "before": null,
-              "after": "Database Visibility"
-            }
-          ]
-        },
-        {
-          "id": "datadog-subprocessors-2026-09-29",
-          "vendor_id": "datadog",
-          "vendor_name": "Datadog",
-          "document": "subprocessors",
-          "document_label": "Sub-processor list",
-          "date": "2026-09-29",
-          "url": "https://www.datadoghq.com/legal/subprocessors/",
-          "hunks": [
-            {
-              "before": null,
-              "after": "Database Visibility"
-            }
-          ]
-        },
-        {
-          "id": "datadog-privacy-2026-09-12",
-          "vendor_id": "datadog",
-          "vendor_name": "Datadog",
-          "document": "privacy",
-          "document_label": "Privacy policy",
-          "date": "2026-09-12",
-          "url": "https://www.datadoghq.com/legal/privacy/",
-          "hunks": [
-            {
-              "before": "Metrics",
-              "after": "Custom Metrics"
-            },
-            {
-              "before": null,
-              "after": "Network Monitoring"
-            },
-            {
-              "before": "Network Monitoring",
-              "after": "Serverless Monitoring"
-            },
-            {
-              "before": "Serverless",
-              "after": null
-            },
-            {
-              "before": "Cloudcraft",
-              "after": null
-            },
-            {
-              "before": "Sensitive Data Scanner",
-              "after": null
-            }
-          ]
         }
       ]
     },
@@ -1559,23 +1590,23 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 749,
-        "placeable": 669,
+        "total": 738,
+        "placeable": 658,
         "unplaceable": 80,
-        "eea": 106,
-        "non_eea": 563,
+        "eea": 105,
+        "non_eea": 553,
         "countries": {
-          "United States": 349,
-          "Ireland": 79,
+          "United States": 339,
+          "Ireland": 78,
           "Canada": 59,
-          "United Kingdom": 48,
-          "Singapore": 47,
-          "India": 46,
+          "United Kingdom": 47,
+          "Singapore": 46,
+          "India": 45,
           "Mexico": 27,
           "Australia": 9,
+          "Japan": 7,
           "Germany": 7,
           "Spain": 7,
-          "Japan": 5,
           "France": 5,
           "Taiwan": 5,
           "Romania": 4,
@@ -1997,25 +2028,25 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 86,
-            "revisions": 85,
+            "captures": 85,
+            "revisions": 84,
             "first": "2019-04-01",
-            "last": "2026-10-19"
+            "last": "2026-10-18"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 141,
-        "placeable": 141,
+        "total": 143,
+        "placeable": 143,
         "unplaceable": 0,
-        "eea": 10,
-        "non_eea": 131,
+        "eea": 11,
+        "non_eea": 132,
         "countries": {
-          "United States": 94,
-          "United Kingdom": 18,
-          "Germany": 7,
-          "India": 4,
+          "United States": 93,
+          "United Kingdom": 19,
+          "Germany": 8,
+          "India": 5,
           "Singapore": 3,
           "Brazil": 3,
           "Japan": 3,
@@ -2132,7 +2163,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "131 of 141 placeable roles name no EEA site — most prominently United States, United Kingdom, India. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "132 of 143 placeable roles name no EEA site — most prominently United States, United Kingdom, India. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -2141,15 +2172,15 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 94 open roles"
+              "excerpt": "United States: 93 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 18 open roles"
+              "excerpt": "United Kingdom: 19 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "India: 4 open roles"
+              "excerpt": "India: 5 open roles"
             }
           ],
           "question": "Which roles can access production data, and from which countries? Does the residency commitment cover support and engineering access, or only data at rest?"
@@ -2467,28 +2498,28 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 235,
-        "placeable": 228,
+        "total": 236,
+        "placeable": 229,
         "unplaceable": 7,
-        "eea": 40,
-        "non_eea": 188,
+        "eea": 39,
+        "non_eea": 190,
         "countries": {
-          "United States": 114,
-          "Canada": 64,
-          "United Kingdom": 46,
-          "India": 28,
+          "United States": 113,
+          "Canada": 63,
+          "United Kingdom": 43,
+          "India": 33,
           "Poland": 14,
           "Germany": 14,
           "Ireland": 11,
           "Singapore": 10,
-          "Spain": 8,
           "Australia": 8,
+          "Spain": 7,
           "France": 6,
-          "Netherlands": 5,
           "Israel": 5,
-          "Japan": 5,
           "Brazil": 5,
           "South Korea": 4,
+          "Netherlands": 4,
+          "Japan": 4,
           "Austria": 3,
           "Mexico": 2,
           "United Arab Emirates": 2,
@@ -2580,7 +2611,7 @@
               },
               {
                 "title": "Intermediate Software Engineer, Security Factory: Vulnerability Management ",
-                "location": "Remote, Canada; Remote, Israel; Remote, United Kingdom",
+                "location": "Remote, Israel; Remote, United Kingdom",
                 "url": "https://job-boards.greenhouse.io/gitlab/jobs/8688078002",
                 "matched": "on-call",
                 "excerpt": "ze impediments to our efficiency as a team (\"technical debt\"), propose and implement solutions Participate in on-call rotations to assist troubleshooting product operations, security operations, and urgent engineering issues. W"
@@ -2661,7 +2692,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 7,
+            "count": 8,
             "examples": [
               {
                 "title": "Data Scientist, Enterprise Analytics",
@@ -2907,19 +2938,19 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 410,
-        "placeable": 410,
+        "total": 409,
+        "placeable": 409,
         "unplaceable": 0,
-        "eea": 174,
-        "non_eea": 236,
+        "eea": 175,
+        "non_eea": 234,
         "countries": {
-          "United States": 122,
-          "Spain": 37,
-          "Canada": 32,
+          "United States": 119,
+          "Spain": 39,
+          "Canada": 33,
           "United Kingdom": 28,
           "Greece": 27,
           "Ireland": 25,
-          "Portugal": 25,
+          "Portugal": 24,
           "Poland": 22,
           "India": 16,
           "Norway": 11,
@@ -3078,29 +3109,6 @@
             ]
           },
           {
-            "key": "gov_enclave",
-            "label": "Government enclave",
-            "severity": "low",
-            "why": "A separate sovereign estate exists, which confirms the commercial one is not it.",
-            "count": 2,
-            "examples": [
-              {
-                "title": "Principal Security Compliance Analyst - Public Sector - InfoSec",
-                "location": "United States",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8166582&gh_jid=8166582",
-                "matched": "FedRAMP",
-                "excerpt": "Role : Join our team as a Principal Security Compliance Analyst , where you'll take the lead in managing our FedRAMP Moderate program . You'll be part of a fantastic team that values a strong security culture, allowing you to"
-              },
-              {
-                "title": "Principal Software Developer - Security - Elasticsearch",
-                "location": "Canada",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8082617&gh_jid=8082617",
-                "matched": "FedRAMP",
-                "excerpt": "to quantum-resistant cryptographic algorithms. Hands-on experience mapping engine-level technical controls to FedRAMP (Moderate/High), FIPS 140, and SOC 2 requirements. Experience working on the internals of a data store or sea"
-              }
-            ]
-          },
-          {
             "key": "sovereignty_work",
             "label": "Sovereignty workstream",
             "severity": "low",
@@ -3113,6 +3121,22 @@
                 "url": "https://jobs.elastic.co/jobs?gh_jid=8091966&gh_jid=8091966",
                 "matched": "sovereign",
                 "excerpt": "scaler patterns on AWS, Google Cloud and Microsoft Azure. Back partner-built solutions on Elastic — vertical, sovereign and managed offerings that extend our product surface beyond what Elastic builds itself. Build reusable demos"
+              }
+            ]
+          },
+          {
+            "key": "gov_enclave",
+            "label": "Government enclave",
+            "severity": "low",
+            "why": "A separate sovereign estate exists, which confirms the commercial one is not it.",
+            "count": 1,
+            "examples": [
+              {
+                "title": "Principal Software Developer - Security - Elasticsearch",
+                "location": "Canada",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8082617&gh_jid=8082617",
+                "matched": "FedRAMP",
+                "excerpt": "to quantum-resistant cryptographic algorithms. Hands-on experience mapping engine-level technical controls to FedRAMP (Moderate/High), FIPS 140, and SOC 2 requirements. Experience working on the internals of a data store or sea"
               }
             ]
           }
@@ -3310,14 +3334,14 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 91,
-        "placeable": 90,
+        "total": 89,
+        "placeable": 88,
         "unplaceable": 1,
         "eea": 7,
-        "non_eea": 83,
+        "non_eea": 81,
         "countries": {
-          "United States": 71,
-          "United Kingdom": 16,
+          "United States": 70,
+          "United Kingdom": 15,
           "Germany": 7,
           "Australia": 4,
           "India": 1

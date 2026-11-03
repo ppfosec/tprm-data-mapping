@@ -1,5 +1,110 @@
 [
   {
+    "id": "datadog-privacy-2026-11-03",
+    "vendor_id": "datadog",
+    "vendor_name": "Datadog",
+    "document": "privacy",
+    "document_label": "Privacy policy",
+    "date": "2026-11-03",
+    "url": "https://www.datadoghq.com/legal/privacy/",
+    "hunks": [
+      {
+        "before": "Sensitive Data Scanner",
+        "after": null
+      },
+      {
+        "before": null,
+        "after": "AI Guard"
+      },
+      {
+        "before": null,
+        "after": "Sensitive Data Scanner"
+      },
+      {
+        "before": "Browser Real User Monitoring",
+        "after": "Real User Monitoring"
+      },
+      {
+        "before": "Mobile Real User Monitoring",
+        "after": null
+      },
+      {
+        "before": null,
+        "after": "AI Guard"
+      }
+    ]
+  },
+  {
+    "id": "datadog-dpa-2026-11-03",
+    "vendor_id": "datadog",
+    "vendor_name": "Datadog",
+    "document": "dpa",
+    "document_label": "Data processing agreement",
+    "date": "2026-11-03",
+    "url": "https://www.datadoghq.com/legal/data-processing-addendum/",
+    "hunks": [
+      {
+        "before": "Sensitive Data Scanner",
+        "after": null
+      },
+      {
+        "before": null,
+        "after": "AI Guard"
+      },
+      {
+        "before": null,
+        "after": "Sensitive Data Scanner"
+      },
+      {
+        "before": "Browser Real User Monitoring",
+        "after": "Real User Monitoring"
+      },
+      {
+        "before": "Mobile Real User Monitoring",
+        "after": null
+      },
+      {
+        "before": null,
+        "after": "AI Guard"
+      }
+    ]
+  },
+  {
+    "id": "datadog-subprocessors-2026-11-03",
+    "vendor_id": "datadog",
+    "vendor_name": "Datadog",
+    "document": "subprocessors",
+    "document_label": "Sub-processor list",
+    "date": "2026-11-03",
+    "url": "https://www.datadoghq.com/legal/subprocessors/",
+    "hunks": [
+      {
+        "before": "Sensitive Data Scanner",
+        "after": null
+      },
+      {
+        "before": null,
+        "after": "AI Guard"
+      },
+      {
+        "before": null,
+        "after": "Sensitive Data Scanner"
+      },
+      {
+        "before": "Browser Real User Monitoring",
+        "after": "Real User Monitoring"
+      },
+      {
+        "before": "Mobile Real User Monitoring",
+        "after": null
+      },
+      {
+        "before": null,
+        "after": "AI Guard"
+      }
+    ]
+  },
+  {
     "id": "figma-privacy-2026-10-31",
     "vendor_id": "figma",
     "vendor_name": "Figma",
