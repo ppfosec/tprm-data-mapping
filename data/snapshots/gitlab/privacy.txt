@@ -1,5 +1,5 @@
 # source: https://about.gitlab.com/privacy/
-# collected: 2026-11-03
+# collected: 2026-11-04
 
 Close
 To search repositories and projects, login to
@@ -11,6 +11,9 @@ CI/CD
 GitLab on AWS
 GitLab on Google Cloud
 Why GitLab?
+GitLab Orbit is generally available.
+Increase agent accuracy and lower token cost
+Read the announcement
 Jump to a section
 GitLab Privacy Statement
 Last updated:

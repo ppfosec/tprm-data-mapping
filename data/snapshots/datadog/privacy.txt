@@ -1,5 +1,5 @@
 # source: https://www.datadoghq.com/legal/privacy/
-# collected: 2026-11-03
+# collected: 2026-11-04
 
 Product
 Infrastructure
@@ -82,8 +82,8 @@ Bits Chat
 Bits Agent Builder
 Bits Code
 Bits Security Analyst
-AI Guard
 Agent Observability
+AI Guard
 MCP Server
 Pup CLI
 GPU Monitoring
