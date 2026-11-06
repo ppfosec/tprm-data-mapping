@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T11:06:35+00:00",
+  "generated_at": "2026-11-06T11:03:48+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -100,9 +100,9 @@
           "kind": "privacy",
           "url": "https://www.anthropic.com/legal/privacy",
           "path": "data/snapshots/anthropic/privacy.txt",
-          "lines": 493,
-          "chars": 39519,
-          "sha256": "24202b8ba5293da6",
+          "lines": 492,
+          "chars": 39511,
+          "sha256": "bed7cfa137fb40d6",
           "note": null,
           "archive": {
             "ok": true,
@@ -116,9 +116,9 @@
           "kind": "terms",
           "url": "https://www.anthropic.com/legal/commercial-terms",
           "path": "data/snapshots/anthropic/terms.txt",
-          "lines": 338,
-          "chars": 24335,
-          "sha256": "e6c9681afd27222a",
+          "lines": 337,
+          "chars": 24327,
+          "sha256": "2a8e73bc09031cdc",
           "note": null,
           "archive": {
             "ok": true,
@@ -132,9 +132,9 @@
           "kind": "other",
           "url": "https://www.anthropic.com/legal/aup",
           "path": "data/snapshots/anthropic/other.txt",
-          "lines": 281,
-          "chars": 30792,
-          "sha256": "68661b412cc3fbec",
+          "lines": 280,
+          "chars": 30784,
+          "sha256": "0922e949db066e2a",
           "note": null,
           "archive": {
             "ok": true,
@@ -155,24 +155,24 @@
           "diff": null,
           "archive": {
             "ok": true,
-            "captures": 118,
-            "revisions": 117,
+            "captures": 120,
+            "revisions": 119,
             "first": "2024-09-26",
-            "last": "2026-11-05"
+            "last": "2026-11-06"
           }
         },
         {
           "kind": "dpa",
           "url": "https://www.anthropic.com/legal/data-processing-addendum",
           "path": "data/snapshots/anthropic/dpa.txt",
-          "lines": 457,
-          "chars": 34277,
-          "sha256": "1041899ac1f319d9",
+          "lines": 456,
+          "chars": 34269,
+          "sha256": "5f3077cc5118556f",
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 87,
-            "revisions": 86,
+            "captures": 88,
+            "revisions": 87,
             "first": "2025-03-11",
             "last": "2026-11-05"
           }
@@ -180,21 +180,21 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 681,
-        "placeable": 679,
+        "total": 674,
+        "placeable": 672,
         "unplaceable": 2,
-        "eea": 40,
-        "non_eea": 639,
+        "eea": 35,
+        "non_eea": 637,
         "countries": {
-          "United States": 535,
-          "United Kingdom": 46,
+          "United States": 533,
+          "United Kingdom": 44,
           "Japan": 16,
-          "Germany": 16,
+          "Germany": 15,
+          "South Korea": 13,
           "Australia": 12,
-          "South Korea": 12,
+          "Singapore": 11,
           "France": 11,
-          "Singapore": 10,
-          "Ireland": 10,
+          "Ireland": 6,
           "India": 6,
           "Switzerland": 5,
           "Canada": 3,
@@ -288,7 +288,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "639 of 679 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "637 of 672 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -297,11 +297,11 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 535 open roles"
+              "excerpt": "United States: 533 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 46 open roles"
+              "excerpt": "United Kingdom: 44 open roles"
             },
             {
               "kind": "stat",
@@ -423,7 +423,7 @@
         "sensitivity_score": 10,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": false
+        "source_documents_changed": true
       },
       "score": {
         "total": 48,
@@ -433,6 +433,66 @@
         "record": 0
       },
       "drift": [
+        {
+          "id": "anthropic-privacy-2026-11-06",
+          "vendor_id": "anthropic",
+          "vendor_name": "Anthropic",
+          "document": "privacy",
+          "document_label": "Privacy policy",
+          "date": "2026-11-06",
+          "url": "https://www.anthropic.com/legal/privacy",
+          "hunks": [
+            {
+              "before": "Section",
+              "after": null
+            }
+          ]
+        },
+        {
+          "id": "anthropic-terms-2026-11-06",
+          "vendor_id": "anthropic",
+          "vendor_name": "Anthropic",
+          "document": "terms",
+          "document_label": "Terms",
+          "date": "2026-11-06",
+          "url": "https://www.anthropic.com/legal/commercial-terms",
+          "hunks": [
+            {
+              "before": "Section",
+              "after": null
+            }
+          ]
+        },
+        {
+          "id": "anthropic-other-2026-11-06",
+          "vendor_id": "anthropic",
+          "vendor_name": "Anthropic",
+          "document": "other",
+          "document_label": "Other legal page",
+          "date": "2026-11-06",
+          "url": "https://www.anthropic.com/legal/aup",
+          "hunks": [
+            {
+              "before": "Section",
+              "after": null
+            }
+          ]
+        },
+        {
+          "id": "anthropic-dpa-2026-11-06",
+          "vendor_id": "anthropic",
+          "vendor_name": "Anthropic",
+          "document": "dpa",
+          "document_label": "Data processing agreement",
+          "date": "2026-11-06",
+          "url": "https://www.anthropic.com/legal/data-processing-addendum",
+          "hunks": [
+            {
+              "before": "Section",
+              "after": null
+            }
+          ]
+        },
         {
           "id": "anthropic-other-2026-10-22",
           "vendor_id": "anthropic",
@@ -484,94 +544,6 @@
             {
               "before": null,
               "after": "Collection of Personal Data"
-            }
-          ]
-        },
-        {
-          "id": "anthropic-terms-2026-10-21",
-          "vendor_id": "anthropic",
-          "vendor_name": "Anthropic",
-          "document": "terms",
-          "document_label": "Terms",
-          "date": "2026-10-21",
-          "url": "https://www.anthropic.com/legal/commercial-terms",
-          "hunks": [
-            {
-              "before": null,
-              "after": "Section"
-            },
-            {
-              "before": null,
-              "after": "Services"
-            }
-          ]
-        },
-        {
-          "id": "anthropic-dpa-2026-10-21",
-          "vendor_id": "anthropic",
-          "vendor_name": "Anthropic",
-          "document": "dpa",
-          "document_label": "Data processing agreement",
-          "date": "2026-10-21",
-          "url": "https://www.anthropic.com/legal/data-processing-addendum",
-          "hunks": [
-            {
-              "before": null,
-              "after": "Section"
-            },
-            {
-              "before": null,
-              "after": "Definitions"
-            }
-          ]
-        },
-        {
-          "id": "anthropic-other-2026-10-20",
-          "vendor_id": "anthropic",
-          "vendor_name": "Anthropic",
-          "document": "other",
-          "document_label": "Other legal page",
-          "date": "2026-10-20",
-          "url": "https://www.anthropic.com/legal/aup",
-          "hunks": [
-            {
-              "before": "Download PDF version",
-              "after": null
-            }
-          ]
-        },
-        {
-          "id": "anthropic-dpa-2026-10-20",
-          "vendor_id": "anthropic",
-          "vendor_name": "Anthropic",
-          "document": "dpa",
-          "document_label": "Data processing agreement",
-          "date": "2026-10-20",
-          "url": "https://www.anthropic.com/legal/data-processing-addendum",
-          "hunks": [
-            {
-              "before": "This U.S.",
-              "after": "This Data Processing Addendum ("
-            },
-            {
-              "before": "K-12 Data Processing Agreement (this",
-              "after": null
-            },
-            {
-              "before": ") is incorporated into and forms part of the Anthropic U.S K-12 Terms of Service or other agreement between Customer and Anthropic that references this DPA and governs Customer’s use of the Services (the",
-              "after": ") is incorporated into and forms part of the Anthropic Commercial Terms of Service or other agreement between Customer and Anthropic that references this DPA and governs Customer’s use of the Services (the"
-            },
-            {
-              "before": "“Applicable Data Protection Laws”",
-              "after": "\"Applicable Data Protection Laws\""
-            },
-            {
-              "before": "means all applicable privacy or data protection laws and regulations relating to the processing of personal information, as may be amended from time to time.",
-              "after": "means all applicable privacy or data protection laws and regulations relating to the processing of personal data, as may be amended from time to time."
-            },
-            {
-              "before": "“Customer Personal Data”",
-              "after": "\"Customer Personal Data\""
             }
           ]
         }
@@ -652,9 +624,9 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 463,
+        "total": 462,
         "placeable": 3,
-        "unplaceable": 460,
+        "unplaceable": 459,
         "eea": 1,
         "non_eea": 2,
         "countries": {
@@ -681,14 +653,14 @@
               {
                 "title": "Data Center Network Operations Engineer",
                 "location": "Hybrid",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/8311366?gh_jid=8311366",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8311376?gh_jid=8311376",
                 "matched": "on-call",
                 "excerpt": "esponsibilities (prioritization, planning, scheduling, status reporting) such as JIRA Participate in a shared on-call rotation to maintain 24×7 operational availability of the global network. Other Responsibilities May Include"
               },
               {
                 "title": "Data Center Network Operations Engineer",
                 "location": "Hybrid",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/8311376?gh_jid=8311376",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8311366?gh_jid=8311366",
                 "matched": "on-call",
                 "excerpt": "esponsibilities (prioritization, planning, scheduling, status reporting) such as JIRA Participate in a shared on-call rotation to maintain 24×7 operational availability of the global network. Other Responsibilities May Include"
               }
@@ -720,7 +692,7 @@
                 "location": "Hybrid",
                 "url": "https://boards.greenhouse.io/cloudflare/jobs/8328089?gh_jid=8328089",
                 "matched": "distributed team",
-                "excerpt": "ndors while influencing without direct authority Comfortable working in a fast-paced, global environment with distributed teams and suppliers across multiple time zones Proficiency in Google Workspace applications and familiarity with p"
+                "excerpt": "oss teams and influence without direct authority Comfortable working in a fast-paced, global environment with distributed teams and suppliers Proficiency in Google Workspace applications and familiarity with procurement or ERP systems B"
               }
             ]
           },
@@ -748,6 +720,22 @@
             ]
           },
           {
+            "key": "replication",
+            "label": "Cross-region replication",
+            "severity": "high",
+            "why": "Resilience design moves copies by default, and failover does not ask permission.",
+            "count": 1,
+            "examples": [
+              {
+                "title": "Global Vendor Manager, Data Center Infrastructure",
+                "location": "Hybrid",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8328089?gh_jid=8328089",
+                "matched": "disaster recovery",
+                "excerpt": "d procurement analytics tools Experience managing supplier risk assessments, business continuity planning, or disaster recovery programs Compensation For Denver based hires: Estimated annual salary of 93,000 - 128,000 USD For Seattle bas"
+              }
+            ]
+          },
+          {
             "key": "round_clock",
             "label": "Round-the-clock coverage",
             "severity": "medium",
@@ -768,7 +756,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 3,
+            "count": 4,
             "examples": [
               {
                 "title": "GTM Data Specialist, Consumption & Revenue Operations",
@@ -778,34 +766,18 @@
                 "excerpt": "k their output against the data, and can show examples of work you made faster or better with AI Bonus points Salesforce: Experience with reports, SQL, account hierarchies, and ownership rules Building with AI: Experience building"
               },
               {
+                "title": "HR Operations Specialist",
+                "location": "Hybrid",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8354692?gh_jid=8354692",
+                "matched": "Zendesk",
+                "excerpt": "ject-matter expert for employee inquiries: Provide timely, high-quality support to employee inquiries through Zendesk. Act as a trusted liaison between employees and People/Payroll teams, resolving issues efficiently with empat"
+              },
+              {
                 "title": "HR Operations Specialist, Singapore (12-months contract)",
                 "location": "Hybrid",
                 "url": "https://boards.greenhouse.io/cloudflare/jobs/8354678?gh_jid=8354678",
                 "matched": "Zendesk",
                 "excerpt": "ject-matter expert for employee inquiries: Provide timely, high-quality support to employee inquiries through Zendesk. Act as a trusted liaison between employees and People/Payroll teams, resolving issues efficiently with empat"
-              },
-              {
-                "title": "IT Operations Specialist I",
-                "location": "In-Office",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/8281074?gh_jid=8281074",
-                "matched": "Zendesk",
-                "excerpt": "ms like Jamf Pro or Kandji. Experience using corporate ticketing platforms such as Jira Service Management or Zendesk. Relevant technical certifications such as Apple Certified Support Professional (ACSP), Google Workspace Admi"
-              }
-            ]
-          },
-          {
-            "key": "sovereignty_work",
-            "label": "Sovereignty workstream",
-            "severity": "low",
-            "why": "They are staffing the problem, which is a good sign and an admission it is open.",
-            "count": 1,
-            "examples": [
-              {
-                "title": "Enterprise Architect, Financial Services - Toronto, Canada",
-                "location": "Distributed",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/8319377?gh_jid=8319377",
-                "matched": "sovereign",
-                "excerpt": "ctivity, telco integration Application performance: caching, latency, scaling at the edge Data protection and sovereignty: data residency, encryption and key management, post-quantum readiness Preferred Experience Financial servi"
               }
             ]
           }
@@ -850,7 +822,7 @@
               "kind": "job",
               "title": "Data Center Network Operations Engineer",
               "location": "Hybrid",
-              "url": "https://boards.greenhouse.io/cloudflare/jobs/8311366?gh_jid=8311366",
+              "url": "https://boards.greenhouse.io/cloudflare/jobs/8311376?gh_jid=8311376",
               "matched": "on-call",
               "excerpt": "esponsibilities (prioritization, planning, scheduling, status reporting) such as JIRA Participate in a shared on-call rotation to maintain 24×7 operational availability of the global network. Other Responsibilities May Include"
             }
@@ -1070,24 +1042,24 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 396,
-        "placeable": 396,
+        "total": 399,
+        "placeable": 399,
         "unplaceable": 0,
-        "eea": 67,
-        "non_eea": 329,
+        "eea": 66,
+        "non_eea": 333,
         "countries": {
-          "United States": 213,
-          "Japan": 35,
-          "France": 33,
-          "Netherlands": 21,
-          "Ireland": 19,
+          "United States": 215,
+          "Japan": 36,
+          "France": 32,
+          "Netherlands": 22,
+          "Ireland": 20,
           "Singapore": 19,
-          "United Kingdom": 18,
+          "United Kingdom": 17,
+          "Australia": 13,
           "South Korea": 13,
-          "Australia": 12,
           "Brazil": 11,
           "India": 8,
-          "Spain": 6,
+          "Spain": 7,
           "Israel": 4,
           "Mexico": 4,
           "Denmark": 2,
@@ -1512,26 +1484,26 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 759,
-        "placeable": 680,
-        "unplaceable": 79,
-        "eea": 112,
+        "total": 765,
+        "placeable": 685,
+        "unplaceable": 80,
+        "eea": 117,
         "non_eea": 568,
         "countries": {
-          "United States": 347,
-          "Ireland": 86,
-          "Canada": 59,
-          "Singapore": 49,
-          "United Kingdom": 48,
-          "India": 45,
-          "Mexico": 27,
+          "United States": 346,
+          "Ireland": 88,
+          "Canada": 60,
+          "United Kingdom": 49,
+          "Singapore": 48,
+          "India": 43,
+          "Mexico": 28,
           "Australia": 10,
           "Japan": 9,
-          "Germany": 7,
-          "Spain": 7,
+          "Germany": 8,
+          "Spain": 8,
           "Taiwan": 5,
+          "Romania": 5,
           "France": 4,
-          "Romania": 4,
           "Brazil": 3,
           "Luxembourg": 3,
           "Israel": 2,
@@ -1950,10 +1922,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 86,
-            "revisions": 85,
+            "captures": 85,
+            "revisions": 84,
             "first": "2019-04-01",
-            "last": "2026-10-19"
+            "last": "2026-10-18"
           }
         }
       ],
@@ -1965,8 +1937,8 @@
         "eea": 11,
         "non_eea": 133,
         "countries": {
-          "United States": 94,
-          "United Kingdom": 19,
+          "United States": 93,
+          "United Kingdom": 20,
           "Germany": 8,
           "India": 5,
           "Singapore": 3,
@@ -2094,11 +2066,11 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 94 open roles"
+              "excerpt": "United States: 93 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 19 open roles"
+              "excerpt": "United Kingdom: 20 open roles"
             },
             {
               "kind": "stat",
@@ -2420,15 +2392,15 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 243,
-        "placeable": 235,
-        "unplaceable": 8,
+        "total": 249,
+        "placeable": 240,
+        "unplaceable": 9,
         "eea": 40,
-        "non_eea": 195,
+        "non_eea": 200,
         "countries": {
-          "United States": 116,
-          "Canada": 67,
-          "United Kingdom": 44,
+          "United States": 121,
+          "Canada": 69,
+          "United Kingdom": 43,
           "India": 33,
           "Poland": 14,
           "Germany": 14,
@@ -2455,7 +2427,7 @@
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 16,
+            "count": 15,
             "examples": [
               {
                 "title": "Customer Success Architect",
@@ -2485,28 +2457,28 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 6,
+            "count": 8,
             "examples": [
+              {
+                "title": "Cloud Platform Engineer",
+                "location": "Remote, Canada; Remote, United States",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8889193002",
+                "matched": "on-call",
+                "excerpt": "integration and continuous delivery (CI/CD) pipelines to support end-to-end delivery workflows. Take part in on-call or operational support where your team’s ownership model requires it. What you’ll bring Experience operating"
+              },
+              {
+                "title": "Director of Engineering, Dedicated Infrastructure & Platforms",
+                "location": "Remote, Canada; Remote, United Kingdom; Remote, United States",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8883597002",
+                "matched": "on-call",
+                "excerpt": "urity, and Customer Support to keep customer commitments, architecture, and investments aligned. Take part in on-call or operational support where your team’s ownership model requires it. What you'll bring You have led engineer"
+              },
               {
                 "title": "Distinguished Engineer, Core DevOps",
                 "location": "Remote, Canada; Remote, United Kingdom; Remote, United States",
                 "url": "https://job-boards.greenhouse.io/gitlab/jobs/8831350002",
                 "matched": "on-call",
                 "excerpt": "ribute to the technical hiring bar for senior individual contributors. Participate in the Incident Management on-call rotation to help meet availability goals for GitLab.com, and complete Interview Training to participate in hi"
-              },
-              {
-                "title": "Engineering Manager, Architecture Engineering: Async",
-                "location": "Remote, Poland; Remote, United Kingdom",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8921380002",
-                "matched": "on-call",
-                "excerpt": "admap projects and rescoping work when deadlines can't be met. Run the team's part of GitLab.com's first-tier on-call rotation, including shift coverage, onboarding, and handovers, and serve as incident commander for high-sever"
-              },
-              {
-                "title": "Intermediate Backend Engineer , Security Factory",
-                "location": "Bangalore, India",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8890971002",
-                "matched": "on-call",
-                "excerpt": "code that meets our internal standards, and help maintain those standards through code review. Participate in on-call rotations to help troubleshoot product operations, security operations, and urgent engineering issues. What y"
               }
             ]
           },
@@ -2614,7 +2586,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 7,
+            "count": 5,
             "examples": [
               {
                 "title": "Data Scientist, Enterprise Analytics",
@@ -2883,19 +2855,19 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 426,
-        "placeable": 426,
+        "total": 430,
+        "placeable": 430,
         "unplaceable": 0,
-        "eea": 179,
-        "non_eea": 247,
+        "eea": 180,
+        "non_eea": 250,
         "countries": {
-          "United States": 125,
+          "United States": 126,
           "Spain": 39,
           "Canada": 37,
           "United Kingdom": 30,
           "Greece": 27,
+          "Poland": 25,
           "Ireland": 25,
-          "Poland": 24,
           "Portugal": 24,
           "India": 16,
           "Norway": 11,
@@ -2904,16 +2876,16 @@
           "Germany": 8,
           "Japan": 7,
           "Australia": 5,
+          "Costa Rica": 4,
           "Belgium": 3,
           "Netherlands": 3,
-          "Brazil": 3,
+          "Mexico": 3,
           "Israel": 3,
           "Austria": 2,
           "Singapore": 2,
           "United Arab Emirates": 2,
-          "Mexico": 2,
           "Saudi Arabia": 2,
-          "Costa Rica": 2,
+          "Brazil": 2,
           "South Africa": 1,
           "South Korea": 1,
           "France": 1,
@@ -3148,8 +3120,8 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 81,
-        "footprint": 14,
+        "total": 82,
+        "footprint": 15,
         "access": 25,
         "transparency": 17,
         "record": 25
@@ -3279,14 +3251,14 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 88,
-        "placeable": 86,
-        "unplaceable": 2,
+        "total": 87,
+        "placeable": 84,
+        "unplaceable": 3,
         "eea": 6,
-        "non_eea": 80,
+        "non_eea": 78,
         "countries": {
-          "United States": 70,
-          "United Kingdom": 12,
+          "United States": 69,
+          "United Kingdom": 11,
           "Germany": 6,
           "Australia": 4,
           "India": 1
@@ -3343,22 +3315,6 @@
                 "url": "https://job-boards.greenhouse.io/vercel/jobs/6231045004",
                 "matched": "across multiple time zones",
                 "excerpt": "with a recommended minimum of four weeks per year, plus paid holidays. Remote-friendly culture with teammates across multiple time zones. Dedicated equipment and work-from-home budget to help you create an effective workspace. The San Francisco,"
-              }
-            ]
-          },
-          {
-            "key": "travel",
-            "label": "Travel expected",
-            "severity": "high",
-            "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 1,
-            "examples": [
-              {
-                "title": "Partner Solutions Engineer",
-                "location": "Hybrid - San Francisco",
-                "url": "https://job-boards.greenhouse.io/vercel/jobs/6201179004",
-                "matched": "travel 25%",
-                "excerpt": "erience advising both technical and non-technical stakeholders, from engineers to executives. You are able to travel 25% of the time. Bonus if you Have built integrations with Vercel's agentic infrastructure products. Have run cer"
               }
             ]
           },
