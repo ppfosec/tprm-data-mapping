@@ -1,5 +1,5 @@
 # source: https://www.cloudflare.com/trust-hub/gdpr/
-# collected: 2026-11-06
+# collected: 2026-11-07
 
 Cloudflare and GDPR compliance
 Cloudflare is a privacy-first company.
@@ -238,11 +238,11 @@ Standard Contractual Clauses for Customers
 Learn More
 Cloudflare features that support data protection
 Encryption
-Cloudflare's network can encrypt data throughout its journey from origin servers to end-users, using the very latest protocols.
+Cloudflare’s network can encrypt data throughout its journey from origin servers to end-users, using the very latest protocols.
 Privacy-first analytics
-Cloudflare's Web Analytics does not use any client-side state, such as cookies or localStorage, to collect usage metrics — and never 'fingerprints' individual users.
+Cloudflare’s Web Analytics does not use any client-side state, such as cookies or localStorage, to collect usage metrics — and never ‘fingerprints’ individual users.
 Data localization
-In many regions — including Japan — Cloudflare lets organizations control which regional data centers their traffic is inspected in and where logs are sent.
+In many regions Cloudflare lets organizations control which regional data centers their traffic is inspected in and where logs are sent.
 Access management
 Cloudflare Zero Trust lets organizations enforce country-specific access rules, block risky sites and content, and log access events for internal applications and data.
 Reporting

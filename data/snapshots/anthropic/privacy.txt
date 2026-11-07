@@ -1,5 +1,5 @@
 # source: https://www.anthropic.com/legal/privacy
-# collected: 2026-11-06
+# collected: 2026-11-07
 
 Collection of Personal Data
 Anthropic is an AI safety and research company working to build reliable, interpretable, and steerable AI systems.

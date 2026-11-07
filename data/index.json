@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T11:03:48+00:00",
+  "generated_at": "2026-11-07T10:23:41+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -155,10 +155,10 @@
           "diff": null,
           "archive": {
             "ok": true,
-            "captures": 120,
-            "revisions": 119,
+            "captures": 122,
+            "revisions": 121,
             "first": "2024-09-26",
-            "last": "2026-11-06"
+            "last": "2026-11-07"
           }
         },
         {
@@ -171,8 +171,8 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 88,
-            "revisions": 87,
+            "captures": 87,
+            "revisions": 86,
             "first": "2025-03-11",
             "last": "2026-11-05"
           }
@@ -180,21 +180,21 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 674,
-        "placeable": 672,
+        "total": 675,
+        "placeable": 673,
         "unplaceable": 2,
-        "eea": 35,
-        "non_eea": 637,
+        "eea": 38,
+        "non_eea": 635,
         "countries": {
-          "United States": 533,
-          "United Kingdom": 44,
+          "United States": 534,
+          "United Kingdom": 42,
           "Japan": 16,
-          "Germany": 15,
+          "Germany": 16,
           "South Korea": 13,
           "Australia": 12,
-          "Singapore": 11,
-          "France": 11,
-          "Ireland": 6,
+          "France": 12,
+          "Singapore": 10,
+          "Ireland": 7,
           "India": 6,
           "Switzerland": 5,
           "Canada": 3,
@@ -212,13 +212,6 @@
             "examples": [
               {
                 "title": "Applied AI Architect",
-                "location": "Sydney, Australia",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5450798008",
-                "matched": "across time zones",
-                "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the Australia market You may be a good fit if you"
-              },
-              {
-                "title": "Applied AI Architect",
                 "location": "Bangalore, India",
                 "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
                 "matched": "across time zones",
@@ -230,6 +223,13 @@
                 "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
                 "matched": "across time zones",
                 "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
+              },
+              {
+                "title": "Applied AI Architect",
+                "location": "Sydney, Australia",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5450798008",
+                "matched": "across time zones",
+                "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the Australia market You may be a good fit if you"
               }
             ]
           },
@@ -264,22 +264,6 @@
                 "excerpt": "Applied AI Architect to join Beneficial Deployments, focused on helping public health, global health and humanitarian organizations get real value from Claude. You'll be the technical lead for partners such as public health"
               }
             ]
-          },
-          {
-            "key": "nationality",
-            "label": "Nationality restriction",
-            "severity": "low",
-            "why": "Some roles are nationality-gated, which means the rest are deliberately not.",
-            "count": 1,
-            "examples": [
-              {
-                "title": "Applied AI Architect, Public Sector (Federal Civilan)",
-                "location": "San Francisco, CA | New York City, NY",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5455627008",
-                "matched": "Security clearance",
-                "excerpt": "of the latest developments in LLM capabilities and implementation patterns You may be a good fit if you have: Security clearance not required, but a plus&nbsp; Must have prior experience working with US federal agencies&nbsp; 5+ years of"
-              }
-            ]
           }
         ]
       },
@@ -288,7 +272,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "637 of 672 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "635 of 673 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -297,11 +281,11 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 533 open roles"
+              "excerpt": "United States: 534 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 44 open roles"
+              "excerpt": "United Kingdom: 42 open roles"
             },
             {
               "kind": "stat",
@@ -324,16 +308,16 @@
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Sydney, Australia",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5450798008",
+              "location": "Bangalore, India",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
               "matched": "across time zones",
-              "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the Australia market You may be a good fit if you"
+              "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
             },
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Bangalore, India",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
+              "location": "Mumbai, India",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
               "matched": "across time zones",
               "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
             }
@@ -423,12 +407,12 @@
         "sensitivity_score": 10,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": true
+        "source_documents_changed": false
       },
       "score": {
-        "total": 48,
+        "total": 47,
         "footprint": 24,
-        "access": 20,
+        "access": 19,
         "transparency": 4,
         "record": 0
       },
@@ -583,10 +567,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 322,
-            "revisions": 321,
+            "captures": 323,
+            "revisions": 322,
             "first": "2021-09-03",
-            "last": "2026-10-25"
+            "last": "2026-11-07"
           }
         },
         {
@@ -610,8 +594,8 @@
           "url": "https://www.cloudflare.com/trust-hub/gdpr/",
           "path": "data/snapshots/cloudflare/other.txt",
           "lines": 250,
-          "chars": 26690,
-          "sha256": "253254e28bc2ff29",
+          "chars": 26670,
+          "sha256": "fda89740a70cbf21",
           "note": null,
           "archive": {
             "ok": true,
@@ -624,9 +608,9 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 462,
+        "total": 464,
         "placeable": 3,
-        "unplaceable": 459,
+        "unplaceable": 461,
         "eea": 1,
         "non_eea": 2,
         "countries": {
@@ -877,7 +861,7 @@
         "sensitivity_score": 10,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": false
+        "source_documents_changed": true
       },
       "score": {
         "total": 42,
@@ -887,6 +871,29 @@
         "record": 0
       },
       "drift": [
+        {
+          "id": "cloudflare-other-2026-11-07",
+          "vendor_id": "cloudflare",
+          "vendor_name": "Cloudflare",
+          "document": "other",
+          "document_label": "Other legal page",
+          "date": "2026-11-07",
+          "url": "https://www.cloudflare.com/trust-hub/gdpr/",
+          "hunks": [
+            {
+              "before": "Cloudflare's network can encrypt data throughout its journey from origin servers to end-users, using the very latest protocols.",
+              "after": "Cloudflare’s network can encrypt data throughout its journey from origin servers to end-users, using the very latest protocols."
+            },
+            {
+              "before": "Cloudflare's Web Analytics does not use any client-side state, such as cookies or localStorage, to collect usage metrics — and never 'fingerprints' individual users.",
+              "after": "Cloudflare’s Web Analytics does not use any client-side state, such as cookies or localStorage, to collect usage metrics — and never ‘fingerprints’ individual users."
+            },
+            {
+              "before": "In many regions — including Japan — Cloudflare lets organizations control which regional data centers their traffic is inspected in and where logs are sent.",
+              "after": "In many regions Cloudflare lets organizations control which regional data centers their traffic is inspected in and where logs are sent."
+            }
+          ]
+        },
         {
           "id": "cloudflare-privacy-2026-10-29",
           "vendor_id": "cloudflare",
@@ -965,21 +972,6 @@
               "after": null
             }
           ]
-        },
-        {
-          "id": "cloudflare-privacy-2026-10-21",
-          "vendor_id": "cloudflare",
-          "vendor_name": "Cloudflare",
-          "document": "privacy",
-          "document_label": "Privacy policy",
-          "date": "2026-10-21",
-          "url": "https://www.cloudflare.com/privacypolicy/",
-          "hunks": [
-            {
-              "before": "(\u0000\u0000“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information.",
-              "after": "(“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information."
-            }
-          ]
         }
       ]
     },
@@ -1042,22 +1034,22 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 399,
-        "placeable": 399,
+        "total": 400,
+        "placeable": 400,
         "unplaceable": 0,
-        "eea": 66,
-        "non_eea": 333,
+        "eea": 62,
+        "non_eea": 338,
         "countries": {
-          "United States": 215,
+          "United States": 218,
           "Japan": 36,
-          "France": 32,
-          "Netherlands": 22,
-          "Ireland": 20,
-          "Singapore": 19,
+          "France": 31,
+          "Netherlands": 21,
+          "Singapore": 20,
+          "Ireland": 18,
           "United Kingdom": 17,
-          "Australia": 13,
           "South Korea": 13,
-          "Brazil": 11,
+          "Australia": 13,
+          "Brazil": 12,
           "India": 8,
           "Spain": 7,
           "Israel": 4,
@@ -1068,11 +1060,10 @@
           "Germany": 2,
           "Portugal": 1,
           "Chile": 1,
-          "Indonesia": 1,
           "Canada": 1,
+          "Indonesia": 1,
           "Poland": 1,
-          "Austria": 1,
-          "Italy": 1
+          "Austria": 1
         },
         "scanned": 26,
         "signals": [
@@ -1485,22 +1476,22 @@
       "jobs": {
         "ok": true,
         "total": 765,
-        "placeable": 685,
-        "unplaceable": 80,
-        "eea": 117,
+        "placeable": 684,
+        "unplaceable": 81,
+        "eea": 116,
         "non_eea": 568,
         "countries": {
-          "United States": 346,
-          "Ireland": 88,
-          "Canada": 60,
+          "United States": 345,
+          "Ireland": 86,
+          "Canada": 59,
           "United Kingdom": 49,
           "Singapore": 48,
           "India": 43,
-          "Mexico": 28,
+          "Mexico": 27,
           "Australia": 10,
           "Japan": 9,
+          "Spain": 9,
           "Germany": 8,
-          "Spain": 8,
           "Taiwan": 5,
           "Romania": 5,
           "France": 4,
@@ -1922,10 +1913,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 85,
-            "revisions": 84,
+            "captures": 86,
+            "revisions": 85,
             "first": "2019-04-01",
-            "last": "2026-10-18"
+            "last": "2026-10-19"
           }
         }
       ],
@@ -1937,8 +1928,8 @@
         "eea": 11,
         "non_eea": 133,
         "countries": {
-          "United States": 93,
-          "United Kingdom": 20,
+          "United States": 94,
+          "United Kingdom": 19,
           "Germany": 8,
           "India": 5,
           "Singapore": 3,
@@ -2066,11 +2057,11 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 93 open roles"
+              "excerpt": "United States: 94 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 20 open roles"
+              "excerpt": "United Kingdom: 19 open roles"
             },
             {
               "kind": "stat",
@@ -2392,32 +2383,32 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 249,
-        "placeable": 240,
+        "total": 248,
+        "placeable": 239,
         "unplaceable": 9,
-        "eea": 40,
+        "eea": 39,
         "non_eea": 200,
         "countries": {
           "United States": 121,
-          "Canada": 69,
-          "United Kingdom": 43,
+          "Canada": 68,
+          "United Kingdom": 42,
           "India": 33,
           "Poland": 14,
           "Germany": 14,
-          "Ireland": 11,
+          "Ireland": 10,
           "Singapore": 10,
           "Australia": 8,
           "Spain": 7,
           "France": 6,
           "Israel": 5,
           "Netherlands": 5,
-          "Brazil": 5,
           "South Korea": 4,
           "Japan": 4,
+          "Brazil": 4,
           "Austria": 3,
-          "Mexico": 2,
           "United Arab Emirates": 2,
           "Sweden": 1,
+          "Mexico": 1,
           "Switzerland": 1
         },
         "scanned": 26,
@@ -2855,25 +2846,25 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 430,
-        "placeable": 430,
+        "total": 423,
+        "placeable": 423,
         "unplaceable": 0,
-        "eea": 180,
+        "eea": 173,
         "non_eea": 250,
         "countries": {
-          "United States": 126,
-          "Spain": 39,
-          "Canada": 37,
+          "United States": 128,
+          "Spain": 38,
+          "Canada": 36,
           "United Kingdom": 30,
-          "Greece": 27,
-          "Poland": 25,
-          "Ireland": 25,
-          "Portugal": 24,
+          "Greece": 26,
+          "Ireland": 24,
+          "Poland": 24,
+          "Portugal": 23,
           "India": 16,
-          "Norway": 11,
-          "Romania": 10,
-          "Switzerland": 9,
+          "Norway": 10,
+          "Romania": 9,
           "Germany": 8,
+          "Switzerland": 8,
           "Japan": 7,
           "Australia": 5,
           "Costa Rica": 4,

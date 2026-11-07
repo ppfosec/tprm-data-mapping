@@ -1,5 +1,28 @@
 [
   {
+    "id": "cloudflare-other-2026-11-07",
+    "vendor_id": "cloudflare",
+    "vendor_name": "Cloudflare",
+    "document": "other",
+    "document_label": "Other legal page",
+    "date": "2026-11-07",
+    "url": "https://www.cloudflare.com/trust-hub/gdpr/",
+    "hunks": [
+      {
+        "before": "Cloudflare's network can encrypt data throughout its journey from origin servers to end-users, using the very latest protocols.",
+        "after": "Cloudflare’s network can encrypt data throughout its journey from origin servers to end-users, using the very latest protocols."
+      },
+      {
+        "before": "Cloudflare's Web Analytics does not use any client-side state, such as cookies or localStorage, to collect usage metrics — and never 'fingerprints' individual users.",
+        "after": "Cloudflare’s Web Analytics does not use any client-side state, such as cookies or localStorage, to collect usage metrics — and never ‘fingerprints’ individual users."
+      },
+      {
+        "before": "In many regions — including Japan — Cloudflare lets organizations control which regional data centers their traffic is inspected in and where logs are sent.",
+        "after": "In many regions Cloudflare lets organizations control which regional data centers their traffic is inspected in and where logs are sent."
+      }
+    ]
+  },
+  {
     "id": "anthropic-privacy-2026-11-06",
     "vendor_id": "anthropic",
     "vendor_name": "Anthropic",
