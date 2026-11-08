@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T10:23:41+00:00",
+  "generated_at": "2026-11-08T10:31:56+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -155,10 +155,10 @@
           "diff": null,
           "archive": {
             "ok": true,
-            "captures": 122,
-            "revisions": 121,
+            "captures": 123,
+            "revisions": 122,
             "first": "2024-09-26",
-            "last": "2026-11-07"
+            "last": "2026-11-08"
           }
         },
         {
@@ -567,8 +567,8 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 323,
-            "revisions": 322,
+            "captures": 328,
+            "revisions": 327,
             "first": "2021-09-03",
             "last": "2026-11-07"
           }
@@ -861,7 +861,7 @@
         "sensitivity_score": 10,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": true
+        "source_documents_changed": false
       },
       "score": {
         "total": 42,
@@ -1034,21 +1034,21 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 400,
-        "placeable": 400,
+        "total": 401,
+        "placeable": 401,
         "unplaceable": 0,
         "eea": 62,
-        "non_eea": 338,
+        "non_eea": 339,
         "countries": {
           "United States": 218,
-          "Japan": 36,
+          "Japan": 37,
           "France": 31,
           "Netherlands": 21,
           "Singapore": 20,
           "Ireland": 18,
           "United Kingdom": 17,
-          "South Korea": 13,
-          "Australia": 13,
+          "South Korea": 14,
+          "Australia": 14,
           "Brazil": 12,
           "India": 8,
           "Spain": 7,
@@ -1059,9 +1059,9 @@
           "Saudi Arabia": 2,
           "Germany": 2,
           "Portugal": 1,
+          "Indonesia": 1,
           "Chile": 1,
           "Canada": 1,
-          "Indonesia": 1,
           "Poland": 1,
           "Austria": 1
         },
@@ -1475,15 +1475,15 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 765,
-        "placeable": 684,
+        "total": 766,
+        "placeable": 685,
         "unplaceable": 81,
         "eea": 116,
-        "non_eea": 568,
+        "non_eea": 569,
         "countries": {
           "United States": 345,
           "Ireland": 86,
-          "Canada": 59,
+          "Canada": 60,
           "United Kingdom": 49,
           "Singapore": 48,
           "India": 43,
@@ -1881,10 +1881,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 337,
-            "revisions": 336,
+            "captures": 339,
+            "revisions": 338,
             "first": "2024-01-18",
-            "last": "2026-10-23"
+            "last": "2026-10-28"
           }
         },
         {
@@ -1922,14 +1922,14 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 144,
-        "placeable": 144,
+        "total": 145,
+        "placeable": 145,
         "unplaceable": 0,
         "eea": 11,
-        "non_eea": 133,
+        "non_eea": 134,
         "countries": {
           "United States": 94,
-          "United Kingdom": 19,
+          "United Kingdom": 20,
           "Germany": 8,
           "India": 5,
           "Singapore": 3,
@@ -2048,7 +2048,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "133 of 144 placeable roles name no EEA site — most prominently United States, United Kingdom, India. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "134 of 145 placeable roles name no EEA site — most prominently United States, United Kingdom, India. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -2061,7 +2061,7 @@
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 19 open roles"
+              "excerpt": "United Kingdom: 20 open roles"
             },
             {
               "kind": "stat",
@@ -2846,11 +2846,11 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 423,
-        "placeable": 423,
+        "total": 425,
+        "placeable": 425,
         "unplaceable": 0,
         "eea": 173,
-        "non_eea": 250,
+        "non_eea": 252,
         "countries": {
           "United States": 128,
           "Spain": 38,
@@ -2860,7 +2860,7 @@
           "Ireland": 24,
           "Poland": 24,
           "Portugal": 23,
-          "India": 16,
+          "India": 17,
           "Norway": 10,
           "Romania": 9,
           "Germany": 8,
@@ -2869,11 +2869,11 @@
           "Australia": 5,
           "Costa Rica": 4,
           "Belgium": 3,
+          "Singapore": 3,
           "Netherlands": 3,
           "Mexico": 3,
           "Israel": 3,
           "Austria": 2,
-          "Singapore": 2,
           "United Arab Emirates": 2,
           "Saudi Arabia": 2,
           "Brazil": 2,
