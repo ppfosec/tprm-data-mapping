@@ -612,10 +612,10 @@
           "diff": null,
           "archive": {
             "ok": true,
-            "captures": 127,
-            "revisions": 126,
+            "captures": 128,
+            "revisions": 127,
             "first": "2024-09-26",
-            "last": "2026-11-09"
+            "last": "2026-11-10"
           }
         },
         {
@@ -640,7 +640,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "637 of 675 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "636 of 674 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -649,7 +649,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 533 open roles"
+              "excerpt": "United States: 532 open roles"
             },
             {
               "kind": "stat",
@@ -779,18 +779,18 @@
       },
       "jobs": {
         "ok": true,
-        "total": 677,
-        "placeable": 675,
+        "total": 676,
+        "placeable": 674,
         "unplaceable": 2,
         "eea": 38,
-        "non_eea": 637,
+        "non_eea": 636,
         "countries": {
-          "United States": 533,
+          "United States": 532,
           "United Kingdom": 42,
           "Japan": 16,
           "Germany": 16,
-          "Australia": 14,
-          "South Korea": 14,
+          "Australia": 15,
+          "South Korea": 13,
           "France": 12,
           "Singapore": 10,
           "Ireland": 7,
@@ -1158,9 +1158,9 @@
       },
       "jobs": {
         "ok": true,
-        "total": 464,
+        "total": 467,
         "placeable": 3,
-        "unplaceable": 461,
+        "unplaceable": 464,
         "eea": 1,
         "non_eea": 2,
         "countries": {
@@ -1449,10 +1449,10 @@
       "category": "Observability",
       "public_evidence_only": true,
       "surface": {
-        "grade": "38",
+        "grade": "29",
         "posture": "public evidence index",
         "confidence": "bounded",
-        "summary": "3 public documents · 2 open reconciliations"
+        "summary": "3 public documents · 1 open reconciliations"
       },
       "documents": [
         {
@@ -1506,24 +1506,6 @@
       ],
       "findings": [
         {
-          "rule": "subprocessor_gap",
-          "severity": "medium",
-          "headline": "Splunk appears in hiring, not in the published documents",
-          "detail": "Engineering job descriptions name Splunk, but it does not appear anywhere in the legal documents collected including the sub-processor list at https://www.datadoghq.com/legal/subprocessors/.",
-          "claim": null,
-          "evidence": [
-            {
-              "kind": "job",
-              "title": "Group Product Manager - Bring Your Own Cloud",
-              "location": "New York, New York, USA",
-              "url": "https://careers.datadoghq.com/detail/8024863/?gh_jid=8024863",
-              "matched": "Snowflake",
-              "excerpt": "Google Cloud) Demonstrated track record of working with executives and engineers alike Prior experience with Snowflake, Databricks, Splunk, or ClickHouse is a strong plus MBA is a strong plus &nbsp; Datadog values people from al"
-            }
-          ],
-          "question": "Is Splunk a sub-processor? If it is, when was it added to the list, and were customers notified? If it never touches customer data, what is it used for?"
-        },
-        {
           "rule": "access_vs_rotation",
           "severity": "medium",
           "headline": "Restricted-access language alongside global rotations",
@@ -1536,19 +1518,11 @@
           "evidence": [
             {
               "kind": "job",
-              "title": "Manager I, Engineering - Agent Data Plane",
-              "location": "Madrid, Spain",
-              "url": "https://careers.datadoghq.com/detail/8333737/?gh_jid=8333737",
-              "matched": "on-call",
-              "excerpt": "liability tradeoffs Represent the team in cross-team and technical discussions, and help shape the team's new on-call rotation &nbsp; Who You Are: You have 2+ years of experience managing software engineering teams You have a s"
-            },
-            {
-              "kind": "job",
-              "title": "Manager I, Engineering - Security Libraries",
+              "title": "Manager I, Engineering - Sensitive Data Scanner",
               "location": "Paris, France",
-              "url": "https://careers.datadoghq.com/detail/8094219/?gh_jid=8094219",
+              "url": "https://careers.datadoghq.com/detail/8102794/?gh_jid=8102794",
               "matched": "on-call",
-              "excerpt": "ng senior ICs as technical leaders Own team delivery and productivity: planning, milestones, reviews, and the on-call rotation Set product direction with Product Management and balance priorities across App &amp; API Protection"
+              "excerpt": "ustomer needs and business impact Stay hands-on: contribute to design decisions and participate in the team’s on-call rotation Recruit, mentor, and develop engineers as the team grows beyond its initial size Help build a strong"
             }
           ],
           "question": "For out-of-hours incidents, who is on the rotation, where are they, and is their access to customer data logged and reviewable by the customer?"
@@ -1605,24 +1579,24 @@
       },
       "jobs": {
         "ok": true,
-        "total": 402,
-        "placeable": 402,
+        "total": 399,
+        "placeable": 399,
         "unplaceable": 0,
-        "eea": 62,
+        "eea": 59,
         "non_eea": 340,
         "countries": {
           "United States": 218,
           "Japan": 37,
-          "France": 31,
-          "Netherlands": 21,
+          "France": 29,
           "Singapore": 20,
+          "Netherlands": 20,
           "Ireland": 18,
           "United Kingdom": 17,
           "Australia": 15,
           "South Korea": 14,
           "Brazil": 12,
           "India": 8,
-          "Spain": 7,
+          "Spain": 6,
           "Israel": 4,
           "Mexico": 4,
           "Denmark": 2,
@@ -1630,11 +1604,11 @@
           "Saudi Arabia": 2,
           "Germany": 2,
           "Portugal": 1,
-          "Chile": 1,
           "Indonesia": 1,
           "Canada": 1,
-          "Austria": 1,
-          "Poland": 1
+          "Chile": 1,
+          "Poland": 1,
+          "Austria": 1
         },
         "scanned": 26,
         "signals": [
@@ -1643,22 +1617,8 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 3,
+            "count": 1,
             "examples": [
-              {
-                "title": "Manager I, Engineering - Agent Data Plane",
-                "location": "Madrid, Spain",
-                "url": "https://careers.datadoghq.com/detail/8333737/?gh_jid=8333737",
-                "matched": "on-call",
-                "excerpt": "liability tradeoffs Represent the team in cross-team and technical discussions, and help shape the team's new on-call rotation &nbsp; Who You Are: You have 2+ years of experience managing software engineering teams You have a s"
-              },
-              {
-                "title": "Manager I, Engineering - Security Libraries",
-                "location": "Paris, France",
-                "url": "https://careers.datadoghq.com/detail/8094219/?gh_jid=8094219",
-                "matched": "on-call",
-                "excerpt": "ng senior ICs as technical leaders Own team delivery and productivity: planning, milestones, reviews, and the on-call rotation Set product direction with Product Management and balance priorities across App &amp; API Protection"
-              },
               {
                 "title": "Manager I, Engineering - Sensitive Data Scanner",
                 "location": "Paris, France",
@@ -1683,34 +1643,18 @@
                 "excerpt": "e close process. Become proficient with financial planning, cost monitoring, and BI tools, including Pigment, Snowflake, Metabase, and Datadog's own Cloud Cost Management (CCM) product. Who You Are: 2+ years of professional exper"
               },
               {
-                "title": "Group Product Manager - Bring Your Own Cloud",
-                "location": "New York, New York, USA",
-                "url": "https://careers.datadoghq.com/detail/8024863/?gh_jid=8024863",
-                "matched": "Snowflake",
-                "excerpt": "Google Cloud) Demonstrated track record of working with executives and engineers alike Prior experience with Snowflake, Databricks, Splunk, or ClickHouse is a strong plus MBA is a strong plus &nbsp; Datadog values people from al"
-              },
-              {
                 "title": "GTM Strategy & Operations Senior Associate",
                 "location": "New York, New York, USA",
                 "url": "https://careers.datadoghq.com/detail/8247250/?gh_jid=8247250",
                 "matched": "Salesforce",
                 "excerpt": "ct Ensure seamless integration: Work with GTM Systems to maintain and improve integrations between our tools, Salesforce CRM, and the broader GTM tech stack and data infrastructure Set the standard: Build and enforce governance fr"
-              }
-            ]
-          },
-          {
-            "key": "sovereignty_work",
-            "label": "Sovereignty workstream",
-            "severity": "low",
-            "why": "They are staffing the problem, which is a good sign and an admission it is open.",
-            "count": 1,
-            "examples": [
+              },
               {
-                "title": "Group Product Manager - Bring Your Own Cloud",
+                "title": "Legal Operations Manager",
                 "location": "New York, New York, USA",
-                "url": "https://careers.datadoghq.com/detail/8024863/?gh_jid=8024863",
-                "matched": "data residency",
-                "excerpt": "efficient observability. These challenges are critical for organizations in regulated industries with strict data residency requirements, where data must remain within controlled environments. Datadog’s Bring Your Own Cloud (BYOC) te"
+                "url": "https://careers.datadoghq.com/detail/8189660/?gh_jid=8189660",
+                "matched": "Salesforce",
+                "excerpt": "leadership and other stakeholders Manage technology used by the legal team (current tools include Brightflag, Salesforce, ChatGPT, Claude, Perplexity) and become a superuser of new tools Champion new systems and emerging AI capabi"
               }
             ]
           }
@@ -2061,26 +2005,26 @@
       },
       "jobs": {
         "ok": true,
-        "total": 767,
-        "placeable": 686,
-        "unplaceable": 81,
-        "eea": 116,
-        "non_eea": 570,
+        "total": 774,
+        "placeable": 689,
+        "unplaceable": 85,
+        "eea": 120,
+        "non_eea": 569,
         "countries": {
           "United States": 346,
-          "Ireland": 86,
-          "Canada": 60,
-          "United Kingdom": 49,
+          "Ireland": 88,
+          "Canada": 59,
+          "United Kingdom": 48,
           "Singapore": 47,
           "India": 43,
           "Mexico": 27,
+          "Japan": 11,
           "Australia": 10,
-          "Japan": 10,
           "Spain": 9,
           "Germany": 8,
+          "France": 6,
           "Taiwan": 5,
           "Romania": 5,
-          "France": 4,
           "Brazil": 3,
           "Luxembourg": 3,
           "Israel": 2,
@@ -2347,10 +2291,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 344,
-            "revisions": 343,
+            "captures": 347,
+            "revisions": 346,
             "first": "2024-01-18",
-            "last": "2026-10-30"
+            "last": "2026-11-01"
           }
         },
         {
@@ -2363,10 +2307,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 15,
-            "revisions": 14,
+            "captures": 16,
+            "revisions": 15,
             "first": "2025-04-01",
-            "last": "2026-09-09"
+            "last": "2026-11-01"
           }
         },
         {
@@ -2391,7 +2335,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "133 of 144 placeable roles name no EEA site — most prominently United States, United Kingdom, India. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "132 of 143 placeable roles name no EEA site — most prominently United States, United Kingdom, India. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -2408,7 +2352,7 @@
             },
             {
               "kind": "stat",
-              "excerpt": "India: 5 open roles"
+              "excerpt": "India: 4 open roles"
             }
           ],
           "question": "Which roles can access production data, and from which countries? Does the residency commitment cover support and engineering access, or only data at rest?"
@@ -2503,22 +2447,22 @@
       },
       "jobs": {
         "ok": true,
-        "total": 144,
-        "placeable": 144,
+        "total": 143,
+        "placeable": 143,
         "unplaceable": 0,
         "eea": 11,
-        "non_eea": 133,
+        "non_eea": 132,
         "countries": {
           "United States": 93,
           "United Kingdom": 20,
           "Germany": 8,
-          "India": 5,
+          "India": 4,
           "Singapore": 3,
           "Brazil": 3,
           "Japan": 3,
           "France": 3,
-          "Australia": 3,
-          "Israel": 2,
+          "Israel": 3,
+          "Australia": 2,
           "South Korea": 1
         },
         "scanned": 26,
@@ -2538,18 +2482,18 @@
                 "excerpt": "om idea to product, Figma empowers teams to streamline workflows, move faster, and work together in real time from anywhere in the world. If you're excited to shape the future of design and collaboration, join us! As a Business Systems Architect"
               },
               {
-                "title": "Community Support Specialist (Bengaluru, India)",
-                "location": "Bengaluru, India",
-                "url": "https://boards.greenhouse.io/figma/jobs/6222861004?gh_jid=6222861004",
-                "matched": "from anywhere in the world",
-                "excerpt": "om idea to product, Figma empowers teams to streamline workflows, move faster, and work together in real time from anywhere in the world. If you're excited to shape the future of design and collaboration, join us! As a member of our Customer Oper"
-              },
-              {
                 "title": "Compliance Engineer",
                 "location": "San Francisco, CA • New York, NY • United States",
                 "url": "https://boards.greenhouse.io/figma/jobs/6223155004?gh_jid=6223155004",
                 "matched": "from anywhere in the world",
                 "excerpt": "om idea to product, Figma empowers teams to streamline workflows, move faster, and work together in real time from anywhere in the world. If you're excited to shape the future of design and collaboration, join us! As a Compliance Engineer at Figm"
+              },
+              {
+                "title": "Customer Support Specialist (Bengaluru, India)",
+                "location": "Bengaluru, India",
+                "url": "https://boards.greenhouse.io/figma/jobs/6223879004?gh_jid=6223879004",
+                "matched": "from anywhere in the world",
+                "excerpt": "om idea to product, Figma empowers teams to streamline workflows, move faster, and work together in real time from anywhere in the world. If you're excited to shape the future of design and collaboration, join us! As a Customer Support Specialist"
               }
             ]
           },
@@ -2981,15 +2925,15 @@
       },
       "jobs": {
         "ok": true,
-        "total": 250,
-        "placeable": 242,
-        "unplaceable": 8,
+        "total": 254,
+        "placeable": 245,
+        "unplaceable": 9,
         "eea": 39,
-        "non_eea": 203,
+        "non_eea": 206,
         "countries": {
-          "United States": 121,
-          "Canada": 68,
-          "United Kingdom": 42,
+          "United States": 125,
+          "Canada": 70,
+          "United Kingdom": 40,
           "India": 34,
           "Poland": 14,
           "Germany": 14,
@@ -3046,7 +2990,7 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 8,
+            "count": 9,
             "examples": [
               {
                 "title": "Cloud Platform Engineer",
@@ -3366,19 +3310,19 @@
       },
       "jobs": {
         "ok": true,
-        "total": 425,
-        "placeable": 425,
+        "total": 423,
+        "placeable": 423,
         "unplaceable": 0,
-        "eea": 173,
-        "non_eea": 252,
+        "eea": 175,
+        "non_eea": 248,
         "countries": {
-          "United States": 129,
-          "Spain": 38,
-          "Canada": 36,
-          "United Kingdom": 29,
+          "United States": 126,
+          "Spain": 39,
+          "Canada": 35,
+          "United Kingdom": 30,
           "Greece": 26,
+          "Ireland": 25,
           "Poland": 24,
-          "Ireland": 24,
           "Portugal": 23,
           "India": 17,
           "Norway": 10,
@@ -3386,8 +3330,8 @@
           "Germany": 8,
           "Switzerland": 8,
           "Japan": 7,
-          "Australia": 5,
           "Costa Rica": 4,
+          "Australia": 4,
           "Belgium": 3,
           "Singapore": 3,
           "Netherlands": 3,
@@ -3408,41 +3352,11 @@
         "scanned": 26,
         "signals": [
           {
-            "key": "distributed",
-            "label": "Distributed across time zones",
-            "severity": "high",
-            "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 10,
-            "examples": [
-              {
-                "title": "Consulting Architect",
-                "location": "United States",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8325389&gh_jid=8325389",
-                "matched": "distributed team",
-                "excerpt": "cience, Engineering, Cybersecurity, or related field, or equivalent experience. Comfortable working in highly distributed teams, both remote and on-site when needed May require significant travel to customer sites to support engagements"
-              },
-              {
-                "title": "Consulting Architect - Observability",
-                "location": "India",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=7447246&gh_jid=7447246",
-                "matched": "across time zones",
-                "excerpt": "ires a blend of deep technical expertise, senior-level consulting acumen, and the ability to work effectively across time zones, with both remote support and required on-site client engagement. What You Will Be Doing As a member of our p"
-              },
-              {
-                "title": "Consulting Architect - Search",
-                "location": "India",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=7447236&gh_jid=7447236",
-                "matched": "across time zones",
-                "excerpt": "ires a blend of deep technical expertise, senior-level consulting acumen, and the ability to work effectively across time zones, with both remote support and required on-site client engagement. What You Will Be Doing As a member of our p"
-              }
-            ]
-          },
-          {
             "key": "travel",
             "label": "Travel expected",
             "severity": "high",
             "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 9,
+            "count": 10,
             "examples": [
               {
                 "title": "Consulting Architect - Observability",
@@ -3464,6 +3378,36 @@
                 "url": "https://jobs.elastic.co/jobs?gh_jid=8352728&gh_jid=8352728",
                 "matched": "willingness to travel",
                 "excerpt": "lated field, or equivalent experience. Flexibility: Comfort working in highly distributed, remote teams and a willingness to travel to customer sites as required. Bonus Points Elastic Certification: Elastic Certified Engineer or deep experti"
+              }
+            ]
+          },
+          {
+            "key": "distributed",
+            "label": "Distributed across time zones",
+            "severity": "high",
+            "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
+            "count": 9,
+            "examples": [
+              {
+                "title": "Consulting Architect",
+                "location": "United States",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8325389&gh_jid=8325389",
+                "matched": "distributed team",
+                "excerpt": "cience, Engineering, Cybersecurity, or related field, or equivalent experience. Comfortable working in highly distributed teams, both remote and on-site when needed May require significant travel to customer sites to support engagements"
+              },
+              {
+                "title": "Consulting Architect - Observability",
+                "location": "India",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=7447246&gh_jid=7447246",
+                "matched": "across time zones",
+                "excerpt": "ires a blend of deep technical expertise, senior-level consulting acumen, and the ability to work effectively across time zones, with both remote support and required on-site client engagement. What You Will Be Doing As a member of our p"
+              },
+              {
+                "title": "Consulting Architect - Search",
+                "location": "India",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=7447236&gh_jid=7447236",
+                "matched": "across time zones",
+                "excerpt": "ires a blend of deep technical expertise, senior-level consulting acumen, and the ability to work effectively across time zones, with both remote support and required on-site client engagement. What You Will Be Doing As a member of our p"
               }
             ]
           },
@@ -3875,7 +3819,7 @@
                 "location": "Hybrid - San Francisco, New York City, Austin",
                 "url": "https://job-boards.greenhouse.io/vercel/jobs/6119846004",
                 "matched": "segment",
-                "excerpt": "gration plans, and high-stakes presentations. Beyond running the team, you will shape how Vercel wins in this segment. You will turn patterns from the field into repeatable plays and carry what startups tell you back to our eng"
+                "excerpt": "shows up in the product, and own org planning, staffing, budgeting, and recruiting as you scale the team this segment needs. This is a hybrid role with 3 in-office days per week in San Francisco, Austin, or New York City. What"
               },
               {
                 "title": "Member of Technical Staff, Financial Data",
