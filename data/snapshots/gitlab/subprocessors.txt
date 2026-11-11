@@ -1,5 +1,5 @@
 # source: https://about.gitlab.com/privacy/subprocessors/
-# collected: 2026-11-10
+# collected: 2026-11-11
 
 GitLab Legal
 Sub-processors of GitLab
@@ -233,6 +233,12 @@ European Economic Area
 Professional Services
 Devoteam SAS
 France
+Professional Services
+INflow LLC
+United States
+Professional Services
+CHARA-WEB Co., Ltd
+Japan
 Professional Services
 Complete this form to be notified of changes to our sub-processors.
 All fields required

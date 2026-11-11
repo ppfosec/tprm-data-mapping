@@ -1,5 +1,40 @@
 [
   {
+    "id": "gitlab-subprocessors-2026-11-11",
+    "vendor_id": "gitlab",
+    "vendor_name": "GitLab",
+    "document": "subprocessors",
+    "document_label": "Sub-processor list",
+    "date": "2026-11-11",
+    "url": "https://about.gitlab.com/privacy/subprocessors/",
+    "hunks": [
+      {
+        "before": null,
+        "after": "INflow LLC"
+      },
+      {
+        "before": null,
+        "after": "United States"
+      },
+      {
+        "before": null,
+        "after": "Professional Services"
+      },
+      {
+        "before": null,
+        "after": "CHARA-WEB Co., Ltd"
+      },
+      {
+        "before": null,
+        "after": "Japan"
+      },
+      {
+        "before": null,
+        "after": "Professional Services"
+      }
+    ]
+  },
+  {
     "id": "cloudflare-other-2026-11-07",
     "vendor_id": "cloudflare",
     "vendor_name": "Cloudflare",
