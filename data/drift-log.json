@@ -1,5 +1,36 @@
 [
   {
+    "id": "gitlab-subprocessors-2026-11-12",
+    "vendor_id": "gitlab",
+    "vendor_name": "GitLab",
+    "document": "subprocessors",
+    "document_label": "Sub-processor list",
+    "date": "2026-11-12",
+    "url": "https://about.gitlab.com/privacy/subprocessors/",
+    "hunks": [
+      {
+        "before": "LangChain, Inc.",
+        "after": null
+      },
+      {
+        "before": "United States",
+        "after": null
+      },
+      {
+        "before": "Logging for",
+        "after": null
+      },
+      {
+        "before": "AI-Powered Product Features",
+        "after": null
+      },
+      {
+        "before": "GitLab.com, Dedicated, and Self-Managed",
+        "after": null
+      }
+    ]
+  },
+  {
     "id": "gitlab-subprocessors-2026-11-11",
     "vendor_id": "gitlab",
     "vendor_name": "GitLab",
