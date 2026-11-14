@@ -612,10 +612,10 @@
           "diff": null,
           "archive": {
             "ok": true,
-            "captures": 136,
-            "revisions": 135,
+            "captures": 138,
+            "revisions": 137,
             "first": "2024-09-26",
-            "last": "2026-11-13"
+            "last": "2026-11-14"
           }
         },
         {
@@ -628,8 +628,8 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 90,
-            "revisions": 89,
+            "captures": 91,
+            "revisions": 90,
             "first": "2025-03-11",
             "last": "2026-11-13"
           }
@@ -640,7 +640,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "633 of 671 placeable roles name no EEA site — most prominently United States, United Kingdom, Australia. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "630 of 668 placeable roles name no EEA site — most prominently United States, United Kingdom, Australia. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -649,15 +649,15 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 531 open roles"
+              "excerpt": "United States: 528 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 43 open roles"
+              "excerpt": "United Kingdom: 41 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "Australia: 15 open roles"
+              "excerpt": "Australia: 17 open roles"
             }
           ],
           "question": "Which roles can access production data, and from which countries? Does the residency commitment cover support and engineering access, or only data at rest?"
@@ -676,16 +676,16 @@
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Mumbai, India",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
+              "location": "Bangalore, India",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
               "matched": "across time zones",
               "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
             },
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Bangalore, India",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
+              "location": "Mumbai, India",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
               "matched": "across time zones",
               "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
             }
@@ -779,15 +779,15 @@
       },
       "jobs": {
         "ok": true,
-        "total": 673,
-        "placeable": 671,
+        "total": 670,
+        "placeable": 668,
         "unplaceable": 2,
         "eea": 38,
-        "non_eea": 633,
+        "non_eea": 630,
         "countries": {
-          "United States": 531,
-          "United Kingdom": 43,
-          "Australia": 15,
+          "United States": 528,
+          "United Kingdom": 41,
+          "Australia": 17,
           "Germany": 15,
           "Japan": 14,
           "South Korea": 12,
@@ -811,15 +811,15 @@
             "examples": [
               {
                 "title": "Applied AI Architect",
-                "location": "Mumbai, India",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
+                "location": "Bangalore, India",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
                 "matched": "across time zones",
                 "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
               },
               {
                 "title": "Applied AI Architect",
-                "location": "Bangalore, India",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
+                "location": "Mumbai, India",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
                 "matched": "across time zones",
                 "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
               },
@@ -1000,8 +1000,8 @@
           "url": "https://www.cloudflare.com/privacypolicy/",
           "path": "data/snapshots/cloudflare/privacy.txt",
           "lines": 648,
-          "chars": 47102,
-          "sha256": "502c7d44ff7d066e",
+          "chars": 47103,
+          "sha256": "cb4e75ad4a9122d5",
           "note": null,
           "archive": {
             "ok": true,
@@ -1021,10 +1021,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 331,
-            "revisions": 330,
+            "captures": 332,
+            "revisions": 331,
             "first": "2021-09-03",
-            "last": "2026-11-11"
+            "last": "2026-11-14"
           }
         },
         {
@@ -1154,7 +1154,7 @@
         "sensitivity_score": 10,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": false
+        "source_documents_changed": true
       },
       "jobs": {
         "ok": true,
@@ -1297,7 +1297,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 4,
+            "count": 3,
             "examples": [
               {
                 "title": "GTM Data Specialist, Consumption & Revenue Operations",
@@ -1325,6 +1325,21 @@
         ]
       },
       "drift": [
+        {
+          "id": "cloudflare-privacy-2026-11-14",
+          "vendor_id": "cloudflare",
+          "vendor_name": "Cloudflare",
+          "document": "privacy",
+          "document_label": "Privacy policy",
+          "date": "2026-11-14",
+          "url": "https://www.cloudflare.com/privacypolicy/",
+          "hunks": [
+            {
+              "before": "(“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information.",
+              "after": "(\u0000“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information."
+            }
+          ]
+        },
         {
           "id": "cloudflare-other-2026-11-07",
           "vendor_id": "cloudflare",
@@ -1407,25 +1422,6 @@
               "after": "(\u0000“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information."
             }
           ]
-        },
-        {
-          "id": "cloudflare-privacy-2026-10-22",
-          "vendor_id": "cloudflare",
-          "vendor_name": "Cloudflare",
-          "document": "privacy",
-          "document_label": "Privacy policy",
-          "date": "2026-10-22",
-          "url": "https://www.cloudflare.com/privacypolicy/",
-          "hunks": [
-            {
-              "before": "Diversity, equity, & inclusion",
-              "after": "Impact"
-            },
-            {
-              "before": "Impact/ESG",
-              "after": null
-            }
-          ]
         }
       ]
     },
@@ -1445,9 +1441,9 @@
           "kind": "privacy",
           "url": "https://www.datadoghq.com/legal/privacy/",
           "path": "data/snapshots/datadog/privacy.txt",
-          "lines": 456,
-          "chars": 26278,
-          "sha256": "0c3fc4a4636260c8",
+          "lines": 457,
+          "chars": 26305,
+          "sha256": "3fb873b93ea9ed22",
           "note": null,
           "archive": {
             "ok": true,
@@ -1461,9 +1457,9 @@
           "kind": "dpa",
           "url": "https://www.datadoghq.com/legal/data-processing-addendum/",
           "path": "data/snapshots/datadog/dpa.txt",
-          "lines": 472,
-          "chars": 29928,
-          "sha256": "4499788ba0804bb6",
+          "lines": 473,
+          "chars": 29955,
+          "sha256": "99ec97038b888a75",
           "note": null,
           "archive": {
             "ok": true,
@@ -1477,9 +1473,9 @@
           "kind": "subprocessors",
           "url": "https://www.datadoghq.com/legal/subprocessors/",
           "path": "data/snapshots/datadog/subprocessors.txt",
-          "lines": 288,
-          "chars": 5371,
-          "sha256": "54a4101b462d10ea",
+          "lines": 289,
+          "chars": 5398,
+          "sha256": "a48001471bf0a522",
           "note": null,
           "archive": {
             "ok": true,
@@ -1605,22 +1601,22 @@
         "sensitivity_score": 20,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": false
+        "source_documents_changed": true
       },
       "jobs": {
         "ok": true,
-        "total": 385,
-        "placeable": 385,
+        "total": 384,
+        "placeable": 384,
         "unplaceable": 0,
-        "eea": 54,
-        "non_eea": 331,
+        "eea": 56,
+        "non_eea": 328,
         "countries": {
-          "United States": 212,
+          "United States": 210,
           "Japan": 36,
           "France": 29,
           "Singapore": 20,
-          "Ireland": 17,
-          "Netherlands": 16,
+          "Ireland": 18,
+          "Netherlands": 17,
           "United Kingdom": 14,
           "Australia": 13,
           "South Korea": 11,
@@ -1628,8 +1624,8 @@
           "India": 9,
           "Spain": 5,
           "Israel": 4,
-          "Mexico": 4,
           "Colombia": 3,
+          "Mexico": 3,
           "Denmark": 2,
           "Sweden": 2,
           "Saudi Arabia": 2,
@@ -1638,8 +1634,8 @@
           "Chile": 1,
           "Indonesia": 1,
           "Canada": 1,
-          "Poland": 1,
-          "Austria": 1
+          "Austria": 1,
+          "Poland": 1
         },
         "scanned": 26,
         "signals": [
@@ -1723,6 +1719,51 @@
       },
       "drift": [
         {
+          "id": "datadog-privacy-2026-11-14",
+          "vendor_id": "datadog",
+          "vendor_name": "Datadog",
+          "document": "privacy",
+          "document_label": "Privacy policy",
+          "date": "2026-11-14",
+          "url": "https://www.datadoghq.com/legal/privacy/",
+          "hunks": [
+            {
+              "before": null,
+              "after": "End User Device Monitoring"
+            }
+          ]
+        },
+        {
+          "id": "datadog-dpa-2026-11-14",
+          "vendor_id": "datadog",
+          "vendor_name": "Datadog",
+          "document": "dpa",
+          "document_label": "Data processing agreement",
+          "date": "2026-11-14",
+          "url": "https://www.datadoghq.com/legal/data-processing-addendum/",
+          "hunks": [
+            {
+              "before": null,
+              "after": "End User Device Monitoring"
+            }
+          ]
+        },
+        {
+          "id": "datadog-subprocessors-2026-11-14",
+          "vendor_id": "datadog",
+          "vendor_name": "Datadog",
+          "document": "subprocessors",
+          "document_label": "Sub-processor list",
+          "date": "2026-11-14",
+          "url": "https://www.datadoghq.com/legal/subprocessors/",
+          "hunks": [
+            {
+              "before": null,
+              "after": "End User Device Monitoring"
+            }
+          ]
+        },
+        {
           "id": "datadog-privacy-2026-11-04",
           "vendor_id": "datadog",
           "vendor_name": "Datadog",
@@ -1778,111 +1819,6 @@
               "after": null
             }
           ]
-        },
-        {
-          "id": "datadog-privacy-2026-11-03",
-          "vendor_id": "datadog",
-          "vendor_name": "Datadog",
-          "document": "privacy",
-          "document_label": "Privacy policy",
-          "date": "2026-11-03",
-          "url": "https://www.datadoghq.com/legal/privacy/",
-          "hunks": [
-            {
-              "before": "Sensitive Data Scanner",
-              "after": null
-            },
-            {
-              "before": null,
-              "after": "AI Guard"
-            },
-            {
-              "before": null,
-              "after": "Sensitive Data Scanner"
-            },
-            {
-              "before": "Browser Real User Monitoring",
-              "after": "Real User Monitoring"
-            },
-            {
-              "before": "Mobile Real User Monitoring",
-              "after": null
-            },
-            {
-              "before": null,
-              "after": "AI Guard"
-            }
-          ]
-        },
-        {
-          "id": "datadog-dpa-2026-11-03",
-          "vendor_id": "datadog",
-          "vendor_name": "Datadog",
-          "document": "dpa",
-          "document_label": "Data processing agreement",
-          "date": "2026-11-03",
-          "url": "https://www.datadoghq.com/legal/data-processing-addendum/",
-          "hunks": [
-            {
-              "before": "Sensitive Data Scanner",
-              "after": null
-            },
-            {
-              "before": null,
-              "after": "AI Guard"
-            },
-            {
-              "before": null,
-              "after": "Sensitive Data Scanner"
-            },
-            {
-              "before": "Browser Real User Monitoring",
-              "after": "Real User Monitoring"
-            },
-            {
-              "before": "Mobile Real User Monitoring",
-              "after": null
-            },
-            {
-              "before": null,
-              "after": "AI Guard"
-            }
-          ]
-        },
-        {
-          "id": "datadog-subprocessors-2026-11-03",
-          "vendor_id": "datadog",
-          "vendor_name": "Datadog",
-          "document": "subprocessors",
-          "document_label": "Sub-processor list",
-          "date": "2026-11-03",
-          "url": "https://www.datadoghq.com/legal/subprocessors/",
-          "hunks": [
-            {
-              "before": "Sensitive Data Scanner",
-              "after": null
-            },
-            {
-              "before": null,
-              "after": "AI Guard"
-            },
-            {
-              "before": null,
-              "after": "Sensitive Data Scanner"
-            },
-            {
-              "before": "Browser Real User Monitoring",
-              "after": "Real User Monitoring"
-            },
-            {
-              "before": "Mobile Real User Monitoring",
-              "after": null
-            },
-            {
-              "before": null,
-              "after": "AI Guard"
-            }
-          ]
         }
       ]
     },
@@ -1924,8 +1860,8 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 248,
-            "revisions": 247,
+            "captures": 249,
+            "revisions": 248,
             "first": "2022-05-27",
             "last": "2026-11-05"
           }
@@ -2066,18 +2002,18 @@
       },
       "jobs": {
         "ok": true,
-        "total": 788,
-        "placeable": 707,
-        "unplaceable": 81,
-        "eea": 121,
-        "non_eea": 586,
+        "total": 786,
+        "placeable": 703,
+        "unplaceable": 83,
+        "eea": 119,
+        "non_eea": 584,
         "countries": {
-          "United States": 351,
-          "Ireland": 88,
+          "United States": 352,
+          "Ireland": 86,
           "Canada": 61,
-          "Singapore": 58,
-          "United Kingdom": 49,
-          "India": 42,
+          "Singapore": 57,
+          "United Kingdom": 48,
+          "India": 41,
           "Mexico": 29,
           "Australia": 11,
           "Japan": 11,
@@ -2352,10 +2288,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 374,
-            "revisions": 373,
+            "captures": 390,
+            "revisions": 389,
             "first": "2024-01-18",
-            "last": "2026-11-08"
+            "last": "2026-11-13"
           }
         },
         {
@@ -2396,7 +2332,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "132 of 143 placeable roles name no EEA site — most prominently United States, United Kingdom, Singapore. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "128 of 139 placeable roles name no EEA site — most prominently United States, United Kingdom, Singapore. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -2405,11 +2341,11 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 95 open roles"
+              "excerpt": "United States: 92 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 20 open roles"
+              "excerpt": "United Kingdom: 19 open roles"
             },
             {
               "kind": "stat",
@@ -2508,14 +2444,14 @@
       },
       "jobs": {
         "ok": true,
-        "total": 143,
-        "placeable": 143,
+        "total": 139,
+        "placeable": 139,
         "unplaceable": 0,
         "eea": 11,
-        "non_eea": 132,
+        "non_eea": 128,
         "countries": {
-          "United States": 95,
-          "United Kingdom": 20,
+          "United States": 92,
+          "United Kingdom": 19,
           "Germany": 8,
           "Singapore": 3,
           "Brazil": 3,
@@ -2986,27 +2922,27 @@
       },
       "jobs": {
         "ok": true,
-        "total": 254,
-        "placeable": 246,
-        "unplaceable": 8,
-        "eea": 43,
-        "non_eea": 203,
+        "total": 251,
+        "placeable": 242,
+        "unplaceable": 9,
+        "eea": 40,
+        "non_eea": 202,
         "countries": {
-          "United States": 121,
-          "Canada": 68,
-          "United Kingdom": 38,
-          "India": 37,
-          "Poland": 14,
-          "Germany": 14,
+          "United States": 122,
+          "Canada": 69,
+          "United Kingdom": 36,
+          "India": 35,
+          "Poland": 13,
+          "Germany": 13,
           "Singapore": 11,
-          "Spain": 10,
-          "Ireland": 9,
+          "Spain": 9,
+          "Ireland": 7,
           "Australia": 7,
-          "France": 7,
-          "Netherlands": 6,
-          "Israel": 5,
+          "France": 6,
+          "Netherlands": 5,
           "Japan": 5,
           "South Korea": 4,
+          "Israel": 4,
           "Brazil": 4,
           "Austria": 4,
           "United Arab Emirates": 2,
@@ -3436,16 +3372,16 @@
       },
       "jobs": {
         "ok": true,
-        "total": 398,
-        "placeable": 398,
+        "total": 400,
+        "placeable": 400,
         "unplaceable": 0,
         "eea": 165,
-        "non_eea": 233,
+        "non_eea": 235,
         "countries": {
           "United States": 119,
           "Spain": 38,
+          "United Kingdom": 30,
           "Canada": 30,
-          "United Kingdom": 29,
           "Greece": 25,
           "Ireland": 22,
           "Poland": 22,
@@ -3456,10 +3392,10 @@
           "Japan": 7,
           "Romania": 7,
           "Switzerland": 6,
+          "Singapore": 4,
           "Netherlands": 4,
           "Australia": 4,
           "Belgium": 3,
-          "Singapore": 3,
           "Costa Rica": 3,
           "Mexico": 3,
           "Austria": 2,
@@ -3477,6 +3413,36 @@
         },
         "scanned": 26,
         "signals": [
+          {
+            "key": "distributed",
+            "label": "Distributed across time zones",
+            "severity": "high",
+            "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
+            "count": 9,
+            "examples": [
+              {
+                "title": "Consulting Architect",
+                "location": "United States",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8325389&gh_jid=8325389",
+                "matched": "distributed team",
+                "excerpt": "cience, Engineering, Cybersecurity, or related field, or equivalent experience. Comfortable working in highly distributed teams, both remote and on-site when needed May require significant travel to customer sites to support engagements"
+              },
+              {
+                "title": "Consulting Architect - Observability",
+                "location": "India",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=7447246&gh_jid=7447246",
+                "matched": "across time zones",
+                "excerpt": "ires a blend of deep technical expertise, senior-level consulting acumen, and the ability to work effectively across time zones, with both remote support and required on-site client engagement. What You Will Be Doing As a member of our p"
+              },
+              {
+                "title": "Consulting Architect - Search",
+                "location": "India",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=7447236&gh_jid=7447236",
+                "matched": "across time zones",
+                "excerpt": "ires a blend of deep technical expertise, senior-level consulting acumen, and the ability to work effectively across time zones, with both remote support and required on-site client engagement. What You Will Be Doing As a member of our p"
+              }
+            ]
+          },
           {
             "key": "travel",
             "label": "Travel expected",
@@ -3504,36 +3470,6 @@
                 "url": "https://jobs.elastic.co/jobs?gh_jid=8153274&gh_jid=8153274",
                 "matched": "Willingness to travel",
                 "excerpt": "ain national security clearance in your country of employment (screening sponsored by Elastic where required) Willingness to travel and work onsite with customers (up to 60% of the time), combined with comfort working remotely in a highly di"
-              }
-            ]
-          },
-          {
-            "key": "distributed",
-            "label": "Distributed across time zones",
-            "severity": "high",
-            "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 8,
-            "examples": [
-              {
-                "title": "Consulting Architect",
-                "location": "United States",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8325389&gh_jid=8325389",
-                "matched": "distributed team",
-                "excerpt": "cience, Engineering, Cybersecurity, or related field, or equivalent experience. Comfortable working in highly distributed teams, both remote and on-site when needed May require significant travel to customer sites to support engagements"
-              },
-              {
-                "title": "Consulting Architect - Observability",
-                "location": "India",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=7447246&gh_jid=7447246",
-                "matched": "across time zones",
-                "excerpt": "ires a blend of deep technical expertise, senior-level consulting acumen, and the ability to work effectively across time zones, with both remote support and required on-site client engagement. What You Will Be Doing As a member of our p"
-              },
-              {
-                "title": "Consulting Architect - Search",
-                "location": "India",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=7447236&gh_jid=7447236",
-                "matched": "across time zones",
-                "excerpt": "ires a blend of deep technical expertise, senior-level consulting acumen, and the ability to work effectively across time zones, with both remote support and required on-site client engagement. What You Will Be Doing As a member of our p"
               }
             ]
           },
@@ -3798,7 +3734,7 @@
             {
               "kind": "job",
               "title": "Customer Support Engineer",
-              "location": "Hybrid - Sydney",
+              "location": "Remote - Australia",
               "url": "https://job-boards.greenhouse.io/vercel/jobs/6230763004",
               "matched": "on-call",
               "excerpt": "deep to find and resolve root causes. In addition to this, you will be comfortable with evening, weekend, and on-call work based on a rota system. Ultimately, you will help establish our reputation as a company that is exceptio"
@@ -3866,13 +3802,13 @@
       },
       "jobs": {
         "ok": true,
-        "total": 87,
-        "placeable": 84,
+        "total": 86,
+        "placeable": 83,
         "unplaceable": 3,
         "eea": 6,
-        "non_eea": 78,
+        "non_eea": 77,
         "countries": {
-          "United States": 69,
+          "United States": 68,
           "United Kingdom": 11,
           "Germany": 6,
           "Australia": 4,
@@ -3889,7 +3825,7 @@
             "examples": [
               {
                 "title": "Customer Support Engineer",
-                "location": "Hybrid - Sydney",
+                "location": "Remote - Australia",
                 "url": "https://job-boards.greenhouse.io/vercel/jobs/6230763004",
                 "matched": "on-call",
                 "excerpt": "deep to find and resolve root causes. In addition to this, you will be comfortable with evening, weekend, and on-call work based on a rota system. Ultimately, you will help establish our reputation as a company that is exceptio"
@@ -3919,7 +3855,7 @@
             "examples": [
               {
                 "title": "Customer Support Engineer",
-                "location": "Hybrid - Sydney",
+                "location": "Remote - Australia",
                 "url": "https://job-boards.greenhouse.io/vercel/jobs/6230763004",
                 "matched": "globally distributed",
                 "excerpt": "oot causes. Exceptional communication skills, both written and oral. Comfortable working with a fully remote, globally distributed team. Availability to work within a weekend and on-call rota. A passion to deliver a customer experience seco"

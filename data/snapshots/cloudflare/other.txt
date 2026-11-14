@@ -1,5 +1,5 @@
 # source: https://www.cloudflare.com/trust-hub/gdpr/
-# collected: 2026-11-13
+# collected: 2026-11-14
 
 Cloudflare and GDPR compliance
 Cloudflare is a privacy-first company.

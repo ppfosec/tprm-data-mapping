@@ -1,11 +1,12 @@
 # source: https://www.datadoghq.com/legal/subprocessors/
-# collected: 2026-11-13
+# collected: 2026-11-14
 
 Product
 Infrastructure
 Infrastructure Monitoring
 Custom Metrics
 Network Monitoring
+End User Device Monitoring
 Container Monitoring
 Kubernetes Autoscaling
 Serverless Monitoring
