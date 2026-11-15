@@ -612,10 +612,10 @@
           "diff": null,
           "archive": {
             "ok": true,
-            "captures": 138,
-            "revisions": 137,
+            "captures": 139,
+            "revisions": 138,
             "first": "2024-09-26",
-            "last": "2026-11-14"
+            "last": "2026-11-15"
           }
         },
         {
@@ -640,7 +640,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "630 of 668 placeable roles name no EEA site — most prominently United States, United Kingdom, Australia. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "628 of 666 placeable roles name no EEA site — most prominently United States, United Kingdom, Australia. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -649,7 +649,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 528 open roles"
+              "excerpt": "United States: 527 open roles"
             },
             {
               "kind": "stat",
@@ -657,7 +657,7 @@
             },
             {
               "kind": "stat",
-              "excerpt": "Australia: 17 open roles"
+              "excerpt": "Australia: 16 open roles"
             }
           ],
           "question": "Which roles can access production data, and from which countries? Does the residency commitment cover support and engineering access, or only data at rest?"
@@ -676,16 +676,16 @@
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Bangalore, India",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
+              "location": "Sydney, Australia",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5450798008",
               "matched": "across time zones",
-              "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
+              "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the Australia market You may be a good fit if you"
             },
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Mumbai, India",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
+              "location": "Bangalore, India",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
               "matched": "across time zones",
               "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
             }
@@ -779,15 +779,15 @@
       },
       "jobs": {
         "ok": true,
-        "total": 670,
-        "placeable": 668,
+        "total": 668,
+        "placeable": 666,
         "unplaceable": 2,
         "eea": 38,
-        "non_eea": 630,
+        "non_eea": 628,
         "countries": {
-          "United States": 528,
+          "United States": 527,
           "United Kingdom": 41,
-          "Australia": 17,
+          "Australia": 16,
           "Germany": 15,
           "Japan": 14,
           "South Korea": 12,
@@ -811,6 +811,13 @@
             "examples": [
               {
                 "title": "Applied AI Architect",
+                "location": "Sydney, Australia",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5450798008",
+                "matched": "across time zones",
+                "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the Australia market You may be a good fit if you"
+              },
+              {
+                "title": "Applied AI Architect",
                 "location": "Bangalore, India",
                 "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
                 "matched": "across time zones",
@@ -822,13 +829,6 @@
                 "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
                 "matched": "across time zones",
                 "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
-              },
-              {
-                "title": "Applied AI Architect",
-                "location": "Sydney, Australia",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5450798008",
-                "matched": "across time zones",
-                "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the Australia market You may be a good fit if you"
               }
             ]
           },
@@ -1000,8 +1000,8 @@
           "url": "https://www.cloudflare.com/privacypolicy/",
           "path": "data/snapshots/cloudflare/privacy.txt",
           "lines": 648,
-          "chars": 47103,
-          "sha256": "cb4e75ad4a9122d5",
+          "chars": 47104,
+          "sha256": "134f6c8048da2879",
           "note": null,
           "archive": {
             "ok": true,
@@ -1021,10 +1021,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 332,
-            "revisions": 331,
+            "captures": 331,
+            "revisions": 330,
             "first": "2021-09-03",
-            "last": "2026-11-14"
+            "last": "2026-11-11"
           }
         },
         {
@@ -1326,6 +1326,21 @@
       },
       "drift": [
         {
+          "id": "cloudflare-privacy-2026-11-15",
+          "vendor_id": "cloudflare",
+          "vendor_name": "Cloudflare",
+          "document": "privacy",
+          "document_label": "Privacy policy",
+          "date": "2026-11-15",
+          "url": "https://www.cloudflare.com/privacypolicy/",
+          "hunks": [
+            {
+              "before": "(\u0000“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information.",
+              "after": "(\u0000\u0000“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information."
+            }
+          ]
+        },
+        {
           "id": "cloudflare-privacy-2026-11-14",
           "vendor_id": "cloudflare",
           "vendor_name": "Cloudflare",
@@ -1405,21 +1420,6 @@
             {
               "before": "(\u0000“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information.",
               "after": "(“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information."
-            }
-          ]
-        },
-        {
-          "id": "cloudflare-privacy-2026-10-25",
-          "vendor_id": "cloudflare",
-          "vendor_name": "Cloudflare",
-          "document": "privacy",
-          "document_label": "Privacy policy",
-          "date": "2026-10-25",
-          "url": "https://www.cloudflare.com/privacypolicy/",
-          "hunks": [
-            {
-              "before": "(“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information.",
-              "after": "(\u0000“Cloudflare”, “we”, “us” or “our”) gathers, how we use that personal information, and the options you have to access, correct, or delete such personal information."
             }
           ]
         }
@@ -1601,7 +1601,7 @@
         "sensitivity_score": 20,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": true
+        "source_documents_changed": false
       },
       "jobs": {
         "ok": true,
@@ -1631,8 +1631,8 @@
           "Saudi Arabia": 2,
           "Germany": 2,
           "Portugal": 1,
-          "Chile": 1,
           "Indonesia": 1,
+          "Chile": 1,
           "Canada": 1,
           "Austria": 1,
           "Poland": 1
@@ -1860,8 +1860,8 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 249,
-            "revisions": 248,
+            "captures": 250,
+            "revisions": 249,
             "first": "2022-05-27",
             "last": "2026-11-05"
           }
@@ -2002,16 +2002,16 @@
       },
       "jobs": {
         "ok": true,
-        "total": 786,
-        "placeable": 703,
+        "total": 785,
+        "placeable": 702,
         "unplaceable": 83,
         "eea": 119,
-        "non_eea": 584,
+        "non_eea": 583,
         "countries": {
           "United States": 352,
           "Ireland": 86,
           "Canada": 61,
-          "Singapore": 57,
+          "Singapore": 56,
           "United Kingdom": 48,
           "India": 41,
           "Mexico": 29,
@@ -2288,8 +2288,8 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 390,
-            "revisions": 389,
+            "captures": 411,
+            "revisions": 410,
             "first": "2024-01-18",
             "last": "2026-11-13"
           }
@@ -2764,10 +2764,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 85,
-            "revisions": 84,
+            "captures": 86,
+            "revisions": 85,
             "first": "2020-11-27",
-            "last": "2026-11-07"
+            "last": "2026-11-13"
           }
         },
         {
@@ -2922,27 +2922,27 @@
       },
       "jobs": {
         "ok": true,
-        "total": 251,
-        "placeable": 242,
+        "total": 254,
+        "placeable": 245,
         "unplaceable": 9,
-        "eea": 40,
-        "non_eea": 202,
+        "eea": 41,
+        "non_eea": 204,
         "countries": {
           "United States": 122,
           "Canada": 69,
-          "United Kingdom": 36,
+          "United Kingdom": 37,
           "India": 35,
           "Poland": 13,
           "Germany": 13,
           "Singapore": 11,
           "Spain": 9,
+          "France": 8,
           "Ireland": 7,
           "Australia": 7,
-          "France": 6,
           "Netherlands": 5,
           "Japan": 5,
+          "Israel": 5,
           "South Korea": 4,
-          "Israel": 4,
           "Brazil": 4,
           "Austria": 4,
           "United Arab Emirates": 2,
@@ -2956,7 +2956,7 @@
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 16,
+            "count": 18,
             "examples": [
               {
                 "title": "Customer Success Architect",
@@ -2973,11 +2973,11 @@
                 "excerpt": "questions, guide roadmaps, and navigate escalations. We work in an all-remote, asynchronous way, coordinating across time zones to support a focused set of strategic accounts and ensure long-term customer success. The base salary range f"
               },
               {
-                "title": "Customer Success Architect, Japan",
-                "location": "Remote, Japan",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8880999002",
-                "matched": "across time zones",
-                "excerpt": "te escalations, and help them realize measurable value from GitLab. Composed of team members working remotely across time zones, we operate asynchronously to support a focused set of strategic accounts across the region. It's a team well"
+                "title": "Customer Success Architect, France",
+                "location": "Remote, France",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8937803002",
+                "matched": "distributed team",
+                "excerpt": "ks or opportunities, and recommend actionable next steps. Comfort working both independently and as part of a distributed team, with attention to detail and alignment to GitLab’s values. Openness to travel as needed and to apply transfe"
               }
             ]
           },
