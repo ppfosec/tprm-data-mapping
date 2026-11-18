@@ -612,10 +612,10 @@
           "diff": null,
           "archive": {
             "ok": true,
-            "captures": 147,
-            "revisions": 146,
+            "captures": 149,
+            "revisions": 148,
             "first": "2024-09-26",
-            "last": "2026-11-17"
+            "last": "2026-11-18"
           }
         },
         {
@@ -628,10 +628,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 92,
-            "revisions": 91,
+            "captures": 93,
+            "revisions": 92,
             "first": "2025-03-11",
-            "last": "2026-11-13"
+            "last": "2026-11-17"
           }
         }
       ],
@@ -640,7 +640,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "621 of 658 placeable roles name no EEA site — most prominently United States, United Kingdom, Australia. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "618 of 655 placeable roles name no EEA site — most prominently United States, United Kingdom, Australia. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -649,11 +649,11 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 519 open roles"
+              "excerpt": "United States: 518 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 43 open roles"
+              "excerpt": "United Kingdom: 42 open roles"
             },
             {
               "kind": "stat",
@@ -676,10 +676,10 @@
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Sydney, Australia",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5450798008",
+              "location": "Bangalore, India",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
               "matched": "across time zones",
-              "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the Australia market You may be a good fit if you"
+              "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
             },
             {
               "kind": "job",
@@ -779,20 +779,20 @@
       },
       "jobs": {
         "ok": true,
-        "total": 660,
-        "placeable": 658,
+        "total": 657,
+        "placeable": 655,
         "unplaceable": 2,
         "eea": 37,
-        "non_eea": 621,
+        "non_eea": 618,
         "countries": {
-          "United States": 519,
-          "United Kingdom": 43,
+          "United States": 518,
+          "United Kingdom": 42,
           "Australia": 16,
           "Germany": 15,
           "Japan": 14,
-          "Singapore": 11,
           "South Korea": 11,
           "France": 11,
+          "Singapore": 10,
           "Ireland": 8,
           "India": 6,
           "Switzerland": 5,
@@ -811,10 +811,10 @@
             "examples": [
               {
                 "title": "Applied AI Architect",
-                "location": "Sydney, Australia",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5450798008",
+                "location": "Bangalore, India",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
                 "matched": "across time zones",
-                "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the Australia market You may be a good fit if you"
+                "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
               },
               {
                 "title": "Applied AI Architect",
@@ -825,10 +825,10 @@
               },
               {
                 "title": "Applied AI Architect",
-                "location": "Bangalore, India",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
+                "location": "Sydney, Australia",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5450798008",
                 "matched": "across time zones",
-                "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
+                "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the Australia market You may be a good fit if you"
               }
             ]
           },
@@ -1154,13 +1154,13 @@
         "sensitivity_score": 10,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": true
+        "source_documents_changed": false
       },
       "jobs": {
         "ok": true,
-        "total": 475,
+        "total": 484,
         "placeable": 3,
-        "unplaceable": 472,
+        "unplaceable": 481,
         "eea": 1,
         "non_eea": 2,
         "countries": {
@@ -1175,7 +1175,7 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 7,
+            "count": 8,
             "examples": [
               {
                 "title": "AI Security Research & Red Team Engineer",
@@ -1605,35 +1605,35 @@
       },
       "jobs": {
         "ok": true,
-        "total": 380,
-        "placeable": 380,
+        "total": 381,
+        "placeable": 381,
         "unplaceable": 0,
-        "eea": 56,
-        "non_eea": 324,
+        "eea": 55,
+        "non_eea": 326,
         "countries": {
           "United States": 209,
-          "Japan": 34,
-          "France": 27,
+          "Japan": 36,
+          "France": 26,
           "Singapore": 19,
           "Netherlands": 18,
           "Ireland": 18,
           "United Kingdom": 16,
-          "Australia": 13,
+          "Australia": 12,
           "South Korea": 11,
-          "Brazil": 10,
+          "Brazil": 11,
           "India": 9,
-          "Spain": 5,
           "Israel": 4,
+          "Spain": 4,
           "Colombia": 3,
+          "Mexico": 3,
           "Denmark": 2,
           "Sweden": 2,
           "Saudi Arabia": 2,
-          "Mexico": 2,
           "Germany": 2,
           "Portugal": 1,
-          "Indonesia": 1,
-          "Chile": 1,
           "Canada": 1,
+          "Chile": 1,
+          "Indonesia": 1,
           "Poland": 1,
           "Austria": 1,
           "Italy": 1
@@ -2003,31 +2003,31 @@
       },
       "jobs": {
         "ok": true,
-        "total": 794,
-        "placeable": 712,
-        "unplaceable": 82,
-        "eea": 123,
-        "non_eea": 589,
+        "total": 786,
+        "placeable": 702,
+        "unplaceable": 84,
+        "eea": 120,
+        "non_eea": 582,
         "countries": {
-          "United States": 349,
-          "Ireland": 87,
+          "United States": 342,
+          "Ireland": 84,
           "Canada": 62,
-          "Singapore": 59,
-          "United Kingdom": 48,
-          "India": 43,
+          "Singapore": 58,
+          "United Kingdom": 47,
+          "India": 44,
           "Mexico": 29,
           "Japan": 14,
-          "Australia": 11,
+          "Australia": 12,
           "Spain": 11,
           "Germany": 10,
           "France": 5,
           "Taiwan": 5,
           "Romania": 5,
+          "Israel": 3,
           "Belgium": 3,
           "New Zealand": 3,
           "Brazil": 3,
           "Luxembourg": 3,
-          "Israel": 2,
           "Sweden": 2,
           "Netherlands": 1
         },
@@ -2038,7 +2038,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 7,
+            "count": 6,
             "examples": [
               {
                 "title": "Account Executive - Platforms Hunter (French Fluency)",
@@ -2288,8 +2288,8 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 426,
-            "revisions": 425,
+            "captures": 428,
+            "revisions": 427,
             "first": "2024-01-18",
             "last": "2026-11-17"
           }
@@ -2332,7 +2332,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "129 of 140 placeable roles name no EEA site — most prominently United States, United Kingdom, Singapore. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "132 of 144 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -2345,11 +2345,11 @@
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 19 open roles"
+              "excerpt": "United Kingdom: 20 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "Singapore: 3 open roles"
+              "excerpt": "Japan: 4 open roles"
             }
           ],
           "question": "Which roles can access production data, and from which countries? Does the residency commitment cover support and engineering access, or only data at rest?"
@@ -2444,20 +2444,20 @@
       },
       "jobs": {
         "ok": true,
-        "total": 140,
-        "placeable": 140,
+        "total": 144,
+        "placeable": 144,
         "unplaceable": 0,
-        "eea": 11,
-        "non_eea": 129,
+        "eea": 12,
+        "non_eea": 132,
         "countries": {
           "United States": 93,
-          "United Kingdom": 19,
+          "United Kingdom": 20,
           "Germany": 8,
+          "Japan": 4,
+          "France": 4,
+          "Israel": 4,
           "Singapore": 3,
           "Brazil": 3,
-          "Japan": 3,
-          "France": 3,
-          "Israel": 3,
           "India": 2,
           "Australia": 2,
           "South Korea": 1
@@ -2764,10 +2764,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 87,
-            "revisions": 86,
+            "captures": 89,
+            "revisions": 88,
             "first": "2020-11-27",
-            "last": "2026-11-13"
+            "last": "2026-11-16"
           }
         },
         {
@@ -2922,28 +2922,28 @@
       },
       "jobs": {
         "ok": true,
-        "total": 253,
-        "placeable": 244,
-        "unplaceable": 9,
-        "eea": 39,
-        "non_eea": 205,
+        "total": 250,
+        "placeable": 240,
+        "unplaceable": 10,
+        "eea": 37,
+        "non_eea": 203,
         "countries": {
-          "United States": 123,
-          "Canada": 68,
-          "United Kingdom": 38,
-          "India": 34,
-          "Poland": 14,
-          "Singapore": 12,
+          "United States": 122,
+          "Canada": 66,
+          "United Kingdom": 37,
+          "India": 33,
+          "Poland": 12,
+          "Singapore": 11,
           "Germany": 10,
           "Australia": 9,
           "France": 9,
-          "Ireland": 8,
           "Spain": 8,
+          "Ireland": 8,
           "Netherlands": 5,
           "Japan": 5,
           "Israel": 5,
+          "Brazil": 5,
           "South Korea": 4,
-          "Brazil": 4,
           "Austria": 4,
           "United Arab Emirates": 2,
           "Sweden": 1,
@@ -2956,7 +2956,7 @@
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 18,
+            "count": 19,
             "examples": [
               {
                 "title": "Customer Success Architect",
@@ -3379,35 +3379,34 @@
       },
       "jobs": {
         "ok": true,
-        "total": 384,
-        "placeable": 384,
+        "total": 379,
+        "placeable": 379,
         "unplaceable": 0,
-        "eea": 152,
-        "non_eea": 232,
+        "eea": 149,
+        "non_eea": 230,
         "countries": {
           "United States": 118,
-          "Spain": 35,
+          "Spain": 34,
           "Canada": 30,
-          "United Kingdom": 29,
-          "Greece": 22,
+          "United Kingdom": 28,
+          "Greece": 21,
           "Ireland": 20,
           "Poland": 20,
-          "Portugal": 19,
+          "Portugal": 18,
           "India": 17,
           "Germany": 8,
           "Norway": 8,
-          "Japan": 7,
           "Romania": 7,
           "Switzerland": 6,
+          "Singapore": 6,
+          "Japan": 6,
           "Australia": 5,
-          "Singapore": 5,
           "Netherlands": 4,
           "Belgium": 3,
           "Costa Rica": 3,
           "Mexico": 3,
           "Austria": 2,
           "Italy": 2,
-          "Saudi Arabia": 2,
           "Brazil": 2,
           "Israel": 2,
           "South Africa": 1,
@@ -3415,6 +3414,7 @@
           "France": 1,
           "Indonesia": 1,
           "Hungary": 1,
+          "Saudi Arabia": 1,
           "Denmark": 1,
           "United Arab Emirates": 1
         },
@@ -3425,7 +3425,7 @@
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 10,
+            "count": 11,
             "examples": [
               {
                 "title": "Consulting Architect",
@@ -3455,7 +3455,7 @@
             "label": "Travel expected",
             "severity": "high",
             "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 10,
+            "count": 9,
             "examples": [
               {
                 "title": "Consulting Architect (Canberra)",
@@ -3553,22 +3553,6 @@
                 "url": "https://jobs.elastic.co/jobs?gh_jid=8207937&gh_jid=8207937",
                 "matched": "Salesforce",
                 "excerpt": "ations deliver on the promise of AI. What is The Role This role is responsible for leading the migration from Salesforce CPQ to Revenue Cloud and being responsible for the end-to-end Quote-to-Cash capability. The manager will ensu"
-              }
-            ]
-          },
-          {
-            "key": "sovereignty_work",
-            "label": "Sovereignty workstream",
-            "severity": "low",
-            "why": "They are staffing the problem, which is a good sign and an admission it is open.",
-            "count": 1,
-            "examples": [
-              {
-                "title": "Partner Solutions Architect",
-                "location": "Saudi Arabia",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8091966&gh_jid=8091966",
-                "matched": "sovereign",
-                "excerpt": "scaler patterns on AWS, Google Cloud and Microsoft Azure. Back partner-built solutions on Elastic — vertical, sovereign and managed offerings that extend our product surface beyond what Elastic builds itself. Build reusable demos"
               }
             ]
           },
