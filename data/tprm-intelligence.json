@@ -612,10 +612,10 @@
           "diff": null,
           "archive": {
             "ok": true,
-            "captures": 149,
-            "revisions": 148,
+            "captures": 151,
+            "revisions": 150,
             "first": "2024-09-26",
-            "last": "2026-11-18"
+            "last": "2026-11-19"
           }
         },
         {
@@ -640,7 +640,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "618 of 655 placeable roles name no EEA site — most prominently United States, United Kingdom, Australia. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "601 of 636 placeable roles name no EEA site — most prominently United States, United Kingdom, Australia. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -649,7 +649,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 518 open roles"
+              "excerpt": "United States: 500 open roles"
             },
             {
               "kind": "stat",
@@ -676,18 +676,18 @@
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Bangalore, India",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
+              "location": "Mumbai, India",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
               "matched": "across time zones",
               "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
             },
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Mumbai, India",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
+              "location": "Sydney, Australia",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5450798008",
               "matched": "across time zones",
-              "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
+              "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the Australia market You may be a good fit if you"
             }
           ],
           "question": "For out-of-hours incidents, who is on the rotation, where are they, and is their access to customer data logged and reviewable by the customer?"
@@ -779,20 +779,20 @@
       },
       "jobs": {
         "ok": true,
-        "total": 657,
-        "placeable": 655,
+        "total": 638,
+        "placeable": 636,
         "unplaceable": 2,
-        "eea": 37,
-        "non_eea": 618,
+        "eea": 35,
+        "non_eea": 601,
         "countries": {
-          "United States": 518,
+          "United States": 500,
           "United Kingdom": 42,
           "Australia": 16,
           "Germany": 15,
           "Japan": 14,
-          "South Korea": 11,
-          "France": 11,
+          "South Korea": 12,
           "Singapore": 10,
+          "France": 9,
           "Ireland": 8,
           "India": 6,
           "Switzerland": 5,
@@ -811,13 +811,6 @@
             "examples": [
               {
                 "title": "Applied AI Architect",
-                "location": "Bangalore, India",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
-                "matched": "across time zones",
-                "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
-              },
-              {
-                "title": "Applied AI Architect",
                 "location": "Mumbai, India",
                 "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
                 "matched": "across time zones",
@@ -829,6 +822,13 @@
                 "url": "https://job-boards.greenhouse.io/anthropic/jobs/5450798008",
                 "matched": "across time zones",
                 "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the Australia market You may be a good fit if you"
+              },
+              {
+                "title": "Applied AI Architect",
+                "location": "Bangalore, India",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
+                "matched": "across time zones",
+                "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
               }
             ]
           },
@@ -1021,10 +1021,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 335,
-            "revisions": 334,
+            "captures": 336,
+            "revisions": 335,
             "first": "2021-09-03",
-            "last": "2026-11-16"
+            "last": "2026-11-17"
           }
         },
         {
@@ -1158,9 +1158,9 @@
       },
       "jobs": {
         "ok": true,
-        "total": 484,
+        "total": 496,
         "placeable": 3,
-        "unplaceable": 481,
+        "unplaceable": 493,
         "eea": 1,
         "non_eea": 2,
         "countries": {
@@ -1297,7 +1297,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 4,
+            "count": 3,
             "examples": [
               {
                 "title": "GTM Data Specialist, Consumption & Revenue Operations",
@@ -1319,6 +1319,22 @@
                 "url": "https://boards.greenhouse.io/cloudflare/jobs/8281074?gh_jid=8281074",
                 "matched": "Zendesk",
                 "excerpt": "ms like Jamf Pro or Kandji. Experience using corporate ticketing platforms such as Jira Service Management or Zendesk. Relevant technical certifications such as Apple Certified Support Professional (ACSP), Google Workspace Admi"
+              }
+            ]
+          },
+          {
+            "key": "sovereignty_work",
+            "label": "Sovereignty workstream",
+            "severity": "low",
+            "why": "They are staffing the problem, which is a good sign and an admission it is open.",
+            "count": 1,
+            "examples": [
+              {
+                "title": "Enterprise Architect - Toronto, Canada",
+                "location": "Distributed",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8319377?gh_jid=8319377",
+                "matched": "sovereign",
+                "excerpt": "ctivity, telco integration Application performance: caching, latency, scaling at the edge Data protection and sovereignty: data residency, encryption and key management, post-quantum readiness Preferred Experience Financial servi"
               }
             ]
           }
@@ -1431,7 +1447,7 @@
       "category": "Observability",
       "public_evidence_only": true,
       "surface": {
-        "grade": "39",
+        "grade": "35",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "3 public documents · 3 open reconciliations"
@@ -1605,37 +1621,37 @@
       },
       "jobs": {
         "ok": true,
-        "total": 381,
-        "placeable": 381,
+        "total": 379,
+        "placeable": 379,
         "unplaceable": 0,
-        "eea": 55,
-        "non_eea": 326,
+        "eea": 57,
+        "non_eea": 322,
         "countries": {
-          "United States": 209,
-          "Japan": 36,
-          "France": 26,
+          "United States": 205,
+          "Japan": 37,
+          "France": 27,
+          "Ireland": 20,
+          "Netherlands": 19,
           "Singapore": 19,
-          "Netherlands": 18,
-          "Ireland": 18,
-          "United Kingdom": 16,
-          "Australia": 12,
+          "United Kingdom": 17,
           "South Korea": 11,
+          "Australia": 11,
           "Brazil": 11,
           "India": 9,
           "Israel": 4,
           "Spain": 4,
           "Colombia": 3,
-          "Mexico": 3,
           "Denmark": 2,
           "Sweden": 2,
           "Saudi Arabia": 2,
+          "Mexico": 2,
           "Germany": 2,
           "Portugal": 1,
-          "Canada": 1,
           "Chile": 1,
           "Indonesia": 1,
-          "Poland": 1,
+          "Canada": 1,
           "Austria": 1,
+          "Poland": 1,
           "Italy": 1
         },
         "scanned": 26,
@@ -1645,7 +1661,7 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 3,
+            "count": 2,
             "examples": [
               {
                 "title": "Manager I, Engineering - Sensitive Data Scanner",
@@ -1660,13 +1676,6 @@
                 "url": "https://careers.datadoghq.com/detail/8237428/?gh_jid=8237428",
                 "matched": "on call",
                 "excerpt": "in a renewal conversation Comfortable owning a roadmap and influencing without authority: making prioritization calls, saying no, and bringing sourcers and leadership along with you Humble, thoughtful, and driven by a sense of"
-              },
-              {
-                "title": "Senior AI Research Engineer - LLM Training & Inference Infrastructure",
-                "location": "Paris, France",
-                "url": "https://careers.datadoghq.com/detail/8364908/?gh_jid=8364908",
-                "matched": "on-call",
-                "excerpt": "duling, and stragglers You have strong debugging, profiling, and incident-diagnosis skills, ideally including on-call experience&nbsp; You can explain design and performance trade-offs clearly to both technical and non-technica"
               }
             ]
           },
@@ -1861,10 +1870,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 251,
-            "revisions": 250,
+            "captures": 252,
+            "revisions": 251,
             "first": "2022-05-27",
-            "last": "2026-11-15"
+            "last": "2026-11-19"
           }
         },
         {
@@ -2003,19 +2012,19 @@
       },
       "jobs": {
         "ok": true,
-        "total": 786,
-        "placeable": 702,
-        "unplaceable": 84,
-        "eea": 120,
-        "non_eea": 582,
+        "total": 780,
+        "placeable": 698,
+        "unplaceable": 82,
+        "eea": 119,
+        "non_eea": 579,
         "countries": {
-          "United States": 342,
-          "Ireland": 84,
-          "Canada": 62,
-          "Singapore": 58,
+          "United States": 345,
+          "Ireland": 83,
+          "Canada": 60,
+          "Singapore": 55,
           "United Kingdom": 47,
-          "India": 44,
-          "Mexico": 29,
+          "India": 42,
+          "Mexico": 28,
           "Japan": 14,
           "Australia": 12,
           "Spain": 11,
@@ -2026,10 +2035,11 @@
           "Israel": 3,
           "Belgium": 3,
           "New Zealand": 3,
-          "Brazil": 3,
           "Luxembourg": 3,
           "Sweden": 2,
-          "Netherlands": 1
+          "Brazil": 2,
+          "Netherlands": 1,
+          "Malaysia": 1
         },
         "scanned": 26,
         "signals": [
@@ -2288,8 +2298,8 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 428,
-            "revisions": 427,
+            "captures": 429,
+            "revisions": 428,
             "first": "2024-01-18",
             "last": "2026-11-17"
           }
@@ -2332,7 +2342,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "132 of 144 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "130 of 143 placeable roles name no EEA site — most prominently United States, United Kingdom, Brazil. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -2341,15 +2351,15 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 93 open roles"
+              "excerpt": "United States: 91 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 20 open roles"
+              "excerpt": "United Kingdom: 19 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "Japan: 4 open roles"
+              "excerpt": "Brazil: 4 open roles"
             }
           ],
           "question": "Which roles can access production data, and from which countries? Does the residency commitment cover support and engineering access, or only data at rest?"
@@ -2444,20 +2454,20 @@
       },
       "jobs": {
         "ok": true,
-        "total": 144,
-        "placeable": 144,
+        "total": 143,
+        "placeable": 143,
         "unplaceable": 0,
-        "eea": 12,
-        "non_eea": 132,
+        "eea": 13,
+        "non_eea": 130,
         "countries": {
-          "United States": 93,
-          "United Kingdom": 20,
-          "Germany": 8,
+          "United States": 91,
+          "United Kingdom": 19,
+          "Germany": 9,
+          "Brazil": 4,
           "Japan": 4,
           "France": 4,
           "Israel": 4,
           "Singapore": 3,
-          "Brazil": 3,
           "India": 2,
           "Australia": 2,
           "South Korea": 1
@@ -2525,18 +2535,18 @@
                 "excerpt": "ht interfaces, APIs, or reusable open-source tools Cloud and data infrastructure experience; familiarity with Snowflake, AWS, Dagster, dbt, or Hex is useful, but no particular vendor or framework is required An MS or PhD in machi"
               },
               {
-                "title": "Customer Support Specialist (Bengaluru, India)",
-                "location": "Bengaluru, India",
-                "url": "https://boards.greenhouse.io/figma/jobs/6223879004?gh_jid=6223879004",
-                "matched": "Zendesk",
-                "excerpt": "This is a full-time role based in our Bengaluru office. What you’ll do at Figma: Resolve customer tickets in Zendesk, mostly by email, such as helping a designer get back into a locked account or sorting out who can view and e"
-              },
-              {
                 "title": "Data & Integration Engineer, Business Systems",
                 "location": "San Francisco, CA • New York, NY • United States",
                 "url": "https://boards.greenhouse.io/figma/jobs/6233040004?gh_jid=6233040004",
                 "matched": "Salesforce",
                 "excerpt": "h teams across Finance, GTM, People, and Engineering to build reliable integrations and data pipelines across Salesforce, NetSuite, Workday, Snowflake, and other core applications. We’re looking for a Data &amp; Integration Engine"
+              },
+              {
+                "title": "Product Support Specialist (Bengaluru, India)",
+                "location": "Bengaluru, India",
+                "url": "https://boards.greenhouse.io/figma/jobs/6223879004?gh_jid=6223879004",
+                "matched": "Zendesk",
+                "excerpt": "This is a full-time role based in our Bengaluru office. What you’ll do at Figma: Resolve customer tickets in Zendesk, mostly by email, such as helping a designer get back into a locked account or sorting out who can view and e"
               }
             ]
           },
@@ -2758,9 +2768,9 @@
           "kind": "subprocessors",
           "url": "https://about.gitlab.com/privacy/subprocessors/",
           "path": "data/snapshots/gitlab/subprocessors.txt",
-          "lines": 236,
-          "chars": 5389,
-          "sha256": "19e5617229b74e6c",
+          "lines": 239,
+          "chars": 5482,
+          "sha256": "d452cb85288704aa",
           "note": null,
           "archive": {
             "ok": true,
@@ -2918,30 +2928,30 @@
         "sensitivity_score": 10,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": false
+        "source_documents_changed": true
       },
       "jobs": {
         "ok": true,
-        "total": 250,
+        "total": 249,
         "placeable": 240,
-        "unplaceable": 10,
-        "eea": 37,
-        "non_eea": 203,
+        "unplaceable": 9,
+        "eea": 38,
+        "non_eea": 202,
         "countries": {
-          "United States": 122,
-          "Canada": 66,
-          "United Kingdom": 37,
+          "United States": 123,
+          "Canada": 65,
+          "United Kingdom": 38,
           "India": 33,
           "Poland": 12,
           "Singapore": 11,
           "Germany": 10,
+          "Ireland": 9,
           "Australia": 9,
           "France": 9,
           "Spain": 8,
-          "Ireland": 8,
+          "Israel": 6,
           "Netherlands": 5,
           "Japan": 5,
-          "Israel": 5,
           "Brazil": 5,
           "South Korea": 4,
           "Austria": 4,
@@ -3150,6 +3160,29 @@
         ]
       },
       "drift": [
+        {
+          "id": "gitlab-subprocessors-2026-11-19",
+          "vendor_id": "gitlab",
+          "vendor_name": "GitLab",
+          "document": "subprocessors",
+          "document_label": "Sub-processor list",
+          "date": "2026-11-19",
+          "url": "https://about.gitlab.com/privacy/subprocessors/",
+          "hunks": [
+            {
+              "before": null,
+              "after": "Integra Technologies FZE"
+            },
+            {
+              "before": null,
+              "after": "United Arab Emirates, Saudi Arabia, and India"
+            },
+            {
+              "before": null,
+              "after": "Professional Services"
+            }
+          ]
+        },
         {
           "id": "gitlab-subprocessors-2026-11-12",
           "vendor_id": "gitlab",
@@ -3379,25 +3412,25 @@
       },
       "jobs": {
         "ok": true,
-        "total": 379,
-        "placeable": 379,
+        "total": 373,
+        "placeable": 373,
         "unplaceable": 0,
-        "eea": 149,
-        "non_eea": 230,
+        "eea": 148,
+        "non_eea": 225,
         "countries": {
-          "United States": 118,
+          "United States": 115,
           "Spain": 34,
           "Canada": 30,
-          "United Kingdom": 28,
+          "United Kingdom": 27,
           "Greece": 21,
           "Ireland": 20,
-          "Poland": 20,
+          "Poland": 19,
           "Portugal": 18,
-          "India": 17,
+          "India": 16,
           "Germany": 8,
           "Norway": 8,
+          "Switzerland": 7,
           "Romania": 7,
-          "Switzerland": 6,
           "Singapore": 6,
           "Japan": 6,
           "Australia": 5,
@@ -3414,7 +3447,6 @@
           "France": 1,
           "Indonesia": 1,
           "Hungary": 1,
-          "Saudi Arabia": 1,
           "Denmark": 1,
           "United Arab Emirates": 1
         },
@@ -3425,7 +3457,7 @@
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 11,
+            "count": 12,
             "examples": [
               {
                 "title": "Consulting Architect",
@@ -3793,19 +3825,19 @@
       },
       "jobs": {
         "ok": true,
-        "total": 87,
-        "placeable": 84,
-        "unplaceable": 3,
+        "total": 86,
+        "placeable": 82,
+        "unplaceable": 4,
         "eea": 6,
-        "non_eea": 78,
+        "non_eea": 76,
         "countries": {
-          "United States": 69,
+          "United States": 67,
           "United Kingdom": 11,
           "Germany": 6,
           "Australia": 4,
           "India": 1
         },
-        "scanned": 24,
+        "scanned": 23,
         "signals": [
           {
             "key": "oncall",
@@ -3865,15 +3897,8 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 4,
+            "count": 3,
             "examples": [
-              {
-                "title": "Head of Field Engineering Operations",
-                "location": "Hybrid - San Francisco",
-                "url": "https://job-boards.greenhouse.io/vercel/jobs/5979111004",
-                "matched": "Salesforce",
-                "excerpt": "capacity modeling, and compensation design, at companies with $100M+ annual recurring revenue (ARR) Hands-on Salesforce administration and architecture, including custom objects, flows, reporting, and integrations with ecosystem"
-              },
               {
                 "title": "Head of Solutions Architecture, Startups",
                 "location": "Hybrid - San Francisco, New York City, Austin",
@@ -3887,6 +3912,13 @@
                 "url": "https://job-boards.greenhouse.io/vercel/jobs/6231535004",
                 "matched": "Snowflake",
                 "excerpt": "the books, report revenue, and forecast. You’ll build auditable pipelines on Kafka, ClickHouse, Tinybird, and Snowflake that turn raw usage into revenue, and set the bar for data accuracy and governance where correctness isn’t op"
+              },
+              {
+                "title": "Sales Strategy & Operations, Enterprise",
+                "location": "Hybrid - San Francisco, New York City",
+                "url": "https://job-boards.greenhouse.io/vercel/jobs/6236516004",
+                "matched": "segment",
+                "excerpt": "Majors and Verticals sales organization in the US, owning the strategy, programs, and cadences that make the segment run: territory design, sales plays, forecasting, QBRs, and pipeline inspection. Much of the infrastructure is"
               }
             ]
           }

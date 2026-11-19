@@ -1,5 +1,5 @@
 # source: https://about.gitlab.com/privacy/subprocessors/
-# collected: 2026-11-18
+# collected: 2026-11-19
 
 GitLab Legal
 Sub-processors of GitLab
@@ -234,6 +234,9 @@ United States
 Professional Services
 CHARA-WEB Co., Ltd
 Japan
+Professional Services
+Integra Technologies FZE
+United Arab Emirates, Saudi Arabia, and India
 Professional Services
 Complete this form to be notified of changes to our sub-processors.
 All fields required

@@ -1,5 +1,5 @@
 # source: https://www.anthropic.com/legal/data-processing-addendum
-# collected: 2026-11-18
+# collected: 2026-11-19
 
 Definitions
 This Data Processing Addendum (
