@@ -1,5 +1,75 @@
 [
   {
+    "id": "datadog-subprocessors-2026-11-21",
+    "vendor_id": "datadog",
+    "vendor_name": "Datadog",
+    "document": "subprocessors",
+    "document_label": "Sub-processor list",
+    "date": "2026-11-21",
+    "url": "https://www.datadoghq.com/legal/subprocessors/",
+    "hunks": [
+      {
+        "before": "October 16, 2026",
+        "after": "November 20, 2026"
+      },
+      {
+        "before": "United States",
+        "after": null
+      },
+      {
+        "before": "AI services",
+        "after": null
+      },
+      {
+        "before": "Fireworks.ai, Inc.",
+        "after": null
+      },
+      {
+        "before": "Snowflake, Inc.",
+        "after": null
+      },
+      {
+        "before": "United States",
+        "after": null
+      }
+    ]
+  },
+  {
+    "id": "stripe-privacy-2026-11-21",
+    "vendor_id": "stripe",
+    "vendor_name": "Stripe",
+    "document": "privacy",
+    "document_label": "Privacy policy",
+    "date": "2026-11-21",
+    "url": "https://stripe.com/privacy",
+    "hunks": [
+      {
+        "before": "This Privacy Policy will be updated on November 20, 2026.",
+        "after": null
+      },
+      {
+        "before": "Please review the upcoming changes",
+        "after": null
+      },
+      {
+        "before": "here",
+        "after": null
+      },
+      {
+        "before": "April 28, 2026",
+        "after": "November 20, 2026"
+      },
+      {
+        "before": "We provide financial infrastructure for the internet.",
+        "after": "We build programmable financial infrastructure."
+      },
+      {
+        "before": "Depending on the activity, Stripe assumes the role of a “data controller” and/or “data processor” (or “service provider”).",
+        "after": "Depending on the activity, Stripe assumes the role of a “data controller” and/or “data processor”."
+      }
+    ]
+  },
+  {
     "id": "gitlab-subprocessors-2026-11-19",
     "vendor_id": "gitlab",
     "vendor_name": "GitLab",

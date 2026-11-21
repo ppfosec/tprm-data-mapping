@@ -612,10 +612,10 @@
           "diff": null,
           "archive": {
             "ok": true,
-            "captures": 153,
-            "revisions": 152,
+            "captures": 156,
+            "revisions": 155,
             "first": "2024-09-26",
-            "last": "2026-11-20"
+            "last": "2026-11-21"
           }
         },
         {
@@ -628,10 +628,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 94,
-            "revisions": 93,
+            "captures": 95,
+            "revisions": 94,
             "first": "2025-03-11",
-            "last": "2026-11-19"
+            "last": "2026-11-20"
           }
         }
       ],
@@ -640,7 +640,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "600 of 635 placeable roles name no EEA site — most prominently United States, United Kingdom, Australia. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "595 of 631 placeable roles name no EEA site — most prominently United States, United Kingdom, Australia. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -649,11 +649,11 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 496 open roles"
+              "excerpt": "United States: 491 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 44 open roles"
+              "excerpt": "United Kingdom: 46 open roles"
             },
             {
               "kind": "stat",
@@ -676,16 +676,16 @@
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Sydney, Australia",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5450798008",
+              "location": "Bangalore, India",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
               "matched": "across time zones",
-              "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the Australia market You may be a good fit if you"
+              "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
             },
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Bangalore, India",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
+              "location": "Mumbai, India",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
               "matched": "across time zones",
               "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
             }
@@ -779,21 +779,21 @@
       },
       "jobs": {
         "ok": true,
-        "total": 637,
-        "placeable": 635,
+        "total": 633,
+        "placeable": 631,
         "unplaceable": 2,
-        "eea": 35,
-        "non_eea": 600,
+        "eea": 36,
+        "non_eea": 595,
         "countries": {
-          "United States": 496,
-          "United Kingdom": 44,
+          "United States": 491,
+          "United Kingdom": 46,
           "Australia": 17,
           "Germany": 15,
           "Japan": 14,
           "South Korea": 12,
           "Singapore": 10,
+          "Ireland": 9,
           "France": 9,
-          "Ireland": 8,
           "India": 6,
           "Switzerland": 4,
           "Canada": 3,
@@ -811,13 +811,6 @@
             "examples": [
               {
                 "title": "Applied AI Architect",
-                "location": "Sydney, Australia",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5450798008",
-                "matched": "across time zones",
-                "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the Australia market You may be a good fit if you"
-              },
-              {
-                "title": "Applied AI Architect",
                 "location": "Bangalore, India",
                 "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
                 "matched": "across time zones",
@@ -829,6 +822,13 @@
                 "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
                 "matched": "across time zones",
                 "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
+              },
+              {
+                "title": "Applied AI Architect",
+                "location": "Sydney, Australia",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5450798008",
+                "matched": "across time zones",
+                "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the Australia market You may be a good fit if you"
               }
             ]
           },
@@ -1174,9 +1174,9 @@
       },
       "jobs": {
         "ok": true,
-        "total": 496,
+        "total": 503,
         "placeable": 3,
-        "unplaceable": 493,
+        "unplaceable": 500,
         "eea": 1,
         "non_eea": 2,
         "countries": {
@@ -1191,7 +1191,7 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 8,
+            "count": 9,
             "examples": [
               {
                 "title": "AI Security Research & Red Team Engineer",
@@ -1466,7 +1466,7 @@
         "grade": "35",
         "posture": "public evidence index",
         "confidence": "bounded",
-        "summary": "3 public documents · 3 open reconciliations"
+        "summary": "3 public documents · 4 open reconciliations"
       },
       "documents": [
         {
@@ -1505,9 +1505,9 @@
           "kind": "subprocessors",
           "url": "https://www.datadoghq.com/legal/subprocessors/",
           "path": "data/snapshots/datadog/subprocessors.txt",
-          "lines": 289,
-          "chars": 5398,
-          "sha256": "a48001471bf0a522",
+          "lines": 283,
+          "chars": 5300,
+          "sha256": "bf3ac5b57da47600",
           "note": null,
           "archive": {
             "ok": true,
@@ -1554,6 +1554,24 @@
             }
           ],
           "question": "Is Google Vertex AI a sub-processor? If it is, when was it added to the list, and were customers notified? If it never touches customer data, what is it used for?"
+        },
+        {
+          "rule": "subprocessor_gap",
+          "severity": "medium",
+          "headline": "Snowflake appears in hiring, not in the published documents",
+          "detail": "Engineering job descriptions name Snowflake, but it does not appear anywhere in the legal documents collected including the sub-processor list at https://www.datadoghq.com/legal/subprocessors/.",
+          "claim": null,
+          "evidence": [
+            {
+              "kind": "job",
+              "title": "FP&A Analyst, Cloud Finance",
+              "location": "New York, New York, USA",
+              "url": "https://careers.datadoghq.com/detail/8267437/?gh_jid=8267437",
+              "matched": "Snowflake",
+              "excerpt": "e close process. Become proficient with financial planning, cost monitoring, and BI tools, including Pigment, Snowflake, Metabase, and Datadog's own Cloud Cost Management (CCM) product. Who You Are: 2+ years of professional exper"
+            }
+          ],
+          "question": "Is Snowflake a sub-processor? If it is, when was it added to the list, and were customers notified? If it never touches customer data, what is it used for?"
         },
         {
           "rule": "access_vs_rotation",
@@ -1633,7 +1651,7 @@
         "sensitivity_score": 20,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": false
+        "source_documents_changed": true
       },
       "jobs": {
         "ok": true,
@@ -1664,11 +1682,11 @@
           "Colombia": 1,
           "Portugal": 1,
           "United Arab Emirates": 1,
-          "Chile": 1,
           "Indonesia": 1,
+          "Chile": 1,
           "Canada": 1,
-          "Austria": 1,
           "Poland": 1,
+          "Austria": 1,
           "Italy": 1
         },
         "scanned": 26,
@@ -1745,6 +1763,41 @@
         ]
       },
       "drift": [
+        {
+          "id": "datadog-subprocessors-2026-11-21",
+          "vendor_id": "datadog",
+          "vendor_name": "Datadog",
+          "document": "subprocessors",
+          "document_label": "Sub-processor list",
+          "date": "2026-11-21",
+          "url": "https://www.datadoghq.com/legal/subprocessors/",
+          "hunks": [
+            {
+              "before": "October 16, 2026",
+              "after": "November 20, 2026"
+            },
+            {
+              "before": "United States",
+              "after": null
+            },
+            {
+              "before": "AI services",
+              "after": null
+            },
+            {
+              "before": "Fireworks.ai, Inc.",
+              "after": null
+            },
+            {
+              "before": "Snowflake, Inc.",
+              "after": null
+            },
+            {
+              "before": "United States",
+              "after": null
+            }
+          ]
+        },
         {
           "id": "datadog-privacy-2026-11-14",
           "vendor_id": "datadog",
@@ -1827,25 +1880,6 @@
               "after": null
             }
           ]
-        },
-        {
-          "id": "datadog-subprocessors-2026-11-04",
-          "vendor_id": "datadog",
-          "vendor_name": "Datadog",
-          "document": "subprocessors",
-          "document_label": "Sub-processor list",
-          "date": "2026-11-04",
-          "url": "https://www.datadoghq.com/legal/subprocessors/",
-          "hunks": [
-            {
-              "before": null,
-              "after": "Agent Observability"
-            },
-            {
-              "before": "Agent Observability",
-              "after": null
-            }
-          ]
         }
       ]
     },
@@ -1865,9 +1899,9 @@
           "kind": "privacy",
           "url": "https://stripe.com/privacy",
           "path": "data/snapshots/stripe/privacy.txt",
-          "lines": 929,
-          "chars": 76584,
-          "sha256": "00e791004c241cfb",
+          "lines": 1072,
+          "chars": 96172,
+          "sha256": "9c54f1e37b4bae11",
           "note": null,
           "archive": {
             "ok": true,
@@ -2025,37 +2059,37 @@
         "sensitivity_score": 30,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": false
+        "source_documents_changed": true
       },
       "jobs": {
         "ok": true,
-        "total": 773,
-        "placeable": 689,
-        "unplaceable": 84,
-        "eea": 121,
-        "non_eea": 568,
+        "total": 778,
+        "placeable": 693,
+        "unplaceable": 85,
+        "eea": 124,
+        "non_eea": 569,
         "countries": {
-          "United States": 332,
-          "Ireland": 85,
-          "Canada": 61,
+          "United States": 331,
+          "Ireland": 86,
+          "Canada": 60,
           "Singapore": 56,
-          "United Kingdom": 46,
+          "United Kingdom": 48,
           "India": 42,
           "Mexico": 29,
           "Japan": 14,
           "Australia": 12,
           "Spain": 11,
           "Germany": 10,
-          "France": 5,
+          "France": 6,
           "Taiwan": 5,
           "Romania": 5,
           "Israel": 3,
           "Belgium": 3,
           "New Zealand": 3,
           "Luxembourg": 3,
+          "Netherlands": 2,
           "Sweden": 2,
           "Brazil": 2,
-          "Netherlands": 1,
           "Malaysia": 1
         },
         "scanned": 26,
@@ -2093,6 +2127,41 @@
         ]
       },
       "drift": [
+        {
+          "id": "stripe-privacy-2026-11-21",
+          "vendor_id": "stripe",
+          "vendor_name": "Stripe",
+          "document": "privacy",
+          "document_label": "Privacy policy",
+          "date": "2026-11-21",
+          "url": "https://stripe.com/privacy",
+          "hunks": [
+            {
+              "before": "This Privacy Policy will be updated on November 20, 2026.",
+              "after": null
+            },
+            {
+              "before": "Please review the upcoming changes",
+              "after": null
+            },
+            {
+              "before": "here",
+              "after": null
+            },
+            {
+              "before": "April 28, 2026",
+              "after": "November 20, 2026"
+            },
+            {
+              "before": "We provide financial infrastructure for the internet.",
+              "after": "We build programmable financial infrastructure."
+            },
+            {
+              "before": "Depending on the activity, Stripe assumes the role of a “data controller” and/or “data processor” (or “service provider”).",
+              "after": "Depending on the activity, Stripe assumes the role of a “data controller” and/or “data processor”."
+            }
+          ]
+        },
         {
           "id": "stripe-privacy-2026-10-24",
           "vendor_id": "stripe",
@@ -2255,41 +2324,6 @@
               "after": "Stripe as Data Processor and Data Controller"
             }
           ]
-        },
-        {
-          "id": "stripe-dpa-2026-09-28",
-          "vendor_id": "stripe",
-          "vendor_name": "Stripe",
-          "document": "dpa",
-          "document_label": "Data processing agreement",
-          "date": "2026-09-28",
-          "url": "https://stripe.com/legal/dpa",
-          "hunks": [
-            {
-              "before": "November 18, 2025",
-              "after": "September 28, 2026"
-            },
-            {
-              "before": null,
-              "after": "1."
-            },
-            {
-              "before": null,
-              "after": "Scope."
-            },
-            {
-              "before": "”) is subject to and forms part of the Agreement and governs Stripe’s and its Affiliates’ Processing of Personal Data.",
-              "after": "”) is between the Stripe entity specified in the Agreement (and its Affiliate(s), collectively “Stripe”) and the User specified in the Agreement, and is subject to and incorporated by reference into the Agreement."
-            },
-            {
-              "before": "1.",
-              "after": "This DPA governs Stripe’s and its Aﬃliates’ Processing of Personal Data."
-            },
-            {
-              "before": "Structure.",
-              "after": null
-            }
-          ]
         }
       ]
     },
@@ -2315,10 +2349,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 429,
-            "revisions": 428,
+            "captures": 430,
+            "revisions": 429,
             "first": "2024-01-18",
-            "last": "2026-11-17"
+            "last": "2026-11-20"
           }
         },
         {
@@ -2359,7 +2393,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "133 of 146 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "134 of 147 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -2368,7 +2402,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 93 open roles"
+              "excerpt": "United States: 94 open roles"
             },
             {
               "kind": "stat",
@@ -2471,13 +2505,13 @@
       },
       "jobs": {
         "ok": true,
-        "total": 146,
-        "placeable": 146,
+        "total": 147,
+        "placeable": 147,
         "unplaceable": 0,
         "eea": 13,
-        "non_eea": 133,
+        "non_eea": 134,
         "countries": {
-          "United States": 93,
+          "United States": 94,
           "United Kingdom": 20,
           "Germany": 9,
           "Japan": 5,
@@ -2955,25 +2989,27 @@
         "eea": 41,
         "non_eea": 200,
         "countries": {
-          "United States": 120,
-          "Canada": 63,
+          "United States": 115,
+          "Canada": 60,
           "United Kingdom": 38,
-          "India": 32,
+          "India": 31,
           "Poland": 12,
           "Ireland": 11,
+          "France": 11,
           "Singapore": 11,
+          "Germany": 11,
           "Australia": 10,
-          "France": 10,
-          "Germany": 10,
-          "Spain": 8,
+          "Spain": 9,
           "Netherlands": 6,
           "Israel": 6,
+          "Brazil": 6,
           "Japan": 5,
-          "Brazil": 5,
           "Austria": 4,
           "South Korea": 3,
           "Sweden": 2,
           "United Arab Emirates": 2,
+          "Mexico": 1,
+          "Italy": 1,
           "Switzerland": 1
         },
         "scanned": 26,
@@ -3429,29 +3465,30 @@
       },
       "jobs": {
         "ok": true,
-        "total": 373,
-        "placeable": 373,
+        "total": 382,
+        "placeable": 382,
         "unplaceable": 0,
-        "eea": 150,
-        "non_eea": 223,
+        "eea": 160,
+        "non_eea": 222,
         "countries": {
-          "United States": 115,
-          "Spain": 35,
-          "Canada": 32,
-          "United Kingdom": 27,
-          "Greece": 22,
-          "Ireland": 20,
-          "Poland": 19,
-          "Portugal": 19,
+          "United States": 112,
+          "Spain": 36,
+          "Canada": 31,
+          "United Kingdom": 29,
+          "Greece": 23,
+          "Ireland": 21,
+          "Poland": 20,
+          "Portugal": 20,
           "India": 14,
-          "Norway": 8,
+          "Norway": 9,
+          "Romania": 8,
           "Germany": 7,
-          "Romania": 7,
+          "Switzerland": 7,
           "Japan": 6,
-          "Switzerland": 6,
           "Australia": 5,
           "Singapore": 5,
           "Netherlands": 4,
+          "Hungary": 4,
           "Belgium": 3,
           "Costa Rica": 3,
           "Mexico": 3,
@@ -3462,7 +3499,6 @@
           "Austria": 1,
           "France": 1,
           "Israel": 1,
-          "Hungary": 1,
           "Denmark": 1
         },
         "scanned": 26,
@@ -3578,7 +3614,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 3,
+            "count": 4,
             "examples": [
               {
                 "title": "Consulting Architect - Search",
@@ -3595,11 +3631,11 @@
                 "excerpt": "peline orchestration (Airflow or similar), transformation frameworks (dbt or similar), cloud data warehouses (Snowflake, BigQuery, or similar), and BI tools (Looker, Tableau, or similar) Experience with product and web analytics"
               },
               {
-                "title": "Manager, Salesforce Revenue Cloud",
+                "title": "Growth Marketing Manager (Marketplaces) - Self service cloud",
                 "location": "United States",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8207937&gh_jid=8207937",
-                "matched": "Salesforce",
-                "excerpt": "ations deliver on the promise of AI. What is The Role This role is responsible for leading the migration from Salesforce CPQ to Revenue Cloud and being responsible for the end-to-end Quote-to-Cash capability. The manager will ensu"
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8397324&gh_jid=8397324",
+                "matched": "Snowflake",
+                "excerpt": "ce at companies that sell through cloud marketplaces at scale (e.g., Datadog, Dynatrace, MongoDB, ClickHouse, Snowflake, Confluent), or with marketplace tooling (AWS Marketplace Management Portal, Microsoft Partner Center, Google"
               }
             ]
           },
@@ -3843,12 +3879,12 @@
         "total": 86,
         "placeable": 82,
         "unplaceable": 4,
-        "eea": 6,
-        "non_eea": 76,
+        "eea": 5,
+        "non_eea": 77,
         "countries": {
-          "United States": 68,
-          "United Kingdom": 11,
-          "Germany": 6,
+          "United States": 69,
+          "United Kingdom": 10,
+          "Germany": 5,
           "Australia": 3,
           "India": 1
         },
