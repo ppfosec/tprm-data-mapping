@@ -612,10 +612,10 @@
           "diff": null,
           "archive": {
             "ok": true,
-            "captures": 158,
-            "revisions": 157,
+            "captures": 159,
+            "revisions": 158,
             "first": "2024-09-26",
-            "last": "2026-11-22"
+            "last": "2026-11-23"
           }
         },
         {
@@ -640,7 +640,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "597 of 633 placeable roles name no EEA site — most prominently United States, United Kingdom, Australia. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "596 of 632 placeable roles name no EEA site — most prominently United States, United Kingdom, Australia. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -649,7 +649,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 492 open roles"
+              "excerpt": "United States: 493 open roles"
             },
             {
               "kind": "stat",
@@ -684,10 +684,10 @@
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Sydney, Australia",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5450798008",
+              "location": "Bangalore, India",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
               "matched": "across time zones",
-              "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the Australia market You may be a good fit if you"
+              "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
             }
           ],
           "question": "For out-of-hours incidents, who is on the rotation, where are they, and is their access to customer data logged and reviewable by the customer?"
@@ -779,19 +779,19 @@
       },
       "jobs": {
         "ok": true,
-        "total": 635,
-        "placeable": 633,
+        "total": 634,
+        "placeable": 632,
         "unplaceable": 2,
         "eea": 36,
-        "non_eea": 597,
+        "non_eea": 596,
         "countries": {
-          "United States": 492,
+          "United States": 493,
           "United Kingdom": 46,
           "Australia": 17,
           "Germany": 15,
           "Japan": 14,
-          "South Korea": 13,
-          "Singapore": 10,
+          "South Korea": 12,
+          "Singapore": 9,
           "Ireland": 9,
           "France": 9,
           "India": 6,
@@ -818,17 +818,17 @@
               },
               {
                 "title": "Applied AI Architect",
-                "location": "Sydney, Australia",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5450798008",
-                "matched": "across time zones",
-                "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the Australia market You may be a good fit if you"
-              },
-              {
-                "title": "Applied AI Architect",
                 "location": "Bangalore, India",
                 "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
                 "matched": "across time zones",
                 "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
+              },
+              {
+                "title": "Applied AI Architect",
+                "location": "Sydney, Australia",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5450798008",
+                "matched": "across time zones",
+                "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the Australia market You may be a good fit if you"
               }
             ]
           },
@@ -1037,8 +1037,8 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 336,
-            "revisions": 335,
+            "captures": 335,
+            "revisions": 334,
             "first": "2021-09-03",
             "last": "2026-11-17"
           }
@@ -1174,9 +1174,9 @@
       },
       "jobs": {
         "ok": true,
-        "total": 504,
+        "total": 501,
         "placeable": 3,
-        "unplaceable": 501,
+        "unplaceable": 498,
         "eea": 1,
         "non_eea": 2,
         "countries": {
@@ -1191,7 +1191,7 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 9,
+            "count": 8,
             "examples": [
               {
                 "title": "AI Security Research & Red Team Engineer",
@@ -1330,11 +1330,11 @@
                 "excerpt": "ject-matter expert for employee inquiries: Provide timely, high-quality support to employee inquiries through Zendesk. Act as a trusted liaison between employees and People/Payroll teams, resolving issues efficiently with empat"
               },
               {
-                "title": "IT Operations Specialist I",
-                "location": "In-Office",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/8281074?gh_jid=8281074",
+                "title": "HR Operations Specialist, Tokyo (12-months contract)",
+                "location": "Hybrid",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8354678?gh_jid=8354678",
                 "matched": "Zendesk",
-                "excerpt": "ms like Jamf Pro or Kandji. Experience using corporate ticketing platforms such as Jira Service Management or Zendesk. Relevant technical certifications such as Apple Certified Support Professional (ACSP), Google Workspace Admi"
+                "excerpt": "ject-matter expert for employee inquiries: Provide timely, high-quality support to employee inquiries through Zendesk. Act as a trusted liaison between employees and People/Payroll teams, resolving issues efficiently with empat"
               }
             ]
           },
@@ -1463,7 +1463,7 @@
       "category": "Observability",
       "public_evidence_only": true,
       "surface": {
-        "grade": "35",
+        "grade": "32",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "3 public documents · 4 open reconciliations"
@@ -1591,14 +1591,6 @@
               "url": "https://careers.datadoghq.com/detail/8102794/?gh_jid=8102794",
               "matched": "on-call",
               "excerpt": "ustomer needs and business impact Stay hands-on: contribute to design decisions and participate in the team’s on-call rotation Recruit, mentor, and develop engineers as the team grows beyond its initial size Help build a strong"
-            },
-            {
-              "kind": "job",
-              "title": "Recruiting Operations Program Manager",
-              "location": "New York, New York, USA",
-              "url": "https://careers.datadoghq.com/detail/8237428/?gh_jid=8237428",
-              "matched": "on call",
-              "excerpt": "in a renewal conversation Comfortable owning a roadmap and influencing without authority: making prioritization calls, saying no, and bringing sourcers and leadership along with you Humble, thoughtful, and driven by a sense of"
             }
           ],
           "question": "For out-of-hours incidents, who is on the rotation, where are they, and is their access to customer data logged and reviewable by the customer?"
@@ -1655,23 +1647,23 @@
       },
       "jobs": {
         "ok": true,
-        "total": 382,
-        "placeable": 382,
+        "total": 386,
+        "placeable": 386,
         "unplaceable": 0,
-        "eea": 57,
-        "non_eea": 325,
+        "eea": 59,
+        "non_eea": 327,
         "countries": {
-          "United States": 208,
+          "United States": 210,
           "Japan": 37,
-          "France": 26,
-          "Ireland": 21,
+          "France": 27,
+          "Ireland": 22,
           "Netherlands": 20,
-          "Singapore": 19,
-          "United Kingdom": 16,
+          "Singapore": 20,
+          "United Kingdom": 17,
           "Australia": 13,
           "South Korea": 11,
           "Brazil": 11,
-          "India": 9,
+          "India": 8,
           "Israel": 4,
           "Spain": 4,
           "Denmark": 2,
@@ -1696,7 +1688,7 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 2,
+            "count": 1,
             "examples": [
               {
                 "title": "Manager I, Engineering - Sensitive Data Scanner",
@@ -1704,13 +1696,6 @@
                 "url": "https://careers.datadoghq.com/detail/8102794/?gh_jid=8102794",
                 "matched": "on-call",
                 "excerpt": "ustomer needs and business impact Stay hands-on: contribute to design decisions and participate in the team’s on-call rotation Recruit, mentor, and develop engineers as the team grows beyond its initial size Help build a strong"
-              },
-              {
-                "title": "Recruiting Operations Program Manager",
-                "location": "New York, New York, USA",
-                "url": "https://careers.datadoghq.com/detail/8237428/?gh_jid=8237428",
-                "matched": "on call",
-                "excerpt": "in a renewal conversation Comfortable owning a roadmap and influencing without authority: making prioritization calls, saying no, and bringing sourcers and leadership along with you Humble, thoughtful, and driven by a sense of"
               }
             ]
           },
@@ -1889,7 +1874,7 @@
       "category": "Payments",
       "public_evidence_only": true,
       "surface": {
-        "grade": "26",
+        "grade": "25",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "3 public documents · 1 open reconciliations"
@@ -2063,18 +2048,18 @@
       },
       "jobs": {
         "ok": true,
-        "total": 777,
-        "placeable": 692,
-        "unplaceable": 85,
-        "eea": 124,
-        "non_eea": 568,
+        "total": 776,
+        "placeable": 693,
+        "unplaceable": 83,
+        "eea": 126,
+        "non_eea": 567,
         "countries": {
-          "United States": 330,
-          "Ireland": 86,
+          "United States": 329,
+          "Ireland": 88,
           "Canada": 60,
           "Singapore": 56,
           "United Kingdom": 48,
-          "India": 42,
+          "India": 43,
           "Mexico": 29,
           "Japan": 14,
           "Australia": 12,
@@ -2083,11 +2068,11 @@
           "France": 6,
           "Taiwan": 5,
           "Romania": 5,
-          "Israel": 3,
           "Belgium": 3,
           "New Zealand": 3,
           "Luxembourg": 3,
           "Netherlands": 2,
+          "Israel": 2,
           "Sweden": 2,
           "Brazil": 2,
           "Malaysia": 1
@@ -2824,8 +2809,11 @@
           "sha256": "d452cb85288704aa",
           "note": null,
           "archive": {
-            "ok": false,
-            "reason": "ConnectionError"
+            "ok": true,
+            "captures": 89,
+            "revisions": 88,
+            "first": "2020-11-27",
+            "last": "2026-11-16"
           }
         },
         {
@@ -3380,7 +3368,7 @@
       "category": "Search and data",
       "public_evidence_only": true,
       "surface": {
-        "grade": "57",
+        "grade": "81",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "1 public documents · 1 open reconciliations"
@@ -3395,11 +3383,8 @@
           "sha256": "2b4ba1b47e64f285",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 500,
-            "revisions": 499,
-            "first": "2018-05-23",
-            "last": "2026-01-01"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
@@ -3465,14 +3450,14 @@
       },
       "jobs": {
         "ok": true,
-        "total": 382,
-        "placeable": 382,
+        "total": 384,
+        "placeable": 384,
         "unplaceable": 0,
-        "eea": 160,
+        "eea": 162,
         "non_eea": 222,
         "countries": {
           "United States": 112,
-          "Spain": 36,
+          "Spain": 38,
           "Canada": 31,
           "United Kingdom": 29,
           "Greece": 23,
@@ -3751,7 +3736,7 @@
       "category": "App hosting",
       "public_evidence_only": true,
       "surface": {
-        "grade": "56",
+        "grade": "81",
         "posture": "public evidence index",
         "confidence": "bounded",
         "summary": "2 public documents · 2 open reconciliations"
@@ -3767,7 +3752,7 @@
           "note": null,
           "archive": {
             "ok": false,
-            "reason": "ConnectTimeout"
+            "reason": "ConnectionError"
           }
         },
         {
@@ -3779,11 +3764,8 @@
           "sha256": "c108eb67ddb02238",
           "note": null,
           "archive": {
-            "ok": true,
-            "captures": 200,
-            "revisions": 199,
-            "first": "2020-04-23",
-            "last": "2026-11-17"
+            "ok": false,
+            "reason": "ConnectionError"
           }
         }
       ],
