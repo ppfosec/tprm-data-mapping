@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T13:03:10+00:00",
+  "generated_at": "2026-11-24T13:54:06+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -155,10 +155,10 @@
           "diff": null,
           "archive": {
             "ok": true,
-            "captures": 159,
-            "revisions": 158,
+            "captures": 161,
+            "revisions": 160,
             "first": "2024-09-26",
-            "last": "2026-11-23"
+            "last": "2026-11-24"
           }
         },
         {
@@ -171,23 +171,23 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 95,
-            "revisions": 94,
+            "captures": 96,
+            "revisions": 95,
             "first": "2025-03-11",
-            "last": "2026-11-20"
+            "last": "2026-11-23"
           }
         }
       ],
       "jobs": {
         "ok": true,
-        "total": 634,
-        "placeable": 632,
+        "total": 633,
+        "placeable": 631,
         "unplaceable": 2,
         "eea": 36,
-        "non_eea": 596,
+        "non_eea": 595,
         "countries": {
-          "United States": 493,
-          "United Kingdom": 46,
+          "United States": 492,
+          "United Kingdom": 45,
           "Australia": 17,
           "Germany": 15,
           "Japan": 14,
@@ -196,7 +196,7 @@
           "Ireland": 9,
           "France": 9,
           "India": 6,
-          "Switzerland": 4,
+          "Switzerland": 5,
           "Canada": 3,
           "Italy": 2,
           "Spain": 1
@@ -212,6 +212,13 @@
             "examples": [
               {
                 "title": "Applied AI Architect",
+                "location": "Sydney, Australia",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5450798008",
+                "matched": "across time zones",
+                "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the Australia market You may be a good fit if you"
+              },
+              {
+                "title": "Applied AI Architect",
                 "location": "Mumbai, India",
                 "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
                 "matched": "across time zones",
@@ -223,13 +230,6 @@
                 "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
                 "matched": "across time zones",
                 "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
-              },
-              {
-                "title": "Applied AI Architect",
-                "location": "Sydney, Australia",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5450798008",
-                "matched": "across time zones",
-                "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the Australia market You may be a good fit if you"
               }
             ]
           },
@@ -288,7 +288,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "596 of 632 placeable roles name no EEA site — most prominently United States, United Kingdom, Australia. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "595 of 631 placeable roles name no EEA site — most prominently United States, United Kingdom, Australia. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -297,11 +297,11 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 493 open roles"
+              "excerpt": "United States: 492 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 46 open roles"
+              "excerpt": "United Kingdom: 45 open roles"
             },
             {
               "kind": "stat",
@@ -324,16 +324,16 @@
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Mumbai, India",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
+              "location": "Sydney, Australia",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5450798008",
               "matched": "across time zones",
-              "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
+              "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the Australia market You may be a good fit if you"
             },
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Bangalore, India",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
+              "location": "Mumbai, India",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
               "matched": "across time zones",
               "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
             }
@@ -624,15 +624,14 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 501,
-        "placeable": 3,
-        "unplaceable": 498,
-        "eea": 1,
+        "total": 503,
+        "placeable": 2,
+        "unplaceable": 501,
+        "eea": 0,
         "non_eea": 2,
         "countries": {
           "Singapore": 1,
-          "Japan": 1,
-          "Portugal": 1
+          "Japan": 1
         },
         "scanned": 26,
         "signals": [
@@ -641,7 +640,7 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 8,
+            "count": 9,
             "examples": [
               {
                 "title": "AI Security Research & Red Team Engineer",
@@ -663,36 +662,6 @@
                 "url": "https://boards.greenhouse.io/cloudflare/jobs/8369401?gh_jid=8369401",
                 "matched": "On-Call",
                 "excerpt": "om the command line, inspect and clean optics, check light levels, and test fiber with a light meter or OTDR. On-Call and Incidents Take part in an on-call rotation and respond on site to incidents affecting hardware at your da"
-              }
-            ]
-          },
-          {
-            "key": "distributed",
-            "label": "Distributed across time zones",
-            "severity": "high",
-            "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 4,
-            "examples": [
-              {
-                "title": "Data Scientist",
-                "location": "In-Office",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/8275927?gh_jid=8275927",
-                "matched": "globally distributed",
-                "excerpt": "to understand the business and product challenges and goals and address them using predictive analytics in a globally distributed environment. Understand data landscape i.e tooling, tech stack, source systems etc. and work closely with the"
-              },
-              {
-                "title": "Engineering Manager, Data Center Operations",
-                "location": "Hybrid",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/8293647?gh_jid=8293647",
-                "matched": "distributed team",
-                "excerpt": "and run the team that brings these new sites online and keeps them running around the clock. You will build a distributed team of Data Center Engineers from the ground up. You'll own sites across their full lifecycle: delivering greenfi"
-              },
-              {
-                "title": "Global Vendor Manager, Data Center Infrastructure",
-                "location": "Hybrid",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/8328089?gh_jid=8328089",
-                "matched": "distributed team",
-                "excerpt": "oss teams and influence without direct authority Comfortable working in a fast-paced, global environment with distributed teams and suppliers Proficiency in Google Workspace applications and familiarity with procurement or ERP systems B"
               }
             ]
           },
@@ -723,6 +692,36 @@
                 "url": "https://boards.greenhouse.io/cloudflare/jobs/8293647?gh_jid=8293647",
                 "matched": "frequent travel",
                 "excerpt": "risk and availability reporting to leadership. Ability to travel regularly to data center sites. Expect more frequent travel during site builds, shifting to periodic visits as sites reach steady state. Preferred Qualifications Experie"
+              }
+            ]
+          },
+          {
+            "key": "distributed",
+            "label": "Distributed across time zones",
+            "severity": "high",
+            "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
+            "count": 3,
+            "examples": [
+              {
+                "title": "Data Scientist",
+                "location": "In-Office",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8275927?gh_jid=8275927",
+                "matched": "globally distributed",
+                "excerpt": "to understand the business and product challenges and goals and address them using predictive analytics in a globally distributed environment. Understand data landscape i.e tooling, tech stack, source systems etc. and work closely with the"
+              },
+              {
+                "title": "Engineering Manager, Data Center Operations",
+                "location": "Hybrid",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8293647?gh_jid=8293647",
+                "matched": "distributed team",
+                "excerpt": "and run the team that brings these new sites online and keeps them running around the clock. You will build a distributed team of Data Center Engineers from the ground up. You'll own sites across their full lifecycle: delivering greenfi"
+              },
+              {
+                "title": "Global Vendor Manager, Data Center Infrastructure",
+                "location": "Hybrid",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8328089?gh_jid=8328089",
+                "matched": "distributed team",
+                "excerpt": "oss teams and influence without direct authority Comfortable working in a fast-paced, global environment with distributed teams and suppliers Proficiency in Google Workspace applications and familiarity with procurement or ERP systems B"
               }
             ]
           },
@@ -763,7 +762,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 3,
+            "count": 4,
             "examples": [
               {
                 "title": "GTM Data Specialist, Consumption & Revenue Operations",
@@ -903,8 +902,8 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 42,
-        "footprint": 17,
+        "total": 50,
+        "footprint": 25,
         "access": 25,
         "transparency": 0,
         "record": 0
@@ -1069,29 +1068,29 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 386,
-        "placeable": 386,
+        "total": 383,
+        "placeable": 383,
         "unplaceable": 0,
-        "eea": 59,
-        "non_eea": 327,
+        "eea": 60,
+        "non_eea": 323,
         "countries": {
-          "United States": 210,
+          "United States": 208,
           "Japan": 37,
-          "France": 27,
-          "Ireland": 22,
+          "France": 26,
+          "Ireland": 24,
           "Netherlands": 20,
-          "Singapore": 20,
-          "United Kingdom": 17,
+          "Singapore": 18,
+          "United Kingdom": 18,
           "Australia": 13,
           "South Korea": 11,
           "Brazil": 11,
           "India": 8,
-          "Israel": 4,
           "Spain": 4,
+          "Israel": 3,
+          "Mexico": 3,
           "Denmark": 2,
           "Sweden": 2,
           "Saudi Arabia": 2,
-          "Mexico": 2,
           "Germany": 2,
           "Colombia": 1,
           "Portugal": 1,
@@ -1110,14 +1109,37 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 1,
+            "count": 2,
             "examples": [
+              {
+                "title": "Manager, Corporate Security",
+                "location": "New York, New York, USA",
+                "url": "https://careers.datadoghq.com/detail/8400860/?gh_jid=8400860",
+                "matched": "on-call",
+                "excerpt": "ity teams&nbsp; Able and willing to travel domestically and internationally and participate in an after-hours on-call rotation. Professional certifications or specialized training in corporate security, executive protection, th"
+              },
               {
                 "title": "Manager I, Engineering - Sensitive Data Scanner",
                 "location": "Paris, France",
                 "url": "https://careers.datadoghq.com/detail/8102794/?gh_jid=8102794",
                 "matched": "on-call",
                 "excerpt": "ustomer needs and business impact Stay hands-on: contribute to design decisions and participate in the team’s on-call rotation Recruit, mentor, and develop engineers as the team grows beyond its initial size Help build a strong"
+              }
+            ]
+          },
+          {
+            "key": "travel",
+            "label": "Travel expected",
+            "severity": "high",
+            "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
+            "count": 1,
+            "examples": [
+              {
+                "title": "Manager, Corporate Security",
+                "location": "New York, New York, USA",
+                "url": "https://careers.datadoghq.com/detail/8400860/?gh_jid=8400860",
+                "matched": "international travel",
+                "excerpt": "llaboration. This position is based in our New York City headquarters and may require occasional domestic and international travel. The role will focus particularly on three core pillars: Headquarters Security, Global Security Operations Ce"
               }
             ]
           },
@@ -1134,6 +1156,22 @@
                 "url": "https://careers.datadoghq.com/detail/8259180/?gh_jid=8259180",
                 "matched": "Bedrock",
                 "excerpt": "d environments Guide customers on tokenomics and AI cost attribution across providers (Anthropic, OpenAI, AWS Bedrock, Google Gemini, Vertex AI, and GitHub Copilot), helping teams map API keys, models, and usage to teams and bu"
+              }
+            ]
+          },
+          {
+            "key": "round_clock",
+            "label": "Round-the-clock coverage",
+            "severity": "medium",
+            "why": "Continuous coverage from one time zone is rare; assume more than one.",
+            "count": 1,
+            "examples": [
+              {
+                "title": "Manager, Corporate Security",
+                "location": "New York, New York, USA",
+                "url": "https://careers.datadoghq.com/detail/8400860/?gh_jid=8400860",
+                "matched": "24/7",
+                "excerpt": "response. Experienced in developing or managing a GSOC, security operations center, command center or similar 24/7 monitoring and incident response capability. Knowledgeable about GSOC operating standards, including incident"
               }
             ]
           },
@@ -1164,6 +1202,22 @@
                 "url": "https://careers.datadoghq.com/detail/8189660/?gh_jid=8189660",
                 "matched": "Salesforce",
                 "excerpt": "leadership and other stakeholders Manage technology used by the legal team (current tools include Brightflag, Salesforce, ChatGPT, Claude, Perplexity) and become a superuser of new tools Champion new systems and emerging AI capabi"
+              }
+            ]
+          },
+          {
+            "key": "gov_enclave",
+            "label": "Government enclave",
+            "severity": "low",
+            "why": "A separate sovereign estate exists, which confirms the commercial one is not it.",
+            "count": 1,
+            "examples": [
+              {
+                "title": "Manager, Corporate Security",
+                "location": "New York, New York, USA",
+                "url": "https://careers.datadoghq.com/detail/8400860/?gh_jid=8400860",
+                "matched": "itar",
+                "excerpt": "rporate security, physical security, GSOC operations, executive protection, law enforcement, intelligence, military security or a related field. 3+ years of experience managing contract security personnel or external securit"
               }
             ]
           }
@@ -1228,13 +1282,21 @@
           "rule": "access_vs_rotation",
           "severity": "medium",
           "headline": "Restricted-access language alongside global rotations",
-          "detail": "The documents describe access controls in principle, while postings describe on-call access. Both can be true; the reconciliation is what a reviewer needs to see.",
+          "detail": "The documents describe access controls in principle, while postings describe on-call access, round-the-clock coverage. Both can be true; the reconciliation is what a reviewer needs to see.",
           "claim": {
             "kind": "dpa",
             "text": "Datadog restricts access to Customer Personal Data to employees with a defined need-to-know or a role requiring such access.",
             "url": "https://www.datadoghq.com/legal/data-processing-addendum/"
           },
           "evidence": [
+            {
+              "kind": "job",
+              "title": "Manager, Corporate Security",
+              "location": "New York, New York, USA",
+              "url": "https://careers.datadoghq.com/detail/8400860/?gh_jid=8400860",
+              "matched": "on-call",
+              "excerpt": "ity teams&nbsp; Able and willing to travel domestically and internationally and participate in an after-hours on-call rotation. Professional certifications or specialized training in corporate security, executive protection, th"
+            },
             {
               "kind": "job",
               "title": "Manager I, Engineering - Sensitive Data Scanner",
@@ -1297,9 +1359,9 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 32,
+        "total": 43,
         "footprint": 21,
-        "access": 11,
+        "access": 22,
         "transparency": 0,
         "record": 0
       },
@@ -1483,24 +1545,24 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 776,
-        "placeable": 693,
-        "unplaceable": 83,
-        "eea": 126,
-        "non_eea": 567,
+        "total": 769,
+        "placeable": 689,
+        "unplaceable": 80,
+        "eea": 127,
+        "non_eea": 562,
         "countries": {
-          "United States": 329,
+          "United States": 326,
           "Ireland": 88,
-          "Canada": 60,
-          "Singapore": 56,
-          "United Kingdom": 48,
-          "India": 43,
+          "Canada": 57,
+          "Singapore": 55,
+          "United Kingdom": 50,
+          "India": 42,
           "Mexico": 29,
           "Japan": 14,
           "Australia": 12,
           "Spain": 11,
           "Germany": 10,
-          "France": 6,
+          "France": 7,
           "Taiwan": 5,
           "Romania": 5,
           "Belgium": 3,
@@ -1510,7 +1572,7 @@
           "Israel": 2,
           "Sweden": 2,
           "Brazil": 2,
-          "Malaysia": 1
+          "Malaysia": 2
         },
         "scanned": 26,
         "signals": [
@@ -1930,19 +1992,19 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 147,
-        "placeable": 147,
+        "total": 145,
+        "placeable": 145,
         "unplaceable": 0,
-        "eea": 13,
+        "eea": 11,
         "non_eea": 134,
         "countries": {
-          "United States": 94,
-          "United Kingdom": 20,
-          "Germany": 9,
+          "United States": 95,
+          "United Kingdom": 19,
+          "Germany": 8,
+          "Brazil": 5,
           "Japan": 5,
-          "Brazil": 4,
-          "France": 4,
-          "Israel": 4,
+          "France": 3,
+          "Israel": 3,
           "India": 2,
           "Singapore": 2,
           "Australia": 2,
@@ -2056,7 +2118,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "134 of 147 placeable roles name no EEA site — most prominently United States, United Kingdom, Japan. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "134 of 145 placeable roles name no EEA site — most prominently United States, United Kingdom, Brazil. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -2065,15 +2127,15 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 94 open roles"
+              "excerpt": "United States: 95 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 20 open roles"
+              "excerpt": "United Kingdom: 19 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "Japan: 5 open roles"
+              "excerpt": "Brazil: 5 open roles"
             }
           ],
           "question": "Which roles can access production data, and from which countries? Does the residency commitment cover support and engineering access, or only data at rest?"
@@ -2391,25 +2453,25 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 246,
-        "placeable": 241,
-        "unplaceable": 5,
-        "eea": 41,
-        "non_eea": 200,
+        "total": 252,
+        "placeable": 246,
+        "unplaceable": 6,
+        "eea": 42,
+        "non_eea": 204,
         "countries": {
-          "United States": 115,
-          "Canada": 60,
-          "United Kingdom": 38,
+          "United States": 119,
+          "Canada": 57,
+          "United Kingdom": 39,
           "India": 31,
-          "Poland": 12,
+          "Poland": 13,
           "Ireland": 11,
           "France": 11,
           "Singapore": 11,
           "Germany": 11,
           "Australia": 10,
           "Spain": 9,
+          "Israel": 7,
           "Netherlands": 6,
-          "Israel": 6,
           "Brazil": 6,
           "Japan": 5,
           "Austria": 4,
@@ -2527,18 +2589,18 @@
                 "excerpt": "a seller or Solutions Architect. Ability to operate independently in a remote, asynchronous environment, with willingness to travel periodically for team offsites and occasional in-person planning/whiteboarding sessions. Exposure to technica"
               },
               {
+                "title": "Director of Success Architects",
+                "location": "Remote, Singapore",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8842171002",
+                "matched": "Willingness to travel",
+                "excerpt": "cultures, and lines of business, while working effectively with senior executives and external stakeholders. Willingness to travel occasionally for customer meetings and team events, as needed. Strength in communication, coaching, feedback,"
+              },
+              {
                 "title": "Director, Professional Services Technical Architects",
                 "location": "Remote, United States",
                 "url": "https://job-boards.greenhouse.io/gitlab/jobs/8940610002",
                 "matched": "travel up to 25%",
                 "excerpt": "eas where needed. Experience using AI to scale how your team scopes, documents, and delivers work. Ability to travel up to 25%. About the team The Professional Services team helps customers adopt GitLab in ways that create lasting value"
-              },
-              {
-                "title": "Manager/Senior Manager, Solution Architects - San Francisco",
-                "location": "Remote, US",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8396674002",
-                "matched": "willingness to travel",
-                "excerpt": "arity with cloud computing concepts, related technologies, and common customer adoption patterns. Ability and willingness to travel in line with business needs and the company's travel policy, and openness to learning and using GitLab and re"
               }
             ]
           },
@@ -2547,7 +2609,7 @@
             "label": "Round-the-clock coverage",
             "severity": "medium",
             "why": "Continuous coverage from one time zone is rare; assume more than one.",
-            "count": 1,
+            "count": 2,
             "examples": [
               {
                 "title": "Engineering Manager, Architecture Engineering: Async",
@@ -2555,6 +2617,13 @@
                 "url": "https://job-boards.greenhouse.io/gitlab/jobs/8921380002",
                 "matched": "24/7",
                 "excerpt": "defining service-level indicators, setting up burn-rate alerting, and planning capacity. Experience running a 24/7 on-call rotation and coordinating high-severity incidents. A track record of balancing operational work and i"
+              },
+              {
+                "title": "Intermediate Security Engineer, Security Incident Response Team (SIRT)",
+                "location": "Remote, United States",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8950027002",
+                "matched": "24/7",
+                "excerpt": "four longer working days. Shifts run either Sunday through Wednesday or Wednesday through Saturday to provide 24/7/365 security coverage. This role also supports our FedRAMP environment and requires U.S. citizenship and resi"
               }
             ]
           },
@@ -2615,6 +2684,22 @@
                 "url": "https://job-boards.greenhouse.io/gitlab/jobs/8907694002",
                 "matched": "Salesforce",
                 "excerpt": "e with Programs and policy owners on required notifications, documentation, and compliance reporting. Monitor Salesforce and partner-management data for missing links, incorrect ownership, incomplete attribution, failed synchroniz"
+              }
+            ]
+          },
+          {
+            "key": "nationality",
+            "label": "Nationality restriction",
+            "severity": "low",
+            "why": "Some roles are nationality-gated, which means the rest are deliberately not.",
+            "count": 1,
+            "examples": [
+              {
+                "title": "Intermediate Security Engineer, Security Incident Response Team (SIRT)",
+                "location": "Remote, United States",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8950027002",
+                "matched": "U.S. citizen",
+                "excerpt": "Saturday to provide 24/7/365 security coverage. This role also supports our FedRAMP environment and requires U.S. citizenship and residency within the United States. Your primary focus will be detecting and responding to security i"
               }
             ]
           }
@@ -2951,13 +3036,13 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 384,
-        "placeable": 384,
+        "total": 383,
+        "placeable": 383,
         "unplaceable": 0,
         "eea": 162,
-        "non_eea": 222,
+        "non_eea": 221,
         "countries": {
-          "United States": 112,
+          "United States": 111,
           "Spain": 38,
           "Canada": 31,
           "United Kingdom": 29,
@@ -2965,22 +3050,22 @@
           "Ireland": 21,
           "Poland": 20,
           "Portugal": 20,
-          "India": 14,
+          "India": 15,
           "Norway": 9,
           "Romania": 8,
           "Germany": 7,
           "Switzerland": 7,
-          "Japan": 6,
-          "Australia": 5,
           "Singapore": 5,
+          "Japan": 5,
+          "Australia": 4,
           "Netherlands": 4,
           "Hungary": 4,
           "Belgium": 3,
           "Costa Rica": 3,
+          "Indonesia": 3,
           "Mexico": 3,
-          "South Korea": 2,
           "Italy": 2,
-          "Indonesia": 2,
+          "South Korea": 2,
           "Brazil": 2,
           "Austria": 1,
           "France": 1,
@@ -2994,15 +3079,8 @@
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 12,
+            "count": 10,
             "examples": [
-              {
-                "title": "Consulting Architect",
-                "location": "United States",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8325389&gh_jid=8325389",
-                "matched": "distributed team",
-                "excerpt": "cience, Engineering, Cybersecurity, or related field, or equivalent experience. Comfortable working in highly distributed teams, both remote and on-site when needed May require significant travel to customer sites to support engagements"
-              },
               {
                 "title": "Consulting Architect (Canberra)",
                 "location": "Australia",
@@ -3016,6 +3094,13 @@
                 "url": "https://jobs.elastic.co/jobs?gh_jid=7447246&gh_jid=7447246",
                 "matched": "across time zones",
                 "excerpt": "ires a blend of deep technical expertise, senior-level consulting acumen, and the ability to work effectively across time zones, with both remote support and required on-site client engagement. What You Will Be Doing As a member of our p"
+              },
+              {
+                "title": "Consulting Architect - Search",
+                "location": "India",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=7447236&gh_jid=7447236",
+                "matched": "across time zones",
+                "excerpt": "ires a blend of deep technical expertise, senior-level consulting acumen, and the ability to work effectively across time zones, with both remote support and required on-site client engagement. What You Will Be Doing As a member of our p"
               }
             ]
           },
@@ -3024,7 +3109,7 @@
             "label": "Travel expected",
             "severity": "high",
             "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 9,
+            "count": 8,
             "examples": [
               {
                 "title": "Consulting Architect (Canberra)",
@@ -3066,32 +3151,18 @@
             ]
           },
           {
-            "key": "nationality",
-            "label": "Nationality restriction",
-            "severity": "low",
-            "why": "Some roles are nationality-gated, which means the rest are deliberately not.",
-            "count": 4,
+            "key": "oncall",
+            "label": "On-call access",
+            "severity": "high",
+            "why": "Out-of-hours production access, granted broadly and audited thinly.",
+            "count": 1,
             "examples": [
               {
-                "title": "Consulting Architect (Canberra)",
-                "location": "Australia",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8330343&gh_jid=8330343",
-                "matched": "Security Clearance",
-                "excerpt": "vel What You Bring Minimum of 5 years as a Consulting Architect or senior IT functional leadership experience Security Clearance (NV1+) or the ability to be sponsored for one History of working as a Consultant delivering professional serv"
-              },
-              {
-                "title": "Consulting Architect - Security (EMEA / Public Sector eligible ) ",
-                "location": "Germany",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8153274&gh_jid=8153274",
-                "matched": "security clearance",
-                "excerpt": "s, with the ability to pivot easily between delivery and strategic engagements Eligibility to obtain national security clearance in your country of employment (screening sponsored by Elastic where required) Willingness to travel and work"
-              },
-              {
-                "title": "Elastic Consulting Architect - Public Sector",
-                "location": "United Kingdom",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8018328&gh_jid=8018328",
-                "matched": "Security clearance",
-                "excerpt": "s. Given the opportunity and the organisations that you will be working with, you must be a current holder of Security clearance. What You Will Be Doing: Strong customer advocacy, relationship building, and communications skills The abili"
+                "title": "Principal Software Engineer I - Platform Billing Core",
+                "location": "United States",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8245817&gh_jid=8245817",
+                "matched": "on-call",
+                "excerpt": "Finance to set roadmap priorities. Make sure plans are feasible and aligned with business goals. Take part in on-call rotations. Make sure systems are production-ready through automation, resilience testing, and alerting. What"
               }
             ]
           },
@@ -3100,7 +3171,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 4,
+            "count": 5,
             "examples": [
               {
                 "title": "Consulting Architect - Search",
@@ -3126,11 +3197,41 @@
             ]
           },
           {
+            "key": "nationality",
+            "label": "Nationality restriction",
+            "severity": "low",
+            "why": "Some roles are nationality-gated, which means the rest are deliberately not.",
+            "count": 3,
+            "examples": [
+              {
+                "title": "Consulting Architect (Canberra)",
+                "location": "Australia",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8330343&gh_jid=8330343",
+                "matched": "Security Clearance",
+                "excerpt": "vel What You Bring Minimum of 5 years as a Consulting Architect or senior IT functional leadership experience Security Clearance (NV1+) or the ability to be sponsored for one History of working as a Consultant delivering professional serv"
+              },
+              {
+                "title": "Consulting Architect - Security (EMEA / Public Sector eligible ) ",
+                "location": "Germany",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8153274&gh_jid=8153274",
+                "matched": "security clearance",
+                "excerpt": "s, with the ability to pivot easily between delivery and strategic engagements Eligibility to obtain national security clearance in your country of employment (screening sponsored by Elastic where required) Willingness to travel and work"
+              },
+              {
+                "title": "Elastic Consulting Architect - Public Sector",
+                "location": "United Kingdom",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8018328&gh_jid=8018328",
+                "matched": "Security clearance",
+                "excerpt": "s. Given the opportunity and the organisations that you will be working with, you must be a current holder of Security clearance. What You Will Be Doing: Strong customer advocacy, relationship building, and communications skills The abili"
+              }
+            ]
+          },
+          {
             "key": "gov_enclave",
             "label": "Government enclave",
             "severity": "low",
             "why": "A separate sovereign estate exists, which confirms the commercial one is not it.",
-            "count": 1,
+            "count": 2,
             "examples": [
               {
                 "title": "Principal Software Developer - Security - Elasticsearch",
@@ -3138,6 +3239,13 @@
                 "url": "https://jobs.elastic.co/jobs?gh_jid=8082617&gh_jid=8082617",
                 "matched": "FedRAMP",
                 "excerpt": "to quantum-resistant cryptographic algorithms. Hands-on experience mapping engine-level technical controls to FedRAMP (Moderate/High), FIPS 140, and SOC 2 requirements. Experience working on the internals of a data store or sea"
+              },
+              {
+                "title": "Principal Software Engineer I - Platform Billing Core",
+                "location": "United States",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8245817&gh_jid=8245817",
+                "matched": "Impact Level",
+                "excerpt": "ment, and debugging, while continuing to own the outcomes. Is eligible to work in Department of Defense (DoD) Impact Level 4 or above cloud service environments. &nbsp; Compensation for this role is in the form of base salary.&nbsp;"
               }
             ]
           }
@@ -3335,19 +3443,18 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 86,
-        "placeable": 82,
+        "total": 85,
+        "placeable": 81,
         "unplaceable": 4,
         "eea": 5,
-        "non_eea": 77,
+        "non_eea": 76,
         "countries": {
           "United States": 69,
           "United Kingdom": 10,
           "Germany": 5,
-          "Australia": 3,
-          "India": 1
+          "Australia": 3
         },
-        "scanned": 22,
+        "scanned": 21,
         "signals": [
           {
             "key": "oncall",
