@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T13:54:06+00:00",
+  "generated_at": "2026-11-25T13:06:57+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -155,10 +155,10 @@
           "diff": null,
           "archive": {
             "ok": true,
-            "captures": 161,
-            "revisions": 160,
+            "captures": 163,
+            "revisions": 162,
             "first": "2024-09-26",
-            "last": "2026-11-24"
+            "last": "2026-11-25"
           }
         },
         {
@@ -180,13 +180,13 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 633,
-        "placeable": 631,
+        "total": 636,
+        "placeable": 634,
         "unplaceable": 2,
         "eea": 36,
-        "non_eea": 595,
+        "non_eea": 598,
         "countries": {
-          "United States": 492,
+          "United States": 494,
           "United Kingdom": 45,
           "Australia": 17,
           "Germany": 15,
@@ -195,7 +195,7 @@
           "Singapore": 9,
           "Ireland": 9,
           "France": 9,
-          "India": 6,
+          "India": 7,
           "Switzerland": 5,
           "Canada": 3,
           "Italy": 2,
@@ -212,10 +212,10 @@
             "examples": [
               {
                 "title": "Applied AI Architect",
-                "location": "Sydney, Australia",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5450798008",
+                "location": "Bangalore, India",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
                 "matched": "across time zones",
-                "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the Australia market You may be a good fit if you"
+                "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
               },
               {
                 "title": "Applied AI Architect",
@@ -226,10 +226,33 @@
               },
               {
                 "title": "Applied AI Architect",
-                "location": "Bangalore, India",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
+                "location": "Sydney, Australia",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5450798008",
                 "matched": "across time zones",
-                "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
+                "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the Australia market You may be a good fit if you"
+              }
+            ]
+          },
+          {
+            "key": "travel",
+            "label": "Travel expected",
+            "severity": "high",
+            "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
+            "count": 2,
+            "examples": [
+              {
+                "title": "Applied AI Architect, Beneficial Deployment",
+                "location": "Bangalore, India",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5486776008",
+                "matched": "Travel up to 30%",
+                "excerpt": "ns across partners, bring field insight back to Product and Research, and help partners measure what changed. Travel up to 30% to partner sites for workshops, technical deep dives and relationship building. You Might Be a Good Fit If Yo"
+              },
+              {
+                "title": "Applied AI Architect, Beneficial Deployment",
+                "location": "Sydney, Australia",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5486780008",
+                "matched": "Travel up to 30%",
+                "excerpt": "ns across partners, bring field insight back to Product and Research, and help partners measure what changed. Travel up to 30% to partner sites for workshops, technical deep dives and relationship building. You Might Be a Good Fit If Yo"
               }
             ]
           },
@@ -246,22 +269,6 @@
                 "url": "https://job-boards.greenhouse.io/anthropic/jobs/5382750008",
                 "matched": "multi-region",
                 "excerpt": "ring large-scale infrastructure — cloud regions, accelerator clusters, HPC systems, or bare-metal fleets — at multi-region scale or ≥10k accelerators (or CPU/storage equivalent). Technical range from through cluster orchestration an"
-              }
-            ]
-          },
-          {
-            "key": "travel",
-            "label": "Travel expected",
-            "severity": "high",
-            "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 1,
-            "examples": [
-              {
-                "title": "Applied AI Architect, Beneficial Deployment",
-                "location": "Sydney, Australia",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5486780008",
-                "matched": "Travel up to 30%",
-                "excerpt": "ns across partners, bring field insight back to Product and Research, and help partners measure what changed. Travel up to 30% to partner sites for workshops, technical deep dives and relationship building. You Might Be a Good Fit If Yo"
               }
             ]
           },
@@ -288,7 +295,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "595 of 631 placeable roles name no EEA site — most prominently United States, United Kingdom, Australia. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "598 of 634 placeable roles name no EEA site — most prominently United States, United Kingdom, Australia. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -297,7 +304,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 492 open roles"
+              "excerpt": "United States: 494 open roles"
             },
             {
               "kind": "stat",
@@ -324,10 +331,10 @@
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Sydney, Australia",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5450798008",
+              "location": "Bangalore, India",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
               "matched": "across time zones",
-              "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the Australia market You may be a good fit if you"
+              "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
             },
             {
               "kind": "job",
@@ -426,9 +433,9 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 51,
+        "total": 53,
         "footprint": 24,
-        "access": 23,
+        "access": 25,
         "transparency": 4,
         "record": 0
       },
@@ -624,12 +631,13 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 503,
-        "placeable": 2,
-        "unplaceable": 501,
+        "total": 513,
+        "placeable": 3,
+        "unplaceable": 510,
         "eea": 0,
-        "non_eea": 2,
+        "non_eea": 3,
         "countries": {
+          "Mexico": 1,
           "Singapore": 1,
           "Japan": 1
         },
@@ -1021,9 +1029,9 @@
           "kind": "privacy",
           "url": "https://www.datadoghq.com/legal/privacy/",
           "path": "data/snapshots/datadog/privacy.txt",
-          "lines": 457,
-          "chars": 26305,
-          "sha256": "3fb873b93ea9ed22",
+          "lines": 458,
+          "chars": 26314,
+          "sha256": "5863394b000f97a0",
           "note": null,
           "archive": {
             "ok": true,
@@ -1037,9 +1045,9 @@
           "kind": "dpa",
           "url": "https://www.datadoghq.com/legal/data-processing-addendum/",
           "path": "data/snapshots/datadog/dpa.txt",
-          "lines": 473,
-          "chars": 29955,
-          "sha256": "99ec97038b888a75",
+          "lines": 474,
+          "chars": 29964,
+          "sha256": "a8b32ae4c27acdbc",
           "note": null,
           "archive": {
             "ok": true,
@@ -1053,9 +1061,9 @@
           "kind": "subprocessors",
           "url": "https://www.datadoghq.com/legal/subprocessors/",
           "path": "data/snapshots/datadog/subprocessors.txt",
-          "lines": 283,
-          "chars": 5300,
-          "sha256": "bf3ac5b57da47600",
+          "lines": 284,
+          "chars": 5309,
+          "sha256": "914e60553ce4c0ed",
           "note": null,
           "archive": {
             "ok": true,
@@ -1068,26 +1076,26 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 383,
-        "placeable": 383,
+        "total": 388,
+        "placeable": 388,
         "unplaceable": 0,
-        "eea": 60,
-        "non_eea": 323,
+        "eea": 59,
+        "non_eea": 329,
         "countries": {
-          "United States": 208,
+          "United States": 210,
           "Japan": 37,
           "France": 26,
-          "Ireland": 24,
+          "Ireland": 23,
           "Netherlands": 20,
-          "Singapore": 18,
-          "United Kingdom": 18,
+          "Singapore": 20,
+          "United Kingdom": 19,
           "Australia": 13,
           "South Korea": 11,
           "Brazil": 11,
           "India": 8,
           "Spain": 4,
+          "Mexico": 4,
           "Israel": 3,
-          "Mexico": 3,
           "Denmark": 2,
           "Sweden": 2,
           "Saudi Arabia": 2,
@@ -1095,11 +1103,11 @@
           "Colombia": 1,
           "Portugal": 1,
           "United Arab Emirates": 1,
-          "Indonesia": 1,
           "Chile": 1,
+          "Indonesia": 1,
           "Canada": 1,
-          "Austria": 1,
           "Poland": 1,
+          "Austria": 1,
           "Italy": 1
         },
         "scanned": 26,
@@ -1356,7 +1364,7 @@
         "sensitivity_score": 20,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": false
+        "source_documents_changed": true
       },
       "score": {
         "total": 43,
@@ -1366,6 +1374,51 @@
         "record": 0
       },
       "drift": [
+        {
+          "id": "datadog-privacy-2026-11-25",
+          "vendor_id": "datadog",
+          "vendor_name": "Datadog",
+          "document": "privacy",
+          "document_label": "Privacy policy",
+          "date": "2026-11-25",
+          "url": "https://www.datadoghq.com/legal/privacy/",
+          "hunks": [
+            {
+              "before": null,
+              "after": "Overview"
+            }
+          ]
+        },
+        {
+          "id": "datadog-dpa-2026-11-25",
+          "vendor_id": "datadog",
+          "vendor_name": "Datadog",
+          "document": "dpa",
+          "document_label": "Data processing agreement",
+          "date": "2026-11-25",
+          "url": "https://www.datadoghq.com/legal/data-processing-addendum/",
+          "hunks": [
+            {
+              "before": null,
+              "after": "Overview"
+            }
+          ]
+        },
+        {
+          "id": "datadog-subprocessors-2026-11-25",
+          "vendor_id": "datadog",
+          "vendor_name": "Datadog",
+          "document": "subprocessors",
+          "document_label": "Sub-processor list",
+          "date": "2026-11-25",
+          "url": "https://www.datadoghq.com/legal/subprocessors/",
+          "hunks": [
+            {
+              "before": null,
+              "after": "Overview"
+            }
+          ]
+        },
         {
           "id": "datadog-subprocessors-2026-11-21",
           "vendor_id": "datadog",
@@ -1430,59 +1483,6 @@
               "after": "End User Device Monitoring"
             }
           ]
-        },
-        {
-          "id": "datadog-subprocessors-2026-11-14",
-          "vendor_id": "datadog",
-          "vendor_name": "Datadog",
-          "document": "subprocessors",
-          "document_label": "Sub-processor list",
-          "date": "2026-11-14",
-          "url": "https://www.datadoghq.com/legal/subprocessors/",
-          "hunks": [
-            {
-              "before": null,
-              "after": "End User Device Monitoring"
-            }
-          ]
-        },
-        {
-          "id": "datadog-privacy-2026-11-04",
-          "vendor_id": "datadog",
-          "vendor_name": "Datadog",
-          "document": "privacy",
-          "document_label": "Privacy policy",
-          "date": "2026-11-04",
-          "url": "https://www.datadoghq.com/legal/privacy/",
-          "hunks": [
-            {
-              "before": null,
-              "after": "Agent Observability"
-            },
-            {
-              "before": "Agent Observability",
-              "after": null
-            }
-          ]
-        },
-        {
-          "id": "datadog-dpa-2026-11-04",
-          "vendor_id": "datadog",
-          "vendor_name": "Datadog",
-          "document": "dpa",
-          "document_label": "Data processing agreement",
-          "date": "2026-11-04",
-          "url": "https://www.datadoghq.com/legal/data-processing-addendum/",
-          "hunks": [
-            {
-              "before": null,
-              "after": "Agent Observability"
-            },
-            {
-              "before": "Agent Observability",
-              "after": null
-            }
-          ]
         }
       ]
     },
@@ -1545,21 +1545,21 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 769,
-        "placeable": 689,
-        "unplaceable": 80,
+        "total": 771,
+        "placeable": 690,
+        "unplaceable": 81,
         "eea": 127,
-        "non_eea": 562,
+        "non_eea": 563,
         "countries": {
-          "United States": 326,
+          "United States": 327,
           "Ireland": 88,
-          "Canada": 57,
+          "Canada": 59,
           "Singapore": 55,
-          "United Kingdom": 50,
-          "India": 42,
+          "United Kingdom": 48,
+          "India": 44,
           "Mexico": 29,
           "Japan": 14,
-          "Australia": 12,
+          "Australia": 11,
           "Spain": 11,
           "Germany": 10,
           "France": 7,
@@ -1992,13 +1992,13 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 145,
-        "placeable": 145,
+        "total": 146,
+        "placeable": 146,
         "unplaceable": 0,
         "eea": 11,
-        "non_eea": 134,
+        "non_eea": 135,
         "countries": {
-          "United States": 95,
+          "United States": 96,
           "United Kingdom": 19,
           "Germany": 8,
           "Brazil": 5,
@@ -2118,7 +2118,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "134 of 145 placeable roles name no EEA site — most prominently United States, United Kingdom, Brazil. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "135 of 146 placeable roles name no EEA site — most prominently United States, United Kingdom, Brazil. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -2127,7 +2127,7 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 95 open roles"
+              "excerpt": "United States: 96 open roles"
             },
             {
               "kind": "stat",
@@ -2453,22 +2453,22 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 252,
-        "placeable": 246,
+        "total": 247,
+        "placeable": 241,
         "unplaceable": 6,
-        "eea": 42,
-        "non_eea": 204,
+        "eea": 40,
+        "non_eea": 201,
         "countries": {
-          "United States": 119,
-          "Canada": 57,
-          "United Kingdom": 39,
+          "United States": 117,
+          "Canada": 54,
+          "United Kingdom": 36,
           "India": 31,
-          "Poland": 13,
-          "Ireland": 11,
+          "Poland": 12,
+          "Australia": 11,
           "France": 11,
           "Singapore": 11,
           "Germany": 11,
-          "Australia": 10,
+          "Ireland": 9,
           "Spain": 9,
           "Israel": 7,
           "Netherlands": 6,
@@ -2579,7 +2579,7 @@
             "label": "Travel expected",
             "severity": "high",
             "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 3,
+            "count": 4,
             "examples": [
               {
                 "title": "Demo Architect, EMEA",
@@ -2662,7 +2662,7 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 4,
+            "count": 3,
             "examples": [
               {
                 "title": "Data Scientist, Enterprise Analytics",
@@ -2672,18 +2672,18 @@
                 "excerpt": "ication, clustering, and survival analysis Deep, hands-on understanding of SQL in cloud data warehouses (like Snowflake SQL), including working with product usage and event data, and in business intelligence tools (Looker, Tablea"
               },
               {
-                "title": "Director, Support (Bengaluru)",
-                "location": "Bangalore, India",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8629019002",
-                "matched": "Zendesk",
-                "excerpt": "ry tooling, Kubernetes, or cloud-native infrastructure, along with experience using support platforms such as Zendesk, Salesforce, Decagon, or equivalent tools. Experience with GitLab as a user, administrator, or customer is he"
-              },
-              {
                 "title": "Ecosystem Operations Specialist",
                 "location": "Remote, Canada; Remote, United States",
                 "url": "https://job-boards.greenhouse.io/gitlab/jobs/8907694002",
                 "matched": "Salesforce",
                 "excerpt": "e with Programs and policy owners on required notifications, documentation, and compliance reporting. Monitor Salesforce and partner-management data for missing links, incorrect ownership, incomplete attribution, failed synchroniz"
+              },
+              {
+                "title": "Enablement Operations Manager",
+                "location": "Remote, United States",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8943456002",
+                "matched": "Salesforce",
+                "excerpt": "iliarity with learning management systems, content platforms, and AI-powered tools such as Gong, Cornerstone, Salesforce, Glean, or similar systems. Experience building dashboards or reports on program participation and outcomes."
               }
             ]
           },
@@ -2715,19 +2715,19 @@
           "evidence": [
             {
               "kind": "job",
-              "title": "Director, Support (Bengaluru)",
-              "location": "Bangalore, India",
-              "url": "https://job-boards.greenhouse.io/gitlab/jobs/8629019002",
-              "matched": "Zendesk",
-              "excerpt": "ry tooling, Kubernetes, or cloud-native infrastructure, along with experience using support platforms such as Zendesk, Salesforce, Decagon, or equivalent tools. Experience with GitLab as a user, administrator, or customer is he"
-            },
-            {
-              "kind": "job",
               "title": "Ecosystem Operations Specialist",
               "location": "Remote, Canada; Remote, United States",
               "url": "https://job-boards.greenhouse.io/gitlab/jobs/8907694002",
               "matched": "Salesforce",
               "excerpt": "e with Programs and policy owners on required notifications, documentation, and compliance reporting. Monitor Salesforce and partner-management data for missing links, incorrect ownership, incomplete attribution, failed synchroniz"
+            },
+            {
+              "kind": "job",
+              "title": "Enablement Operations Manager",
+              "location": "Remote, United States",
+              "url": "https://job-boards.greenhouse.io/gitlab/jobs/8943456002",
+              "matched": "Salesforce",
+              "excerpt": "iliarity with learning management systems, content platforms, and AI-powered tools such as Gong, Cornerstone, Salesforce, Glean, or similar systems. Experience building dashboards or reports on program participation and outcomes."
             }
           ],
           "question": "Is Salesforce a sub-processor? If it is, when was it added to the list, and were customers notified? If it never touches customer data, what is it used for?"
@@ -3036,27 +3036,27 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 383,
-        "placeable": 383,
+        "total": 390,
+        "placeable": 390,
         "unplaceable": 0,
-        "eea": 162,
-        "non_eea": 221,
+        "eea": 160,
+        "non_eea": 230,
         "countries": {
-          "United States": 111,
-          "Spain": 38,
+          "United States": 116,
+          "Spain": 37,
           "Canada": 31,
-          "United Kingdom": 29,
+          "United Kingdom": 30,
           "Greece": 23,
           "Ireland": 21,
-          "Poland": 20,
+          "Poland": 21,
           "Portugal": 20,
-          "India": 15,
-          "Norway": 9,
-          "Romania": 8,
+          "India": 16,
+          "Norway": 8,
           "Germany": 7,
           "Switzerland": 7,
-          "Singapore": 5,
-          "Japan": 5,
+          "Romania": 7,
+          "Singapore": 6,
+          "Japan": 6,
           "Australia": 4,
           "Netherlands": 4,
           "Hungary": 4,
@@ -3064,8 +3064,8 @@
           "Costa Rica": 3,
           "Indonesia": 3,
           "Mexico": 3,
-          "Italy": 2,
           "South Korea": 2,
+          "Italy": 2,
           "Brazil": 2,
           "Austria": 1,
           "France": 1,
@@ -3082,18 +3082,18 @@
             "count": 10,
             "examples": [
               {
-                "title": "Consulting Architect (Canberra)",
-                "location": "Australia",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8330343&gh_jid=8330343",
-                "matched": "distributed team",
-                "excerpt": "ases Ability and willingness to travel from time to time as required Comfortable working remotely in a highly distributed team Bonus Points BS in Computer Science or related Information Security / Cybersecurity field Certifications and"
-              },
-              {
                 "title": "Consulting Architect - Observability",
                 "location": "India",
                 "url": "https://jobs.elastic.co/jobs?gh_jid=7447246&gh_jid=7447246",
                 "matched": "across time zones",
                 "excerpt": "ires a blend of deep technical expertise, senior-level consulting acumen, and the ability to work effectively across time zones, with both remote support and required on-site client engagement. What You Will Be Doing As a member of our p"
+              },
+              {
+                "title": "Consulting Architect - Observability (Canberra)",
+                "location": "Australia",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8330343&gh_jid=8330343",
+                "matched": "distributed team",
+                "excerpt": "basesAbility and willingness to travel from time to time as required Comfortable working remotely in a highly distributed team Bonus Points BS or Master in Computer Science Certifications and specialization in IT Ops, Infrastructure, AP"
               },
               {
                 "title": "Consulting Architect - Search",
@@ -3112,13 +3112,6 @@
             "count": 8,
             "examples": [
               {
-                "title": "Consulting Architect (Canberra)",
-                "location": "Australia",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8330343&gh_jid=8330343",
-                "matched": "willingness to travel",
-                "excerpt": "corporate environment like Python, Javascript, Go or Chef/Puppet etc. Understanding of databases Ability and willingness to travel from time to time as required Comfortable working remotely in a highly distributed team Bonus Points BS in Co"
-              },
-              {
                 "title": "Consulting Architect - Observability",
                 "location": "India",
                 "url": "https://jobs.elastic.co/jobs?gh_jid=7447246&gh_jid=7447246",
@@ -3126,11 +3119,41 @@
                 "excerpt": "ions to stakeholders. Experience contributing to an open-source project or documentation. Travel: Ability and willingness to travel to client sites periodically as required for project success (up to 20%)&nbsp; Bonus Points Any cloud service"
               },
               {
+                "title": "Consulting Architect - Observability (Canberra)",
+                "location": "Australia",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8330343&gh_jid=8330343",
+                "matched": "willingness to travel",
+                "excerpt": "a corporate environment like Python, Javascript, Go or Chef/Puppet etc. Understanding of databasesAbility and willingness to travel from time to time as required Comfortable working remotely in a highly distributed team Bonus Points BS or Ma"
+              },
+              {
                 "title": "Consulting Architect - Search",
                 "location": "India",
                 "url": "https://jobs.elastic.co/jobs?gh_jid=7447236&gh_jid=7447236",
                 "matched": "willingness to travel",
                 "excerpt": "conversations. Proven ability to lead and articulate technical solutions to stakeholders. Travel: Ability and willingness to travel to client sites periodically as required for project success (up to 20%)&nbsp; Work Style: Comfortable workin"
+              }
+            ]
+          },
+          {
+            "key": "oncall",
+            "label": "On-call access",
+            "severity": "high",
+            "why": "Out-of-hours production access, granted broadly and audited thinly.",
+            "count": 2,
+            "examples": [
+              {
+                "title": "Principal Software Engineer I - Platform Billing Core",
+                "location": "United States",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8245817&gh_jid=8245817",
+                "matched": "on-call",
+                "excerpt": "Finance to set roadmap priorities. Make sure plans are feasible and aligned with business goals. Take part in on-call rotations. Make sure systems are production-ready through automation, resilience testing, and alerting. What"
+              },
+              {
+                "title": "Principal Software Engineer I - Platform Billing Experience",
+                "location": "United States",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8245815&gh_jid=8245815",
+                "matched": "on-call",
+                "excerpt": "Finance to set roadmap priorities. Make sure plans are feasible and aligned with business goals. Take part in on-call rotations. Make sure systems are production-ready through automation, resilience testing, and alerting. What"
               }
             ]
           },
@@ -3147,22 +3170,6 @@
                 "url": "https://jobs.elastic.co/jobs?gh_jid=7447426&gh_jid=7447426",
                 "matched": "disaster recovery",
                 "excerpt": "ping and index strategies where the original design no longer holds Lead major-version upgrades, snapshot and disaster recovery strategy, and multi-cluster architectures Diagnose performance problems across the full stack — Elastic, the"
-              }
-            ]
-          },
-          {
-            "key": "oncall",
-            "label": "On-call access",
-            "severity": "high",
-            "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 1,
-            "examples": [
-              {
-                "title": "Principal Software Engineer I - Platform Billing Core",
-                "location": "United States",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8245817&gh_jid=8245817",
-                "matched": "on-call",
-                "excerpt": "Finance to set roadmap priorities. Make sure plans are feasible and aligned with business goals. Take part in on-call rotations. Make sure systems are production-ready through automation, resilience testing, and alerting. What"
               }
             ]
           },
@@ -3188,11 +3195,11 @@
                 "excerpt": "peline orchestration (Airflow or similar), transformation frameworks (dbt or similar), cloud data warehouses (Snowflake, BigQuery, or similar), and BI tools (Looker, Tableau, or similar) Experience with product and web analytics"
               },
               {
-                "title": "Growth Marketing Manager (Marketplaces) - Self service cloud",
-                "location": "United States",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8397324&gh_jid=8397324",
-                "matched": "Snowflake",
-                "excerpt": "ce at companies that sell through cloud marketplaces at scale (e.g., Datadog, Dynatrace, MongoDB, ClickHouse, Snowflake, Confluent), or with marketplace tooling (AWS Marketplace Management Portal, Microsoft Partner Center, Google"
+                "title": "Manager, Salesforce Revenue Cloud",
+                "location": "Bangalore, India",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8414808&gh_jid=8414808",
+                "matched": "Salesforce",
+                "excerpt": "ations deliver on the promise of AI. What is The Role This role is responsible for leading the migration from Salesforce CPQ to Revenue Cloud and being responsible for the end-to-end Quote-to-Cash capability. The manager will ensu"
               }
             ]
           },
@@ -3204,11 +3211,11 @@
             "count": 3,
             "examples": [
               {
-                "title": "Consulting Architect (Canberra)",
+                "title": "Consulting Architect - Observability (Canberra)",
                 "location": "Australia",
                 "url": "https://jobs.elastic.co/jobs?gh_jid=8330343&gh_jid=8330343",
                 "matched": "Security Clearance",
-                "excerpt": "vel What You Bring Minimum of 5 years as a Consulting Architect or senior IT functional leadership experience Security Clearance (NV1+) or the ability to be sponsored for one History of working as a Consultant delivering professional serv"
+                "excerpt": "unicate to a variety of stakeholders up to the C-suite level What You Bring Based in Canberra, with a current Security Clearance (NV1 or NV2) Minimum of 5 years as a Consulting Architect or senior IT functional leadership experience Histo"
               },
               {
                 "title": "Consulting Architect - Security (EMEA / Public Sector eligible ) ",
@@ -3231,7 +3238,7 @@
             "label": "Government enclave",
             "severity": "low",
             "why": "A separate sovereign estate exists, which confirms the commercial one is not it.",
-            "count": 2,
+            "count": 3,
             "examples": [
               {
                 "title": "Principal Software Developer - Security - Elasticsearch",
@@ -3246,6 +3253,13 @@
                 "url": "https://jobs.elastic.co/jobs?gh_jid=8245817&gh_jid=8245817",
                 "matched": "Impact Level",
                 "excerpt": "ment, and debugging, while continuing to own the outcomes. Is eligible to work in Department of Defense (DoD) Impact Level 4 or above cloud service environments. &nbsp; Compensation for this role is in the form of base salary.&nbsp;"
+              },
+              {
+                "title": "Principal Software Engineer I - Platform Billing Experience",
+                "location": "United States",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8245815&gh_jid=8245815",
+                "matched": "Impact Level",
+                "excerpt": "ystems, and improve code quality — while owning the outcomes. Eligible to work in Department of Defense (DoD) Impact Level 4 or above cloud service environments. &nbsp; Compensation for this role is in the form of base salary.&nbsp;"
               }
             ]
           }
@@ -3312,8 +3326,8 @@
         "source_documents_changed": false
       },
       "score": {
-        "total": 81,
-        "footprint": 14,
+        "total": 82,
+        "footprint": 15,
         "access": 25,
         "transparency": 17,
         "record": 25
@@ -3443,14 +3457,14 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 85,
-        "placeable": 81,
+        "total": 86,
+        "placeable": 82,
         "unplaceable": 4,
         "eea": 5,
-        "non_eea": 76,
+        "non_eea": 77,
         "countries": {
           "United States": 69,
-          "United Kingdom": 10,
+          "United Kingdom": 11,
           "Germany": 5,
           "Australia": 3
         },
