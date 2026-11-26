@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T13:06:57+00:00",
+  "generated_at": "2026-11-26T12:47:14+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -155,10 +155,10 @@
           "diff": null,
           "archive": {
             "ok": true,
-            "captures": 163,
-            "revisions": 162,
+            "captures": 165,
+            "revisions": 164,
             "first": "2024-09-26",
-            "last": "2026-11-25"
+            "last": "2026-11-26"
           }
         },
         {
@@ -180,14 +180,14 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 636,
-        "placeable": 634,
+        "total": 634,
+        "placeable": 632,
         "unplaceable": 2,
         "eea": 36,
-        "non_eea": 598,
+        "non_eea": 596,
         "countries": {
-          "United States": 494,
-          "United Kingdom": 45,
+          "United States": 493,
+          "United Kingdom": 44,
           "Australia": 17,
           "Germany": 15,
           "Japan": 14,
@@ -212,6 +212,13 @@
             "examples": [
               {
                 "title": "Applied AI Architect",
+                "location": "Sydney, Australia",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5450798008",
+                "matched": "across time zones",
+                "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the Australia market You may be a good fit if you"
+              },
+              {
+                "title": "Applied AI Architect",
                 "location": "Bangalore, India",
                 "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
                 "matched": "across time zones",
@@ -223,13 +230,6 @@
                 "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
                 "matched": "across time zones",
                 "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
-              },
-              {
-                "title": "Applied AI Architect",
-                "location": "Sydney, Australia",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5450798008",
-                "matched": "across time zones",
-                "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the Australia market You may be a good fit if you"
               }
             ]
           },
@@ -242,15 +242,15 @@
             "examples": [
               {
                 "title": "Applied AI Architect, Beneficial Deployment",
-                "location": "Bangalore, India",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5486776008",
+                "location": "Sydney, Australia",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5486780008",
                 "matched": "Travel up to 30%",
                 "excerpt": "ns across partners, bring field insight back to Product and Research, and help partners measure what changed. Travel up to 30% to partner sites for workshops, technical deep dives and relationship building. You Might Be a Good Fit If Yo"
               },
               {
                 "title": "Applied AI Architect, Beneficial Deployment",
-                "location": "Sydney, Australia",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5486780008",
+                "location": "Bangalore, India",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5486776008",
                 "matched": "Travel up to 30%",
                 "excerpt": "ns across partners, bring field insight back to Product and Research, and help partners measure what changed. Travel up to 30% to partner sites for workshops, technical deep dives and relationship building. You Might Be a Good Fit If Yo"
               }
@@ -295,7 +295,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "598 of 634 placeable roles name no EEA site — most prominently United States, United Kingdom, Australia. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "596 of 632 placeable roles name no EEA site — most prominently United States, United Kingdom, Australia. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "privacy",
             "text": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research.",
@@ -304,11 +304,11 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 494 open roles"
+              "excerpt": "United States: 493 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 45 open roles"
+              "excerpt": "United Kingdom: 44 open roles"
             },
             {
               "kind": "stat",
@@ -331,16 +331,16 @@
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Bangalore, India",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
+              "location": "Sydney, Australia",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5450798008",
               "matched": "across time zones",
-              "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
+              "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the Australia market You may be a good fit if you"
             },
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Mumbai, India",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
+              "location": "Bangalore, India",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
               "matched": "across time zones",
               "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
             }
@@ -631,9 +631,9 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 513,
+        "total": 522,
         "placeable": 3,
-        "unplaceable": 510,
+        "unplaceable": 519,
         "eea": 0,
         "non_eea": 3,
         "countries": {
@@ -648,7 +648,7 @@
             "label": "On-call access",
             "severity": "high",
             "why": "Out-of-hours production access, granted broadly and audited thinly.",
-            "count": 9,
+            "count": 8,
             "examples": [
               {
                 "title": "AI Security Research & Red Team Engineer",
@@ -658,18 +658,18 @@
                 "excerpt": "ring partner\" for SIRT. By conducting unannounced exercises, you help them refine their playbooks, test their on-call rotations, and ensure their forensic tooling is effective under pressure. Threat Detection &amp; Threat Engin"
               },
               {
-                "title": "Data Center Network Operations Engineer",
-                "location": "Hybrid",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/8311376?gh_jid=8311376",
-                "matched": "on-call",
-                "excerpt": "esponsibilities (prioritization, planning, scheduling, status reporting) such as JIRA Participate in a shared on-call rotation to maintain 24×7 operational availability of the global network. Other Responsibilities May Include"
-              },
-              {
                 "title": "Data Center Operations Engineer",
                 "location": "In-Office",
                 "url": "https://boards.greenhouse.io/cloudflare/jobs/8369401?gh_jid=8369401",
                 "matched": "On-Call",
                 "excerpt": "om the command line, inspect and clean optics, check light levels, and test fiber with a light meter or OTDR. On-Call and Incidents Take part in an on-call rotation and respond on site to incidents affecting hardware at your da"
+              },
+              {
+                "title": "Distributed Systems Engineer - Data Platform (Delivery, Database, Retrieval)",
+                "location": "Hybrid",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/7462801?gh_jid=7462801",
+                "matched": "on-call",
+                "excerpt": "Evaluate technologies and contribute to the next generation of Cloudflare’s data platform. Participate in an on-call rotation for the production systems owned by your team. What We’re Looking For At least three years of profes"
               }
             ]
           },
@@ -678,7 +678,7 @@
             "label": "Travel expected",
             "severity": "high",
             "why": "Access travels with the person. A laptop holding production credentials crossing a border is an unlogged transfer.",
-            "count": 3,
+            "count": 4,
             "examples": [
               {
                 "title": "Data Center Architect",
@@ -695,11 +695,11 @@
                 "excerpt": "s and fulfil ad-hoc reporting requests Research new and innovative power efficiency technologies and programs Travel up to 25% to perform infrastructure audits, validate data center construction work and buildouts, and participate in co"
               },
               {
-                "title": "Engineering Manager, Data Center Operations",
+                "title": "Data Center Site Selection - Hyperscale",
                 "location": "Hybrid",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/8293647?gh_jid=8293647",
-                "matched": "frequent travel",
-                "excerpt": "risk and availability reporting to leadership. Ability to travel regularly to data center sites. Expect more frequent travel during site builds, shifting to periodic visits as sites reach steady state. Preferred Qualifications Experie"
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8234130?gh_jid=8234130",
+                "matched": "Willing to travel",
+                "excerpt": "at once, across time zones, with incomplete information Has taken a campus or BTS lease from LOI to execution Willing to travel ~30% International deal experience preferred Bachelor’s degree or equivalent experience required Nice to have"
               }
             ]
           },
@@ -708,8 +708,15 @@
             "label": "Distributed across time zones",
             "severity": "high",
             "why": "Deliberately spread across zones, so the people touching your tenant are as well.",
-            "count": 3,
+            "count": 4,
             "examples": [
+              {
+                "title": "Data Center Site Selection - Hyperscale",
+                "location": "Hybrid",
+                "url": "https://boards.greenhouse.io/cloudflare/jobs/8234130?gh_jid=8234130",
+                "matched": "across time zones",
+                "excerpt": "ws how utility interconnection and substation timelines actually work Can run several site processes at once, across time zones, with incomplete information Has taken a campus or BTS lease from LOI to execution Willing to travel ~30% Int"
+              },
               {
                 "title": "Data Scientist",
                 "location": "In-Office",
@@ -723,13 +730,6 @@
                 "url": "https://boards.greenhouse.io/cloudflare/jobs/8293647?gh_jid=8293647",
                 "matched": "distributed team",
                 "excerpt": "and run the team that brings these new sites online and keeps them running around the clock. You will build a distributed team of Data Center Engineers from the ground up. You'll own sites across their full lifecycle: delivering greenfi"
-              },
-              {
-                "title": "Global Vendor Manager, Data Center Infrastructure",
-                "location": "Hybrid",
-                "url": "https://boards.greenhouse.io/cloudflare/jobs/8328089?gh_jid=8328089",
-                "matched": "distributed team",
-                "excerpt": "oss teams and influence without direct authority Comfortable working in a fast-paced, global environment with distributed teams and suppliers Proficiency in Google Workspace applications and familiarity with procurement or ERP systems B"
               }
             ]
           },
@@ -787,7 +787,7 @@
                 "excerpt": "ject-matter expert for employee inquiries: Provide timely, high-quality support to employee inquiries through Zendesk. Act as a trusted liaison between employees and People/Payroll teams, resolving issues efficiently with empat"
               },
               {
-                "title": "HR Operations Specialist, Tokyo (12-months contract)",
+                "title": "HR Operations Specialist, Japanese Speaker (12-months contract)",
                 "location": "Hybrid",
                 "url": "https://boards.greenhouse.io/cloudflare/jobs/8354678?gh_jid=8354678",
                 "matched": "Zendesk",
@@ -850,11 +850,11 @@
             },
             {
               "kind": "job",
-              "title": "Data Center Network Operations Engineer",
-              "location": "Hybrid",
-              "url": "https://boards.greenhouse.io/cloudflare/jobs/8311376?gh_jid=8311376",
-              "matched": "on-call",
-              "excerpt": "esponsibilities (prioritization, planning, scheduling, status reporting) such as JIRA Participate in a shared on-call rotation to maintain 24×7 operational availability of the global network. Other Responsibilities May Include"
+              "title": "Data Center Operations Engineer",
+              "location": "In-Office",
+              "url": "https://boards.greenhouse.io/cloudflare/jobs/8369401?gh_jid=8369401",
+              "matched": "On-Call",
+              "excerpt": "om the command line, inspect and clean optics, check light levels, and test fiber with a light meter or OTDR. On-Call and Incidents Take part in an on-call rotation and respond on site to incidents affecting hardware at your da"
             }
           ],
           "question": "For out-of-hours incidents, who is on the rotation, where are they, and is their access to customer data logged and reviewable by the customer?"
@@ -1076,19 +1076,19 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 388,
-        "placeable": 388,
+        "total": 391,
+        "placeable": 391,
         "unplaceable": 0,
         "eea": 59,
-        "non_eea": 329,
+        "non_eea": 332,
         "countries": {
-          "United States": 210,
+          "United States": 213,
           "Japan": 37,
           "France": 26,
-          "Ireland": 23,
-          "Netherlands": 20,
-          "Singapore": 20,
-          "United Kingdom": 19,
+          "Ireland": 22,
+          "Netherlands": 19,
+          "Singapore": 19,
+          "United Kingdom": 18,
           "Australia": 13,
           "South Korea": 11,
           "Brazil": 11,
@@ -1096,18 +1096,18 @@
           "Spain": 4,
           "Mexico": 4,
           "Israel": 3,
+          "Saudi Arabia": 3,
+          "Germany": 3,
+          "Colombia": 2,
           "Denmark": 2,
           "Sweden": 2,
-          "Saudi Arabia": 2,
-          "Germany": 2,
-          "Colombia": 1,
           "Portugal": 1,
           "United Arab Emirates": 1,
-          "Chile": 1,
           "Indonesia": 1,
+          "Chile": 1,
           "Canada": 1,
-          "Poland": 1,
           "Austria": 1,
+          "Poland": 1,
           "Italy": 1
         },
         "scanned": 26,
@@ -1364,7 +1364,7 @@
         "sensitivity_score": 20,
         "method": "llm",
         "preserved_without_key": true,
-        "source_documents_changed": true
+        "source_documents_changed": false
       },
       "score": {
         "total": 43,
@@ -1548,15 +1548,15 @@
         "total": 771,
         "placeable": 690,
         "unplaceable": 81,
-        "eea": 127,
-        "non_eea": 563,
+        "eea": 126,
+        "non_eea": 564,
         "countries": {
-          "United States": 327,
-          "Ireland": 88,
+          "United States": 329,
+          "Ireland": 87,
           "Canada": 59,
           "Singapore": 55,
-          "United Kingdom": 48,
-          "India": 44,
+          "United Kingdom": 47,
+          "India": 42,
           "Mexico": 29,
           "Japan": 14,
           "Australia": 11,
@@ -1992,22 +1992,22 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 146,
-        "placeable": 146,
+        "total": 141,
+        "placeable": 141,
         "unplaceable": 0,
         "eea": 11,
-        "non_eea": 135,
+        "non_eea": 130,
         "countries": {
-          "United States": 96,
-          "United Kingdom": 19,
+          "United States": 93,
+          "United Kingdom": 18,
           "Germany": 8,
           "Brazil": 5,
           "Japan": 5,
           "France": 3,
           "Israel": 3,
           "India": 2,
-          "Singapore": 2,
           "Australia": 2,
+          "Singapore": 1,
           "South Korea": 1
         },
         "scanned": 26,
@@ -2024,7 +2024,7 @@
                 "location": "San Francisco, CA • New York, NY • United States",
                 "url": "https://boards.greenhouse.io/figma/jobs/6238480004?gh_jid=6238480004",
                 "matched": "from anywhere in the world",
-                "excerpt": "om idea to product, Figma empowers teams to streamline workflows, move faster, and work together in real time from anywhere in the world. If you're excited to shape the future of design and collaboration, join us! Figma is building the system of"
+                "excerpt": "om idea to product, Figma empowers teams to streamline workflows, move faster, and work together in real time from anywhere in the world. If you're excited to shape the future of design and collaboration, join us! We’re hiring Applied Data Resear"
               },
               {
                 "title": "Business Systems Architect",
@@ -2063,15 +2063,8 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 6,
+            "count": 5,
             "examples": [
-              {
-                "title": "Applied Data Researcher",
-                "location": "San Francisco, CA • New York, NY • United States",
-                "url": "https://boards.greenhouse.io/figma/jobs/6238480004?gh_jid=6238480004",
-                "matched": "Snowflake",
-                "excerpt": "ht interfaces, APIs, or reusable open-source tools Cloud and data infrastructure experience; familiarity with Snowflake, AWS, Dagster, dbt, or Hex is useful, but no particular vendor or framework is required An MS or PhD in machi"
-              },
               {
                 "title": "Data & Integration Engineer, Business Systems",
                 "location": "San Francisco, CA • New York, NY • United States",
@@ -2085,6 +2078,13 @@
                 "url": "https://boards.greenhouse.io/figma/jobs/6223879004?gh_jid=6223879004",
                 "matched": "Zendesk",
                 "excerpt": "This is a full-time role based in our Bengaluru office. What you’ll do at Figma: Resolve customer tickets in Zendesk, mostly by email, such as helping a designer get back into a locked account or sorting out who can view and e"
+              },
+              {
+                "title": "Sales Operations Manager",
+                "location": "New York, NY • United States",
+                "url": "https://boards.greenhouse.io/figma/jobs/6235320004?gh_jid=6235320004",
+                "matched": "segment",
+                "excerpt": "nal processes: from pipeline analysis and forecasting accuracy to identifying patterns in rep performance and segment health that would be impossible to surface manually Partner cross-functionally with Sales Systems, Finance, a"
               }
             ]
           },
@@ -2118,7 +2118,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "135 of 146 placeable roles name no EEA site — most prominently United States, United Kingdom, Brazil. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "130 of 141 placeable roles name no EEA site — most prominently United States, United Kingdom, Brazil. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -2127,11 +2127,11 @@
           "evidence": [
             {
               "kind": "stat",
-              "excerpt": "United States: 96 open roles"
+              "excerpt": "United States: 93 open roles"
             },
             {
               "kind": "stat",
-              "excerpt": "United Kingdom: 19 open roles"
+              "excerpt": "United Kingdom: 18 open roles"
             },
             {
               "kind": "stat",
@@ -2453,29 +2453,29 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 247,
-        "placeable": 241,
-        "unplaceable": 6,
-        "eea": 40,
-        "non_eea": 201,
+        "total": 242,
+        "placeable": 237,
+        "unplaceable": 5,
+        "eea": 39,
+        "non_eea": 198,
         "countries": {
-          "United States": 117,
-          "Canada": 54,
-          "United Kingdom": 36,
-          "India": 31,
+          "United States": 116,
+          "Canada": 53,
+          "United Kingdom": 34,
+          "India": 30,
           "Poland": 12,
           "Australia": 11,
           "France": 11,
           "Singapore": 11,
-          "Germany": 11,
+          "Germany": 10,
           "Ireland": 9,
           "Spain": 9,
           "Israel": 7,
           "Netherlands": 6,
           "Brazil": 6,
           "Japan": 5,
-          "Austria": 4,
-          "South Korea": 3,
+          "South Korea": 4,
+          "Austria": 3,
           "Sweden": 2,
           "United Arab Emirates": 2,
           "Mexico": 1,
@@ -3036,28 +3036,28 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 390,
-        "placeable": 390,
+        "total": 379,
+        "placeable": 379,
         "unplaceable": 0,
-        "eea": 160,
-        "non_eea": 230,
+        "eea": 153,
+        "non_eea": 226,
         "countries": {
-          "United States": 116,
-          "Spain": 37,
-          "Canada": 31,
-          "United Kingdom": 30,
-          "Greece": 23,
-          "Ireland": 21,
-          "Poland": 21,
-          "Portugal": 20,
+          "United States": 114,
+          "Spain": 36,
+          "Canada": 30,
+          "United Kingdom": 28,
+          "Greece": 22,
+          "Ireland": 20,
+          "Poland": 19,
+          "Portugal": 19,
           "India": 16,
           "Norway": 8,
           "Germany": 7,
           "Switzerland": 7,
-          "Romania": 7,
           "Singapore": 6,
           "Japan": 6,
-          "Australia": 4,
+          "Romania": 6,
+          "Australia": 5,
           "Netherlands": 4,
           "Hungary": 4,
           "Belgium": 3,
@@ -3196,8 +3196,8 @@
               },
               {
                 "title": "Manager, Salesforce Revenue Cloud",
-                "location": "Bangalore, India",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8414808&gh_jid=8414808",
+                "location": "United States",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8207937&gh_jid=8207937",
                 "matched": "Salesforce",
                 "excerpt": "ations deliver on the promise of AI. What is The Role This role is responsible for leading the migration from Salesforce CPQ to Revenue Cloud and being responsible for the end-to-end Quote-to-Cash capability. The manager will ensu"
               }
