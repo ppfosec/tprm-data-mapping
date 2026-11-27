@@ -612,10 +612,10 @@
           "diff": null,
           "archive": {
             "ok": true,
-            "captures": 165,
-            "revisions": 164,
+            "captures": 167,
+            "revisions": 166,
             "first": "2024-09-26",
-            "last": "2026-11-26"
+            "last": "2026-11-27"
           }
         },
         {
@@ -628,10 +628,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 96,
-            "revisions": 95,
+            "captures": 97,
+            "revisions": 96,
             "first": "2025-03-11",
-            "last": "2026-11-23"
+            "last": "2026-11-26"
           }
         }
       ],
@@ -676,18 +676,18 @@
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Sydney, Australia",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5450798008",
+              "location": "Mumbai, India",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
               "matched": "across time zones",
-              "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the Australia market You may be a good fit if you"
+              "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
             },
             {
               "kind": "job",
               "title": "Applied AI Architect",
-              "location": "Bangalore, India",
-              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
+              "location": "Sydney, Australia",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5450798008",
               "matched": "across time zones",
-              "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
+              "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the Australia market You may be a good fit if you"
             }
           ],
           "question": "For out-of-hours incidents, who is on the rotation, where are they, and is their access to customer data logged and reviewable by the customer?"
@@ -811,6 +811,13 @@
             "examples": [
               {
                 "title": "Applied AI Architect",
+                "location": "Mumbai, India",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
+                "matched": "across time zones",
+                "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
+              },
+              {
+                "title": "Applied AI Architect",
                 "location": "Sydney, Australia",
                 "url": "https://job-boards.greenhouse.io/anthropic/jobs/5450798008",
                 "matched": "across time zones",
@@ -820,13 +827,6 @@
                 "title": "Applied AI Architect",
                 "location": "Bangalore, India",
                 "url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
-                "matched": "across time zones",
-                "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
-              },
-              {
-                "title": "Applied AI Architect",
-                "location": "Mumbai, India",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
                 "matched": "across time zones",
                 "excerpt": "ntain strong knowledge of the latest developments in LLM capabilities and implementation patterns Collaborate across time zones with global teams while serving as the technical expert for the India market You may be a good fit if you hav"
               }
@@ -841,15 +841,15 @@
             "examples": [
               {
                 "title": "Applied AI Architect, Beneficial Deployment",
-                "location": "Sydney, Australia",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5486780008",
+                "location": "Bangalore, India",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5486776008",
                 "matched": "Travel up to 30%",
                 "excerpt": "ns across partners, bring field insight back to Product and Research, and help partners measure what changed. Travel up to 30% to partner sites for workshops, technical deep dives and relationship building. You Might Be a Good Fit If Yo"
               },
               {
                 "title": "Applied AI Architect, Beneficial Deployment",
-                "location": "Bangalore, India",
-                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5486776008",
+                "location": "Sydney, Australia",
+                "url": "https://job-boards.greenhouse.io/anthropic/jobs/5486780008",
                 "matched": "Travel up to 30%",
                 "excerpt": "ns across partners, bring field insight back to Product and Research, and help partners measure what changed. Travel up to 30% to partner sites for workshops, technical deep dives and relationship building. You Might Be a Good Fit If Yo"
               }
@@ -1181,9 +1181,9 @@
       },
       "jobs": {
         "ok": true,
-        "total": 522,
+        "total": 532,
         "placeable": 3,
-        "unplaceable": 519,
+        "unplaceable": 529,
         "eea": 0,
         "non_eea": 3,
         "countries": {
@@ -1672,13 +1672,13 @@
           "Japan": 37,
           "France": 26,
           "Ireland": 22,
+          "Singapore": 20,
           "Netherlands": 19,
-          "Singapore": 19,
           "United Kingdom": 18,
           "Australia": 13,
           "South Korea": 11,
           "Brazil": 11,
-          "India": 8,
+          "India": 7,
           "Spain": 4,
           "Mexico": 4,
           "Israel": 3,
@@ -1689,9 +1689,9 @@
           "Sweden": 2,
           "Portugal": 1,
           "United Arab Emirates": 1,
-          "Indonesia": 1,
           "Chile": 1,
           "Canada": 1,
+          "Indonesia": 1,
           "Austria": 1,
           "Poland": 1,
           "Italy": 1
@@ -2110,34 +2110,34 @@
       },
       "jobs": {
         "ok": true,
-        "total": 771,
-        "placeable": 690,
+        "total": 766,
+        "placeable": 685,
         "unplaceable": 81,
-        "eea": 126,
-        "non_eea": 564,
+        "eea": 129,
+        "non_eea": 556,
         "countries": {
           "United States": 329,
-          "Ireland": 87,
+          "Ireland": 90,
           "Canada": 59,
-          "Singapore": 55,
-          "United Kingdom": 47,
-          "India": 42,
-          "Mexico": 29,
+          "Singapore": 52,
+          "United Kingdom": 46,
+          "India": 41,
+          "Mexico": 28,
           "Japan": 14,
           "Australia": 11,
           "Spain": 11,
           "Germany": 10,
           "France": 7,
-          "Taiwan": 5,
           "Romania": 5,
+          "Taiwan": 4,
           "Belgium": 3,
           "New Zealand": 3,
           "Luxembourg": 3,
           "Netherlands": 2,
-          "Israel": 2,
           "Sweden": 2,
           "Brazil": 2,
-          "Malaysia": 2
+          "Malaysia": 2,
+          "Israel": 1
         },
         "scanned": 26,
         "signals": [
@@ -2396,10 +2396,10 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 430,
-            "revisions": 429,
+            "captures": 432,
+            "revisions": 431,
             "first": "2024-01-18",
-            "last": "2026-11-20"
+            "last": "2026-11-27"
           }
         },
         {
@@ -2843,7 +2843,7 @@
         "grade": "50",
         "posture": "public evidence index",
         "confidence": "bounded",
-        "summary": "3 public documents · 3 open reconciliations"
+        "summary": "3 public documents · 2 open reconciliations"
       },
       "documents": [
         {
@@ -2949,24 +2949,6 @@
             }
           ],
           "question": "For out-of-hours incidents, who is on the rotation, where are they, and is their access to customer data logged and reviewable by the customer?"
-        },
-        {
-          "rule": "subprocessor_gap",
-          "severity": "low",
-          "headline": "Looker appears in hiring, not in the published documents",
-          "detail": "Engineering job descriptions name Looker, but it does not appear anywhere in the legal documents collected including the sub-processor list at https://about.gitlab.com/privacy/subprocessors/.",
-          "claim": null,
-          "evidence": [
-            {
-              "kind": "job",
-              "title": "Data Scientist, Enterprise Analytics",
-              "location": "Remote, Canada; Remote, United States",
-              "url": "https://job-boards.greenhouse.io/gitlab/jobs/8922013002",
-              "matched": "Snowflake",
-              "excerpt": "ication, clustering, and survival analysis Deep, hands-on understanding of SQL in cloud data warehouses (like Snowflake SQL), including working with product usage and event data, and in business intelligence tools (Looker, Tablea"
-            }
-          ],
-          "question": "Is Looker a sub-processor? If it is, when was it added to the list, and were customers notified? If it never touches customer data, what is it used for?"
         }
       ],
       "classification": {
@@ -3030,13 +3012,13 @@
       },
       "jobs": {
         "ok": true,
-        "total": 242,
-        "placeable": 237,
+        "total": 243,
+        "placeable": 238,
         "unplaceable": 5,
         "eea": 39,
-        "non_eea": 198,
+        "non_eea": 199,
         "countries": {
-          "United States": 116,
+          "United States": 117,
           "Canada": 53,
           "United Kingdom": 34,
           "India": 30,
@@ -3045,8 +3027,8 @@
           "France": 11,
           "Singapore": 11,
           "Germany": 10,
-          "Ireland": 9,
           "Spain": 9,
+          "Ireland": 9,
           "Israel": 7,
           "Netherlands": 6,
           "Brazil": 6,
@@ -3239,15 +3221,8 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 3,
+            "count": 2,
             "examples": [
-              {
-                "title": "Data Scientist, Enterprise Analytics",
-                "location": "Remote, Canada; Remote, United States",
-                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8922013002",
-                "matched": "Snowflake",
-                "excerpt": "ication, clustering, and survival analysis Deep, hands-on understanding of SQL in cloud data warehouses (like Snowflake SQL), including working with product usage and event data, and in business intelligence tools (Looker, Tablea"
-              },
               {
                 "title": "Ecosystem Operations Specialist",
                 "location": "Remote, Canada; Remote, United States",
@@ -3535,28 +3510,28 @@
       },
       "jobs": {
         "ok": true,
-        "total": 379,
-        "placeable": 379,
+        "total": 369,
+        "placeable": 369,
         "unplaceable": 0,
-        "eea": 153,
-        "non_eea": 226,
+        "eea": 148,
+        "non_eea": 221,
         "countries": {
-          "United States": 114,
-          "Spain": 36,
-          "Canada": 30,
-          "United Kingdom": 28,
-          "Greece": 22,
-          "Ireland": 20,
+          "United States": 113,
+          "Spain": 35,
+          "Canada": 29,
+          "United Kingdom": 26,
+          "Greece": 21,
           "Poland": 19,
-          "Portugal": 19,
+          "Ireland": 18,
+          "Portugal": 18,
           "India": 16,
           "Norway": 8,
           "Germany": 7,
           "Switzerland": 7,
-          "Singapore": 6,
           "Japan": 6,
           "Romania": 6,
           "Australia": 5,
+          "Singapore": 5,
           "Netherlands": 4,
           "Hungary": 4,
           "Belgium": 3,
@@ -3566,8 +3541,8 @@
           "South Korea": 2,
           "Italy": 2,
           "Brazil": 2,
-          "Austria": 1,
           "France": 1,
+          "Austria": 1,
           "Israel": 1,
           "Denmark": 1
         },
@@ -3695,8 +3670,8 @@
               },
               {
                 "title": "Manager, Salesforce Revenue Cloud",
-                "location": "United States",
-                "url": "https://jobs.elastic.co/jobs?gh_jid=8207937&gh_jid=8207937",
+                "location": "Bangalore, India",
+                "url": "https://jobs.elastic.co/jobs?gh_jid=8414808&gh_jid=8414808",
                 "matched": "Salesforce",
                 "excerpt": "ations deliver on the promise of AI. What is The Role This role is responsible for leading the migration from Salesforce CPQ to Revenue Cloud and being responsible for the end-to-end Quote-to-Cash capability. The manager will ensu"
               }
