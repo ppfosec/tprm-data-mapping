@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T12:39:38+00:00",
+  "generated_at": "2026-11-28T11:57:31+00:00",
   "vendor_count": 8,
   "signal_catalogue": [
     {
@@ -155,10 +155,10 @@
           "diff": null,
           "archive": {
             "ok": true,
-            "captures": 167,
-            "revisions": 166,
+            "captures": 171,
+            "revisions": 170,
             "first": "2024-09-26",
-            "last": "2026-11-27"
+            "last": "2026-11-28"
           }
         },
         {
@@ -171,8 +171,8 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 97,
-            "revisions": 96,
+            "captures": 98,
+            "revisions": 97,
             "first": "2025-03-11",
             "last": "2026-11-26"
           }
@@ -590,8 +590,8 @@
           "note": null,
           "archive": {
             "ok": true,
-            "captures": 335,
-            "revisions": 334,
+            "captures": 336,
+            "revisions": 335,
             "first": "2021-09-03",
             "last": "2026-11-17"
           }
@@ -1076,14 +1076,14 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 391,
-        "placeable": 391,
+        "total": 392,
+        "placeable": 392,
         "unplaceable": 0,
         "eea": 59,
-        "non_eea": 332,
+        "non_eea": 333,
         "countries": {
           "United States": 213,
-          "Japan": 37,
+          "Japan": 38,
           "France": 26,
           "Ireland": 22,
           "Singapore": 20,
@@ -1103,11 +1103,11 @@
           "Sweden": 2,
           "Portugal": 1,
           "United Arab Emirates": 1,
-          "Chile": 1,
           "Canada": 1,
           "Indonesia": 1,
-          "Austria": 1,
+          "Chile": 1,
           "Poland": 1,
+          "Austria": 1,
           "Italy": 1
         },
         "scanned": 26,
@@ -1545,13 +1545,13 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 766,
-        "placeable": 685,
+        "total": 771,
+        "placeable": 690,
         "unplaceable": 81,
-        "eea": 129,
-        "non_eea": 556,
+        "eea": 128,
+        "non_eea": 562,
         "countries": {
-          "United States": 329,
+          "United States": 335,
           "Ireland": 90,
           "Canada": 59,
           "Singapore": 52,
@@ -1568,11 +1568,11 @@
           "Belgium": 3,
           "New Zealand": 3,
           "Luxembourg": 3,
-          "Netherlands": 2,
           "Sweden": 2,
           "Brazil": 2,
           "Malaysia": 2,
-          "Israel": 1
+          "Israel": 1,
+          "Netherlands": 1
         },
         "scanned": 26,
         "signals": [
@@ -1992,15 +1992,15 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 141,
-        "placeable": 141,
+        "total": 140,
+        "placeable": 140,
         "unplaceable": 0,
-        "eea": 11,
+        "eea": 10,
         "non_eea": 130,
         "countries": {
           "United States": 93,
           "United Kingdom": 18,
-          "Germany": 8,
+          "Germany": 7,
           "Brazil": 5,
           "Japan": 5,
           "France": 3,
@@ -2118,7 +2118,7 @@
           "rule": "residency_vs_workforce",
           "severity": "high",
           "headline": "European residency language, largely non-European workforce",
-          "detail": "130 of 141 placeable roles name no EEA site — most prominently United States, United Kingdom, Brazil. Storage location and personnel location are different controls, and only one of them is in the clause.",
+          "detail": "130 of 140 placeable roles name no EEA site — most prominently United States, United Kingdom, Brazil. Storage location and personnel location are different controls, and only one of them is in the clause.",
           "claim": {
             "kind": "dpa",
             "text": "”) will apply to Personal Data in Customer Content that is transferred from the European Economic Area (EEA), including Iceland, Liechtenstein, and Norway, either directly or via onward transfer, to any country or recipient outside of the EEA that is not recognized by the relevant competent authority as providing an adequate level of protection for Personal Data.",
@@ -2453,15 +2453,15 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 243,
-        "placeable": 238,
+        "total": 244,
+        "placeable": 239,
         "unplaceable": 5,
         "eea": 39,
-        "non_eea": 199,
+        "non_eea": 200,
         "countries": {
           "United States": 117,
           "Canada": 53,
-          "United Kingdom": 34,
+          "United Kingdom": 35,
           "India": 30,
           "Poland": 12,
           "Australia": 11,
@@ -2662,8 +2662,15 @@
             "label": "Named internal tooling",
             "severity": "low",
             "why": "An internal stack named in a posting is a sub-processor hint to check against the published list.",
-            "count": 2,
+            "count": 3,
             "examples": [
+              {
+                "title": "Data Scientist, Enterprise Analytics",
+                "location": "Remote, United Kingdom",
+                "url": "https://job-boards.greenhouse.io/gitlab/jobs/8963786002",
+                "matched": "Snowflake",
+                "excerpt": "ication, clustering, and survival analysis Deep, hands-on understanding of SQL in cloud data warehouses (like Snowflake SQL), including working with product usage and event data, and in business intelligence tools (Looker, Tablea"
+              },
               {
                 "title": "Ecosystem Operations Specialist",
                 "location": "Remote, Canada; Remote, United States",
@@ -2754,6 +2761,24 @@
             }
           ],
           "question": "For out-of-hours incidents, who is on the rotation, where are they, and is their access to customer data logged and reviewable by the customer?"
+        },
+        {
+          "rule": "subprocessor_gap",
+          "severity": "low",
+          "headline": "Looker appears in hiring, not in the published documents",
+          "detail": "Engineering job descriptions name Looker, but it does not appear anywhere in the legal documents collected including the sub-processor list at https://about.gitlab.com/privacy/subprocessors/.",
+          "claim": null,
+          "evidence": [
+            {
+              "kind": "job",
+              "title": "Data Scientist, Enterprise Analytics",
+              "location": "Remote, United Kingdom",
+              "url": "https://job-boards.greenhouse.io/gitlab/jobs/8963786002",
+              "matched": "Snowflake",
+              "excerpt": "ication, clustering, and survival analysis Deep, hands-on understanding of SQL in cloud data warehouses (like Snowflake SQL), including working with product usage and event data, and in business intelligence tools (Looker, Tablea"
+            }
+          ],
+          "question": "Is Looker a sub-processor? If it is, when was it added to the list, and were customers notified? If it never touches customer data, what is it used for?"
         }
       ],
       "data_classification": {
@@ -3432,13 +3457,13 @@
       ],
       "jobs": {
         "ok": true,
-        "total": 86,
-        "placeable": 82,
+        "total": 85,
+        "placeable": 81,
         "unplaceable": 4,
         "eea": 5,
-        "non_eea": 77,
+        "non_eea": 76,
         "countries": {
-          "United States": 69,
+          "United States": 68,
           "United Kingdom": 11,
           "Germany": 5,
           "Australia": 3
